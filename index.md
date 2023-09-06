@@ -13,6 +13,7 @@ layout: default
 
 * * *
 
+![](./assets/images/zombie-clouds.webp)  
 ## Completed: Lox Programming Language
 
 **Takeaways**
@@ -24,7 +25,7 @@ layout: default
 
 
 * * *
-
+![](./assets/images/zombie-warrior.jpg)  
 ## Completed: Evercraft Kata - Test-Commit-Revert
 
 **Takeaways**
