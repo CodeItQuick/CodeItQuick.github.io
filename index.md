@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Project Graveyard
-![](./assets/images/rotting-zombie.jpg)
+![](./assets/images/rotting-zombie.jpg)  
 **Welcome to the graveyard**
 
 * * *
@@ -20,7 +20,7 @@ layout: default
 *   Learned how to refactor using feature envy, and primitive obsession with Jetbrains Tooling
 *   Learned the importance of writing sufficient number of characterization tests
 *   Learned more about programming languages
-[GitHub]([./another-page.html](https://github.com/CodeItQuick/my-own-programming-language))
+[GitHub]([./another-page.html](https://github.com/CodeItQuick/my-own-programming-language))  
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
