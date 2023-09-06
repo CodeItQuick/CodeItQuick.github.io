@@ -2,6 +2,21 @@
 layout: default
 ---
 
+# Project Graveyard
+## Welcome to the graveyard
+
+# Past Projects
+## Welcome to the numerous projects I have worked on since 2021/2022.
+
+## Completed: Lox Programming Language
+[GitHub]([./another-page.html](https://github.com/CodeItQuick/my-own-programming-language))
+
+**Takeaways**
+
+*   Learned how to refactor using feature envy, and primitive obsession with Jetbrains Tooling
+*   Learned the importance of writing sufficient number of characterization tests
+*   Learned more about programming languages
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
