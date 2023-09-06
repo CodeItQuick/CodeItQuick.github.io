@@ -3,6 +3,7 @@ layout: default
 ---
 
 # Project Graveyard
+![Branching]([./assets/images/rotting-zombie.jpg])
 **Welcome to the graveyard**
 
 * * *
