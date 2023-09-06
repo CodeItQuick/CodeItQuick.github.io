@@ -9,7 +9,7 @@ layout: default
 * * *
 
 # Past Projects
-**Welcome to the numerous projects I have worked on since 2021/2022.**
+##Welcome to the numerous projects I have worked on since 2021/2022.
 
 * * *
 
