@@ -46,6 +46,17 @@ layout: default
 
 * * *
 
+## Completed: Expense Report Kata
+
+**Takeaways**
+
+*   Learned Proper Hexagonal Architecture
+*   Able to use relatively few acceptance tests to enable refactoring work  
+*   Learned how to wrap different elements within a website that have side effects and are traditionally difficult to test    
+[GitHub](https://github.com/CodeItQuick/expense-report-kata-ensemble)  
+
+* * *
+
 ## In-Progress: Stock Picker
 
 **Takeaways**
