@@ -51,8 +51,8 @@ layout: default
 **Takeaways**
 
 *   Learning Domain Driven Design and OOP
-*   Implementing different kinds of tests
-*   C# and .NET Development
+*   Implementing different kinds of tests  
+*   C# and .NET Development  
 [GitHub](https://github.com/CodeItQuick/StockApplicationASPNetWebMVCIndividualIdentity)   
 
 
