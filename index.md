@@ -3,6 +3,7 @@ layout: default
 ---
 
 # Project Graveyard
+![](./assets/images/rotting-zombie.jpg)  
 **Welcome to the graveyard**
 
 * * *
@@ -13,130 +14,57 @@ layout: default
 * * *
 
 ## Completed: Lox Programming Language
+![](./assets/images/zombie-clouds.webp)  
 
 **Takeaways**
 
 *   Learned how to refactor using feature envy, and primitive obsession with Jetbrains Tooling
 *   Learned the importance of writing sufficient number of characterization tests
-*   Learned more about programming languages
-[GitHub]([./another-page.html](https://github.com/CodeItQuick/my-own-programming-language))
+*   Learned more about programming languages  
+[GitHub](https://github.com/CodeItQuick/my-own-programming-language)  
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+* * *
+## Completed: Evercraft Kata - Test-Commit-Revert
+![](./assets/images/zombie-warrior.jpg)  
 
-There should be whitespace between paragraphs.
+**Takeaways**
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
+*   Small Steps
+*   Frequently adding tests
+*   More care in the programming being accomplished  
+[GitHub](https://github.com/CodeItQuick/tcr-evercraft-2)   
 
 * * *
 
-### Here is an unordered list:
+## Completed: Boomer Bot
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+**Takeaways**
 
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+*   Fun project to bridge the generational gap between zoomers and boomers through accurate translations.  
+[GitHub](https://github.com/CodeItQuick/BoomerBot)
 
 
-### Definition lists can be used with HTML syntax.
+* * *
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+## Completed: Expense Report Kata
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+**Takeaways**
 
-```
-The final element.
-```
+*   Learned Proper Hexagonal Architecture
+*   Able to use relatively few acceptance tests to enable refactoring work  
+*   Learned how to wrap different elements within a website that have side effects and are traditionally difficult to test    
+[GitHub](https://github.com/CodeItQuick/expense-report-kata-ensemble)  
+
+* * *
+
+## In-Progress: Stock Picker
+
+**Takeaways**
+
+*   Learning Domain Driven Design and OOP
+*   Implementing different kinds of tests  
+*   C# and .NET Development  
+[GitHub](https://github.com/CodeItQuick/StockApplicationASPNetWebMVCIndividualIdentity)   
+
+
