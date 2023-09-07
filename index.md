@@ -13,7 +13,7 @@ layout: default
 
 * * *
 
-## ![]("https://www.flaticon.com/free-icons/complete") Complete icons created by Freepik - Flaticon</a> Lox Programming Language
+## ![]("https://www.flaticon.com/free-icons/complete") Lox Programming Language
 ![](./assets/images/zombie-clouds.webp)  
 
 **Takeaways**
