@@ -38,7 +38,7 @@ layout: default
 * * *
 
 ## [<img src="./assets/images/completed.png" width="30px" />](./assets/images/completed.png)  Boomer Bot
-![](./assets/images/zombie-spine.jpg)  
+[<img src="./assets/images/zombie-spine.jpg" height="450px" />](./assets/images/zombie-spine.jpg)  
 
 **Takeaways**
 
@@ -49,7 +49,7 @@ layout: default
 * * *
 
 ## [<img src="./assets/images/completed.png" width="30px" />](./assets/images/completed.png) Expense Report Kata
-![](./assets/images/zombie-women.jpg)  
+[<img src="./assets/images/zombie-women.jpg" height="450px" />](./assets/images/zombie-women.jpg)  
 
 **Takeaways**
 
@@ -61,7 +61,7 @@ layout: default
 * * *
 
 ## [<img src="./assets/images/work-in-progress.png" width="30px" />](./assets/images/work-in-progress.png)  Stock Picker
-![](./assets/images/zombie-man.webp)  
+[<img src="./assets/images/zombie-man.webp" height="450px" />](./assets/images/zombie-man.webp)  
 
 **Takeaways**
 
