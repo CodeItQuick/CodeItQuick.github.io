@@ -13,7 +13,7 @@ layout: default
 
 * * *
 
-## ![]("https://www.flaticon.com/free-icons/complete") Lox Programming Language
+## ![]("./assets/images/completed.png") Lox Programming Language
 ![](./assets/images/zombie-clouds.webp)  
 
 **Takeaways**
@@ -25,7 +25,7 @@ layout: default
 
 
 * * *
-## Completed: Evercraft Kata - Test-Commit-Revert
+## ![]("./assets/images/completed.png")  Evercraft Kata - Test-Commit-Revert
 ![](./assets/images/zombie-warrior.jpg)  
 
 **Takeaways**
@@ -37,7 +37,7 @@ layout: default
 
 * * *
 
-## Completed: Boomer Bot
+## ![]("./assets/images/completed.png")  Boomer Bot
 ![](./assets/images/zombie-spine.jpg)  
 
 **Takeaways**
@@ -48,7 +48,7 @@ layout: default
 
 * * *
 
-## Completed: Expense Report Kata
+## ![]("./assets/images/completed.png") Expense Report Kata
 ![](./assets/images/zombie-women.jpg)  
 
 **Takeaways**
@@ -60,7 +60,7 @@ layout: default
 
 * * *
 
-## In-Progress: Stock Picker
+## ![]("./assets/images/work-in-progress.png")  Stock Picker
 ![](./assets/images/zombie-man.webp)  
 
 **Takeaways**
