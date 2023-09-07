@@ -25,7 +25,7 @@ layout: default
 
 
 * * *
-## ![](./assets/images/completed.png)  Evercraft Kata - Test-Commit-Revert
+## ![<img src="./assets/images/completed.png" width="30"/>](./assets/images/completed.png)  Evercraft Kata - Test-Commit-Revert
 ![](./assets/images/zombie-warrior.jpg)  
 
 **Takeaways**
