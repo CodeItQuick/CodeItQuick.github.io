@@ -38,6 +38,7 @@ layout: default
 * * *
 
 ## Completed: Boomer Bot
+![](./assets/images/zombie-spine.jpg)  
 
 **Takeaways**
 
@@ -48,6 +49,7 @@ layout: default
 * * *
 
 ## Completed: Expense Report Kata
+![](./assets/images/zombie-women.jpg)  
 
 **Takeaways**
 
@@ -59,6 +61,7 @@ layout: default
 * * *
 
 ## In-Progress: Stock Picker
+![](./assets/images/zombie-man.jpg)  
 
 **Takeaways**
 
