@@ -13,7 +13,7 @@ layout: default
 
 * * *
 
-## ![](./assets/images/completed.png =30x) Lox Programming Language
+## ![<img src="./assets/images/completed.png" width="30" >](./assets/images/completed.png) Lox Programming Language
 ![](./assets/images/zombie-clouds.webp)  
 
 **Takeaways**
