@@ -14,7 +14,7 @@ layout: default
 * * *
 
 ## [<img src="./assets/images/completed.png" width="30px" />](./assets/images/completed.png) Lox Programming Language
-![](./assets/images/zombie-clouds.webp)  
+[<img src="./assets/images/zombie-clouds.webp" height="450px" />](./assets/images/zombie-clouds.webp)  
 
 **Takeaways**
 
