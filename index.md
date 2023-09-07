@@ -25,7 +25,7 @@ layout: default
 
 
 * * *
-## ![<img src="./assets/images/completed.png" width="30"/>](./assets/images/completed.png)  Evercraft Kata - Test-Commit-Revert
+## [<img src="./assets/images/completed.png" width="30px" />](./assets/images/completed.png)  Evercraft Kata - Test-Commit-Revert
 ![](./assets/images/zombie-warrior.jpg)  
 
 **Takeaways**
@@ -37,7 +37,7 @@ layout: default
 
 * * *
 
-## ![](./assets/images/completed.png)  Boomer Bot
+## [<img src="./assets/images/completed.png" width="30px" />](./assets/images/completed.png)  Boomer Bot
 ![](./assets/images/zombie-spine.jpg)  
 
 **Takeaways**
@@ -48,7 +48,7 @@ layout: default
 
 * * *
 
-## ![](./assets/images/completed.png) Expense Report Kata
+## [<img src="./assets/images/completed.png" width="30px" />](./assets/images/completed.png) Expense Report Kata
 ![](./assets/images/zombie-women.jpg)  
 
 **Takeaways**
@@ -60,7 +60,7 @@ layout: default
 
 * * *
 
-## ![](./assets/images/work-in-progress.png)  Stock Picker
+## [<img src="./assets/images/work-in-progress.png" width="30px" />](./assets/images/work-in-progress.png)  Stock Picker
 ![](./assets/images/zombie-man.webp)  
 
 **Takeaways**
