@@ -61,7 +61,7 @@ layout: default
 * * *
 
 ## In-Progress: Stock Picker
-![](./assets/images/zombie-man.jpg)  
+![](./assets/images/zombie-man.webp)  
 
 **Takeaways**
 
