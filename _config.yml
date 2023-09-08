@@ -5,4 +5,4 @@ title: Project Graveyard
 description: Welcome to the numerous projects I have worked on since 2021
 collections:
   projects:
-    people: true
+    output: true
