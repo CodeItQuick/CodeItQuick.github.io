@@ -40,7 +40,7 @@
           {% assign remainder = forloop.index | modulo: 2 %}
           {% if remainder == 0 %}
           <div style="display: flex; align-items: center;justify-content: space-between;">
-            <div style="width: 50%;">
+            <div style="width: 50%;padding: 5%;">
               <img src="./assets/images/{{ project.image }}" />
             </div>
             <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 5%;max-width: 45%;">
@@ -66,7 +66,7 @@
               </ul>
               <a href="{{ project.github }}">Github Link</a>
             </div>
-            <div style="width: 50%;">
+            <div style="width: 50%;padding: 5%;">
               <img src="./assets/images/{{ project.image }}" />
             </div>
           </div>
