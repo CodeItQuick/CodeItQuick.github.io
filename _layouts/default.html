@@ -36,8 +36,19 @@
       <div class="inner clearfix">
         <section id="main-content">
           {% for project in site.projects %}
-            <h2>{{ project.name }} - {{ project.position }}</h2>
-            <p>{{ project.content | markdownify }}</p>
+          <div style="display: flex;">
+            <div>
+              <h2>{{ project.name }}</h2>
+              <p>{{ project.position }}</p>
+            </div>
+            <div>
+              <ul>
+                <li>{{ project.learningone }}</li>
+                <li>{{ project.learningtwo }}</li>
+                <li>{{ project.learningthree }}</li>
+              </ul>
+            </div>
+          </div>
           {% endfor %}
           {{ content }}
         </section>
