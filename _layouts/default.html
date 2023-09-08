@@ -40,10 +40,10 @@
           {% assign remainder = forloop.index | modulo: 2 %}
           {% if remainder == 0 %}
           <div style="display: flex; align-items: center;justify-content: space-between;">
-            <div>
-              <img src="./assets/images/{{ project.image }}" height="450px" />
+            <div style="width: 50%;">
+              <img src="./assets/images/{{ project.image }}" />
             </div>
-            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 20px;max-width: 50%;">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 20px;max-width: 45%;">
               <strong>{{ project.name }}</strong>
               <ul>
                 <li>{{ project.learningone }}</li>
@@ -57,7 +57,7 @@
           
           {% if remainder == 1 %}
           <div style="display: flex; align-items: center;justify-content: space-between;">
-            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 20px;max-width: 50%;">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 20px;max-width: 45%;">
               <strong>{{ project.name }}</strong>
               <ul>
                 <li>{{ project.learningone }}</li>
@@ -66,8 +66,8 @@
               </ul>
               <a href="{{ project.github }}">Github Link</a>
             </div>
-            <div>
-              <img src="./assets/images/{{ project.image }}" height="450px" />
+            <div style="width: 50%;">
+              <img src="./assets/images/{{ project.image }}" />
             </div>
           </div>
           {% endif %}
