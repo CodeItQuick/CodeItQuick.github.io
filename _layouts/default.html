@@ -39,11 +39,11 @@
           {% for project in site.projects %}
           {% assign remainder = forloop.index | modulo: 2 %}
           {% if remainder == 0 %}
-          <div style="display: flex; align-items: center;">
+          <div style="display: flex; align-items: center;justify-content: space-between;">
             <div>
               <img src="./assets/images/{{ project.image }}" height="450px" />
             </div>
-            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 20px;">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 20px;max-width: 50%;">
               <strong>{{ project.name }}</strong>
               <ul>
                 <li>{{ project.learningone }}</li>
@@ -56,8 +56,8 @@
           {% endif %}
           
           {% if remainder == 1 %}
-          <div style="display: flex; align-items: center;">
-            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 20px;">
+          <div style="display: flex; align-items: center;justify-content: space-between;">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 20px;max-width: 50%;">
               <strong>{{ project.name }}</strong>
               <ul>
                 <li>{{ project.learningone }}</li>
