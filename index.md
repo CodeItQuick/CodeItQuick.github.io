@@ -2,9 +2,7 @@
 layout: default
 ---
 
-# Project Graveyard
 ![](./assets/images/rotting-zombie.jpg)  
-**Welcome to the graveyard**
 
 * * *
 
