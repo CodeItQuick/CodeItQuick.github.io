@@ -2,12 +2,7 @@
 layout: default
 ---
 
-![](./assets/images/rotting-zombie.jpg)  
-
-* * *
-
 # Past Projects
-**Welcome to the numerous projects I have worked on since 2021/2022.**
 
 * * *
 
