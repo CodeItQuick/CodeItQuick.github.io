@@ -37,7 +37,8 @@
         <section id="main-content">
           <h1>Past Projects</h1>
           {% for project in site.projects %}
-          {% if (forloop.index | modulo: 2) == 0 %}
+          {% assign remainder = forloop.index | modulo: 2 %}
+          {% if remainder == 0 %}
           <div style="display: flex; align-items: center;">
             <div>
               <img src="./assets/images/{{ project.image }}" height="450px" />
@@ -54,7 +55,7 @@
           </div>
           {% endif %}
           
-          {% if ((forloop.index | modulo: 2) == 1) %}
+          {% if remainder == 1) %}
           <div style="display: flex; align-items: center;">
             <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 20px;">
               <strong>{{ project.name }}</strong>
