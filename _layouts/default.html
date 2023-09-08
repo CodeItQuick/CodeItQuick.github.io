@@ -37,6 +37,7 @@
         <section id="main-content">
           <h1>Past Projects</h1>
           {% for project in site.projects %}
+          {% if forloop.index == 0 %}
           <div style="display: flex; align-items: center;">
             <div>
               <img src="./assets/images/{{ project.image }}" height="450px" />
@@ -51,6 +52,7 @@
               <a href="{{ project.github }}"></a>
             </div>
           </div>
+          {% endif %}
           {% endfor %}
           {{ content }}
         </section>
