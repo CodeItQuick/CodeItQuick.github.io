@@ -5,7 +5,7 @@ layout: default
 # Past Projects
 
 * * *
-<div style="display: float">
+<div style="display: flex;">
   <div>
     ## [<img src="./assets/images/completed.png" width="30px" />](./assets/images/completed.png) Lox Programming Language
     [<img src="./assets/images/zombie-clouds.webp" height="450px" />](./assets/images/zombie-clouds.webp)  
