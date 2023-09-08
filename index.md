@@ -13,8 +13,6 @@ layout: default
 *   Learned the importance of writing sufficient number of characterization tests
 *   Learned more about programming languages  
 [GitHub](https://github.com/CodeItQuick/my-own-programming-language)
-</div>
-</div>
 
 * * *
 ## [<img src="./assets/images/completed.png" width="30px" />](./assets/images/completed.png)  Evercraft Kata - Test-Commit-Revert
