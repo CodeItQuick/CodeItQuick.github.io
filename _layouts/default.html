@@ -37,7 +37,7 @@
         <section id="main-content">
           <h1>Past Projects</h1>
           {% for project in site.projects %}
-          {% assign remainder = forloop.index | modulo: 2 %}
+          {% assign remainder = forloop.index0 | modulo: 2 %}
           {% if remainder == 0 %}
           <div style="display: flex; align-items: center;justify-content: space-between;">
             <div style="width: 50%;padding: 5%;">
