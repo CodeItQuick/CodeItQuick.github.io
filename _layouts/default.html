@@ -4,8 +4,8 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -18,24 +18,26 @@
 
   <body>
     <header>
-      <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
-        {% endif %}
-        {% if site.github.is_user_page %}
-          <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
-        {% endif %}
+          <img src="/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">Past Projects</h1>
+            <p class="py-6">{{ site.description | default: site.github.project_tagline }}</p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
       </div>
     </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
+    <div>
+      <div>
         <section id="main-content">
-          <h1>Past Projects</h1>
+          
+          <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content flex-col lg:flex-row">
+            <h1>Past Projects</h1>
           {% for project in site.projects %}
           {% assign remainder = forloop.index0 | modulo: 2 %}
           {% if remainder == 0 %}
