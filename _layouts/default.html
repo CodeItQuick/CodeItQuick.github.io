@@ -41,20 +41,22 @@
           {% for project in site.projects %}
           {% assign remainder = forloop.index0 | modulo: 2 %}
           {% if remainder == 0 %}
-          <div style="display: flex; align-items: center;justify-content: space-between;">
-            <div style="width: 50%;padding: 5%;">
-              <img src="./assets/images/{{ project.image }}" />
-            </div>
-            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 5%;max-width: 45%;">
-              <h3>{{ project.name }}</h3>
-              <ul>
-                <li>{{ project.learningone }}</li>
-                <li>{{ project.learningtwo }}</li>
-                <li>{{ project.learningthree }}</li>
-              </ul>
-              <a href="{{ project.github }}">Github Link</a>
-            </div>
-          </div>
+              <div class="card lg:card-side bg-base-100 shadow-xl">
+                <figure> <img src="./assets/images/{{ project.image }}" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">{{ project.name }}</h2>
+                  <p>
+                    <ul>
+                      <li>{{ project.learningone }}</li>
+                      <li>{{ project.learningtwo }}</li>
+                      <li>{{ project.learningthree }}</li>
+                    </ul>
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary"><a href="{{ project.github }}">Github Link</a></button>
+                  </div>
+                </div>
+              </div>
           {% endif %}
           
           {% if remainder == 1 %}
