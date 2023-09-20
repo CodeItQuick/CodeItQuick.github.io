@@ -20,10 +20,9 @@
     <header>
       <div class="hero min-h-screen bg-base-200">
         <div class="hero-content flex-col lg:flex-row">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-           <img src="./assets/images/rotting-zombie.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+          <img src="./assets/images/rotting-zombie.jpg" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
-            <h1 class="text-5xl font-bold">Past Projects</h1>
+            <h1>{{ site.title | default: site.github.repository_name }}</h1>
             <p class="py-6">{{ site.description | default: site.github.project_tagline }}</p>
             <button class="btn btn-primary">Get Started</button>
           </div>
