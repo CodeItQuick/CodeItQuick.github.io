@@ -40,7 +40,7 @@
           {% if remainder == 0 %}
           <div class="card lg:card-side bg-base-100 shadow-xl">
             <figure> 
-              <img src="./assets/images/{{ project.image }}" class="max-w-sm rounded-lg shadow-2xl"  />
+              <img src="./assets/images/{{ project.image }}" class="max-w-sm rounded-lg shadow-2xl" style="object-fit: cover; object-position: top-center;" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">{{ project.name }}</h2>
@@ -60,7 +60,7 @@
           
           {% if remainder == 1 %}
           <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure> <img src="./assets/images/{{ project.image }}" class="max-w-sm rounded-lg shadow-2xl"  /></figure>
+              <figure> <img src="./assets/images/{{ project.image }}" class="max-w-sm rounded-lg shadow-2xl" style="object-fit: cover; object-position: top-center;" /></figure>
               <div class="card-body">
                 <h2 class="card-title">{{ project.name }}</h2>
                 <p>
