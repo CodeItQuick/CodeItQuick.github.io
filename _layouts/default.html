@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <header>
+    <div>
       <div class="hero mt-8 md:mt-32 bg-base-100">
         <div class="hero-content flex-col lg:flex-row">
           <img src="./assets/images/rotting-zombie.jpg" class="max-w-sm rounded-lg shadow-2xl" />
@@ -28,11 +28,9 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
     <div class="container mx-auto">
-      <div>
-        <section>
           {% for project in site.projects %}
           {% assign remainder = forloop.index0 | modulo: 2 %}
           {% if remainder == 0 %}
@@ -78,8 +76,6 @@
           {% endif %}
           {% endfor %}
           {{ content }}
-        </section>
-      </div>
     </div>
 
   </body>
