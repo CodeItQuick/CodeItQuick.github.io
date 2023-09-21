@@ -42,7 +42,7 @@
             <div class="hero-content flex-col lg:flex-row">
               <div class="card lg:card-side bg-base-100 shadow-xl">
                 <figure> 
-                  <img src="./assets/images/{{ project.image }}" />
+                  <img src="./assets/images/{{ project.image }}" class="max-w-sm rounded-lg shadow-2xl"  />
                 </figure>
                 <div class="card-body">
                   <h2 class="card-title">{{ project.name }}</h2>
@@ -63,7 +63,7 @@
           
           {% if remainder == 1 %}
           <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure> <img src="./assets/images/{{ project.image }}" /></figure>
+              <figure> <img src="./assets/images/{{ project.image }}" class="max-w-sm rounded-lg shadow-2xl"  /></figure>
               <div class="card-body">
                 <h2 class="card-title">{{ project.name }}</h2>
                 <p>
