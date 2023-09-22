@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <div>
+    <div class="text-neutral-content">
       <div class="hero mt-8 lg:mt-32 bg-base-100">
         <div class="hero-content flex-col lg:flex-row">
           <img src="./assets/images/rotting-zombie.jpg" class="max-w-sm rounded-lg shadow-2xl" />
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="container mx-auto">
+    <div class="container mx-auto text-neutral-content">
           {% for project in site.projects %}
           {% assign remainder = forloop.index0 | modulo: 2 %}
           {% if remainder == 0 %}
