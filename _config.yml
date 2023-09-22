@@ -8,4 +8,5 @@ collections:
   projects:
     output: true
 picture:
-  source: "assets/images/"
+  source: assets/images/
+  output: assets/images/resized
