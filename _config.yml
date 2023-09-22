@@ -7,3 +7,9 @@ description: Welcome to the numerous projects I have worked on since 2021
 collections:
   projects:
     output: true
+responsive_image:
+  template: _layouts/default.html
+  sizes:
+    - width: 320
+    - width: 480
+    - width: 800
