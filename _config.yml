@@ -7,3 +7,5 @@ description: Welcome to the numerous projects I have worked on since 2021
 collections:
   projects:
     output: true
+picture:
+  source: "assets/images/"
