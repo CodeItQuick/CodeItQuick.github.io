@@ -42,14 +42,12 @@
               <img src="./assets/images/{{ project.image }}" class="artboard artboard-horizontal phone-3" style="object-fit: cover; object-position: top center;" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">{{ project.name }}</h2>
-              <p>
-                <ul class="list-disc leading-loose">
-                  <li>{{ project.learningone }}</li>
-                  <li>{{ project.learningtwo }}</li>
-                  <li>{{ project.learningthree }}</li>
-                </ul>
-              </p>
+              <h2 class="card-title w-full p-4 bg-accent text-base-100 rounded-lg">{{ project.name }}</h2>
+              <ul class="list-disc leading-loose">
+                <li>{{ project.learningone }}</li>
+                <li>{{ project.learningtwo }}</li>
+                <li>{{ project.learningthree }}</li>
+              </ul>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary"><a href="{{ project.github }}">Github Link</a></button>
               </div>
@@ -60,14 +58,12 @@
           {% if remainder == 1 %}
           <div class="card lg:card-side bg-base-100 shadow-xl m-8 lg:m-32">
               <div class="card-body">
-                <h2 class="card-title">{{ project.name }}</h2>
-                <p>
-                  <ul class="list-disc leading-loose">
-                    <li>{{ project.learningone }}</li>
-                    <li>{{ project.learningtwo }}</li>
-                    <li>{{ project.learningthree }}</li>
-                  </ul>
-                </p>
+                <h2 class="card-title w-full p-4 bg-accent text-base-100 rounded-lg">{{ project.name }}</h2>
+                <ul class="list-disc leading-loose">
+                  <li>{{ project.learningone }}</li>
+                  <li>{{ project.learningtwo }}</li>
+                  <li>{{ project.learningthree }}</li>
+                </ul>
                 <div class="card-actions justify-start">
                   <button class="btn btn-primary"><a href="{{ project.github }}">Github Link</a></button>
                 </div>
