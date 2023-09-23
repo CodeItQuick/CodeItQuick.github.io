@@ -37,7 +37,7 @@
           {% for project in site.projects %}
           {% assign remainder = forloop.index0 | modulo: 2 %}
           {% if remainder == 0 %}
-          <div class="card h-max lg:card-side bg-base-100 shadow-xl w-full my-8 lg:my-32">
+          <div class="card h-max lg:card-side bg-base-100 shadow-xl w-full">
             <figure > 
               <img src="./assets/images/{{ project.image }}" class="artboard artboard-horizontal" style="object-fit: cover; object-position: top center;max-height: 50vh;" />
             </figure>
