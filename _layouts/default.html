@@ -59,12 +59,12 @@
           <div class="card lg:card-side bg-base-100 shadow-xl m-8 lg:m-32">
               <div class="card-body">
                 <h2 class="card-title w-full p-4 bg-accent text-base-100 rounded-lg">{{ project.name }}</h2>
+                <ul class="list-disc leading-loose">
+                  <li>{{ project.learningone }}</li>
+                  <li>{{ project.learningtwo }}</li>
+                  <li>{{ project.learningthree }}</li>
+                </ul>
                 <div class="card-actions justify-start min-h-full">
-                  <ul class="list-disc leading-loose">
-                    <li>{{ project.learningone }}</li>
-                    <li>{{ project.learningtwo }}</li>
-                    <li>{{ project.learningthree }}</li>
-                  </ul>
                   <button class="btn btn-primary"><a href="{{ project.github }}">Github Link</a></button>
                 </div>
               </div>
