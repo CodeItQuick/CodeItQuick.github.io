@@ -41,7 +41,7 @@
             <figure > 
               <img src="./assets/images/{{ project.image }}" class="artboard artboard-horizontal" style="object-fit: cover; object-position: top center;" />
             </figure>
-            <div class="card-body min-w-fit flex justify-evenly p-16">
+            <div class="card-body min-w-content flex justify-evenly p-16">
               <h2 class="card-title w-full p-4 bg-accent text-base-100 rounded-lg">{{ project.name }}</h2>
               <ul class="list-disc leading-loose">
                 <li>{{ project.learningone }}</li>
@@ -57,7 +57,7 @@
           
           {% if remainder == 1 %}
           <div class="card h-max lg:card-side bg-base-100 shadow-xl w-full my-8 lg:my-32">
-              <div class="card-body min-w-fit flex justify-evenly p-16">
+              <div class="card-body min-w-content flex justify-evenly p-16">
                 <h2 class="card-title w-full p-4 bg-accent text-base-100 rounded-lg">{{ project.name }}</h2>
                 <ul class="list-disc leading-loose">
                   <li>{{ project.learningone }}</li>
