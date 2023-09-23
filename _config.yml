@@ -6,3 +6,9 @@ description: Welcome to the numerous projects I have worked on since 2021
 collections:
   projects:
     output: true
+    order:
+       - expensereport
+       - lox
+       - evercraft
+       - boomer
+       - stockpicker
