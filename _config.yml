@@ -7,8 +7,8 @@ collections:
   projects:
     output: true
     order:
-       - expensereport
-       - lox
-       - evercraft
-       - boomer
-       - stockpicker
+       - expensereport.md
+       - lox.md
+       - evercraft.md
+       - boomer.md
+       - stockpicker.md
