@@ -41,7 +41,7 @@
             <figure > 
               <img src="./assets/images/{{ project.image }}" class="artboard artboard-horizontal phone-3" style="object-fit: cover; object-position: top center;" />
             </figure>
-            <div class="card-body">
+            <div class="card-body flex justify-evenly">
               <h2 class="card-title w-full p-4 bg-accent text-base-100 rounded-lg">{{ project.name }}</h2>
               <ul class="list-disc leading-loose">
                 <li>{{ project.learningone }}</li>
@@ -57,7 +57,7 @@
           
           {% if remainder == 1 %}
           <div class="card lg:card-side bg-base-100 shadow-xl m-8 lg:m-32">
-              <div class="card-body">
+              <div class="card-body flex justify-evenly">
                 <h2 class="card-title w-full p-4 bg-accent text-base-100 rounded-lg">{{ project.name }}</h2>
                 <ul class="list-disc leading-loose">
                   <li>{{ project.learningone }}</li>
