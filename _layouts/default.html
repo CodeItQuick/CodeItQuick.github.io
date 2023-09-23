@@ -21,9 +21,9 @@
         <div class="hero-content flex-col lg:flex-row rounded">
           <img src="./assets/images/rotting-zombie.jpg" class="rounded-lg shadow-2xl" />
             <div class="flex flex-col items-center justify-start rounded bg-base-100">
-              <h1 class="text-5xl font-bold text-base-100 bg-accent p-4 w-full rounded w-full">{{ site.title | default: site.github.repository_name }}</h1>
-              <div class="p-4 rounded-b-lg">
-                <p class="py-6 bg-base-100 w-full">{{ site.description | default: site.github.project_tagline }}</p>
+              <h1 class="text-5xl font-bold text-base-100 bg-accent p-8 w-full rounded w-full">{{ site.title | default: site.github.repository_name }}</h1>
+              <div class="p-8 rounded-b-lg">
+                <p class="py-8 bg-base-100 w-full">{{ site.description | default: site.github.project_tagline }}</p>
                 <div class="bg-base-100 w-full rounded">
                   <button class="btn btn-primary"><a href="https://www.github.com/CodeItQuick">Github</a></button>
                 </div>
@@ -33,11 +33,11 @@
       </div>
     </div>
 
-    <div class="container mx-auto text-neutral-content pb-10">
+    <div class="container mx-auto text-neutral-content py-8 lg:py-32">
           {% for project in site.projects %}
           {% assign remainder = forloop.index0 | modulo: 2 %}
           {% if remainder == 0 %}
-          <div class="card lg:card-side bg-base-100 shadow-xl m-8 lg:m-32">
+          <div class="card lg:card-side bg-base-100 shadow-xl">
             <figure > 
               <img src="./assets/images/{{ project.image }}" class="artboard artboard-horizontal phone-3" style="object-fit: cover; object-position: top center;" />
             </figure>
