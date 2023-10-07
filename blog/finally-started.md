@@ -96,10 +96,7 @@ const debounce = (func, delay) => {
 const someReactQueryOrJavascriptWhatever = () => {
     setSpinner(true);
 
-    const results =  await fetch('stuff')
-        .then(() => {
-        }).catch((err) => {
-    });
+    const results =  await fetch('stuff');
     if (!results.ok) {
         pageData.refetch();
         setSpinner(false);
