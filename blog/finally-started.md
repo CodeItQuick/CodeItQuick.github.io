@@ -118,12 +118,12 @@ The above is more interesting with typescript - where we can codify error respon
 For example:
 
 ```js
-const successType =  interface<T> { 
+interface SuccessType<T> { 
    type: 'success'
    data: T
 }
 
-const errorType = interface<T> {
+interface ErrorType<T> {
   type: 'error'
   errNo: T
 }
