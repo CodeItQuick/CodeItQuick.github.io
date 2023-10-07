@@ -91,7 +91,9 @@ const debounce = (func, delay) => {
 }
 ```
 
-## Faction THREE: Do not use try catch at all 
+## Faction THREE: No try catch
+
+Instead of relying on throwing and catch errors in place, use type safety to handle success vs error cases.
 ```js
 const someReactQueryOrJavascriptWhatever = () => {
     setSpinner(true);
