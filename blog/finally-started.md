@@ -82,7 +82,6 @@ This will return true, then return false. Very weird behaviour, so a do-not-atte
 Wrap the function with the below to stop it executing twice when undesired:
 
 ```js
-
 const debounce = (func, delay) => {
   let timeoutId
   return (...args) => {
@@ -90,5 +89,42 @@ const debounce = (func, delay) => {
     timeoutId = setTimeout(() => func(...args), delay)
   }
 }
+```
 
+## Faction THREE: Do not use try catch at all 
+```js
+const someReactQueryOrJavascriptWhatever = () => {
+    setSpinner(true);
+
+    const results =  await fetch('stuff').then(() => {
+    }).catch((err) => {
+    });
+    if (!results.ok) {
+        pageData.refetch();
+        setSpinner(false);
+        // do error case
+        return result;
+    }
+
+    pageData.refetch();
+    setSpinner(false);
+    // do success case
+    return result;
+}
+```
+
+The above is more interesting with typescript - where we can codify error responses as an "error type" and success responses as a "success type".
+
+For example:
+
+```js
+const successType =  interface<T> { 
+   type: 'success'
+   data: T
+}
+
+const errorType = interface<T> {
+  type: 'error'
+  errNo: T
+}
 ```
