@@ -83,7 +83,7 @@ Wrap the function with the below to stop it executing twice when undesired (edit
 
 ```js
 const debounce = (func, delay) => {
-  let timeoutId
+  let timeoutId;
   return () => {
     clearTimeout(timeoutId)
     timeoutId = setTimeout(func, delay)
