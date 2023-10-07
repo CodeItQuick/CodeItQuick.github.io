@@ -79,14 +79,14 @@ This will return true, then return false. Very weird behaviour, so a do-not-atte
 
 ## Debounced Solution (Credit: Mark)
 
-Wrap the function with the below to stop it executing twice when undesired:
+Wrap the function with the below to stop it executing twice when undesired (edited slightly for clarity):
 
 ```js
 const debounce = (func, delay) => {
   let timeoutId
-  return (...args) => {
+  return () => {
     clearTimeout(timeoutId)
-    timeoutId = setTimeout(() => func(...args), delay)
+    timeoutId = setTimeout(() => func, delay)
   }
 }
 ```
