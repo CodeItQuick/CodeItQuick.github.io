@@ -62,7 +62,7 @@ const someReactQueryOrJavascriptWhatever = () => {
 }
 ```
 
-Which is better? I'll let you decide, the second has duplicate code but is "shorter", the first is a bit more verbose.
+Which is better? I'll let you decide, the second has duplicate code but is "shorter", the first is a bit more verbose/maybe more intention revealing.
 
 ### Also a common gotchya in try catch finally land:
 ```js
