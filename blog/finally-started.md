@@ -54,10 +54,10 @@ const someReactQueryOrJavascriptWhatever = () => {
     return await fetch('stuff').then(() => {
         pageData.refetch();
         setSpinner(false);
-    }).catch(() => {
+    }).catch((err) => {
         pageData.refetch();
         setSpinner(false);
-
+        throw err;
     });
 }
 ```
