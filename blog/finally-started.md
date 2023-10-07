@@ -24,7 +24,7 @@ immediately. My intention was to do a fetch, and then do any cleanup necessary (
 
 After contacting my local javascript finally wizards (Juan in trashdevs discord, and Mark in my local dev community) I discovered the way. Which is succinctly put:
 
-Faction One (Try-Catch-Finally)
+### Faction One (Try-Catch-Finally)
 
 ```js
 const someReactQueryOrJavascriptWhatever = async () => {
@@ -46,7 +46,7 @@ const someReactQueryOrJavascriptWhatever = async () => {
 
 The code can also be re-written (yet again) to use a then/catch promise syntax. Something like (and this is me so forgive me for my mistakes):
 
-Faction Two (Then/Catch)
+### Faction Two (Then/Catch)
 ```js
 const someReactQueryOrJavascriptWhatever = () => {
     setSpinner(true);
@@ -64,7 +64,7 @@ const someReactQueryOrJavascriptWhatever = () => {
 
 Which is better? I'll let you decide, the second has duplicate code but is "shorter", the first is a bit more verbose.
 
-Also a common gotchya in try catch finally land:
+### Also a common gotchya in try catch finally land:
 ```js
 const myfunc = () => {
    try {
