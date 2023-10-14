@@ -38,10 +38,10 @@
           {% for project in site.projects %}
 
           <div class="card h-max md:card-side bg-base-100 shadow-xl w-3/8 my-8 max-2xl:w-full custom-xl-mq">
-            <figure class="w-12/12 md:w-4/12">
+            <figure class="w-12/12 md:w-4/12 xl:px-4">
               <img src="./assets/images/{{ project.image }}" class="artboard artboard-horizontal w-full" style="object-fit: cover; object-position: top center;max-height: 50vh;" />
             </figure>
-            <div class="card-body w-8/12 min-w-content flex justify-evenly max-xl:p-16 max-sm:p-8" style="min-width: 50%;max-height: 50vh;">
+            <div class="card-body w-8/12 min-w-content flex justify-evenly px-4" style="min-width: 50%;max-height: 50vh;">
               <h2 class="card-title w-full p-4 text-4xl rounded-lg">{{ project.name }}</h2>
               <ul class="list-disc leading-loose pl-4">
                 <li>{{ project.learningone }}</li>
