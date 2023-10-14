@@ -4,6 +4,6 @@ position: Neverending Perfection Project
 learningone: Learning Domain Driven Design and OOP
 learningtwo: Implementing different kinds of tests
 learningthree: C# and .NET Development 
-image: zombie-man.webp
+image: zombie_in_graveyard_2.jpg
 github: https://github.com/CodeItQuick/StockApplicationASPNetWebMVCIndividualIdentity
 ---
