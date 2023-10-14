@@ -6,7 +6,9 @@ image: video_game_zombies_2.jpg
 
 <h1 class="text-3xl">Finally starting a learning journal</h1>
 
+<p class="py-4">
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
+</p>
 
 ```js
 const someReactQueryOrJavascriptWhatever = () => {
@@ -24,12 +26,14 @@ const someReactQueryOrJavascriptWhatever = () => {
 
 <h2 class="text-2xl">What's wrong with this code?</h2>
 
+<p class="py-4">
 Well - if I double click the code, for example, the spinner will never resolve. I'll get an infinite spin, and depending on the logic
 I'm using, the button/etc. could be disabled. Terrible result. But Why? Well the promise is actually returned in the result, and the finally executes
 immediately. My intention was to do a fetch, and then do any cleanup necessary (eg: refresh the page and remove the spinner).
-
+</p>
+<p class="py-4">
 After contacting my local javascript finally wizards (Juan in trashdevs discord, and Mark in my local dev community) I discovered the way. Which is succinctly put:
-
+</p>
 <h3 class="text-xl"> Faction One (Try-Catch-Finally)</h3>
 
 ```js
@@ -50,7 +54,9 @@ const someReactQueryOrJavascriptWhatever = async () => {
 }
 ```
 
+<p class="py-4">
 The code can also be re-written (yet again) to use a then/catch promise syntax. Something like (and this is me so forgive me for my mistakes):
+</p>
 
 <h3 class="text-xl"> Faction Two (Then/Catch)</h3>
 
@@ -69,7 +75,9 @@ const someReactQueryOrJavascriptWhatever = () => {
 }
 ```
 
+<p class="py-4">
 Which is better? I'll let you decide, the second has duplicate code but is "shorter", the first is a bit more verbose/maybe more intention revealing.
+</p>
 
 <h3 class="text-xl">Also a common gotchya in try catch finally land</h3>
 
@@ -83,11 +91,15 @@ const myfunc = () => {
 }
 ```
 
+<p class="py-4">
 This will return true, then return false. Very weird behaviour, so a do-not-attempt-in-real-life kind of code smell.
+</p>
 
 <h2 class="text-2xl">Debounced Solution (Credit: Mark)</h2>
 
+<p class="py-4">
 Wrap the function with the below to stop it executing twice when undesired:
+</p>
 
 ```js
 const debounce = (func, delay) => {
@@ -101,7 +113,10 @@ const debounce = (func, delay) => {
 
 <h2 class="text-2xl">Faction THREE: No try catch</h2>
 
+<p class="py-4">
 Instead of relying on throwing and catch errors in place, use type safety to handle success vs error cases.
+</p>
+
 ```js
 const someReactQueryOrJavascriptWhatever = () => {
     setSpinner(true);
@@ -121,9 +136,13 @@ const someReactQueryOrJavascriptWhatever = () => {
 }
 ```
 
+<p class="py-4">
 The above is more interesting with typescript - where we can codify error responses as an "error type" and success responses as a "success type".
+</p>
 
+<p class="py-4">
 For example:
+</p>
 
 ```js
 interface SuccessType<T> { 
