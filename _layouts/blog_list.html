@@ -26,8 +26,8 @@
                     <h2 class="text-3xl py-8 bg-base-100 w-full">And now for something completely different.</h2>
                 </div>
                 <div class="bg-base-100 w-full rounded flex justify-between">
-                    <button class="btn btn-accent"><a href="https://www.github.com/CodeItQuick">Github</a></button>
-                    <button class="btn btn-accent"><a href="/">Back to the graveyard</a></button>
+                    <a href="https://www.github.com/CodeItQuick"><button class="btn btn-accent">Github</button></a>
+                    <a href="/"><button class="btn btn-accent">Back to the graveyard</button></a>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                 {{ post.description }}
             </p>
             <div class="card-actions justify-end">
-                <button class="btn btn-primary"><a href="{{ post.url }}">Take me to the post</a></button>
+                <a href="{{ post.url }}"><button class="btn btn-primary">Take me to the post</button></a>
             </div>
         </div>
     </div>

@@ -26,8 +26,8 @@
               <h2 class="text-3xl py-8 bg-base-100 w-full">{{ site.description | default: site.github.project_tagline }}</h2>
             </div>
             <div class="bg-base-100 w-full rounded flex justify-between">
-              <button class="btn btn-accent"><a href="https://www.github.com/CodeItQuick">Github</a></button>
-              <button class="btn btn-accent"><a href="/blog_list.html">Take me to the blog</a></button>
+              <a href="https://www.github.com/CodeItQuick"><button class="btn btn-accent">Github</button></a>
+              <a href="/blog_list.html"><button class="btn btn-accent">Take me to the blog</button></a>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
                 <li>{{ project.learningthree }}</li>
               </ul>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary"><a href="{{ project.github }}">Github Link</a></button>
+                  <a href="{{ project.github }}"><button class="btn btn-primary">Github Link</button></a>
               </div>
             </div>
           </div>
