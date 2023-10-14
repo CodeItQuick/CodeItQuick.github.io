@@ -18,16 +18,16 @@
   <body class="bg-base-200">
     <div class="text-neutral-content bg-base-100">
       <div class="hero py-8 lg:py-32">
-        <div class="hero-content flex flex-col lg:flex-row items-start rounded">
+        <div class="hero-content flex flex-col h-full lg:flex-row items-start rounded">
           <img src="./assets/images/rotting-zombie.jpg" class="rounded-lg shadow-2xl md:pr-8" />
-          <div class="flex flex-col items-center justify-start rounded bg-base-100 h-full xl:pl-8" >
+          <div class="flex flex-col items-center justify-between rounded bg-base-100 h-full xl:pl-8" >
             <h1 class="text-5xl font-bold text-primary w-full rounded w-full">{{ site.title | default: site.github.repository_name }}</h1>
             <div class="rounded-b-lg h-full w-full flex flex-grow flex-col justify-end">
               <p class="py-8 bg-base-100 w-full">{{ site.description | default: site.github.project_tagline }}</p>
-              <div class="bg-base-100 w-full rounded flex justify-between">
-                <button class="btn btn-accent"><a href="https://www.github.com/CodeItQuick">Github</a></button>
-                <button class="btn btn-accent"><a href="/blog_list.html">Take me to the blog</a></button>
-              </div>
+            </div>
+            <div class="bg-base-100 w-full rounded flex justify-between">
+              <button class="btn btn-accent"><a href="https://www.github.com/CodeItQuick">Github</a></button>
+              <button class="btn btn-accent"><a href="/blog_list.html">Take me to the blog</a></button>
             </div>
           </div>
         </div>
