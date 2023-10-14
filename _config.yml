@@ -12,3 +12,5 @@ collections:
        - evercraft.md
        - boomer.md
        - stockpicker.md
+  blog:
+    output: true

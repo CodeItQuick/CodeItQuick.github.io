@@ -1,3 +1,8 @@
+___
+title: Finally starting a learning journal
+excerpt: Learn about try-catch-finally and returning error types in depth.
+___
+
 # Finally starting a learning journal
 
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
