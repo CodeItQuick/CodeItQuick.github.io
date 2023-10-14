@@ -1,6 +1,7 @@
 ___
 title: Finally starting a learning journal
 description: Learn about try-catch-finally and returning error types in depth.
+image: video_game_zombies_2.jpg
 ___
 
 # Finally starting a learning journal
