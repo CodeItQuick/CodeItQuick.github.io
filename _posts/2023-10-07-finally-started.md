@@ -4,7 +4,7 @@ description: Learn about try-catch-finally and returning error types in depth.
 image: video_game_zombies_2.jpg
 ---
 
-# Finally starting a learning journal
+<h1 class="text-3xl py-8 bg-base-100 w-full">Finally starting a learning journal</h1>
 
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
 
