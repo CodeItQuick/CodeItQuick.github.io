@@ -3,6 +3,7 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Project Graveyard
 description: Welcome to the numerous projects I have worked on since 2021
+blog: Musings of the Project Graveyard
 collections:
   projects:
     output: true
