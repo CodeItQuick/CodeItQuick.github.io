@@ -20,7 +20,7 @@
       <div class="hero py-8 lg:py-32">
         <div class="hero-content flex flex-col h-full lg:flex-row items-start rounded">
           <img src="./assets/images/graveyard_5_generated.jpg" class="rounded-lg shadow-2xl w-5/12 md:pr-8" />
-          <div class="flex flex-col items-center justify-between rounded bg-base-100 h-full xl:pl-8" >
+          <div class="flex flex-col items-center justify-between rounded bg-base-100 h-full lg:pl-8" >
             <h1 class="text-5xl font-bold text-primary w-full rounded w-full">{{ site.title | default: site.github.repository_name }}</h1>
             <div class="rounded-b-lg w-full flex flex-col justify-end">
               <h2 class="text-3xl py-8 bg-base-100 w-full">{{ site.description | default: site.github.project_tagline }}</h2>
@@ -34,12 +34,12 @@
       </div>
     </div>
 
-    <div class="w-full bg-base-200 text-neutral-content p-8 xl:p-32 xl:flex xl:flex-wrap">
+    <div class="w-full bg-base-200 text-neutral-content p-8 lg:p-32 lg:flex lg:flex-wrap">
           {% for project in site.projects %}
           {% assign remainder = forloop.index0 | modulo: 2 %}
           {% if remainder == 0 %}
-          <div class="card h-max xl:card-side bg-base-100 shadow-xl w-3/8 my-8 max-2xl:w-full custom-xl-mq">
-            <figure class="w-4/12">
+          <div class="card h-max lg:card-side bg-base-100 shadow-xl w-3/8 my-8 max-2xl:w-full custom-xl-mq">
+            <figure class="w-12/12 lg:w-4/12">
               <img src="./assets/images/{{ project.image }}" class="artboard artboard-horizontal w-full" style="object-fit: cover; object-position: top center;max-height: 50vh;" />
             </figure>
             <div class="card-body w-8/12 min-w-content flex justify-evenly max-xl:p-16 max-sm:p-8" style="min-width: 50%;max-height: 50vh;">
@@ -57,7 +57,7 @@
           {% endif %}
           
           {% if remainder == 1 %}
-          <div class="card h-max xl:card-side bg-base-100 shadow-xl w-3/8 my-8 max-2xl:w-full custom-xl-mq">
+          <div class="card h-max lg:card-side bg-base-100 shadow-xl w-3/8 my-8 max-2xl:w-full custom-xl-mq">
               <div class="card-body min-w-content flex justify-evenly max-xl:p-16 max-sm:p-8" style="min-width: 50%;max-height: 50vh;">
                 <h2 class="card-title w-full p-4 text-4xl rounded-lg">{{ project.name }}</h2>
                 <ul class="list-disc leading-loose pl-4">
