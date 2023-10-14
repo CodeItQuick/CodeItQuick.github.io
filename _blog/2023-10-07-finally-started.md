@@ -1,6 +1,7 @@
 ___
 title: Finally starting a learning journal
 excerpt: Learn about try-catch-finally and returning error types in depth.
+url: /some_url.html
 ___
 
 # Finally starting a learning journal
