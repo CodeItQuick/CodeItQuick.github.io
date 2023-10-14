@@ -1,6 +1,6 @@
 ___
 title: Finally starting a learning journal
-excerpt: Learn about try-catch-finally and returning error types in depth.
+description: Learn about try-catch-finally and returning error types in depth.
 ___
 
 # Finally starting a learning journal
