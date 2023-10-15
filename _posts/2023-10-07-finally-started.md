@@ -10,7 +10,7 @@ image: video_game_zombies_2.jpg
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
 </p>
 
-```js
+```ts
 const someReactQueryOrJavascriptWhatever = () => {
    let results;
    setSpinner(true);
@@ -36,7 +36,7 @@ After contacting my local javascript finally wizards (Juan in trashdevs discord,
 </p>
 <h3 class="text-secondary text-xl my-2"> Faction One (Try-Catch-Finally)</h3>
 
-```js
+```ts
 const someReactQueryOrJavascriptWhatever = async () => {
     setSpinner(true);
 
@@ -60,7 +60,7 @@ The code can also be re-written (yet again) to use a then/catch promise syntax. 
 
 <h3 class="text-secondary text-xl my-2"> Faction Two (Then/Catch)</h3>
 
-```js
+```ts
 const someReactQueryOrJavascriptWhatever = () => {
     setSpinner(true);
 
@@ -81,7 +81,7 @@ Which is better? I'll let you decide, the second has duplicate code but is "shor
 
 <h3 class="text-secondary text-xl my-2">Also a common gotchya in try catch finally land</h3>
 
-```js
+```ts
 const myfunc = () => {
    try {
       return true;
@@ -101,7 +101,7 @@ This will return true, then return false. Very weird behaviour, so a do-not-atte
 Wrap the function with the below to stop it executing twice when undesired:
 </p>
 
-```js
+```ts
 const debounce = (func, delay) => {
   let timeoutId
   return (...args) => {
@@ -117,7 +117,7 @@ const debounce = (func, delay) => {
 Instead of relying on throwing and catch errors in place, use type safety to handle success vs error cases.
 </p>
 
-```js
+```ts
 const someReactQueryOrJavascriptWhatever = () => {
     setSpinner(true);
 
@@ -144,14 +144,14 @@ The above is more interesting with typescript - where we can codify error respon
 For example:
 </p>
 
-```js
+```ts
 interface SuccessType<T> { 
-   type: 'success'
-   data: T
+   type: 'success';
+   data: T;
 }
 
 interface ErrorType<T> {
-  type: 'error'
-  errNo: T
+  type: 'error';
+  errNo: T;
 }
 ```
