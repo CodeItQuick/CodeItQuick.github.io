@@ -6,11 +6,11 @@ layout: recipe
 ---
 
 <h1 class="text-secondary text-3xl my-2">Equipment</h1>
-<p class="py-2">
-* 13x9 baking dish
-* Measuring cups and spoons
-* Chef's knife
-</p>
+<ul class="py-2">
+<li>13x9 baking dish</li>
+<li>Measuring cups and spoons</li>
+<li>Chef's knife</li>
+</ul>
 
 <h1 class="text-secondary text-3xl my-2">Ingredients</h1>
 <p class="py-2">
