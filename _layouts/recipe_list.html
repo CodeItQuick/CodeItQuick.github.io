@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}" data-theme="synthwave">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    {% include head-custom.html %}
+</head>
+
+<body class="bg-base-200">
+<div class="text-neutral-content bg-base-100">
+    <div class="hero py-8 lg:py-32">
+        <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
+            <img src="/assets/images/graveyard_5_generated.jpg" class="rounded-lg shadow-2xl md:w-5/12 md:pr-8" />
+            <div class="flex flex-col items-center justify-between rounded bg-base-100 h-full md:pl-8" >
+                <h1 class="text-5xl font-bold text-primary w-full rounded w-full">{{ site.blog | default: site.github.repository_name }}</h1>
+                <div class="rounded-b-lg w-full flex flex-col justify-end">
+                    <h2 class="text-3xl py-8 bg-base-100 w-full">And now for something completely different.</h2>
+                </div>
+                <div class="bg-base-100 w-full rounded flex justify-between">
+                    <a href="https://www.github.com/CodeItQuick" target="_blank"><button class="btn btn-accent">Github</button></a>
+                    <a href="/"><button class="btn btn-accent">Back to the graveyard</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w-full bg-base-200 text-neutral-content p-8 md:p-32 md:flex md:flex-wrap">
+    {% for post in site.posts %}
+
+    <div class="card md:h-64 md:card-side bg-base-100 shadow-xl w-3/8 my-8 max-2xl:w-full custom-xl-mq">
+        <figure class="h-full 2xl:px-4">
+            <img src="./assets/images/{{ post.image }}" class="artboard artboard-horizontal w-full" style="object-fit: cover; object-position: top center;max-height: 50vh;" />
+        </figure>
+        <div class="card-body w-8/12 min-w-content flex justify-evenly px-4 w-full" style="min-width: 50%;max-height: 50vh;">
+            <h2 class="card-title w-full p-4 text-4xl rounded-lg">{{ post.title }}</h2>
+            <p class="list-disc leading-loose pl-4">
+                {{ post.description }}
+            </p>
+            <div class="card-actions justify-end">
+                <a href="{{ post.url }}"><button class="btn btn-primary">Take me to the post</button></a>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+</body>
