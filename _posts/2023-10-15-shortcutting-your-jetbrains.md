@@ -53,7 +53,7 @@ Moving lines up and down is slightly faster than cut/paste and looks a little bi
 | Ctrl + Alt + F | Extract Field                                       |
 
 <p class="py-2">
-Most of the refactoring shortcuts are ctrl + alt + <some command>. If you want to learn
+Most of the refactoring shortcuts are ctrl + alt + *some command*. If you want to learn
 one shortcut only, remember the the first one. That shortcut (alt + enter) will allow
 for a lot of functionality that is built-in to the editor.
 </p>
