@@ -15,3 +15,5 @@ collections:
        - stockpicker.md
   posts:
     output: true
+  recipes:
+    output: true
