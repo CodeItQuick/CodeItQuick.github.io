@@ -58,4 +58,6 @@ one shortcut only, remember the the first one. That shortcut (alt + enter) will 
 for a lot of functionality that is built-in to the editor.
 </p>
 
-<a href="/blog_list.html"><button class="btn btn-accent">Take me to the blog</button></a>
+<div>
+    <a href="/blog_list.html"><button class="btn btn-accent">Take me to the blog</button></a>
+</div>
