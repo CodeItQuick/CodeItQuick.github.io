@@ -2,6 +2,7 @@
 title: Mexican Chicken Casserole
 description: Very quick recipe to make, and delicious.
 image: Firefly_Zombie_eating_54901.jpg
+layout: recipe
 ---
 
 <h1 class="text-secondary text-3xl my-2">Equipment</h1>
