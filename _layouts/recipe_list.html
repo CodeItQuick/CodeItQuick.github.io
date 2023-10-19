@@ -16,44 +16,69 @@
 </head>
 
 <body class="bg-base-200">
-<div class="text-neutral-content bg-base-100">
-    <div class="hero py-8 lg:py-32">
-        <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
-            <img src="/assets/images/graveyard_5_generated.jpg" class="rounded-lg shadow-2xl md:w-5/12 md:pr-8" />
-            <div class="flex flex-col items-center justify-between rounded bg-base-100 h-full md:pl-8" >
-                <h1 class="text-5xl font-bold text-primary w-full rounded w-full">Good and Fast Recipes</h1>
-                <div class="rounded-b-lg w-full flex flex-col justify-end">
-                    <h2 class="text-3xl py-8 bg-base-100 w-full">Quick and beginner-friendly recipes I make regularly.</h2>
-                </div>
-                <div class="bg-base-100 w-full rounded flex justify-between">
-                    <a href="https://www.github.com/CodeItQuick" target="_blank"><button class="btn btn-accent">Github</button></a>
-                    <a href="/recipe_list.html"><button class="btn btn-accent">Take me to the recipes</button></a>
-                    <a href="/"><button class="btn btn-accent">Back to the graveyard</button></a>
+    <div class="navbar bg-primary text-primary-content">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            CodeItQuick
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="/">Projects</a></li>
+            <li><a href="/blog_list.html">Blog</a></li>
+            <li><a href="/recipe_list.html">Recipes</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl" href="https://www.github.com/CodeItQuick" target="_blank">CodeItQuick</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="/">Projects</a></li>
+          <li><a href="/blog_list.html">Blog</a></li>
+          <li><a href="/recipe_list.html">Recipes</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn" href="https://www.github.com/CodeItQuick" target="_blank">Github</a>
+      </div>
+    </div>
+    <div class="text-neutral-content bg-base-100">
+        <div class="hero py-8 lg:py-32">
+            <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
+                <img src="/assets/images/graveyard_5_generated.jpg" class="rounded-lg shadow-2xl md:w-5/12 md:pr-8" />
+                <div class="flex flex-col items-center justify-between rounded bg-base-100 h-full md:pl-8" >
+                    <h1 class="text-5xl font-bold text-primary w-full rounded w-full">Good and Fast Recipes</h1>
+                    <div class="rounded-b-lg w-full flex flex-col justify-end">
+                        <h2 class="text-3xl py-8 bg-base-100 w-full">Quick and beginner-friendly recipes I make regularly.</h2>
+                    </div>
+                    <div class="bg-base-100 w-full rounded flex justify-between">
+                        <a href="https://www.github.com/CodeItQuick" target="_blank"><button class="btn btn-accent">Github</button></a>
+                        <a href="/recipe_list.html"><button class="btn btn-accent">Take me to the recipes</button></a>
+                        <a href="/"><button class="btn btn-accent">Back to the graveyard</button></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="w-full bg-base-200 text-neutral-content p-8 md:p-32 md:flex md:flex-wrap">
-    {% for recipe in site.recipes %}
-
-    <div class="card md:h-64 md:card-side bg-base-100 shadow-xl w-3/8 my-8 max-2xl:w-full custom-xl-mq">
-        <figure class="h-full 2xl:px-4">
-            <img src="./assets/images/{{ recipe.image }}" class="artboard artboard-horizontal w-full" style="object-fit: cover; object-position: top center;max-height: 50vh;" />
-        </figure>
-        <div class="card-body w-8/12 min-w-content flex justify-evenly px-4 w-full" style="min-width: 50%;max-height: 50vh;">
-            <h2 class="card-title w-full p-4 text-4xl rounded-lg">{{ recipe.title }}</h2>
-            <p class="list-disc leading-loose pl-4">
-                {{ recipe.description }}
-            </p>
-            <div class="card-actions justify-end">
-                <a href="{{ recipe.url }}"><button class="btn btn-primary">Take me to the post</button></a>
+    
+    <div class="w-full bg-base-200 text-neutral-content p-8 md:p-32 md:flex md:flex-wrap">
+        {% for recipe in site.recipes %}
+    
+        <div class="card md:h-64 md:card-side bg-base-100 shadow-xl w-3/8 my-8 max-2xl:w-full custom-xl-mq">
+            <figure class="h-full 2xl:px-4">
+                <img src="./assets/images/{{ recipe.image }}" class="artboard artboard-horizontal w-full" style="object-fit: cover; object-position: top center;max-height: 50vh;" />
+            </figure>
+            <div class="card-body w-8/12 min-w-content flex justify-evenly px-4 w-full" style="min-width: 50%;max-height: 50vh;">
+                <h2 class="card-title w-full p-4 text-4xl rounded-lg">{{ recipe.title }}</h2>
+                <p class="list-disc leading-loose pl-4">
+                    {{ recipe.description }}
+                </p>
+                <div class="card-actions justify-end">
+                    <a href="{{ recipe.url }}"><button class="btn btn-primary">Take me to the post</button></a>
+                </div>
             </div>
         </div>
+    
+        {% endfor %}
     </div>
-
-    {% endfor %}
-</div>
 
 </body>
