@@ -16,31 +16,9 @@
   </head>
 
   <body class="bg-base-200">
-    <div class="navbar bg-primary text-primary-content">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            CodeItQuick
-          </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a href="/">Projects</a></li>
-            <li><a href="/blog_list.html">Blog</a></li>
-            <li><a href="/recipe_list.html">Recipes</a></li>
-          </ul>
-        </div>
-        <a class="btn btn-ghost normal-case text-xl" href="https://www.github.com/CodeItQuick" target="_blank">CodeItQuick</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="/">Projects</a></li>
-          <li><a href="/blog_list.html">Blog</a></li>
-          <li><a href="/recipe_list.html">Recipes</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <a class="btn" href="https://www.github.com/CodeItQuick" target="_blank">Github</a>
-      </div>
-    </div>
+
+    {% include navbar.html %}
+
     <div class="text-neutral-content bg-base-100">
       <div class="hero py-8 lg:py-32">
         <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
