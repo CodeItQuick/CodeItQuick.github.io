@@ -55,26 +55,12 @@
             </div>
         </div>
     </div>
-    
+
     <div class="w-full bg-base-200 text-neutral-content p-8 md:p-32 md:flex md:flex-wrap">
         {% for recipe in site.recipes %}
-    
-        <div class="card md:h-64 md:card-side bg-base-100 shadow-xl w-3/8 my-8 max-2xl:w-full custom-xl-mq">
-            <figure class="h-full 2xl:px-4">
-                <img src="./assets/images/{{ recipe.image }}" class="artboard artboard-horizontal w-full" style="object-fit: cover; object-position: top center;max-height: 50vh;" />
-            </figure>
-            <div class="card-body w-8/12 min-w-content flex justify-evenly px-4 w-full" style="min-width: 50%;max-height: 50vh;">
-                <h2 class="card-title w-full p-4 text-4xl rounded-lg">{{ recipe.title }}</h2>
-                <p class="list-disc leading-loose pl-4">
-                    {{ recipe.description }}
-                </p>
-                <div class="card-actions justify-end">
-                    <a href="{{ recipe.url }}"><button class="btn btn-primary">Take me to the post</button></a>
-                </div>
-            </div>
-        </div>
-    
+
+        {% include component_list_description.html name=recipe.name image=recipe.image description=recipe.description url=recipe.url  %}
+
         {% endfor %}
     </div>
-
 </body>
