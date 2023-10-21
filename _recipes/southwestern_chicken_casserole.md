@@ -1,5 +1,5 @@
 ---
-title: Southwestern Chicken Casserole
+name: Southwestern Chicken Casserole
 description: More casserole, Southwestern this time!
 image: Firefly_Zombie_eating_61263.jpg
 layout: recipe

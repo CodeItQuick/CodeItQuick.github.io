@@ -1,5 +1,5 @@
 ---
-title: Mexican Chicken Casserole
+name: Mexican Chicken Casserole
 description: Very quick recipe to make, and delicious.
 image: Firefly_Zombie_eating_73163.jpg
 layout: recipe
