@@ -1,6 +1,6 @@
 ---
-name: Mexican Chicken Casserole
-description: Very quick recipe to make, and delicious.
+name: Korean Ground Turkey
+description: Beef substituted with turkey!
 image: Firefly_Zombie_eating_73163.jpg
 layout: recipe
 ---
