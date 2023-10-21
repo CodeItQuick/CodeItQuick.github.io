@@ -19,7 +19,7 @@
 
     {% include hero.html title=page.title description=site.description image="graveyard_5_generated.jpg" %}
 
-    <div class="w-full bg-base-200 text-neutral-content p-8 md:p-32 md:flex md:flex-wrap">
+    <div class="w-full bg-base-200 text-neutral-content md:p-8 md:grid md:gap-4 md:grid-cols-2">
         {% for recipe in site.recipes %}
 
         {% include component_list_description.html name=recipe.name image=recipe.image description=recipe.description url=recipe.url  %}
