@@ -1,7 +1,7 @@
 ---
 name: Finally starting a learning journal
 description: Learn about try-catch-finally and returning error types in depth.
-image: video_game_zombies_2.jpg
+image: video_game_zombies_2_instasize.jpg
 ---
 
 <h1 class="text-secondary text-3xl my-2">Finally starting a learning journal</h1>

@@ -1,7 +1,7 @@
 ---
 name: Shortcutting your jetbrains
 description: Learn about how to use shortcuts in your jetbrains for improved productivity.
-image: zombie_in_a_graveyard_3.jpg
+image: zombie_in_a_graveyard_3_instasize.jpg
 ---
 
 <h1 class="text-secondary text-3xl my-2">Shortcutting your jetbrains (Windows only)</h1>
