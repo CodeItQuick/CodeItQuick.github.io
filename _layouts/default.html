@@ -81,7 +81,7 @@
     <div class="w-full bg-base-200 text-neutral-content p-8 md:p-32 md:flex md:flex-wrap">
       {% for project in site.projects %}
 
-      {% include component_list.html name="{{ project.name }}" learningone="{{ project.learningone }}" learningtwo="{{ project.learningtwo }}" learningthree="{{ project.learningthree }}" github="{{ project.github }}"  %}
+      {% include component_list.html name="{{ project.name }}" image="{{ project.image }}" learningone="{{ project.learningone }}" learningtwo="{{ project.learningtwo }}" learningthree="{{ project.learningthree }}" github="{{ project.github }}"  %}
 
       {% endfor %}
     </div>
