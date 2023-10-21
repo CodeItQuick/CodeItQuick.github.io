@@ -7,4 +7,5 @@ learningthree: Learned how to wrap different elements within a website that have
 image: many_zombies_2.jpg
 github: https://github.com/CodeItQuick/expense-report-kata-ensemble
 githubtwo: https://github.com/CodeItQuick/ExpenseReportCSharp
+progress: complete
 ---

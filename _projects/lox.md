@@ -6,4 +6,5 @@ learningtwo: Learned the importance of writing sufficient number of characteriza
 learningthree: Learned more about programming languages
 image: zombie_in_graveyard_one_instasize.jpg
 github: https://github.com/CodeItQuick/my-own-programming-language
+progress: complete
 ---
