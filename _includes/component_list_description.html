@@ -1,0 +1,15 @@
+
+<div class="card md:h-64 md:card-side bg-base-100 shadow-xl w-full my-4" >
+    <figure>
+        <img src="./assets/images/{{ include.image }}" class="artboard artboard-horizontal" style="object-fit: cover; object-position: top center;min-height:100%;max-height:40vh;" />
+    </figure>
+    <div class="card-body w-8/12 min-w-content flex justify-first px-4 w-full" style="min-width:50%;max-height:30vh;min-height:420px;">
+        <h2 class="card-title w-full text-4xl rounded-lg">{{ include.name }}</h2>
+        <p class="list-disc ml-2">
+         {{ include.description }}
+        </p>
+        <div class="card-actions justify-end">
+            <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary">Github Link</button></a>
+        </div>
+    </div>
+</div>
