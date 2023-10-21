@@ -21,7 +21,7 @@
 
     {% include hero.html title=site.title description=site.description image="graveyard_5_generated.jpg" %}
 
-    <div class="w-full bg-base-200 text-neutral-content p-8 md:p-8 md:grid md:gap-4 md:grid-cols-2">
+    <div class="w-full bg-base-200 text-neutral-content p-8 md:p-8 md:grid md:gap-16 md:grid-cols-2">
       {% for project in site.projects %}
 
       {% include component_list.html name=project.name image=project.image learningone=project.learningone learningtwo=project.learningtwo learningthree=project.learningthree github=project.github  %}
