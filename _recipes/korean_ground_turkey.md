@@ -1,7 +1,7 @@
 ---
 name: Korean Ground Turkey
 description: Beef substituted with turkey!
-image: Firefly_Zombie_eating_73163.jpg
+image: Firefly_Zombie_eating_73163_instasize.jpg
 layout: recipe
 ---
 

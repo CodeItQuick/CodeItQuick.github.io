@@ -1,7 +1,7 @@
 ---
 name: Southwestern Chicken Casserole
 description: More casserole, Southwestern this time!
-image: Firefly_Zombie_eating_61263.jpg
+image: Firefly_Zombie_eating_61263_instasize.jpg
 layout: recipe
 ---
 <h1 class="text-secondary text-3xl my-2">Ingredients</h1>
