@@ -16,20 +16,8 @@
 
 <body class="bg-base-200">
     {% include navbar.html %}
-    <div class="text-neutral-content bg-base-100">
-        <div class="hero py-8 lg:py-32">
-            <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
-                <img src="/assets/images/graveyard_5_generated.jpg" class="rounded-lg shadow-2xl md:w-5/12 md:pr-8" />
-                <div class="flex flex-col items-center justify-between rounded bg-base-100 h-full md:pl-8" >
-                    <h1 class="text-5xl font-bold text-primary w-full rounded w-full">Good and Fast Recipes</h1>
-                    <div class="rounded-b-lg w-full flex flex-col justify-end">
-                        <h2 class="text-3xl py-8 bg-base-100 w-full">Quick and beginner-friendly recipes I make regularly.</h2>
-                    </div>
-                    <div class="width-full"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    {% include hero.html title=page.title description=site.description %}
 
     <div class="w-full bg-base-200 text-neutral-content p-8 md:p-32 md:flex md:flex-wrap">
         {% for recipe in site.recipes %}
