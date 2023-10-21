@@ -14,17 +14,17 @@ layout: recipe
 
 <h1 class="text-secondary text-3xl my-2">Ingredients</h1>
 <ul class="py-2">
-<li>3 cups crushed tortilla chips or Dorito Nacho Cheese chips</li>
-<li>15 oz. black beans drained and rinsed</li>
-<li>2 cups chopped cooked chicken (rotisserie chicken works well)</li>
-<li>1 teaspoon of ground cumin</li>
-<li>21 oz. cream of chicken soup 2 (10.5 oz) cans. DO NOT add any water or milk</li>
-<li>10 oz. can Rotel tomatoes undrained</li>
-<li>2 cups shredded jack cheese</li>
-<li>2 cups shredded medium cheddar cheese</li>
-<li>1 tomato diced</li>
-<li>1 bunch cilantro rinsed and chopped</li>
-<li>Jalapenos optional</li>
+    <li>3 cups crushed tortilla chips or Dorito Nacho Cheese chips</li>
+    <li>15 oz. black beans drained and rinsed</li>
+    <li>2 cups chopped cooked chicken (rotisserie chicken works well)</li>
+    <li>1 teaspoon of ground cumin</li>
+    <li>21 oz. cream of chicken soup 2 (10.5 oz) cans. DO NOT add any water or milk</li>
+    <li>10 oz. can Rotel tomatoes undrained</li>
+    <li>2 cups shredded jack cheese</li>
+    <li>2 cups shredded medium cheddar cheese</li>
+    <li>1 tomato diced</li>
+    <li>1 bunch cilantro rinsed and chopped</li>
+    <li>Jalapenos optional</li>
 </ul>
 <h1 class="text-secondary text-3xl my-2">Instructions</h1>
 <ol class="py-2">
