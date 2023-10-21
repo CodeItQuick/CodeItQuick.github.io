@@ -48,5 +48,5 @@ it evenly over the entire top. Add canned tomatoes over the soup layer.</li>
 When ready to bake, remove the plastic wrap and sprinkle with chips. Bake until hot and bubbly.</li>
 </ol>
 <div>
-    <a href="/blog_list.html"><button class="btn btn-accent">Take me to the blog</button></a>
+    <a href="/recipe_list.html"><button class="btn btn-accent">Take me to the recipes</button></a>
 </div>
