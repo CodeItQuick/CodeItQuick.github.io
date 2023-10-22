@@ -2,19 +2,19 @@
 ---
 
 .markdown {
-    > h1 {
-        .text-secondary;
-        .text-3xl;
-        .my-2;
+    h1 {
+        @extend .text-secondary;
+        @extend .text-3xl;
+        @extend .my-2;
     }
-    > h2 {
-        .text-secondary;
-        .text-2xl;
-        .my-2;
+    h2 {
+        @extend .text-secondary;
+        @extend .text-2xl;
+        @extend .my-2;
     }
-    > h3 {
-        .text-secondary;
-        .text-xl;
-        .my-2;
+    h3 {
+        @extend .text-secondary;
+        @extend .text-xl;
+        @extend .my-2;
     }
 }
