@@ -7,15 +7,15 @@
 @layer components {
     .markdown {
         h1 {
-            @apply text-secondary text-3xl my-2
+            @apply text-secondary text-3xl my-2;
         }
 
         h2 {
-            @apply text-secondary text-2xl my-2
+            @apply text-secondary text-2xl my-2;
         }
 
         h3 {
-            @apply text-secondary text-xl my-2
+            @apply text-secondary text-xl my-2;
         }
     }
 }
