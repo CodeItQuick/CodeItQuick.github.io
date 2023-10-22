@@ -154,4 +154,4 @@ interface ErrorType<T> {
   errNo: T;
 }
 ```
-(Take me to the blog)[/blog_list.html]
+[Take me to the blog]({{ site.baseurl }}{% link /blog_list.html %})
