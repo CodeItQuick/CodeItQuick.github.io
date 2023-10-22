@@ -1,20 +1,21 @@
 ---
 ---
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.markdown {
-    h1 {
-        @extend .text-secondary;
-        @extend .text-3xl;
-        @extend .my-2;
-    }
-    h2 {
-        @extend .text-secondary;
-        @extend .text-2xl;
-        @extend .my-2;
-    }
-    h3 {
-        @extend .text-secondary;
-        @extend .text-xl;
-        @extend .my-2;
+@layer components {
+    .markdown {
+        h1 {
+            @apply text-secondary text-3xl my-2
+        }
+
+        h2 {
+            @apply text-secondary text-2xl my-2
+        }
+
+        h3 {
+            @apply text-secondary text-xl my-2
+        }
     }
 }
