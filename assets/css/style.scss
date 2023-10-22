@@ -4,10 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
     .markdown {
         h1 {
-            @apply text-secondary text-3xl my-2;
+            @extend text-secondary;
+            @extend text-3xl;
+            @extend my-2;
         }
 
         h2 {
