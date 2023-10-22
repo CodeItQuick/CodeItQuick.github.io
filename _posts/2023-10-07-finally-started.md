@@ -26,11 +26,10 @@ const someReactQueryOrJavascriptWhatever = () => {
 
 ## What's wrong with this code?
 
-<p class="py-2">
 Well - if I double click the code, for example, the spinner will never resolve. I'll get an infinite spin, and depending on the logic
 I'm using, the button/etc. could be disabled. Terrible result. But Why? Well the promise is actually returned in the result, and the finally executes
 immediately. My intention was to do a fetch, and then do any cleanup necessary (eg: refresh the page and remove the spinner).
-</p>
+
 <p class="py-2">
 After contacting my local javascript finally wizards (Juan in trashdevs discord, and Mark in my local dev community) I discovered the way. Which is succinctly put:
 </p>
