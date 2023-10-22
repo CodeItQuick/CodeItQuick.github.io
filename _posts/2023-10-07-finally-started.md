@@ -94,7 +94,7 @@ const myfunc = () => {
 This will return true, then return false. Very weird behaviour, so a do-not-attempt-in-real-life kind of code smell.
 
 
-<h2 class="text-secondary text-2xl">Debounced Solution (Credit: Mark)</h2>
+## Debounced Solution (Credit: Mark)
 
 
 Wrap the function with the below to stop it executing twice when undesired:
