@@ -6,9 +6,9 @@ image: video_game_zombies_2_instasize.jpg
 
 # Finally starting a learning journal
 
-<p class="py-2">
+
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
-</p>
+
 
 ```ts
 const someReactQueryOrJavascriptWhatever = () => {
@@ -30,9 +30,9 @@ Well - if I double click the code, for example, the spinner will never resolve. 
 I'm using, the button/etc. could be disabled. Terrible result. But Why? Well the promise is actually returned in the result, and the finally executes
 immediately. My intention was to do a fetch, and then do any cleanup necessary (eg: refresh the page and remove the spinner).
 
-<p class="py-2">
+
 After contacting my local javascript finally wizards (Juan in trashdevs discord, and Mark in my local dev community) I discovered the way. Which is succinctly put:
-</p>
+
 ### Faction One (Try-Catch-Finally)
 
 ```ts
@@ -53,9 +53,9 @@ const someReactQueryOrJavascriptWhatever = async () => {
 }
 ```
 
-<p class="py-2">
+
 The code can also be re-written (yet again) to use a then/catch promise syntax. Something like (and this is me so forgive me for my mistakes):
-</p>
+
 
 ### Faction Two (Then/Catch)
 
@@ -74,9 +74,9 @@ const someReactQueryOrJavascriptWhatever = () => {
 }
 ```
 
-<p class="py-2">
+
 Which is better? I'll let you decide, the second has duplicate code but is "shorter", the first is a bit more verbose/maybe more intention revealing.
-</p>
+
 
 ### Also a common gotchya in try catch finally land
 
@@ -90,15 +90,15 @@ const myfunc = () => {
 }
 ```
 
-<p class="py-2">
+
 This will return true, then return false. Very weird behaviour, so a do-not-attempt-in-real-life kind of code smell.
-</p>
+
 
 <h2 class="text-secondary text-2xl">Debounced Solution (Credit: Mark)</h2>
 
-<p class="py-2">
+
 Wrap the function with the below to stop it executing twice when undesired:
-</p>
+
 
 ```ts
 const debounce = (func, delay) => {
@@ -112,9 +112,9 @@ const debounce = (func, delay) => {
 
 ## Faction THREE: No try catch
 
-<p class="py-2">
+
 Instead of relying on throwing and catch errors in place, use type safety to handle success vs error cases.
-</p>
+
 
 ```ts
 const someReactQueryOrJavascriptWhatever = () => {
@@ -135,13 +135,13 @@ const someReactQueryOrJavascriptWhatever = () => {
 }
 ```
 
-<p class="py-2">
-The above is more interesting with typescript - where we can codify error responses as an "error type" and success responses as a "success type".
-</p>
 
-<p class="py-2">
+The above is more interesting with typescript - where we can codify error responses as an "error type" and success responses as a "success type".
+
+
+
 For example:
-</p>
+
 
 ```ts
 interface SuccessType<T> { 
