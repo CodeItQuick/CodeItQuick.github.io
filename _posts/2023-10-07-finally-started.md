@@ -4,7 +4,7 @@ description: Learn about try-catch-finally and returning error types in depth.
 image: video_game_zombies_2_instasize.jpg
 ---
 
-<h1 class="text-secondary text-3xl my-2">Finally starting a learning journal</h1>
+# Finally starting a learning journal
 
 <p class="py-2">
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
@@ -24,7 +24,7 @@ const someReactQueryOrJavascriptWhatever = () => {
 }
 ```
 
-<h2 class="text-secondary text-2xl my-2">What's wrong with this code?</h2>
+## What's wrong with this code?
 
 <p class="py-2">
 Well - if I double click the code, for example, the spinner will never resolve. I'll get an infinite spin, and depending on the logic
@@ -34,7 +34,7 @@ immediately. My intention was to do a fetch, and then do any cleanup necessary (
 <p class="py-2">
 After contacting my local javascript finally wizards (Juan in trashdevs discord, and Mark in my local dev community) I discovered the way. Which is succinctly put:
 </p>
-<h3 class="text-secondary text-xl my-2"> Faction One (Try-Catch-Finally)</h3>
+### Faction One (Try-Catch-Finally)
 
 ```ts
 const someReactQueryOrJavascriptWhatever = async () => {
@@ -58,7 +58,7 @@ const someReactQueryOrJavascriptWhatever = async () => {
 The code can also be re-written (yet again) to use a then/catch promise syntax. Something like (and this is me so forgive me for my mistakes):
 </p>
 
-<h3 class="text-secondary text-xl my-2"> Faction Two (Then/Catch)</h3>
+### Faction Two (Then/Catch)
 
 ```ts
 const someReactQueryOrJavascriptWhatever = () => {
@@ -79,7 +79,7 @@ const someReactQueryOrJavascriptWhatever = () => {
 Which is better? I'll let you decide, the second has duplicate code but is "shorter", the first is a bit more verbose/maybe more intention revealing.
 </p>
 
-<h3 class="text-secondary text-xl my-2">Also a common gotchya in try catch finally land</h3>
+###Also a common gotchya in try catch finally land
 
 ```ts
 const myfunc = () => {
@@ -111,7 +111,7 @@ const debounce = (func, delay) => {
 }
 ```
 
-<h2 class="text-secondary text-2xl my-2">Faction THREE: No try catch</h2>
+## Faction THREE: No try catch
 
 <p class="py-2">
 Instead of relying on throwing and catch errors in place, use type safety to handle success vs error cases.

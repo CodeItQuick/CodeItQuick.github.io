@@ -1,12 +1,19 @@
----
----
 
-@import "{{ site.theme }}";
 
-@media (min-width: 1536px) {
-    .custom-xl-mq {
-        max-width: 44%;
-        margin: 2rem;
-        min-height: 30rem;
+.markdown {
+    h1 {
+        .text-secondary;
+        .text-3xl;
+        .my-2;
+    }
+    h2 {
+        .text-secondary;
+        .text-2xl;
+        .my-2;
+    }
+    h3 {
+        .text-secondary;
+        .text-xl;
+        .my-2;
     }
 }
