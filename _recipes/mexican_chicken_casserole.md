@@ -5,12 +5,10 @@ image: Firefly_Zombie_eating_54901__instasize.jpg
 layout: recipe
 ---
 
-<h1 class="text-secondary text-3xl my-2">Equipment</h1>
-<ul class="py-2">
-<li>13x9 baking dish</li>
-<li>Measuring cups and spoons</li>
-<li>Chef's knife</li>
-</ul>
+# Equipment
+1. 13x9 baking dish
+2. Measuring cups and spoons
+3. Chef's knife
 
 # Ingredients
 
