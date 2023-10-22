@@ -3,20 +3,20 @@
 
 .markdown {
     h1 {
-        @include text-secondary;
-        @include text-3xl;
-        @include my-2;
+        @extend .text-secondary;
+        @extend .text-3xl;
+        @extend .my-2;
     }
 
     h2 {
-        @include text-secondary;
-        @include text-2xl;
-        @include my-2;
+        @extend .text-secondary;
+        @extend .text-2xl;
+        @extend .my-2;
     }
 
     h3 {
-        @include text-secondary;
-        @include text-xl;
-        @include my-2;
+        @extend .text-secondary;
+        @extend .text-xl;
+        @extend .my-2;
     }
 }
