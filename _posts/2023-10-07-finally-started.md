@@ -154,6 +154,4 @@ interface ErrorType<T> {
   errNo: T;
 }
 ```
-<div>
-    <a href="/blog_list.html"><button class="btn btn-accent">Take me to the blog</button></a>
-</div>
+(Take me to the blog)[/blog_list.html]
