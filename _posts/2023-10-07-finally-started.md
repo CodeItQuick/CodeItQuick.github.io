@@ -79,7 +79,7 @@ const someReactQueryOrJavascriptWhatever = () => {
 Which is better? I'll let you decide, the second has duplicate code but is "shorter", the first is a bit more verbose/maybe more intention revealing.
 </p>
 
-###Also a common gotchya in try catch finally land
+### Also a common gotchya in try catch finally land
 
 ```ts
 const myfunc = () => {
