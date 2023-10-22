@@ -1,7 +1,7 @@
 ---
 ---
 
-@mixin markdown {
+.markdown {
     h1 {
         @include text-secondary;
         @include text-3xl;
