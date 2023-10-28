@@ -32,4 +32,4 @@ shredded cheese, salsa, and green onions.
 # Tips & Notes
 1. Nutrition Information is for a serving of 8 people and includes the 1/2 cup of Colby Jack cheese
 
-[Take me to the blog]({% link blog_list.md %})
+[Take me to the recipes]({% link recipe_list.md %})
