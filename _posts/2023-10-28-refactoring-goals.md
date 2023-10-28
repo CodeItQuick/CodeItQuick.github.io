@@ -64,7 +64,7 @@ an example of "first" in my mind. For the code that you are concerned with, make
 above that, where we are fundamentally changing large portions of the code into a single area, these are the refactors for the other three bins -
 anywhere from never doing them, to tidying right after we are done the feature.
 
-## When to refactor
+## What to do during downtime
 
 Sometimes when we are given tasks they may stall - either we need an answer from the client, we don't technically know how to do something and want
 to bring it to the group of developers in the parking lot items, or for a variety of other caveats. During this downtime its good to add more tests, 
