@@ -16,7 +16,7 @@ So after my big aha, I put the task I'm given at the "design" phase, and then st
 requesting into the codebase. The other big "aha!" moment immediately after this - just because I PR something into the 
 codebase doesn't mean the actual _behaviour_ of the codebase has to change. Really I've just made a stepwise change 
 that improves something, adds a feature, or the ability to add a feature. My current task is to get rid of some large methods
-on an even larger task. I start making each move of a large method a PR, and thus it is also a story on my board. Whether
+on an even larger class. I start making each move of a large method a PR, and thus it is also a story on my board. Whether
 its separating domain logic from database logic, or figuring out where that gnarly utility method _actually_ belongs and moving 
 it, they are all stories.
 
