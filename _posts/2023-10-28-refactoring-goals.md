@@ -1,3 +1,8 @@
+---
+name: Refactoring Goals
+description: Improving the codebase at work - safely
+image: halloween-background-with-zombie-hand-bursting-out-ground.jpg
+---
 # Refactoring Goals
 
 Having been at my current place for 18 months, I've started taking on larger refactoring goals. Initially I don't think its very wise
@@ -14,7 +19,7 @@ So I played it somewhat safe (I'm sure certain people would disagree with this a
 be made over months, until one day, it was the day. I was given the opportunity to refactor some of the code to be "my way" - or 
 not really "my way", but an improvement over the current implementation. A clearly better implementation at that.
 
-Here is my unvetted list of good reasons to be given a large task to refactor:
+Here is my un-vetted list of good reasons to be given a large task to refactor:
 1. God Class: This class is much too large. Reducing the lines of your largest class by 1/2 or 2/3 has obvious value - now you aren't dealing with as much clutter.
 2. Feature Envy: These methods or classes clearly don't belong here. Organizing the code better has value in that simplifications can later happen.
 3. Develop the business/domain layer: A more rich domain allows code that is more maintainable, easier to reason about, and frankly you can just move faster.
@@ -56,7 +61,7 @@ anywhere from never doing them, to tidying right after we are done the feature.
 
 Sometimes when we are given tasks they may stall - either we need an answer from the client, we don't technically know how to do something and want
 to bring it to the group of developers in the parking lot items, or for a variety of other caveats. During this downtime its good to add more tests, 
-these are afterall the things we tend to skimp on when going gets tough, and we need to ship the feature. Making sure the current code works and is
+these are after-all the things we tend to skimp on when going gets tough, and we need to ship the feature. Making sure the current code works and is
 functioning is a good use of downtime that pays off later - and saves us from skipping the work (likely unnecessarily). This downpayment we're making
 into the codebase also allows us to do the large (and very fun) refactors later with confidence - we know the code works the same because the tests say so.
 
