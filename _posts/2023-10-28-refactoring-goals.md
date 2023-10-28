@@ -1,7 +1,7 @@
 ---
 name: Refactoring Goals
 description: Improving the codebase at work - safely
-image: halloween-background-with-zombie-hand-bursting-out-ground.jpg
+image: halloween-background-with-zombie-hand-bursting-out-ground_resized.jpg
 ---
 # Refactoring Goals
 
