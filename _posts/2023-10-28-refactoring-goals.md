@@ -31,7 +31,7 @@ touch often, or may be a critical function in your application. There is bad cod
 
 Reading Kent Beck's new book on "Tidy First", he has made me realize I do a bunch of mini-refactors in the course of every pull request.
 These involve activities like making empty lines more logical, inling poorly-cohesive methods, extracting methods that are too much to read
-at once, etc. I've included the list from his book released just a couple weeks ago below (Also highly encourage anyone to read the book: 
+at once, etc. I've included the list from his book released just a couple weeks ago below (Also highly encourage anyone to read the book): 
 
 1. Guard Clauses
 2. Remove Dead Code
