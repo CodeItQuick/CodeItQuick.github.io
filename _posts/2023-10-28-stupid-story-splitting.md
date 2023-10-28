@@ -1,16 +1,16 @@
 ---
 name: Story Splitting
 description: A thought experiment turns into thin vertical slices
-image: zombie_in_a_graveyard_3_instasize.jpg
+image: green_purple_zombie_resized.jpg
 ---
 
 # Story Splitting
 
 The concept of story splitting is simple enough. Your engineering manager wants you to go "faster"; really what he's asking
 for is more story points per sprint. The way to achieve this isn't actually to "code faster", since we're limited in how
-fast we code by a multitude of things. The real answer is to give your manager more insight into what your doing at any
+fast we code by a multitude of things. The real answer is to give your manager more insight into what you're doing at any
 given point in time. This is achieved by taking your current work and splitting it into more bit-sized chunks that are
-easily digestable. Yum. But how do you accomplish this?
+easily digestible. Yum. But how do you accomplish this?
 
 After trying to split stories for about a year and a half seriously now, and very much failing. I had a kind of "AHA!" or
 Eureka! moment. What if I actually just treated every story given to me as an "epic"? Really, the tasks/stories given to me
