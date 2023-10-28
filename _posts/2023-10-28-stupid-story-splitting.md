@@ -1,3 +1,9 @@
+---
+name: Story Splitting
+description: A thought experiment turns into thin vertical slices
+image: zombie_in_a_graveyard_3_instasize.jpg
+---
+
 # Story Splitting
 
 The concept of story splitting is simple enough. Your engineering manager wants you to go "faster"; really what he's asking
