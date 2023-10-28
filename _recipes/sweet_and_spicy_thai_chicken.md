@@ -59,4 +59,4 @@ on the thickness of the chicken.
 adjust the cook time by 5-10 minutes until chicken is white throughout and juices run clear
 run sliced into.
 
-[Take me to the blog]({% link blog_list.md %})
+[Take me to the recipes]({% link recipe_list.md %})
