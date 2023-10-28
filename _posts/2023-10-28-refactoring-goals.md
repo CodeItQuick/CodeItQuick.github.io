@@ -27,7 +27,12 @@ Here is my un-vetted list of good reasons to be given a large task to refactor:
 In these bigger refactors the goal is to make the code maintainable, and be able to push features out easier in the future. We want main
 functions of what we do to be easier to understand, easier to extend, and most importantly easier to add something that will ultimately
 make the company more money. What do you make at work? money. So yes - the ideal place for these refactors is somewhere major that you may
-touch often, or may be a critical function in your application. There is bad code everywhere, in every organization, no matter how hard you try.
+touch often, or may be a critical function in your application. 
+
+There is bad code everywhere, in every organization, no matter how hard you try. Don't try to change it all to be perfect, just get the core 
+of it correct. Avoid reworking or refactoring code that is on the fringes of your application and "just works" regardless. The core parts
+of the website when obvious restructuring is needed, tackle those. Those areas have high impact on what you're doing and trying to achieve. 
+Remember - we're out here to make more money.
 
 Reading Kent Beck's new book on "Tidy First", he has made me realize I do a bunch of mini-refactors in the course of every pull request.
 These involve activities like making empty lines more logical, inling poorly-cohesive methods, extracting methods that are too much to read
