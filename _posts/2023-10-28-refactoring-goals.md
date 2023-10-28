@@ -71,7 +71,7 @@ functioning is a good use of downtime that pays off later - and saves us from sk
 into the codebase also allows us to do the large (and very fun) refactors later with confidence - we know the code works the same because the tests say so.
 
 I will leave you with an aha! I had while getting a god class under control. I was inside a method, being given the obvious task to "improve it". The 
-method made use loose of some generics and pattern matching, and the obvious improvement was to make the generics work and pattern match, use some polymorphism,
+method suggested it should use generics and polymorphism. The obvious improvement was to make the generics work, use some polymorphism,
 and poof! these three methods disappear at once! 
 
 Well, in theory that sounds magical. In practice the guy before me knew all this, attempted to make the code better, and couldn't do it. I am truley 
