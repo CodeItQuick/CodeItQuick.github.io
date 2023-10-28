@@ -6,7 +6,7 @@ layout: recipe
 ---
 
 # Ingredients
-* 1 1/2 pounds chicken tenderloins, breats, or thighs, see note
+* 1 1/2 pounds chicken tenderloins, breast, or thighs, see note
 # for the glaze
 1. 3/4 cup sweet chili sauce, see note
 2. 1/3 cup low sodium soy sauce
