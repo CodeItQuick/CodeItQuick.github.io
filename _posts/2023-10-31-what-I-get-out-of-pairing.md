@@ -1,3 +1,9 @@
+---
+name: What I get out of pairing?
+description: Why pair? What learnings do I get?
+image: green_purple_zombie_resized.jpg
+---
+
 # What I get out of pairing?
 
 As the title alludes to it, this article is about why bother with pairing? I think there are three primary reasons: Better Collaboration,
