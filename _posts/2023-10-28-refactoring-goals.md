@@ -85,3 +85,5 @@ about domain driven design, separating business logic from application logic, an
 application logic. I separated them, and although the fancy generics I could have gotten into never did emerge for me, I did succeed in teasing out
 some important business logic. We can now move this to our domain area of our onion architecture, and continue our journey to a better more maintainable
 codebase.
+
+[Take me to the blog]({% link blog_list.md %})
