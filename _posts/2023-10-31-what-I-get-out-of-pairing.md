@@ -44,3 +44,5 @@ To me this is where I get more benefit out of the pairing. What does this partic
 I learn from them? I start to realize my "weakness", but often one person's weakness is actually just another person's "strength". There is still
 a teaching aspect to this as well, as you learn how to "properly" pass on knowledge to others. Do I directly tell them? Do I show them repeatedly
 how I go about doing the task? The lucky thing in pairing is that you get to try all of the above.
+
+[Take me to the blog]({% link blog_list.md %})
