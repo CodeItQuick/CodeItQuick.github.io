@@ -31,3 +31,4 @@ sprint retrospective on Wednesday, or my Engineering Manager 1-on-1 on Thursday.
 actually a useful exercise? Or a total waste of time and purely a thought experiment? I don't really know, but hopefully 
 I remember to update this blog when I find out.
   
+[Take me to the blog]({% link blog_list.md %})
