@@ -1,0 +1,93 @@
+---
+name: Aggregates Explained
+description: Learn about my current understanding of aggregates
+image: zombie_in_a_graveyard_3_instasize.jpg
+---
+
+# Aggregates Explained
+
+## What are they? The Theory
+
+An aggregates primary definition is that it has an id. It is used to grab information from the database, and controls
+the flow in and out of the database through what is effectively a view.
+
+## What are they? The Implementation
+
+The aggregate is implemented as the following:
+
+```cs
+public sealed class ExpenseReportAggregate
+{
+    [Key]
+    public int Id { get; set; }
+
+    public List<Expenses>? Expenses { get; set; }
+
+    public List<Expense>? RetrieveExpenseList()
+    {
+        return Expenses?
+            .Select(x => new Expense(x.ExpenseType, x.Amount))
+            .ToList();
+    }
+}
+```
+The expenses should likely be privately set, as the setter should not be accessed externally. The aggregate is accessed through
+the general Command/Query paradigm. The Repository layer takes these aggregates and either saves them or shows them in 
+a view. This implementation for a view of the last expense report looks like the following:
+
+```cs
+public class ExistingExpensesRepository
+{
+    private readonly ExpensesContext expensesContext;
+
+    public ExistingExpensesRepository()
+    {
+        var DbPath = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "blogging.db");
+        var dbContextOptions = new DbContextOptionsBuilder()
+            .UseSqlite($"Data Source={DbPath}")
+            .Options;
+        expensesContext = new ExpensesContext(dbContextOptions);
+    }
+
+    public ExpenseReportAggregate? GetLastExpenseReport()
+    {
+        return expensesContext.ExpenseReportAggregates.ToList().LastOrDefault();
+    }
+}
+```
+
+The service is represented by the following code, which primarily just retrieves the aggregate from the repository layer,
+does any domain work necessary, and then outputs it to the adapter(s).
+
+```cs
+public class ExpensesService
+{
+    private ExistingExpensesRepository expenseRepository;
+    private readonly DateProvider dateProvider;
+
+    // Used By Production Code, One Smoke Test
+    public ExpensesService(DateProvider? dateProvider) {
+        this.dateProvider = dateProvider ?? new RealDateProvider();
+        expenseRepository = new ExistingExpensesRepository();
+    }
+
+    public ExpenseView ViewExpenses() {
+        var expensesReportAggregate = expenseRepository.GetLastExpenseReport();
+
+        ExpenseReport expenseReport = new ExpenseReport(expensesReportAggregate?.RetrieveExpenseList() ?? new List<Expense>());
+        int mealExpenses = expenseReport.CalculateMealExpenses();
+        int total = expenseReport.CalculateTotalExpenses();
+        List<String> individualExpenses = expenseReport.CalculateIndividualExpenses();
+
+        return new ExpenseView(mealExpenses, total, dateProvider.CurrentDate().ToString(), individualExpenses);
+    }
+}
+```
+Here the view expenses grabs the data from the repository in the form of an aggregate. It then takes this aggregate, constructs
+the domain, does some calculations, and outputs a view. 
+
+I'm not convinced the repository layer is needed, as most of the work is done by the aggregate. I also don't like how I 
+constructed the domain.
+
+
+[Take me to the blog]({% link blog_list.md %})
