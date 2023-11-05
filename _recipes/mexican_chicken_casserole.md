@@ -45,4 +45,4 @@ it evenly over the entire top. Add canned tomatoes over the soup layer.
 * Prepare ahead of time except for the tortilla chips over the top. Cover with plastic wrap and refrigerate.
 When ready to bake, remove the plastic wrap and sprinkle with chips. Bake until hot and bubbly.
 
-[Take me to the blog]({% link blog_list.md %})
+[Take me to the recipes]({% link recipe_list.md %})

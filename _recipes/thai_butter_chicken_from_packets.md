@@ -35,3 +35,5 @@ layout: recipe
 4. Add spice sauce
 5. Add cut chicken, cook till edges white
 6. Add sauce
+
+[Take me to the recipes]({% link recipe_list.md %})

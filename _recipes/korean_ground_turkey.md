@@ -32,4 +32,4 @@ layout: recipe
 1. Remove from the heat and toss in the scallions.
 1. Serve over hot rice or as lettuce cups, with a small sprinkle of sesame seeds.
 
-[Take me to the blog]({% link blog_list.md %})
+[Take me to the recipes]({% link recipe_list.md %})
