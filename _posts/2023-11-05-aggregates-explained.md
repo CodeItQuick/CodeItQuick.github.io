@@ -15,13 +15,13 @@ the flow in and out of the database through what is effectively a view.
 
 The aggregate is implemented as the following:
 
-```cs
+```text
 public sealed class ExpenseReportAggregate
 {
     [Key]
-    public int Id { get; set; }
+    private int Id { get; set; }
 
-    public List<Expenses>? Expenses { get; set; }
+    private List<Expenses>? Expenses { get; set; }
 
     public List<Expense>? RetrieveExpenseList()
     {
@@ -35,7 +35,7 @@ The expenses should likely be privately set, as the setter should not be accesse
 the general Command/Query paradigm. The Repository layer takes these aggregates and either saves them or shows them in 
 a view. This implementation for a view of the last expense report looks like the following:
 
-```cs
+```text
 public class ExistingExpensesRepository
 {
     private readonly ExpensesContext expensesContext;
@@ -59,7 +59,7 @@ public class ExistingExpensesRepository
 The service is represented by the following code, which primarily just retrieves the aggregate from the repository layer,
 does any domain work necessary, and then outputs it to the adapter(s).
 
-```cs
+```text
 public class ExpensesService
 {
     private ExistingExpensesRepository expenseRepository;
@@ -72,13 +72,13 @@ public class ExpensesService
     }
 
     public ExpenseView ViewExpenses() {
-        var expensesReportAggregate = expenseRepository.GetLastExpenseReport();
+        ExpenseAggregate expensesReportAggregate = expenseRepository.GetLastExpenseReport();
 
         ExpenseReport expenseReport = new ExpenseReport(expensesReportAggregate?.RetrieveExpenseList() ?? new List<Expense>());
         int mealExpenses = expenseReport.CalculateMealExpenses();
         int total = expenseReport.CalculateTotalExpenses();
         List<String> individualExpenses = expenseReport.CalculateIndividualExpenses();
-
+        
         return new ExpenseView(mealExpenses, total, dateProvider.CurrentDate().ToString(), individualExpenses);
     }
 }
