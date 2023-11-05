@@ -86,6 +86,26 @@ public class ExpensesService
 Here the view expenses grabs the data from the repository in the form of an aggregate. It then takes this aggregate, constructs
 the domain, does some calculations, and outputs a view. 
 
+The domain for the aggregate is, for example, calculating total expenses by doing the following:
+```text
+public class ExpenseReport
+{
+    private List<Expense> expenses;
+
+    public ExpenseReport(List<Expense> expenses) {
+        this.expenses = expenses;
+    }
+    
+    public int CalculateTotalExpenses() {
+        int total = 0;
+        foreach (Expense expense in expenses) {
+            total += expense.Amount();
+        }
+        return total;
+    }
+}
+```
+
 I'm not convinced the repository layer is needed, as most of the work is done by the aggregate. I also don't like how I 
 constructed the domain.
 
