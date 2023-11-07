@@ -42,10 +42,10 @@ data, so property bags, getters/setters, or DTOs are the better abstraction. The
 ```text
 public class ExpenseView
 {
-public int MealExpenses;
-public int TotalExpenses;
-public DateTimeOffset ExpenseDate;
-public List<String>? IndividualExpenses;
+    public int MealExpenses { get; set; }
+    public int TotalExpenses { get; set; }
+    public DateTimeOffset ExpenseDate { get; set; }
+    public List<String>? IndividualExpenses { get; set; }
 }
 ```
 
