@@ -13,7 +13,7 @@ the flow in and out of the database through what is effectively a view.
 
 ## What are they? The Implementation
 
-The aggregate is implemented as the following:
+The aggregate is implemented as the following: 
 
 ```text
 public sealed class ExpenseReportAggregate
@@ -71,15 +71,14 @@ public class ExpensesService
         expenseRepository = new ExistingExpensesRepository();
     }
 
-    public ExpenseView ViewExpenses() {
-        ExpenseAggregate expensesReportAggregate = expenseRepository.GetLastExpenseReport();
+    public ExpenseReport RetrieveExpenseReport() {
+        var expensesReportAggregate = expenseRepository.GetLastExpenseReport();
 
-        ExpenseReport expenseReport = new ExpenseReport(expensesReportAggregate?.RetrieveExpenseList() ?? new List<Expense>());
-        int mealExpenses = expenseReport.CalculateMealExpenses();
-        int total = expenseReport.CalculateTotalExpenses();
-        List<String> individualExpenses = expenseReport.CalculateIndividualExpenses();
+        ExpenseReport expenseReport = new ExpenseReport(
+            expensesReportAggregate?.RetrieveExpenseList() ?? new List<Expense>(),
+            this.dateProvider);
         
-        return new ExpenseView(mealExpenses, total, dateProvider.CurrentDate().ToString(), individualExpenses);
+        return expenseReport;
     }
 }
 ```
