@@ -45,7 +45,7 @@ you invest into them.
 
 Lately I've been taking a story, which could be of the form: "As an accounting user, I can calculate my expenses from the department manager expense reports".
 
-*Story Splitting*
+*Story Splitting*  
 This story can quickly be scoped down, to "As an accounting user, I can view department managers expense reports".
 
 *Generating Tickets In-Flight*
