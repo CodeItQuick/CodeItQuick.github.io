@@ -48,7 +48,7 @@ Lately I've been taking a story, which could be of the form: "As an accounting u
 *Story Splitting*  
 This story can quickly be scoped down, to "As an accounting user, I can view department managers expense reports".
 
-*Generating Tickets In-Flight*
+*Generating Tickets In-Flight*  
 We may further subdivide this story into implementation details. I still haven't worked out the how and why of this. Essentially it could be:
 
 1. Create the view screen in the MVC app for the accounting user
@@ -57,19 +57,19 @@ We may further subdivide this story into implementation details. I still haven't
 4. Write the service layer + testing code for calculation of the manager's expense reports
 5. Write Acceptance tests for the feature
 
-*Scrum & The Parking Lot*
+*Scrum & The Parking Lot*  
 Each of these tasks, if they are mapped to a PR, should be their own ticket on the sprint board. Then management can track as the PR flows through
 the system. As needed, the developer can bring up issues in the "parking lot items" of the scrum meeting for review and clairification.
 
-*PR Reviews*
+*PR Reviews*  
 No nit-picking around. Only significant findings in a PR should be detailed: Items like deceptive naming, bugs in the code, very unreadable code, 
 very unmanageable code, and missing requirements. Avoid trying to build quality into the PR after-the-fact. No trivial variable renames, etc.
 
-*Definition of Done or Acceptance*
+*Definition of Done or Acceptance*  
 Once the ticket is deemed "complete" by the developer, it passes into QA where they do testing, find any bugs, and then a decision is made on whether 
 to fix these bugs and how many before release to prod/the next software release.
 
-*Definition around deployment*
+*Definition around deployment*  
 Deployment is done to a dev environment repeatedly as the stories in implementation details are closed. Once the ticket is deemed finished, we move the ticket
 into the testing environment. Once there is a critical mass of changes, the new site version will be released to production.
 
