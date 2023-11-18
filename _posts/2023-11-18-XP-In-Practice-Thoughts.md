@@ -12,11 +12,10 @@ image: green_purple_zombie_resized.jpg
 5. Mob Programming
 6. Staff Vs Architect/Platforming
 
-
 ## Unit Testing
 
 Unit tests should be: 1. Fast (< 10 ms, <150ms if database integration is involved) 2. Isolated 3. Concise. Practices
-such as TDD as best done in pairing/mobbing environments initially as its a very hard practice to achieve from a discipline
+such as TDD are best done in pairing/mobbing environments initially as its a very hard practice to achieve from a discipline
 point of view. After a sufficient amount of time (think years, not months, especially not weeks) you may be able to TDD on greenfield
 projects. 
 
@@ -64,7 +63,7 @@ the system. As needed, the developer can bring up issues in the "parking lot ite
 
 *PR Reviews*
 No nit-picking around. Only significant findings in a PR should be detailed: Items like deceptive naming, bugs in the code, very unreadable code, 
-very unmanageable code, and missing requirements. Avoid trying to build quality into the PR after-the-fact.
+very unmanageable code, and missing requirements. Avoid trying to build quality into the PR after-the-fact. No trivial variable renames, etc.
 
 *Definition of Done or Acceptance*
 Once the ticket is deemed "complete" by the developer, it passes into QA where they do testing, find any bugs, and then a decision is made on whether 
@@ -87,6 +86,6 @@ group consensus this is the best of everything. I haven't done this in a manner 
 the productivity losses.
 
 ## Staff vs Architect
-"Architects", and specifically non-coding architects I had bad experiences with in the past. I found they tried to specify way too much implementation as in #1, 
+"Architects", and specifically non-coding architects I had bad experiences with in the past. I found they tried to specify way too much implementation details of the ticket, 
 and since code review was their only function they nitpicked way too much in PR reviews. Staff engineers and platforming engineering do code reviews, maybe some pair programming,
 and help get the application to test/production with minimal downtime and risk.
