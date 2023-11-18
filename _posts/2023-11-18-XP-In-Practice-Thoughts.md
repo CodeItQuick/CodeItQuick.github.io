@@ -70,8 +70,8 @@ Once the ticket is deemed "complete" by the developer, it passes into QA where t
 to fix these bugs and how many before release to prod/the next software release.
 
 *Definition around deployment*
-Deployment is done to a dev branch repeatedly as the stories in implementation details are closed. Once the ticket is deemed finished, we move the ticket
-into the testing environment.
+Deployment is done to a dev environment repeatedly as the stories in implementation details are closed. Once the ticket is deemed finished, we move the ticket
+into the testing environment. Once there is a critical mass of changes, the new site version will be released to production.
 
 ## Pair Programming
 DEFINITELY NOT MANDATED. This is not subliminal messaging - you do as much or as little as you're comfortable with. I pair approximately 2-3 hours per day
