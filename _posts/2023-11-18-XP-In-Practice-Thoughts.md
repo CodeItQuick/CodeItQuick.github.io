@@ -85,7 +85,3 @@ about the codebase as you go, and you get group discussions on how to do the wor
 group consensus this is the best of everything. I haven't done this in a manner to produce code, as I think the minimum of 4 devs needed to practice it isn't worth
 the productivity losses.
 
-## Staff vs Architect
-"Architects", and specifically non-coding architects I had bad experiences with in the past. I found they tried to specify way too much implementation details of the ticket, 
-and since code review was their only function they nitpicked way too much in PR reviews. Staff engineers and platforming engineering do code reviews, maybe some pair programming,
-and help get the application to test/production with minimal downtime and risk.
