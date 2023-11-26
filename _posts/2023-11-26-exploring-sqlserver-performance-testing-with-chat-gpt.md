@@ -71,17 +71,17 @@ here is a list of thought leaders:
 11. Hector Garcia-Molina: Stanford Professor, databases
 12. Stonebraker, Abadi, DeWitt: The AMPLab Pioneers, Apache Spark, etc.
 
-The books by these authors I managed to pull are: 
-Transaction Processing: Concepts and Techniques. by Jim Gray, Andreas Reuter
-Database Design and Relational Theory: Normal Forms and All That Jazz by CJ Date
-Database Systems: The Complete Book by Hector Garcia Molina, Jeffrey Ullman, Jennifer Widom - Standford Professors book, for beginners
+The books by these authors I managed to pull are:   
+Transaction Processing: Concepts and Techniques. by Jim Gray, Andreas Reuter  
+Database Design and Relational Theory: Normal Forms and All That Jazz by CJ Date  
+Database Systems: The Complete Book by Hector Garcia Molina, Jeffrey Ullman, Jennifer Widom - Standford Professors book, for beginners  
 
 ### SQL Server Books
 
 The books I picked up are:  
 
-Pro SQL Server Internals (Second Edition)
-SQL Server 2022 Query Performance Tuning by Grant Fritchey
+Pro SQL Server Internals (Second Edition)  
+SQL Server 2022 Query Performance Tuning by Grant Fritchey  
 
 TODO: Lookup NoSql Server authors and books
 
