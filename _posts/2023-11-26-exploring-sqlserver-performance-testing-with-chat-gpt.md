@@ -10,8 +10,8 @@ such as how to build my own SQL/NoSQL database, who are the thought leaders in d
 I read on databases.
 
 TLDR version;  
-Maybe: Build a simple Database SQL Engine, the NoSql looks way too hard
-Get these resources:
+Maybe: Build a simple Database SQL Engine, the NoSql looks way too hard  
+Get these resources:  
 1. Transaction Processing: Concepts and Techniques. by Jim Gray, Andreas Reuter
 2. Database Design and Relational Theory: Normal Forms and All That Jazz by CJ Date
 3. Database Systems: The Complete Book by Hector Garcia Molina, Jeffrey Ullman, Jennifer Widom - Standford Professors book, for beginners
