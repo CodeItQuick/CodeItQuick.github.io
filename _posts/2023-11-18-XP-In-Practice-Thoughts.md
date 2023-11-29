@@ -4,15 +4,6 @@ description: Writing down a brief take on XP practices I believe in
 image: green_purple_zombie_resized.jpg
 ---
 
-# Table Of Contents
-1. Unit Testing & TDD
-2. Acceptance Testing
-3. Agile - Scrum, The Parking Lot, and how to do tickets/stories
-4. Pair Programming
-5. Mob Programming
-
-## Unit Testing
-
 I initially discovered TDD through the book "TDD By Example" by Kent Beck, taught through a book club put on by Jitter Ted. I eventually,
 over years I guess, came to the conclusion that good unit tests have three primary factors:  
 
