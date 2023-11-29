@@ -1,8 +1,10 @@
 ---
-name: XP In Practice Thoughts
+name: My Journey Through TDD
 description: Writing down a brief take on XP practices I believe in
 image: green_purple_zombie_resized.jpg
 ---
+
+# Beginnings  
 
 I initially discovered TDD through the book "TDD By Example" by Kent Beck, taught through a book club put on by Jitter Ted. I eventually,
 over years I guess, came to the conclusion that good unit tests have three primary factors:  
@@ -22,6 +24,8 @@ to write a single test, there's no way he can really productively test at work. 
 one year for me when I finally was at the point I could write tests in production code. This is without "more modern" practices like pairing, 
 mobbing, etc. that likely vastly speed-up the learning process.
 
+# Year Two - A Buildup of some knowledge  
+
 Within the second year I started my journey of learning through "more modern" patterns, eg: a learning ensemble. Jitterted has run for the
 last couple years a learning ensemble where 3-5 of us developers get together and TDD a blackjack game, code named "blackjack ensemble blue".
 Not to be confused with the orange version, that was on Thursday for a while and we did slightly more database testing. Through this period I
@@ -33,6 +37,8 @@ The main requirement above, for "fast" tests, as defined by the whole suite shou
 to .NET/C# in-memory options, wrapping the C#/NET database libraries in mocked dbsets, or sqllite in memory databases has gotten me to a
 place where I am mostly happy with this testing.
 
+# Untested Code  
+
 Refactoring codebases that do not already have tests is significantly harder than testing code that has never seen tests before. Usually,
 the code writer did not have test writing in mind when they built the production code. Luckily at work, my fellow coders have relatively
 clean untested code. Experienced developers tend to produce code that is a bit more readable, a tad more maintainable, and more modulithic
@@ -43,6 +49,8 @@ add in my case is as I refactor I know the code continues to work as I bring it 
 a coder can just YOLO a giant change through and break everything. They really don't initially understand, or even throughout the lifetime of
 the refactor until the end, the extent to which they have changed the underlying behaviour of the code. Getting it to behave the same way
 again is very difficult, and in-sets the "fear of change", especially in critical pieces of codebases.
+
+# How to build a testing culture
 
 What I've run into a lot in forum questions, work settings, and overall well-meaning managers is the tendency to improve testing through
 a prespective means. This means initiatives like setting a given "code coverage" for a codebase. I think this is similar to trying to lose 
