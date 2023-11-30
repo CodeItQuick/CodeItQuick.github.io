@@ -80,12 +80,6 @@ the laws of TDD, I carefully learned how to write my tests first. I learned how 
 refactor and rewrite code so that it was never actually broken at any stage. In a greenfield project, I could indeed do TDD, assuming I was in
 an ensemble. However, in untested work code where I was on my own, that was simply not possible. I could still write my tests afterwards.
 
-Learning to test the database has taken a lot of work, and I would say I've only just begun now testing the API more thoroughly. Deciding between
-hand-rolled fake databases, in memory databases, sqllite databases, and I honestly have never tried a full database on purely unit tests.
-The main requirement above, for "fast" tests, as defined by the whole suite should be under 1s to run, is very hard to do. Mostly keeping
-to .NET/C# in-memory options, wrapping the C#/NET database libraries in mocked dbsets, or sqllite in memory databases has gotten me to a
-place where I am mostly happy with this testing.
-
 # Plateauing briefly
 
 This phase marks the next 2-3 years of my journey. After being in the ensemble for a couple years now, I was able to start projects and begin
@@ -115,6 +109,12 @@ Refactoring codebases that do not already have tests is significantly harder tha
 the code writer did not have test writing in mind when they built the production code. Luckily at work, my fellow coders have relatively
 clean untested code. Experienced developers tend to produce code that is a bit more readable, a tad more maintainable, and more modulithic
 like. This helps greatly.
+
+Learning to test the database has taken a lot of work, and I would say I've only just begun now testing the API more thoroughly. Deciding between
+hand-rolled fake databases, in memory databases, sqllite databases, and I honestly have never tried a full database on purely unit tests.
+The main requirement above, for "fast" tests, as defined by the whole suite should be under 1s to run, is very hard to do. Mostly keeping
+to .NET/C# in-memory options, wrapping the C#/NET database libraries in mocked dbsets, or sqllite in memory databases has gotten me to a
+place where I am mostly happy with this testing.
 
 A lot of coders I find would say refactoring is more difficult with tests. I think for them this is probably largerly true. What the tests
 add in my case is as I refactor I know the code continues to work as I bring it through the various changes in structure. For un-tested code,
