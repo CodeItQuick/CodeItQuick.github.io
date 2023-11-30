@@ -4,10 +4,8 @@ description: Writing down a brief take on XP practices I believe in
 image: green_purple_zombie_resized.jpg
 ---
 
-# TO-ADD
-1. Red-green-refactor, the cycle of adding code to a codebase, and how that speeds you up
-
-# The Dark Ages - Lets get down to debugging
+# Beginner Phase
+## The Dark Ages - Lets get down to debugging
 
 For the first 5 years of my development career I didn't test anything. 0 Testing. I think this is due to **no testing culture where I worked**.
 Then one day I went to a PEI Devs Meetup, and met JB Rainserberger (a well-known author in agile coaching, unit testing and in the ways of TDD).
@@ -18,8 +16,10 @@ I think in this stage a number of the common misconceptions and myths prevented 
 1. Testing takes too long and isn't worth it at all
 2. I can only test simple coding examples
 3. How do I know how to write all my tests before I write all my production code?
+   
+Meanwhile at work: Thank god I'm the only developer on staff.
 
-# Beginnings    
+## Beginnings    
 
 One of the big issues with TDD and unit testing in general is the "learning curve". Honestly, after reading my story if there's one take-away you
 get its **you need to have a coach if you're going to learn more about testing, otherwise you are wasting your time**. My testing journey wouldn't 
@@ -32,6 +32,9 @@ and hexagonal architecture), was that tests should be:
 2. Isolated
 3. Concise.
 
+Meanwhile at work: The sky is falling, we have no customers, and whoever looks at this codebase would be horrified
+
+# Advanced Beginner
 ## Testing takes too long, its not worth it
 
 **Have you ever heard the expression testing takes too long? Well, in this phase, that was my issue** For the first three months of my unit 
@@ -40,6 +43,8 @@ trying to form it in a manner where writing a test around the code was _possible
 where I decided to write a test. Just one short week later I had written my first test. I thought to myself, "What a complete failure that was".
 Unpreterbed, I continued to attempt to TDD/unit test for years later. I think even at this stage, if you asked me, I would probably say some
 form of "I do TDD", or at the minimum, "Yes, I can test".
+
+Meanwhile at work: No change - the sky is still falling. At least the horrific faces of my colleagues at my code has diminished.
 
 ## TDD==UNIT TESTING==TEST COVERAGE
 
@@ -71,7 +76,11 @@ include:
 3. All the tests end up broken and I don't use them
 4. E2E and integration testing is better than unit testing, because unit testing simply doesn't work
 
-# Year Two - A Buildup of some knowledge  
+Meanwhile at work: Who the heck wants to work with this guy? He has strong, probably incorrect opinions. At least he produces OK code, and 
+a few tests along the way, while taking ages to push code.
+
+# The Ego Drop to Competence
+## Year Two - A Buildup of some knowledge  
 
 Within the second year I started my journey of learning through "more modern" patterns, eg: a learning ensemble. Jitterted has run for the
 last 2-3 years, I honestly am not sure at this point its been so long, a learning ensemble where 3-5 of us developers get together and TDD 
@@ -83,7 +92,11 @@ the laws of TDD, I carefully learned how to write my tests first. I learned how 
 refactor and rewrite code so that it was never actually broken at any stage. In a greenfield project, I could indeed do TDD, assuming I was in
 an ensemble. However, in untested work code where I was on my own, that was simply not possible. I could still write my tests afterwards.
 
-# Plateauing briefly
+Meanwhile at work: Well, the opinions are still strong, just slightly less offensive. At least he produces OK code, and 
+a few tests along the way, and they no longer take weeks.
+
+# Developing Proficiency
+## Plateauing briefly
 
 This phase marks the next 2-3 years of my journey. After being in the ensemble for a couple years now, I was able to start projects and begin
 testing on my own. I had started to refactor legacy code, a book I had read about the practice probably 2 years previously. Two years ago, I figured
@@ -94,7 +107,16 @@ the last commit. Practicing/Trying this a couple times will get you more familia
 I'd highly advise against doing that. However, for getting used to the rythmn of what TDD looks like when you have to fly solo, this was
 helpful.
 
-# Untested Code - or the "Oh No My Colleagues" phase
+Meanwhile at work: Well, the opinions are still strong, just slightly less offensive. At least he produces OK code, and 
+a few tests along the way, and they no longer take weeks. Lots of collaboration while learning, not much collaboration at work yet though.
+
+# Journey to Proficient/Expert
+## Untested Code - or the "Oh No My Colleagues" phase
+
+The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
+Through at the time ensembling weekly in a regularly, I developed the skills to be able to TDD in the "correct" settings. This means code that
+is brand new, has only seen TDD, and is only allowed to be TDD on. Forget your large untested production project, in the most pristine settings
+I could now TDD. The same can be achieved in pairing arrangements, or through 3-4 person Dojo's run be even the grumpiest of developers.
 
 About 3.5->4 years in I started working at a new place where testing had been ingrained for 10 years previously. I think my plateau'ing stopped
 at this phase, mostly due to my colleagues having a different take on many subjects within testing. Many of the rules I had previously established
@@ -125,6 +147,9 @@ a coder can just YOLO a giant change through and break everything. They really d
 the refactor until the end, the extent to which they have changed the underlying behaviour of the code. Getting it to behave the same way
 again is very difficult, and in-sets the "fear of change", especially in critical pieces of codebases.
 
+Meanwhile at work: Way to be hugely opinionated. At least I don't hate him for it. Is this code actually "good" now? Lots of tests along the way,
+and produced in a timely fashion. Tons of collaboration in pairing, mobbing, design discussions, sprint planning, parking lot items, etc.
+
 ## Acceptance Testing
 
 I always cringe a bit when I hear about acceptance testing. I immediately build this image in my head, of an environment where people are 
@@ -138,4 +163,5 @@ best to condense these tests, and we stick to the "testing pyramid". Basically o
 our head and make sure the application is working on a day-to-day basis. All the complex logic and refactoring abilities are covered by
 unit tests. The acceptance tests take hours to run, while the unit tests take milliseconds.
 
+Meanwhile at work: Can I declare work good because of my testing ability yet?
 
