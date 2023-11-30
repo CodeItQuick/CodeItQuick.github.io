@@ -23,7 +23,8 @@ Meanwhile at work: Thank god I'm the only developer on staff.
 
 One of the big issues with TDD and unit testing in general is the "learning curve". Honestly, after reading my story if there's one take-away you
 get its **you need to have a coach if you're going to learn more about testing, otherwise you are wasting your time**. My testing journey wouldn't 
-have started if I hadn't met characters like JB Rainserberger, and my now-coach in this story, JitterTed/Ted Young.
+have started if I hadn't met characters like JB Rainsberger, and my now-coach in this story, JitterTed/Ted Young. Editors note: I was in a book club
+with JB Rainsberger for years as well.
 
 The book club began, and probably my biggest takeaway from our first set of books (including TDD By Example, Refactoring Legacy Code, OOP books, DDD,
 and hexagonal architecture), was that tests should be:
