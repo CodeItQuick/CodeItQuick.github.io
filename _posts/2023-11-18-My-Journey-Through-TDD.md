@@ -124,7 +124,7 @@ helpful.
 Well, the opinions are still strong, just slightly less offensive. At least he produces OK code, and a few tests along the way, and they no 
 longer take weeks. Lots of collaboration while learning, not much collaboration at work yet though.
 
-# Journey to Proficient/Expert
+# Journey to Proficient
 ## "Oh No My Colleagues" phase
 
 About 3.5->4 years in I started working at a new place where testing had been ingrained for 10 years previously. I think my plateau'ing stopped
