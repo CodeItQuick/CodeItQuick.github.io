@@ -4,6 +4,10 @@ description: Writing down a brief take on XP practices I believe in
 image: green_purple_zombie_resized.jpg
 ---
 
+# TO-ADD
+1. Red-green-refactor, the cycle of adding code to a codebase, and how that speeds you up
+2. Double check the slack thread I have on this that I included all their suggestions
+
 # The Dark Ages - Lets get down to debugging
 
 For the first 5 years of my development career I didn't test anything. 0 Testing. I think this is due to **no testing culture where I worked**.
