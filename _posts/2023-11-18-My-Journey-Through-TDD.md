@@ -120,7 +120,7 @@ Well, the opinions are still strong, just slightly less offensive. At least he p
 longer take weeks. Lots of collaboration while learning, not much collaboration at work yet though.
 
 # Journey to Proficient/Expert
-## Untested Code - or the "Oh No My Colleagues" phase
+## "Oh No My Colleagues" phase
 
 The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
 Through at the time ensembling weekly in a regularly, I developed the skills to be able to TDD in the "correct" settings. This means code that
