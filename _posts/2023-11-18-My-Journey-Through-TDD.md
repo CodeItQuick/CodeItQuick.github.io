@@ -88,6 +88,11 @@ a few tests along the way, while taking ages to push code.
 # The Ego Drop to Competence
 ## Year Two - A Buildup of some knowledge  
 
+The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
+Through at the time ensembling weekly in a regularly, I developed the skills to be able to TDD in the "correct" settings. This means code that
+is brand new, has only seen TDD, and is only allowed to be TDD on. Forget your large untested production project, in the most pristine settings
+I could now TDD. The same can be achieved in pairing arrangements, or, much later in time, through 3-4 person Dojo's run be even the grumpiest of developers.
+
 Within the second year I started my journey of learning through "more modern" patterns, eg: a learning ensemble. Jitterted has run for the
 last 2-3 years, I honestly am not sure at this point its been so long, a learning ensemble where 3-5 of us developers get together and TDD 
 a blackjack game, code named "blackjack ensemble blue". Not to be confused with the orange version, that was on Thursday for a while and we
@@ -121,11 +126,6 @@ longer take weeks. Lots of collaboration while learning, not much collaboration 
 
 # Journey to Proficient/Expert
 ## "Oh No My Colleagues" phase
-
-The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
-Through at the time ensembling weekly in a regularly, I developed the skills to be able to TDD in the "correct" settings. This means code that
-is brand new, has only seen TDD, and is only allowed to be TDD on. Forget your large untested production project, in the most pristine settings
-I could now TDD. The same can be achieved in pairing arrangements, or through 3-4 person Dojo's run be even the grumpiest of developers.
 
 About 3.5->4 years in I started working at a new place where testing had been ingrained for 10 years previously. I think my plateau'ing stopped
 at this phase, mostly due to my colleagues having a different take on many subjects within testing. Many of the rules I had previously established
