@@ -83,7 +83,7 @@ an ensemble. However, in untested work code where I was on my own, that was simp
 # Plateauing briefly
 
 This phase marks the next 2-3 years of my journey. After being in the ensemble for a couple years now, I was able to start projects and begin
-testing on my own. I had started to refactor legacy code, a book I had read about the practice probably 2 years previously. At the time, I figured
+testing on my own. I had started to refactor legacy code, a book I had read about the practice probably 2 years previously. Two years ago, I figured
 I could do this practice. However, this was not the case. 
 
 Honorable mention to test-commit-revert here. Its essentially writing tests, and if they fail you revert all the code since
