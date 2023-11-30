@@ -60,7 +60,8 @@ my own misunderstandings were:
 
 By the virtue of having a coach though, who had walked this path before, there are some anti-patterns people describe to me that I've never
 even experienced. Probably because my coach refused to do some things that he knew would lead me down the "wrong road" so to speak. Afterall,
-I was being taught clasically TDD without realizing there are disagreements even within the testing community. These include:
+I was being taught clasically TDD without realizing there are disagreements even within the testing community. Some of these common complaints
+include:
 
 1. Mocking is very verbose and am I even testing anything with these unit tests?
 2. I just delete the tests afterwards because they have no value in themselves
