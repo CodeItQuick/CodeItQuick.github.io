@@ -17,7 +17,8 @@ I think in this stage a number of the common misconceptions and myths prevented 
 2. I can only test simple coding examples
 3. How do I know how to write all my tests before I write all my production code?
    
-Meanwhile at work: Thank god I'm the only developer on staff.
+**Meanwhile at work:**  
+Thank god I'm the only developer on staff.
 
 ## Beginnings    
 
@@ -33,7 +34,8 @@ and hexagonal architecture), was that tests should be:
 2. Isolated
 3. Concise.
 
-Meanwhile at work: The sky is falling, we have no customers, and whoever looks at this codebase would be horrified
+**Meanwhile at work:**  
+The sky is falling, we have no customers, and whoever looks at this codebase would be horrified
 
 # Advanced Beginner
 ## Testing takes too long, its not worth it
@@ -45,7 +47,8 @@ where I decided to write a test. Just one short week later I had written my firs
 Unpreterbed, I continued to attempt to TDD/unit test for years later. I think even at this stage, if you asked me, I would probably say some
 form of "I do TDD", or at the minimum, "Yes, I can test".
 
-Meanwhile at work: No change - the sky is still falling. At least the horrific faces of my colleagues at my code has diminished.
+**Meanwhile at work:**  
+No change - the sky is still falling. At least the horrific faces of my colleagues at my code has diminished.
 
 ## TDD==UNIT TESTING==TEST COVERAGE
 
@@ -77,7 +80,8 @@ include:
 3. All the tests end up broken and I don't use them
 4. E2E and integration testing is better than unit testing, because unit testing simply doesn't work
 
-Meanwhile at work: Who the heck wants to work with this guy? He has strong, probably incorrect opinions. At least he produces OK code, and 
+**Meanwhile at work:**  
+Who the heck wants to work with this guy? He has strong, probably incorrect opinions. At least he produces OK code, and 
 a few tests along the way, while taking ages to push code.
 
 # The Ego Drop to Competence
@@ -93,8 +97,9 @@ the laws of TDD, I carefully learned how to write my tests first. I learned how 
 refactor and rewrite code so that it was never actually broken at any stage. In a greenfield project, I could indeed do TDD, assuming I was in
 an ensemble. However, in untested work code where I was on my own, that was simply not possible. I could still write my tests afterwards.
 
-Meanwhile at work: Well, the opinions are still strong, just slightly less offensive. At least he produces OK code, and 
-a few tests along the way, and they no longer take weeks.
+**Meanwhile at work:**  
+Well, the opinions are still strong, just slightly less offensive. At least he produces OK code, and a few tests along the way, and they no 
+longer take weeks.
 
 # Developing Proficiency
 ## Plateauing briefly
@@ -108,8 +113,10 @@ the last commit. Practicing/Trying this a couple times will get you more familia
 I'd highly advise against doing that. However, for getting used to the rythmn of what TDD looks like when you have to fly solo, this was
 helpful.
 
-Meanwhile at work: Well, the opinions are still strong, just slightly less offensive. At least he produces OK code, and 
-a few tests along the way, and they no longer take weeks. Lots of collaboration while learning, not much collaboration at work yet though.
+
+**Meanwhile at work:**  
+Well, the opinions are still strong, just slightly less offensive. At least he produces OK code, and a few tests along the way, and they no 
+longer take weeks. Lots of collaboration while learning, not much collaboration at work yet though.
 
 # Journey to Proficient/Expert
 ## Untested Code - or the "Oh No My Colleagues" phase
@@ -148,7 +155,9 @@ a coder can just YOLO a giant change through and break everything. They really d
 the refactor until the end, the extent to which they have changed the underlying behaviour of the code. Getting it to behave the same way
 again is very difficult, and in-sets the "fear of change", especially in critical pieces of codebases.
 
-Meanwhile at work: Way to be hugely opinionated. At least I don't hate him for it. Is this code actually "good" now? Lots of tests along the way,
+
+**Meanwhile at work:**  
+Way to be hugely opinionated. At least I don't hate him for it. Is this code actually "good" now? Lots of tests along the way,
 and produced in a timely fashion. Tons of collaboration in pairing, mobbing, design discussions, sprint planning, parking lot items, etc.
 
 ## Acceptance Testing
@@ -164,5 +173,7 @@ best to condense these tests, and we stick to the "testing pyramid". Basically o
 our head and make sure the application is working on a day-to-day basis. All the complex logic and refactoring abilities are covered by
 unit tests. The acceptance tests take hours to run, while the unit tests take milliseconds.
 
-Meanwhile at work: Can I declare work good because of my testing ability yet?
+
+**Meanwhile at work:**  
+Can I declare work good because of my testing ability yet?
 
