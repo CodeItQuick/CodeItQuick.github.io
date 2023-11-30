@@ -35,7 +35,8 @@ and hexagonal architecture), was that tests should be:
 3. Concise.
 
 **Meanwhile at work:**  
-The sky is falling, we have no customers, and whoever looks at this codebase would be horrified
+The sky is falling, we have no customers, and whoever looks at this codebase would be horrified. Also what is up with this one terrible take on debugging
+that just came out of nowhere. Did he misunderstand something?
 
 # Advanced Beginner
 ## Testing takes too long, its not worth it
