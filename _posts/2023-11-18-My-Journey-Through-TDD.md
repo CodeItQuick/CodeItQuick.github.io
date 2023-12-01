@@ -128,11 +128,12 @@ longer take weeks.
 [Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 ## Plateauing briefly
 
-![XKCD #979 - Wisdom Of The Ancients](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)  
 
 This phase marks the next 2-3 years of my journey. After being in the ensemble for a couple years now, I was able to start projects and begin
 testing on my own. I had started to refactor legacy code, a book I had read about the practice probably 2 years previously. Two years ago, I figured
 I could do this practice; however, that was not actually the case back then.
+
+![XKCD #979 - Wisdom Of The Ancients](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)  
 
 Honorable mention to test-commit-revert here. Its essentially writing tests, and if they fail you revert all the code since
 the last commit. Practicing/Trying this a couple times will get you more familiar in taking smaller steps. It's not really meant as a way to work, and
@@ -158,6 +159,8 @@ got changed or completely re-written as my ideals were challenged with theirs. T
 5. Significantly easier to write the tests while I code. However, if the codebase is gnarly, I'm going to be writing them after.
 6. Testing is very time intensive - I'm pretty sure I get my tasks done a lot faster than ever, and my tests are included in these pushes.
    If there is a time cost, its not very big.
+
+![XKCD #1457 - Feedback](https://imgs.xkcd.com/comics/feedback.png)
 
 Refactoring codebases that do not already have tests is significantly harder than testing code that has never seen tests before. Usually,
 the code writer did not have test writing in mind when they built the production code. Luckily at work, my fellow coders have relatively
