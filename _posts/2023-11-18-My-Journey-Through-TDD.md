@@ -5,6 +5,9 @@ image: green_purple_zombie_resized.jpg
 ---
 
 # Beginner Phase
+
+[# Beginner Phase]("/images/dreyfus_novice.png")
+
 ## The Dark Ages - Lets get down to debugging
 
 For the first 5 years of my development career I didn't test anything. 0 Testing. I think this is due to **no testing culture where I worked**.
