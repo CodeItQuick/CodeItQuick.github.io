@@ -16,6 +16,8 @@ Then one day I went to a PEI Devs Meetup, and met JB Rainserberger (a well-known
 He presented a lot of ideas that very much challenged my ways of thinking. I'm not supposed to EVER use a debugger? That's an anti pattern?
 Frankly I was shocked at this proposal of working in a different manner, maybe even a little offended even.
 
+![Debugging](https://imgs.xkcd.com/comics/debugging.png)  
+
 I think in this stage a number of the common misconceptions and myths prevented me from even getting started on unit testing:
 1. Testing takes too long and isn't worth it at all
 2. I can only test simple coding examples
@@ -30,6 +32,8 @@ One of the big issues with TDD and unit testing in general is the "learning curv
 get its **you need to have a coach if you're going to learn more about testing, otherwise you are wasting your time**. My testing journey wouldn't 
 have started if I hadn't met characters like JB Rainsberger, and my now-coach in this story, JitterTed/Ted Young. Editors note: I was in a book club
 with JB Rainsberger for years as well.
+
+![Its Easy](https://imgs.xkcd.com/comics/shouldnt_be_hard.png)
 
 The book club began, and probably my biggest takeaway from our first set of books (including TDD By Example, Refactoring Legacy Code, OOP books, DDD,
 and hexagonal architecture), was that tests should be:
@@ -70,6 +74,10 @@ This period is probably also the start of my "advanced beginner" stage. If I equ
 fathom it being possible to score over 250 in a single game. Sure, I'm better than the average "tester", but I am far from someone that codes
 on high speed trading applications, and the other areas of the world that have intensive testing. Some of the rules I think I developed due to
 my own misunderstandings were:
+
+![Mount Stupid](http://theengineeringmanager.com/wp-content/uploads/2017/12/20111228.gif)
+[Saturday Morning Breakfast Cereal](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
+
 
 1. E2E/Acceptance tests should never be written. I will incurr horrible maintenance costs, and massive time wasting will occur
 2. Mocking is similarly an evil that should be extinguished from this earth - wait do I still think this
