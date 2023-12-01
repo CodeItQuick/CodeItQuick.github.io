@@ -75,15 +75,13 @@ fathom it being possible to score over 250 in a single game. Sure, I'm better th
 on high speed trading applications, and the other areas of the world that have intensive testing. Some of the rules I think I developed due to
 my own misunderstandings were:
 
-![Mount Stupid](http://theengineeringmanager.com/wp-content/uploads/2017/12/20111228.gif)
-[Saturday Morning Breakfast Cereal](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
-
-
 1. E2E/Acceptance tests should never be written. I will incurr horrible maintenance costs, and massive time wasting will occur
 2. Mocking is similarly an evil that should be extinguished from this earth - wait do I still think this
 3. The better I TDD the higher my test coverage
 4. Testing is a lot easier to do after the implementation is finished
 5. Testing is very time intensive. I'm going to need extra time on all my tasks to be able to test things. Its my managers fault.
+
+[XKCD #376 - Bug](https://imgs.xkcd.com/comics/bug.png)  
 
 By the virtue of having a coach though, who had walked this path before, there are some anti-patterns people describe to me that I've never
 even experienced. Probably because my coach refused to do some things that he knew would lead me down the "wrong road" so to speak. Afterall,
@@ -96,6 +94,8 @@ include:
 4. E2E and integration testing is better than unit testing, because unit testing simply doesn't work
 
 **Meanwhile at work:**  
+![Mount Stupid](http://theengineeringmanager.com/wp-content/uploads/2017/12/20111228.gif)  
+[Saturday Morning Breakfast Cereal](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 Who the heck wants to work with this guy? He has strong, probably incorrect opinions. At least he produces OK code, and 
 a few tests along the way, while taking ages to push code.
 
@@ -127,6 +127,8 @@ longer take weeks.
 ![Advanced Beginner](/assets/images/dreyfus_proficient.png)  
 [Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 ## Plateauing briefly
+
+![XKCD #979 - Wisdom Of The Ancients](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)  
 
 This phase marks the next 2-3 years of my journey. After being in the ensemble for a couple years now, I was able to start projects and begin
 testing on my own. I had started to refactor legacy code, a book I had read about the practice probably 2 years previously. Two years ago, I figured
