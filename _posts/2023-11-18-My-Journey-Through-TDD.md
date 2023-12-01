@@ -6,7 +6,7 @@ image: green_purple_zombie_resized.jpg
 
 # Beginner Phase
 
-[# Beginner Phase]("/images/dreyfus_novice.png")
+[# Beginner Phase](/images/dreyfus_novice.png)
 [Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 
 ## The Dark Ages - Lets get down to debugging
