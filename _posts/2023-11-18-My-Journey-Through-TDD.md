@@ -81,7 +81,7 @@ my own misunderstandings were:
 4. Testing is a lot easier to do after the implementation is finished
 5. Testing is very time intensive. I'm going to need extra time on all my tasks to be able to test things. Its my managers fault.
 
-[XKCD #376 - Bug](https://imgs.xkcd.com/comics/bug.png)  
+![XKCD #376 - Bug](https://imgs.xkcd.com/comics/bug.png)  
 
 By the virtue of having a coach though, who had walked this path before, there are some anti-patterns people describe to me that I've never
 even experienced. Probably because my coach refused to do some things that he knew would lead me down the "wrong road" so to speak. Afterall,
