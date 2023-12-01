@@ -6,7 +6,7 @@ image: green_purple_zombie_resized.jpg
 
 # Beginner Phase
 
-![Beginner Phase](/assets/images/dreyfus_novice.png)
+![Beginner Phase](/assets/images/dreyfus_novice.png)  
 [Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 
 ## The Dark Ages - Lets get down to debugging
@@ -43,6 +43,8 @@ The sky is falling, we have no customers, and whoever looks at this codebase wou
 that just came out of nowhere. Did he misunderstand something?
 
 # Advanced Beginner
+![Advanced Beginner](/assets/images/dreyfus_advanced_beginner.png)  
+[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 ## Testing takes too long, its not worth it
 
 **Have you ever heard the expression testing takes too long? Well, in this phase, that was my issue** For the first three months of my unit 
@@ -90,6 +92,8 @@ Who the heck wants to work with this guy? He has strong, probably incorrect opin
 a few tests along the way, while taking ages to push code.
 
 # The Ego Drop to Competence
+![Advanced Beginner](/assets/images/dreyfus_competent.png)  
+[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 ## Year Two - A Buildup of some knowledge  
 
 The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
@@ -112,6 +116,8 @@ Well, the opinions are still strong, just slightly less offensive. At least he p
 longer take weeks.
 
 # Developing Proficiency
+![Advanced Beginner](/assets/images/dreyfus_proficient.png)  
+[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 ## Plateauing briefly
 
 This phase marks the next 2-3 years of my journey. After being in the ensemble for a couple years now, I was able to start projects and begin
