@@ -80,7 +80,8 @@ my own misunderstandings were:
 3. The better I TDD the higher my test coverage
 4. Testing is a lot easier to do after the implementation is finished
 5. Testing is very time intensive. I'm going to need extra time on all my tasks to be able to test things. Its my managers fault.
-
+   
+### XKCD #376 - Bug  
 ![XKCD #376 - Bug](https://imgs.xkcd.com/comics/bug.png)  
 
 By the virtue of having a coach though, who had walked this path before, there are some anti-patterns people describe to me that I've never
@@ -135,6 +136,7 @@ This phase marks the next 2-3 years of my journey. After being in the ensemble f
 testing on my own. I had started to refactor legacy code, a book I had read about the practice probably 2 years previously. Two years ago, I figured
 I could do this practice; however, that was not actually the case back then.
 
+### XKCD #979 - Wisdom Of The Ancients  
 ![XKCD #979 - Wisdom Of The Ancients](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)  
 
 Honorable mention to test-commit-revert here. Its essentially writing tests, and if they fail you revert all the code since
@@ -162,6 +164,7 @@ got changed or completely re-written as my ideals were challenged with theirs. T
 6. Testing is very time intensive - I'm pretty sure I get my tasks done a lot faster than ever, and my tests are included in these pushes.
    If there is a time cost, its not very big.
 
+### XKCD #1457 - Feedback  
 ![XKCD #1457 - Feedback](https://imgs.xkcd.com/comics/feedback.png)
 
 Refactoring codebases that do not already have tests is significantly harder than testing code that has never seen tests before. Usually,
@@ -201,5 +204,9 @@ unit tests. The acceptance tests take hours to run, while the unit tests take mi
 
 
 **Meanwhile at work:**  
+
+### XKCD #349 - Success  
+[XKCD #349 - Success](https://imgs.xkcd.com/comics/success.png)  
+
 Can I declare work good because of my testing ability yet?
 
