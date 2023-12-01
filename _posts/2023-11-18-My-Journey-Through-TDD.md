@@ -16,6 +16,7 @@ Then one day I went to a PEI Devs Meetup, and met JB Rainserberger (a well-known
 He presented a lot of ideas that very much challenged my ways of thinking. I'm not supposed to EVER use a debugger? That's an anti pattern?
 Frankly I was shocked at this proposal of working in a different manner, maybe even a little offended even.
 
+### XKCD #1722 - Debugging  
 ![Debugging](https://imgs.xkcd.com/comics/debugging.png)  
 
 I think in this stage a number of the common misconceptions and myths prevented me from even getting started on unit testing:
@@ -33,6 +34,7 @@ get its **you need to have a coach if you're going to learn more about testing, 
 have started if I hadn't met characters like JB Rainsberger, and my now-coach in this story, JitterTed/Ted Young. Editors note: I was in a book club
 with JB Rainsberger for years as well.
 
+### XKCD #1349 - Shouldn't Be Hard  
 ![Its Easy](https://imgs.xkcd.com/comics/shouldnt_be_hard.png)
 
 The book club began, and probably my biggest takeaway from our first set of books (including TDD By Example, Refactoring Legacy Code, OOP books, DDD,
