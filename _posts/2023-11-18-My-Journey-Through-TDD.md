@@ -114,6 +114,9 @@ Through at the time ensembling weekly in a regularly, I developed the skills to 
 is brand new, has only seen TDD, and is only allowed to be TDD on. Forget your large untested production project, in the most pristine settings
 I could now TDD. The same can be achieved in pairing arrangements, or, much later in time, through 3-4 person Dojo's run be even the grumpiest of developers.
 
+### XKCD #356 - Nerd Sniping
+![Nerd Sniping](https://imgs.xkcd.com/comics/nerd_sniping.png)
+
 Within the second year I started my journey of learning through "more modern" patterns, eg: a learning ensemble. Jitterted has run for the
 last 2-3 years, I honestly am not sure at this point its been so long, a learning ensemble where 3-5 of us developers get together and TDD 
 a blackjack game, code named "blackjack ensemble blue". Not to be confused with the orange version, that was on Thursday for a while and we
@@ -208,7 +211,7 @@ unit tests. The acceptance tests take hours to run, while the unit tests take mi
 **Meanwhile at work:**  
 
 ### XKCD #349 - Success  
-[XKCD #349 - Success](https://imgs.xkcd.com/comics/success.png)  
+![XKCD #349 - Success](https://imgs.xkcd.com/comics/success.png)  
 
 Can I declare work good because of my testing ability yet?
 
