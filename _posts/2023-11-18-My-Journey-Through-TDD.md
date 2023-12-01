@@ -95,13 +95,15 @@ include:
 
 **Meanwhile at work:**  
 ![Mount Stupid](http://theengineeringmanager.com/wp-content/uploads/2017/12/20111228.gif)  
-[Saturday Morning Breakfast Cereal](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
+[Saturday Morning Breakfast Cereal](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)  
+
 Who the heck wants to work with this guy? He has strong, probably incorrect opinions. At least he produces OK code, and 
 a few tests along the way, while taking ages to push code.
 
 # The Ego Drop to Competence
 ![Advanced Beginner](/assets/images/dreyfus_competent.png)  
-[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
+[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)  
+
 ## Year Two - A Buildup of some knowledge  
 
 The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
@@ -125,9 +127,9 @@ longer take weeks.
 
 # Developing Proficiency
 ![Advanced Beginner](/assets/images/dreyfus_proficient.png)  
-[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
-## Plateauing briefly
+[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)  
 
+## Plateauing briefly
 
 This phase marks the next 2-3 years of my journey. After being in the ensemble for a couple years now, I was able to start projects and begin
 testing on my own. I had started to refactor legacy code, a book I had read about the practice probably 2 years previously. Two years ago, I figured
