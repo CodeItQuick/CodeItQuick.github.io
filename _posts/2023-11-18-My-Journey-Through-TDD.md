@@ -23,10 +23,22 @@ I think in this stage a number of the common misconceptions and myths prevented 
 **Meanwhile at work:**  
 Thank god I'm the only developer on staff.
 
+**Collaboration Activities**  
+1. No PR Reviews
+2. No Pairing
+3. No Ensemble/Mob Programming
+4. Did have meetings though
+
 ## Beginnings (5 -> 5.5 Years)
 
 ![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 
+**Collaboration Activities**  
+1. No PR Reviews
+2. No Pairing
+3. No Ensemble/Mob Programming
+4. Did have meetings though
+   
 One of the big issues with TDD and unit testing in general is the "learning curve". Honestly, after reading my story if there's one take-away you
 get its **you need to have a coach if you're going to learn more about testing, otherwise you are wasting your time**. My testing journey wouldn't 
 have started if I hadn't met characters like JB Rainsberger, and my now-coach in this story, JitterTed/Ted Young. I was also in a book club
@@ -48,6 +60,12 @@ that just came out of nowhere. Did he misunderstand something?
 ![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 ## Testing takes too long, it's not worth it
 
+**Collaboration Activities**  
+1. Ted started reviewing my code on side projects
+2. No Pairing
+3. No Ensemble/Mob Programming
+4. Did have meetings though
+   
 **Have you ever heard the expression testing takes too long? Well, in this phase, that was my issue** For the first three months of my unit 
 testing journey I mostly... actually entirely... didn't write any tests exclusively at all. I worked on making my code more readable, and 
 trying to form it in a manner where writing a test around the code was _possible_. Finally the day came,
@@ -61,6 +79,12 @@ I'm just not there yet.
 
 ## TDD==UNIT TESTING==TEST COVERAGE 
 
+**Collaboration Activities**  
+1. Ted started reviewing my code on side projects
+2. No Pairing
+3. No Ensemble/Mob Programming
+4. No meetings
+   
 All of my testing attempts were on side projects, with a very limited amount at work. If I wrote tests at work I probably would be immediately fired
 for not churning out half a feature in 2 days. In this phase, I very much thought **TDD==Unit Testing==more test coverage**. The more tests I write 
 the better, and once I achieve 100% test coverage I will have officially become a TDDer. This phase lasted about the first year for me when I finally 
@@ -92,11 +116,17 @@ include:
 
 Who the heck wants to work with this guy? He has strong, probably incorrect opinions. At least he produces OK code, and 
 a few tests along the way, while taking ages to push code.
-
+   
 # The Ego Drop to Competence
 
 ![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 ## A Buildup of some knowledge (6 -> 8.5 Years)
+
+**Collaboration Activities**  
+1. Ted reviewed my code occasionally
+2. No Pairing
+3. Lots of learning through a learning ensemble hosted by Ted
+4. No meetings
 
 The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
 Ensembling weekly I developed the skills to be able to TDD in the "correct" settings. This means code that
@@ -119,12 +149,18 @@ The year's 7.5->8.5 in terms of testing I plateaued; learning less than the othe
 **Meanwhile at work:**  
 Well, the opinions are still strong, just slightly less offensive. At least he produces OK code, and a few tests along the way, and they no 
 longer take weeks.
-
+   
 # Developing Proficiency
 
 ![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 ## "Oh No My Colleagues" phase (8.5 -> 10 Years)
 
+**Collaboration Activities**  
+1. Code review at work
+2. Lots of pairing at work
+3. Learning Ensembles at work
+4. Meetings at work
+   
 About 3.5->4 years in I started working at a new place where testing had been ingrained for 10 years previously. I think my plateau'ing stopped
 at this phase, mostly due to my colleagues having a different take on many subjects within testing. Many of the rules I had previously established
 got changed or completely re-written as my ideals were challenged with theirs. These rules were:
