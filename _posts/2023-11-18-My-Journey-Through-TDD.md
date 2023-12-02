@@ -73,17 +73,7 @@ where I decided to write a test. Just one short week later I had written my firs
 Unperturbed, I continued to attempt to TDD/unit test for years later. I think even at this stage, if you asked me, I would probably say some
 form of "I do TDD", or at the minimum, "Yes, I can test".
 
-**Meanwhile at work:**  
-No change - the sky is still falling. At least the horrified faces of my colleagues at my code has diminished. Testing only on side projects because
-I'm just not there yet.
-
 ## TDD==UNIT TESTING==TEST COVERAGE 
-
-**Collaboration Activities**  
-1. Ted started reviewing my code on side projects
-2. No Pairing
-3. No Ensemble/Mob Programming
-4. No meetings
    
 All of my testing attempts were on side projects, with a very limited amount at work. If I wrote tests at work I probably would be immediately fired
 for not churning out half a feature in 2 days. In this phase, I very much thought **TDD==Unit Testing==more test coverage**. The more tests I write 
@@ -115,7 +105,7 @@ include:
 **Meanwhile at work:**  
 
 Who the heck wants to work with this guy? He has strong, probably incorrect opinions. At least he produces OK code, and 
-a few tests along the way, while taking ages to push code.
+a few tests along the way. He pushes code at an OK speed.
    
 # The Ego Drop to Competence
 
@@ -123,10 +113,10 @@ a few tests along the way, while taking ages to push code.
 ## A Buildup of some knowledge (6 -> 8.5 Years)
 
 **Collaboration Activities**  
-1. Ted reviewed my code occasionally
-2. No Pairing
-3. Lots of learning through a learning ensemble hosted by Ted
-4. No meetings
+1. Ted reviewed my code  
+2. No Pairing  
+3. Lots of learning through a learning ensemble hosted by Ted  
+4. No meetings  
 
 The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
 Ensembling weekly I developed the skills to be able to TDD in the "correct" settings. This means code that
