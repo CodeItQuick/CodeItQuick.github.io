@@ -56,7 +56,7 @@ Unperturbed, I continued to attempt to TDD/unit test for years later. I think ev
 form of "I do TDD", or at the minimum, "Yes, I can test".
 
 **Meanwhile at work:**  
-No change - the sky is still falling. At least the horrific faces of my colleagues at my code has diminished. Testing only on side projects because
+No change - the sky is still falling. At least the horrified faces of my colleagues at my code has diminished. Testing only on side projects because
 I'm just not there yet.
 
 ## TDD==UNIT TESTING==TEST COVERAGE 
