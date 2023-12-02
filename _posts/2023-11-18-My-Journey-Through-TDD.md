@@ -123,10 +123,6 @@ longer take weeks.
 # Developing Proficiency
 
 ![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
-
-# Journey to Proficient
-
-![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 ## "Oh No My Colleagues" phase (8.5 -> 10 Years)
 
 About 3.5->4 years in I started working at a new place where testing had been ingrained for 10 years previously. I think my plateau'ing stopped
