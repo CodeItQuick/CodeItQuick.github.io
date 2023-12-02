@@ -148,7 +148,7 @@ longer take weeks.
 **Collaboration Activities**  
 1. Code review at work
 2. Lots of pairing at work
-3. Learning Ensembles at work
+3. Learning Ensembles at work, Learning ensembles with Ted
 4. Meetings at work
    
 About 3.5->4 years in I started working at a new place where testing had been ingrained for 10 years previously. I think my plateau'ing stopped
