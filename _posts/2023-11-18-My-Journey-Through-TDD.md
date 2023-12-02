@@ -58,7 +58,7 @@ form of "I do TDD", or at the minimum, "Yes, I can test".
 No change - the sky is still falling. At least the horrific faces of my colleagues at my code has diminished. Testing only on side projects because
 I'm just not there yet.
 
-## TDD==UNIT TESTING==TEST COVERAGE (Years 6 -> 7)
+## TDD==UNIT TESTING==TEST COVERAGE 
 
 All of my testing attempts were on side projects, with a very limited amount at work. If I wrote tests at work I probably would be immediately fired
 for not churning out half a feature in 2 days. In this phase, I very much thought **TDD==Unit Testing==more test coverage**. The more tests I write 
@@ -94,7 +94,7 @@ a few tests along the way, while taking ages to push code.
 
 # The Ego Drop to Competence
 
-## A Buildup of some knowledge (Year 7 -> 8.5)
+## A Buildup of some knowledge (Years 6 -> 8.5)
 
 The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
 Ensembling weekly I developed the skills to be able to TDD in the "correct" settings. This means code that
@@ -111,6 +111,8 @@ the laws of TDD, I carefully learned how to write my tests first. I learned how 
 refactor and rewrite code so that it was never actually broken at any stage. In a greenfield project, I could indeed do TDD, assuming I was in
 an ensemble. The best I could do on work projects was to write tests after-the-fact. I did not have the ability to bring a codebase without tests
 into the TDD realm.
+
+The year's 7.5->8.5 in terms of testing I plateaued; learning less than the other time periods on the same topic.
 
 **Meanwhile at work:**  
 Well, the opinions are still strong, just slightly less offensive. At least he produces OK code, and a few tests along the way, and they no 
