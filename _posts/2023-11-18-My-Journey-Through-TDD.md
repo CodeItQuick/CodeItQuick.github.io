@@ -9,7 +9,7 @@ image: green_purple_zombie_resized.jpg
 ![Beginner Phase](/assets/images/dreyfus_novice.png)  
 [Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 
-## The Dark Ages (Year 0 -> Year 5)
+## The Dark Ages (0 -> 5 Years)
 
 For the first 5 years of my development career I didn't test anything. 0 Testing. I think this is due to **no testing culture where I worked**.
 Then one day I went to a PEI Devs Meetup, and met JB Rainserberger (a well-known author in agile coaching, unit testing and in the ways of TDD).
@@ -24,7 +24,7 @@ I think in this stage a number of the common misconceptions and myths prevented 
 **Meanwhile at work:**  
 Thank god I'm the only developer on staff.
 
-## Beginnings (Years 5 -> 5.5)  
+## Beginnings (5 -> 5.5 Years)  
 
 One of the big issues with TDD and unit testing in general is the "learning curve". Honestly, after reading my story if there's one take-away you
 get its **you need to have a coach if you're going to learn more about testing, otherwise you are wasting your time**. My testing journey wouldn't 
@@ -42,7 +42,7 @@ and hexagonal architecture), was that tests should be:
 The sky is falling, we have no customers, and whoever looks at this codebase would be horrified. Also what is up with this one terrible take on debugging
 that just came out of nowhere. Did he misunderstand something?
 
-# Advanced Beginner (Years 5.5 -> 6)
+# Advanced Beginner (5.5 -> 6 Years)
 ![Advanced Beginner](/assets/images/dreyfus_advanced_beginner.png)  
 [Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
 ## Testing takes too long, it's not worth it
@@ -94,7 +94,7 @@ a few tests along the way, while taking ages to push code.
 
 # The Ego Drop to Competence
 
-## A Buildup of some knowledge (Years 6 -> 8.5)
+## A Buildup of some knowledge (6 -> 8.5 Years)
 
 The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
 Ensembling weekly I developed the skills to be able to TDD in the "correct" settings. This means code that
@@ -123,7 +123,7 @@ longer take weeks.
 [Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)  
 
 # Journey to Proficient
-## "Oh No My Colleagues" phase (Year 8.5 -> 10)
+## "Oh No My Colleagues" phase (8.5 -> 10 Years)
 
 About 3.5->4 years in I started working at a new place where testing had been ingrained for 10 years previously. I think my plateau'ing stopped
 at this phase, mostly due to my colleagues having a different take on many subjects within testing. Many of the rules I had previously established
