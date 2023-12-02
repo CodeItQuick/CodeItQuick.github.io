@@ -16,10 +16,11 @@ image: green_purple_zombie_resized.jpg
 3. No Ensemble/Mob Programming
 4. Did have meetings though
    
-For the first 5 years of my development career I didn't test anything. 0 Testing. I think this is due to **no testing culture where I worked**.
-Then one day I went to a PEI Devs Meetup, and met JB Rainserberger (a well-known author in agile coaching, unit testing and in the ways of TDD).
-He presented a lot of ideas that very much challenged my ways of thinking. I'm not supposed to EVER use a debugger? That's an anti pattern?
-Frankly I was shocked at this proposal of working in a different manner, maybe even a little offended even.
+For the first 5 years of my development career I didn't test anything. 0 Testing. I think this is due to **no software testing culture where I worked**.
+The only person to blame for that was me, as I was the developer on staff. Then one day I went to a PEI Devs Meetup, and met JB Rainserberger 
+(a well-known author in agile coaching, unit testing and in the ways of TDD). He presented a lot of ideas that very much challenged my ways of
+thinking. I'm not supposed to EVER use a debugger? That's an anti pattern? Frankly I was shocked at this proposal of working in a different manner,
+maybe even a little offended even.
 
 I think in this stage a number of the common misconceptions and myths prevented me from even getting started on unit testing:
 1. Testing takes too long and isn't worth it at all
