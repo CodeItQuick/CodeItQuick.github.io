@@ -10,6 +10,12 @@ image: green_purple_zombie_resized.jpg
 
 ## The Dark Ages (0 -> 5 Years)
 
+**Collaboration Activities**  
+1. No PR Reviews
+2. No Pairing
+3. No Ensemble/Mob Programming
+4. Did have meetings though
+   
 For the first 5 years of my development career I didn't test anything. 0 Testing. I think this is due to **no testing culture where I worked**.
 Then one day I went to a PEI Devs Meetup, and met JB Rainserberger (a well-known author in agile coaching, unit testing and in the ways of TDD).
 He presented a lot of ideas that very much challenged my ways of thinking. I'm not supposed to EVER use a debugger? That's an anti pattern?
@@ -22,12 +28,6 @@ I think in this stage a number of the common misconceptions and myths prevented 
    
 **Meanwhile at work:**  
 Thank god I'm the only developer on staff.
-
-**Collaboration Activities**  
-1. No PR Reviews
-2. No Pairing
-3. No Ensemble/Mob Programming
-4. Did have meetings though
 
 ## Beginnings (5 -> 5.5 Years)
 
