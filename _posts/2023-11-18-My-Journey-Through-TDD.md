@@ -6,8 +6,7 @@ image: green_purple_zombie_resized.jpg
 
 # Beginner Phase
 
-![Beginner Phase](/assets/images/dreyfus_novice.png)  
-[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
+![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)  
 
 ## The Dark Ages (0 -> 5 Years)
 
@@ -24,7 +23,9 @@ I think in this stage a number of the common misconceptions and myths prevented 
 **Meanwhile at work:**  
 Thank god I'm the only developer on staff.
 
-## Beginnings (5 -> 5.5 Years)  
+## Beginnings (5 -> 5.5 Years)
+
+![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 
 One of the big issues with TDD and unit testing in general is the "learning curve". Honestly, after reading my story if there's one take-away you
 get its **you need to have a coach if you're going to learn more about testing, otherwise you are wasting your time**. My testing journey wouldn't 
@@ -43,8 +44,8 @@ The sky is falling, we have no customers, and whoever looks at this codebase wou
 that just came out of nowhere. Did he misunderstand something?
 
 # Advanced Beginner (5.5 -> 6 Years)
-![Advanced Beginner](/assets/images/dreyfus_advanced_beginner.png)  
-[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)
+
+![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 ## Testing takes too long, it's not worth it
 
 **Have you ever heard the expression testing takes too long? Well, in this phase, that was my issue** For the first three months of my unit 
@@ -94,6 +95,7 @@ a few tests along the way, while taking ages to push code.
 
 # The Ego Drop to Competence
 
+![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 ## A Buildup of some knowledge (6 -> 8.5 Years)
 
 The big hurdle that got me from "advanced beginner", or as more succinctly put "mount stupid", was the introduction of better collaboration.
@@ -119,10 +121,12 @@ Well, the opinions are still strong, just slightly less offensive. At least he p
 longer take weeks.
 
 # Developing Proficiency
-![Advanced Beginner](/assets/images/dreyfus_proficient.png)  
-[Research Gate Source](https://www.researchgate.net/figure/Visual-representation-of-the-Dreyfus-Model_fig1_341868560)  
+
+![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 
 # Journey to Proficient
+
+![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 ## "Oh No My Colleagues" phase (8.5 -> 10 Years)
 
 About 3.5->4 years in I started working at a new place where testing had been ingrained for 10 years previously. I think my plateau'ing stopped
