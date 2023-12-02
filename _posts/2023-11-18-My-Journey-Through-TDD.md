@@ -144,7 +144,7 @@ longer take weeks.
 # Developing Proficiency
 
 ![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
-## "Oh No My Colleagues" phase (8.5 -> 10 Years)
+## "Oh No My Colleagues" (8.5 -> 10 Years)
 
 **Collaboration Activities**  
 1. Code review at work
