@@ -8,7 +8,7 @@ image: green_purple_zombie_resized.jpg
 
 ![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)  
 
-## Never use a debugger? (0 -> 5 Years)
+## If you TDD - No Need For That Debugger Anymore (0 -> 5 Years)
 
 **Collaboration Activities**  
 1. No PR Reviews
