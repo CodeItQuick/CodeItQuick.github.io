@@ -72,11 +72,11 @@ fathom it being possible to score over 250 in a single game. Sure, I'm better th
 on high speed trading applications and the other areas of the world that have intensive testing. Some of the rules I think I developed due to
 my own misunderstandings were:
 
-1. E2E/Acceptance tests should never be written. I will incurr horrible maintenance costs, and massive time wasting will occur
-2. Mocking is similarly an evil that should be extinguished from this earth - wait do I still think this
-3. The better I TDD the higher my test coverage
-4. Testing is a lot easier to do after the implementation is finished
-5. Testing is very time intensive. I'm going to need extra time on all my tasks to be able to test things. It's my managers fault. 
+1. Acceptance Tests:  E2E/Acceptance tests should never be written. I will incurr horrible maintenance costs, and massive time wasting will occur
+2. Mocking: Mocking is similarly an evil that should be extinguished from this earth - wait do I still think this
+3. Output of TDD: The better I TDD the higher my test coverage
+4. Mechanics of TDD; Testing is a lot easier to do after the implementation is finished
+5. Time invested in TDD: Testing is very time intensive. I'm going to need extra time on all my tasks to be able to test things. It's my managers fault. 
 
 By the virtue of having a coach though, who had walked this path before, there are some anti-patterns people describe to me that I've never
 even experienced. Probably because my coach refused to do some things that he knew would lead me down the "wrong road" so to speak. Afterall,
@@ -129,12 +129,12 @@ About 3.5->4 years in I started working at a new place where testing had been in
 at this phase, mostly due to my colleagues having a different take on many subjects within testing. Many of the rules I had previously established
 got changed or completely re-written as my ideals were challenged with theirs. These rules were:
 
-1. E2E/Acceptance tests definitely have a place in their part of the testing pyramid. I get requirements, and assurance my software works. Just be careful how many I write.
-2. OHHH that's why mocks are bad. These tests are very verbose and hard to read. However, mocking can be a good first-step in a legacy codebase
+1. Acceptance Tests: E2E/Acceptance tests definitely have a place in their part of the testing pyramid. I get requirements, and assurance my software works. Just be careful how many I write.
+2. Mocking: OHHH that's why mocks are bad. These tests are very verbose and hard to read. However, mocking can be a good first-step in a legacy codebase
    that is very gnarly to test. Still, avoid them if you can
-4. To get better at TDD I need to get better at the **techniques** involved. HOW do I test this, and make the tests faster, and concise, while avoiding any interdependence among them.
-5. Significantly easier to write the tests while I code. However, if the codebase is gnarly, I'm going to be writing them after.
-6. Testing is very time intensive - I'm pretty sure I get my tasks done a lot faster than ever, and my tests are included in these pushes.
+3. Output of TDD: To get better at TDD I need to get better at the **techniques** involved. HOW do I test this, and make the tests faster, and concise, while avoiding any interdependence among them.
+4. Mechanics of TDD: Significantly easier to write the tests while I code. However, if the codebase is gnarly, I'm going to be writing them after.
+5. Time Invested in TDD: Testing is very time intensive - I'm pretty sure I get my tasks done a lot faster than ever, and my tests are included in these pushes.
    If there is a time cost, its not very big.
 
 **Meanwhile at work:**  
