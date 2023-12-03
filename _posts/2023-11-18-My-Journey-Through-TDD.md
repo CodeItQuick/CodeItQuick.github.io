@@ -10,7 +10,7 @@ For the first 5 years of my development career I didn't test anything. Then one 
 (a well-known author in agile coaching, unit testing and in the ways of TDD). He presented a lot of ideas that very much challenged my ways of
 thinking. One of them was not using the debugger very often.
    
-## Learning Phase (5 -> 6 Years)
+# Learning Phase (5 -> 6 Years)
    
 **Learning the mechanics of TDD is so difficult a coach was needed by me.** I joined two book clubs, JitterTeds, and JB Rainsbergers. Ted began reviewing my
 code and I finally got some feedback on code quality. At this point the learning began. It took at least half an hour to write a single test, 
