@@ -31,14 +31,13 @@ I think this is where I was on the variety of testing topics:
 5. Time invested in TDD: I was only working on unit testing on side projects
 
 # Intermediate Phase
-## Capable of unit testing
 
 During this period I was able to unit test faster, with most tests being made in seconds to minutes. I could now TDD in new projects that 
 hadn't been developed yet. I started attending a learning ensemble every week, and there I learned the mechanics of how to write my tests first,
 how to refactor code with unit tests, and how to design tests to be concise. I did plateau during this phase as my learning sources had not
 changed in long enough.
 
-## Working with Others (8.5 -> 10 Years)
+# Collaboration Phase (8.5 -> 10 Years)
 
 Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagree on several topics. Where I am at on a variety 
 of testing topics:
