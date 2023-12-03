@@ -25,7 +25,7 @@ My first main takeaway was tests need to be:
    
 I think this is where I was on the variety of testing topics:
 
-1. Acceptance Tests: No acceptances written as I was currently learning unit tests
+1. Acceptance Tests/BDD: No acceptances written as I was currently learning unit tests
 3. Output of TDD: Higher test coverage is better
 4. Mechanics of TDD; I could write tests 30 minutes->hours
 5. Time invested in TDD: I was only working on unit testing on side projects
@@ -42,7 +42,7 @@ changed in long enough.
 Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagreed on several topics. Where I am at on a variety 
 of testing topics:
 
-1. Acceptance Tests: E2E/Acceptance tests have a place in their part of the testing pyramid. I get requirements, and assurance my software works. Just be careful how many I write.
+1. Acceptance Tests/BDD: E2E/Acceptance tests have a place in their part of the testing pyramid. I get requirements, and assurance my software works. Just be careful how many I write.
 2. Output of TDD: To get better at TDD I need to get better at the **techniques** involved. HOW do I test this, and make the tests faster, and concise, while avoiding any interdependence among them.
 3. Mechanics of TDD: Significantly easier to write the tests while I code. However, if the codebase is gnarly, I'm going to be writing them after.
 4. Time Invested in TDD: I only write unit tests if it makes sense from a time and cost perspective. 80-90% of the time I write unit tests, the other 10-20% of the time
