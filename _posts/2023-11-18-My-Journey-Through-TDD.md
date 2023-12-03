@@ -8,7 +8,7 @@ image: green_purple_zombie_resized.jpg
 
 For the first 5 years of my development career I didn't test anything. Then one day I went to a local devs Meetup, and met JB Rainserberger 
 (a well-known author in agile coaching, unit testing and in the ways of TDD). He presented a lot of ideas that very much challenged my ways of
-thinking. One of them was not using the debugger very often.
+thinking.
    
 # Learning Phase (5 -> 6 Years)
    
