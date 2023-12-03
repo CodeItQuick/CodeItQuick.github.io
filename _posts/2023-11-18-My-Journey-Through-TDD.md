@@ -32,7 +32,7 @@ I think this is where I was on the variety of testing topics:
 
 # Intermediate Phase (6 -> 8.5 Years)
 
-During this period I was able to unit test faster, with most tests being made in seconds to minutes. I could now TDD in new projects that 
+During this period, I was able to unit test faster, with most tests being made in seconds to minutes. I could now TDD in new projects that 
 hadn't been developed yet. I started attending a learning ensemble every week, and there I learned the mechanics of how to write my tests first,
 how to refactor code with unit tests, and how to design tests to be concise. I did plateau during this phase as my learning sources had not
 changed in long enough.
@@ -42,7 +42,7 @@ changed in long enough.
 Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagree on several topics. Where I am at on a variety 
 of testing topics:
 
-1. Acceptance Tests: E2E/Acceptance tests definitely have a place in their part of the testing pyramid. I get requirements, and assurance my software works. Just be careful how many I write.
+1. Acceptance Tests: E2E/Acceptance tests have a place in their part of the testing pyramid. I get requirements, and assurance my software works. Just be careful how many I write.
 2. Output of TDD: To get better at TDD I need to get better at the **techniques** involved. HOW do I test this, and make the tests faster, and concise, while avoiding any interdependence among them.
 3. Mechanics of TDD: Significantly easier to write the tests while I code. However, if the codebase is gnarly, I'm going to be writing them after.
 4. Time Invested in TDD: I only write unit tests if it makes sense from a time and cost perspective. 80-90% of the time I write unit tests, the other 10-20% of the time
