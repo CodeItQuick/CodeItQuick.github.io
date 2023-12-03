@@ -38,7 +38,6 @@ hadn't been developed yet. I started attending a learning ensemble every week, a
 how to refactor code with unit tests, and how to design tests to be concise. I did plateau during this phase as my learning sources had not
 changed in long enough.
 
-![Beginner Phase](/assets/images/confidence_vs_tdd_skill_level.png)
 ## Working with Others (8.5 -> 10 Years)
 
 Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagree on several topics. Where I am at on a variety 
