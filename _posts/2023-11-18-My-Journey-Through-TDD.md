@@ -39,7 +39,7 @@ changed in long enough.
 
 # Collaboration Phase (8.5 -> 10 Years)
 
-Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagree on several topics. Where I am at on a variety 
+Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagreed on several topics. Where I am at on a variety 
 of testing topics:
 
 1. Acceptance Tests: E2E/Acceptance tests have a place in their part of the testing pyramid. I get requirements, and assurance my software works. Just be careful how many I write.
