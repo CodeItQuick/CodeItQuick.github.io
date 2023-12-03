@@ -33,7 +33,7 @@ I think this is where I was on the variety of testing topics:
 # Intermediate Phase (6 -> 8.5 Years)
 
 During this period, I was able to unit test faster, with most tests being made in seconds to minutes. I could now TDD in new projects that 
-hadn't been developed yet. I started attending a learning ensemble every week, and there I learned the mechanics of how to write my tests first,
+hadn't been developed yet. I started attending a learning ensemble every week. There I learned the mechanics of how to write my tests first,
 how to refactor code with unit tests, and how to design tests to be concise. I did plateau during this phase as my learning sources had not
 changed in long enough.
 
