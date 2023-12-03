@@ -4,7 +4,7 @@ description: Writing down a brief take on XP practices I believe in
 image: green_purple_zombie_resized.jpg
 ---
 
-# Beginner Phase
+# Beginner Phase (0 -> 5 Years)
 
 For the first 5 years of my development career I didn't test anything. Then one day I went to a local devs Meetup, and met JB Rainserberger 
 (a well-known author in agile coaching, unit testing and in the ways of TDD). He presented a lot of ideas that very much challenged my ways of
@@ -30,7 +30,7 @@ I think this is where I was on the variety of testing topics:
 4. Mechanics of TDD; I could write tests 30 minutes->hours
 5. Time invested in TDD: I was only working on unit testing on side projects
 
-# Intermediate Phase
+# Intermediate Phase (6 -> 8.5 Years)
 
 During this period I was able to unit test faster, with most tests being made in seconds to minutes. I could now TDD in new projects that 
 hadn't been developed yet. I started attending a learning ensemble every week, and there I learned the mechanics of how to write my tests first,
