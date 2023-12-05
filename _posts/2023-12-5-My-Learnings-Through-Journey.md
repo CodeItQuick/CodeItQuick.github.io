@@ -1,6 +1,6 @@
 ---
 name: My Learnings Through Journey
-description: Writing down a brief take on XP practices I believe in
+description: Brief Information On Major Takeaways
 image: green_purple_zombie_resized.jpg
 ---
    
