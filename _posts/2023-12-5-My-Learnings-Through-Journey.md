@@ -4,7 +4,7 @@ description: Writing down a brief take on XP practices I believe in
 image: green_purple_zombie_resized.jpg
 ---
    
-# The Basics (TDD Year One)
+# The Basics (TDD Year 1)
    
 My first main takeaway was tests need to be:
 
