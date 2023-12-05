@@ -24,7 +24,7 @@ Jetbrains Editor Shortcuts and Why They Are Important
 # Spreading the Practice (3.5 -> 5 Years)  
 
 The Importance of Coding Dojos  
-Implementing Pair Programming  
+Implementing Strong Style Pair Programming  
 Implementing Ensemble Programming  
 TODO: Teaching others the mechanics  
 The Importance of Acceptance Testing  
