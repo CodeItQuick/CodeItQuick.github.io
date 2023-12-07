@@ -29,8 +29,8 @@ Here's the tricky part, how do I split the winnings? Maybe after the first 3-6 m
 
 So maybe at 1 months we split winnings 60/40, the next 1 months we split winnings 80/20, and the following 1 months its 80/20. At that point I pay him out. From his 
 $3000 investment he stands to make $1400x2=$2800 * 40% = $1120. The next period will be $2800 x 20% = $560, and the last 6 months will be another $560.So his total 
-earnings would be $1120 + $1120 = $2240 (be sure to check my math). His original stake of $3000 has been reasonable returned for $2240. He makes half of the money in the first 6 months 
-(the highest risk period), and trailing returns in the proceeding year which are relatively low risk (if I can beat the limit for 3 months, I'm probably a winner there). 
+earnings would be $1120 + $1120 = $2240 (be sure to check my math). His original stake of $3000 has been reasonable returned for $2240. He makes half of the money in the first 1 months 
+(the highest risk period), and trailing returns in the proceeding 2 months which are relatively low risk. 
 Returning the investment at that point is easy as I still have all of his original deposit, so I would just return it.
 
 Editors note: realized I forgot to multiply by months in my math. I've just (extremely lazily) reduced timelines to 1 month to make the math work.
