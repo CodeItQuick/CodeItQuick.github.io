@@ -27,12 +27,13 @@ $6k. We'll split losses 50%, and if at any point we feel this is a losing idea, 
 Here's the tricky part, how do I split the winnings? Maybe after the first 3-6 months, we split total winnings 50/50. Then we make decreasing returns arrangements
 (I need him less and less as I convince myself I can actually beat $200 tables). 
 
-So maybe at 6 months we split winnings 60/40, the next 6 months we split winnings 80/20, and the following 6 months its 80/20. At that point I pay him out. From his 
+So maybe at 1 months we split winnings 60/40, the next 1 months we split winnings 80/20, and the following 1 months its 80/20. At that point I pay him out. From his 
 $3000 investment he stands to make $1400x2=$2800 * 40% = $1120. The next period will be $2800 x 20% = $560, and the last 6 months will be another $560.So his total 
 earnings would be $1120 + $1120 = $2240 (be sure to check my math). His original stake of $3000 has been reasonable returned for $2240. He makes half of the money in the first 6 months 
-(the highest risk period), and trailing returns in the proceeding year which are relatively low risk (if I can beat the limit for 6 months, I'm probably a winner there). 
-Returning the investment at that point is easy as I still have all of his original deposit, so I would just return it. Note: this is not possible with strangers,
-there's no stranger I would give $3000 hoping to get 2x back in 1.5 years. That's called throwing money away - extremely high risk, high return.
+(the highest risk period), and trailing returns in the proceeding year which are relatively low risk (if I can beat the limit for 3 months, I'm probably a winner there). 
+Returning the investment at that point is easy as I still have all of his original deposit, so I would just return it.
+
+Editors note: realized I forgot to multiply by months in my math. I've just (extremely lazily) reduced timelines to 1 month to make the math work.
 
 I can also speak from the point of view of staking people. I believe I've staked 2 people in my life. One for $500 or $1000. In that case I made something like $1000.
 That poker player also attempted to run away with the money, claiming "What kind of investment has 2x returns in a few months". The other guy I staked for $400
