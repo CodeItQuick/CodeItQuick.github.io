@@ -1,5 +1,5 @@
 ---
-name: Expense Report Kata
+name: Expense Report Kata (Java)
 position: Hexagonal Architecture
 learningone: Learned Proper Hexagonal Architecture
 learningtwo: Able to use relatively few acceptance tests to enable refactoring work
