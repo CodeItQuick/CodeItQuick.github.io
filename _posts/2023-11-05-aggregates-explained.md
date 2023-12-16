@@ -1,7 +1,7 @@
 ---
 name: Aggregates Explained
 description: Learn about my current understanding of aggregates
-image: zombie_download_5.jpg
+image: zombie_download_5.png
 ---
 
 # Aggregates Explained
