@@ -1,7 +1,7 @@
 ---
 name: My Journey Through TDD
 description: Writing down a brief take on XP practices I believe in
-image: green_purple_zombie_resized.jpg
+image: zombie_download_3.jpg
 ---
 
 # Beginner Phase (0 -> 5 Years)
