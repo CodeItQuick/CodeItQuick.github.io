@@ -1,7 +1,7 @@
 ---
 name: My Learnings Through Journey
 description: Brief Information On Major Takeaways
-image: zombie_download_2.jpg
+image: zombie_download_2.png
 ---
    
 # The Basics (TDD Year 1)
