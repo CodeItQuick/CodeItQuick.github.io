@@ -1,5 +1,5 @@
 ---
-name: Expense Report Kata
+name: Expense Report Kata (.NET)
 position: Hexagonal Architecture
 learningone: Learned Proper Hexagonal Architecture
 learningtwo: Rewriting it in C# to understand how to implement in new language
