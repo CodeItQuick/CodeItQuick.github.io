@@ -1,7 +1,7 @@
 ---
 name: What I get out of pairing?
 description: Why pair? What learnings do I get?
-image: zombie_download_5.png
+image: zombie_download_4.png
 ---
 
 # What I get out of pairing?
