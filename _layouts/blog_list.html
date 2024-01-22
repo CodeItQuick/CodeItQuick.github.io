@@ -32,7 +32,7 @@
     <div class="w-full bg-base-200 text-neutral-content p-8 md:p-8 md:grid md:gap-16 md:grid-cols-2">
         {% for post in site.posts %}
 
-        <div x-show="{{ forloop.index }} == pageNumber">
+        <div :class="{ 'hidden' : {{ forloop.index }} == pageNumber }">
             {% include component_list_description.html name=post.name image=post.image description=post.description url=post.url  %}
         </div>
         {% endfor %}
