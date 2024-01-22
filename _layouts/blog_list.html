@@ -85,7 +85,7 @@
         </button>
 
         <!-- Display page numbers -->
-        <template x-for="(page,index) in pages()" :key="index">
+        <template x-for="index in 4">
           <button
             class="px-3 py-2 rounded"
             :class="{ 'bg-indigo-600 text-white font-bold' : index === pageNumber }"
