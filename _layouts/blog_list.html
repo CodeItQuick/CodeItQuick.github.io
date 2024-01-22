@@ -99,8 +99,8 @@
         <!--Next Button-->
         <button
           x-on:click="nextPage"
-          :disabled="pageNumber >= 4"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= 4 }"
+          :disabled="pageNumber >= 3"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= 3 }"
         >
           <svg
             class="h-8 w-8 text-indigo-600"
@@ -120,8 +120,8 @@
         <!--Last Button-->
         <button
           x-on:click="++pageNumber"
-          :disabled="pageNumber >= 4"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= 4 }"
+          :disabled="pageNumber >= 3"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= 3 }"
         >
           <svg
             class="h-8 w-8 text-indigo-600"
