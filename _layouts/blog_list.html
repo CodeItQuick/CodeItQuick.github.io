@@ -139,7 +139,7 @@
         </button>
       </div>
 
-      <div x-data="filteredEmployees">
+      <div>
         <div
           class="mt-6 flex flex-wrap justify-between items-center text-sm leading-5 text-gray-700"
         >
@@ -363,7 +363,7 @@
           search: "",
           pageNumber: 0,
           size: 10,
-          total: "",
+          total: sourceData.length,
           myForData: sourceData,
 
           get filteredEmployees() {
