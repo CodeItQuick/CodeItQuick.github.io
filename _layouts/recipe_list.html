@@ -33,5 +33,6 @@
 
         {% endfor %}
     </div>
-    {% include pagination.html size=site.recipes.size {{ pageNumber }} %}
+    {% capture pageNumber %}
+    {% include pagination.html size=site.recipes.size pageNumber=pageNumber %}
 </body>
