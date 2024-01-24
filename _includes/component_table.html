@@ -69,7 +69,7 @@
         <!--Next Button-->
         <button
           x-on:click="++pageNumber"
-          :disabled="pageNumber >= site.posts.size / 4"
+          :disabled="pageNumber >= Math.ceil(site.posts.size / 4)"
           :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= 3 }"
         >
           <svg
@@ -90,7 +90,7 @@
         <!--Last Button-->
         <button
           x-on:click="++pageNumber"
-          :disabled="pageNumber >= site.posts.size / 4"
+          :disabled="pageNumber >= Math.ceil(site.posts.size / 4)"
           :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= 3 }"
         >
           <svg
