@@ -5,7 +5,7 @@ image: Firefly_Zombie_eating_61263_instasize.jpg
 layout: recipe
 ---
 
-# YOU WILLD NEED
+# YOU WILL NEED
 ## FOR THE SALAD
 3 (15 ounce) cans beans, drained, rinsed, or use 4 1/2 cups cooked beans
 1/2 medium onion, finely chopped (about 3/4 cup)
