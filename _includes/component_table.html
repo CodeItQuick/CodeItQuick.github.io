@@ -9,7 +9,7 @@
         </div>
         <div
         class="w-full md:w-1/2 mx-auto py-6 flex justify-between items-center"
-        x-show="{{ site.posts.size }}"
+        x-show="{{ include.table.size }}"
       >
         <!--First Button-->
         <button
@@ -55,7 +55,7 @@
         </button>
 
         <!-- Display page numbers -->
-        <template x-for="index in Math.ceil(site.posts.size / 4) + 1">
+        <template x-for="index in Math.ceil(include.table.posts.size / 4) + 1">
           <button
             class="px-3 py-2 rounded"
             :class="{ 'bg-indigo-600 text-white font-bold' : index - 1 === pageNumber }"
@@ -69,8 +69,8 @@
         <!--Next Button-->
         <button
           x-on:click="++pageNumber"
-          :disabled="pageNumber >= Math.ceil(site.posts.size / 4)"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(site.posts.size / 4) }"
+          :disabled="pageNumber >= Math.ceil(include.table.size / 4)"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(include.table.size / 4) }"
         >
           <svg
             class="h-8 w-8 text-indigo-600"
@@ -90,8 +90,8 @@
         <!--Last Button-->
         <button
           x-on:click="++pageNumber"
-          :disabled="pageNumber >= Math.ceil(site.posts.size / 4)"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(site.posts.size / 4) }"
+          :disabled="pageNumber >= Math.ceil(include.table.size / 4)"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(include.table.size / 4) }"
         >
           <svg
             class="h-8 w-8 text-indigo-600"
