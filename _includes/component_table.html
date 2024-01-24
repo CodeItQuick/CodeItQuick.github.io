@@ -55,7 +55,7 @@
         </button>
 
         <!-- Display page numbers -->
-        <template x-for="index in Math.ceil(include.table.posts.size / 4) + 1">
+        <template x-for="index in Math.ceil(include.table.size / 4) + 1">
           <button
             class="px-3 py-2 rounded"
             :class="{ 'bg-indigo-600 text-white font-bold' : index - 1 === pageNumber }"
