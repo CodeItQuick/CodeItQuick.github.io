@@ -27,23 +27,23 @@
         <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none border rounded-md text-neutral-700 group border-neutral-200/80">
             <li>
                 <button 
-                    :class="{ 'bg-neutral-100' : navigationMenu=='learn-more', 'hover:bg-neutral-100' : navigationMenu!='learn-more' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='learn-more'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
+                    :class="{ 'bg-neutral-100' : navigationMenu=='projects-page', 'hover:bg-neutral-100' : navigationMenu!='projects-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='projects-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
                     <span>Projects</span>
-                    <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'learn-more' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'projects-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
             </li>
             <li>
                 <button 
-                    :class="{ 'bg-neutral-100' : navigationMenu=='learn-more', 'hover:bg-neutral-100' : navigationMenu!='learn-more' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='learn-more'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
+                    :class="{ 'bg-neutral-100' : navigationMenu=='blog-page', 'hover:bg-neutral-100' : navigationMenu!='blog-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='blog-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
                     <span>Blog</span>
-                    <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'learn-more' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
             </li>
             <li>
                 <button 
-                    :class="{ 'bg-neutral-100' : navigationMenu=='learn-more', 'hover:bg-neutral-100' : navigationMenu!='learn-more' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='learn-more'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
+                    :class="{ 'bg-neutral-100' : navigationMenu=='recipe-page', 'hover:bg-neutral-100' : navigationMenu!='recipe-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='recipe-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
                     <span>Recipes</span>
-                    <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'learn-more' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'recipe-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
             </li>
         </ul>
@@ -59,14 +59,14 @@
         class="absolute top-0 pt-3 duration-200 ease-out -translate-x-1/2 translate-y-11" x-cloak>
 
         <div class="flex justify-center w-auto h-auto overflow-hidden bg-white border rounded-md shadow-sm border-neutral-200/70">
-            <div x-show="navigationMenu == 'learn-more'" class="flex items-stretch justify-center w-full p-6">
+            <div x-show="navigationMenu == 'projects-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
                     <a href="/" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
                         <span class="block mb-1 font-medium text-black">Main Projects Page</span>
                         <span class="block font-light leading-5 opacity-50">See all the current projects.</span>
                     </a>
                     {% for project in site.projects %}
-                            <a href="{{ project.github }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                        <a href="{{ project.github }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
                             <span class="block mb-1 font-medium text-black">{{ project.name }}</span>
                             <span class="block font-light leading-5 opacity-50">{{ project.description }}</span>
                         </a>
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="flex justify-center w-auto h-auto overflow-hidden bg-white border rounded-md shadow-sm border-neutral-200/70">
-            <div x-show="navigationMenu == 'learn-more'" class="flex items-stretch justify-center w-full p-6">
+            <div x-show="navigationMenu == 'blog-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
                     <a href="/blog_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
                         <span class="block mb-1 font-medium text-black">Main Blog Page</span>
@@ -91,7 +91,7 @@
             </div>
         </div>
         <div class="flex justify-center w-auto h-auto overflow-hidden bg-white border rounded-md shadow-sm border-neutral-200/70">
-            <div x-show="navigationMenu == 'learn-more'" class="flex items-stretch justify-center w-full p-6">
+            <div x-show="navigationMenu == 'recipe-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
                     <a href="/recipe_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
                         <span class="block mb-1 font-medium text-black">Main Recipes Page</span>
