@@ -27,7 +27,7 @@
         <div class="flex justify-between">
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md text-primary">
                 <li>
-                    <a href="https://github.com/CodeItQuick" target="_blank" @click="navigationMenuClose()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
+                    <a href="https://github.com/CodeItQuick" target="_blank" @click="navigationMenuClose()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
                         <span>CodeItQuick</span>
                     </a>
                 </li>
@@ -35,14 +35,14 @@
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md text-primary group">
                 <li>
                     <button
-                        :class="{ 'bg-neutral-100' : navigationMenu=='projects-page', 'hover:bg-neutral-100' : navigationMenu!='projects-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='projects-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
+                        :class="{ 'bg-neutral-100' : navigationMenu=='projects-page', 'hover:bg-neutral-100' : navigationMenu!='projects-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='projects-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
                         <span>Projects</span>
                         <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'projects-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                 </li>
                 <li>
                     <button
-                        :class="{ 'bg-neutral-100' : navigationMenu=='blog-page', 'hover:bg-neutral-100' : navigationMenu!='blog-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='blog-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
+                        :class="{ 'bg-neutral-100' : navigationMenu=='blog-page', 'hover:bg-neutral-100' : navigationMenu!='blog-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='blog-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
                         <span>Blog</span>
                         <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
@@ -57,7 +57,7 @@
             </ul>
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md text-primary">
                 <li>
-                    <a href="https://github.com/CodeItQuick/CodeItQuick.github.io" target="_blank" @click="navigationMenuClose()"  class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
+                    <a href="https://github.com/CodeItQuick/CodeItQuick.github.io" target="_blank" @click="navigationMenuClose()"  class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
                         <span>Github</span>
                     </a>
                 </li>
@@ -78,13 +78,13 @@
             <div x-show="navigationMenu == 'projects-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
                     <a href="/" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
-                        <span class="block mb-1 font-dark text-black">Main Projects Page</span>
-                        <span class="block font-medium leading-5 opacity-50">See all the current projects.</span>
+                        <span class="block mb-1 font-bold text-black">Main Projects Page</span>
+                        <span class="block font-medium leading-5 opacity-70">See all the current projects.</span>
                     </a>
                     {% for project in site.projects %}
                         <a href="{{ project.github }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
-                            <span class="block mb-1 font-dark text-black">{{ project.name }}</span>
-                            <span class="block font-medium leading-5 opacity-50">{{ project.description }}</span>
+                            <span class="block mb-1 font-bold text-black">{{ project.name }}</span>
+                            <span class="block font-medium leading-5 opacity-70">{{ project.description }}</span>
                         </a>
                     {% endfor %}
                 </div>
@@ -94,13 +94,13 @@
             <div x-show="navigationMenu == 'blog-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
                     <a href="/blog_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
-                        <span class="block mb-1 font-dark text-black">Main Blog Page</span>
-                        <span class="block font-medium leading-5 opacity-50">See all the current blog posts.</span>
+                        <span class="block mb-1 font-bold text-black">Main Blog Page</span>
+                        <span class="block font-medium leading-5 opacity-70">See all the current blog posts.</span>
                     </a>
                     {% for post in site.posts %}
                         <a href="{{ post.url }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
-                            <span class="block mb-1 font-dark text-black">{{ post.name }}</span>
-                            <span class="block font-medium leading-5 opacity-50">{{ post.description }}</span>
+                            <span class="block mb-1 font-bold text-black">{{ post.name }}</span>
+                            <span class="block font-medium leading-5 opacity-70">{{ post.description }}</span>
                         </a>
                     {% endfor %}
                 </div>
@@ -110,13 +110,13 @@
             <div x-show="navigationMenu == 'recipe-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
                     <a href="/recipe_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
-                        <span class="block mb-1 font-dark text-black">Main Recipes Page</span>
-                        <span class="block font-medium leading-5 opacity-50">See a list of beginner-friendly recipes.</span>
+                        <span class="block mb-1 font-bold text-black">Main Recipes Page</span>
+                        <span class="block font-medium leading-5 opacity-70">See a list of beginner-friendly recipes.</span>
                     </a>
                     {% for recipe in site.recipes %}
                         <a href="{{ recipe.url }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
-                            <span class="block mb-1 font-dark text-black">{{ recipe.name }}</span>
-                            <span class="block font-medium leading-5 opacity-50">{{ recipe.description }}</span>
+                            <span class="block mb-1 font-bold text-black">{{ recipe.name }}</span>
+                            <span class="block font-medium leading-5 opacity-70">{{ recipe.description }}</span>
                         </a>
                     {% endfor %}
                 </div>
