@@ -2,6 +2,7 @@
 name: What I get out of pairing?
 description: Why pair? What learnings do I get?
 image: video_game_zombies_2_instasize.jpg
+tags: agile theory
 ---
 
 ## Agile - Scrum, The Parking Lot, and how to do tickets/stories
