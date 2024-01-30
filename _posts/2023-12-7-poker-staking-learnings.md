@@ -2,6 +2,7 @@
 name: Poker Staking Learnings
 description: How do stocks and poker staking arrangements relate?
 image: zombie_download_1.png
+tags: story business
 ---
 
 # My Poker Business (15 years ago)
