@@ -2,6 +2,7 @@
 name: Exploring Sql Performance Tuning - ChatGPT
 description: Using chatgpt to get a better handle on sqlserver performance tuning
 image: zombie_in_a_graveyard_3_instasize.jpg
+tags: ideas theory
 ---
 
 # Introduction
