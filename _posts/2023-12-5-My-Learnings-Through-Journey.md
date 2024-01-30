@@ -2,6 +2,7 @@
 name: My Learnings Through Journey
 description: Brief Information On Major Takeaways
 image: zombie_download_2.png
+tags: TDD Theory 
 ---
    
 # The Basics (TDD Year 1)
