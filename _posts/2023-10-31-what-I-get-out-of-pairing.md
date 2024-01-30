@@ -2,6 +2,7 @@
 name: What I get out of pairing?
 description: Why pair? What learnings do I get?
 image: zombie_download_4.png
+tags: pairing agile theory
 ---
 
 # What I get out of pairing?
