@@ -5,6 +5,11 @@
     </figure>
     <div class="card-body lg:w-9/12">
         <h2 class="card-title">{{ include.name }}</h2>
+            <div class="badge badge-primary badge-outline">
+                    {% if tag_size > 0 %}
+                      {{ tags | sort | join: ", " }}
+                    {% endif %}
+            </div>
         <p>
          {{ include.description }}
         </p>
