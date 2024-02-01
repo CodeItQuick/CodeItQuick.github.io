@@ -3,6 +3,9 @@
             {% for row in include.table %}
 
             <div :class="{ 'hidden' : {{ forloop.index }} < pageNumber * 4 + 1 || {{ forloop.index }} > (pageNumber + 1) * 4   }">
+                {% for tag in row.tags %}
+                        <div class="badge badge-primary badge-outline">{% tag %}</div>
+                {% endfor %}
                 {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url  %}
             </div>
             {% endfor %}
