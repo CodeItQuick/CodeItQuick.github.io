@@ -4,19 +4,9 @@
 
             <div :class="{ 'hidden' : {{ forloop.index }} < pageNumber * 4 + 1 || {{ forloop.index }} > (pageNumber + 1) * 4   }">
                 <div class="badge badge-primary badge-outline">
-                        {% if row.tags.size > 0 %} 
-                                {% for tagName in row.tags %} 
-                                        {% capture tags_content %}{{ tags_content }} 
-                                                <a href='/tags?tagName={{ tagName }}'>
-                                                        <i class='glyphicon glyphicon-tag'></i>
-                                                        {{ tagName }}
-                                                </a> 
-                                        {% endcapture %} 
-                                {% endfor %} 
-                        {% else %} 
-                                {% assign tags_content = '' %} 
-                        {% endif %} 
-                                {{ tags_content }} 
+                        {% if row.tags.size > 0 %}
+                          {{ row.tags | sort | join: ", " }}
+                        {% endif %}
                 </div>
                 {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url  %}
             </div>
