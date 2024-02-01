@@ -6,9 +6,9 @@
     <div class="card-body lg:w-9/12">
         <h2 class="card-title">{{ include.name }}</h2>
                     {% if include.tag_size > 0 %}
-                        {% for tag in include.tags %}
+                        {% for stuff in include.tags %}
                             <div class="badge badge-primary badge-outline">
-                                {% tag %}
+                                {{ stuff }}
                             </div>
                         {% endfor %}
                     {% endif %}
