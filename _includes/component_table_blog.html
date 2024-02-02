@@ -1,13 +1,11 @@
 <div x-data="{ pageNumber: 0 }">
         <div class="w-full bg-base-200 text-neutral-content md:p-8">
-                <div>
+                <div x-data="{ tag_filter: '' }">
                     {% for tag in site.tags %}
                             <span class="badge badge-primary badge-outline">
-                                {{ tag[0] }}
+                                <button x-on:click="tag_filter = '{{ tag[0]}}'">{{ tag[0] }}</button>
                             </span>
-                            {% for post in tag[1] %}
-                              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                            {% endfor %}
+                            <li x-show="tag_filter == '{{ tag[0] }}'"><a href="{{ post.url }}">{{ post.title }}</a></li>
                     {% endfor %}
                 </div>
                 <div class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
