@@ -8,13 +8,15 @@
                     {% endfor %}
                 </div>
                 <div class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
-                     <template x-for="table in {{ site.tags }}">
-                        <template x-if="table[0].tags.includes(tag_filter)" x-for="(row, index) in table[1]" >
-                                <div :class="{ 'hidden' : index < pageNumber * 4 + 1 || index > (pageNumber + 1) * 4   }">
-                                   {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
-                                </div>
+                     {% for tag in site.tags %} 
+                        <template x-if="{{ tag[0] }} == tag_filter" >
+                                <template x-for="row in {{ tag[1] }} ">
+                                        <div :class="{ 'hidden' : index < pageNumber * 4 + 1 || index > (pageNumber + 1) * 4   }">
+                                           {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
+                                        </div>
+                                </template>
                         </template>
-                     </template>
+                     {% endfor %}
                 </div>
         </div>
         <div
