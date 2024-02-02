@@ -9,14 +9,13 @@
                 </div>
                 <div class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
                         
-                     {% for row in include.table %}
+                     <template x-for="(row, index) in {{ include.table }}">
                         <template x-if="'{{ row.tags }}'.includes(tag_filter)">
-                                <li ><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                <div :class="{ 'hidden' : {{ forloop.index }} < pageNumber * 4 + 1 || {{ forloop.index }} > (pageNumber + 1) * 4   }">
+                                   {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
+                                </div>
                         </template>
-                        <div :class="{ 'hidden' : {{ forloop.index }} < pageNumber * 4 + 1 || {{ forloop.index }} > (pageNumber + 1) * 4   }">
-                           {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
-                        </div>
-                     {% endfor %}
+                     </template>
                 </div>
         </div>
         <div
