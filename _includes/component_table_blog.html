@@ -10,11 +10,11 @@
                 <div class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
                      {% for tag in site.tags %} 
                         <template x-if="'{{ tag[0] }}'.includes(tag_filter)" >
-                                <template x-for="row in {{ tag[1] }} ">
-                                        <div :class="{ 'hidden' : index < pageNumber * 4 + 1 || index > (pageNumber + 1) * 4   }">
-                                           {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
-                                        </div>
-                                </template>
+                             {% for row in tag[1] %} 
+                                <div :class="{ 'hidden' : index < pageNumber * 4 + 1 || index > (pageNumber + 1) * 4   }">
+                                   {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
+                                </div>
+                             {% endfor %}
                         </template>
                      {% endfor %}
                 </div>
