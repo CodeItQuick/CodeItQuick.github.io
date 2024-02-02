@@ -8,7 +8,7 @@
                     {% endfor %}
                 </div>
                 <div class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
-                     {% for tag in site.tags %} 
+                     {% for tag in site.posts %} 
                              {% for row in tag[1] %} 
                                 <template x-if="'{{ row.tags }}'.includes(tag_filter)" >
                                         <div :class="{ 'hidden' : index < pageNumber * 4 + 1 || index > (pageNumber + 1) * 4   }">
