@@ -1,4 +1,9 @@
 <div x-data="{ pageNumber: 0 }">
+        {% for content in site.tags %}
+            <span class="badge badge-primary badge-outline">
+                {{ content }}
+            </span>
+        {% endfor %}
         <div class="w-full bg-base-200 text-neutral-content md:p-8 md:grid md:gap-16 md:grid-cols-2">
             {% for row in include.table %}
 
