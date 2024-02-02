@@ -11,7 +11,7 @@
                         
                      <template x-for="(row, index) in {{ include.table }}">
                         <template x-if="row.tags.includes(tag_filter)">
-                                <div :class="{ 'hidden' : {{ forloop.index }} < pageNumber * 4 + 1 || {{ forloop.index }} > (pageNumber + 1) * 4   }">
+                                <div :class="{ 'hidden' : index < pageNumber * 4 + 1 || index > (pageNumber + 1) * 4   }">
                                    {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
                                 </div>
                         </template>
