@@ -6,11 +6,11 @@
                                 <button x-on:click="tag_filter = '{{ tag[0]}}'">{{ tag[0] }}</button>
                             </span>
                     {% endfor %}
-                    <li x-show="tag_filter.include('{{ tag[0] }}')"><a href="{{ post.url }}">{{ post.title }}</a></li>
                 </div>
                 <div class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
                         
                      {% for row in include.table %}
+                        <li x-show="'{{ row.tags] }}'.include(tag_filter)"><a href="{{ post.url }}">{{ post.title }}</a></li>
                         <div :class="{ 'hidden' : {{ forloop.index }} < pageNumber * 4 + 1 || {{ forloop.index }} > (pageNumber + 1) * 4   }">
                            {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
                         </div>
