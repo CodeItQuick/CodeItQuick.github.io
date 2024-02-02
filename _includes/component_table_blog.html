@@ -1,8 +1,8 @@
 <div x-data="{ pageNumber: 0 }">
         <div>
-                {% for content in site.tags %}
+                {% for tag in site.tags %}
                     <span class="badge badge-primary badge-outline">
-                        {{ content }}
+                        {{ tag[0] }}
                     </span>
                 {% endfor %}
         </div>
