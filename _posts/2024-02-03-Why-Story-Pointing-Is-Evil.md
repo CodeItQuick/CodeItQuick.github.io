@@ -48,7 +48,7 @@ There actually isn't a steady state to the above matrix. I think the flow of sta
 3. Developer starts to have lower performance than coworkers, enters into lower performance (Quadrant B)
 4. Developer realizes he needs to sandbag estimates, starts sandbagging (Quadrant C)
 5. Manager eventually realizes developer is sandbagging, starts to argue with dev about sandbagging (Quadrant A)
-6. Developer realizes he's better off not sandbagging so much, reduces his sandbagging, enters into one of the three other quadrants
+6. Developer has continual arguments with management - likely wants in a different quadrant
 7. Manager stops policing dev, dev stops sandbagging (Quadrant D, start at 1)
 8. Manager stops policing dev, dev continues sandbagging (Quadrant B steady-state, manager has no incentive to police dev (results in toxicity), and developer has no incentive to not sandbag (right column is worse than left))
 9. Manager continues to police dev, dev stops sandbagging (Quadrant B - extremely undesirable for dev, start at #3, except the dev cannot move to #4)
