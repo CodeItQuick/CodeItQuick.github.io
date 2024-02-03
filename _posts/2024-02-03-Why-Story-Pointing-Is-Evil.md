@@ -55,12 +55,12 @@ Here we can enter into several different states, some of them will be steady-sta
 * Manager continues to police dev, dev stops sandbagging (Quadrant B - extremely undesirable for dev, start at #3, except the dev cannot move to #4 until some time passes)  
 * Manager continues to police dev, dev continues sandbagging (Quadrant A steady state)
 
-Notice the manager's choices in the current state of affairs. The longer the manager polices the developer, the longer they stay in toxicity essentially (noticed the quadrant choices in this scenario
-are D or C). Therefore, the manager should realize his mistake, and stop policing the developer. If the manager doesn't realize he is the cause, the developer is likely fired (either the dev
+Notice the manager's choices in the current state of affairs. The longer the manager polices the developer, the longer they stay in toxicity essentially (notice the quadrant choices in this scenario
+are A or B). Therefore, the manager should realize his mistake, and stop policing the developer. If the manager doesn't realize he is the cause, the developer is likely fired (either the dev
 sandbags his estimates, is confrontational, and is fired. Or, the developer doesn't sandbag his estimates, has low performance, and is fired).
 
-Notice the developers choices - he either continues to sandbag or stops. If he stops arguing, he enters into the right side of the matrix (which is worse than the left). Therefore, the developer
-should continue to argue his case.
+Notice the developers choices - he either continues to sandbag or stops. If he stops arguing, he enters into the right side of the matrix (his locus of control is in being in quadrants A/C vs B/D). 
+Therefore, the developer should continue to argue his case.
 
 To revise my made-up scenario one more time. If I think something is going to take 3 days, and I say 5 days, the reality is things rarely take as long as I think they'll take. So I will regularly
 not hit my own internal 3 day target, and thus its very hard to "detect" that I'm sandbagging the entire time. Since you cannot detect my sandbagging easily, its more about how many points I can get
