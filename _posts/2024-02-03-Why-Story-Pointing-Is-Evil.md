@@ -5,6 +5,8 @@ image: zombie_download_1.png
 tags: theory agile
 ---
 
+# Why Story Pointing Is Evil
+
 One of the problems with talking about story pointing, is that its very much two points of opposing views with no clear "right" answer. 
 I also cannot think of any science that would show they are either "good" or "bad". All the same I'm going to attempt to bring you to my point
 of view. Not only are story points not useful, they downright contribute to a toxic work environment.
