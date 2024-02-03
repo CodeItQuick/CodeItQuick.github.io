@@ -42,17 +42,18 @@ In the sandbagging column, you either get superior performance as the manager do
 productivity is higher. From the managers point of view, if he starts policing estimates he essentially creates a toxic environment (either he argues with sandbagging devs, or
 thinks non-sandbagging devs are extremely unproductive).
 
-There actually isn't a steady state to the above matrix. I think the flow of states for each dev/manager pair is:
+There is a natural flow from state-to-state here:
 1. Developer gives honest answers to storypoints, life is good (Quadrant D)
 2. Another developer starts sandbagging his estimates for *reasons*
 3. Developer starts to have lower performance than coworkers, enters into lower performance (Quadrant B)
 4. Developer realizes he needs to sandbag estimates, starts sandbagging (Quadrant C)
-5. Manager eventually realizes developer is sandbagging, starts to argue with dev about sandbagging (Quadrant A)
-6. Developer has continual arguments with management - likely wants in a different quadrant
-7. Manager stops policing dev, dev stops sandbagging (Quadrant D, start at 1)
-8. Manager stops policing dev, dev continues sandbagging (Quadrant B steady-state, manager has no incentive to police dev (results in toxicity), and developer has no incentive to not sandbag (right column is worse than left))
-9. Manager continues to police dev, dev stops sandbagging (Quadrant B - extremely undesirable for dev, start at #3, except the dev cannot move to #4)
-10. Manager continues to police dev, dev continues sandbagging (Quadrant A steady state)
+5. Manager eventually realizes developer is sandbagging, starts to argue with dev about sandbagging (Quadrant A)  
+   
+Here we can enter into several different states, some of them will be steady-state:  
+A. Manager stops policing dev, dev stops sandbagging (Quadrant D, start at 1)
+B. Manager stops policing dev, dev continues sandbagging (Quadrant C steady-state, manager has no incentive to police dev (results in toxicity), and developer has no incentive to not sandbag (right column is worse than left))
+C. Manager continues to police dev, dev stops sandbagging (Quadrant B - extremely undesirable for dev, start at #3, except the dev cannot move to #4 until some time passes)
+D. Manager continues to police dev, dev continues sandbagging (Quadrant A steady state)
 
 
 To revise my made-up scenario one more time. If I think something is going to take 3 days, and I say 5 days, the reality is things rarely take as long as I think they'll take. So I will regularly
