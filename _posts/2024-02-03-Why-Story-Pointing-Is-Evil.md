@@ -35,10 +35,10 @@ All the sudden the manager thinks there's 15 days of work. However, if I go and 
 
 The game theory matrix you have just entered into is:
 
-| Manager \ Developer                                                | Developer Sandbags All Estimates (Manager Incentive to Police)             | Developer Does Not Sandbag (No Manager Incentive to Police)                            |
-|--------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Manager polices estimates (Developer Incentive to NOT Sandbag)     | (A) Developers ability to get away with sandbagging determines performance | (B) Developer has even lower storypoints, likely viewed as having performance problems |
-| Manager does not police estimates (Developer Incentive to Sandbag) | (C) Developer gets away with sandbagging, has superior performance         | (D) Developer has lower storypoints, potentially lower than coworkers                  |
+| Manager \ Developer               | Developer Sandbags All Estimates                                           | Developer Does Not Sandbag                                                             |
+|-----------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Manager polices estimates         | (A) Developers ability to get away with sandbagging determines performance | (B) Developer has even lower storypoints, likely viewed as having performance problems |
+| Manager does not police estimates | (C) Developer gets away with sandbagging, has superior performance         | (D) Developer has lower storypoints, potentially lower than coworkers                  |
 
 Looking at the matrix, there are no "good" results in being in the "not sandbagging your estimates" column for the developer. Either you have on-par performance, or low performance.
 In the sandbagging column, you either get superior performance as the manager doesn't push back against storypoint enough, or frequent arguments with management but your
