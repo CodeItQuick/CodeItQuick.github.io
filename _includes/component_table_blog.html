@@ -23,9 +23,10 @@
                                 </div>
                             {% endfor %}
                      {% endfor %}
+                     {% assign currentIndex = 0 %}
                      {% for row in site.posts %} 
                         <div 
-                                x-for="currentIndex in Math.ceil({{ tag[1].size }})" 
+                                x-for="currentIndex in Math.ceil({{ site.posts.size }})" 
                                 x-show="'main'.includes(tag_filter)" 
                                 :class="{ 'hidden' : {{ currentIndex }} < (pageNumber) * 4 || {{ currentIndex }} > (pageNumber + 1) * 4 - 1 }">
                                    {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
