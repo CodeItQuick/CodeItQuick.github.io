@@ -2,7 +2,7 @@
 name: My Learnings Through Coding Journey
 description: Brief Information On Major Takeaways
 image: zombie_download_2.png
-tags: TDD Theory 
+tags: TDD theory 
 ---
    
 # The Basics (TDD Year 1)
