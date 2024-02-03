@@ -36,7 +36,7 @@ The game theory matrix you have just entered into is:
 | Manager does not have to police estimates | Developer gets away with sandbagging, has superior performance         | Developer has lower storypoints, potentially lower than coworkers                  |
 
 Looking at the matrix, there are no "good" results in being in the "not sandbagging your estimates" column. Either you have on-par performance, or low performance.
-In the sanbagging column, you either get superior performance as the manager doesn't push back against storypoint enough, or frequent arguments with management but your
+In the sandbagging column, you either get superior performance as the manager doesn't push back against storypoint enough, or frequent arguments with management but your
 productivity is higher. From the managers point of view, if he starts policing estimates he essentially creates a toxic environment (either he argues with sandbagging devs, or
 thinks non-sandbagging devs are extremely unproductive).
 
