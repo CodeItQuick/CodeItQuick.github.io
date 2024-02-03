@@ -1,6 +1,9 @@
-<div x-data="{ pageNumber: 0, tag_filter: '', tag_count: 16 }">
+<div x-data="{ pageNumber: 0, tag_filter: 'main', tag_count: 16 }">
         <div class="w-full bg-base-200 text-neutral-content md:p-8">
                 <div>
+                    <span class="badge badge-primary badge-outline">
+                        <button x-on:click="tag_filter = 'main'; tag_count = {{ site.posts.size }}; pageNumber = 0;">All</button>
+                    </span>
                     {% for tag in site.tags %}
                             <span class="badge badge-primary badge-outline">
                                 <button x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">{{ tag[0] }}</button>
@@ -19,6 +22,15 @@
                                            {% assign currentIndex = currentIndex | plus: 1 %}
                                 </div>
                             {% endfor %}
+                     {% endfor %}
+                     {% for row in site.posts %} 
+                        <div 
+                                x-for="currentIndex in Math.ceil({{ tag[1].size }})" 
+                                x-show="'main'.includes(tag_filter)" 
+                                :class="{ 'hidden' : {{ currentIndex }} < (pageNumber) * 4 || {{ currentIndex }} > (pageNumber + 1) * 4 - 1 }">
+                                   {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
+                                   {% assign currentIndex = currentIndex | plus: 1 %}
+                        </div>
                      {% endfor %}
                 </div>
         </div>
