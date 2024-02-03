@@ -7,6 +7,7 @@ tags: theory agile
 
 # Why Story Pointing Is Evil
 
+## Introduction & Problem Statement
 One of the problems with talking about story pointing, is that its very much two points of opposing views with no clear "right" answer. 
 I also cannot think of any science that would show they are either "good" or "bad". All the same I'm going to attempt to bring you to my point
 of view. Not only are story points not useful, they downright contribute to a toxic work environment.
@@ -29,6 +30,8 @@ It also sets up a weird game that the developer all the sudden has a self intere
 3. C takes 5 days  
 
 All the sudden the manager thinks there's 15 days of work. However, if I go and do the work in the 9 days I think it'll take, I'm a "hero".
+
+## Game Theory On the Situation
 
 The game theory matrix you have just entered into is:
 
@@ -62,6 +65,8 @@ sandbags his estimates, is confrontational, and is fired. Or, the developer does
 Notice the developers choices - he either continues to sandbag (Quadrants A/C) or stops (Quadrants B/D). If he stops arguing, he enters into the right side of the matrix (his locus of control is in being in quadrants A/C vs B/D). 
 Therefore, the developer should continue to argue his case.
 
+## Some Revisions to the Original Problem Statement
+
 To revise my made-up scenario one more time. If I think something is going to take 3 days, and I say 5 days, the reality is things rarely take as long as I think they'll take. So I will regularly
 not hit my own internal 3 day target, and thus its very hard to "detect" that I'm sandbagging the entire time. Since you cannot detect my sandbagging easily, its more about how many points I can get
 away with giving every task you give me.
@@ -69,6 +74,8 @@ away with giving every task you give me.
 And one last revision - juniors both don't understand the above as they don't have the work experience to have experienced the toxic environment this causes AND they will naturally under-estimate their
 tasks. The ones who get hit the hardest with "storypointing" are essentially the juniors - they are both in the wrong part of the matrix, too ignorant to realize the game they are playing is win-lose,
 and lack the confidence to speak out against the system.
+
+## Conclusion
 
 These last two paragraphs are why I think estimating is essentially toxic. If the dev understands the game you have just entered him into, he's going to start sandbagging every task. The manager 
 eventually realizes this, and starts making him have to justify his estimates. This will especially happen if you start tying story points to performance.
