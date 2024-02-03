@@ -10,15 +10,15 @@
                 <div x-data="{ index: 0 }" class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
                      {% assign currentIndex = 0 %}
                      {% for tag in site.tags %} 
+                                   {% for row in tag[1] %} 
                                 <div 
                                         x-for="currentIndex in Math.ceil({{ tag[1].size }})" 
                                         x-show="'{{ tag[0] }}'.includes(tag_filter)" 
                                         :class="{ 'hidden' : {{ currentIndex }} < (pageNumber) * 4 || {{ currentIndex }} > (pageNumber + 1) * 4 - 1 }">
-                                   {% for row in tag[1] %} 
                                            {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
                                            {% assign currentIndex = currentIndex | plus: 1 %}
-                                   {% endfor %}
                                 </div>
+                                   {% endfor %}
                      {% endfor %}
                 </div>
         </div>
