@@ -35,13 +35,10 @@ The game theory matrix you have just entered into is:
 | Manager must police estimates             | Developers ability to get away with sandbagging determines performance | Developer has even lower storypoints, likely viewed as having performance problems |
 | Manager does not have to police estimates | Developer gets away with sandbagging, has superior performance         | Developer has lower storypoints, potentially lower than coworkers                  |
 
-Looking at the matrix, there are no "good" results in being in the "not sandbagging your estimates" column. Either you have on-par performance, or low performance.
+Looking at the matrix, there are no "good" results in being in the "not sandbagging your estimates" column for the developer. Either you have on-par performance, or low performance.
 In the sandbagging column, you either get superior performance as the manager doesn't push back against storypoint enough, or frequent arguments with management but your
 productivity is higher. From the managers point of view, if he starts policing estimates he essentially creates a toxic environment (either he argues with sandbagging devs, or
 thinks non-sandbagging devs are extremely unproductive).
-
-Worse - there is no downside for me to estimating these tasks at 5 days. If I'm wrong and it does take 5 days, the manager thinks of this as "business as usual". If it takes the time I think it'll take, 
-then all the sudden I'm "more productive". So in the worst case I have met my goals, and in the best case I'm a very productive developer.
 
 To revise my made-up scenario one more time. If I think something is going to take 3 days, and I say 5 days, the reality is things rarely take as long as I think they'll take. So I will regularly
 not hit my own internal 3 day target, and thus its very hard to "detect" that I'm sandbagging the entire time. Since you cannot detect my sandbagging easily, its more about how many points I can get
