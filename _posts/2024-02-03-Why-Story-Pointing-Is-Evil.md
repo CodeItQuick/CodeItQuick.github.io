@@ -59,7 +59,7 @@ Notice the manager's choices in the current state of affairs. The longer the man
 are A or B). Therefore, the manager should realize his mistake, and stop policing the developer. If the manager doesn't realize he is the cause, the developer is likely fired (either the dev
 sandbags his estimates, is confrontational, and is fired. Or, the developer doesn't sandbag his estimates, has low performance, and is fired).
 
-Notice the developers choices - he either continues to sandbag or stops. If he stops arguing, he enters into the right side of the matrix (his locus of control is in being in quadrants A/C vs B/D). 
+Notice the developers choices - he either continues to sandbag (Quadrants A/C) or stops (Quadrants B/D). If he stops arguing, he enters into the right side of the matrix (his locus of control is in being in quadrants A/C vs B/D). 
 Therefore, the developer should continue to argue his case.
 
 To revise my made-up scenario one more time. If I think something is going to take 3 days, and I say 5 days, the reality is things rarely take as long as I think they'll take. So I will regularly
