@@ -38,7 +38,7 @@ The game theory matrix you have just entered into is:
 | Manager \ Developer               | Developer Sandbags All Estimates                                           | Developer Does Not Sandbag                                                             |  Result       |
 |-----------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|---------------|
 | Manager polices estimates         | (A) Developers ability to get away with sandbagging determines performance | (B) Developer has even lower storypoints, likely viewed as having performance problems | Toxic Culture |
-| Manager does not police estimates | (C) Developer gets away with sandbagging, has superior performance         | (D) Developer has lower storypoints, potentially lower than coworkers                  | Positive Culture, High->Med Performance |
+| Manager does not police estimates | (C) Developer gets away with sandbagging, has superior performance         | (D) Developer has lower storypoints, potentially lower than coworkers                  | Not-Toxic Culture |
 | Result                            | Superior Developer Performance                                             | Inferior Developer Performance                                                         |               |
 
 Looking at the matrix, there are no "good" results in being in the "not sandbagging your estimates" column for the developer. Either you have on-par performance, or low performance.
