@@ -7,11 +7,16 @@
                             </span>
                     {% endfor %}
                 </div>
-                <div class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
+                <div x-data="{ index: 0 }" class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
                      {% assign currentIndex = 0 %}
-                     {% for row in site.posts %} 
-                                <div x-show="'{{ row.tags }}'.includes(tag_filter)" :class="{ 'hidden' : {{ currentIndex }} < (pageNumber) * 4 || {{ currentIndex }} > (pageNumber + 1) * 4 - 1 }">
+                     {% for tag in site.tags %} 
+                                <div 
+                                        x-for="currentIndex in Math.ceil({{ tag[1].size }})" 
+                                        x-if="'{{ tag[0] }}'.includes(tag_filter)" 
+                                        :class="{ 'hidden' : {{ currentIndex }} < (pageNumber) * 4 || {{ currentIndex }} > (pageNumber + 1) * 4 - 1 }">
+                                   {% for row in site.tags[1] %} 
                                    {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
+                                   {% endfor %}
                                 </div>
                      {% assign currentIndex = currentIndex | plus: 1 %}
                      {% endfor %}
