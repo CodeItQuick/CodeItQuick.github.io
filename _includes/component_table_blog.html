@@ -3,7 +3,7 @@
                 <div>
                     {% for tag in site.tags %}
                             <span class="badge badge-primary badge-outline">
-                                <button x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }};">{{ tag[0] }}</button>
+                                <button x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">{{ tag[0] }}</button>
                             </span>
                     {% endfor %}
                 </div>
