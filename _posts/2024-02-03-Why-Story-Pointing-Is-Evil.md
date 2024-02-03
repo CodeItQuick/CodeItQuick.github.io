@@ -21,10 +21,10 @@ I think to the manager you are doing something like:
 Therefore we will be done in 9 days. However, from my point of view all of these estimates are wildly wrong. So I don't see what you get out of me going "this will take 3 days", and you get 
 even less adding the values -> you are just summing 3 values that are essentially made up.
 
-It also sets up a weird game that the developer all the sudden has a self interest in playing. Pretend that the developer believes the above estimates are accurate. Its in his best interests to tell management:
-A takes 5 days
-B takes 5 days
-C takes 5 days
+It also sets up a weird game that the developer all the sudden has a self interest in playing. Pretend that the developer believes the above estimates are accurate. Its in his best interests to tell management:  
+1. A takes 5 days  
+2. B takes 5 days  
+3. C takes 5 days  
 
 All the sudden the manager thinks there's 15 days of work. However, if I go and do the work in the 9 days I think it'll take, I'm a "hero".
 
