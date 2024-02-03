@@ -32,15 +32,28 @@ All the sudden the manager thinks there's 15 days of work. However, if I go and 
 
 The game theory matrix you have just entered into is:
 
-| Manager \ Developer                       | Developer Sandbags All Estimates                                       | Developer Does Not Sandbag                                                         |
-|-------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Manager polices estimates                 | Developers ability to get away with sandbagging determines performance | Developer has even lower storypoints, likely viewed as having performance problems |
-| Manager does not police estimates         | Developer gets away with sandbagging, has superior performance         | Developer has lower storypoints, potentially lower than coworkers                  |
+| Manager \ Developer                       | Developer Sandbags All Estimates                                           | Developer Does Not Sandbag                                                             |
+|-------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Manager polices estimates                 | (A) Developers ability to get away with sandbagging determines performance | (B) Developer has even lower storypoints, likely viewed as having performance problems |
+| Manager does not police estimates         | (C) Developer gets away with sandbagging, has superior performance         | (D) Developer has lower storypoints, potentially lower than coworkers                  |
 
 Looking at the matrix, there are no "good" results in being in the "not sandbagging your estimates" column for the developer. Either you have on-par performance, or low performance.
 In the sandbagging column, you either get superior performance as the manager doesn't push back against storypoint enough, or frequent arguments with management but your
 productivity is higher. From the managers point of view, if he starts policing estimates he essentially creates a toxic environment (either he argues with sandbagging devs, or
 thinks non-sandbagging devs are extremely unproductive).
+
+There actually isn't a steady state to the above matrix. I think the flow of states for each dev/manager pair is:
+1. Developer gives honest answers to storypoints, life is good (Quadrant D)
+2. Another developer starts sandbagging his estimates for *reasons*
+3. Developer starts to have lower performance than coworkers, enters into lower performance (Quadrant B)
+4. Developer realizes he needs to sandbag estimates, starts sandbagging (Quadrant C)
+5. Manager eventually realizes developer is sandbagging, starts to argue with dev about sandbagging (Quadrant A)
+6. Developer realizes he's better off not sandbagging so much, reduces his sandbagging, enters into one of the three other quadrants
+7. Manager stops policing dev, dev stops sandbagging (Quadrant D, start at 1)
+8. Manager stops policing dev, dev continues sandbagging (Quadrant B steady-state, manager has no incentive to police dev (results in toxicity), and developer has no incentive to not sandbag (right column is worse than left))
+9. Manager continues to police dev, dev stops sandbagging (Quadrant B - extremely undesirable for dev, start at #3, except the dev cannot move to #4)
+10. Manager continues to police dev, dev continues sandbagging (Quadrant A steady state)
+
 
 To revise my made-up scenario one more time. If I think something is going to take 3 days, and I say 5 days, the reality is things rarely take as long as I think they'll take. So I will regularly
 not hit my own internal 3 day target, and thus its very hard to "detect" that I'm sandbagging the entire time. Since you cannot detect my sandbagging easily, its more about how many points I can get
