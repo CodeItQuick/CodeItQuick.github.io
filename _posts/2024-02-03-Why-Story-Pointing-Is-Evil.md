@@ -50,11 +50,10 @@ There is a natural flow from state-to-state here:
 5. Manager eventually realizes developer is sandbagging, starts to argue with dev about sandbagging (Quadrant A)  
    
 Here we can enter into several different states, some of them will be steady-state:  
-A. Manager stops policing dev, dev stops sandbagging (Quadrant D, start at 1)
-B. Manager stops policing dev, dev continues sandbagging (Quadrant C steady-state, manager has no incentive to police dev (results in toxicity), and developer has no incentive to not sandbag (right column is worse than left))
-C. Manager continues to police dev, dev stops sandbagging (Quadrant B - extremely undesirable for dev, start at #3, except the dev cannot move to #4 until some time passes)
-D. Manager continues to police dev, dev continues sandbagging (Quadrant A steady state)
-
+A. Manager stops policing dev, dev stops sandbagging (Quadrant D, start at 1)  
+B. Manager stops policing dev, dev continues sandbagging (Quadrant C steady-state, manager has no incentive to police dev (results in toxicity), and developer has no incentive to not sandbag (right column is worse than left))  
+C. Manager continues to police dev, dev stops sandbagging (Quadrant B - extremely undesirable for dev, start at #3, except the dev cannot move to #4 until some time passes)  
+D. Manager continues to police dev, dev continues sandbagging (Quadrant A steady state)  
 
 To revise my made-up scenario one more time. If I think something is going to take 3 days, and I say 5 days, the reality is things rarely take as long as I think they'll take. So I will regularly
 not hit my own internal 3 day target, and thus its very hard to "detect" that I'm sandbagging the entire time. Since you cannot detect my sandbagging easily, its more about how many points I can get
