@@ -22,7 +22,7 @@
                                                 tag_size=row.tags.size
                                                 tags=row.tags
                                                 post_size=row.size
-                                                matchingTag=tag[0]
+                                                match_tag=tag[0]
                                                 index=currentIndex
                                           %}
                                            {% assign currentIndex = currentIndex | plus: 1 %}
@@ -38,8 +38,8 @@
                                         tag_size=row.tags.size 
                                         tags=row.tags
                                         post_size=site.posts.size
-                                        matchingTag='main'
-                                        currentIndex=currentIndex
+                                        match_tag='main'
+                                        index=currentIndex
                                    %}
                                    {% assign currentIndex = currentIndex | plus: 1 %}
                      {% endfor %}
