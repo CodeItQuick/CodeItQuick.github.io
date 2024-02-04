@@ -1,7 +1,7 @@
 
 <div 
         x-for="_ in Math.ceil({{ include.post_size }})" 
-        x-show="'{{ include.match_tag[0] }}'.includes(tag_filter)" 
+        x-show="'{{ include.match_tag }}'.includes(tag_filter)" 
         :class="{ 'hidden' : {{ include.index }} < (pageNumber) * 4 || {{ include.index }} > (pageNumber + 1) * 4 - 1 }"
         class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
     <figure>
