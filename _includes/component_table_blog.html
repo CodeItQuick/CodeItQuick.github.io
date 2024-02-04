@@ -21,7 +21,8 @@
                                                 url=row.url 
                                                 tag_size=row.tags.size
                                                 tags=row.tags
-                                                tag=tag  
+                                                posts=tag[1]
+                                                matchingTag=tag[0]
                                                 currentIndex=currentIndex
                                           %}
                                            {% assign currentIndex = currentIndex | plus: 1 %}
@@ -36,7 +37,8 @@
                                         url=row.url 
                                         tag_size=row.tags.size 
                                         tags=row.tags
-                                        tag=tag 
+                                        posts=site.posts
+                                        matchingTag='main'
                                         currentIndex=currentIndex
                                    %}
                                    {% assign currentIndex = currentIndex | plus: 1 %}
