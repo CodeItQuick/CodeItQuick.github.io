@@ -14,13 +14,15 @@
                      {% for tag in site.tags %} 
                              {% assign currentIndex = 0 %}
                              {% for row in tag[1] %} 
-                                <div 
-                                        x-for="_ in Math.ceil({{ tag[1].size }})" 
-                                        x-show="'{{ tag[0] }}'.includes(tag_filter)" 
-                                        :class="{ 'hidden' : {{ currentIndex }} < (pageNumber) * 4 || {{ currentIndex }} > (pageNumber + 1) * 4 - 1 }">
-                                           {% include component_list_description.html name=row.name image=row.image description=row.description url=row.url tag_size=row.tags.size tags=row.tags  %}
+                                           {% include component_list_description.html 
+                                                name=row.name 
+                                                image=row.image 
+                                                description=row.description 
+                                                url=row.url 
+                                                tag_size=row.tags.size 
+                                                tag=tag  
+                                          %}
                                            {% assign currentIndex = currentIndex | plus: 1 %}
-                                </div>
                             {% endfor %}
                      {% endfor %}
                      {% assign currentIndex = 0 %}
