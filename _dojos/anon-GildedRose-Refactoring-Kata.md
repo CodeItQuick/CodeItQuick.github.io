@@ -1,4 +1,11 @@
-
+---
+name: Gilded Rose Refactoring Kata
+description: This refactoring kata can help you to learn about refactoring messy code.
+image: video_game_zombies_2_instasize.jpg
+tags: refactoring legacy
+url: https://github.com/swkBerlin/kata-bootstraps
+layout: dojo
+---
 # Gilded Rose Refactoring Kata
 
 You can find out more about this exercise in my YouTube video [Why Developers LOVE The Gilded Rose Kata](https://youtu.be/Mt4XpGxigT4). I also have a video of a worked solution in Java - [Gilded Rose Kata, Hands-on](https://youtu.be/OdnV8hc9L7I)
