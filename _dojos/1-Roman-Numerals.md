@@ -1,8 +1,8 @@
 ---
-name: Fantasy Battle
-description: Learn A Tenant of OOP - The Law of Demeter
+name: Roman Numerals
+description: Learn TDD/ensembling in a highly constrained environment
 image: video_game_zombies_2_instasize.jpg
-tags: beginner OOP
+tags: TDD ensembling beginner
 url: https://github.com/swkBerlin/kata-bootstraps
 layout: dojo
 ---
