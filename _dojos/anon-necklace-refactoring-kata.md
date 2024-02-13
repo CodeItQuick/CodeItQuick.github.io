@@ -1,3 +1,4 @@
+
 Necklace Refactoring Kata
 =========================
 
