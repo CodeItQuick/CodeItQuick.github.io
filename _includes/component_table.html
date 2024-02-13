@@ -69,8 +69,8 @@
         <!--Next Button-->
         <button
           x-on:click="++pageNumber"
-          :disabled="pageNumber >= Math.ceil( {{ include.table.size }} / 4)"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil({{ include.table.size }} / 4) }"
+          :disabled="pageNumber >= Math.floor( {{ include.table.size }} / 4)"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.floor({{ include.table.size }} / 4) }"
         >
           <svg
             class="h-8 w-8 text-indigo-600"
@@ -90,8 +90,8 @@
         <!--Last Button-->
         <button
           x-on:click="++pageNumber"
-          :disabled="pageNumber >= Math.ceil({{ include.table.size }} / 4)"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil({{ include.table.size }} / 4) }"
+          :disabled="pageNumber >= Math.floor({{ include.table.size }} / 4)"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.floor({{ include.table.size }} / 4) }"
         >
           <svg
             class="h-8 w-8 text-indigo-600"
