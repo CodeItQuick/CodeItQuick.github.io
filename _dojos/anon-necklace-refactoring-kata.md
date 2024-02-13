@@ -1,8 +1,8 @@
 ---
 name: Necklace Refactoring Kata
-description: This refactoring kata can help you to learn about removing duplication in code.
+description: Learn more about OOP - Chain of Responsibility Pattern.
 image: video_game_zombies_2_instasize.jpg
-tags: refactoring legacy
+tags: OOP patterns
 url: https://github.com/swkBerlin/kata-bootstraps
 layout: dojo
 ---
