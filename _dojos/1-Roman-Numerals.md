@@ -19,7 +19,7 @@ they came up with is still in use today. For example the BBC uses Roman numerals
 
 The Romans wrote numbers using letters : I, V, X, L, C, D, M. (notice these letters have lots of straight lines and are hence easy to hack into stone tablets)
 
-Part I
+### Part I
 The Kata says you should write a function to convert from normal numbers to Roman Numerals: eg
 
      1 --> I
@@ -31,7 +31,7 @@ For a full description of how it works, take a look at : which includes an imple
 
 There is no need to be able to convert numbers larger than about 3000. (The Romans themselves didn’t tend to go any higher)
 
-Part II
+### Part II
 Write a function to convert in the other direction, ie numeral to digit
 
 Clues
