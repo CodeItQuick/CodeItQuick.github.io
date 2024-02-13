@@ -126,7 +126,7 @@
                         <span class="block mb-1 font-bold text-black">TDD Learning Katas</span>
                         <span class="block font-medium leading-5 opacity-70">See all the suggested coding katas.</span>
                     </a>
-                    {% for post in site.dojo %}
+                    {% for post in site.dojos %}
                         <a href="{{ post.url }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
                             <span class="block mb-1 font-bold text-black">{{ post.name }}</span>
                             <span class="block font-medium leading-5 opacity-70">{{ post.description }}</span>
