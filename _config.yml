@@ -7,13 +7,9 @@ blog: Musings of the Project Graveyard
 collections:
   projects:
     output: true
-    order:
-       - expensereport.md
-       - lox.md
-       - evercraft.md
-       - boomer.md
-       - stockpicker.md
   posts:
     output: true
   recipes:
+    output: true
+  dojo:
     output: true
