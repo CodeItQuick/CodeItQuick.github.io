@@ -11,5 +11,5 @@ collections:
     output: true
   recipes:
     output: true
-  dojo:
+  dojos:
     output: true
