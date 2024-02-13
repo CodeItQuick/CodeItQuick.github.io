@@ -1,4 +1,11 @@
-
+---
+name: Necklace Refactoring Kata
+description: This refactoring kata can help you to learn about removing duplication in code.
+image: video_game_zombies_2_instasize.jpg
+tags: refactoring legacy
+url: https://github.com/swkBerlin/kata-bootstraps
+layout: dojo
+---
 Necklace Refactoring Kata
 =========================
 
