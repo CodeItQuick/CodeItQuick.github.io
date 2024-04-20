@@ -6,4 +6,5 @@ learningthree: C# and .NET Development
 image: zombie_in_graveyard_2_instasize.jpg
 github: https://github.com/CodeItQuick/TennisKataFinalTwo
 progress: in-progress
+status: inactive
 ---
