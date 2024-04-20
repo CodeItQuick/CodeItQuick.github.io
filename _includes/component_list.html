@@ -5,9 +5,9 @@
     </figure>
     <div class="card-body lg:w-9/12">
         <h2 class="card-title">{{ include.name }}</h2>
-        {% if include.progress == "complete" %}
+        {% if include.progress == 'complete' %}
             <div class="badge badge-primary">Complete</div>
-        {% elsif include.progress == "in-progress" %}
+        {% elsif include.progress == 'in-progress' %}
             <div class="badge badge-secondary">In-Progress</div>
         {% endif %}
         <ul class="list-disc">
