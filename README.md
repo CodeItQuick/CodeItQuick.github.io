@@ -3,6 +3,11 @@
 
 A historical take on the kata's and side projects I have worked on since 2021. Built using GithubPages and Ruby's Jekyll. 
 
+Current Active Projects:
+1. Learn C through TDDSqlLite
+2. Learn .NET/Hexagonal/Testing better through CSharpExpenseReport
+
+
 
 Should be on my grids:
 extend: {
