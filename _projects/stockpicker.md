@@ -7,4 +7,5 @@ learningthree: C# and .NET Development
 image: zombie_in_graveyard_2_instasize.jpg
 github: https://github.com/CodeItQuick/StockApplicationASPNetWebMVCIndividualIdentity
 progress: in-progress
+status: inactive
 ---
