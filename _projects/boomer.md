@@ -7,4 +7,5 @@ learningthree: Little bit of code for a program
 image: zombie_in_a_graveyard_3_instasize.jpg
 github: https://github.com/CodeItQuick/BoomerBot
 progress: complete
+status: inactive
 ---
