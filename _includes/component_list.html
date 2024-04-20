@@ -10,6 +10,11 @@
         {% elsif include.progress == 'in-progress' %}
             <div class="badge badge-secondary">In-Progress</div>
         {% endif %}
+        {% if include.status == 'active' %}
+            <div class="badge badge-accent">Active</div>
+        {% elsif include.status == 'inactive' %}
+            <div class="badge badge-ghost">In-Active</div>
+        {% endif %}
         <ul class="list-disc">
             <li>{{ include.learningone }}</li>
             <li>{{ include.learningtwo }}</li>
