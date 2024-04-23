@@ -12,7 +12,7 @@
                 <h2 class="text-3xl font-bold text-primary w-full rounded w-full">Recipes</h2>
         </div>
 </nav>
-<nav x-show="window.innerWidth > 768" x-data="{
+<nav x-if="window.innerWidth > 768" x-data="{
         navigationMenuOpen: false,
         navigationMenu: '',
         navigationMenuCloseDelay: 200,
