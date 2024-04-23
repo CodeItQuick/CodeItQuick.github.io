@@ -1,5 +1,5 @@
-<div x-show="window.innerWidth > 768" class="navbar md:bg-primary text-primary-content">
-    <div class="md:navbar-start">
+<div class="navbar md:bg-primary text-primary-content">
+    <div x-show="window.innerWidth > 768" class="md:navbar-start">
         <div class="dropdown">
             <label tabindex="0" class="md:btn md:btn-ghost hidden">
                 CodeItQuick
@@ -12,7 +12,7 @@
         </div>
         <a class="btn btn-ghost normal-case text-xl" href="https://github.com/CodeItQuick" target="_blank">CodeItQuick</a>
     </div>
-    <div class="md:navbar-center hidden lg:flex">
+    <div x-show="window.innerWidth > 768" class="md:navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
             <li><a href="/">Projects</a></li>
             <li><a href="/blog_list.html">Blog</a></li>
@@ -20,7 +20,7 @@
             <li><a href="/recipe_list.html">Recipes</a></li>
         </ul>
     </div>
-    <div class="md:navbar-end">
+    <div x-show="window.innerWidth > 768" class="md:navbar-end">
         <a class="btn" href="https://github.com/CodeItQuick/CodeItQuick.github.io" target="_blank">Github</a>
     </div>
 </div>
