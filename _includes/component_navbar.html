@@ -1,4 +1,4 @@
-<nav x-show="screen.width < 768">
+<nav x-init="show = screen.width < 768" x-show="show">
         <div x-show="window.innerWidth < 768" style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
                 <a href="/"><h2 class="text-3xl font-bold text-primary w-full rounded w-full">Projects</h2></a>
         </div>
