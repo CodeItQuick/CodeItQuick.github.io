@@ -12,7 +12,7 @@
                 <a href="/recipe_list.html"><h2 class="text-3xl font-bold text-primary w-full rounded w-full">Recipes</h2></a>
         </div>
 </nav>
-<nav x-init="show = screen.width < 768" x-show="show" x-data="{
+<nav x-init="show = screen.width >= 768" x-show="show" x-data="{
         navigationMenuOpen: false,
         navigationMenu: '',
         navigationMenuCloseDelay: 200,
