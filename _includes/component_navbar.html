@@ -1,4 +1,4 @@
-<nav x-show="window.innerWidth < 768">
+<nav x-show="screen.width < 768">
         <div x-show="window.innerWidth < 768" style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
                 <a href="/"><h2 class="text-3xl font-bold text-primary w-full rounded w-full">Projects</h2></a>
         </div>
@@ -12,7 +12,7 @@
                 <a href="/recipe_list.html"><h2 class="text-3xl font-bold text-primary w-full rounded w-full">Recipes</h2></a>
         </div>
 </nav>
-<nav x-show="window.innerWidth > 768" x-data="{
+<nav x-show="screen.width >= 768" x-data="{
         navigationMenuOpen: false,
         navigationMenu: '',
         navigationMenuCloseDelay: 200,
