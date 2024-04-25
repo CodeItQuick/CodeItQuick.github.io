@@ -12,7 +12,7 @@ The say do ratio is used to prevent spillover from stories/tasks in a single spr
 is meant to drive splitting stories or working in smaller incremental values.
 
 Definitions
----------
+-----------
 User Story: A single chunk of work that is scoped down to the minimum possible increment that STILL has meaning to the user.
 Example: If you are clicking a button and that triggers 10 microservices in the backend, the smallest unit of work is the button click
 and whatever behaviour changes in reference to the user afterwards (Perhaps an email gets sent).
@@ -38,7 +38,8 @@ Sprint Results 01/01/2024 (2 week increment):
 * User Story 3 (3 points): Completed  
 Say Do Ratio: (5 points + 3 points) / (5 points + 3 points + 8 points) = 50%  
 
-Observations:
+Observations
+------------
 1. User Stories are larger than technical tasks essentially by definition.
 2. The largest technical task would be exactly equal to the user story.
 3. User Stories are significantly harder to scope down without paying down technical debt in advance.
