@@ -23,18 +23,18 @@ Say/Do Ratio: A ratio made in an effort to size down or further split a unit of 
 are supposed to be used to get the units. These should be "committed" status stories only in the numerator, and I believe all stories are the denominator.
 
 Examples - User Stories:
-Sprint Results 01/01/2024 (2 week increment):
-User Story 1 (13 points): Spills Over
-User Story 2 (8 points): Completed
-User Story 3 (5 points): Completed
-Say Do Ratio: (5 points + 8 points) / (5 + 8 + 13) points = 50%
+Sprint Results 01/01/2024 (2 week increment):  
+* User Story 1 (13 points): Spills Over  
+* User Story 2 (8 points): Completed  
+* User Story 3 (5 points): Completed  
+Say Do Ratio: (5 points + 8 points) / (5 + 8 + 13) points = 50%  
 
-Examples - Technical Tasks:
-Sprint Results 01/01/2024 (2 week increment):
-User Story 1 (8 points): Spills Over
-User Story 2 (5 points): Completed
-User Story 3 (3 points): Completed
-Say Do Ratio: (5 points + 3 points) / (5 points + 3 points + 8 points) = 50%
+Examples - Technical Tasks:  
+Sprint Results 01/01/2024 (2 week increment):  
+* User Story 1 (8 points): Spills Over  
+* User Story 2 (5 points): Completed  
+* User Story 3 (3 points): Completed  
+Say Do Ratio: (5 points + 3 points) / (5 points + 3 points + 8 points) = 50%  
 
 Observations:
 1. User Stories are larger than technical tasks essentially by definition.
