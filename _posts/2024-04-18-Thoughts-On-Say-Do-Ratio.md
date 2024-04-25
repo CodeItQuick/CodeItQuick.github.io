@@ -5,7 +5,7 @@ image: video_game_zombies_2_instasize.jpg
 tags: agile 
 ---
 
-# Why track a Say/Do Ratio? What's the point?
+Why track a Say/Do Ratio? What's the point?
 =========
 
 The say do ratio is used to prevent spillover from stories/tasks in a single sprint. Its a ratio that
