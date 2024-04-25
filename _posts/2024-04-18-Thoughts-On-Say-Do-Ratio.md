@@ -11,7 +11,8 @@ Why track a Say/Do Ratio? What's the point?
 The say do ratio is used to prevent spillover from stories/tasks in a single sprint. Its a ratio that
 is meant to drive splitting stories or working in smaller incremental values.
 
-# DEFINITIONS
+Definitions
+---------
 User Story: A single chunk of work that is scoped down to the minimum possible increment that STILL has meaning to the user.
 Example: If you are clicking a button and that triggers 10 microservices in the backend, the smallest unit of work is the button click
 and whatever behaviour changes in reference to the user afterwards (Perhaps an email gets sent).
