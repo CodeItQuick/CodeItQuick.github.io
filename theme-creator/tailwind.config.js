@@ -3,7 +3,8 @@ module.exports = {
     content: ["./src/**/*.{html,js}"],
     daisyui: {
         themes: [{
-            mytheme: {
+            light: {
+                ...require("daisyui/src/theming/themes")["light"],
                 "primary": "#698A77",
                 "secondary": "#977D5E",
                 "accent": "#749783",
