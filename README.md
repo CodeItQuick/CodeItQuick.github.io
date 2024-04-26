@@ -22,3 +22,9 @@ Current Project Ideas:
 3. Learn the C programming language
 4. Experiment with streaming from a database
 5. Spotify discover playlist/playlist maker tool
+
+To run theme-creator:
+```shell
+cd theme-creator
+npx tailwindcss -i ./src/input.css -o ./src/output.css
+```
