@@ -5,11 +5,11 @@ module.exports = {
         themes: [{
             light: {
                 ...require("daisyui/src/theming/themes")["light"],
-                "primary": "#698A77",
-                "secondary": "#977D5E",
+                "primary": "#4D6E5C",
+                "secondary": "#F6FBF8",
                 "accent": "#749783",
-                "neutral": "#4D6E5C",
-                "base-100": "#F6FBF8",
+                "neutral": "#698A77",
+                "base-100": "#977D5E",
             },
         }],
     },
