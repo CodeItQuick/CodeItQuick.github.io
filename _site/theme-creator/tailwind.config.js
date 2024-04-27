@@ -2,8 +2,8 @@
 const myThemes = require('./my-themes');
 console.log(JSON.stringify(myThemes.filter(x => Object.keys(x)[0] == "myLight")));
 console.log("------------------------------------------------------------------");
-console.log(JSON.stringify(myThemes.filter(x => Object.keys(x)[0] == "myLight2")));
-console.log(JSON.stringify(myThemes.filter(x => Object.keys(x)[0] == "myLight2")[0]["myLight2"].colors.primary));
+console.log(JSON.stringify(myThemes.filter(x => Object.keys(x)[0] == "myLight")));
+console.log(JSON.stringify(myThemes.filter(x => Object.keys(x)[0] == "myLight")[0]["myLight"].colors.primary));
 
 module.exports = {
     content: ["./public/*.html", "./public/*.css"],
@@ -19,8 +19,8 @@ module.exports = {
     },
     theme: {
         colors: {
-            'primary-dark': myThemes.filter(x => Object.keys(x)[0] == "myDark2")[0]["myDark2"].colors.primary,
-            'primary-light': myThemes.filter(x => Object.keys(x)[0] == "myLight2")[0]["myLight2"].colors.primary,
+            'primary-dark': myThemes.filter(x => Object.keys(x)[0] == "myDark")[0]["myDark"].colors.primary,
+            'primary-light': myThemes.filter(x => Object.keys(x)[0] == "myLight")[0]["myLight"].colors.primary,
         },
         extend: {},
     },
