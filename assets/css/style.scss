@@ -2,76 +2,73 @@
 ---
 
 @import "{{ site.theme }}";
-/*.markdown {*/
-/*    h1 {*/
-/*        font-size: 1.875rem; !* 30px *!*/
-/*        line-height: 2.25rem; !* 36px *!*/
-/*        margin-top: 0.5rem; !* 8px *!*/
-/*        margin-bottom: 0.5rem; !* 8px *!*/
-/*    }*/
+.markdown {
+    h1 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 
-/*    h2 {*/
-/*        font-size: 1.5rem; !* 24px *!*/
-/*        line-height: 2rem; !* 32px *!*/
-/*        margin-top: 0.5rem; !* 8px *!*/
-/*        margin-bottom: 0.5rem; !* 8px *!*/
-/*    }*/
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 
-/*    h3 {*/
-/*        font-size: 1.25rem; !* 20px *!*/
-/*        line-height: 1.75rem; !* 28px *!*/
-/*        margin-top: 0.5rem; !* 8px *!*/
-/*        margin-bottom: 0.5rem; !* 8px *!*/
-/*    }*/
-/*    p {*/
-/*        margin-top: 0.5rem; !* 8px *!*/
-/*        margin-bottom: 0.5rem; !* 8px *!*/
-/*    }*/
-/*    a {*/
-/*        //btn-primary*/
-/*        border-color: hsl(321, 70%, 69%);*/
-/*        background-color: hsl(321, 70%, 69%);*/
-/*        color: hsl(323, 23%, 15%);*/
-/*        outline-color: hsl(321, 70%, 69%);*/
-/*        // btn*/
-/*        display: inline-flex;*/
-/*        padding-left: 0.5rem;*/
-/*        padding-right: 0.5rem;*/
-/*        flex-shrink: 0;*/
-/*        cursor: pointer;*/
-/*        user-select: none;*/
-/*        flex-wrap: wrap;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        text-align: center;*/
-/*        transition-property: color, background-color, border-color, text-decoration-color,*/
-/*        fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;*/
-/*        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);*/
-/*        transition-duration: 200ms;*/
-/*        border-radius: 0.5rem;*/
-/*        height: 3rem;*/
-/*        min-height: 3rem;*/
-/*        font-size: 0.875rem;*/
-/*        line-height: 1em;*/
-/*        gap: 0.5rem;*/
-/*        font-weight: 600;*/
-/*        text-decoration-line: none;*/
-/*        border-width: 1px;*/
-/*        animation: button-pop 0.25s ease-out;*/
-/*        text-transform: uppercase;*/
-/*    }*/
-/*    ol {*/
-/*        padding-left: 1.25rem;*/
-/*        list-style-type: decimal;*/
-/*        list-style-position: inside;*/
-/*        li {*/
-/*            display: list-item;*/
-/*            text-align: -webkit-match-parent;*/
-/*        }*/
-/*    }*/
-/*}*/
-/*
-
- */
+    h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    a {
+        //btn-primary
+        border-color: hsl(321, 70%, 69%);
+        background-color: hsl(321, 70%, 69%);
+        color: hsl(323, 23%, 15%);
+        outline-color: hsl(321, 70%, 69%);
+        // btn
+        display: inline-flex;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        flex-shrink: 0;
+        cursor: pointer;
+        user-select: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition-property: color, background-color, border-color, text-decoration-color,
+        fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        transition-duration: 200ms;
+        border-radius: 0.5rem;
+        height: 3rem;
+        min-height: 3rem;
+        font-size: 0.875rem;
+        line-height: 1em;
+        gap: 0.5rem;
+        font-weight: 600;
+        text-decoration-line: none;
+        border-width: 1px;
+        animation: button-pop 0.25s ease-out;
+        text-transform: uppercase;
+    }
+    ol {
+        padding-left: 1.25rem;
+        list-style-type: decimal;
+        list-style-position: inside;
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+    }
+}
 
 @import "output.css";
