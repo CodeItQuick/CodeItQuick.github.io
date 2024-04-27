@@ -676,7 +676,7 @@
         <template x-for="index in Math.ceil(10 / 4)">
           <button
             class="px-3 py-2 rounded"
-            :class="{ 'bg-indigo-600 text-white font-bold' : index - 1 === pageNumber }"
+            :class="{ 'bg-primary-content text-white font-bold' : index - 1 === pageNumber }"
             type="button"
             x-on:click="pageNumber = index - 1"
           >
