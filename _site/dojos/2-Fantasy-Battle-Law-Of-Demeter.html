@@ -70,11 +70,11 @@
             </ul>
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md  group">
                 <li>
-                    <button
-                        :class="{ 'bg-base-100' : navigationMenu=='projects-page', 'hover:bg-base-100' : navigationMenu!='projects-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='projects-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                    <a href="/"
+                       @click="navigationMenuClose()"
+                       class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
                         <span>Projects</span>
-                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'projects-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
+                    </a>
                 </li>
                 <li>
                     <button
@@ -116,68 +116,6 @@
     <div x-ref="navigationDropdown" x-show="navigationMenuOpen"
         @mouseover="navigationMenuClearCloseTimeout()" @mouseleave="navigationMenuLeave()"
         class="bg-base-100 text-white absolute top-0 pt-3 duration-200 ease-out -translate-x-1/2 translate-y-11" x-cloak>
-
-        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
-            <div x-show="navigationMenu == 'projects-page'" class="flex items-stretch justify-center w-full p-6">
-                <div class="w-72">
-                    <a href="/" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                        <span class="block mb-1 font-bold ">Main Projects Page</span>
-                        <span class="block font-medium leading-5 opacity-70">See all the current projects.</span>
-                    </a>
-                    
-                        <a href="https://github.com/CodeItQuick/BoomerBot" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">Boomer Bot</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                        <a href="https://github.com/CodeItQuick/TddSqlLite" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">C Sharp Sql Lite Tutorial</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                        <a href="https://github.com/CodeItQuick/CTddSqlLite" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">C Sql Lite Tutorial</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                        <a href="https://github.com/CodeItQuick/ExpenseReportCSharp" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">Expense Report Kata (.NET)</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                        <a href="https://github.com/CodeItQuick/tcr-evercraft-2" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">Evercraft Kata</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                        <a href="https://github.com/CodeItQuick/expense-report-kata-ensemble" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">Expense Report Kata (Java)</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                        <a href="https://github.com/CodeItQuick/ForeverTwentyNine" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">(Almost) Forever Twenty Nine</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                        <a href="https://github.com/CodeItQuick/my-own-programming-language" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">Lox Programming Language</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                        <a href="https://github.com/CodeItQuick/StockApplicationASPNetWebMVCIndividualIdentity" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">Stock Picker</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                        <a href="https://github.com/CodeItQuick/TennisKataFinalTwo" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
-                            <span class="block mb-1 font-bold ">Tennis Refactoring Kata</span>
-                            <span class="block font-medium leading-5 opacity-70"></span>
-                        </a>
-                    
-                </div>
-            </div>
-        </div>
         <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
             <div x-show="navigationMenu == 'blog-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
