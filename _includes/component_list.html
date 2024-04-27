@@ -1,9 +1,9 @@
 
-<div class="card lg:card-side md:w-full bg-base-100 h-full shadow-xl my-4 md:max-w-3xl mx-6 md:mx-auto" >
+<div class="card lg:card-side md:w-full  h-full shadow-xl my-4 md:max-w-3xl mx-6 md:mx-auto" >
     <figure>
         <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover object-center overflow-hidden h-full w-full" />
     </figure>
-    <div class="card-body lg:w-9/12">
+    <div class="card-body bg-accent text-accent-content lg:w-9/12">
         <h2 class="card-title">{{ include.name }}</h2>
         <div class="flex">
             {% if include.progress == 'complete' %}

@@ -116,15 +116,15 @@ module.exports = {
                             '950': '#F9EBDB' //12
                         }
                     },
-                    'primary': '#c3d6ce',         //300,
-                    'primary-focus': '#98b5a7',   //400
-                    'primary-content': '#184526', //900
-                    'secondary': '#a8dbd7',       //300
-                    'secondary-focus': '#67c1b8', //400
-                    'secondary-content': '#13514b', //900
-                    'accent': '#b3a482', //300
-                    'accent-focus': '#786340', //400
-                    'accent-content': '#1c0e04', //900
+                    'primary': '#314238',         //300,
+                    'primary-focus': '#3D5045',   //400
+                    'primary-content': '#9FC3AE', //900
+                    'secondary': '#3F2D16',       //300
+                    'secondary-focus': '#4D3515', //400
+                    'secondary-content': '#CEAD84', //900
+                    'accent': '#3F2D16', //300
+                    'accent-focus': '#4D3515', //400
+                    'accent-content': '#CEAD84', //900
                     'neutral': colors.neutral[100],
                     'neutral-focus': colors.neutral[200],
                     'neutral-content': colors.neutral[900],
