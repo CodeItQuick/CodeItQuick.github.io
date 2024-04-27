@@ -329,7 +329,7 @@ const myThemes =[
             'accent-content': colorArrayLight(accentColorChoice).colors[900],  //900
             'neutral': colors.neutral[100],
             'neutral-focus': colors.neutral[200],
-            'neutral-content': colors.neutral[300],
+            'neutral-content': colors.neutral[900],
             'base-100': colors.slate[100],
             'base-200': colors.slate[200],
             'base-300': colors.slate[300],
@@ -357,9 +357,9 @@ const myThemes =[
             'secondary': colorArrayDark(secondaryColorChoice).colors[700],       //300
             'secondary-focus': colorArrayDark(secondaryColorChoice).colors[900], //400
             'secondary-content': colorArrayDark(secondaryColorChoice).colors[200], //900
-            'accent': colorArrayDark(accentColorChoice).colors[700],          //300
-            'accent-focus': colorArrayDark(accentColorChoice).colors[900],    //400
-            'accent-content': colorArrayDark(accentColorChoice).colors[200],  //900
+            'accent': colorArrayLight(accentColorChoice).colors[100],          //300
+            'accent-focus': colorArrayLight(accentColorChoice).colors[200],    //400
+            'accent-content': colorArrayLight(accentColorChoice).colors[900],  //900
             'neutral': colors.neutral[100],
             'neutral-focus': colors.neutral[200],
             'neutral-content': colors.neutral[900],
