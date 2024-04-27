@@ -17,7 +17,7 @@
     <![endif]-->
 </head>
 
-<body class="bg-base-200 mx-auto"  data-theme="myDark">
+<body class="bg-neutral mx-auto"  data-theme="myDark2">
 
     <nav x-init="show = screen.width < 768" x-show="show">
         <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
@@ -292,14 +292,14 @@
 </nav>
 
 
-    <div class="bg-accent">
+    <div class="bg-base-100/20">
     <div class="hero py-8 lg:py-32">
         <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
             <img src="/assets/images/graveyard_4_generated.jpg" class="rounded-lg shadow-2xl md:w-5/12 md:mr-8" />
             <div class="flex flex-col items-center justify-between rounded h-full md:pl-8" >
-                <h1 class="text-5xl font-bold text-white w-full rounded">Musings of the Project Graveyard</h1>
+                <h1 class="text-5xl font-bold text-black w-full rounded">Musings of the Project Graveyard</h1>
                 <div class="rounded-b-lg w-full flex flex-col justify-end">
-                    <h2 class="text-3xl py-8 text-white w-full">And now for something completely different.</h2>
+                    <h2 class="text-3xl py-8 text-black w-full">And now for something completely different.</h2>
                 </div>
                 <div class="width-full"></div>
             </div>
@@ -308,141 +308,141 @@
 </div>
 
 
-    <div x-data="{ pageNumber: 0, tag_filter: 'main', tag_count: 16 }" class="bg-base-200">
+    <div x-data="{ pageNumber: 0, tag_filter: 'main', tag_count: 16 }" class="bg-neutral">
         <div class="w-full p-8">
                 <div class="2xl:mx-auto">
                     <div class="2xl:mx-auto w-fit" >
-                        <span class="badge badge-outline" :class="tag_filter === 'main' ? 'badge-default' : 'badge-primary' ">
+                        <span class="badge badge-outline" :class="tag_filter === 'main' ? 'badge-content' : 'badge-primary' ">
                             <button
                                     x-on:click="tag_filter = 'main'; tag_count = 16; pageNumber = 0;"
-                                    :class="tag_filter === '' ? 'text-white' : 'text-primary-content' ">
+                                    :class="tag_filter === '' ? 'text-white' : 'text-accent-content' ">
                                 All
                             </button>
                         </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'errors' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'errors' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'errors'; tag_count = 1; pageNumber = 0;"
-                                            :class="tag_filter === 'errors' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'errors' ? 'text-white' : 'text-accent-content' ">
                                         errors
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'typescript' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'typescript' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'typescript'; tag_count = 1; pageNumber = 0;"
-                                            :class="tag_filter === 'typescript' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'typescript' ? 'text-white' : 'text-accent-content' ">
                                         typescript
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'practical' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'practical' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'practical'; tag_count = 3; pageNumber = 0;"
-                                            :class="tag_filter === 'practical' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'practical' ? 'text-white' : 'text-accent-content' ">
                                         practical
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'editor' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'editor' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'editor'; tag_count = 1; pageNumber = 0;"
-                                            :class="tag_filter === 'editor' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'editor' ? 'text-white' : 'text-accent-content' ">
                                         editor
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'jetbrains' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'jetbrains' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'jetbrains'; tag_count = 2; pageNumber = 0;"
-                                            :class="tag_filter === 'jetbrains' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'jetbrains' ? 'text-white' : 'text-accent-content' ">
                                         jetbrains
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'refactoring' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'refactoring' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'refactoring'; tag_count = 1; pageNumber = 0;"
-                                            :class="tag_filter === 'refactoring' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'refactoring' ? 'text-white' : 'text-accent-content' ">
                                         refactoring
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'theory' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'theory' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'theory'; tag_count = 11; pageNumber = 0;"
-                                            :class="tag_filter === 'theory' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'theory' ? 'text-white' : 'text-accent-content' ">
                                         theory
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'agile' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'agile' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'agile'; tag_count = 5; pageNumber = 0;"
-                                            :class="tag_filter === 'agile' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'agile' ? 'text-white' : 'text-accent-content' ">
                                         agile
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'pairing' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'pairing' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'pairing'; tag_count = 1; pageNumber = 0;"
-                                            :class="tag_filter === 'pairing' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'pairing' ? 'text-white' : 'text-accent-content' ">
                                         pairing
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'IDE' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'IDE' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'IDE'; tag_count = 1; pageNumber = 0;"
-                                            :class="tag_filter === 'IDE' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'IDE' ? 'text-white' : 'text-accent-content' ">
                                         IDE
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'DDD' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'DDD' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'DDD'; tag_count = 2; pageNumber = 0;"
-                                            :class="tag_filter === 'DDD' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'DDD' ? 'text-white' : 'text-accent-content' ">
                                         DDD
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'TDD' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'TDD' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'TDD'; tag_count = 3; pageNumber = 0;"
-                                            :class="tag_filter === 'TDD' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'TDD' ? 'text-white' : 'text-accent-content' ">
                                         TDD
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'ideas' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'ideas' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'ideas'; tag_count = 1; pageNumber = 0;"
-                                            :class="tag_filter === 'ideas' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'ideas' ? 'text-white' : 'text-accent-content' ">
                                         ideas
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'story' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'story' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'story'; tag_count = 1; pageNumber = 0;"
-                                            :class="tag_filter === 'story' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'story' ? 'text-white' : 'text-accent-content' ">
                                         story
                                     </button>
                                 </span>
                         
-                                <span class="badge badge-outline" :class="tag_filter === 'business' ? 'badge-default' : 'badge-primary' ">
+                                <span class="badge badge-outline" :class="tag_filter === 'business' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = 'business'; tag_count = 1; pageNumber = 0;"
-                                            :class="tag_filter === 'business' ? 'text-white' : 'text-primary-content' ">
+                                            :class="tag_filter === 'business' ? 'text-white' : 'text-accent-content' ">
                                         business
                                     </button>
                                 </span>
                         
                     </div>
                 </div>
-                <div x-data="{ index: 0 }" class="w-full bg-base-200 md:grid md:gap-16 md:grid-cols-2">
+                <div x-data="{ index: 0 }" class="w-full md:grid md:gap-16 md:grid-cols-2">
                       
                              
                               
@@ -2284,7 +2284,7 @@
                 </div>
         </div>
         <div
-        class="w-full bg-base-200 md:w-1/2 mx-auto py-6 flex justify-between items-center"
+        class="w-full bgmd:w-1/2 mx-auto py-6 flex justify-between items-center"
         x-show="16"
       >
         <!--First Button-->
@@ -2294,7 +2294,7 @@
           :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber==0 }"
         >
           <svg
-            class="h-8 w-8 text-primary-content"
+            class="h-8 w-8 text-accent"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -2316,7 +2316,7 @@
           :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber==0 }"
         >
           <svg
-            class="h-8 w-8 text-primary-content"
+            class="h-8 w-8 text-accent"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -2333,7 +2333,7 @@
         <!-- Display page numbers -->
         <template x-for="index in Math.ceil(tag_count / 4)">
           <button
-            class="px-3 py-2 rounded"
+            class="px-3 py-2 rounded text-primary"
             :class="{ 'bg-primary-content text-white font-bold' : index - 1 === pageNumber }"
             type="button"
             x-on:click="pageNumber = index - 1"
@@ -2349,7 +2349,7 @@
           :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(tag_count / 4) }"
         >
           <svg
-            class="h-8 w-8 text-primary-content"
+            class="h-8 w-8 text-accent"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -2370,7 +2370,7 @@
           :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(tag_count / 4) }"
         >
           <svg
-            class="h-8 w-8 text-primary-content"
+            class="h-8 w-8 text-accent"
             width="24"
             height="24"
             viewBox="0 0 24 24"

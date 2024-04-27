@@ -20,7 +20,7 @@
 
   </head>
 
-  <body class="bg-base-200 mx-auto" data-theme="myDark">
+  <body class="bg-base-200 mx-auto" data-theme="myDark2">
 
     <nav x-init="show = screen.width < 768" x-show="show">
         <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
@@ -295,14 +295,14 @@
 </nav>
 
 
-    <div class="bg-accent">
+    <div class="bg-base-100/20">
     <div class="hero py-8 lg:py-32">
         <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
             <img src="/assets/images/graveyard_5_generated.jpg" class="rounded-lg shadow-2xl md:w-5/12 md:mr-8" />
             <div class="flex flex-col items-center justify-between rounded h-full md:pl-8" >
-                <h1 class="text-5xl font-bold text-white w-full rounded">Project Graveyard</h1>
+                <h1 class="text-5xl font-bold text-black w-full rounded">Project Graveyard</h1>
                 <div class="rounded-b-lg w-full flex flex-col justify-end">
-                    <h2 class="text-3xl py-8 text-white w-full">Welcome to the numerous projects I have worked on since 2021</h2>
+                    <h2 class="text-3xl py-8 text-black w-full">Welcome to the numerous projects I have worked on since 2021</h2>
                 </div>
                 <div class="width-full"></div>
             </div>
@@ -311,8 +311,8 @@
 </div>
 
 
-    <div x-data="{ pageNumber: 0 }" class="bg-base-200">
-        <div class="w-full bg-base-200 md:p-8 md:grid md:gap-16 md:grid-cols-2">
+    <div x-data="{ pageNumber: 0 }" class="bg-neutral">
+        <div class="w-full bg-neutral md:p-8 md:grid md:gap-16 md:grid-cols-2">
             
 
             <div :class="{ 'hidden' : 1 < pageNumber * 4 + 1 || 1 > (pageNumber + 1) * 4   }">
@@ -658,7 +658,7 @@
           :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber==0 }"
         >
           <svg
-            class="h-8 w-8 text-primary-content"
+            class="h-8 w-8 text-primary"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -675,7 +675,7 @@
         <!-- Display page numbers -->
         <template x-for="index in Math.ceil(10 / 4)">
           <button
-            class="px-3 py-2 rounded"
+            class="px-3 py-2 rounded text-primary"
             :class="{ 'bg-primary-content text-white font-bold' : index - 1 === pageNumber }"
             type="button"
             x-on:click="pageNumber = index - 1"
@@ -691,7 +691,7 @@
           :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(10 / 4) }"
         >
           <svg
-            class="h-8 w-8 text-primary-content"
+            class="h-8 w-8 text-primary"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -712,7 +712,7 @@
           :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(10 / 4) }"
         >
           <svg
-            class="h-8 w-8 text-primary-content"
+            class="h-8 w-8 text-primary"
             width="24"
             height="24"
             viewBox="0 0 24 24"
