@@ -7,14 +7,14 @@
         <h2 class="card-title">{{ include.name }}</h2>
         <div class="flex">
             {% if include.progress == 'complete' %}
-                <div class="badge badge-primary mr-2">Complete</div>
+                <div class="badge badge-primary text-primary-content mr-2">Complete</div>
             {% elsif include.progress == 'in-progress' %}
-                <div class="badge badge-secondary mr-2">In-Progress</div>
+                <div class="badge badge-secondary text-secondary-content mr-2">In-Progress</div>
             {% endif %}
             {% if include.status == 'active' %}
-                <div class="badge badge-accent">Active</div>
+                <div class="badge badge-accent text-accent-content">Active</div>
             {% elsif include.status == 'inactive' %}
-                <div class="badge badge-ghost">In-Active</div>
+                <div class="badge badge-primary text-primary-content">In-Active</div>
             {% endif %}
         </div>
         <ul class="list-disc">
