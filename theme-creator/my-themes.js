@@ -222,15 +222,15 @@ const myThemes =[
             'base-100': colors.slate[50],
             'base-200': colors.slate[100],
             'base-300': colors.slate[200],
-            'base-content': colors.slate[900],
-            'info': colors.sky[300],
-            'info-content': colors.sky[900],
-            'success': colors.emerald[400],
-            'success-content': colors.emerald[900],
-            'warning': colors.yellow[400],
-            'warning-content': colors.yellow[900],
-            'error': colors.rose[300],
-            'error-content': colors.rose[900],
+            'base-content': colors.slate[200],
+            'info': colors.sky[900],
+            'info-content': colors.sky[200],
+            'success': colors.emerald[800],
+            'success-content': colors.emerald[300],
+            'warning': colors.yellow[900],
+            'warning-content': colors.yellow[300],
+            'error': colors.rose[900],
+            'error-content': colors.rose[200],
         },
         myDark: {
             colors: {
@@ -351,30 +351,30 @@ const myThemes =[
                 'secondary': colorArrayDark(secondaryColorChoice).colors,
                 'accent': colorArrayDark(accentColorChoice).colors
             },
-            'primary': colorArrayDark(primaryColorChoice).colors[300],         //300,
-            'primary-focus': colorArrayDark(primaryColorChoice).colors[400],   //400
-            'primary-content': colorArrayDark(primaryColorChoice).colors[900], //900
-            'secondary': colorArrayDark(secondaryColorChoice).colors[300],       //300
-            'secondary-focus': colorArrayDark(secondaryColorChoice).colors[400], //400
-            'secondary-content': colorArrayDark(secondaryColorChoice).colors[900], //900
-            'accent': colorArrayDark(accentColorChoice).colors[300],          //300
-            'accent-focus': colorArrayDark(accentColorChoice).colors[400],    //400
-            'accent-content': colorArrayDark(accentColorChoice).colors[900],  //900
+            'primary': colorArrayDark(primaryColorChoice).colors[700],         //300,
+            'primary-focus': colorArrayDark(primaryColorChoice).colors[900],   //400
+            'primary-content': colorArrayDark(primaryColorChoice).colors[200], //900
+            'secondary': colorArrayDark(secondaryColorChoice).colors[700],       //300
+            'secondary-focus': colorArrayDark(secondaryColorChoice).colors[900], //400
+            'secondary-content': colorArrayDark(secondaryColorChoice).colors[200], //900
+            'accent': colorArrayDark(accentColorChoice).colors[700],          //300
+            'accent-focus': colorArrayDark(accentColorChoice).colors[900],    //400
+            'accent-content': colorArrayDark(accentColorChoice).colors[200],  //900
             'neutral': colors.neutral[100],
             'neutral-focus': colors.neutral[200],
             'neutral-content': colors.neutral[900],
-            'base-100': colors.slate[900],
-            'base-200': colors.slate[800],
-            'base-300': colors.slate[700],
-            'base-content': colors.slate[50],
-            'info': colors.sky[300],
-            'info-content': colors.sky[900],
-            'success': colors.emerald[400],
-            'success-content': colors.emerald[900],
-            'warning': colors.yellow[400],
-            'warning-content': colors.yellow[900],
-            'error': colors.rose[300],
-            'error-content': colors.rose[900],
+            'base-100': colors.slate[50],
+            'base-200': colors.slate[100],
+            'base-300': colors.slate[200],
+            'base-content': colors.slate[200],
+            'info': colors.sky[900],
+            'info-content': colors.sky[200],
+            'success': colors.emerald[800],
+            'success-content': colors.emerald[300],
+            'warning': colors.yellow[900],
+            'warning-content': colors.yellow[300],
+            'error': colors.rose[900],
+            'error-content': colors.rose[200],
         }
     },
     "light", "dark"];
