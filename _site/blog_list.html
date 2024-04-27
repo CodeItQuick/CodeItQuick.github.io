@@ -354,14 +354,14 @@
 </nav>
 
 
-    <div class="bg-primary">
+    <div class="bg-accent">
     <div class="hero py-8 lg:py-32">
         <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
             <img src="/assets/images/graveyard_4_generated.jpg" class="rounded-lg shadow-2xl md:w-5/12 md:mr-8" />
             <div class="flex flex-col items-center justify-between rounded h-full md:pl-8" >
-                <h1 class="text-5xl font-bold text-primary-content w-full rounded">Musings of the Project Graveyard</h1>
+                <h1 class="text-5xl font-bold text-white w-full rounded">Musings of the Project Graveyard</h1>
                 <div class="rounded-b-lg w-full flex flex-col justify-end">
-                    <h2 class="text-3xl py-8 text-secondary-content w-full">And now for something completely different.</h2>
+                    <h2 class="text-3xl py-8 text-white w-full">And now for something completely different.</h2>
                 </div>
                 <div class="width-full"></div>
             </div>
@@ -371,72 +371,138 @@
 
 
     <div x-data="{ pageNumber: 0, tag_filter: 'main', tag_count: 16 }" class="bg-base-200">
-        <div class="w-full bg-base-200 md:p-8">
-                <div>
-                    <span class="badge badge-outline" :class="tag_filter === 'main' ? 'badge-default' : 'badge-primary' ">
-                        <button x-on:click="tag_filter = 'main'; tag_count = 16; pageNumber = 0;">All</button>
-                    </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'errors' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'errors'; tag_count = 1; pageNumber = 0;">errors</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'typescript' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'typescript'; tag_count = 1; pageNumber = 0;">typescript</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'practical' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'practical'; tag_count = 3; pageNumber = 0;">practical</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'editor' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'editor'; tag_count = 1; pageNumber = 0;">editor</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'jetbrains' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'jetbrains'; tag_count = 2; pageNumber = 0;">jetbrains</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'refactoring' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'refactoring'; tag_count = 1; pageNumber = 0;">refactoring</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'theory' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'theory'; tag_count = 11; pageNumber = 0;">theory</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'agile' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'agile'; tag_count = 5; pageNumber = 0;">agile</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'pairing' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'pairing'; tag_count = 1; pageNumber = 0;">pairing</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'IDE' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'IDE'; tag_count = 1; pageNumber = 0;">IDE</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'DDD' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'DDD'; tag_count = 2; pageNumber = 0;">DDD</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'TDD' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'TDD'; tag_count = 3; pageNumber = 0;">TDD</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'ideas' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'ideas'; tag_count = 1; pageNumber = 0;">ideas</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'story' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'story'; tag_count = 1; pageNumber = 0;">story</button>
-                            </span>
-                    
-                            <span class="badge badge-outline" :class="tag_filter === 'business' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = 'business'; tag_count = 1; pageNumber = 0;">business</button>
-                            </span>
-                    
+        <div class="w-full p-8">
+                <div class="2xl:mx-auto">
+                    <div class="2xl:mx-auto w-fit" >
+                        <span class="badge badge-outline" :class="tag_filter === 'main' ? 'badge-default' : 'badge-primary' ">
+                            <button
+                                    x-on:click="tag_filter = 'main'; tag_count = 16; pageNumber = 0;"
+                                    :class="tag_filter === '' ? 'text-white' : 'text-primary-content' ">
+                                All
+                            </button>
+                        </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'errors' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'errors'; tag_count = 1; pageNumber = 0;"
+                                            :class="tag_filter === 'errors' ? 'text-white' : 'text-primary-content' ">
+                                        errors
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'typescript' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'typescript'; tag_count = 1; pageNumber = 0;"
+                                            :class="tag_filter === 'typescript' ? 'text-white' : 'text-primary-content' ">
+                                        typescript
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'practical' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'practical'; tag_count = 3; pageNumber = 0;"
+                                            :class="tag_filter === 'practical' ? 'text-white' : 'text-primary-content' ">
+                                        practical
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'editor' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'editor'; tag_count = 1; pageNumber = 0;"
+                                            :class="tag_filter === 'editor' ? 'text-white' : 'text-primary-content' ">
+                                        editor
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'jetbrains' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'jetbrains'; tag_count = 2; pageNumber = 0;"
+                                            :class="tag_filter === 'jetbrains' ? 'text-white' : 'text-primary-content' ">
+                                        jetbrains
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'refactoring' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'refactoring'; tag_count = 1; pageNumber = 0;"
+                                            :class="tag_filter === 'refactoring' ? 'text-white' : 'text-primary-content' ">
+                                        refactoring
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'theory' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'theory'; tag_count = 11; pageNumber = 0;"
+                                            :class="tag_filter === 'theory' ? 'text-white' : 'text-primary-content' ">
+                                        theory
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'agile' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'agile'; tag_count = 5; pageNumber = 0;"
+                                            :class="tag_filter === 'agile' ? 'text-white' : 'text-primary-content' ">
+                                        agile
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'pairing' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'pairing'; tag_count = 1; pageNumber = 0;"
+                                            :class="tag_filter === 'pairing' ? 'text-white' : 'text-primary-content' ">
+                                        pairing
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'IDE' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'IDE'; tag_count = 1; pageNumber = 0;"
+                                            :class="tag_filter === 'IDE' ? 'text-white' : 'text-primary-content' ">
+                                        IDE
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'DDD' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'DDD'; tag_count = 2; pageNumber = 0;"
+                                            :class="tag_filter === 'DDD' ? 'text-white' : 'text-primary-content' ">
+                                        DDD
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'TDD' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'TDD'; tag_count = 3; pageNumber = 0;"
+                                            :class="tag_filter === 'TDD' ? 'text-white' : 'text-primary-content' ">
+                                        TDD
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'ideas' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'ideas'; tag_count = 1; pageNumber = 0;"
+                                            :class="tag_filter === 'ideas' ? 'text-white' : 'text-primary-content' ">
+                                        ideas
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'story' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'story'; tag_count = 1; pageNumber = 0;"
+                                            :class="tag_filter === 'story' ? 'text-white' : 'text-primary-content' ">
+                                        story
+                                    </button>
+                                </span>
+                        
+                                <span class="badge badge-outline" :class="tag_filter === 'business' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = 'business'; tag_count = 1; pageNumber = 0;"
+                                            :class="tag_filter === 'business' ? 'text-white' : 'text-primary-content' ">
+                                        business
+                                    </button>
+                                </span>
+                        
+                    </div>
                 </div>
                 <div x-data="{ index: 0 }" class="w-full bg-base-200 md:grid md:gap-16 md:grid-cols-2">
                       
@@ -450,7 +516,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Finally starting a learning journal</h2>
                     <div>
                     
@@ -491,7 +557,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Finally starting a learning journal</h2>
                     <div>
                     
@@ -532,7 +598,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Navigation Shortcuts in your jetbrains</h2>
                     <div>
                     
@@ -570,7 +636,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Shortcutting your jetbrains</h2>
                     <div>
                     
@@ -608,7 +674,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Finally starting a learning journal</h2>
                     <div>
                     
@@ -649,7 +715,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Shortcutting your jetbrains</h2>
                     <div>
                     
@@ -690,7 +756,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Navigation Shortcuts in your jetbrains</h2>
                     <div>
                     
@@ -728,7 +794,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Shortcutting your jetbrains</h2>
                     <div>
                     
@@ -769,7 +835,7 @@
     <figure>
         <img src="./assets/images/halloween-background-with-zombie-hand-bursting-out-ground_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Refactoring Goals</h2>
                     <div>
                     
@@ -806,7 +872,7 @@
     <figure>
         <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Why Story Pointing Is Evil</h2>
                     <div>
                     
@@ -840,7 +906,7 @@
     <figure>
         <img src="./assets/images/zombie_download_2.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">My Learnings Through Coding Journey</h2>
                     <div>
                     
@@ -874,7 +940,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Exploring Sql Performance Tuning - ChatGPT</h2>
                     <div>
                     
@@ -908,7 +974,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">TDD The Basics</h2>
                     <div>
                     
@@ -942,7 +1008,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">What I get out of pairing?</h2>
                     <div>
                     
@@ -976,7 +1042,7 @@
     <figure>
         <img src="./assets/images/zombie_download_3.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">My Journey Through TDD</h2>
                     <div>
                     
@@ -1010,7 +1076,7 @@
     <figure>
         <img src="./assets/images/zombie_in_graveyard_one_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Adapter Layer Explained</h2>
                     <div>
                     
@@ -1044,7 +1110,7 @@
     <figure>
         <img src="./assets/images/zombie_download_5.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Aggregates Explained</h2>
                     <div>
                     
@@ -1078,7 +1144,7 @@
     <figure>
         <img src="./assets/images/zombie_download_4.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">What I get out of pairing?</h2>
                     <div>
                     
@@ -1116,7 +1182,7 @@
     <figure>
         <img src="./assets/images/green_purple_zombie_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Story Splitting</h2>
                     <div>
                     
@@ -1150,7 +1216,7 @@
     <figure>
         <img src="./assets/images/halloween-background-with-zombie-hand-bursting-out-ground_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Refactoring Goals</h2>
                     <div>
                     
@@ -1187,7 +1253,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Thoughts On Say Do Ratio</h2>
                     <div>
                     
@@ -1217,7 +1283,7 @@
     <figure>
         <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Why Story Pointing Is Evil</h2>
                     <div>
                     
@@ -1251,7 +1317,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">What I get out of pairing?</h2>
                     <div>
                     
@@ -1285,7 +1351,7 @@
     <figure>
         <img src="./assets/images/zombie_download_4.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">What I get out of pairing?</h2>
                     <div>
                     
@@ -1323,7 +1389,7 @@
     <figure>
         <img src="./assets/images/green_purple_zombie_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Story Splitting</h2>
                     <div>
                     
@@ -1360,7 +1426,7 @@
     <figure>
         <img src="./assets/images/zombie_download_4.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">What I get out of pairing?</h2>
                     <div>
                     
@@ -1401,7 +1467,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Navigation Shortcuts in your jetbrains</h2>
                     <div>
                     
@@ -1442,7 +1508,7 @@
     <figure>
         <img src="./assets/images/zombie_in_graveyard_one_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Adapter Layer Explained</h2>
                     <div>
                     
@@ -1476,7 +1542,7 @@
     <figure>
         <img src="./assets/images/zombie_download_5.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Aggregates Explained</h2>
                     <div>
                     
@@ -1513,7 +1579,7 @@
     <figure>
         <img src="./assets/images/zombie_download_2.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">My Learnings Through Coding Journey</h2>
                     <div>
                     
@@ -1547,7 +1613,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">TDD The Basics</h2>
                     <div>
                     
@@ -1581,7 +1647,7 @@
     <figure>
         <img src="./assets/images/zombie_download_3.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">My Journey Through TDD</h2>
                     <div>
                     
@@ -1618,7 +1684,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Exploring Sql Performance Tuning - ChatGPT</h2>
                     <div>
                     
@@ -1655,7 +1721,7 @@
     <figure>
         <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Poker Staking Learnings</h2>
                     <div>
                     
@@ -1692,7 +1758,7 @@
     <figure>
         <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Poker Staking Learnings</h2>
                     <div>
                     
@@ -1729,7 +1795,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Thoughts On Say Do Ratio</h2>
                     <div>
                     
@@ -1759,7 +1825,7 @@
     <figure>
         <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Why Story Pointing Is Evil</h2>
                     <div>
                     
@@ -1793,7 +1859,7 @@
     <figure>
         <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Poker Staking Learnings</h2>
                     <div>
                     
@@ -1827,7 +1893,7 @@
     <figure>
         <img src="./assets/images/zombie_download_2.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">My Learnings Through Coding Journey</h2>
                     <div>
                     
@@ -1861,7 +1927,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Exploring Sql Performance Tuning - ChatGPT</h2>
                     <div>
                     
@@ -1895,7 +1961,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">TDD The Basics</h2>
                     <div>
                     
@@ -1929,7 +1995,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">What I get out of pairing?</h2>
                     <div>
                     
@@ -1963,7 +2029,7 @@
     <figure>
         <img src="./assets/images/zombie_download_3.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">My Journey Through TDD</h2>
                     <div>
                     
@@ -1997,7 +2063,7 @@
     <figure>
         <img src="./assets/images/zombie_in_graveyard_one_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Adapter Layer Explained</h2>
                     <div>
                     
@@ -2031,7 +2097,7 @@
     <figure>
         <img src="./assets/images/zombie_download_5.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Aggregates Explained</h2>
                     <div>
                     
@@ -2065,7 +2131,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Navigation Shortcuts in your jetbrains</h2>
                     <div>
                     
@@ -2103,7 +2169,7 @@
     <figure>
         <img src="./assets/images/zombie_download_4.png" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">What I get out of pairing?</h2>
                     <div>
                     
@@ -2141,7 +2207,7 @@
     <figure>
         <img src="./assets/images/green_purple_zombie_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Story Splitting</h2>
                     <div>
                     
@@ -2175,7 +2241,7 @@
     <figure>
         <img src="./assets/images/halloween-background-with-zombie-hand-bursting-out-ground_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Refactoring Goals</h2>
                     <div>
                     
@@ -2209,7 +2275,7 @@
     <figure>
         <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Shortcutting your jetbrains</h2>
                     <div>
                     
@@ -2247,7 +2313,7 @@
     <figure>
         <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
     </figure>
-    <div class="card-body bg-accent text-accent-content lg:w-9/12">
+    <div class="card-body bg-accent text-white lg:w-9/12">
         <h2 class="card-title">Finally starting a learning journal</h2>
                     <div>
                     

@@ -1,14 +1,24 @@
 <div x-data="{ pageNumber: 0, tag_filter: 'main', tag_count: 16 }" class="bg-base-200">
-        <div class="w-full bg-base-200 md:p-8">
-                <div>
-                    <span class="badge badge-outline" :class="tag_filter === 'main' ? 'badge-default' : 'badge-primary' ">
-                        <button x-on:click="tag_filter = 'main'; tag_count = {{ site.posts.size }}; pageNumber = 0;">All</button>
-                    </span>
-                    {% for tag in site.tags %}
-                            <span class="badge badge-outline" :class="tag_filter === '{{ tag[0] }}' ? 'badge-default' : 'badge-primary' ">
-                                <button x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">{{ tag[0] }}</button>
-                            </span>
-                    {% endfor %}
+        <div class="w-full p-8">
+                <div class="2xl:mx-auto">
+                    <div class="2xl:mx-auto w-fit" >
+                        <span class="badge badge-outline" :class="tag_filter === 'main' ? 'badge-default' : 'badge-primary' ">
+                            <button
+                                    x-on:click="tag_filter = 'main'; tag_count = {{ site.posts.size }}; pageNumber = 0;"
+                                    :class="tag_filter === '{{ tag[0] }}' ? 'text-white' : 'text-primary-content' ">
+                                All
+                            </button>
+                        </span>
+                        {% for tag in site.tags %}
+                                <span class="badge badge-outline" :class="tag_filter === '{{ tag[0] }}' ? 'badge-default' : 'badge-primary' ">
+                                    <button
+                                            x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;"
+                                            :class="tag_filter === '{{ tag[0] }}' ? 'text-white' : 'text-primary-content' ">
+                                        {{ tag[0] }}
+                                    </button>
+                                </span>
+                        {% endfor %}
+                    </div>
                 </div>
                 <div x-data="{ index: 0 }" class="w-full bg-base-200 md:grid md:gap-16 md:grid-cols-2">
                      {% for tag in site.tags %} 
