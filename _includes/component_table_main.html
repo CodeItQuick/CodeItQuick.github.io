@@ -1,5 +1,5 @@
-<div x-data="{ pageNumber: 0 }">
-        <div class="w-full bg-base-200 text-neutral-content md:p-8 md:grid md:gap-16 md:grid-cols-2">
+<div x-data="{ pageNumber: 0 }" class="bg-base-200">
+        <div class="w-full bg-base-200 md:p-8 md:grid md:gap-16 md:grid-cols-2">
             {% for row in include.table %}
 
             <div :class="{ 'hidden' : {{ forloop.index }} < pageNumber * 4 + 1 || {{ forloop.index }} > (pageNumber + 1) * 4   }">

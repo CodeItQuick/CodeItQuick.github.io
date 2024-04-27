@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Include the Alpine library on your page -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Include the TailwindCSS library on your page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen" type="text/css">
+    <title>CodeItQuick Blog</title>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="bg-base-200 mx-auto"  data-theme="myDark">
+
+    <nav x-init="show = screen.width < 768" x-show="show">
+        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
+                <a href="/"><h2 class="text-3xl font-bold  w-full rounded w-full">Projects</h2></a>
+        </div>
+        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
+                <a href="/blog_list.html"><h2 class="text-3xl font-bold  w-full rounded w-full">Blog</h2></a>
+        </div>
+        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
+                <a href="/coding_kata_list.html"><h2 class="text-3xl font-bold  w-full rounded w-full">Katas</h2></a>
+        </div>
+        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
+                <a href="/recipe_list.html"><h2 class="text-3xl font-bold  w-full rounded w-full">Recipes</h2></a>
+        </div>
+</nav>
+<nav x-init="show = screen.width >= 768" x-show="show" x-data="{
+        navigationMenuOpen: false,
+        navigationMenu: '',
+        navigationMenuCloseDelay: 200,
+        navigationMenuCloseTimeout: 300,
+        navigationMenuLeave() {
+            let that = this;
+            this.navigationMenuCloseTimeout = setTimeout(() => {
+                that.navigationMenuClose();
+            }, this.navigationMenuCloseDelay);
+        },
+        navigationMenuReposition(navElement) {
+            this.navigationMenuClearCloseTimeout();
+            this.$refs.navigationDropdown.style.left = navElement.offsetLeft + 'px';
+            this.$refs.navigationDropdown.style.marginLeft = (navElement.offsetWidth/2) + 'px';
+        },
+        navigationMenuClearCloseTimeout(){
+            clearTimeout(this.navigationMenuCloseTimeout);
+        },
+        navigationMenuClose(){
+            this.navigationMenuOpen = false;
+            this.navigationMenu = '';
+        }
+    }"
+    class="relative z-10 w-auto bg-base-100">
+    <div class="relative">
+        <div class="flex justify-between">
+            <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md ">
+                <li>
+                    <a href="https://github.com/CodeItQuick" target="_blank" @click="navigationMenuClose()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>CodeItQuick</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md  group">
+                <li>
+                    <button
+                        :class="{ 'bg-base-100' : navigationMenu=='projects-page', 'hover:bg-base-100' : navigationMenu!='projects-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='projects-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Projects</span>
+                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'projects-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </li>
+                <li>
+                    <button
+                        :class="{ 'bg-base-100' : navigationMenu=='blog-page', 'hover:bg-base-100' : navigationMenu!='blog-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='blog-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Blog</span>
+                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </li>     
+                <li>
+                    <button
+                        :class="{ 'bg-base-100' : navigationMenu=='tdd-page', 'hover:bg-base-100' : navigationMenu!='tdd-page' }" 
+                            @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='tdd-page'" 
+                            @mouseleave="navigationMenuLeave()" 
+                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Katas</span>
+                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'tdd-page' }" 
+                                class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </li>
+                <li>
+                    <button
+                        :class="{ 'bg-base-100' : navigationMenu=='recipe-page', 'hover:bg-base-100' : navigationMenu!='recipe-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='recipe-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Recipes</span>
+                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'recipe-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </li>
+            </ul>
+            <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md ">
+                <li>
+                    <a href="https://github.com/CodeItQuick/CodeItQuick.github.io" target="_blank" @click="navigationMenuClose()"  class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Github</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div x-ref="navigationDropdown" x-show="navigationMenuOpen"
+        @mouseover="navigationMenuClearCloseTimeout()" @mouseleave="navigationMenuLeave()"
+        class="bg-base-100 text-white absolute top-0 pt-3 duration-200 ease-out -translate-x-1/2 translate-y-11" x-cloak>
+
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+            <div x-show="navigationMenu == 'projects-page'" class="flex items-stretch justify-center w-full p-6">
+                <div class="w-72">
+                    <a href="/" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                        <span class="block mb-1 font-bold ">Main Projects Page</span>
+                        <span class="block font-medium leading-5 opacity-70">See all the current projects.</span>
+                    </a>
+                    
+                        <a href="https://github.com/CodeItQuick/BoomerBot" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Boomer Bot</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/TddSqlLite" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">C Sharp Sql Lite Tutorial</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/CTddSqlLite" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">C Sql Lite Tutorial</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/ExpenseReportCSharp" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Expense Report Kata (.NET)</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/tcr-evercraft-2" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Evercraft Kata</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/expense-report-kata-ensemble" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Expense Report Kata (Java)</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/ForeverTwentyNine" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">(Almost) Forever Twenty Nine</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/my-own-programming-language" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Lox Programming Language</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/StockApplicationASPNetWebMVCIndividualIdentity" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Stock Picker</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/TennisKataFinalTwo" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Tennis Refactoring Kata</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+            <div x-show="navigationMenu == 'blog-page'" class="flex items-stretch justify-center w-full p-6">
+                <div class="w-72">
+                    <a href="/blog_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                        <span class="block mb-1 font-bold">Main Blog Page</span>
+                        <span class="block font-medium leading-5 opacity-70">See all the current blog posts.</span>
+                    </a>
+                    
+                        <a href="/2024/04/18/Thoughts-On-Say-Do-Ratio.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Thoughts On Say Do Ratio</span>
+                            <span class="block font-medium leading-5 opacity-70">Organization my thoughts on the Say Do Ratio</span>
+                        </a>
+                    
+                        <a href="/2024/02/03/Why-Story-Pointing-Is-Evil.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Why Story Pointing Is Evil</span>
+                            <span class="block font-medium leading-5 opacity-70">Why this is the fastest route to toxic work culture</span>
+                        </a>
+                    
+                        <a href="/2023/12/07/poker-staking-learnings.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Poker Staking Learnings</span>
+                            <span class="block font-medium leading-5 opacity-70">How do stocks and poker staking arrangements relate?</span>
+                        </a>
+                    
+                        <a href="/2023/12/05/My-Learnings-Through-Coding-Journey.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">My Learnings Through Coding Journey</span>
+                            <span class="block font-medium leading-5 opacity-70">Brief Information On Major Takeaways</span>
+                        </a>
+                    
+                        <a href="/2023/11/26/exploring-sqlserver-performance-testing-with-chat-gpt.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Exploring Sql Performance Tuning - ChatGPT</span>
+                            <span class="block font-medium leading-5 opacity-70">Using chatgpt to get a better handle on sqlserver performance tuning</span>
+                        </a>
+                    
+                        <a href="/2023/11/25/TDD-The-Basics.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">TDD The Basics</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn the foundations of TDD and testing</span>
+                        </a>
+                    
+                        <a href="/2023/11/18/agile-methodologies.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">What I get out of pairing?</span>
+                            <span class="block font-medium leading-5 opacity-70">Why pair? What learnings do I get?</span>
+                        </a>
+                    
+                        <a href="/2023/11/18/My-Journey-Through-TDD.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">My Journey Through TDD</span>
+                            <span class="block font-medium leading-5 opacity-70">Writing down a brief take on XP practices I believe in</span>
+                        </a>
+                    
+                        <a href="/2023/11/07/getting-the-view-and-controller-right.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Adapter Layer Explained</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn about my current understanding of the adapter layer</span>
+                        </a>
+                    
+                        <a href="/2023/11/05/aggregates-explained.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Aggregates Explained</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn about my current understanding of aggregates</span>
+                        </a>
+                    
+                        <a href="/2023/11/03/jetbrains-navigation-shortcuts.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Navigation Shortcuts in your jetbrains</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn all the navigation shortcuts in jetbrains</span>
+                        </a>
+                    
+                        <a href="/2023/10/31/what-I-get-out-of-pairing.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">What I get out of pairing?</span>
+                            <span class="block font-medium leading-5 opacity-70">Why pair? What learnings do I get?</span>
+                        </a>
+                    
+                        <a href="/2023/10/28/story-splitting.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Story Splitting</span>
+                            <span class="block font-medium leading-5 opacity-70">A thought experiment turns into thin vertical slices</span>
+                        </a>
+                    
+                        <a href="/2023/10/28/refactoring-goals.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Refactoring Goals</span>
+                            <span class="block font-medium leading-5 opacity-70">Improving the codebase - safely</span>
+                        </a>
+                    
+                        <a href="/2023/10/15/shortcutting-your-jetbrains.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Shortcutting your jetbrains</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn about how to use shortcuts in your jetbrains for improved productivity.</span>
+                        </a>
+                    
+                        <a href="/2023/10/07/finally-started.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Finally starting a learning journal</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn about try-catch-finally and returning error types in depth.</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+            <div x-show="navigationMenu == 'tdd-page'" class="flex items-stretch justify-center w-full p-6">
+                <div class="w-72">
+                    <a href="/coding_kata_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                        <span class="block mb-1 font-bold ">Katas</span>
+                        <span class="block font-medium leading-5 opacity-70">See all the suggested coding katas.</span>
+                    </a>
+                    
+                        <a href="/dojos/1-Roman-Numerals.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Roman Numerals</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn TDD/ensembling in a highly constrained environment</span>
+                        </a>
+                    
+                        <a href="/dojos/2-Fantasy-Battle-Law-Of-Demeter.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Fantasy Battle</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn A Tenant of OOP - The Law of Demeter</span>
+                        </a>
+                    
+                        <a href="/dojos/3-Gilded-Rose-Refactoring.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Gilded Rose Refactoring Kata</span>
+                            <span class="block font-medium leading-5 opacity-70">This refactoring kata can help you to learn about refactoring messy code.</span>
+                        </a>
+                    
+                        <a href="/dojos/anon-DeliveryController-Mocks-Stubs.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">DeliveryController Refactoring Kata</span>
+                            <span class="block font-medium leading-5 opacity-70">This refactoring kata can help you to learn about mocks and stubs.</span>
+                        </a>
+                    
+                        <a href="/dojos/anon-Parrot-Refactoring.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Parrot Refactoring</span>
+                            <span class="block font-medium leading-5 opacity-70">Kata to learn about Polymorphism.</span>
+                        </a>
+                    
+                        <a href="/dojos/anon-necklace-refactoring.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Necklace Refactoring Kata</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn more about OOP - Chain of Responsibility Pattern.</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+            <div x-show="navigationMenu == 'recipe-page'" class="flex items-stretch justify-center w-full p-6">
+                <div class="w-72">
+                    <a href="/recipe_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                        <span class="block mb-1 font-bold ">Main Recipes Page</span>
+                        <span class="block font-medium leading-5 opacity-70">See a list of beginner-friendly recipes.</span>
+                    </a>
+                    
+                        <a href="/recipes/bean_salad.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Bean Salad</span>
+                            <span class="block font-medium leading-5 opacity-70">Ridiculously Easy!</span>
+                        </a>
+                    
+                        <a href="/recipes/korean_ground_turkey.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Korean Ground Turkey</span>
+                            <span class="block font-medium leading-5 opacity-70">Beef substituted with turkey!</span>
+                        </a>
+                    
+                        <a href="/recipes/mexican_chicken_casserole.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Mexican Chicken Casserole</span>
+                            <span class="block font-medium leading-5 opacity-70">Very quick recipe to make, and delicious.</span>
+                        </a>
+                    
+                        <a href="/recipes/southwestern_chicken_casserole.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Southwestern Chicken Casserole</span>
+                            <span class="block font-medium leading-5 opacity-70">More casserole, Southwestern this time!</span>
+                        </a>
+                    
+                        <a href="/recipes/sweet_and_spicy_thai_chicken.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Sweet and Spicy Thai Chicken</span>
+                            <span class="block font-medium leading-5 opacity-70">Cheaper, and more servings than ordering out!</span>
+                        </a>
+                    
+                        <a href="/recipes/thai_butter_chicken_from_packets.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Thai Red Curry and Butter Chicken</span>
+                            <span class="block font-medium leading-5 opacity-70">Made from packets - simple and easy</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="bg-base-200">
+    <div class="hero py-8 lg:py-32">
+        <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
+            <img src="/assets/images/graveyard_4_generated.jpg" class="rounded-lg shadow-2xl md:w-5/12 md:mr-8" />
+            <div class="flex flex-col items-center justify-between rounded bg-base-200 h-full md:pl-8" >
+                <h1 class="text-5xl font-bold text-primary w-full rounded w-full">Musings of the Project Graveyard</h1>
+                <div class="rounded-b-lg w-full flex flex-col justify-end">
+                    <h2 class="text-3xl py-8 bg-base-200 w-full">And now for something completely different.</h2>
+                </div>
+                <div class="width-full"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div x-data="{ pageNumber: 0, tag_filter: 'main', tag_count: 16 }" class="bg-base-200">
+        <div class="w-full bg-base-200 md:p-8">
+                <div>
+                    <span class="badge badge-outline" :class="tag_filter === 'main' ? 'badge-default' : 'badge-primary' ">
+                        <button x-on:click="tag_filter = 'main'; tag_count = 16; pageNumber = 0;">All</button>
+                    </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'errors' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'errors'; tag_count = 1; pageNumber = 0;">errors</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'typescript' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'typescript'; tag_count = 1; pageNumber = 0;">typescript</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'practical' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'practical'; tag_count = 3; pageNumber = 0;">practical</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'editor' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'editor'; tag_count = 1; pageNumber = 0;">editor</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'jetbrains' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'jetbrains'; tag_count = 2; pageNumber = 0;">jetbrains</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'refactoring' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'refactoring'; tag_count = 1; pageNumber = 0;">refactoring</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'theory' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'theory'; tag_count = 11; pageNumber = 0;">theory</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'agile' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'agile'; tag_count = 5; pageNumber = 0;">agile</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'pairing' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'pairing'; tag_count = 1; pageNumber = 0;">pairing</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'IDE' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'IDE'; tag_count = 1; pageNumber = 0;">IDE</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'DDD' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'DDD'; tag_count = 2; pageNumber = 0;">DDD</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'TDD' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'TDD'; tag_count = 3; pageNumber = 0;">TDD</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'ideas' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'ideas'; tag_count = 1; pageNumber = 0;">ideas</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'story' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'story'; tag_count = 1; pageNumber = 0;">story</button>
+                            </span>
+                    
+                            <span class="badge badge-outline" :class="tag_filter === 'business' ? 'badge-default' : 'badge-primary' ">
+                                <button x-on:click="tag_filter = 'business'; tag_count = 1; pageNumber = 0;">business</button>
+                            </span>
+                    
+                </div>
+                <div x-data="{ index: 0 }" class="w-full bg-base-200 md:grid md:gap-16 md:grid-cols-2">
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'errors'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Finally starting a learning journal</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                errors
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                typescript
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about try-catch-finally and returning error types in depth.
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/07/finally-started.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'typescript'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Finally starting a learning journal</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                errors
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                typescript
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about try-catch-finally and returning error types in depth.
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/07/finally-started.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'practical'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Navigation Shortcuts in your jetbrains</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                jetbrains
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                IDE
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn all the navigation shortcuts in jetbrains
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/03/jetbrains-navigation-shortcuts.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'practical'.includes(tag_filter)" 
+        :class="{ 'hidden' : 1 < (pageNumber) * 4 || 1 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Shortcutting your jetbrains</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                editor
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                jetbrains
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about how to use shortcuts in your jetbrains for improved productivity.
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/15/shortcutting-your-jetbrains.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'practical'.includes(tag_filter)" 
+        :class="{ 'hidden' : 2 < (pageNumber) * 4 || 2 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Finally starting a learning journal</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                errors
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                typescript
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about try-catch-finally and returning error types in depth.
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/07/finally-started.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'editor'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Shortcutting your jetbrains</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                editor
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                jetbrains
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about how to use shortcuts in your jetbrains for improved productivity.
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/15/shortcutting-your-jetbrains.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'jetbrains'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Navigation Shortcuts in your jetbrains</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                jetbrains
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                IDE
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn all the navigation shortcuts in jetbrains
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/03/jetbrains-navigation-shortcuts.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'jetbrains'.includes(tag_filter)" 
+        :class="{ 'hidden' : 1 < (pageNumber) * 4 || 1 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Shortcutting your jetbrains</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                editor
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                jetbrains
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about how to use shortcuts in your jetbrains for improved productivity.
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/15/shortcutting-your-jetbrains.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'refactoring'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/halloween-background-with-zombie-hand-bursting-out-ground_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Refactoring Goals</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                refactoring
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Improving the codebase - safely
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/28/refactoring-goals.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Why Story Pointing Is Evil</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why this is the fastest route to toxic work culture
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2024/02/03/Why-Story-Pointing-Is-Evil.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 1 < (pageNumber) * 4 || 1 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_2.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">My Learnings Through Coding Journey</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                TDD
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Brief Information On Major Takeaways
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/12/05/My-Learnings-Through-Coding-Journey.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 2 < (pageNumber) * 4 || 2 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Exploring Sql Performance Tuning - ChatGPT</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                ideas
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Using chatgpt to get a better handle on sqlserver performance tuning
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/26/exploring-sqlserver-performance-testing-with-chat-gpt.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 3 < (pageNumber) * 4 || 3 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">TDD The Basics</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                TDD
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn the foundations of TDD and testing
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/25/TDD-The-Basics.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 4 < (pageNumber) * 4 || 4 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">What I get out of pairing?</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why pair? What learnings do I get?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/18/agile-methodologies.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 5 < (pageNumber) * 4 || 5 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_3.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">My Journey Through TDD</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                TDD
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Writing down a brief take on XP practices I believe in
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/18/My-Journey-Through-TDD.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 6 < (pageNumber) * 4 || 6 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_graveyard_one_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Adapter Layer Explained</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                DDD
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about my current understanding of the adapter layer
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/07/getting-the-view-and-controller-right.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 7 < (pageNumber) * 4 || 7 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_5.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Aggregates Explained</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                DDD
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about my current understanding of aggregates
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/05/aggregates-explained.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 8 < (pageNumber) * 4 || 8 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_4.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">What I get out of pairing?</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                pairing
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why pair? What learnings do I get?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/31/what-I-get-out-of-pairing.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 9 < (pageNumber) * 4 || 9 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/green_purple_zombie_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Story Splitting</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         A thought experiment turns into thin vertical slices
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/28/story-splitting.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'theory'.includes(tag_filter)" 
+        :class="{ 'hidden' : 10 < (pageNumber) * 4 || 10 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/halloween-background-with-zombie-hand-bursting-out-ground_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Refactoring Goals</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                refactoring
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Improving the codebase - safely
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/28/refactoring-goals.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'agile'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Thoughts On Say Do Ratio</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Organization my thoughts on the Say Do Ratio
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2024/04/18/Thoughts-On-Say-Do-Ratio.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'agile'.includes(tag_filter)" 
+        :class="{ 'hidden' : 1 < (pageNumber) * 4 || 1 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Why Story Pointing Is Evil</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why this is the fastest route to toxic work culture
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2024/02/03/Why-Story-Pointing-Is-Evil.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'agile'.includes(tag_filter)" 
+        :class="{ 'hidden' : 2 < (pageNumber) * 4 || 2 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">What I get out of pairing?</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why pair? What learnings do I get?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/18/agile-methodologies.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'agile'.includes(tag_filter)" 
+        :class="{ 'hidden' : 3 < (pageNumber) * 4 || 3 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_4.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">What I get out of pairing?</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                pairing
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why pair? What learnings do I get?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/31/what-I-get-out-of-pairing.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'agile'.includes(tag_filter)" 
+        :class="{ 'hidden' : 4 < (pageNumber) * 4 || 4 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/green_purple_zombie_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Story Splitting</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         A thought experiment turns into thin vertical slices
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/28/story-splitting.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'pairing'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_4.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">What I get out of pairing?</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                pairing
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why pair? What learnings do I get?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/31/what-I-get-out-of-pairing.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'IDE'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Navigation Shortcuts in your jetbrains</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                jetbrains
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                IDE
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn all the navigation shortcuts in jetbrains
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/03/jetbrains-navigation-shortcuts.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'DDD'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_graveyard_one_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Adapter Layer Explained</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                DDD
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about my current understanding of the adapter layer
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/07/getting-the-view-and-controller-right.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'DDD'.includes(tag_filter)" 
+        :class="{ 'hidden' : 1 < (pageNumber) * 4 || 1 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_5.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Aggregates Explained</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                DDD
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about my current understanding of aggregates
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/05/aggregates-explained.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'TDD'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_2.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">My Learnings Through Coding Journey</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                TDD
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Brief Information On Major Takeaways
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/12/05/My-Learnings-Through-Coding-Journey.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'TDD'.includes(tag_filter)" 
+        :class="{ 'hidden' : 1 < (pageNumber) * 4 || 1 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">TDD The Basics</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                TDD
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn the foundations of TDD and testing
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/25/TDD-The-Basics.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                             
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'TDD'.includes(tag_filter)" 
+        :class="{ 'hidden' : 2 < (pageNumber) * 4 || 2 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_3.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">My Journey Through TDD</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                TDD
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Writing down a brief take on XP practices I believe in
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/18/My-Journey-Through-TDD.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'ideas'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Exploring Sql Performance Tuning - ChatGPT</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                ideas
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Using chatgpt to get a better handle on sqlserver performance tuning
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/26/exploring-sqlserver-performance-testing-with-chat-gpt.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'story'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Poker Staking Learnings</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                story
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                business
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         How do stocks and poker staking arrangements relate?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/12/07/poker-staking-learnings.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                      
+                             
+                              
+                                           
+<div 
+        x-show="false && tag_filter == 'main' || 'business'.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Poker Staking Learnings</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                story
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                business
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         How do stocks and poker staking arrangements relate?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/12/07/poker-staking-learnings.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                           
+                            
+                     
+                     
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 0 < (pageNumber) * 4 || 0 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Thoughts On Say Do Ratio</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Organization my thoughts on the Say Do Ratio
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2024/04/18/Thoughts-On-Say-Do-Ratio.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 1 < (pageNumber) * 4 || 1 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Why Story Pointing Is Evil</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why this is the fastest route to toxic work culture
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2024/02/03/Why-Story-Pointing-Is-Evil.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 2 < (pageNumber) * 4 || 2 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_1.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Poker Staking Learnings</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                story
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                business
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         How do stocks and poker staking arrangements relate?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/12/07/poker-staking-learnings.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 3 < (pageNumber) * 4 || 3 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_2.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">My Learnings Through Coding Journey</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                TDD
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Brief Information On Major Takeaways
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/12/05/My-Learnings-Through-Coding-Journey.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 4 < (pageNumber) * 4 || 4 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Exploring Sql Performance Tuning - ChatGPT</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                ideas
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Using chatgpt to get a better handle on sqlserver performance tuning
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/26/exploring-sqlserver-performance-testing-with-chat-gpt.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 5 < (pageNumber) * 4 || 5 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">TDD The Basics</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                TDD
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn the foundations of TDD and testing
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/25/TDD-The-Basics.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 6 < (pageNumber) * 4 || 6 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">What I get out of pairing?</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why pair? What learnings do I get?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/18/agile-methodologies.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 7 < (pageNumber) * 4 || 7 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_3.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">My Journey Through TDD</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                TDD
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Writing down a brief take on XP practices I believe in
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/18/My-Journey-Through-TDD.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 8 < (pageNumber) * 4 || 8 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_graveyard_one_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Adapter Layer Explained</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                DDD
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about my current understanding of the adapter layer
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/07/getting-the-view-and-controller-right.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 9 < (pageNumber) * 4 || 9 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_5.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Aggregates Explained</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                DDD
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about my current understanding of aggregates
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/05/aggregates-explained.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 10 < (pageNumber) * 4 || 10 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Navigation Shortcuts in your jetbrains</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                jetbrains
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                IDE
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn all the navigation shortcuts in jetbrains
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/11/03/jetbrains-navigation-shortcuts.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 11 < (pageNumber) * 4 || 11 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_download_4.png" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">What I get out of pairing?</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                pairing
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Why pair? What learnings do I get?
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/31/what-I-get-out-of-pairing.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 12 < (pageNumber) * 4 || 12 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/green_purple_zombie_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Story Splitting</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                agile
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         A thought experiment turns into thin vertical slices
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/28/story-splitting.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 13 < (pageNumber) * 4 || 13 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/halloween-background-with-zombie-hand-bursting-out-ground_resized.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Refactoring Goals</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                refactoring
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                theory
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Improving the codebase - safely
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/28/refactoring-goals.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 14 < (pageNumber) * 4 || 14 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/zombie_in_a_graveyard_3_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Shortcutting your jetbrains</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                editor
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                jetbrains
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about how to use shortcuts in your jetbrains for improved productivity.
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/15/shortcutting-your-jetbrains.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                      
+                        
+<div 
+        x-show="true && tag_filter == 'main' || ''.includes(tag_filter)" 
+        :class="{ 'hidden' : 15 < (pageNumber) * 4 || 15 > (pageNumber + 1) * 4 - 1 }"
+        class="card lg:card-side w-full h-full bg-base-100 shadow-xl my-4 max-w-xs md:max-w-3xl mx-auto" >
+    <figure>
+        <img src="./assets/images/video_game_zombies_2_instasize.jpg" class="h-full aspect-cover object-cover w-full h-72" />
+    </figure>
+    <div class="card-body lg:w-9/12">
+        <h2 class="card-title">Finally starting a learning journal</h2>
+                    <div>
+                    
+                        
+                            <span class="badge badge-primary badge-outline">
+                                errors
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                typescript
+                            </span>
+                        
+                            <span class="badge badge-primary badge-outline">
+                                practical
+                            </span>
+                        
+                    
+                    </div>
+        <p>
+         Learn about try-catch-finally and returning error types in depth.
+        </p>
+        <div class="card-actions justify-end mt-auto">
+            <a href="/2023/10/07/finally-started.html" ><button class="btn btn-primary">Go There</button></a>
+        </div>
+    </div>
+</div>
+
+                                   
+                     
+                </div>
+        </div>
+        <div
+        class="w-full bg-base-200 md:w-1/2 mx-auto py-6 flex justify-between items-center"
+        x-show="16"
+      >
+        <!--First Button-->
+        <button
+          x-on:click="pageNumber = 0"
+          :disabled="pageNumber==0"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber==0 }"
+        >
+          <svg
+            class="h-8 w-8 text-indigo-600"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polygon points="19 20 9 12 19 4 19 20"></polygon>
+            <line x1="5" y1="19" x2="5" y2="5"></line>
+          </svg>
+        </button>
+
+        <!--Previous Button-->
+        <button
+          x-on:click="--pageNumber"
+          :disabled="pageNumber==0"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber==0 }"
+        >
+          <svg
+            class="h-8 w-8 text-indigo-600"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Display page numbers -->
+        <template x-for="index in Math.ceil(tag_count / 4)">
+          <button
+            class="px-3 py-2 rounded"
+            :class="{ 'bg-indigo-600 text-white font-bold' : index - 1 === pageNumber }"
+            type="button"
+            x-on:click="pageNumber = index - 1"
+          >
+            <span x-text="index"></span>
+          </button>
+        </template>
+
+        <!--Next Button-->
+        <button
+          x-on:click="++pageNumber"
+          :disabled="pageNumber >= Math.ceil(tag_count / 4)"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(tag_count / 4) }"
+        >
+          <svg
+            class="h-8 w-8 text-indigo-600"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+        <!--Last Button-->
+        <button
+          x-on:click="++pageNumber"
+          :disabled="pageNumber >= Math.ceil(tag_count / 4)"
+          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(tag_count / 4) }"
+        >
+          <svg
+            class="h-8 w-8 text-indigo-600"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polygon points="5 4 15 12 5 20 5 4"></polygon>
+            <line x1="19" y1="5" x2="19" y2="19"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+</body>

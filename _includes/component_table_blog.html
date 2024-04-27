@@ -1,5 +1,5 @@
-<div x-data="{ pageNumber: 0, tag_filter: 'main', tag_count: 16 }">
-        <div class="w-full bg-base-200 text-neutral-content md:p-8">
+<div x-data="{ pageNumber: 0, tag_filter: 'main', tag_count: 16 }" class="bg-base-200">
+        <div class="w-full bg-base-200 md:p-8">
                 <div>
                     <span class="badge badge-outline" :class="tag_filter === 'main' ? 'badge-default' : 'badge-primary' ">
                         <button x-on:click="tag_filter = 'main'; tag_count = {{ site.posts.size }}; pageNumber = 0;">All</button>
@@ -10,7 +10,7 @@
                             </span>
                     {% endfor %}
                 </div>
-                <div x-data="{ index: 0 }" class="w-full bg-base-200 text-neutral-content md:grid md:gap-16 md:grid-cols-2">
+                <div x-data="{ index: 0 }" class="w-full bg-base-200 md:grid md:gap-16 md:grid-cols-2">
                      {% for tag in site.tags %} 
                              {% assign currentIndex = 0 %}
                              {% for row in tag[1] %} 
@@ -47,7 +47,7 @@
                 </div>
         </div>
         <div
-        class="w-full md:w-1/2 mx-auto py-6 flex justify-between items-center"
+        class="w-full bg-base-200 md:w-1/2 mx-auto py-6 flex justify-between items-center"
         x-show="{{ site.posts.size }}"
       >
         <!--First Button-->

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Include the Alpine library on your page -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Include the TailwindCSS library on your page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen" type="text/css">
+    <title>CodeItQuick Recipes</title>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="bg-base-200 mx-auto" data-theme="myDark">
+
+    <nav x-init="show = screen.width < 768" x-show="show">
+        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
+                <a href="/"><h2 class="text-3xl font-bold  w-full rounded w-full">Projects</h2></a>
+        </div>
+        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
+                <a href="/blog_list.html"><h2 class="text-3xl font-bold  w-full rounded w-full">Blog</h2></a>
+        </div>
+        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
+                <a href="/coding_kata_list.html"><h2 class="text-3xl font-bold  w-full rounded w-full">Katas</h2></a>
+        </div>
+        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
+                <a href="/recipe_list.html"><h2 class="text-3xl font-bold  w-full rounded w-full">Recipes</h2></a>
+        </div>
+</nav>
+<nav x-init="show = screen.width >= 768" x-show="show" x-data="{
+        navigationMenuOpen: false,
+        navigationMenu: '',
+        navigationMenuCloseDelay: 200,
+        navigationMenuCloseTimeout: 300,
+        navigationMenuLeave() {
+            let that = this;
+            this.navigationMenuCloseTimeout = setTimeout(() => {
+                that.navigationMenuClose();
+            }, this.navigationMenuCloseDelay);
+        },
+        navigationMenuReposition(navElement) {
+            this.navigationMenuClearCloseTimeout();
+            this.$refs.navigationDropdown.style.left = navElement.offsetLeft + 'px';
+            this.$refs.navigationDropdown.style.marginLeft = (navElement.offsetWidth/2) + 'px';
+        },
+        navigationMenuClearCloseTimeout(){
+            clearTimeout(this.navigationMenuCloseTimeout);
+        },
+        navigationMenuClose(){
+            this.navigationMenuOpen = false;
+            this.navigationMenu = '';
+        }
+    }"
+    class="relative z-10 w-auto bg-base-100">
+    <div class="relative">
+        <div class="flex justify-between">
+            <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md ">
+                <li>
+                    <a href="https://github.com/CodeItQuick" target="_blank" @click="navigationMenuClose()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>CodeItQuick</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md  group">
+                <li>
+                    <button
+                        :class="{ 'bg-base-100' : navigationMenu=='projects-page', 'hover:bg-base-100' : navigationMenu!='projects-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='projects-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Projects</span>
+                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'projects-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </li>
+                <li>
+                    <button
+                        :class="{ 'bg-base-100' : navigationMenu=='blog-page', 'hover:bg-base-100' : navigationMenu!='blog-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='blog-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Blog</span>
+                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </li>     
+                <li>
+                    <button
+                        :class="{ 'bg-base-100' : navigationMenu=='tdd-page', 'hover:bg-base-100' : navigationMenu!='tdd-page' }" 
+                            @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='tdd-page'" 
+                            @mouseleave="navigationMenuLeave()" 
+                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Katas</span>
+                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'tdd-page' }" 
+                                class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </li>
+                <li>
+                    <button
+                        :class="{ 'bg-base-100' : navigationMenu=='recipe-page', 'hover:bg-base-100' : navigationMenu!='recipe-page' }" @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='recipe-page'" @mouseleave="navigationMenuLeave()" class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Recipes</span>
+                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'recipe-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </li>
+            </ul>
+            <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md ">
+                <li>
+                    <a href="https://github.com/CodeItQuick/CodeItQuick.github.io" target="_blank" @click="navigationMenuClose()"  class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium transition-colors rounded-md hover:text-primary-800 focus:outline-none disabled:opacity-70 disabled:pointer-events-none bg-base-100 hover:bg-base-100 group w-max">
+                        <span>Github</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div x-ref="navigationDropdown" x-show="navigationMenuOpen"
+        @mouseover="navigationMenuClearCloseTimeout()" @mouseleave="navigationMenuLeave()"
+        class="bg-base-100 text-white absolute top-0 pt-3 duration-200 ease-out -translate-x-1/2 translate-y-11" x-cloak>
+
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+            <div x-show="navigationMenu == 'projects-page'" class="flex items-stretch justify-center w-full p-6">
+                <div class="w-72">
+                    <a href="/" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                        <span class="block mb-1 font-bold ">Main Projects Page</span>
+                        <span class="block font-medium leading-5 opacity-70">See all the current projects.</span>
+                    </a>
+                    
+                        <a href="https://github.com/CodeItQuick/BoomerBot" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Boomer Bot</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/TddSqlLite" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">C Sharp Sql Lite Tutorial</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/CTddSqlLite" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">C Sql Lite Tutorial</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/ExpenseReportCSharp" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Expense Report Kata (.NET)</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/tcr-evercraft-2" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Evercraft Kata</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/expense-report-kata-ensemble" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Expense Report Kata (Java)</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/ForeverTwentyNine" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">(Almost) Forever Twenty Nine</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/my-own-programming-language" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Lox Programming Language</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/StockApplicationASPNetWebMVCIndividualIdentity" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Stock Picker</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                        <a href="https://github.com/CodeItQuick/TennisKataFinalTwo" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Tennis Refactoring Kata</span>
+                            <span class="block font-medium leading-5 opacity-70"></span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+            <div x-show="navigationMenu == 'blog-page'" class="flex items-stretch justify-center w-full p-6">
+                <div class="w-72">
+                    <a href="/blog_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                        <span class="block mb-1 font-bold">Main Blog Page</span>
+                        <span class="block font-medium leading-5 opacity-70">See all the current blog posts.</span>
+                    </a>
+                    
+                        <a href="/2024/04/18/Thoughts-On-Say-Do-Ratio.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Thoughts On Say Do Ratio</span>
+                            <span class="block font-medium leading-5 opacity-70">Organization my thoughts on the Say Do Ratio</span>
+                        </a>
+                    
+                        <a href="/2024/02/03/Why-Story-Pointing-Is-Evil.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Why Story Pointing Is Evil</span>
+                            <span class="block font-medium leading-5 opacity-70">Why this is the fastest route to toxic work culture</span>
+                        </a>
+                    
+                        <a href="/2023/12/07/poker-staking-learnings.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Poker Staking Learnings</span>
+                            <span class="block font-medium leading-5 opacity-70">How do stocks and poker staking arrangements relate?</span>
+                        </a>
+                    
+                        <a href="/2023/12/05/My-Learnings-Through-Coding-Journey.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">My Learnings Through Coding Journey</span>
+                            <span class="block font-medium leading-5 opacity-70">Brief Information On Major Takeaways</span>
+                        </a>
+                    
+                        <a href="/2023/11/26/exploring-sqlserver-performance-testing-with-chat-gpt.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Exploring Sql Performance Tuning - ChatGPT</span>
+                            <span class="block font-medium leading-5 opacity-70">Using chatgpt to get a better handle on sqlserver performance tuning</span>
+                        </a>
+                    
+                        <a href="/2023/11/25/TDD-The-Basics.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">TDD The Basics</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn the foundations of TDD and testing</span>
+                        </a>
+                    
+                        <a href="/2023/11/18/agile-methodologies.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">What I get out of pairing?</span>
+                            <span class="block font-medium leading-5 opacity-70">Why pair? What learnings do I get?</span>
+                        </a>
+                    
+                        <a href="/2023/11/18/My-Journey-Through-TDD.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">My Journey Through TDD</span>
+                            <span class="block font-medium leading-5 opacity-70">Writing down a brief take on XP practices I believe in</span>
+                        </a>
+                    
+                        <a href="/2023/11/07/getting-the-view-and-controller-right.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Adapter Layer Explained</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn about my current understanding of the adapter layer</span>
+                        </a>
+                    
+                        <a href="/2023/11/05/aggregates-explained.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Aggregates Explained</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn about my current understanding of aggregates</span>
+                        </a>
+                    
+                        <a href="/2023/11/03/jetbrains-navigation-shortcuts.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Navigation Shortcuts in your jetbrains</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn all the navigation shortcuts in jetbrains</span>
+                        </a>
+                    
+                        <a href="/2023/10/31/what-I-get-out-of-pairing.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">What I get out of pairing?</span>
+                            <span class="block font-medium leading-5 opacity-70">Why pair? What learnings do I get?</span>
+                        </a>
+                    
+                        <a href="/2023/10/28/story-splitting.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Story Splitting</span>
+                            <span class="block font-medium leading-5 opacity-70">A thought experiment turns into thin vertical slices</span>
+                        </a>
+                    
+                        <a href="/2023/10/28/refactoring-goals.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Refactoring Goals</span>
+                            <span class="block font-medium leading-5 opacity-70">Improving the codebase - safely</span>
+                        </a>
+                    
+                        <a href="/2023/10/15/shortcutting-your-jetbrains.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Shortcutting your jetbrains</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn about how to use shortcuts in your jetbrains for improved productivity.</span>
+                        </a>
+                    
+                        <a href="/2023/10/07/finally-started.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Finally starting a learning journal</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn about try-catch-finally and returning error types in depth.</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+            <div x-show="navigationMenu == 'tdd-page'" class="flex items-stretch justify-center w-full p-6">
+                <div class="w-72">
+                    <a href="/coding_kata_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                        <span class="block mb-1 font-bold ">Katas</span>
+                        <span class="block font-medium leading-5 opacity-70">See all the suggested coding katas.</span>
+                    </a>
+                    
+                        <a href="/dojos/1-Roman-Numerals.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Roman Numerals</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn TDD/ensembling in a highly constrained environment</span>
+                        </a>
+                    
+                        <a href="/dojos/2-Fantasy-Battle-Law-Of-Demeter.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Fantasy Battle</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn A Tenant of OOP - The Law of Demeter</span>
+                        </a>
+                    
+                        <a href="/dojos/3-Gilded-Rose-Refactoring.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Gilded Rose Refactoring Kata</span>
+                            <span class="block font-medium leading-5 opacity-70">This refactoring kata can help you to learn about refactoring messy code.</span>
+                        </a>
+                    
+                        <a href="/dojos/anon-DeliveryController-Mocks-Stubs.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">DeliveryController Refactoring Kata</span>
+                            <span class="block font-medium leading-5 opacity-70">This refactoring kata can help you to learn about mocks and stubs.</span>
+                        </a>
+                    
+                        <a href="/dojos/anon-Parrot-Refactoring.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Parrot Refactoring</span>
+                            <span class="block font-medium leading-5 opacity-70">Kata to learn about Polymorphism.</span>
+                        </a>
+                    
+                        <a href="/dojos/anon-necklace-refactoring.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Necklace Refactoring Kata</span>
+                            <span class="block font-medium leading-5 opacity-70">Learn more about OOP - Chain of Responsibility Pattern.</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+            <div x-show="navigationMenu == 'recipe-page'" class="flex items-stretch justify-center w-full p-6">
+                <div class="w-72">
+                    <a href="/recipe_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                        <span class="block mb-1 font-bold ">Main Recipes Page</span>
+                        <span class="block font-medium leading-5 opacity-70">See a list of beginner-friendly recipes.</span>
+                    </a>
+                    
+                        <a href="/recipes/bean_salad.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Bean Salad</span>
+                            <span class="block font-medium leading-5 opacity-70">Ridiculously Easy!</span>
+                        </a>
+                    
+                        <a href="/recipes/korean_ground_turkey.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Korean Ground Turkey</span>
+                            <span class="block font-medium leading-5 opacity-70">Beef substituted with turkey!</span>
+                        </a>
+                    
+                        <a href="/recipes/mexican_chicken_casserole.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Mexican Chicken Casserole</span>
+                            <span class="block font-medium leading-5 opacity-70">Very quick recipe to make, and delicious.</span>
+                        </a>
+                    
+                        <a href="/recipes/southwestern_chicken_casserole.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Southwestern Chicken Casserole</span>
+                            <span class="block font-medium leading-5 opacity-70">More casserole, Southwestern this time!</span>
+                        </a>
+                    
+                        <a href="/recipes/sweet_and_spicy_thai_chicken.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Sweet and Spicy Thai Chicken</span>
+                            <span class="block font-medium leading-5 opacity-70">Cheaper, and more servings than ordering out!</span>
+                        </a>
+                    
+                        <a href="/recipes/thai_butter_chicken_from_packets.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:bg-base-100">
+                            <span class="block mb-1 font-bold ">Thai Red Curry and Butter Chicken</span>
+                            <span class="block font-medium leading-5 opacity-70">Made from packets - simple and easy</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="bg-base-200">
+    <div class="hero py-8 lg:py-32">
+        <div class="hero-content flex flex-col h-full md:flex-row items-start rounded">
+            <img src="/assets/images/graveyard_4_generated.jpg" class="rounded-lg shadow-2xl md:w-5/12 md:mr-8" />
+            <div class="flex flex-col items-center justify-between rounded bg-base-200 h-full md:pl-8" >
+                <h1 class="text-5xl font-bold text-primary w-full rounded w-full">Fantasy Battle</h1>
+                <div class="rounded-b-lg w-full flex flex-col justify-end">
+                    <h2 class="text-3xl py-8 bg-base-200 w-full">Learn A Tenant of OOP - The Law of Demeter</h2>
+                </div>
+                <div class="width-full"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="w-full bg-base-200 p-8 flex-col md:p-32 md:flex md:flex-wrap markdown max-w-5xl mx-auto">
+    <h1 id="roman-numerals">Roman Numerals</h1>
+<h2 id="about-this-kata">About this Kata</h2>
+<p>I wasn’t there, but I believe this Kata was performed at XP2001 by Kent Beck.</p>
+
+<p>Difficulty - Easy.</p>
+
+<p>Problem Description
+The Romans were a clever bunch. They conquered most of Europe and ruled it for hundreds of years. 
+They invented concrete and straight roads and even bikinis. One thing they never discovered though was the number zero. 
+This made writing and dating extensive histories of their exploits slightly more challenging, but the system of numbers 
+they came up with is still in use today. For example the BBC uses Roman numerals to date their programmes.</p>
+
+<p>The Romans wrote numbers using letters : I, V, X, L, C, D, M. (notice these letters have lots of straight lines and are hence easy to hack into stone tablets)</p>
+
+<h3 id="part-i">Part I</h3>
+<p>The Kata says you should write a function to convert from normal numbers to Roman Numerals: eg</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1 --&gt; I
+ 10 --&gt; X
+ 7 --&gt; VII etc.
+</code></pre></div></div>
+
+<p>For a full description of how it works, take a look at : which includes an implementation of the Kata in javascript.</p>
+
+<p>There is no need to be able to convert numbers larger than about 3000. (The Romans themselves didn’t tend to go any higher)</p>
+
+<h3 id="part-ii">Part II</h3>
+<p>Write a function to convert in the other direction, ie numeral to digit</p>
+
+<p>Clues</p>
+<ul>
+  <li>Can you make the code really beautiful and highly readable?</li>
+  <li>does it help to break out lots of small named functions from the main function, or is it better to keep it all in one function?</li>
+  <li>if you don’t know an algorithm to do this already, can you derive one using strict TDD?</li>
+  <li>does the order you take the tests in affect the final design of your algorithm?</li>
+  <li>Would it be better to work out an algorithm first before starting with TDD?</li>
+  <li>if you do know an algorithm already, can you implement it using strict TDD?</li>
+  <li>Can you think of another algorithm?</li>
+  <li>what are the best data structures for storing all the numeral letters? (I, V, D, M etc)</li>
+  <li>can you define the test cases in a csv file and use FIT, or generate test cases in xUnit?</li>
+  <li>what is the best way to verify your tests are correct?</li>
+</ul>
+
+</div>
+
+</body>

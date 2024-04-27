@@ -3,7 +3,7 @@ layout: dojo
 ---
 
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}" data-theme="coffee">
+<html lang="{{ site.lang | default: 'en-US' }}">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,13 +22,13 @@ layout: dojo
 
 </head>
 
-<body class="bg-base-200 mx-auto">
+<body class="bg-base-200 mx-auto" data-theme="myDark">
 
     {% include component_navbar.html %}
 
     {% include hero.html title=page.name description=page.description image="graveyard_4_generated.jpg" %}
 
-<div class="w-full bg-base-200 text-neutral-content p-8 flex-col md:p-32 md:flex md:flex-wrap markdown max-w-5xl mx-auto">
+<div class="w-full bg-base-200 p-8 flex-col md:p-32 md:flex md:flex-wrap markdown max-w-5xl mx-auto">
     {{ content }}
 </div>
 
