@@ -22,6 +22,8 @@ Current Project Ideas:
 3. Learn the C programming language
 4. Experiment with streaming from a database
 5. Spotify discover playlist/playlist maker tool
+6. Tailwind Theme Creator
+7. Thumbs Up/Thumbs Down meter for retros
 
 To run theme-creator:
 ```shell
