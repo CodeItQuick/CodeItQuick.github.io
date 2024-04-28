@@ -53,18 +53,18 @@ const myThemes =[
                 'secondary': colorArrayLight(secondaryColorChoice).colors,
                 'accent': colorArrayLight(accentColorChoice).colors
             },
-            'primary': colorArrayLight(primaryColorChoice).colors[700],         //300,
-            'primary-focus': colorArrayLight(primaryColorChoice).colors[900],   //400
-            'primary-content': colorArrayLight(primaryColorChoice).colors[200], //900
-            'secondary': colorArrayLight(secondaryColorChoice).colors[700],       //300
-            'secondary-focus': colorArrayLight(secondaryColorChoice).colors[900], //400
-            'secondary-content': colorArrayLight(secondaryColorChoice).colors[200], //900
-            'accent': accentColorPalette.colors[100],          //300
-            'accent-focus': accentColorPalette.colors[200],    //400
-            'accent-content': accentColorPalette.colors[900],  //900
+            'primary': colorArrayLight(primaryColorChoice).colors[300],         //300,
+            'primary-focus': colorArrayLight(primaryColorChoice).colors[400],   //400
+            'primary-content': colorArrayLight(primaryColorChoice).colors[900], //900
+            'secondary': colorArrayLight(secondaryColorChoice).colors[300],       //300
+            'secondary-focus': colorArrayLight(secondaryColorChoice).colors[400], //400
+            'secondary-content': colorArrayLight(secondaryColorChoice).colors[900], //900
+            'accent': colorArrayLight(accentColorChoice).colors[300],          //300
+            'accent-focus': colorArrayLight(accentColorChoice).colors[400],    //400
+            'accent-content': colorArrayLight(accentColorChoice).colors[900],  //900
             'neutral': colors.neutral[100],
-            'neutral-focus': colors.neutral[200],
-            'neutral-content': colors.neutral[900],
+            'neutral-focus': colors.neutral[400],
+            'neutral-content': colors.neutral[800],
             'base-100': colors.slate[200],
             'base-200': colors.slate[100],
             'base-300': colors.slate[50],
