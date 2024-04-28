@@ -1,26 +1,27 @@
 /** @type {import('tailwindcss').Config} */
-const myThemes = require('./my-themes');
-console.log(JSON.stringify(myThemes.filter(x => Object.keys(x)[0] == "myLight")));
+const themes = require('./my-themes');
+console.log(JSON.stringify(themes.filter(x => Object.keys(x)[0] == "light")));
 console.log("------------------------------------------------------------------");
-console.log(JSON.stringify(myThemes.filter(x => Object.keys(x)[0] == "myLight")));
-console.log(JSON.stringify(myThemes.filter(x => Object.keys(x)[0] == "myLight")[0]["myLight"].colors.primary));
+console.log(JSON.stringify(themes.filter(x => Object.keys(x)[0] == "light")));
+console.log(JSON.stringify(themes.filter(x => Object.keys(x)[0] == "light")[0]["light"].colors.primary));
 
 module.exports = {
+    darkMode: 'class',
+    lightMode: 'class',
     content: ["./public/*.html", "./public/*.css"],
     plugins: [require("daisyui")],
     daisyui: {
         styled: true,
-        themes: myThemes,
+        themes: themes,
         base: true,
         utils: true,
         logs: true,
-        rtl: false,
-        darkTheme: "dark",
+        rtl: false
     },
     theme: {
         colors: {
-            'primary-dark': myThemes.filter(x => Object.keys(x)[0] == "myDark")[0]["myDark"].colors.primary,
-            'primary-light': myThemes.filter(x => Object.keys(x)[0] == "myLight")[0]["myLight"].colors.primary,
+            'primary-dark': themes.filter(x => Object.keys(x)[0] == "dark")[0]["dark"].colors.primary,
+            'primary-light': themes.filter(x => Object.keys(x)[0] == "light")[0]["light"].colors.primary,
         },
         extend: {},
     },

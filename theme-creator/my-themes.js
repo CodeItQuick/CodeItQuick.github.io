@@ -1,12 +1,6 @@
 const colors = require("tailwindcss/colors");
 const { colorArrayLight, colorArrayDark } = require("./color-converters");
 
-// @ts-ignore
-import colorNamer from "color-namer";
-// @ts-ignore
-import convert from "color-convert";
-
-
 const colorChoicesPrimary   = ['#059669']
 const colorChoicesSecondary = ['#a855f7']
 const colorChoicesAccent    = ['#0369a1']
@@ -20,7 +14,7 @@ let secondaryColorPalette = colorArrayLight(secondaryColorChoice);
 let accentColorPalette = colorArrayLight(accentColorChoice);
 const myThemes =[
     {
-        myDark: {
+        dark: {
             colors: {
                 'primary': primaryColorPalette.colors,
                 'secondary': secondaryColorPalette.colors,
@@ -35,25 +29,25 @@ const myThemes =[
             'accent': accentColorPalette.colors[100],               //300
             'accent-focus': accentColorPalette.colors[200],         //400
             'accent-content': accentColorPalette.colors[800],       //900
-            'neutral': colors.neutral[100],
-            'neutral-focus': colors.neutral[200],
-            'neutral-content': colors.neutral[800],
-            'base-100': colors.slate[100],
-            'base-200': colors.slate[200],
-            'base-300': colors.slate[300],
-            'base-content': colors.slate[800],
-            'info': colors.sky[200],
-            'info-content': colors.sky[900],
-            'success': colors.emerald[300],
-            'success-content': colors.emerald[800],
-            'warning': colors.yellow[300],
-            'warning-content': colors.yellow[900],
-            'error': colors.rose[200],
-            'error-content': colors.rose[900],
+            'neutral': colors.neutral[800],
+            'neutral-focus': colors.neutral[900],
+            'neutral-content': colors.neutral[200],
+            'base-100': colors.slate[900],
+            'base-200': colors.slate[800],
+            'base-300': colors.slate[700],
+            'base-content': colors.slate[100],
+            'info': colors.sky[800],
+            'info-content': colors.sky[200],
+            'success': colors.emerald[800],
+            'success-content': colors.emerald[200],
+            'warning': colors.yellow[700],
+            'warning-content': colors.yellow[300],
+            'error': colors.rose[900],
+            'error-content': colors.rose[200],
         },
     },
     {
-        myLight: {
+        light: {
             colors: {
                 'primary': colorArrayDark(primaryColorChoice).colors,
                 'secondary': colorArrayDark(secondaryColorChoice).colors,
@@ -75,14 +69,14 @@ const myThemes =[
             'base-200': colors.slate[100],
             'base-300': colors.slate[200],
             'base-content': colors.slate[200],
-            'info': colors.sky[900],
-            'info-content': colors.sky[200],
-            'success': colors.emerald[800],
-            'success-content': colors.emerald[300],
-            'warning': colors.yellow[900],
-            'warning-content': colors.yellow[300],
-            'error': colors.rose[900],
-            'error-content': colors.rose[200],
+            'info': colors.sky[200],
+            'info-content': colors.sky[900],
+            'success': colors.emerald[300],
+            'success-content': colors.emerald[800],
+            'warning': colors.yellow[300],
+            'warning-content': colors.yellow[900],
+            'error': colors.rose[200],
+            'error-content': colors.rose[900],
         }
     },
     "light", "dark"];

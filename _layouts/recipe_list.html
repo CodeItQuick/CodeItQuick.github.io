@@ -1,5 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}" >
+<html lang="{{ site.lang | default: 'en-US' }}" x-init="mode = 'dark'" x-data="
+{
+    mode: 'light',
+    darkModeOn() {
+        this.mode = 'dark';
+        console.log(this.mode);
+     },
+    lightModeOn() {
+        this.mode = 'light';
+        console.log(this.mode);
+    },
+    getMode() {
+        console.log(this.mode);
+        return this.mode !== undefined ? this.mode: 'light';
+    }
+}" >
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +33,7 @@
 
 </head>
 
-<body class="bg-neutral text-neutral-content mx-auto" data-theme="myDark2">
+<body class="bg-neutral text-neutral-content mx-auto antialiased" x-bind:data-theme="getMode()">
     
     {% include component_navbar.html %}
 

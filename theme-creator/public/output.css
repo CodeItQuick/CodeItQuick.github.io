@@ -466,65 +466,24 @@ html {
   --a: 193 57% 84%;
   --af: 194 54% 76%;
   --ac: 205 95% 26%;
-  --n: 0 0% 96%;
-  --nf: 0 0% 90%;
-  --nc: 0 0% 15%;
-  --b1: 210 40% 96%;
-  --b2: 214 32% 91%;
-  --b3: 213 27% 84%;
-  --bc: 217 33% 17%;
-  --in: 201 94% 86%;
-  --inc: 202 80% 24%;
-  --su: 156 72% 67%;
-  --suc: 163 88% 20%;
-  --wa: 50 98% 64%;
-  --wac: 28 73% 26%;
-  --er: 353 96% 90%;
-  --erc: 342 75% 30%;
+  --n: 0 0% 15%;
+  --nf: 0 0% 9%;
+  --nc: 0 0% 90%;
+  --b1: 222 47% 11%;
+  --b2: 217 33% 17%;
+  --b3: 215 25% 27%;
+  --bc: 210 40% 96%;
+  --in: 201 90% 27%;
+  --inc: 201 94% 86%;
+  --su: 163 88% 20%;
+  --suc: 152 76% 80%;
+  --wa: 35 92% 33%;
+  --wac: 50 98% 64%;
+  --er: 342 75% 30%;
+  --erc: 353 96% 90%;
 }
 
-@media (prefers-color-scheme: dark) {
-
-  :root {
-    color-scheme: dark;
-    --pf: 262 80% 43%;
-    --sf: 316 70% 43%;
-    --af: 175 70% 34%;
-    --in: 198 93% 60%;
-    --su: 158 64% 52%;
-    --wa: 43 96% 56%;
-    --er: 0 91% 71%;
-    --inc: 198 100% 12%;
-    --suc: 158 100% 10%;
-    --wac: 43 100% 11%;
-    --erc: 0 100% 14%;
-    --rounded-box: 1rem;
-    --rounded-btn: 0.5rem;
-    --rounded-badge: 1.9rem;
-    --animation-btn: 0.25s;
-    --animation-input: .2s;
-    --btn-text-case: uppercase;
-    --btn-focus-scale: 0.95;
-    --border-btn: 1px;
-    --tab-border: 1px;
-    --tab-radius: 0.5rem;
-    --p: 262 80% 50%;
-    --pc: 0 0% 100%;
-    --s: 316 70% 50%;
-    --sc: 0 0% 100%;
-    --a: 175 70% 41%;
-    --ac: 0 0% 100%;
-    --n: 213 18% 20%;
-    --nf: 212 17% 17%;
-    --nc: 220 13% 69%;
-    --b1: 212 18% 14%;
-    --b2: 213 18% 12%;
-    --b3: 213 18% 10%;
-    --bc: 220 13% 69%;
-  }
-}
-
-[data-theme=myDark] colors primary {
+[data-theme=dark] colors primary {
   50: #DCF5F1;
   100: #BEEBE2;
   200: #9FE0D3;
@@ -538,7 +497,7 @@ html {
   950: #026138;
 }
 
-[data-theme=myDark] colors secondary {
+[data-theme=dark] colors secondary {
   50: #FAEDFF;
   100: #F3DCFC;
   200: #ECCAFC;
@@ -552,7 +511,7 @@ html {
   950: #5A23A1;
 }
 
-[data-theme=myDark] colors accent {
+[data-theme=dark] colors accent {
   50: #DCF0F5;
   100: #BEE3ED;
   200: #A1D4E3;
@@ -566,7 +525,7 @@ html {
   950: #013869;
 }
 
-[data-theme=myDark] {
+[data-theme=dark] {
   --rounded-box: 1rem;
   --rounded-btn: 0.5rem;
   --rounded-badge: 1.9rem;
@@ -586,24 +545,24 @@ html {
   --a: 193 57% 84%;
   --af: 194 54% 76%;
   --ac: 205 95% 26%;
-  --n: 0 0% 96%;
-  --nf: 0 0% 90%;
-  --nc: 0 0% 15%;
-  --b1: 210 40% 96%;
-  --b2: 214 32% 91%;
-  --b3: 213 27% 84%;
-  --bc: 217 33% 17%;
-  --in: 201 94% 86%;
-  --inc: 202 80% 24%;
-  --su: 156 72% 67%;
-  --suc: 163 88% 20%;
-  --wa: 50 98% 64%;
-  --wac: 28 73% 26%;
-  --er: 353 96% 90%;
-  --erc: 342 75% 30%;
+  --n: 0 0% 15%;
+  --nf: 0 0% 9%;
+  --nc: 0 0% 90%;
+  --b1: 222 47% 11%;
+  --b2: 217 33% 17%;
+  --b3: 215 25% 27%;
+  --bc: 210 40% 96%;
+  --in: 201 90% 27%;
+  --inc: 201 94% 86%;
+  --su: 163 88% 20%;
+  --suc: 152 76% 80%;
+  --wa: 35 92% 33%;
+  --wac: 50 98% 64%;
+  --er: 342 75% 30%;
+  --erc: 353 96% 90%;
 }
 
-[data-theme=myLight] colors primary {
+[data-theme=light] colors primary {
   50: #025932;
   100: #02693E;
   200: #02784B;
@@ -617,7 +576,7 @@ html {
   950: #9FE0D3;
 }
 
-[data-theme=myLight] colors secondary {
+[data-theme=light] colors secondary {
   50: #4F1E94;
   100: #632AAD;
   200: #7936C7;
@@ -631,7 +590,7 @@ html {
   950: #ECCAFC;
 }
 
-[data-theme=myLight] colors accent {
+[data-theme=light] colors accent {
   50: #013361;
   100: #013E70;
   200: #034B80;
@@ -645,7 +604,7 @@ html {
   950: #A1D4E3;
 }
 
-[data-theme=myLight] {
+[data-theme=light] {
   --rounded-box: 1rem;
   --rounded-btn: 0.5rem;
   --rounded-badge: 1.9rem;
@@ -672,90 +631,14 @@ html {
   --b2: 210 40% 96%;
   --b3: 214 32% 91%;
   --bc: 214 32% 91%;
-  --in: 202 80% 24%;
-  --inc: 201 94% 86%;
-  --su: 163 88% 20%;
-  --suc: 156 72% 67%;
-  --wa: 28 73% 26%;
-  --wac: 50 98% 64%;
-  --er: 342 75% 30%;
-  --erc: 353 96% 90%;
-}
-
-[data-theme=light] {
-  color-scheme: light;
-  --pf: 259 94% 44%;
-  --sf: 314 100% 40%;
-  --af: 174 75% 39%;
-  --nf: 214 20% 14%;
-  --in: 198 93% 60%;
-  --su: 158 64% 52%;
-  --wa: 43 96% 56%;
-  --er: 0 91% 71%;
-  --inc: 198 100% 12%;
-  --suc: 158 100% 10%;
-  --wac: 43 100% 11%;
-  --erc: 0 100% 14%;
-  --rounded-box: 1rem;
-  --rounded-btn: 0.5rem;
-  --rounded-badge: 1.9rem;
-  --animation-btn: 0.25s;
-  --animation-input: .2s;
-  --btn-text-case: uppercase;
-  --btn-focus-scale: 0.95;
-  --border-btn: 1px;
-  --tab-border: 1px;
-  --tab-radius: 0.5rem;
-  --p: 259 94% 51%;
-  --pc: 259 96% 91%;
-  --s: 314 100% 47%;
-  --sc: 314 100% 91%;
-  --a: 174 75% 46%;
-  --ac: 174 75% 11%;
-  --n: 214 20% 21%;
-  --nc: 212 19% 87%;
-  --b1: 0 0% 100%;
-  --b2: 0 0% 95%;
-  --b3: 180 2% 90%;
-  --bc: 215 28% 17%;
-}
-
-[data-theme=dark] {
-  color-scheme: dark;
-  --pf: 262 80% 43%;
-  --sf: 316 70% 43%;
-  --af: 175 70% 34%;
-  --in: 198 93% 60%;
-  --su: 158 64% 52%;
-  --wa: 43 96% 56%;
-  --er: 0 91% 71%;
-  --inc: 198 100% 12%;
-  --suc: 158 100% 10%;
-  --wac: 43 100% 11%;
-  --erc: 0 100% 14%;
-  --rounded-box: 1rem;
-  --rounded-btn: 0.5rem;
-  --rounded-badge: 1.9rem;
-  --animation-btn: 0.25s;
-  --animation-input: .2s;
-  --btn-text-case: uppercase;
-  --btn-focus-scale: 0.95;
-  --border-btn: 1px;
-  --tab-border: 1px;
-  --tab-radius: 0.5rem;
-  --p: 262 80% 50%;
-  --pc: 0 0% 100%;
-  --s: 316 70% 50%;
-  --sc: 0 0% 100%;
-  --a: 175 70% 41%;
-  --ac: 0 0% 100%;
-  --n: 213 18% 20%;
-  --nf: 212 17% 17%;
-  --nc: 220 13% 69%;
-  --b1: 212 18% 14%;
-  --b2: 213 18% 12%;
-  --b3: 213 18% 10%;
-  --bc: 220 13% 69%;
+  --in: 201 94% 86%;
+  --inc: 202 80% 24%;
+  --su: 156 72% 67%;
+  --suc: 163 88% 20%;
+  --wa: 50 98% 64%;
+  --wac: 28 73% 26%;
+  --er: 353 96% 90%;
+  --erc: 342 75% 30%;
 }
 
 *, ::before, ::after {
