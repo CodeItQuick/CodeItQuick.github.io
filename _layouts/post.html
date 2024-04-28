@@ -4,15 +4,17 @@
     mode: 'light',
     darkModeOn() {
         this.mode = 'dark';
-        console.log(this.mode);
+        localStorage.setItem('siteTheme', 'dark');
      },
     lightModeOn() {
         this.mode = 'light';
-        console.log(this.mode);
+        localStorage.setItem('siteTheme', 'light');
     },
     getMode() {
-        console.log(this.mode);
-        return this.mode !== undefined ? this.mode: 'light';
+        if (localStorage.getItem('siteTheme')) {
+            this.mode = localStorage.getItem('siteTheme');
+        }
+        return this.mode;
     }
 }" >
 <head>
