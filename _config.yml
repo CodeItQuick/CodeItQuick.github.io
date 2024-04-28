@@ -4,6 +4,12 @@ plugins:
 title: Project Graveyard
 description: Welcome to the numerous projects I have worked on since 2021
 blog: Musings of the Project Graveyard
+exclude:
+  - theme-creator
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
 collections:
   projects:
     output: true

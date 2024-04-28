@@ -2,8 +2,8 @@
   "name": "node-starter",
   "version": "0.0.0",
   "scripts": {
-    "dev": "live-server ./public",
-    "css": "postcss tailwind.css -o public/output.css --watch"
+    "dev": "live-server ./theme-creator/public",
+    "css": "postcss ./theme-creator/tailwind.css -o theme-creator/public/output.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10",

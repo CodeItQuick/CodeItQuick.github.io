@@ -9,9 +9,9 @@ let primaryColorChoice = colorChoicesPrimary[colorChoicesPrimary.length - 1];
 let secondaryColorChoice = colorChoicesSecondary[colorChoicesSecondary.length - 1];
 let accentColorChoice = colorChoicesAccent[colorChoicesAccent.length - 1];
 
-let primaryColorPalette = colorArrayLight(primaryColorChoice);
-let secondaryColorPalette = colorArrayLight(secondaryColorChoice);
-let accentColorPalette = colorArrayLight(accentColorChoice);
+let primaryColorPalette = colorArrayDark(primaryColorChoice);
+let secondaryColorPalette = colorArrayDark(secondaryColorChoice);
+let accentColorPalette = colorArrayDark(accentColorChoice);
 const myThemes =[
     {
         dark: {
@@ -49,26 +49,26 @@ const myThemes =[
     {
         light: {
             colors: {
-                'primary': colorArrayDark(primaryColorChoice).colors,
-                'secondary': colorArrayDark(secondaryColorChoice).colors,
-                'accent': colorArrayDark(accentColorChoice).colors
+                'primary': colorArrayLight(primaryColorChoice).colors,
+                'secondary': colorArrayLight(secondaryColorChoice).colors,
+                'accent': colorArrayLight(accentColorChoice).colors
             },
-            'primary': colorArrayDark(primaryColorChoice).colors[700],         //300,
-            'primary-focus': colorArrayDark(primaryColorChoice).colors[900],   //400
-            'primary-content': colorArrayDark(primaryColorChoice).colors[200], //900
-            'secondary': colorArrayDark(secondaryColorChoice).colors[700],       //300
-            'secondary-focus': colorArrayDark(secondaryColorChoice).colors[900], //400
-            'secondary-content': colorArrayDark(secondaryColorChoice).colors[200], //900
+            'primary': colorArrayLight(primaryColorChoice).colors[700],         //300,
+            'primary-focus': colorArrayLight(primaryColorChoice).colors[900],   //400
+            'primary-content': colorArrayLight(primaryColorChoice).colors[200], //900
+            'secondary': colorArrayLight(secondaryColorChoice).colors[700],       //300
+            'secondary-focus': colorArrayLight(secondaryColorChoice).colors[900], //400
+            'secondary-content': colorArrayLight(secondaryColorChoice).colors[200], //900
             'accent': accentColorPalette.colors[100],          //300
             'accent-focus': accentColorPalette.colors[200],    //400
             'accent-content': accentColorPalette.colors[900],  //900
             'neutral': colors.neutral[100],
             'neutral-focus': colors.neutral[200],
             'neutral-content': colors.neutral[900],
-            'base-100': colors.slate[50],
+            'base-100': colors.slate[200],
             'base-200': colors.slate[100],
-            'base-300': colors.slate[200],
-            'base-content': colors.slate[200],
+            'base-300': colors.slate[50],
+            'base-content': colors.slate[900],
             'info': colors.sky[200],
             'info-content': colors.sky[900],
             'success': colors.emerald[300],
