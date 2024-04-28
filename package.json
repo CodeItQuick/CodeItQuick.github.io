@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "live-server ./theme-creator/public",
-    "css": "postcss ./theme-creator/tailwind.css -o theme-creator/public/output.css --watch"
+    "css-project": "postcss tailwind.css -o assets/css/output.css --watch",
+    "css-theme-creator": "postcss tailwind.css -o theme-creator/public/output.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10",

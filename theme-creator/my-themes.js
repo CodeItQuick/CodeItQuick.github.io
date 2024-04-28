@@ -1,17 +1,13 @@
 const colors = require("tailwindcss/colors");
 const { colorArrayLight, colorArrayDark } = require("./color-converters");
 
-const colorChoicesPrimary   = ['#059669']
-const colorChoicesSecondary = ['#a855f7']
-const colorChoicesAccent    = ['#0369a1']
+const primaryColorChoice = '#059669';
+const secondaryColorChoice = '#a855f7';
+const accentColorChoice = '#0369a1';
 
-let primaryColorChoice = colorChoicesPrimary[colorChoicesPrimary.length - 1];
-let secondaryColorChoice = colorChoicesSecondary[colorChoicesSecondary.length - 1];
-let accentColorChoice = colorChoicesAccent[colorChoicesAccent.length - 1];
-
-let primaryColorPalette = colorArrayDark(primaryColorChoice);
-let secondaryColorPalette = colorArrayDark(secondaryColorChoice);
-let accentColorPalette = colorArrayDark(accentColorChoice);
+let primaryColorPalette = colorArrayDark('#059669');
+let secondaryColorPalette = colorArrayDark('#a855f7');
+let accentColorPalette = colorArrayDark('#0369a1');
 const myThemes =[
     {
         dark: {

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const themes = require('./my-themes');
+const themes = require('./theme-creator/my-themes');
 console.log(JSON.stringify(themes.filter(x => Object.keys(x)[0] == "light")));
 console.log("------------------------------------------------------------------");
 console.log(JSON.stringify(themes.filter(x => Object.keys(x)[0] == "light")));
