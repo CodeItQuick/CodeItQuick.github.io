@@ -36,7 +36,7 @@
             this.navigationMenu = '';
         }
     }"
-    class="relative z-10 w-auto bg-neutral text-neutral-content">
+    class="relative z-10 w-auto bg-primary text-primary-content">
     <div class="relative">
         <div class="flex justify-between">
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md ">
@@ -45,7 +45,7 @@
                        target="_blank"
                        @click="navigationMenuClose()">
                         <button
-                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/70">
+                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-primary-content/70">
                             <span>CodeItQuick</span>
                         </button>
                     </a>
@@ -56,7 +56,7 @@
                     <a href="/"
                        @click="navigationMenuClose()">
                         <button
-                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/70">
+                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-primary-content/70">
                             <span>Projects</span>
                         </button>
                     </a>
@@ -65,7 +65,7 @@
                     <button
                         @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='blog-page'"
                         @mouseleave="navigationMenuLeave()"
-                        class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/70">
+                        class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-primary-content/70">
                         <span>Blog</span>
                         <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
@@ -74,7 +74,7 @@
                     <button
                             @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='tdd-page'"
                             @mouseleave="navigationMenuLeave()"
-                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/70">
+                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-primary-content/70">
                         <span>Katas</span>
                         <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
@@ -83,7 +83,7 @@
                     <button
                         @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='recipe-page'"
                         @mouseleave="navigationMenuLeave()"
-                        class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/70">
+                        class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-primary-content/70">
                         <span>Recipes</span>
                         <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
@@ -93,7 +93,7 @@
                 <li>
                     <a href="https://github.com/CodeItQuick/CodeItQuick.github.io" target="_blank"
                        @click="navigationMenuClose()"
-                       class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md hover:text-neutral-content/70 focus:outline-none disabled:opacity-70 disabled:pointer-events-none group w-max">
+                       class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md hover:text-primary-content/70 focus:outline-none disabled:opacity-70 disabled:pointer-events-none group w-max">
                         <span>Github</span>
                     </a>
                     <label class="swap swap-rotate h-6 ">
@@ -114,16 +114,16 @@
     </div>
     <div x-ref="navigationDropdown" x-show="navigationMenuOpen"
         @mouseover="navigationMenuClearCloseTimeout()" @mouseleave="navigationMenuLeave()"
-        class="bg-neutral text-neutral-content absolute top-0 pt-3 duration-200 ease-out -translate-x-1/2 translate-y-11" x-cloak>
-        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+        class="bg-primary text-primary-content absolute top-0 pt-3 duration-200 ease-out -translate-x-1/2 translate-y-11" x-cloak>
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-primary-200/70">
             <div x-show="navigationMenu == 'blog-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
-                    <a href="/blog_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-neutral-content/70" >
+                    <a href="/blog_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-primary-content/70" >
                         <span class="block mb-1 font-bold">Main Blog Page</span>
                         <span class="block font-medium leading-5 opacity-70">See all the current blog posts.</span>
                     </a>
                     {% for post in site.posts %}
-                        <a href="{{ post.url }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-neutral-content/70">
+                        <a href="{{ post.url }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-primary-content/70">
                             <span class="block mb-1 font-bold ">{{ post.name }}</span>
                             <span class="block font-medium leading-5 opacity-70">{{ post.description }}</span>
                         </a>
@@ -131,15 +131,15 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-primary-200/70">
             <div x-show="navigationMenu == 'tdd-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
-                    <a href="/coding_kata_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-neutral-content/70">
+                    <a href="/coding_kata_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-primary-content/70">
                         <span class="block mb-1 font-bold ">Katas</span>
                         <span class="block font-medium leading-5 opacity-70">See all the suggested coding katas.</span>
                     </a>
                     {% for post in site.dojos %}
-                        <a href="{{ post.url }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-neutral-content/70">
+                        <a href="{{ post.url }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-primary-content/70">
                             <span class="block mb-1 font-bold ">{{ post.name }}</span>
                             <span class="block font-medium leading-5 opacity-70">{{ post.description }}</span>
                         </a>
@@ -147,15 +147,15 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-neutral-200/70">
+        <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-primary-200/70">
             <div x-show="navigationMenu == 'recipe-page'" class="flex items-stretch justify-center w-full p-6">
                 <div class="w-72">
-                    <a href="/recipe_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-neutral-content/70">
+                    <a href="/recipe_list.html" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-primary-content/70">
                         <span class="block mb-1 font-bold ">Main Recipes Page</span>
                         <span class="block font-medium leading-5 opacity-70">See a list of beginner-friendly recipes.</span>
                     </a>
                     {% for recipe in site.recipes %}
-                        <a href="{{ recipe.url }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-neutral-content/70">
+                        <a href="{{ recipe.url }}" @click="navigationMenuClose()" class="block px-3.5 py-3 text-sm rounded hover:text-primary-content/70">
                             <span class="block mb-1 font-bold ">{{ recipe.name }}</span>
                             <span class="block font-medium leading-5 opacity-70">{{ recipe.description }}</span>
                         </a>
