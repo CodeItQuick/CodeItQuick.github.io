@@ -16,22 +16,22 @@ const myThemes =[
                 'secondary': secondaryColorPalette.colors,
                 'accent': accentColorPalette.colors
             },
-            'primary': primaryColorPalette.colors[100],             //300,
-            'primary-focus': primaryColorPalette.colors[200],       //400
-            'primary-content': primaryColorPalette.colors[800],     //900
-            'secondary': secondaryColorPalette.colors[100],         //300
-            'secondary-focus': secondaryColorPalette.colors[200],   //400
-            'secondary-content': secondaryColorPalette.colors[800], //900
-            'accent': accentColorPalette.colors[100],               //300
-            'accent-focus': accentColorPalette.colors[200],         //400
-            'accent-content': accentColorPalette.colors[800],       //900
-            'neutral': colors.neutral[800],
-            'neutral-focus': colors.neutral[900],
-            'neutral-content': colors.neutral[200],
-            'base-100': colors.slate[900],
-            'base-200': colors.slate[800],
-            'base-300': colors.slate[700],
-            'base-content': colors.slate[100],
+            'primary': primaryColorPalette.colors[300],             //300,
+            'primary-focus': primaryColorPalette.colors[400],       //400
+            'primary-content': primaryColorPalette.colors[900],     //900
+            'secondary': secondaryColorPalette.colors[300],         //300
+            'secondary-focus': secondaryColorPalette.colors[400],   //400
+            'secondary-content': secondaryColorPalette.colors[900], //900
+            'accent': accentColorPalette.colors[300],               //300
+            'accent-focus': accentColorPalette.colors[400],         //400
+            'accent-content': accentColorPalette.colors[900],       //900
+            'neutral': colors.neutral[700],
+            'neutral-focus': colors.neutral[800],
+            'neutral-content': colors.neutral[100],
+            'base-100': colors.coolGray[950],
+            'base-200': colors.coolGray[900],
+            'base-300': colors.coolGray[800],
+            'base-content': colors.coolGray[50],
             'info': colors.sky[800],
             'info-content': colors.sky[200],
             'success': colors.emerald[800],
@@ -59,12 +59,12 @@ const myThemes =[
             'accent-focus': colorArrayLight(accentColorChoice).colors[400],    //400
             'accent-content': colorArrayLight(accentColorChoice).colors[900],  //900
             'neutral': colors.neutral[100],
-            'neutral-focus': colors.neutral[400],
-            'neutral-content': colors.neutral[800],
-            'base-100': colors.slate[100],
-            'base-200': colors.slate[200],
-            'base-300': colors.slate[300],
-            'base-content': colors.slate[900],
+            'neutral-focus': colors.neutral[200],
+            'neutral-content': colors.neutral[900],
+            'base-100': colors.coolGray[50],
+            'base-200': colors.coolGray[100],
+            'base-300': colors.coolGray[200],
+            'base-content': colors.coolGray[900],
             'info': colors.sky[200],
             'info-content': colors.sky[900],
             'success': colors.emerald[300],
