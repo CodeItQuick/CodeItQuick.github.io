@@ -36,7 +36,7 @@
             this.navigationMenu = '';
         }
     }"
-    class="relative z-10 w-auto bg-base-300 text-neutral-content font-[News Cycle]">
+    class="relative z-10 w-auto bg-base-300 text-neutral-content font-[body]">
     <div class="relative">
         <div class="flex justify-between">
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md ">
@@ -45,8 +45,7 @@
                        target="_blank"
                        @click="navigationMenuClose()">
                         <button
-                            style="font-family: 'News Cycle';"
-                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
+                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80 font-[body]">
                             <span>CodeItQuick</span>
                         </button>
                     </a>
@@ -57,38 +56,34 @@
                     <a href="/"
                        @click="navigationMenuClose()">
                         <button
-                            style="font-family: 'News Cycle';"
-                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
+                            class="font-[body] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                             <span>Projects</span>
                         </button>
                     </a>
                 </li>
                 <li>
                     <button
-                        style="font-family: 'News Cycle';"
                         @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='blog-page'"
                         @mouseleave="navigationMenuLeave()"
-                        class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
+                        class="font-[body] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                         <span>Blog</span>
                         <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                 </li>
                 <li>
                     <button
-                        style="font-family: 'News Cycle';"
                             @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='tdd-page'"
                             @mouseleave="navigationMenuLeave()"
-                            class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
+                            class="font-[body] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                         <span>Katas</span>
                         <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                 </li>
                 <li>
                     <button
-                        style="font-family: 'News Cycle';"
                         @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='recipe-page'"
                         @mouseleave="navigationMenuLeave()"
-                        class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
+                        class="font-[body] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                         <span>Recipes</span>
                         <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
@@ -121,7 +116,7 @@
          x-show="navigationMenuOpen"
         @mouseover="navigationMenuClearCloseTimeout()"
          @mouseleave="navigationMenuLeave()"
-         style="font-family: 'News Cycle';"
+         
         class="bg-base-300 text-neutral-content absolute top-0 pt-3 duration-200 ease-out -translate-x-1/2 translate-y-11" x-cloak>
         <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-primary-200/70">
             <div x-show="navigationMenu == 'blog-page'" class="flex items-stretch justify-center w-full p-6">
