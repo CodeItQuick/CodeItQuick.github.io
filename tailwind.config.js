@@ -20,8 +20,10 @@ module.exports = {
     },
     theme: {
         fontFamily: {
-            display: ["Spectral"],
-            body: ["Spectral"]
+            sansSerif: ['"News Cycle"'],
+            serif: ["'Spectral'"],
+            display: ["'Spectral'"],
+            body: ["'News Cycle'"]
         },
         colors: {
             'primary-dark': themes.filter(x => Object.keys(x)[0] == "dark")[0]["dark"].colors.primary,

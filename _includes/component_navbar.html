@@ -45,6 +45,7 @@
                        target="_blank"
                        @click="navigationMenuClose()">
                         <button
+                            style="font-family: 'News Cycle';"
                             class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                             <span>CodeItQuick</span>
                         </button>
@@ -56,6 +57,7 @@
                     <a href="/"
                        @click="navigationMenuClose()">
                         <button
+                            style="font-family: 'News Cycle';"
                             class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                             <span>Projects</span>
                         </button>
@@ -63,6 +65,7 @@
                 </li>
                 <li>
                     <button
+                        style="font-family: 'News Cycle';"
                         @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='blog-page'"
                         @mouseleave="navigationMenuLeave()"
                         class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
@@ -72,6 +75,7 @@
                 </li>
                 <li>
                     <button
+                        style="font-family: 'News Cycle';"
                             @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='tdd-page'"
                             @mouseleave="navigationMenuLeave()"
                             class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
@@ -81,6 +85,7 @@
                 </li>
                 <li>
                     <button
+                        style="font-family: 'News Cycle';"
                         @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='recipe-page'"
                         @mouseleave="navigationMenuLeave()"
                         class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
@@ -112,8 +117,11 @@
             </ul>
         </div>
     </div>
-    <div x-ref="navigationDropdown" x-show="navigationMenuOpen"
-        @mouseover="navigationMenuClearCloseTimeout()" @mouseleave="navigationMenuLeave()"
+    <div x-ref="navigationDropdown"
+         x-show="navigationMenuOpen"
+        @mouseover="navigationMenuClearCloseTimeout()"
+         @mouseleave="navigationMenuLeave()"
+         style="font-family: 'News Cycle';"
         class="bg-base-300 text-neutral-content absolute top-0 pt-3 duration-200 ease-out -translate-x-1/2 translate-y-11" x-cloak>
         <div class="flex justify-center w-auto h-auto overflow-hidden border rounded-md shadow-sm border-primary-200/70">
             <div x-show="navigationMenu == 'blog-page'" class="flex items-stretch justify-center w-full p-6">
