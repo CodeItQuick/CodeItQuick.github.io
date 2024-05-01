@@ -8,7 +8,7 @@ console.log(JSON.stringify(themes.filter(x => Object.keys(x)[0] == "light")[0]["
 module.exports = {
     darkMode: 'class',
     lightMode: 'class',
-    content: ["./public/*.html", "./public/*.css"],
+    content: ["./public/*.html", "./public/*.css", "./_includes", "./layouts"],
     plugins: [require("daisyui")],
     daisyui: {
         styled: true,
@@ -19,6 +19,10 @@ module.exports = {
         rtl: false
     },
     theme: {
+        fontFamily: {
+            display: ["Spectral"],
+            body: ["Spectral"]
+        },
         colors: {
             'primary-dark': themes.filter(x => Object.keys(x)[0] == "dark")[0]["dark"].colors.primary,
             'primary-light': themes.filter(x => Object.keys(x)[0] == "light")[0]["light"].colors.primary,

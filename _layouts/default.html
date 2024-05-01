@@ -26,6 +26,12 @@
     <script src="https://unpkg.com/alpinejs" defer></script>
     <!-- Include the TailwindCSS library on your page -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
           rel="stylesheet"
@@ -38,13 +44,31 @@
 
   </head>
 
-  <body class="bg-base-100 text-neutral-content mx-auto antialiased" x-bind:data-theme="getMode()">
+  <body class="bg-base-100 text-neutral-content mx-auto antialiased x-bind:data-theme="getMode()">
 
     {% include component_navbar.html %}
 
     {% include hero.html title=site.title description=site.description image="graveyard_5_generated.jpg" %}
 
-    {% include component_table_main.html table=site.projects %}
+    <div x-data="{ pageNumber: 0 }" class="bg-neutral">
+      <div class="w-full mx-auto md:p-8 md:grid md:gap-16 md:grid-cols-2 2xl:w-max">
+        {% for row in site.projects %}
+          <div>
+            {% include component_list.html
+            name=row.name
+            image=row.image
+            learningone=row.learningone
+            learningtwo=row.learningtwo
+            learningthree=row.learningthree
+            github=row.github
+            tag_size=0
+            progress=row.progress
+            status=row.status
+            %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
     
   </body>
 </html>

@@ -627,9 +627,9 @@ html {
   --n: 0 0% 96%;
   --nf: 0 0% 90%;
   --nc: 0 0% 9%;
-  --b1: 210 20% 98%;
-  --b2: 220 14% 96%;
-  --b3: 220 13% 91%;
+  --b1: 220 14% 96%;
+  --b2: 220 13% 91%;
+  --b3: 216 12% 84%;
   --bc: 221 39% 11%;
   --in: 201 94% 86%;
   --inc: 202 80% 24%;
@@ -640,6 +640,12 @@ html {
   --er: 353 96% 90%;
   --erc: 342 75% 30%;
 }
+    html {
+        margin: 0;
+        font-family: "Spectral", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -830,4 +836,9 @@ html {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 }

@@ -4,7 +4,7 @@
         <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover object-center overflow-hidden h-full w-full" />
     </figure>
     <div class="card-body bg-base-100 text-neutral-content rounded-r-box lg:w-9/12">
-        <h2 class="card-title">{{ include.name }}</h2>
+        <h2 class="card-title font-[Spectral]">{{ include.name }}</h2>
         <div class="flex">
             {% if include.progress == 'complete' %}
                 <div class="badge badge-primary text-primary-content mr-2">Launched</div>
@@ -17,12 +17,14 @@
                 <div class="badge badge-neutral text-neutral-content">Not-Active</div>
             {% endif %}
         </div>
-        <ul class="list-disc">
-            <li>{{ include.learningone }}</li>
-            <li>{{ include.learningtwo }}</li>
-            <li>{{ include.learningthree }}</li>
-        </ul>
-        <div class="card-actions justify-end mt-auto">
+        <div class="flex">
+            <ul class="list-image-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNCAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMzhiZGY4Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy42ODUuMTUzYS43NTIuNzUyIDAgMCAxIC4xNDMgMS4wNTJsLTggMTAuNWEuNzUuNzUgMCAwIDEtMS4xMjcuMDc1bC00LjUtNC41YS43NS43NSAwIDAgMSAxLjA2LTEuMDZsMy44OTQgMy44OTMgNy40OC05LjgxN2EuNzUuNzUgMCAwIDEgMS4wNS0uMTQzWiIgLz48L3N2Zz4=')]">
+                <li>{{ include.learningone }}</li>
+                <li>{{ include.learningtwo }}</li>
+                <li>{{ include.learningthree }}</li>
+            </ul>
+        </div>
+        <div class="card-actions flex justify-end w-full">
             <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary">Github Link</button></a>
         </div>
     </div>
