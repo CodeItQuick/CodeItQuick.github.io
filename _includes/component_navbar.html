@@ -67,7 +67,14 @@
                         @mouseleave="navigationMenuLeave()"
                         class="font-[body] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                         <span>Blog</span>
-                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <svg :class="{ 'rotate-0' : navigationMenuOpen==true && navigationMenu == 'blog-page' }"
+                             class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300 -rotate-90"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                 </li>
                 <li>
@@ -76,7 +83,14 @@
                             @mouseleave="navigationMenuLeave()"
                             class="font-[body] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                         <span>Katas</span>
-                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <svg :class="{ 'rotate-0' : navigationMenuOpen==true && navigationMenu == 'tdd-page' }"
+                             class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300 -rotate-90"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                 </li>
                 <li>
@@ -85,7 +99,14 @@
                         @mouseleave="navigationMenuLeave()"
                         class="font-[body] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                         <span>Recipes</span>
-                        <svg :class="{ '-rotate-180' : navigationMenuOpen==true && navigationMenu == 'blog-page' }" class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <svg :class="{ 'rotate-0' : navigationMenuOpen==true && navigationMenu == 'recipe-page' }"
+                             class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300 -rotate-90"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                 </li>
             </ul>
