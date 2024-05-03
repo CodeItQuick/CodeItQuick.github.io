@@ -468,11 +468,11 @@ html {
   --ac: 195 53% 68%;
   --n: 0 0% 25%;
   --nf: 0 0% 15%;
-  --nc: 0 0% 96%;
-  --b1: 215 28% 17%;
-  --b2: 221 39% 11%;
-  --b3: 224 71% 4%;
-  --bc: 210 20% 98%;
+  --nc: 0 0% 90%;
+  --b1: 0 0% 15%;
+  --b2: 0 0% 9%;
+  --b3: 0 0% 4%;
+  --bc: 0 0% 98%;
   --in: 201 90% 27%;
   --inc: 201 94% 86%;
   --su: 163 88% 20%;
@@ -547,11 +547,11 @@ html {
   --ac: 195 53% 68%;
   --n: 0 0% 25%;
   --nf: 0 0% 15%;
-  --nc: 0 0% 96%;
-  --b1: 215 28% 17%;
-  --b2: 221 39% 11%;
-  --b3: 224 71% 4%;
-  --bc: 210 20% 98%;
+  --nc: 0 0% 90%;
+  --b1: 0 0% 15%;
+  --b2: 0 0% 9%;
+  --b3: 0 0% 4%;
+  --bc: 0 0% 98%;
   --in: 201 90% 27%;
   --inc: 201 94% 86%;
   --su: 163 88% 20%;
@@ -627,10 +627,10 @@ html {
   --n: 0 0% 96%;
   --nf: 0 0% 90%;
   --nc: 0 0% 9%;
-  --b1: 220 14% 96%;
-  --b2: 220 13% 91%;
-  --b3: 216 12% 84%;
-  --bc: 221 39% 11%;
+  --b1: 0 0% 90%;
+  --b2: 0 0% 83%;
+  --b3: 0 0% 64%;
+  --bc: 0 0% 9%;
   --in: 201 94% 86%;
   --inc: 202 80% 24%;
   --su: 156 72% 67%;
@@ -646,18 +646,34 @@ html {
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M5kng.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        src: url("https://fonts.gstatic.com/s/metalmania/v22/RWmMoKWb4e8kqMfBUdPFJdXFiaQ.woff2") format('woff2');
     }
-    /* latin */
     @font-face {
         font-family: 'body';
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url('https://fonts.gstatic.com/s/newscycle/v23/CSR64z1Qlv-GDxkbKVQ_fOAKTQ.woff2') format('woff2');
+        src: url("https://fonts.gstatic.com/s/gothica1/v13/CSR94z5ZnPydRjlCCwlKa8cv.woff2") format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
+    /*!* latin *!*/
+    /*@font-face {*/
+    /*    font-family: 'display';*/
+    /*    font-style: normal;*/
+    /*    font-weight: 400;*/
+    /*    font-display: swap;*/
+    /*    src: url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M5kng.woff2) format('woff2');*/
+    /*    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;*/
+    /*}*/
+    /* latin */
+    /*@font-face {*/
+    /*    font-family: 'body';*/
+    /*    font-style: normal;*/
+    /*    font-weight: 400;*/
+    /*    font-display: swap;*/
+    /*    src: url('https://fonts.gstatic.com/s/newscycle/v23/CSR64z1Qlv-GDxkbKVQ_fOAKTQ.woff2') format('woff2');*/
+    /*    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;*/
+    /*}*/
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
