@@ -8,4 +8,5 @@ image: many_zombies_2_instasize.jpg
 github: https://github.com/CodeItQuick/expense-report-kata-ensemble
 progress: complete
 status: inactive
+project_type: prototype
 ---
