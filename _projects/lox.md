@@ -8,4 +8,5 @@ image: zombie_in_graveyard_one_instasize.jpg
 github: https://github.com/CodeItQuick/my-own-programming-language
 progress: complete
 status: inactive
+project_type: mvp
 ---
