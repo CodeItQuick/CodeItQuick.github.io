@@ -63,20 +63,22 @@
     <div x-data="{ pageNumber: 0 }" class="bg-neutral">
       <div class="w-full mx-auto md:p-8 md:grid md:gap-16 md:grid-cols-2 2xl:w-max">
         {% for row in site.projects %}
-          <div>
-            {% include component_list.html
-            name=row.name
-            image=row.image
-            project_type=row.project_type
-            learningone=row.learningone
-            learningtwo=row.learningtwo
-            learningthree=row.learningthree
-            github=row.github
-            tag_size=0
-            progress=row.progress
-            status=row.status
-            %}
-          </div>
+          {% if row.project_type == 'prototype' %}
+              <div>
+                {% include component_list.html
+                name=row.name
+                image=row.image
+                project_type=row.project_type
+                learningone=row.learningone
+                learningtwo=row.learningtwo
+                learningthree=row.learningthree
+                github=row.github
+                tag_size=0
+                progress=row.progress
+                status=row.status
+                %}
+              </div>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
