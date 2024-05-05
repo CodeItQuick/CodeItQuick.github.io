@@ -20,7 +20,7 @@
                         {% endfor %}
                     </div>
                 </div>
-                <div x-data="{ index: 0 }" class="w-full md:grid md:gap-16 md:grid-cols-2">
+                <div x-data="{ index: 0 }" class="w-full mx-auto md:p-8 md:grid md:gap-16 md:grid-cols-2 2xl:w-max">
                      {% for tag in site.tags %} 
                              {% assign currentIndex = 0 %}
                              {% for row in tag[1] %} 
