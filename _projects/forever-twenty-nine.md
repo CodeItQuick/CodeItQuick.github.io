@@ -7,4 +7,5 @@ image: zombie_in_a_graveyard_3_instasize.jpg
 github: https://github.com/CodeItQuick/ForeverTwentyNine
 progress: complete
 status: inactive
+project_type: prototype
 ---
