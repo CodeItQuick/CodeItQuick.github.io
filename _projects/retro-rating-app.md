@@ -7,4 +7,5 @@ image: zombie_in_graveyard_2_instasize.jpg
 github: https://github.com/CodeItQuick/retro-rating-app  
 progress: complete 
 status: inactive
+project_type: prototype
 ---
