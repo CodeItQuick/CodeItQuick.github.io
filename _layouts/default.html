@@ -63,7 +63,7 @@
     <div x-data="{ pageNumber: 0 }" class="bg-neutral">
       <div class="w-full mx-auto md:p-8 md:grid md:gap-16 md:grid-cols-2 2xl:w-max">
         {% for row in site.projects %}
-          {% if row.project_type == 'prototype' || row.project_type == 'kata' %}
+          {% if row.project_type == 'mvp' %}
               <div>
                 {% include component_list.html
                 name=row.name
