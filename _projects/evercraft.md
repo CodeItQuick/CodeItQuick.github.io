@@ -8,4 +8,5 @@ image: many_zombies_1_instasize.jpg
 github: https://github.com/CodeItQuick/tcr-evercraft-2
 progress: complete
 status: inactive
+project_type: mvp
 ---
