@@ -61,7 +61,7 @@
     {% include hero.html title=site.title description=site.description image="graveyard_5_generated.jpg" %}
 
     <div x-data="{ pageNumber: 0 }" class="bg-neutral">
-      <div class="w-full mx-auto md:p-8 md:grid md:gap-16 md:grid-cols-2 2xl:w-max">
+      <div class="w-full py-8 mx-auto md:p-8 md:grid md:gap-16 md:grid-cols-2 2xl:w-max">
         {% for row in site.projects %}
           {% if row.project_type == 'mvp' %}
               <div>

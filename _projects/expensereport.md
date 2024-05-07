@@ -1,9 +1,9 @@
 ---
-name: Expense Report Kata (Java)
+name: Expense Report (Java)
 position: Hexagonal Architecture
-learningone: Learned Proper Hexagonal Architecture
-learningtwo: Able to use relatively few acceptance tests to enable refactoring work
-learningthree: Learned how to wrap different elements within a website that have side effects and are traditionally difficult to test  
+learningone: Hexagonal Architecture
+learningtwo: Acceptance Tests
+learningthree: Testing Techniques  
 image: many_zombies_2_instasize.jpg
 github: https://github.com/CodeItQuick/expense-report-kata-ensemble
 progress: complete
