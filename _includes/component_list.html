@@ -9,12 +9,12 @@
             {% if include.progress == 'complete' %}
                 <div class="badge badge-primary text-primary-content mr-2">Launched</div>
             {% elsif include.progress == 'in-progress' %}
-                <div class="badge badge-neutral text-neutral-content mr-2">Pre-Launch</div>
+                <div class="badge badge-neutral text-neutral-content mr-2">Pre Launch</div>
             {% endif %}
             {% if include.status == 'active' %}
-                <div class="badge badge-primary text-primary-content">Active</div>
+                <div class="badge badge-primary text-primary-content mr-2">Active</div>
             {% elsif include.status == 'inactive' %}
-                <div class="badge badge-neutral text-neutral-content">Not-Active</div>
+                <div class="badge badge-neutral text-neutral-content mr-2">Not Active</div>
             {% endif %}
             {% if include.project_type == 'mvp' %}
                 <div class="badge badge-primary text-primary-content">MVP</div>
