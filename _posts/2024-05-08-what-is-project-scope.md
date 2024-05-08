@@ -23,5 +23,5 @@ work into your scope are decisions regarding:
 10. Testing -> it actually mostly reduces complexity, but initially there is a cost
 11. How usable the product is -> building a button that has no function
 12. Amount of refactoring you're willing to do/How messy are you ok the code being
-13. How often are you willing to redesign the project from an architecutre point of view
+13. How often are you willing to redesign the project from an architecture point of view
 14. How often are you willing to redesign the project from a product point of view
