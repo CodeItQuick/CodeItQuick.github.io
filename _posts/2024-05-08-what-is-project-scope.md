@@ -1,3 +1,10 @@
+---
+name: Prototyping Sprint Rating without tests
+description: Hexagonal and TDD Works!
+image: video_game_zombies_2_instasize.jpg
+tags: agile 
+---
+
 What is project scope?
 
 A lot of the time "project scope" is the entire definition used for the relative "size" of 
@@ -15,3 +22,4 @@ work into your scope are decisions regarding:
 9. How many good vs bad software decisions you make
 10. Testing -> it actually mostly reduces complexity, but initially there is a cost
 11. How usable the product is -> building a button that has no function
+12. Amount of refactoring you're willing to do/How messy are you ok the code being
