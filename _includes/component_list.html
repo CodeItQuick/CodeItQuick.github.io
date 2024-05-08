@@ -7,21 +7,21 @@
         <h2 class="card-title text-4xl font-[display]">{{ include.name }}</h2>
         <div class="flex">
             {% if include.progress == 'complete' %}
-                <div class="badge badge-primary text-primary-content mr-2">Launched</div>
+                <div class="badge badge-lg leading-3 badge-primary text-neutral-content mr-2">Launched</div>
             {% elsif include.progress == 'in-progress' %}
-                <div class="badge badge-neutral text-neutral-content mr-2">Pre Launch</div>
+                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content mr-2">Pre Launch</div>
             {% endif %}
             {% if include.status == 'active' %}
-                <div class="badge badge-primary text-primary-content mr-2">Active</div>
+                <div class="badge badge-lg leading-3 badge-primary text-neutral-content mr-2">Active</div>
             {% elsif include.status == 'inactive' %}
-                <div class="badge badge-neutral text-neutral-content mr-2">Not Active</div>
+                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content mr-2">Not Active</div>
             {% endif %}
             {% if include.project_type == 'mvp' %}
-                <div class="badge badge-primary text-primary-content">MVP</div>
+                <div class="badge badge-lg leading-3 badge-primary text-neutral-content">MVP</div>
             {% elsif include.project_type == 'prototype' %}
-                <div class="badge badge-neutral text-neutral-content">Prototype</div>
+                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content">Prototype</div>
             {% elsif include.project_type == 'kata' %}
-                <div class="badge badge-neutral text-neutral-content">Kata</div>
+                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content">Kata</div>
             {% endif %}
         </div>
         <div class="card-actions flex h-full w-full flex-col justify-between grow">
@@ -31,7 +31,7 @@
                 <div class="font-[body]">💀{{ include.learningthree }}</div>
             </div>
             <div class="w-full flex justify-end">
-                <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary">Github Link</button></a>
+                <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary text-neutral-content">Github Link</button></a>
             </div>
         </div>
     </div>

@@ -2,10 +2,10 @@
     <div class="w-full py-8 mx-auto md:p-8 2xl:w-max">
                 <div class="2xl:mx-auto">
                     <div class="2xl:mx-auto w-fit" >
-                        <span class="badge badge-outline" :class="tag_filter === 'main' ? 'badge-content' : 'badge-primary' ">
+                        <span class="badge badge-lg leading-3 badge-outline" :class="tag_filter === 'main' ? 'badge-content' : 'badge-primary' ">
                             <button
                                     x-on:click="tag_filter = 'main'; tag_count = {{ site.posts.size }}; pageNumber = 0;"
-                                    :class="tag_filter === '{{ tag[0] }}' ? 'text-white' : 'text-accent-content' ">
+                                    :class="text-white">
                                 All
                             </button>
                         </span>
@@ -13,7 +13,7 @@
                                 <span class="badge badge-outline" :class="tag_filter === '{{ tag[0] }}' ? 'badge-content' : 'badge-primary' ">
                                     <button
                                             x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;"
-                                            :class="tag_filter === '{{ tag[0] }}' ? 'text-white' : 'text-accent-content' ">
+                                            :class="text-white">
                                         {{ tag[0] }}
                                     </button>
                                 </span>
@@ -57,17 +57,17 @@
                 </div>
         </div>
         <div
-        class="w-full bgmd:w-1/2 mx-auto py-6 flex justify-between items-center"
+        class="w-full md:w-1/2 mx-auto py-6 flex justify-between items-center"
         x-show="{{ site.posts.size }}"
       >
         <!--First Button-->
         <button
           x-on:click="pageNumber = 0"
           :disabled="pageNumber==0"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber==0 }"
+          :class="{ 'disabled cursor-not-allowed' : pageNumber==0 }"
         >
           <svg
-            class="h-8 w-8 text-accent"
+            class="h-8 w-8 text-neutral-content"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -86,10 +86,10 @@
         <button
           x-on:click="--pageNumber"
           :disabled="pageNumber==0"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber==0 }"
+          :class="{ 'disabled cursor-not-allowed' : pageNumber==0 }"
         >
           <svg
-            class="h-8 w-8 text-accent"
+            class="h-8 w-8 text-neutral-content"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -104,10 +104,10 @@
         </button>
 
         <!-- Display page numbers -->
-        <template x-for="index in Math.ceil(tag_count / 4)">
+        <template x-for="index in Math.ceil(tag_count / 4) + 1">
           <button
-            class="px-3 py-2 rounded text-primary"
-            :class="{ 'bg-primary-content text-white font-bold' : index - 1 === pageNumber }"
+            class="px-3 py-2 rounded text-neutral-content"
+            :class="{ 'bg-primary text-white font-bold' : index - 1 === pageNumber }"
             type="button"
             x-on:click="pageNumber = index - 1"
           >
@@ -119,10 +119,10 @@
         <button
           x-on:click="++pageNumber"
           :disabled="pageNumber >= Math.ceil(tag_count / 4)"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(tag_count / 4) }"
+          :class="{ 'disabled cursor-not-allowed' : pageNumber >= Math.ceil(tag_count / 4) }"
         >
           <svg
-            class="h-8 w-8 text-accent"
+            class="h-8 w-8 text-neutral-content"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -139,11 +139,11 @@
         <!--Last Button-->
         <button
           x-on:click="++pageNumber"
-          :disabled="pageNumber >= Math.ceil(tag_count / 4)"
-          :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= Math.ceil(tag_count / 4) }"
+          :disabled="pageNumber >= Math.floor(tag_count / 4)"
+          :class="{ 'disabled cursor-not-allowed' : pageNumber >= Math.floor(tag_count / 4) }"
         >
           <svg
-            class="h-8 w-8 text-accent"
+            class="h-8 w-8 text-neutral-content"
             width="24"
             height="24"
             viewBox="0 0 24 24"
