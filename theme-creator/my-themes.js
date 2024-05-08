@@ -58,12 +58,12 @@ const myThemes =[
             'accent': colorArrayLight(accentColorChoice).colors[300],          //300
             'accent-focus': colorArrayLight(accentColorChoice).colors[400],    //400
             'accent-content': colorArrayLight(accentColorChoice).colors[900],  //900
-            'neutral': colors.neutral[100],
-            'neutral-focus': colors.neutral[200],
+            'neutral': colors.neutral[50],
+            'neutral-focus': colors.neutral[100],
             'neutral-content': colors.neutral[900],
-            'base-100': colors.neutral[200],
-            'base-200': colors.neutral[300],
-            'base-300': colors.neutral[400],
+            'base-100': colors.neutral[100],
+            'base-200': colors.neutral[200],
+            'base-300': colors.neutral[300],
             'base-content': colors.neutral[900],
             'info': colors.sky[200],
             'info-content': colors.sky[900],
