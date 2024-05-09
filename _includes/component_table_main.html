@@ -3,7 +3,7 @@
             {% for row in include.table %}
 
             <div :class="{ 'hidden' : {{ forloop.index }} < pageNumber * 4 + 1 || {{ forloop.index }} > (pageNumber + 1) * 4   }">
-                {% include component_list.html 
+                {% include component_list_higher_order.html
                     name=row.name 
                     image=row.image 
                     learningone=row.learningone 

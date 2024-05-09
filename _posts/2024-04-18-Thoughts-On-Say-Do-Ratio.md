@@ -1,6 +1,6 @@
 ---
 name: Thoughts On Say Do Ratio
-description: Organization my thoughts on the Say Do Ratio
+description: Organizing my thoughts on the Say Do Ratio
 image: video_game_zombies_2_instasize.jpg
 tags: agile all
 ---
