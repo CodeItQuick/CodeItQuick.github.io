@@ -1,6 +1,6 @@
 ---
-name: Prototyping Sprint Rating without tests
-description: Hexagonal and TDD Works!
+name: What is project scope?
+description: Adding better definitions
 image: video_game_zombies_2_instasize.jpg
 tags: agile 
 ---
