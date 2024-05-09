@@ -33,7 +33,9 @@
             {% endif %}
         </div>
         <div class="card-actions flex h-full w-full flex-col justify-between grow">
-            {{ include.description }}
+            <p>
+                {{ include.description }}
+            </p>
             {% if include.learningone %}
             <div class="grow list-image-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNCAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMzhiZGY4Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy42ODUuMTUzYS43NTIuNzUyIDAgMCAxIC4xNDMgMS4wNTJsLTggMTAuNWEuNzUuNzUgMCAwIDEtMS4xMjcuMDc1bC00LjUtNC41YS43NS43NSAwIDAgMSAxLjA2LTEuMDZsMy44OTQgMy44OTMgNy40OC05LjgxN2EuNzUuNzUgMCAwIDEgMS4wNS0uMTQzWiIgLz48L3N2Zz4=')]">
                 <div class="font-[body]">💀{{ include.learningone }}</div>
@@ -42,6 +44,11 @@
             </div>
             <div class="w-full flex justify-end">
                 <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary text-neutral-content">Github</button></a>
+            </div>
+            {% endif %}
+            {% if include.description %}
+            <div class="card-actions justify-end mt-auto">
+                <a href="{{ include.url }}" ><button class="btn btn-primary">Read</button></a>
             </div>
             {% endif %}
         </div>
