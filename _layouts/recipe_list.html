@@ -17,31 +17,7 @@
         return this.mode;
     }
 }" >
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="assets/images/favicon.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css" rel="stylesheet" type="text/css" />
-    <!-- Include the Alpine library on your page -->
-    <script src="https://unpkg.com/alpinejs" defer></script>
-    <!-- Include the TailwindCSS library on your page -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-    <title>CodeItQuick Blog</title>
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-
-</head>
+{% include header.html %}
 
 <body class="bg-neutral text-neutral-content mx-auto antialiased font-[body]" x-bind:data-theme="getMode()">
     
