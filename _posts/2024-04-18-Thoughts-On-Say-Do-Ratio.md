@@ -2,7 +2,7 @@
 name: Thoughts On Say Do Ratio
 description: Organization my thoughts on the Say Do Ratio
 image: video_game_zombies_2_instasize.jpg
-tags: agile 
+tags: agile all
 ---
 
 Why track a Say/Do Ratio? What's the point?

@@ -1,14 +1,7 @@
-<div x-data="{ pageNumber: 0, tag_filter: 'main', tag_count: 16 }" class="bg-neutral">
+<div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: 17 }" class="bg-neutral">
     <div class="w-full py-8 mx-auto md:p-8 2xl:w-max">
                 <div class="2xl:mx-auto">
                     <div class="2xl:mx-auto w-fit" >
-                        <span class="badge badge-lg leading-3 badge-outline" :class="tag_filter === 'main' ? 'badge-content' : 'badge-primary' ">
-                            <button
-                                    x-on:click="tag_filter = 'main'; tag_count = {{ site.posts.size }}; pageNumber = 0;"
-                                    :class="text-white">
-                                All
-                            </button>
-                        </span>
                         {% for tag in site.tags %}
                                 <span class="badge badge-outline" :class="tag_filter === '{{ tag[0] }}' ? 'badge-content' : 'badge-primary' ">
                                     <button
@@ -23,7 +16,10 @@
                 <div x-data="{ index: 0 }" class="w-full mx-auto md:p-8 md:grid md:gap-16 md:grid-cols-2 2xl:w-max">
                      {% for tag in site.tags %} 
                              {% assign currentIndex = 0 %}
-                             {% for row in tag[1] %} 
+                             {% for row in tag[1] %}
+                                        <div x-show="'{{ tag[0] }}'.includes(tag_filter)"
+                                             :class="{ 'hidden' : +'{{ currentIndex }}' < (pageNumber) * 4 || +'{{ currentIndex }}' > (pageNumber + 1) * 4 - 1 }"
+                                        >
                                            {% include component_list_description.html 
                                                 name=row.name 
                                                 image=row.image 
@@ -36,23 +32,9 @@
                                                 main=false
                                                 index=currentIndex
                                           %}
-                                           {% assign currentIndex = currentIndex | plus: 1 %}
+                                        </div>
+                               {% assign currentIndex = currentIndex | plus: 1 %}
                             {% endfor %}
-                     {% endfor %}
-                     {% assign currentIndex = 0 %}
-                     {% for row in site.posts %} 
-                        {% include component_list_description.html 
-                                        name=row.name 
-                                        image=row.image 
-                                        description=row.description 
-                                        url=row.url 
-                                        tag_size=row.tags.size 
-                                        tags=row.tags
-                                        post_size=site.posts.size
-                                        main=true
-                                        index=currentIndex
-                                   %}
-                                   {% assign currentIndex = currentIndex | plus: 1 %}
                      {% endfor %}
                 </div>
         </div>
@@ -104,7 +86,7 @@
         </button>
 
         <!-- Display page numbers -->
-        <template x-for="index in Math.ceil(tag_count / 4) + 1">
+        <template x-for="index in Math.floor(tag_count / 4) + 1">
           <button
             class="px-3 py-2 rounded text-neutral-content"
             :class="{ 'bg-primary text-white font-bold' : index - 1 === pageNumber }"
@@ -118,7 +100,7 @@
         <!--Next Button-->
         <button
           x-on:click="++pageNumber"
-          :disabled="pageNumber >= Math.ceil(tag_count / 4)"
+          :disabled="pageNumber >= Math.floor(tag_count / 4)"
           :class="{ 'disabled cursor-not-allowed' : pageNumber >= Math.ceil(tag_count / 4) }"
         >
           <svg
@@ -138,7 +120,7 @@
 
         <!--Last Button-->
         <button
-          x-on:click="++pageNumber"
+          x-on:click="pageNumber = Math.floor(tag_count / 4)"
           :disabled="pageNumber >= Math.floor(tag_count / 4)"
           :class="{ 'disabled cursor-not-allowed' : pageNumber >= Math.floor(tag_count / 4) }"
         >

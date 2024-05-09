@@ -2,7 +2,7 @@
 name: Refactoring Goals
 description: Improving the codebase - safely
 image: halloween-background-with-zombie-hand-bursting-out-ground_resized.jpg
-tags: refactoring theory
+tags: refactoring theory all
 ---
 # Refactoring Goals
 

@@ -2,7 +2,7 @@
 name: Aggregates Explained
 description: Learn about my current understanding of aggregates
 image: zombie_download_5.png
-tags: theory DDD
+tags: theory DDD all
 ---
 
 # Aggregates Explained

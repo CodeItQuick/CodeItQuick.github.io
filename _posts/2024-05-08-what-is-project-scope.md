@@ -2,7 +2,7 @@
 name: What is project scope?
 description: Adding better definitions
 image: video_game_zombies_2_instasize.jpg
-tags: agile 
+tags: agile all 
 ---
 
 What is project scope?
