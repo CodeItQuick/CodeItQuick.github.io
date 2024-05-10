@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}" x-init="mode = 'dark'" x-data="
+<html lang="{{ site.lang | default: 'en-US' }}" class="bg-neutral" x-init="mode = 'dark'" x-data="
 {
     mode: 'light',
     darkModeOn() {
@@ -24,11 +24,11 @@
     {% include component_navbar.html %}
 
     {% include component_table_blog.html %}
+    <footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content">
+        <aside>
+            <p>Copyright © 2024 - All right reserved by CodeItQuick</p>
+        </aside>
+    </footer>
 </body>
 
-<footer class="footer footer-center p-4 bg-base-300 text-base-content">
-    <aside>
-        <p>Copyright © 2024 - All right reserved by CodeItQuick</p>
-    </aside>
-</footer>
 </html>
