@@ -1,10 +1,10 @@
 
-<div class="card lg:card-side bg-base-200 h-72 shadow-xl md:max-w-3xl mx-6 md:mx-auto" >
+<div class="card sm:card-side bg-base-200 h-96 xl:h-72 shadow-xl sm:max-w-3xl mx-6 sm:mx-auto" >
     <figure>
         <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover object-center overflow-hidden h-full w-full" />
     </figure>
-    <div class="card-body text-neutral-content lg:w-9/12 flex flex-col">
-        <h2 class="card-title text-4xl font-[display]">{{ include.title }}{{ include.name }}</h2>
+    <div class="card-body text-neutral-content md:w-9/12 flex flex-col">
+        <h2 class="card-title md:text-4xl font-[display]">{{ include.title }}{{ include.name }}</h2>
         <div class="flex">
             {% if include.tag_size > 0 %}
             {% for content in include.tags %}
