@@ -1,4 +1,5 @@
 ---
+layout: post
 name: What I get out of pairing?
 description: Why pair? What learnings do I get?
 image: video_game_zombies_2_instasize.jpg

@@ -1,4 +1,5 @@
 ---
+layout: post
 name: What is project scope?
 description: Adding better definitions
 image: video_game_zombies_2_instasize.jpg

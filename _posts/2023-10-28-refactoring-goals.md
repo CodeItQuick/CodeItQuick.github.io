@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Refactoring Goals
 description: Improving the codebase - safely
 image: halloween-background-with-zombie-hand-bursting-out-ground_resized.jpg

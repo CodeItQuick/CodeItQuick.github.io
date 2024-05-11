@@ -1,13 +1,18 @@
 <div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: 17 }" class="bg-neutral">
-    <div class="w-full py-8 mx-auto md:p-8 md:flex w-3/4">
-        <div class="hidden w-full md:w-1/4 md:flex md:flex-col items-center xl:items-end">
-            <div class="w-fit md:grid md:gap-4 md:grid-cols-1" >
-                {% for tag in site.tags %}
-                    <button class="btn " :class="tag_filter === '{{ tag[0] }}' ?
-                    'btn btn-primary' : 'btn-base-200' "
-                            x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">
-                        {{ tag[0] }}
-                    </button>
+    <div class="w-full py-8 mx-auto md:p-8 md:flex w-full">
+        <div class="hidden md:w-1/4 md:flex md:flex-col items-center">
+            <div class="flex flex-col">
+                <h1 class="text-3xl">Posts</h1>
+                {% for post in site.posts %}
+                {% assign currentdate = post.date | date: "%B %Y" %}
+                {% if currentdate != date %}
+                {% unless forloop.first %}</ul>{% endunless %}
+                <h1 class="text-xl" id="y{{post.date | date: "%B %Y"}}">{{ currentdate }}</h1>
+                <ul>
+                    {% assign date = currentdate %}
+                    {% endif %}
+                    <li><a href="{{ post.url }}" class="hover:text-primary">{{ post.title }}</a></li>
+                    {% if forloop.last %}</ul>{% endif %}
                 {% endfor %}
             </div>
         </div>
@@ -29,6 +34,18 @@
                        {% assign currentIndex = currentIndex | plus: 1 %}
                     {% endfor %}
              {% endfor %}
+        </div>
+        <div class="hidden md:w-1/4 md:flex md:flex-col items-center">
+            <h1 class="text-xl">Tags</h1>
+            <div class="w-fit md:grid md:gap-4 md:grid-cols-1" >
+                {% for tag in site.tags %}
+                <button class="btn " :class="tag_filter === '{{ tag[0] }}' ?
+                    'btn btn-primary' : 'btn-base-200' "
+                        x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">
+                    {{ tag[0] }}
+                </button>
+                {% endfor %}
+            </div>
         </div>
     </div>
     <div

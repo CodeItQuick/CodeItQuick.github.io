@@ -1,4 +1,5 @@
 ---
+layout: post
 name: My Journey Through TDD
 description: Writing down a brief take on XP practices I believe in
 image: zombie_download_3.png
