@@ -7,7 +7,7 @@ tags: smells
 ---
 
 ## Roman Numerals - TDD Introduction
-Martin Fowler's Refactoring:   
+### Martin Fowler's Refactoring:   
 - First Set
   1. Extract Variable
   2. Inline Variable
@@ -17,7 +17,7 @@ Martin Fowler's Refactoring:
   1. Replace Derived Variable with Query
 
 ## Gilded Rose - Refactoring Conditionals
-Martin Fowler's Refactoring:
+### Martin Fowler's Refactoring:
 - First Set
     1. Extract Function
     2. Inline Function
@@ -26,7 +26,7 @@ Martin Fowler's Refactoring:
     5. Encapsulate Variable
     6. Rename Variable
     7. Split Phase  
-Joshua Kerievsky's Refactoring To Patterns:
+### Joshua Kerievsky's Refactoring To Patterns:
 - Long Method  
   1. Composed Method (pg. 123)
   2. Move Accumulation to Collecting Pattern (pg 313)
@@ -43,7 +43,7 @@ Joshua Kerievsky's Refactoring To Patterns:
   2. Move Accumulation to Visitor (pg 320)
 
 ## Fantasy Battle - Encapsulation: Law of Demeter
-Martin Fowler's Refactoring:
+### Martin Fowler's Refactoring:
 - Moving Features  
   1. Move Function  
   2. Move Field  
@@ -64,72 +64,3 @@ Martin Fowler's Refactoring:
   10. Extract Function
   11. Substitute Algorithm
   
-
-# List of refactorings
-## First Set
-- Extract Function
-- Inline Function
-- Extract Variable
-- Inline Variable
-- Change Function Declaration
-- Encapsulate Variable
-- Rename Variable
-- Introduce Parameter Object
-- Combine Functions into Class
-- Combine Functions into Transform
-- Split Phase
-## Encapsulation
-- Encapsulate Record
-- Encapsulate Collection
-- Replace Primitive with Object
-- Replace Temp with Query
-- Extract Class
-- Inline Class
-- Hide Delegate
-- Remove Middle Man
-- Substitute Algorithm
-## Moving Features
-- Move Function
-- Move Field
-- Move Statements Into Function
-- Replace Inline Code with Function Call
-- Slide Statements
-- Split Loop
-- Replace Loop with Pipeline
-- Remove Dead Code
-## Organizing Data
-- Split Variable
-- Rename Field
-- Replace Derived Variable with Query
-- Change Reference to Value
-- Change Value to Reference
-## Simplifying Conditional Logic
-- Decompose Conditional
-- Consolidate Conditional Expression
-- Replace Nested Conditional with Guard Clauses
-- Replace Conditional with Polymorphism
-- Introduce Special Case
-- Introduce Assertion
-## Refactoring APIs
-- Separate Query with Modifier
-- Parameterize Function
-- Remove Flag Argument
-- Preserve Whole Object
-- Replace Parameter with Query
-- Replace Query with Parameter
-- Remove Setting Method
-- Replace Constructor with Factory Function
-- Replace Function with Command
-- Replace Command with Function
-# Dealing with Inheritance
-- Pull Up Method
-- Pull Up Field
-- Pull Up Constructor Body
-- Push Down Method
-- Push Down Field
-- Replace Type Code with Subclasses
-- Remove Subclass
-- Extract Superclass
-- Collapse Hierarchy
-- Replace Subclass with Delegate
-- Replace Superclass with Delegate
