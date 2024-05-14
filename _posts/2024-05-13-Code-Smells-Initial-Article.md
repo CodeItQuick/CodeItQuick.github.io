@@ -25,7 +25,7 @@ Martin Fowler's Refactoring:
     4. Inline Variable
     5. Encapsulate Variable
     6. Rename Variable
-    7. Split Phase
+    7. Split Phase  
 Joshua Kerievsky's Refactoring To Patterns:
 - Long Method  
   1. Composed Method (pg. 123)
