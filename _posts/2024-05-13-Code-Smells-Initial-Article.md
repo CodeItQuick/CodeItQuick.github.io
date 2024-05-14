@@ -16,7 +16,8 @@ tags: smells
 - Organizing Data
   1. Replace Derived Variable with Query
 
-## Gilded Rose - Refactoring Conditionals
+## Gilded Rose - Refactoring Conditionals  
+
 ### Martin Fowler's Refactoring:
 - First Set
     1. Extract Function
@@ -26,7 +27,9 @@ tags: smells
     5. Encapsulate Variable
     6. Rename Variable
     7. Split Phase  
-### Joshua Kerievsky's Refactoring To Patterns:
+
+### Joshua Kerievsky's Refactoring To Patterns:  
+
 - Long Method  
   1. Composed Method (pg. 123)
   2. Move Accumulation to Collecting Pattern (pg 313)
