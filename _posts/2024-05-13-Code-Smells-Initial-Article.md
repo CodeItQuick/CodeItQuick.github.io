@@ -7,6 +7,7 @@ tags: smells
 ---
 
 ## Roman Numerals - TDD Introduction
+Martin Fowler's Refactoring:   
 - First Set
   1. Extract Variable
   2. Inline Variable
@@ -16,6 +17,7 @@ tags: smells
   1. Replace Derived Variable with Query
 
 ## Gilded Rose - Refactoring Conditionals
+Martin Fowler's Refactoring:
 - First Set
     1. Extract Function
     2. Inline Function
@@ -24,8 +26,24 @@ tags: smells
     5. Encapsulate Variable
     6. Rename Variable
     7. Split Phase
-  
+Joshua Kerievsky's Refactoring To Patterns:
+- Long Method  
+  1. Composed Method (pg. 123)
+  2. Move Accumulation to Collecting Pattern (pg 313)
+  3. Replace Conditional Dispatcher with Command (pg 191)
+  4. Move Accumulation to Visitor (320)
+  5. Replace Conditional Logic with Strategy (129)
+- Conditional Complexity
+  1. Replace Conditional Logic with Strategy (129)
+  2. Move Embellishment to Decorator (144)
+  3. Replace State-Altering Conditionals with State (166)
+  4. Introduce Null Object (301)
+- Switch Statements
+  1. Replace Conditional Dispatcher with Command (pg 191)
+  2. Move Accumulation to Visitor (pg 320)
+
 ## Fantasy Battle - Encapsulation: Law of Demeter
+Martin Fowler's Refactoring:
 - Moving Features  
   1. Move Function  
   2. Move Field  
