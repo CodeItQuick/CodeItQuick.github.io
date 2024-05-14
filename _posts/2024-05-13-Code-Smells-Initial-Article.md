@@ -21,6 +21,16 @@ The Jushua Kerievsky's refactorings can be a conscious decision to refactor to I
 - Organizing Data
   1. Replace Derived Variable with Query
 
+### Joshua Kerievsky's Refactoring To Patterns:  
+- Conditional Complexity
+  1. Replace Conditional Logic with Strategy (129)
+  2. Move Embellishment to Decorator (144)
+  3. Replace State-Altering Conditionals with State (166)
+  4. Introduce Null Object (301)
+- Switch Statements
+  1. Replace Conditional Dispatcher with Command (pg 191)
+  2. Move Accumulation to Visitor (pg 320)
+
 ## Gilded Rose - Refactoring Conditionals  
 
 ### Martin Fowler's Refactoring:
