@@ -6,6 +6,8 @@ image: zombie_in_a_graveyard_3_instasize.jpg
 tags: smells
 ---
 
+# Refactoring to Patterns  
+
 The Martin Fowler's refactorings will have to be so ingrained they are automatic in my head.  
 The Jushua Kerievsky's refactorings can be a conscious decision to refactor to I think.  
 
