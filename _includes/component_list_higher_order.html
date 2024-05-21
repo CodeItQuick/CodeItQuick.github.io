@@ -1,35 +1,35 @@
 
-<div class="card lg:card-side bg-base-200 h-52 lg:h-80 shadow-xl w-72 lg:w-[32rem] mx-auto" >
+<div class="card lg:card-side bg-base-200 shadow-xl lg:w-[32rem] mx-auto" >
     <figure>
-        <img src="./assets/images/{{ include.image }}" class="hidden lg:flex aspect-cover object-cover w-full h-52 lg:h-80 sm:h-52" />
+        <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover w-full h-36 lg:h-80 sm:h-52" />
     </figure>
-    <div class="card-body p-3 lg:p-5 text-neutral-content lg:w-9/12 flex flex-col justify-between min-h-52">
+    <div class="card-body p-3 lg:p-5 text-neutral-content lg:w-9/12 flex flex-col lg:justify-between h-36">
         <h2 class="card-title lg:text-4xl font-[display]">{{ include.title }}{{ include.name }}</h2>
         <div class="hidden lg:flex">
             {% if include.tag_size > 0 %}
                 {% for content in include.tags %}
-                <span class="badge badge-lg leading-3 badge-neutral-content badge-outline text-neutral-content font-[body] mr-2">
-                                    {{ content }}
-                                </span>
+                    <span class="badge badge-lg leading-3 badge-neutral-content badge-outline text-neutral-content font-[body] mr-2">
+                        {{ content }}
+                    </span>
                 {% endfor %}
             {% endif %}
 
             {% if include.progress == 'complete' %}
-            <div class="badge badge-lg leading-3 badge-primary text-neutral-content mr-2">Launched</div>
+                <div class="badge badge-lg leading-3 badge-primary text-neutral-content mr-2">Launched</div>
             {% elsif include.progress == 'in-progress' %}
-            <div class="badge badge-lg leading-3 badge-neutral text-neutral-content mr-2">Pre Launch</div>
+                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content mr-2">Pre Launch</div>
             {% endif %}
             {% if include.status == 'active' %}
-            <div class="badge badge-lg leading-3 badge-primary text-neutral-content mr-2">Active</div>
+                <div class="badge badge-lg leading-3 badge-primary text-neutral-content mr-2">Active</div>
             {% elsif include.status == 'inactive' %}
-            <div class="badge badge-lg leading-3 badge-neutral text-neutral-content mr-2">Not Active</div>
+                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content mr-2">Not Active</div>
             {% endif %}
             {% if include.project_type == 'mvp' %}
-            <div class="badge badge-lg leading-3 badge-primary text-neutral-content">MVP</div>
+                <div class="badge badge-lg leading-3 badge-primary text-neutral-content">MVP</div>
             {% elsif include.project_type == 'prototype' %}
-            <div class="badge badge-lg leading-3 badge-neutral text-neutral-content">Prototype</div>
+                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content">Prototype</div>
             {% elsif include.project_type == 'kata' %}
-            <div class="badge badge-lg leading-3 badge-neutral text-neutral-content">Kata</div>
+                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content">Kata</div>
             {% endif %}
         </div>
         <div class="card-actions flex w-full flex-col justify-between">
@@ -37,7 +37,7 @@
                 {{ include.description }}
             </p>
             {% if include.learningone %}
-            <div class="grow w-fit list-image-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNCAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMzhiZGY4Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy42ODUuMTUzYS43NTIuNzUyIDAgMCAxIC4xNDMgMS4wNTJsLTggMTAuNWEuNzUuNzUgMCAwIDEtMS4xMjcuMDc1bC00LjUtNC41YS43NS43NSAwIDAgMSAxLjA2LTEuMDZsMy44OTQgMy44OTMgNy40OC05LjgxN2EuNzUuNzUgMCAwIDEgMS4wNS0uMTQzWiIgLz48L3N2Zz4=')]">
+            <div class="grow w-fit">
                 <div class="font-[body]">💀{{ include.learningone }}</div>
                 <div class="font-[body]">💀{{ include.learningtwo }}</div>
                 <div class="font-[body]">💀{{ include.learningthree }}</div>

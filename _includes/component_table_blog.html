@@ -1,18 +1,17 @@
-<div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: 17 }" class="bg-neutral">
-    <div class="w-full py-8 mx-auto md:p-8 md:flex">
-        <div class="hidden md:w-1/3 lg:flex lg:flex-col items-center">
+<div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: 17 }" class="bg-neutral w-full">
+    <div class="w-3/4 py-8 mx-auto md:p-8 md:flex">
+        <div class="hidden md:w-96 lg:flex lg:flex-col items-center">
             <div class="flex flex-col">
                 <ul>
-                {% for post in site.posts %}
-                {% assign currentdate = post.date | date: "%B %Y" %}
-                    {% if currentdate != date %}
-                        <h1 class="text-2xl font-medium underline pt-3" id="y{{post.date | date: "%B %Y"}}">{{ currentdate }}</h1>
-                        {% assign date = currentdate %}
-                    {% endif %}
-                    <li class="flex"><div class="-rotate-45">🦴</div><a href="{{ post.url }}" class="font-light hover:text-primary"> {{ post.title }}</a></li>
-                {% endfor %}
+                    {% for post in site.posts %}
+                    {% assign currentdate = post.date | date: "%B %Y" %}
+                        {% if currentdate != date %}
+                            <h1 class="text-2xl font-medium underline pt-3" id="y{{post.date | date: "%B %Y"}}">{{ currentdate }}</h1>
+                            {% assign date = currentdate %}
+                        {% endif %}
+                        <li class="flex"><div class="-rotate-45">🦴</div><a href="{{ post.url }}" class="font-light hover:text-primary"> {{ post.title }}</a></li>
+                    {% endfor %}
                 </ul>
-
                 <div class="hidden md:flex md:flex-col items-center pt-3">
                     <div class="w-full md:grid md:gap-3 md:grid-cols-2" >
                         {% for tag in site.tags %}
@@ -26,12 +25,12 @@
                 </div>
             </div>
         </div>
-        <div x-data="{ index: 0 }" class="w-full md:w-2/3 grid gap-6 md:gap-16 grid-cols-1">
+        <div x-data="{ index: 0 }" class="w-full md:w-2/3 grid gap-6 md:gap-16 grid-cols-1 mx-auto">
              {% for tag in site.tags %}
                      {% assign currentIndex = 0 %}
                      {% for row in tag[1] %}
                                 <div x-show="'{{ tag[0] }}'.includes(tag_filter)"
-                                     class="mx-auto md:mx-1"
+                                     class="mx-auto md:mx-1 w-full"
                                      :class="{ 'hidden' : +'{{ currentIndex }}' < (pageNumber) * 6 || +'{{ currentIndex }}' > (pageNumber + 1) * 6 - 1 }"
                                 >
                                    {% include component_list_higher_order.html
@@ -48,8 +47,8 @@
         </div>
     </div>
     <div
-    class="w-full md:w-1/2 mx-auto py-6 flex justify-between items-center"
-    x-show="{{ site.posts.size }}"
+        class="w-full md:w-1/2 mx-auto py-6 flex justify-between items-center"
+        x-show="{{ site.posts.size }}"
     >
     <!--First Button-->
     <button
