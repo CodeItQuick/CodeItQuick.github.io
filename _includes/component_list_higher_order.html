@@ -1,10 +1,10 @@
 
-<div class="card lg:card-side bg-base-200 shadow-xl lg:w-[32rem] mx-auto" >
-    <figure>
+<div class="card sm:card-side bg-base-200 shadow-xl min-w-36 max-w-[60rem] w-full" >
+    <figure class="min-h-20 sm:h-full">
         <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover w-full h-36 lg:h-80 sm:h-52" />
     </figure>
-    <div class="card-body p-3 lg:p-5 text-neutral-content lg:w-9/12 flex flex-col lg:justify-between h-36">
-        <h2 class="card-title lg:text-4xl font-[display]">{{ include.title }}{{ include.name }}</h2>
+    <div class="card-body min-h-32 p-3 lg:p-5 text-neutral-content sm:w-3/4 grow">
+        <h2 class="card-title lg:text-4xl line-clamp-2 font-[display]">{{ include.title }}{{ include.name }}</h2>
         <div class="hidden lg:flex">
             {% if include.tag_size > 0 %}
                 {% for content in include.tags %}
@@ -13,7 +13,6 @@
                     </span>
                 {% endfor %}
             {% endif %}
-
             {% if include.progress == 'complete' %}
                 <div class="badge badge-lg leading-3 badge-primary text-neutral-content mr-2">Launched</div>
             {% elsif include.progress == 'in-progress' %}
@@ -32,16 +31,17 @@
                 <div class="badge badge-lg leading-3 badge-neutral text-neutral-content">Kata</div>
             {% endif %}
         </div>
-        <div class="card-actions flex w-full flex-col justify-between">
-            <p class="hidden sm:flex grow max-w-52">
+        <div class="card-actions flex w-full flex-col justify-end lg:justify-between grow">
+
+            <div class="hidden lg:block w-fit">
                 {{ include.description }}
-            </p>
-            {% if include.learningone %}
-            <div class="grow w-fit">
-                <div class="font-[body]">💀{{ include.learningone }}</div>
-                <div class="font-[body]">💀{{ include.learningtwo }}</div>
-                <div class="font-[body]">💀{{ include.learningthree }}</div>
+                {% if include.learningone %}
+                    <div class="font-[body]">💀{{ include.learningone }}</div>
+                    <div class="font-[body]">💀{{ include.learningtwo }}</div>
+                    <div class="font-[body]">💀{{ include.learningthree }}</div>
+                {% endif %}
             </div>
+            {% if include.github %}
             <div class="w-full flex justify-end">
                 <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary text-neutral-content">Github</button></a>
             </div>
