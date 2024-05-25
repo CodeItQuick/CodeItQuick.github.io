@@ -24,28 +24,9 @@
 
     {% include hero.html title=site.title description=site.description image="graveyard_5_generated.jpg" %}
 
-    <div x-data="{ pageNumber: 0 }" class="bg-neutral py-4">
-      <div class="w-full mx-auto grid gap-6 grid-cols-1 md:p-8 md:gap-16 md:grid-cols-2 2xl:w-max">
-        {% for row in site.projects %}
-          {% if row.project_type == 'mvp' %}
-              <div>
-                {% include component_list_higher_order.html
-                name=row.name
-                image=row.image
-                project_type=row.project_type
-                learningone=row.learningone
-                learningtwo=row.learningtwo
-                learningthree=row.learningthree
-                github=row.github
-                tag_size=0
-                progress=row.progress
-                status=row.status
-                %}
-              </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
+    {% assign filtered_posts = site.projects | where_exp: "item", "item.project_type == 'mvp'" %}
+
+    {% include component_table.html table=filtered_posts %}
     
   </body>
   <footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content">
