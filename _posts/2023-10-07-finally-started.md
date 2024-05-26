@@ -12,7 +12,7 @@ tags: errors typescript practical all
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
 
 
-```ts
+```typescript
 const someReactQueryOrJavascriptWhatever = () => {
    let results;
    setSpinner(true);
@@ -35,7 +35,7 @@ immediately. My intention was to do a fetch, and then do any cleanup necessary (
 
 After contacting my local javascript finally wizards (Juan in trashdevs discord, and Mark in my local dev community) I discovered the way. Which is succinctly put:
 
-### Faction One (Try-Catch-Finally)
+### Method One (Try-Catch-Finally)
 
 ```ts
 const someReactQueryOrJavascriptWhatever = async () => {
@@ -59,7 +59,7 @@ const someReactQueryOrJavascriptWhatever = async () => {
 The code can also be re-written (yet again) to use a then/catch promise syntax. Something like (and this is me so forgive me for my mistakes):
 
 
-### Faction Two (Then/Catch)
+### Method Two (Then/Catch)
 
 ```ts
 const someReactQueryOrJavascriptWhatever = () => {
@@ -112,7 +112,7 @@ const debounce = (func, delay) => {
 }
 ```
 
-## Faction THREE: No try catch
+## Method THREE: No try catch
 
 
 Instead of relying on throwing and catch errors in place, use type safety to handle success vs error cases.

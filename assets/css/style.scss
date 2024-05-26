@@ -1,7 +1,9 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "base";
+@import "output.css";
+@import "rouge.css";
 .markdown {
     h1 {
         font-size: 1.875rem;
@@ -70,5 +72,3 @@
         }
     }
 }
-
-@import "output.css";
