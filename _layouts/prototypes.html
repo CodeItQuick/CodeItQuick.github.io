@@ -23,7 +23,7 @@
 
     {% include component_navbar.html %}
 
-    {% assign filtered_posts = site.projects | where_exp: "item", "item.project_type == 'prototype' or item.project_type == 'kata'" %}
+    {% assign filtered_posts=site.projects | where_exp:"item", "item.project_type == 'prototype' or item.project_type == 'kata'" %}
 
     {% include component_table.html table=filtered_posts %}
 
