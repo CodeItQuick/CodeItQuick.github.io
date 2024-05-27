@@ -22,26 +22,12 @@
 <body class="bg-neutral text-neutral-content min-w-fit antialiased font-[body]" x-bind:data-theme="getMode()">
 
     {% include component_navbar.html %}
-
-    <div class="w-full md:flex md:flex-wrap min-w-fit bg-neutral text-neutral-content">
-        <div class="hidden md:w-1/3 md:flex md:flex-col items-center">
-            <div class="flex flex-col">
-                <h1 class="text-3xl">Posts</h1>
-                {% for post in site.posts %}
-                {% assign currentdate = post.date | date: "%B %Y" %}
-                {% if currentdate != date %}
-                {% unless forloop.first %}</ul>{% endunless %}
-                <h1 class="text-xl" id="y{{post.date | date: "%B %Y"}}">{{ currentdate }}</h1>
-                <ul>
-                    {% assign date = currentdate %}
-                    {% endif %}
-                    <li><a href="{{ post.url }}" class="hover:text-primary">{{ post.title }}</a></li>
-                    {% if forloop.last %}</ul>{% endif %}
-                {% endfor %}
+    <div class="bg-neutral w-full">
+        <div class="w-3/4 py-8 mx-auto md:p-8 md:flex">
+            {% include component_table_blog_post.html %}
+            <div class="w-full md:w-2/3 markdown text-neutral-content">
+                {{ content }}
             </div>
-        </div>
-        <div class="w-full md:w-2/3 markdown text-neutral-content">
-            {{ content }}
         </div>
     </div>
 
