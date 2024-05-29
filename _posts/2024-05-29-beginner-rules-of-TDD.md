@@ -26,7 +26,7 @@ Here are the guidelines I can brainstorm up quickly:
 5. Test coverage must be adequate! Above 80% is a reasonable goal  
 6. Refactor your tests just like you refactor your code  
 7. More tests make refactoring easier not more difficult  
-8. Run the tests frequently; every 5 minutes is probably too slow.  
+8. Run the fast tests frequently; every 5 minutes is probably too slow.  
 9. The vast majority of production code is not clean enough to test drive, until you get really skilled  
 10. No control statements in your tests  
 11. Avoid mocking frameworks. 
