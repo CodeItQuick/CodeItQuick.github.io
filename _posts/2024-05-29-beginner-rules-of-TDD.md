@@ -33,7 +33,7 @@ Here are the rules I can brainstorm up quickly:
 12. Stick to handwritten fakes, stubs, spies, etc.  
 13. Your test suite should mirror the test pyramid - only a few e2e, some integration, many unit tests  
 14. Pull out business logic from application logic, it makes it easier to test  
-15. On every change run all the tests in your suite. Check for those nasty side effects!  
+15. On every change run all the tests in your "fast" suite. Check for those nasty side effects!  
 16. UX is very difficult to test. Try to pull out the business logic. Try to keep it as declarative as you can. 
 17. There are many flavours to legacy code. Some of it will be easy to add tests (and is testable), others not so much.  
 18. Static methods are hard to test  
