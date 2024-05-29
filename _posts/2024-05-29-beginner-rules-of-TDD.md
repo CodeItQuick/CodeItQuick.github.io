@@ -16,6 +16,8 @@ you are a beginner.
 Also, what is beginner to you might not be beginner to me. Everyone has different skill levels at many things. We both
 don't know most things, and are both beginners at heart.  
 
+# The Rules
+
 Here are the rules I can brainstorm up quickly:  
 1. Only one assert per test  
 2. Follow ZOMBIES acronym when at the lowest layer of testing/directly against the class  
@@ -34,6 +36,8 @@ Here are the rules I can brainstorm up quickly:
 15. On every change run all the tests in your suite. Check for those nasty side effects!  
 16. UX is very difficult to test. Try to pull out the business logic. Try to keep it as declarative as you can. 
 17. There are many flavours to legacy code. Some of it will be easy to add tests (and is testable), others not so much.  
+
+# The Definitions 
 
 A few simple definitions as well:
 TDD: You write the tests before the production code. You write code in terms of the customer rather than the consumer of the information.  
