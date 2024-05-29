@@ -2,7 +2,7 @@
 layout: post
 name: Beginner Rules of Testing
 description: Gathering my thoughts on rules to give beginners
-image: zombie_in_a_graveyard_1_instasize.jpg
+image: zombie_in_a_graveyard_3_instasize.jpg
 tags: theory all
 ---
 
