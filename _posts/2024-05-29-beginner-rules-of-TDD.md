@@ -1,24 +1,24 @@
 ---
 layout: post
-name: Beginner Rules of Testing
-description: Gathering my thoughts on rules to give beginners
+name: Beginner Guidelines of Testing
+description: Gathering my thoughts on guidelines to give beginners
 image: zombie_in_a_graveyard_3_instasize.jpg
 tags: theory all
 ---
 
-# Caveat of the Rules Of Testing
+# Caveat of the Guidelines Of Testing
 
-I know, I know, you're certain there are actually no rules! This is true, there actually are no rules to testing, and
-a matter of fact most things in life. However, to the beginner they want a simple perspective rule to follow to help them
+I know, I know, you're certain there are actually no guidelines! This is true, there actually are no guidelines to testing, and
+a matter of fact most things in life. However, to the beginner they want a simple perspective guideline to follow to help them
 avoid the typical mistakes of a beginner. If you aren't sure if you are a beginner, you probably aren't. In all other cases
 you are a beginner.  
 
 Also, what is beginner to you might not be beginner to me. Everyone has different skill levels at many things. We both
 don't know most things, and are both beginners at heart.  
 
-# The Rules
+# The Guidelines
 
-Here are the rules I can brainstorm up quickly:  
+Here are the guidelines I can brainstorm up quickly:  
 1. Only one assert per test  
 2. Follow ZOMBIES acronym when at the lowest layer of testing/directly against the class  
 3. If your tests are complicated, your production code is complicated  
