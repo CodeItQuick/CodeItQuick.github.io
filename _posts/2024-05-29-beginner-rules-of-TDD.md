@@ -39,7 +39,7 @@ Here are the rules I can brainstorm up quickly:
 
 # The Definitions 
 
-A few simple definitions as well:
+A few simple definitions as well:  
 TDD: You write the tests before the production code. You write code in terms of the customer rather than the consumer of the information.  
 Legacy Code: Code that has no tests  
 Legacy Systems: Code that is old and needs some more attention  
