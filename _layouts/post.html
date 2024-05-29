@@ -23,9 +23,8 @@
 
     {% include component_navbar.html %}
     <div class="bg-neutral w-full">
-        <div class="w-3/4 py-8 mx-auto md:p-8 md:flex">
-            {% include component_table_blog_post.html %}
-            <div class="w-full md:w-2/3 markdown text-neutral-content">
+        <div class="md:max-w-4xl py-8 mx-auto">
+            <div class="w-full markdown text-neutral-content min-w-fit break-all">
                 {{ content }}
             </div>
         </div>

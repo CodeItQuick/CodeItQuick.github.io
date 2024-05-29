@@ -3,7 +3,7 @@ layout: post
 name: Story Splitting
 description: A thought experiment turns into thin vertical slices
 image: green_purple_zombie_resized.jpg
-tags: agile theory all
+tags: agile all
 ---
 
 # Story Splitting

@@ -1,10 +1,10 @@
 
-<div class="card sm:card-side bg-base-200 shadow-xl min-w-36 max-w-[60rem] w-full" >
-    <figure class="min-h-20 sm:h-full">
-        <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover w-full h-36 lg:h-80 sm:h-52" />
+<div class="card card-side bg-base-200 shadow-xl w-80 sm:w-[32rem] lg:w-full mx-auto" >
+    <figure class="min-h-20 h-52 lg:h-80 ">
+        <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover w-full h-full" />
     </figure>
-    <div class="card-body min-h-32 p-3 lg:p-5 text-neutral-content sm:w-3/4 grow">
-        <h2 class="card-title lg:text-4xl line-clamp-2 font-[display]">{{ include.title }}{{ include.name }}</h2>
+    <div class="card-body min-h-32 p-3 lg:p-5 text-neutral-content w-2/3">
+        <h2 class="card-title lg:text-4xl line-clamp-4 font-[display]">{{ include.title }}{{ include.name }}</h2>
         <div class="hidden lg:flex">
             {% if include.tag_size > 0 %}
                 {% for content in include.tags %}

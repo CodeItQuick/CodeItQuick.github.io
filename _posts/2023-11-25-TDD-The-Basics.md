@@ -3,7 +3,7 @@ layout: post
 name: TDD The Basics
 description: Learn the foundations of TDD and testing
 image: video_game_zombies_2_instasize.jpg
-tags: TDD theory all
+tags: theory all
 ---
 
 ## Red Green Refactor

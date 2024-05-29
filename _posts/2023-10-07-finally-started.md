@@ -3,7 +3,7 @@ layout: post
 name: Finally starting a learning journal
 description: Learn about try-catch-finally and returning error types in depth.
 image: video_game_zombies_2_instasize.jpg
-tags: errors typescript practical all
+tags: code all
 ---
 
 # Finally starting a learning journal

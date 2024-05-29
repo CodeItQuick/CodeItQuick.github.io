@@ -1,25 +1,9 @@
-<div class="hidden md:w-96 lg:flex lg:flex-col items-center">
-    <div class="flex flex-col">
-        <ul>
-            {% for post in site.posts %}
-            {% assign currentdate = post.date | date: "%B %Y" %}
-            {% if currentdate != date %}
-            <h1 class="text-2xl font-medium underline pt-3" id="y{{post.date | date: "%B %Y"}}">{{ currentdate }}</h1>
-            {% assign date = currentdate %}
-            {% endif %}
-            <li class="flex"><div class="-rotate-45">🦴</div><a href="{{ post.url }}" class="font-light hover:text-primary"> {{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-        <div class="hidden md:flex md:flex-col items-center pt-3">
-            <div class="w-full md:grid md:gap-3 md:grid-cols-2" >
-                {% for tag in site.tags %}
-                <button class="btn font-normal " :class="tag_filter === '{{ tag[0] }}' ?
-                    'btn btn-primary' : 'btn-base-200' "
-                        x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">
-                    {{ tag[0] }}
-                </button>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
+<div class="mx-auto hidden sm:flex m-4 " >
+    {% for tag in site.tags %}
+    <button class="btn font-normal " :class="tag_filter === '{{ tag[0] }}' ?
+        'btn btn-primary' : 'btn-base-200' "
+            x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">
+        {{ tag[0] }}
+    </button>
+    {% endfor %}
 </div>

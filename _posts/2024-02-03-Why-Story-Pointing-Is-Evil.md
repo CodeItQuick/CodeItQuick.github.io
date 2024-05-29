@@ -3,7 +3,7 @@ layout: post
 name: Why Story Pointing Is Evil
 description: Why this is the fastest route to toxic work culture
 image: zombie_download_1.png
-tags: theory agile all
+tags: agile all
 ---
 
 # Why Story Pointing Is Evil
