@@ -1,8 +1,8 @@
 <div x-data="{ pageNumber: 0, tag_filter: 'main' }" class="bg-neutral py-4">
-        <div class="w-full mx-auto grid gap-6 grid-cols-1 p-8 gap-16 grid-cols-2 2xl:w-max">
+        <div class="w-full mx-auto grid gap-6 grid-cols-1 p-8 lg:gap-16 lg:grid-cols-2 2xl:w-max">
             {% assign currentIndex = 0 %}
             {% for row in include.table %}
-            <div >
+            <div>
                 {% include component_list_higher_order.html
                 main=true
                 name=row.name
