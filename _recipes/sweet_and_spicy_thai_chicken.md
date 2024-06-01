@@ -1,7 +1,7 @@
 ---
 name: Sweet and Spicy Thai Chicken
 description: Cheaper, and more servings than ordering out!
-image: Firefly_Zombie_eating_87066_instasize.jpg
+image: zombie_sweet_and_spicy_thai.webp
 layout: recipe
 ---
 

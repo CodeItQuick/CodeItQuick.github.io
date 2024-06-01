@@ -1,7 +1,7 @@
 ---
 name: Parrot Refactoring
 description: Kata to learn about Polymorphism.
-image: video_game_zombies_2_instasize.jpg
+image: parrot_refactoring_kata.webp
 tags: OOP patterns
 url: https://github.com/swkBerlin/kata-bootstraps
 layout: dojo

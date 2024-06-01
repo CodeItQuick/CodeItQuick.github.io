@@ -1,7 +1,7 @@
 ---
 name: Necklace Refactoring Kata
 description: Learn more about OOP - Chain of Responsibility Pattern.
-image: video_game_zombies_2_instasize.jpg
+image: necklace_refactoring_kata.webp
 tags: OOP patterns
 url: https://github.com/swkBerlin/kata-bootstraps
 layout: dojo

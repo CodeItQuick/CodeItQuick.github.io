@@ -1,7 +1,7 @@
 ---
 name: Thai Red Curry and Butter Chicken
 description: Made from packets - simple and easy
-image: video_game_zombies_2_instasize.jpg
+image: zombie_thai_red_curry_chicken.webp
 layout: recipe
 ---
 # Sherwood Thai Red Curry

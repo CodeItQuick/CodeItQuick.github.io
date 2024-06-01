@@ -1,7 +1,7 @@
 ---
 name: Fantasy Battle
 description: Learn A Tenant of OOP - The Law of Demeter
-image: video_game_zombies_2_instasize.jpg
+image: fantasy_battle_zombie.webp
 tags: beginner OOP
 url: https://github.com/swkBerlin/kata-bootstraps
 layout: dojo

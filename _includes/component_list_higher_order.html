@@ -4,7 +4,7 @@
         <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover w-full h-full" />
     </figure>
     <div class="card-body min-h-32 p-3 lg:p-5 text-neutral-content w-2/3">
-        <h2 class="card-title lg:text-4xl line-clamp-4 font-[display]">{{ include.title }}{{ include.name }}</h2>
+        <h2 class="card-title lg:text-2xl line-clamp-2 font-[display]">{{ include.title }}{{ include.name }}</h2>
         <div class="hidden lg:flex">
             {% if include.tag_size > 0 %}
                 {% for content in include.tags %}

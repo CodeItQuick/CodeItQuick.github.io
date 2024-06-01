@@ -1,7 +1,7 @@
 ---
 name: Bean Salad
 description: Ridiculously Easy!
-image: Firefly_Zombie_eating_61263_instasize.jpg
+image: zombie_bean_salad.webp
 layout: recipe
 ---
 
