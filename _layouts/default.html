@@ -22,7 +22,7 @@
 
     {% include component_navbar.html %}
 
-    {% include hero.html title=site.title description=site.description image="graveyard_5_generated.jpg" %}
+    {% include hero.html title=site.title description=site.description image="hero_project_graveyard.webp" %}
 
     {% assign filtered_posts=site.projects | where_exp:"item", "item.project_type == 'mvp'" %}
 
