@@ -1,6 +1,6 @@
 <div class="mx-auto hidden sm:flex m-4 " >
     {% for tag in site.tags %}
-    <button class="btn font-normal " :class="tag_filter === '{{ tag[0] }}' ?
+    <button class="btn font-[nav] " :class="tag_filter === '{{ tag[0] }}' ?
         'btn btn-primary' : 'btn-base-200' "
             x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">
         {{ tag[0] }}

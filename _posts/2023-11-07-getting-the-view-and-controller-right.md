@@ -2,7 +2,7 @@
 layout: post
 name: Adapter Layer Explained
 description: Learn about my current understanding of the adapter layer
-image: zombie_in_graveyard_one_instasize.jpg
+image: adaptable_zombie.webp
 tags: theory all
 ---
 
