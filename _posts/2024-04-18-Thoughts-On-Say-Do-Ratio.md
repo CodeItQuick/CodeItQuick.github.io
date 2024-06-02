@@ -2,7 +2,7 @@
 layout: post
 name: Thoughts On Say Do Ratio
 description: Organizing my thoughts on the Say Do Ratio
-image: video_game_zombies_2_instasize.jpg
+image: orderly_zombie_graveyard.webp
 tags: agile all
 ---
 

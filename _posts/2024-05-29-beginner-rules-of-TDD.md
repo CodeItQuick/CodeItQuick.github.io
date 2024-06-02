@@ -2,7 +2,7 @@
 layout: post
 name: Beginner Guidelines of Testing
 description: Gathering my thoughts on guidelines to give beginners
-image: zombie_in_a_graveyard_3_instasize.jpg
+image: beginner_guidelines_zombie_graveyard.webp
 tags: theory all
 ---
 

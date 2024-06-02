@@ -2,7 +2,7 @@
 layout: post
 name: Refactoring, Code Smells, and Kata's Initial Thoughts
 description: Gathering my thinking around code smells
-image: zombie_in_a_graveyard_3_instasize.jpg
+image: smelly_zombie_graveyard.webp
 tags: theory all
 ---
 
