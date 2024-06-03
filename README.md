@@ -1,24 +1,3 @@
-# Strategy
-
-# Who, Why, How, What
-
-# Become a stronger developer
-## 1 Learn C Programming Language for Embedded Development
-### 1. Learn by Doing
-#### 1a. Project: Write C Sql Lite Programming Language
-#### 1b. Project: Write C Compiler
-### 2. Learn from Others
-#### 2a. Mentorship: Doug Guidance
-### 3. Reading Resources
-#### 3a. Books: C Programming Language, ?!
-### 4. Online Learning Resources
-#### 4a. Online Resources: Pluralsight, Udemy
-
-## 2. Learn frontend design
-... fill in
-## 3. Learn TDD and Hexagonal Architecture
-... fill in
-
 # Project Graveyard
 
 A historical take on the kata's and side projects I have worked on since 2021. Built using GithubPages and Ruby's Jekyll. 
