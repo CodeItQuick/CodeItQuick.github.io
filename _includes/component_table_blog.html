@@ -1,7 +1,7 @@
 <div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: 17 }" class="bg-neutral w-full">
     <div class="w-10/12 py-8 mx-auto md:p-8 flex flex-col justify-center">
         {% include component_table_blog_post.html %}
-        <div x-data="{ index: 0 }" class="grid gap-6 lg:gap-16 grid-cols-1 xl:grid-cols-2 w-fit mx-auto">
+        <div x-data="{ index: 0 }" class="grid gap-6 lg:gap-16 grid-cols-1 w-max-xl mx-auto">
              {% for tag in site.tags %}
                      {% assign currentIndex = 0 %}
                      {% for row in tag[1] %}

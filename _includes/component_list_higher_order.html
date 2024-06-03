@@ -1,10 +1,10 @@
 
-<div class="card card-side bg-base-200 shadow-xl w-80 sm:w-[32rem] 2xl:w-[40rem] h-52 lg:h-80 mx-auto" >
+<div class="card card-side bg-base-200 shadow-xl max-w-4xl h-52 lg:h-80 mx-auto" >
     <figure class="min-h-20">
         <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover w-full h-full" />
     </figure>
     <div class="card-body min-h-32 p-3 lg:p-5 text-neutral-content w-2/3">
-        <h2 class="card-title lg:text-2xl line-clamp-2 font-[display]">{{ include.title }}{{ include.name }}</h2>
+        <h2 class="card-title lg:text-2xl line-clamp-4 font-[display]">{{ include.title }}{{ include.name }}</h2>
         <div class="hidden lg:flex">
             {% if include.tag_size > 0 %}
                 {% for content in include.tags %}
@@ -35,7 +35,7 @@
         </div>
         <div class="card-actions flex w-full flex-col justify-end lg:justify-between grow">
 
-            <div class="hidden lg:block w-fit">
+            <div class="hidden lg:block ">
                 {{ include.description }}
                 {% if include.learningone %}
                     <div class="font-[body]">💀{{ include.learningone }}</div>
@@ -45,11 +45,11 @@
             </div>
             {% if include.github %}
             <div class="w-full flex justify-end">
-                <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary text-neutral-content font-[nav]">Github</button></a>
+                <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary text-neutral-content font-[body]">Github</button></a>
             </div>
             {% else %}
             <div class="w-full flex justify-end">
-                <a href="{{ include.url }}" ><button class="btn btn-primary text-neutral-content font-[nav]">Read</button></a>
+                <a href="{{ include.url }}" ><button class="btn btn-primary text-neutral-content font-[body]">Read</button></a>
             </div>
             {% endif %}
         </div>

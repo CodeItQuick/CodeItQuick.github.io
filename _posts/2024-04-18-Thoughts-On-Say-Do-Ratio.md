@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Thoughts On Say Do Ratio
-description: Organizing my thoughts on the Say Do Ratio
+description: The say/do ratio helps prevent spillover of tasks in a sprint by encouraging the splitting of work into smaller, incremental units. User stories are scoped to the smallest meaningful increment for the user, while technical tasks are smaller chunks from user stories meaningful to developers. 
 image: orderly_zombie_graveyard.webp
 tags: agile all
 ---

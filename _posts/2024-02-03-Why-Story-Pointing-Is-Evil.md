@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Why Story Pointing Is Evil
-description: Why this is the fastest route to toxic work culture
+description: The article argues that story pointing is inherently flawed and contributes to a toxic work environment. Estimating tasks accurately is challenging, and developers may "sandbag" estimates to appear more productive, leading to distrust and conflict with management.
 image: evil_devil_zombie_graveyard.webp
 tags: agile all
 ---
