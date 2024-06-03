@@ -2,7 +2,7 @@
 layout: post
 name: Navigation Shortcuts in your jetbrains
 description: Learn all the navigation shortcuts in jetbrains
-image: zombie_in_a_graveyard_3_instasize.jpg
+image: navigation_shortcuts_zombie.webp
 tags: editor all
 ---
 

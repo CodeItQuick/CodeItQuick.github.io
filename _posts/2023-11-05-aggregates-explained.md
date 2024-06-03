@@ -2,7 +2,7 @@
 layout: post
 name: Aggregates Explained
 description: Learn about my current understanding of aggregates
-image: zombie_download_5.png
+image: aggregates_explained_zombies.webp
 tags: theory all
 ---
 

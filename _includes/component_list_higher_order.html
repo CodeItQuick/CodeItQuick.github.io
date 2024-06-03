@@ -8,9 +8,11 @@
         <div class="hidden lg:flex">
             {% if include.tag_size > 0 %}
                 {% for content in include.tags %}
+                    {% if content != 'all' %}
                     <span class="badge badge-lg leading-3 badge-neutral-content badge-outline text-neutral-content font-[body] mr-2">
                         {{ content }}
                     </span>
+                    {% endif %}
                 {% endfor %}
             {% endif %}
             {% if include.progress == 'complete' %}

@@ -2,7 +2,7 @@
 layout: post
 name: Finally starting a learning journal
 description: Learn about try-catch-finally and returning error types in depth.
-image: video_game_zombies_2_instasize.jpg
+image: learning_journal_zombie.webp
 tags: code all
 ---
 
