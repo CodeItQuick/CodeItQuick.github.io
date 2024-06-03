@@ -1,18 +1,18 @@
-<nav x-init="show = screen.width < 768" x-show="show" class="bg-base-300 text-neutral-content font-[News Cycle]">
-        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
-                <a href="/"><h2 class="text-3xl font-bold w-full rounded w-full">Projects</h2></a>
+<nav x-init="show = screen.width < 768" x-show="show" class="bg-base-300 text-neutral-content font-[nav] flex justify-center">
+        <div class="mx-1 px-3" >
+                <a href="/"><span class="material-symbols-outlined" aria-label="projects">construction</span></a>
         </div>
-        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
-                <a href="/prototypes.html"><h2 class="text-3xl font-bold w-full rounded w-full">Prototypes</h2></a>
+        <div class="mx-1 px-3" >
+                <a href="/prototypes.html"><span class="material-symbols-outlined" aria-label="prototype">engineering</span></a>
         </div>
-        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
-                <a href="/blog_list.html"><h2 class="text-3xl font-bold w-full rounded w-full">Blog</h2></a>
+        <div class="mx-1 px-3" >
+                <a href="/blog_list.html"><span class="material-symbols-outlined" aria-label="blog">book_2</span></a>
         </div>
-        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
-                <a href="/coding_kata_list.html"><h2 class="text-3xl font-bold w-full rounded w-full">Katas</h2></a>
+        <div class="mx-1 px-3" >
+                <a href="/coding_kata_list.html"><span class="material-symbols-outlined">sports_martial_arts</span></a>
         </div>
-        <div style="height: 3rem; text-align: center; display: flex; justify-content: center; align-items: center;" >
-                <a href="/recipe_list.html"><h2 class="text-3xl font-bold w-full rounded w-full">Recipes</h2></a>
+        <div class="mx-1 px-3" >
+                <a href="/recipe_list.html"><span class="material-symbols-outlined">cooking</span></a>
         </div>
 </nav>
 <nav x-init="show = screen.width >= 768" x-show="show" x-data="{
@@ -40,7 +40,7 @@
         }
     }"
     class="relative z-10 w-auto bg-base-300 text-neutral-content font-[nav]">
-    <div class="relative">
+    <div class="relative text-2xl">
         <div class="flex justify-between">
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md ">
                 <li>

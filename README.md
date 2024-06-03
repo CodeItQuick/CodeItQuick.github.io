@@ -50,3 +50,8 @@ To run theme-creator:
 cd theme-creator
 npx tailwindcss -i ./src/input.css -o ./src/output.css
 ```
+
+to run jekyll:
+```shell
+jekyll serve --incremental
+```
