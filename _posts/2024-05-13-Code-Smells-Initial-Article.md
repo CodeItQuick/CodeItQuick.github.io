@@ -12,6 +12,16 @@ The Martin Fowler's refactorings will have to be so ingrained they are automatic
 The Jushua Kerievsky's refactorings can be a conscious decision to refactor to I think.  
 
 ## Roman Numerals - TDD Introduction
+TODO (Make Interactive Workshop):
+1. Create a Presentation/Slide Show that explains the below
+2. Have a guideline or something that allows for easy implementation of below (Step-by-step instructions? Test cases pre developed? Reference Material?)
+3. Solve the problem using (1) and (2)
+### Code Smell Sheet:
+1. Switch Statement
+2. Long Method
+3. Large Class
+4. Conditional Complexity
+
 ### Martin Fowler's Refactoring:   
 - First Set
   1. Extract Variable
