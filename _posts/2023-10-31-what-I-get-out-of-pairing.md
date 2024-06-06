@@ -1,7 +1,7 @@
 ---
 layout: post
 name: What I get out of pairing?
-description: Why pair? What learnings do I get?
+description: In my article on pair programming, I discussed how two developers work together, with one coding and the other reviewing. Benefits include improved code quality, knowledge sharing, and enhanced problem-solving skills. Key learnings are the importance of clear communication, constructive feedback, and diverse perspectives, while challenges include balancing collaboration and managing skill levels.
 image: what_pairing_zombies.webp
 tags: agile all
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Shortcutting your jetbrains
-description: Learn about how to use shortcuts in your jetbrains for improved productivity.
+description: In my blog article on JetBrains IDE shortcuts, I covered essential keyboard shortcuts designed to enhance productivity and efficiency while coding. I included navigation shortcuts for quickly moving between files and code elements, editing shortcuts for common tasks like refactoring and code formatting.
 image: shortcutting_editor_zombie.webp
 tags: editor all
 ---

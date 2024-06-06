@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Finally starting a learning journal
-description: Learn about try-catch-finally and returning error types in depth.
+description: In my blog article on try-catch-finally and error handling, I covered how these constructs manage exceptions in various languages like Java, C#, Python, and JavaScript. I explained the roles of try, catch, and finally, and emphasized best practices such as specific exception handling, avoiding empty catch blocks, and using finally for cleanup tasks.
 image: learning_journal_zombie.webp
 tags: code all
 ---

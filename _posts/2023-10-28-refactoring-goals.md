@@ -1,7 +1,8 @@
 ---
 layout: post
 name: Refactoring Goals
-description: Improving the codebase - safely
+description:
+In my blog article on good refactoring, I emphasized improving code structure without altering functionality, focusing on goals like readability, complexity reduction, and maintainability. I advised keeping changes small, using automated tests, and refactoring regularly, with clear objectives like simplifying logic, removing duplication, and optimizing performance.
 image: refactoring_zombie.webp
 tags: theory all
 ---

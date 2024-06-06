@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Aggregates Explained
-description: Learn about my current understanding of aggregates
+description: Aggregates manage database interactions by acting as views with an ID. Implemented as classes, they retrieve data through defined methods. The repository layer stores and retrieves these aggregates, while the service layer fetches aggregates, performs domain operations, and outputs results.
 image: aggregates_explained_zombies.webp
 tags: theory all
 ---

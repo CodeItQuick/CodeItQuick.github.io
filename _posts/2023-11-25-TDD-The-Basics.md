@@ -1,7 +1,7 @@
 ---
 layout: post
 name: TDD The Basics
-description: Learn the foundations of TDD and testing
+description: Describes the TDD cycle, and a number of tips on how to improve your test code. The given/when/then format structures tests by setting up conditions, executing actions, and asserting results.
 image: simple_zombie.webp
 tags: theory all
 ---

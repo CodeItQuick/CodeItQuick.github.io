@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Story Splitting
-description: A thought experiment turns into thin vertical slices
+description: In my blog article on agile story splitting, I explained how to break down large user stories into smaller, manageable pieces to fit within a single sprint. This technique improves planning, estimation, and feedback. I shared methods like dividing by workflow steps or business rules and offered tips to ensure each split story still delivers value and meets the definition of done.
 image: story_splitting_zombies.webp
 tags: agile all
 ---

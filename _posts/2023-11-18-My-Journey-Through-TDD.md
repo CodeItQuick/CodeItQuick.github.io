@@ -1,7 +1,7 @@
 ---
 layout: post
 name: My Journey Through TDD
-description: Writing down a brief take on XP practices I believe in
+description: In the first five years of my development career, I didn't test anything until a local meetup with JB Rainsberger changed my perspective on TDD. During the next year, I struggled with learning TDD, joined book clubs, and sought feedback, focusing on unit testing in side projects. Over the next 2.5 years, I improved my testing speed and techniques, plateauing due to stagnant learning sources.
 image: zombie_journey_through_tdd.webp
 tags: theory all
 ---
