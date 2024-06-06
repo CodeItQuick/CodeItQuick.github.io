@@ -1,8 +1,8 @@
 ---
 layout: post
 name: Navigation Shortcuts in your jetbrains
-description: In my blog article on JetBrains IDE shortcuts, I covered essential keyboard shortcuts designed to enhance productivity and efficiency while coding. I included navigation shortcuts for quickly moving between files and code elements, editing shortcuts for common tasks like refactoring and code formatting.
-image: navigation_shortcuts_zombie.webp
+description: In my blog article on JetBrains IDE shortcuts, I covered essential keyboard shortcuts designed to enhance productivity and efficiency while coding. 
+image: navigation_shortcuts_zombie.png
 tags: editor all
 ---
 

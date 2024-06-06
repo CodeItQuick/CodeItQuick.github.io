@@ -1,16 +1,14 @@
 ---
 layout: post
 name: Finally starting a learning journal
-description: In my blog article on try-catch-finally and error handling, I covered how these constructs manage exceptions in various languages like Java, C#, Python, and JavaScript. I explained the roles of try, catch, and finally, and emphasized best practices such as specific exception handling, avoiding empty catch blocks, and using finally for cleanup tasks.
-image: learning_journal_zombie.webp
+description: In my blog article on try-catch-finally and error handling, I covered how these constructs manage exceptions in various languages like Java, C#, Python, and JavaScript. 
+image: learning_journal_zombie.png
 tags: code all
 ---
 
 # Finally starting a learning journal
 
-
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
-
 
 ```typescript
 const someReactQueryOrJavascriptWhatever = () => {
