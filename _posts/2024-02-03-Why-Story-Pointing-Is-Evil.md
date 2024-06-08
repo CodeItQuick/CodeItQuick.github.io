@@ -13,7 +13,7 @@ One of the problems with talking about story pointing, is that its very much two
 I also cannot think of any science that would show they are either "good" or "bad". All the same I'm going to attempt to bring you to my point
 of view. Not only are story points not useful, they downright contribute to a toxic work environment.
 
-At the core I very much think its garbage in > garbage out. I cannot estimate even my nearest task, and asking me to estimate tasks that I haven't looked at/etc. are even less accurate. 
+At the core I very much think its garbage in and garbage out. I cannot estimate even my nearest task, and asking me to estimate tasks that I haven't looked at/etc. are even less accurate. 
 I've also done pointing poker. Maybe you can rate stories against each other, but I very much have my doubts. If the underlying problem is if you give me a task, and I cannot tell you how 
 long or difficult it is (really you want how long, and hide it with "complexity"), then there is no activity that makes it more accurate.
 
