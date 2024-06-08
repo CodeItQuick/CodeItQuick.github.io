@@ -16,7 +16,7 @@ For those that would prefer a TLDR; in code form
         const developmentEstimation = "hard";
         const storypointing = "estimation";
         // logic
-        if (storypointing == estimation && developmentEstimation != "easy" && developmentEstimation == "hard") {
+        if (storypointing == estimation && developmentEstimation !== "easy" && developmentEstimation === "hard") {
             return true;
         } else {
             return false;
