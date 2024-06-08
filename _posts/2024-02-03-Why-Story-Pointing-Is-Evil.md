@@ -24,6 +24,11 @@ For those that would prefer a TLDR; in code form
     }
 ```
 
+# Note
+
+I actually have to re-read this article, in light of my above logic. Writing out the argument in code allowed me to
+see flaws in the arguments.
+
 # Why Story Pointing Is Evil
 
 ## Introduction & Problem Statement
