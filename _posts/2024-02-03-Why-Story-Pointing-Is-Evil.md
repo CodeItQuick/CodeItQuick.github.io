@@ -8,17 +8,39 @@ tags: agile all
 
 # Argument Outline
 
-For those that would prefer a TLDR; in code form:  
+For those that would prefer a TLDR; in code form  
 
 ```js
-    // definitions
-    const developmentEstimation = "hard";
-    const storypointing = "estimation";
-    // logic
-    if (storypointing == estimation && developmentEstimation != "easy" && developmentEstimation == "hard") {
-        return "don't bother";
-    } else {
-        return "lets do it!";
+    function GarbageInGarbageOut() {
+        // definitions
+        const developmentEstimation = "hard";
+        const storypointing = "estimation";
+        // logic
+        if (storypointing == estimation && developmentEstimation != "easy" && developmentEstimation == "hard") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    if (GarbageInGarbageOut() == true) {
+        // variables 
+        var managerPolicing;
+        var estimationSandbagging;
+        // definition
+        const toxicCulture = ManagerPolicing;
+        if (toxicCulture) {
+            if (estimationSandbagging) {
+                highPerforming = true; // toxic culture
+            } else {
+                highPerforming = false; // toxic culture
+            }
+        } else {
+            if (estimationSandbagging) {
+                highPerforming = true; // non-toxic culture
+            } else {
+                highPerforming = false; // non-toxic culture
+            }
+        }
     }
 ```
 
@@ -99,7 +121,7 @@ What makes a task hard to estimate? ChatGPT rates it difficult if it falls into 
 In short form, we can answer "yes" to all the above. Development tasks readily fit into the buckets we don't want for
 estimating something, so why continue to try to estimate these tasks?
 
-## Game Theory On the Situation
+## Game Theory On the Situation (I have to revise this section, after writing the code for the logic)
 
 The game theory matrix you have just entered into is
 
