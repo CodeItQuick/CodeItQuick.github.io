@@ -15,38 +15,14 @@
                 <a href="/recipe_list.html"><span class="material-symbols-outlined">cooking</span></a>
         </div>
 </nav>
-<nav x-init="show = screen.width >= 768" x-show="show" x-data="{
-        navigationMenuOpen: false,
-        navigationMenu: '',
-        navigationMenuCloseDelay: 200,
-        navigationMenuCloseTimeout: 300,
-        navigationMenuLeave() {
-            let that = this;
-            this.navigationMenuCloseTimeout = setTimeout(() => {
-                that.navigationMenuClose();
-            }, this.navigationMenuCloseDelay);
-        },
-        navigationMenuReposition(navElement) {
-            this.navigationMenuClearCloseTimeout();
-            this.$refs.navigationDropdown.style.left = navElement.offsetLeft + 'px';
-            this.$refs.navigationDropdown.style.marginLeft = (navElement.offsetWidth/2) + 'px';
-        },
-        navigationMenuClearCloseTimeout(){
-            clearTimeout(this.navigationMenuCloseTimeout);
-        },
-        navigationMenuClose(){
-            this.navigationMenuOpen = false;
-            this.navigationMenu = '';
-        }
-    }"
+<nav x-init="show = screen.width >= 768" x-show="show"
     class="relative z-10 w-auto bg-base-300 text-neutral-content font-[nav]">
     <div class="relative text-2xl">
         <div class="flex justify-between">
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md ">
                 <li>
                     <a href="https://github.com/CodeItQuick"
-                       target="_blank"
-                       @click="navigationMenuClose()">
+                       target="_blank">
                         <button
                             class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80 font-[nav]">
                             <span>CodeItQuick</span>
@@ -56,8 +32,7 @@
             </ul>
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md group">
                 <li>
-                    <a href="/"
-                       @click="navigationMenuClose()">
+                    <a href="/">
                         <button
                             class="font-[nav] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                             <span>Projects</span>
@@ -65,8 +40,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/prototypes.html"
-                       @click="navigationMenuClose()">
+                    <a href="/prototypes.html">
                         <button
                             class="font-[nav] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                             <span>Prototypes</span>
@@ -74,8 +48,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/blog_list.html"
-                       @click="navigationMenuClose()">
+                    <a href="/blog_list.html">
                         <button
                                 class="font-[nav] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                             <span>Blog</span>
@@ -83,8 +56,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/coding_kata_list.html"
-                       @click="navigationMenuClose()">
+                    <a href="/coding_kata_list.html">
                         <button
                                 class="font-[nav] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                             <span>Katas</span>
@@ -92,8 +64,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/recipe_list.html"
-                       @click="navigationMenuClose()">
+                    <a href="/recipe_list.html">
                         <button
                                 class="font-[nav] inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md group w-max hover:text-neutral-content/80">
                             <span>Recipes</span>
@@ -104,8 +75,7 @@
             <ul class="flex items-center justify-center flex-1 p-1 space-x-1 list-none rounded-md ">
                 <li class="flex items-center justify-center">
                     <a href="https://github.com/CodeItQuick/CodeItQuick.github.io" target="_blank"
-                       @click="navigationMenuClose()"
-                       class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md hover:text-neutral-content/80 focus:outline-none disabled:opacity-70 disabled:pointer-events-none group w-max">
+                        class="inline-flex items-center justify-center h-10 px-4 py-2 font-medium rounded-md hover:text-neutral-content/80 focus:outline-none disabled:opacity-70 disabled:pointer-events-none group w-max">
                         <span>Github</span>
                     </a>
                     <label class="swap swap-rotate h-6">
