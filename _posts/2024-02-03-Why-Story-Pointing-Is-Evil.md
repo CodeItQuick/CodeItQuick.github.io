@@ -6,6 +6,25 @@ image: evil_devil_zombie_graveyard.webp
 tags: agile all
 ---
 
+# Argument Outline
+
+For those that would prefer a TLDR; in code form:  
+
+```js
+    // definitions
+    const developmentEstimation = "hard";
+    const storypointing = "estimation";
+    // logic
+    if (storypointing == estimation && developmentEstimation != "easy" && developmentEstimation == "hard") {
+        return "don't bother";
+    } else {
+        return "lets do it!";
+    }
+```
+
+since storypointing is estimation
+
+
 # Why Story Pointing Is Evil
 
 ## Introduction & Problem Statement
