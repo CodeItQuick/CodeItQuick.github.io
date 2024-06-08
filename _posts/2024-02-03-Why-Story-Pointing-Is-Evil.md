@@ -27,7 +27,7 @@ For those that would prefer a TLDR; in code form
         var managerPolicing;
         var estimationSandbagging;
         // definition
-        const toxicCulture = ManagerPolicing;
+        const toxicCulture = managerPolicing;
         if (toxicCulture) {
             if (estimationSandbagging) {
                 highPerforming = true; // toxic culture
