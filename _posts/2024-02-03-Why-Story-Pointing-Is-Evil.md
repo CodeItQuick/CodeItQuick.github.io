@@ -1,15 +1,15 @@
 ---
-layout: post
-name: Why Story Pointing Is Evil
-description: The article argues that story pointing is inherently flawed and contributes to a toxic work environment. Estimating tasks accurately is challenging, and developers may "sandbag" estimates to appear more productive, leading to distrust and conflict with management.
-image: evil_devil_zombie_graveyard.webp
+layout: post  
+name: Why Story Pointing Is Evil  
+description: The article argues that story pointing is inherently flawed and contributes to a toxic work environment. Estimating tasks accurately is challenging, and developers may sandbag estimates to appear more productive, leading to distrust and conflict with management.  
+image: evil_devil_zombie_graveyard.webp  
 tags: agile all
 ---
 
 # Why Story Pointing Is Evil
 
 ## Introduction & Problem Statement
-One of the problems with talking about story pointing, is that its very much two points of opposing views with no clear "right" answer. 
+One of the problems with talking about story pointing, is that it's very much two points of opposing views with no clear "right" answer. 
 I also cannot think of any science that would show they are either "good" or "bad". All the same I'm going to attempt to bring you to my point
 of view. Not only are story points not useful, they downright contribute to a toxic work environment.
 
@@ -17,7 +17,7 @@ At the core I very much think its garbage in and garbage out. I cannot estimate 
 I've also done pointing poker. Maybe you can rate stories against each other, but I very much have my doubts. If the underlying problem is if you give me a task, and I cannot tell you how 
 long or difficult it is (really you want how long, and hide it with "complexity"), then there is no activity that makes it more accurate.
 
-I think to the manager you are doing something like:
+I think to the manager you are doing something like  
 1. A takes 3 days
 2. B takes 3 days
 3. C takes 3 days
@@ -26,7 +26,7 @@ Therefore, we will be done in 9 days. However, from my point of view all of thes
 even less adding the values -> you are just summing 3 values that are essentially made up.
 
 It also sets up a weird game that the developer all of a sudden has a self-interest in playing. 
-Pretend that the developer believes the above estimates are accurate. It's in his best interests to tell management:  
+Pretend that the developer believes the above estimates are accurate. It's in his best interests to tell management    
 1. A takes 5 days  
 2. B takes 5 days  
 3. C takes 5 days  
@@ -41,7 +41,7 @@ real-time will be much too high.
 The underlying problem for developers posed by "lets do story-pointing", or trying to record a length/complexity of time for a task, 
 is that their tasks are not easy to estimate. In fact, they fit what ChatGPT defines as a poor tasks to estimate.
 
-What makes a task easy to estimate? It's tasks that fit on the following dimensions:
+What makes a task easy to estimate? It's tasks that fit on the following dimensions
 
 1. Repetitive or Routine Tasks
 Two tasks in development could even look the same to an outside observer, and be entirely different.
@@ -82,7 +82,7 @@ estimating something, so why continue to try to estimate these tasks?
 
 ## Game Theory On the Situation
 
-The game theory matrix you have just entered into is:
+The game theory matrix you have just entered into is
 
 | Manager \ Developer               | Developer Sandbags All Estimates                                           | Developer Does Not Sandbag                                                             |  Result       |
 |-----------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|---------------|
@@ -95,7 +95,7 @@ In the sandbagging column, you either get superior performance as the manager do
 productivity is higher. From the managers point of view, if he starts policing estimates he essentially creates a toxic environment (either he argues with sandbagging devs, or
 thinks non-sandbagging devs are extremely unproductive).
 
-There is a natural flow from state-to-state here:
+There is a natural flow from state-to-state here
 1. Developer gives honest answers to storypoints, life is good (Quadrant D)
 2. Another developer starts sandbagging his estimates for *reasons*
 3. Developer starts to have lower performance than coworkers, enters into lower performance (Quadrant B)
