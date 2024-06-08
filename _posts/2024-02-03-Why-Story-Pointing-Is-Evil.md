@@ -24,9 +24,6 @@ For those that would prefer a TLDR; in code form
     }
 ```
 
-since storypointing is estimation
-
-
 # Why Story Pointing Is Evil
 
 ## Introduction & Problem Statement
