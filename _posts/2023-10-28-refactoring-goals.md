@@ -20,7 +20,7 @@ yourself", and I often find myself in this urge. However, it very much should be
 trust/confidence in your abilities is something you build slowly.
 
 So I played it somewhat safe (I'm sure certain people would disagree with this assertion however), discussing changes I thought could 
-be made over months, until one day, it was the day. I was given the opportunity to refactor some of the code to be "my way" - or 
+be made over months, until one day, it was the day. I was given the opportunity to refactor some code to be "my way" - or 
 not really "my way", but an improvement over the current implementation. A clearly better implementation at that.
 
 ## When to refactor?
