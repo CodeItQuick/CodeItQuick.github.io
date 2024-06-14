@@ -27,7 +27,7 @@ For those that would prefer a TLDR; in code form
 # Note
 
 I actually have to re-read this article, in light of my above logic. Writing out the argument in code allowed me to
-see flaws in the arguments.
+see flaws in the arguments. This article is currently a WIP until I remove this note and flush out my thoughts more.
 
 # Story Pointing - Evil or Not
 
@@ -81,20 +81,20 @@ There is an obvious counter-point here. If you know exactly how long a task is g
 You could just give the person the task, and come back however many days needed later to pick-up the item.
 
 What is the purpose of estimating? Estimating time for tasks fits into the following categories. These initial four I saw
-the value immediately.
+the value immediately.  
 **Effective Project Management Items**    
-Definition: All these elements are essential components of effective project management, aimed at delivering successful outcomes in a structured and predictable manner.    
-5. **Customer Satisfaction**:   
+All these elements are essential components of effective project management, aimed at delivering successful outcomes in a structured and predictable manner.    
+1. **Customer Satisfaction**:   
 Being able to deliver features on time and within scope on a small feature basis is valuable.  
-6. **Goal Setting**:  
+2. **Goal Setting**:  
 Setting goals as a developer can be helpful for staying motivated.  
-7. **Risk Management**:  
+3. **Risk Management**:  
 Managing the scope and how of the task is necessary to not overrun on either scope or time.  
-8. **Managing Expectations**:  
+4. **Managing Expectations**:  
 Tempering the team leads expectations with the task is important and a continual battle.  
 
-**Operational Efficiency Items (I'm not sold on these)**  
-Definition: All these elements are crucial for maintaining and enhancing operational efficiency, ensuring that tasks are completed in the most effective and productive manner possible.  
+**Operational Efficiency Items**  
+All these elements are crucial for maintaining and enhancing operational efficiency, ensuring that tasks are completed in the most effective and productive manner possible.  
 1. **Planning and Scheduling**:  
    While agile methodologies emphasize flexibility and adaptability, planning and scheduling are still essential. 
 Story pointing and time estimation provide a framework to balance these needs.
@@ -105,3 +105,18 @@ Story pointing and time estimation provide a framework to balance these needs.
 4. **Progress Tracking**:    
    Story pointing and time estimation are fundamental to tracking progress in a structured manner.
 
+# The value proposition of project management
+
+The value proposition of project management lies in its ability to systematically plan, execute, and complete projects efficiently and effectively. Here are the key components of this value proposition:
+
+1. Improved Planning and Organization
+2. Enhanced Resource Management
+3. Risk Mitigation
+4. Improved Communication and Collaboration
+5. Higher Quality Deliverables
+6. Better Time Management
+7. Cost Control
+8. Continuous Improvement
+9. Stakeholder Satisfaction
+
+The value proposition of project management is its ability to deliver projects successfully by enhancing planning, resource management, risk mitigation, communication, quality, time management, cost control, continuous improvement, and stakeholder satisfaction. This comprehensive approach ensures that projects are completed efficiently, effectively, and to the satisfaction of all parties involved.
