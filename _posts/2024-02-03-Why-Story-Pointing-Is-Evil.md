@@ -1,6 +1,6 @@
 ---
 layout: post  
-name: Why Story Pointing Is Evil  
+name: Story Pointing - Evil or Not
 description: The article argues that story pointing is inherently flawed and contributes to a toxic work environment. Estimating tasks accurately is challenging, and developers may sandbag estimates to appear more productive, leading to distrust and conflict with management.  
 image: evil_devil_zombie_graveyard.webp  
 tags: agile all
@@ -29,35 +29,7 @@ For those that would prefer a TLDR; in code form
 I actually have to re-read this article, in light of my above logic. Writing out the argument in code allowed me to
 see flaws in the arguments.
 
-# Why Story Pointing Is Evil
-
-## Introduction & Problem Statement
-One of the problems with talking about story pointing, is that it's very much two points of opposing views with no clear "right" answer. 
-I also cannot think of any science that would show they are either "good" or "bad". All the same I'm going to attempt to bring you to my point
-of view. Not only are story points not useful, they downright contribute to a toxic work environment.
-
-At the core I very much think its garbage in and garbage out. I cannot estimate even my nearest task, and asking me to estimate tasks that I haven't looked at/etc. are even less accurate. 
-I've also done pointing poker. Maybe you can rate stories against each other, but I very much have my doubts. If the underlying problem is if you give me a task, and I cannot tell you how 
-long or difficult it is (really you want how long, and hide it with "complexity"), then there is no activity that makes it more accurate.
-
-I think to the manager you are doing something like  
-1. A takes 3 days
-2. B takes 3 days
-3. C takes 3 days
-
-Therefore, we will be done in 9 days. However, from my point of view all of these estimates are wildly wrong. So I don't see what you get out of me going "this will take 3 days", and you get 
-even less adding the values -> you are just summing 3 values that are essentially made up.
-
-It also sets up a weird game that the developer all of a sudden has a self-interest in playing. 
-Pretend that the developer believes the above estimates are accurate. It's in his best interests to tell management    
-1. A takes 5 days  
-2. B takes 5 days  
-3. C takes 5 days  
-
-All of a sudden the manager thinks there's 15 days of work. However, if I go and do the work in the 9 days I think it'll take, I'm a "hero".
-There's also a math problem going on here, say in the best case I'm 90% likely to hit my estimate. Then for three tasks
-the likelihood I'm collectively "correct" in estimating is 90% * 90% * 90% = 72.9%. I'll be wrong 1/3 of the time, which in
-real-time will be much too high.
+# Story Pointing - Evil or Not
 
 ## Garbage in Garbage Out
 
@@ -101,4 +73,35 @@ What makes a task hard to estimate? ChatGPT rates it difficult if it falls into 
 9. Creative or Design-Oriented Tasks
 
 In short form, we can answer "yes" to all the above. Development tasks readily fit into the buckets we don't want for
-estimating something, so why continue to try to estimate these tasks?
+estimating something. 
+
+# Why continue to try to estimate these tasks?
+
+There is an obvious counter-point here. If you know exactly how long a task is going to take, why estimate it at all?
+You could just give the person the task, and come back however many days needed later to pick-up the item.
+
+What is the purpose of estimating? Estimating time for tasks fits into the following categories. These initial four I saw
+the value immediately.
+**Effective Project Management Items**    
+Definition: All these elements are essential components of effective project management, aimed at delivering successful outcomes in a structured and predictable manner.    
+5. **Customer Satisfaction**:   
+Being able to deliver features on time and within scope on a small feature basis is valuable.  
+6. **Goal Setting**:  
+Setting goals as a developer can be helpful for staying motivated.  
+7. **Risk Management**:  
+Managing the scope and how of the task is necessary to not overrun on either scope or time.  
+8. **Managing Expectations**:  
+Tempering the team leads expectations with the task is important and a continual battle.  
+
+**Operational Efficiency Items (I'm not sold on these)**  
+Definition: All these elements are crucial for maintaining and enhancing operational efficiency, ensuring that tasks are completed in the most effective and productive manner possible.  
+1. **Planning and Scheduling**:  
+   While agile methodologies emphasize flexibility and adaptability, planning and scheduling are still essential. 
+Story pointing and time estimation provide a framework to balance these needs.
+2. **Improving Efficiency**:   
+   Story pointing and time estimation can drive continuous improvement in efficiency by providing data for analysis and reflection.
+3. **Resource Allocation**:  
+   Story points and time estimates can guide effective resource allocation by providing a clear picture of workload distribution.
+4. **Progress Tracking**:    
+   Story pointing and time estimation are fundamental to tracking progress in a structured manner.
+
