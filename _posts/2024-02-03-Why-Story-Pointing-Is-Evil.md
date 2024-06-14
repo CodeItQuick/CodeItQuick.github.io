@@ -82,8 +82,7 @@ You could just give the person the task, and come back however many days needed 
 
 What is the purpose of estimating? Estimating time for tasks fits into the following categories. These initial four I saw
 the value immediately.  
-**Effective Project Management Items**    
-All these elements are essential components of effective project management, aimed at delivering successful outcomes in a structured and predictable manner.    
+
 1. **Customer Satisfaction**:   
 Being able to deliver features on time and within scope on a small feature basis is valuable.  
 2. **Goal Setting**:  
@@ -93,16 +92,16 @@ Managing the scope and how of the task is necessary to not overrun on either sco
 4. **Managing Expectations**:  
 Tempering the team leads expectations with the task is important and a continual battle.  
 
-**Operational Efficiency Items**  
-All these elements are crucial for maintaining and enhancing operational efficiency, ensuring that tasks are completed in the most effective and productive manner possible.  
-1. **Planning and Scheduling**:  
+These four items I think takes a bit more convincing that its a benefit of estimating developer tasks.  
+
+6. **Planning and Scheduling**:  
    While agile methodologies emphasize flexibility and adaptability, planning and scheduling are still essential. 
 Story pointing and time estimation provide a framework to balance these needs.
-2. **Improving Efficiency**:   
+7. **Improving Efficiency**:   
    Story pointing and time estimation can drive continuous improvement in efficiency by providing data for analysis and reflection.
-3. **Resource Allocation**:  
+8. **Resource Allocation**:  
    Story points and time estimates can guide effective resource allocation by providing a clear picture of workload distribution.
-4. **Progress Tracking**:    
+9. **Progress Tracking**:    
    Story pointing and time estimation are fundamental to tracking progress in a structured manner.
 
 # The value proposition of project management
