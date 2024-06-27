@@ -7,12 +7,9 @@ layout: recipe
 
 # YOU WILL NEED
 ## FOR THE SALAD
-3 (15 ounce) cans beans, drained, rinsed, or use 4 1/2 cups cooked beans
-1/2 medium onion, finely chopped (about 3/4 cup)
-1 medium cucumber, finely chopped (about 2 cups)
-3 tablespoons drained capers
+3 (15 ounce) cans beans, drained, rinsed, or use 4 1/2 cups cooked beans  
+2-3 green onion, finely chopped (about 3/4 cup)  
 1/2 cup (60 grams) finely chopped fresh parsley, see notes
-3/4 teaspoon dried oregano, see notes
 
 ## FOR THE DRESSING
 1/4 cup (60 ml) red wine vinegar
