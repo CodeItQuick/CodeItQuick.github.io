@@ -1,6 +1,6 @@
 ---
 name: Korean Ground Turkey
-description: Beef substituted with turkey!
+description: Beef substituted with turkey
 image: zombie_korean_ground_turkey.webp
 layout: recipe
 ---

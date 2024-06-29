@@ -1,6 +1,6 @@
 ---
 name: Sweet and Spicy Thai Chicken
-description: Cheaper, and more servings than ordering out!
+description: Cheaper, and more servings than ordering out
 image: zombie_sweet_and_spicy_thai.webp
 layout: recipe
 ---

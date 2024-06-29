@@ -1,6 +1,6 @@
 ---
 name: Mexican Chicken Casserole
-description: Very quick recipe to make, and delicious.
+description: Very quick recipe to make, and delicious
 image: zombie_mexican_casserole.webp
 layout: recipe
 ---

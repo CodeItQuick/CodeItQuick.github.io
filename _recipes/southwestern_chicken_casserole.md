@@ -1,6 +1,6 @@
 ---
 name: Southwestern Chicken Casserole
-description: More casserole, Southwestern this time!
+description: More casserole, Southwestern this time
 image: zombie_southwestern.webp
 layout: recipe
 ---
