@@ -8,10 +8,10 @@ layout: recipe
 # Ingredients
 * 
 * rice 
-* blackbeans (15 ounce can) 
+* Black beans (15 ounce can) 
 * tomato (fire roasted)
 * chicken (taco sauce)
-* salsa - 4 tsps or more
+* salsa - 4 teaspoons or more
 * red peppers
 
 # Directions
