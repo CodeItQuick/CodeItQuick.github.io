@@ -1,31 +1,28 @@
 ---
 name: Bean Salad
-description: Ridiculously Easy!
+description: Make several side salads at a time!
 image: zombie_bean_salad.webp
 layout: recipe
 ---
 
-# YOU WILL NEED
-## FOR THE SALAD
-3 (15 ounce) cans beans, drained, rinsed, or use 4 1/2 cups cooked beans  
-2-3 green onion, finely chopped (about 3/4 cup)  
-1/2 cup (60 grams) finely chopped fresh parsley, see notes
+# Ingredients
+* 1 (15 ounce) can black beans, rinsed and drained  
+* 1 1/2 cups corn kernels, defrosted if frozen  
+* 1/2 cup chopped scallions or shallots  
+* 1/2 jalapeno pepper, seeded and minced, or 1/2 pickled jalapeno pepper, minced but not seeded  
+* 1 red bell pepper, seeded and chopped (and/or 3 plum tomatoes, seeded and chopped)  
+* 2 tablespoons lime juice  
+* 1 tablespoon extra virgin olive oil  
+* 1 avocado, cut into chunks  
+* 1/2 to 1 teaspoon sugar  
+* Salt and pepper to taste  
+* 1/2 cup chopped fresh cilantro  
 
-## FOR THE DRESSING
-1/4 cup (60 ml) red wine vinegar
-1/4 cup (60 ml) extra-virgin olive oil
-1 teaspoon Dijon mustard
-1 to 2 teaspoons honey or maple syrup, optional
-3/4 teaspoon fine sea salt, plus more to taste
-1/4 teaspoon fresh ground black pepper
-
-## DIRECTIONS
-Add chopped onions to a small bowl and cover with cold water. Set aside for 5 minutes, drain, and then rinse. This step helps to remove some of the "raw" flavor of the onion
-so that it does not overpower the salad.
-Meanwhile, in the bottom of a large bowl, whisk together the vinegar, olive oil, mustard, salt, and pepper. Taste the dressing and then adjust with more salt/pepper. If
-the dressing tastes too abrasive, whisk in 1 to 2 teaspoons of honey or maple syrup to balance out the vinegar.
-
-Add the beans, drained onion, cucumber, parsley, capers, and dried oregano. Toss well, cover and chill in the refrigerator at least 1 hour to allow the beans to marinate in 
-the dressing.
-
-The salad will keep stored in an airtight container in the fridge up to 4 days.
+Method
+1. Combine everything but the avocado and herbs
+In a large bowl, gently mix the black beans, corn, scallions, jalapenos, tomatoes, or red bell pepper, lime juice, and
+olive oil. Then, gently fold in the chopped avocados.
+2. Season and chill
+Add salt and pepper to taste. Sprinkle with sugar to taste, enough to balance the acidity from the lime juice. Chill.
+3. Add the cilantro and serve:
+Right before serving, add the chopped fresh cilantro
