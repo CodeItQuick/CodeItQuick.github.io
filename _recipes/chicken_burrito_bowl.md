@@ -1,7 +1,7 @@
 ---
 name: Chicken Burrito Bowl
 description: Make several meals at a time!
-image: zombie_bean_salad.webp
+image: zombie_burrito_bowl.webp
 layout: recipe
 ---
 
