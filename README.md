@@ -1,19 +1,18 @@
 # Project Graveyard
 
+## General Description
+
 A historical take on the kata's and side projects I have worked on since 2021. Built using GithubPages and Ruby's Jekyll. 
 
-Current Active Projects:
-1. Learn C through TDDSqlLite
-2. Learn .NET/Hexagonal/Testing better through CSharpExpenseReport
+## Current TODOs
 
+1. Flush out the blog articles more, both in terms of styling md->html, and content
+2. Read up more on writing styles and how to write well, and then implement the suggestions in the literature
+3. The styling page-to-page is very bland. Make different kinds of cards, and implement different styles throughout the site
+4. Get the projects themselves on the internet through digital ocean or something
+5. 
 
-
-Should be on my grids:
-extend: {
-      gridTemplateColumns: {
-        "image-cards": "repeat(auto-fit, minmax(255px, 1fr))",
-        "image-cards-mobile": "repeat(auto-fit, minmax(120px, 1fr))",
-      },
+## Project Ideas
 
 Current Project Ideas:
 1. Something to do with a playlist creator
@@ -23,6 +22,8 @@ Current Project Ideas:
 5. Spotify discover playlist/playlist maker tool
 6. Tailwind Theme Creator
 7. Thumbs Up/Thumbs Down meter for retros
+
+## Getting Started
 
 To run theme-creator:
 ```shell
