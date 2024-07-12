@@ -38,6 +38,9 @@ Here are the guidelines I can brainstorm up quickly:
 17. There are many flavours to legacy code. Some of it will be easy to add tests (and is testable), others not so much.  
 18. Static methods are hard to test  
 19. Don't test what you don't own
+20. To write production code a failing test must be written first
+21. Only write the simplest thing that will make the current test pass
+22. If too many tests fail at once you've gone too fast, backup and try again
 
 # The Definitions 
 
