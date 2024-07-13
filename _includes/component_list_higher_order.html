@@ -47,10 +47,17 @@
             <div class="w-full flex justify-end">
                 <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary text-neutral-content font-[body]">Github</button></a>
             </div>
-            {% else %}
+            {% endif %}
+            {% if include.external %}
             <div class="w-full flex justify-end">
-                <a href="{{ include.url }}" ><button class="btn btn-primary text-neutral-content font-[body]">Read</button></a>
+                <a href="{{ include.external }}" target="_blank" ><button class="btn btn-primary text-neutral-content font-[body]">Link</button></a>
             </div>
+            {% else %}
+                {% if include.url %}
+                <div class="w-full flex justify-end">
+                    <a href="{{ include.url }}" ><button class="btn btn-primary text-neutral-content font-[body]">Read</button></a>
+                </div>
+                {% endif %}
             {% endif %}
         </div>
     </div>

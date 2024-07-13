@@ -1,0 +1,42 @@
+---
+layout: course
+---
+
+<html lang="{{ site.lang | default: 'en-US' }}" x-init="mode = 'dark'" x-data="
+{
+    mode: 'light',
+    darkModeOn() {
+        this.mode = 'dark';
+        localStorage.setItem('siteTheme', 'dark');
+     },
+    lightModeOn() {
+        this.mode = 'light';
+        localStorage.setItem('siteTheme', 'light');
+    },
+    getMode() {
+        if (localStorage.getItem('siteTheme')) {
+            this.mode = localStorage.getItem('siteTheme');
+        }
+        return this.mode;
+    }
+}" >
+{% include header.html %}
+
+<body class="bg-neutral text-neutral-content min-w-fit antialiased font-[body]" x-bind:data-theme="getMode()">
+
+    {% include component_navbar.html %}
+    <div class="bg-neutral w-full">
+        <div class="md:max-w-4xl py-8 mx-auto">
+            <div class="w-full markdown text-neutral-content text-wrap">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content">
+    <aside>
+        <p>Copyright © 2024 - All right reserved by CodeItQuick</p>
+    </aside>
+</footer>
+</html>

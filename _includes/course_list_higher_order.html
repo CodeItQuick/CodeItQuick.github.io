@@ -1,0 +1,36 @@
+
+<div class="card card-side bg-base-200 shadow-xl max-w-xl max-w-3xl h-96 mx-auto" >
+    <figure class="min-h-20">
+        <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover w-full h-full" />
+    </figure>
+    <div class="card-body min-h-32 p-3 lg:p-5 text-neutral-content w-2/3">
+        <h2 class="card-title lg:text-2xl line-clamp-4 font-[display]">{{ include.title }}{{ include.name }}</h2>
+        <div class="card-actions flex w-full flex-col justify-end lg:justify-between grow">
+            {{ if include.course_one }}
+            <div class="lg:block text-sm">
+                {% if include.course_one %}
+                    <div class="font-[body]">💀{{ include.course_one }} (in-progress)</div>
+                    <div class="font-[body]">💀{{ include.course_two }}</div>
+                    <div class="font-[body]">💀{{ include.course_three }}</div>
+                {% endif %}
+            </div>
+            {% if include.github %}
+            <div class="w-full flex justify-end">
+                <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary text-neutral-content font-[body]">Github</button></a>
+            </div>
+            {% endif %}
+            {% if include.external %}
+            <div class="w-full flex justify-end">
+                <a href="{{ include.external }}" target="_blank" ><button class="btn btn-primary text-neutral-content font-[body]">Link</button></a>
+            </div>
+            {% else %}
+                {% if include.url %}
+                <div class="w-full flex justify-end">
+                    <a href="{{ include.url }}" ><button class="btn btn-primary text-neutral-content font-[body]">Read</button></a>
+                </div>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
