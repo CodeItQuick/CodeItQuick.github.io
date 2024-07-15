@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Story Splitting
-description: In my blog article on agile story splitting, I explained how to break down large user stories into smaller, manageable pieces to fit within a single sprint. This technique improves planning, estimation, and feedback. 
+description: In my blog article on agile story splitting, I explained how to break down large user stories into smaller, manageable pieces to fit within a single sprint.  
 image: story_splitting_zombies.png
 tags: agile all
 ---

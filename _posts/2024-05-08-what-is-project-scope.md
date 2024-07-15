@@ -1,7 +1,7 @@
 ---
 layout: post
 name: What is project scope?
-description: Project scope in software development encompasses choices about programming language, tech stack, problem complexity, and features. It includes considerations for architecture, testing, usability, and code quality. Additionally, it involves decisions on how often to refactor and redesign from both architectural and product viewpoints.
+description: Project scope in software development encompasses choices about programming language, tech stack, problem complexity, and features. 
 image: project_scope_zombie_graveyard.webp
 tags: agile all 
 ---

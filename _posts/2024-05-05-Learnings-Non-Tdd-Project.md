@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Learnings Non-Tdd Project
-description: The author created a retrospective rating tool prototype for sprint retrospectives using JavaScript, Vite, React, and Netlify for speed. The tool uses emojis to gauge team sentiment but was built with no formal architecture or testing to save time.
+description: The author created a retrospective rating tool prototype for sprint retrospectives using JavaScript, Vite, React, and Netlify for speed. 
 image: learnings_non_tdd_project.webp
 tags: agile all
 ---

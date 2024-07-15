@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Refactoring, Code Smells, and Kata's Initial Thoughts
-description: The article highlights the importance of ingraining Martin Fowler's refactorings and consciously applying Joshua Kerievsky's refactoring patterns. It uses examples from "Roman Numerals," "Gilded Rose," and "Fantasy Battle" to illustrate these refactoring techniques.
+description: The article highlights the importance of ingraining Martin Fowler's refactorings and consciously applying Joshua Kerievsky's refactoring patterns. 
 image: smelly_zombie_graveyard.webp
 tags: theory all
 ---

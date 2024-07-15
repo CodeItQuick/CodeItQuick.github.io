@@ -1,7 +1,7 @@
 ---
 layout: post
 name: What I get out of pairing?
-description: In Agile-Scrum, stories are broken down into smaller tasks for clarity and manageability, such as splitting a complex story into simpler implementation steps like creating specific view screens or writing service layers. These tasks are tracked on the sprint board, with issues discussed in the scrum meeting's "parking lot" for clarification.
+description: In Agile-Scrum, stories are broken down into smaller tasks for clarity and manageability.
 image: pairing_zombies.webp
 tags: agile all
 ---

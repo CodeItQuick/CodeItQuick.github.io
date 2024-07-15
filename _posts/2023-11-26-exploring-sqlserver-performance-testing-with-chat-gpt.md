@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Exploring Sql Performance Tuning - ChatGPT
-description: I used ChatGPT to explore database structures, seeking advice on building SQL/NoSQL databases, thought leaders, and recommended books. Essential SQL project ideas involve building components like a parser, query engine, and transaction management.
+description: I used ChatGPT to explore database structures, seeking advice on building SQL/NoSQL databases, thought leaders, and recommended books. 
 image: fast_zombie_graveyard.webp
 tags: theory all
 ---

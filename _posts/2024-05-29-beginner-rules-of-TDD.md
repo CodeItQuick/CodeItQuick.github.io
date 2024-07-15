@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Beginner Guidelines of Testing
-description: The article discusses the idea that while there are no strict guidelines to testing, especially for beginners, having a set of principles can help avoid common mistakes. It emphasizes that everyone's skill level is different and being a beginner is relative.
+description: The article discusses the idea that while there are no strict guidelines to testing, especially for beginners, having a set of principles can help avoid common mistakes. 
 image: beginner_guidelines_zombie_graveyard.webp
 tags: theory all
 ---

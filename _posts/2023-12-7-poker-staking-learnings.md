@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Poker Staking Learnings
-description: Back in college, I was a broke student who turned to poker to make money. My friend offered to stake me, but I found it economically unfeasible, considering the risk and the potential return on his investment. This experience gave me insights into investment dynamics, similar to how companies handle investments and seek to provide returns to their shareholders.
+description: Back in college, I was a broke student who turned to poker to make money. I relate these learnings to development. 
 image: poker_zombie_graveyard.webp
 tags: theory all
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Adapter Layer Explained
-description: The adapter layer in hexagonal architecture combines the controller and view, retrieving data from the service and domain layers and facilitating various functionalities like web applications, mobile apps, and email. 
+description: The adapter layer in hexagonal architecture combines the controller and view, retrieving data from the service and domain layers. 
 image: adaptable_zombie.webp
 tags: theory all
 ---
