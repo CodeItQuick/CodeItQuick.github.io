@@ -1,12 +1,12 @@
 ---
 layout: post
-name: Beginner Guidelines of Testing
+name: Beginner Heuristics of Testing
 description: The article discusses the idea that while there are no strict guidelines to testing, especially for beginners, having a set of principles can help avoid common mistakes. 
 image: beginner_guidelines_zombie_graveyard.webp
 tags: theory all
 ---
 
-# Caveat of the Guidelines Of Testing
+# Caveat of the Heuristics Of Testing
 
 I know, I know, you're certain there are actually no guidelines! This is true, there actually are no guidelines to testing, and
 a matter of fact most things in life. However, to the beginner they want a simple perspective guideline to follow to help them
@@ -20,27 +20,25 @@ don't know most things, and are both beginners at heart.
 
 Here are the guidelines I can brainstorm up quickly:  
 1. Only one assert per test  
-2. Follow ZOMBIES acronym when at the lowest layer of testing/directly against the class  
-3. If your tests are complicated, your production code is complicated  
-4. Tests must be fast! Eliminate all slow tests from your primary test suite  
-5. Test coverage must be adequate! Above 80% is a reasonable goal  
-6. Refactor your tests just like you refactor your code  
+2. Avoid mid-test asserts, consider two separate tests instead
+3. Follow ZOMBIES acronym when at the lowest layer of testing/directly against the class  
+4. If your tests are complicated, your production code is complicated  
+5. Tests must be fast! Eliminate all slow tests from your primary test suite  
+6. Test coverage must be adequate! Above 80% is a reasonable goal  
 7. More tests make refactoring easier not more difficult  
-8. Run the fast tests frequently; every 5 minutes is probably too slow.  
+8. Run the fast tests frequently; every 10 minutes is probably too slow.  
 9. The vast majority of production code is not clean enough to test drive, until you get really skilled  
 10. No control statements in your tests  
-11. Avoid mocking frameworks. 
-12. Stick to handwritten fakes, stubs, spies, etc.  
-13. Your test suite should mirror the test pyramid - only a few e2e, some integration, many unit tests  
-14. Pull out business logic from application logic, it makes it easier to test  
-15. On every change run all the tests in your "fast" suite. Check for those nasty side effects!  
-16. UX is very difficult to test. Try to pull out the business logic. Try to keep it as declarative as you can. 
-17. There are many flavours to legacy code. Some of it will be easy to add tests (and is testable), others not so much.  
-18. Static methods are hard to test  
-19. Don't test what you don't own
-20. To write production code a failing test must be written first
-21. Only write the simplest thing that will make the current test pass
-22. If too many tests fail at once you've gone too fast, backup and try again
+11. Stick to handwritten fakes, stubs, spies, etc.  
+12. Your test suite should mirror the test pyramid - only a few e2e, some integration, many unit tests  
+13. Pull out business logic from application logic, it makes it easier to test  
+14. On every change run all the tests in your "fast" suite. Check for those nasty side effects!  
+15. There are many flavours to legacy code. Some of it will be easy to add tests (and is testable), others not so much.  
+16. Don't test what you don't own
+17. To write production code a failing test must be written first
+18. Only write the simplest thing that will make the current test pass
+19. If too many tests fail at once you've gone too fast, backup and try again with more frequent smaller changes 
+20. Static methods are hard to test
 
 # The Definitions 
 
