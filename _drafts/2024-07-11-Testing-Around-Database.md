@@ -12,7 +12,6 @@ https://dbfit.github.io/dbfit/docs/writing-tests.html#data-diff-test
 
 https://github.com/mgramin/awesome-db-tools?tab=readme-ov-file
 
-
 ---
 
 #### Introduction
