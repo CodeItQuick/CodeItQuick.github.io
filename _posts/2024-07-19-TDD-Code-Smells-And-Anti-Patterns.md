@@ -54,3 +54,17 @@ Red/Green/Refactor
 
 ## XP Practices Used
 I would use the definition of the rules provided at: http://www.extremeprogramming.org/rules.html
+
+# The TDD Tool Belt
+1. Red/Green/Refactor
+2. Mocking -> Fakes, Spies, Test Doubles, Crash Test Dummies, Mocks
+3. Dependency Injection
+4. To write production code, you must write a test first
+5. Pair Programming/Ensembling
+6. Continuous Integration
+7. Fast Test Suites
+8. Concise Test Declarations
+9. BDD Test Naming
+10. OOP Principles
+11. Testable Architectures
+12. Understanding Refactorings
