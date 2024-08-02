@@ -1,12 +1,12 @@
 ---
 layout: post
-name: What I get out of pairing?
+name: Agile - Scrum, Parking Lots, and Stories
 description: In Agile-Scrum, stories are broken down into smaller tasks for clarity and manageability.
 image: pairing_zombies.webp
 tags: agile all
 ---
 
-## Agile - Scrum, The Parking Lot, and how to do tickets/stories
+## Agile - Scrum, The Parking Lot, and Stories
 
 Lately I've been taking a story, which could be of the form: "As an accounting user, I can calculate my expenses from the department manager expense reports".
 

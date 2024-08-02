@@ -154,4 +154,3 @@ interface ErrorType<T> {
   errNo: T;
 }
 ```
-[Take me to the blog]({% link blog_list.md %})

@@ -16,41 +16,30 @@ you are a beginner.
 Also, what is beginner to you might not be beginner to me. Everyone has different skill levels at many things. We both
 don't know most things, and are both beginners at heart.  
 
+# What is the definition of a heuristic?
+
+The definition for heuristic is given by:
+
+```text
+    Proceeding to a solution by trial and error or by rules that are only loosely defined.
+```
+
 # The Guidelines
 
 Here are the guidelines I can brainstorm up quickly:  
-1. Only one assert per test  
-2. Avoid mid-test asserts, consider two separate tests instead
-3. Follow ZOMBIES acronym when at the lowest layer of testing/directly against the class  
-4. If your tests are complicated, your production code is complicated  
-5. Tests must be fast! Eliminate all slow tests from your primary test suite  
-6. Test coverage must be adequate! Above 80% is a reasonable goal  
-7. More tests make refactoring easier not more difficult  
-8. Run the fast tests frequently; every 10 minutes is probably too slow.  
-9. The vast majority of production code is not clean enough to test drive, until you get really skilled  
-10. No control statements in your tests  
-11. Stick to handwritten fakes, stubs, spies, etc.  
-12. Your test suite should mirror the test pyramid - only a few e2e, some integration, many unit tests  
-13. Pull out business logic from application logic, it makes it easier to test  
-14. On every change run all the tests in your "fast" suite. Check for those nasty side effects!  
-15. There are many flavours to legacy code. Some of it will be easy to add tests (and is testable), others not so much.  
-16. Don't test what you don't own
-17. To write production code a failing test must be written first
-18. Only write the simplest thing that will make the current test pass
-19. If too many tests fail at once you've gone too fast, backup and try again with more frequent smaller changes 
-20. Static methods are hard to test
+1. Minimize the number of asserts per test  
+2. Avoid mid-test asserts, consider two separate tests instead  
+3. Test suites should run in under 10 seconds    
+4. Test first code tends to trend toward 100% test coverage, however 80% at the start is more than acceptable  
+5. The test suite should be run every 5 minutes at the slowest    
+6. No control statements in your tests  
+7. Don't test what you don't own
+8. If too many tests fail at once you've gone too fast, backup and try again with more frequent smaller changes
 
-# The Definitions 
+# The Rules of TDD
 
-A few simple definitions as well:  
-TDD: You write the tests before the production code. You write code in terms of the customer rather than the consumer of the information.  
-Legacy Code: Code that has no tests  
-Legacy Systems: Code that is old and needs some more attention  
-Mocks: Both a mocking framework and kinds of stubs, fakes, and spies. An easy way to add confusion to what you are using to test  
-Fakes: Mimics the behaviour of the real thing  
-Stubs: Hard-coded values  
-Spies: Gives you an indication of the parameter that was passed to the function  
-Encapsulation: Fields should be private, avoid most static methods. Think command/query not get/set with methods  
-Property Bags/DTOs: Think getters/setters that clump like things together, and these objects have no inherent behaviour  
-Fast Tests: Entire suite runs in seconds at the slowest, usually under 1 second for the entire suite
+There are really only two rules of TDD:
 
+1. To write production code a failing test must be written first 
+2. Only write the simplest thing that will make the current test pass
+4. Static methods are hard to test

@@ -1,4 +1,4 @@
-<div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: 17 }" class="bg-neutral w-full">
+<div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: {{ site.posts.size }} }" class="bg-neutral w-full">
     <div class="w-10/12 py-8 mx-auto md:p-8 flex flex-col justify-center">
         {% include component_table_blog_post.html %}
         <div x-data="{ index: 0 }" class="grid md:grid-cols-2 gap-8 w-max-xl mx-auto">
@@ -70,7 +70,7 @@
     </button>
 
     <!-- Display page numbers -->
-    <template x-for="index in Math.floor(tag_count / 6) + 1">
+    <template x-for="index in Math.ceil(tag_count / 6)">
       <button
         class="px-3 py-2 rounded text-neutral-content"
         :class="{ 'bg-primary text-white font-bold' : index - 1 === pageNumber }"
@@ -85,7 +85,7 @@
     <button
       x-on:click="++pageNumber"
       :disabled="pageNumber >= Math.floor(tag_count / 6)"
-      :class="{ 'disabled cursor-not-allowed' : pageNumber >= Math.ceil(tag_count / 6) }"
+      :class="{ 'disabled cursor-not-allowed' : pageNumber >= Math.floor(tag_count / 6) }"
     >
       <svg
         class="h-8 w-8 text-neutral-content"
@@ -104,7 +104,7 @@
 
     <!--Last Button-->
     <button
-      x-on:click="pageNumber = Math.floor(tag_count / 6)"
+      x-on:click="++pageNumber"
       :disabled="pageNumber >= Math.floor(tag_count / 6)"
       :class="{ 'disabled cursor-not-allowed' : pageNumber >= Math.floor(tag_count / 6) }"
     >

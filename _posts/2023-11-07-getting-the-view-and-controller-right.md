@@ -55,5 +55,3 @@ Interestingly, this leaves *all* of the display of the data to the frontend, whi
 text to the data, but I (again) think this is an antipattern. It's better from a testing perspective to just pass data,
 and have the frontend concerned with how to display that in a human-friendly form.
 
-
-[Take me to the blog]({% link blog_list.md %})
