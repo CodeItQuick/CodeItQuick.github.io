@@ -21,7 +21,7 @@ don't know most things, and are both beginners at heart.
 The definition for heuristic is given by:
 
 ```text
-    Proceeding to a solution by trial and error or by rules that are only loosely defined.
+Proceeding to a solution by trial and error or by rules that are only loosely defined.
 ```
 
 # The Guidelines

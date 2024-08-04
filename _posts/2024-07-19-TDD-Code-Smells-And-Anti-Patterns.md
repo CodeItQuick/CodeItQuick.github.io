@@ -13,40 +13,40 @@ tags: TDD all
 The very common case where you write some test code, and realize that the test is significantly too long. An example
 code snippet is shown below:
 ```csharp
-    [Test]
-    public void RepositoryCanAttackNewCharactersAndAtOneHitPointDiesAttackRollModifiedByOne()
-    { 
-        var dbContextOptions = new DbContextOptionsBuilder<EvercraftDbContext>()
-            .UseInMemoryDatabase("CanGainLevelsAttackRollModifiedByOne").Options;
-        var evercraftDbContext = new EvercraftDbContext(dbContextOptions);
-        var homeRepository = new HomeRepository(
-            evercraftDbContext);
-        homeRepository.CreateCharacter("can attack character");
-        homeRepository.CreateCharacter("Gained Experience Character");
-        homeRepository.SetModifier(2, 14, "Constitution");
-        homeRepository.AttackCharacter(1, 11);
-        homeRepository.AttackCharacter(1, 11);
-        homeRepository.AttackCharacter(1, 11);
-        homeRepository.AttackCharacter(1, 11);
-        
-        homeRepository.AttackCharacter(1, 11);
+[Test]
+public void RepositoryCanAttackNewCharactersAndAtOneHitPointDiesAttackRollModifiedByOne()
+{ 
+    var dbContextOptions = new DbContextOptionsBuilder<EvercraftDbContext>()
+        .UseInMemoryDatabase("CanGainLevelsAttackRollModifiedByOne").Options;
+    var evercraftDbContext = new EvercraftDbContext(dbContextOptions);
+    var homeRepository = new HomeRepository(
+        evercraftDbContext);
+    homeRepository.CreateCharacter("can attack character");
+    homeRepository.CreateCharacter("Gained Experience Character");
+    homeRepository.SetModifier(2, 14, "Constitution");
+    homeRepository.AttackCharacter(1, 11);
+    homeRepository.AttackCharacter(1, 11);
+    homeRepository.AttackCharacter(1, 11);
+    homeRepository.AttackCharacter(1, 11);
+    
+    homeRepository.AttackCharacter(1, 11);
 
-        Assert.That(evercraftDbContext.DnDCharacters.Count(), Is.EqualTo(1));
-        
-        homeRepository.CreateCharacter("can attack character");
-        homeRepository.AttackCharacter(3, 11);
-        homeRepository.AttackCharacter(3, 11);
-        
-        homeRepository.AttackCharacter(3, 11);
+    Assert.That(evercraftDbContext.DnDCharacters.Count(), Is.EqualTo(1));
+    
+    homeRepository.CreateCharacter("can attack character");
+    homeRepository.AttackCharacter(3, 11);
+    homeRepository.AttackCharacter(3, 11);
+    
+    homeRepository.AttackCharacter(3, 11);
 
-        Assert.That(evercraftDbContext.DnDCharacters.Count(), Is.EqualTo(1));
-    }
+    Assert.That(evercraftDbContext.DnDCharacters.Count(), Is.EqualTo(1));
+}
 ```
 
 Why is this bad? It's very hard to discern what this code is actually doing. In this test cases situation its mostly
 due to all the setup code necessary to test the single when condition.
 
-Another classic code smell. The method is much too long in the production code. Its hard to figure out what this code
+Another classic code smell. The method is much too long in the production code. It's hard to figure out what this code
 is actually _trying_ to do.
 
 ```csharp
@@ -54,40 +54,42 @@ public void AttackCharacter(int attackedCharacterId, int randomDieRoll)
 {
 var attackedCharacter = _applicationDbContext.DnDCharacters.Find(attackedCharacterId);
 
-        if (attackedCharacter is not { } character ) return;
-        var effectiveArmor = randomDieRoll - ModifierTable[(int) character.DexterityModifier];
-        if (character.Armor >= effectiveArmor) return;
+    if (attackedCharacter is not { } character ) return;
+    var effectiveArmor = 
+        randomDieRoll - ModifierTable[(int) character.DexterityModifier];
+    if (character.Armor >= effectiveArmor) return;
 
-        // weaker enemies get hit harder, stronger enemies only get hit for 1 damage
-        var coreDamage = (int) character.StrengthModifier > 10 ? 1: 
-            1 - ModifierTable[(int) character.StrengthModifier];
-        // highest level characters experience level gets added to the damage
-        var characterExperiencePoints = _applicationDbContext
-            .DnDCharacters.OrderBy(x => x.ExperiencePoints).Last().ExperiencePoints;
-        var damageAmt = randomDieRoll == 20 ? 2 * coreDamage + characterExperiencePoints / 1000 :
-            coreDamage + characterExperiencePoints / 1000;
+    // weaker enemies get hit harder, stronger enemies only get hit for 1 damage
+    var coreDamage = (int) character.StrengthModifier > 10 ? 1: 
+        1 - ModifierTable[(int) character.StrengthModifier];
+    // highest level characters experience level gets added to the damage
+    var characterExperiencePoints = _applicationDbContext
+        .DnDCharacters.OrderBy(x => x.ExperiencePoints).Last().ExperiencePoints;
+    var damageAmt = randomDieRoll == 20 ? 2 * 
+        coreDamage + characterExperiencePoints / 1000 :
+        coreDamage + characterExperiencePoints / 1000;
 
-        var characterDied = character.HitPoints <= damageAmt;
-        if (characterDied)
-        {
-            _applicationDbContext.DnDCharacters.Remove(attackedCharacter);
-            _applicationDbContext.SaveChanges();
-            var dnDCharacters = _applicationDbContext.DnDCharacters.ToList();
-            dnDCharacters.ForEach(x => { 
-                x.ExperiencePoints += 1000;
-                var constitutionModifier = (int) x.ConstitutionModifier < 12 
-                    ? 0 
-                    : ModifierTable[(int) x.ConstitutionModifier];
-                x.HitPoints += 5 + constitutionModifier;
-            });
-            _applicationDbContext.SaveChanges();
-            return;
-        }
-        
-        attackedCharacter.HitPoints -= damageAmt;
-        _applicationDbContext.DnDCharacters.Update(attackedCharacter);
+    var characterDied = character.HitPoints <= damageAmt;
+    if (characterDied)
+    {
+        _applicationDbContext.DnDCharacters.Remove(attackedCharacter);
         _applicationDbContext.SaveChanges();
+        var dnDCharacters = _applicationDbContext.DnDCharacters.ToList();
+        dnDCharacters.ForEach(x => { 
+            x.ExperiencePoints += 1000;
+            var constitutionModifier = (int) x.ConstitutionModifier < 12 
+                ? 0 
+                : ModifierTable[(int) x.ConstitutionModifier];
+            x.HitPoints += 5 + constitutionModifier;
+        });
+        _applicationDbContext.SaveChanges();
+        return;
     }
+    
+    attackedCharacter.HitPoints -= damageAmt;
+    _applicationDbContext.DnDCharacters.Update(attackedCharacter);
+    _applicationDbContext.SaveChanges();
+}
 ```
 
 ## Techniques to reduce verbosity:  
@@ -97,7 +99,7 @@ The object-mother pattern is a popular method to reduce the verbosity in tests b
 object.
 
 ```csharp
-    // Need to add example from my code here
+// Need to add example from my code here
 ```
 
 
@@ -107,7 +109,7 @@ Test data builders are another popular pattern to reduce the verbosity in tests 
 builder design pattern.
 
 ```csharp
-    // Need to add example from my code here
+// Need to add example from my code here
 ```
 
 ## Performance

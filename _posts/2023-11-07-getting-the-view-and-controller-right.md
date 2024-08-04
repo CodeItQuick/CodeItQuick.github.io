@@ -16,7 +16,7 @@ etc. For this reason I've heard of hexagonal as "horizontal" as opposed to "vert
 
 It took a bit of time, but I eventually got to this in the ultra simple expense report kata hexagonal architecture:
 
-```text
+```csharp
 public class HomeController
 {
     // Constructor etc. omitted for brevity
@@ -41,7 +41,7 @@ realized this is actually an antipattern. At the boundaries of a system you want
 data, so property bags, getters/setters, or DTOs are the better abstraction. The code is as follows:
 
 
-```text
+```csharp
 public class ExpenseView
 {
     public int MealExpenses { get; set; }

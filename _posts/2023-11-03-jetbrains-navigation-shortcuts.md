@@ -92,4 +92,3 @@ I use goto declaration or usage frequently, and need to start trying some of the
 | Ctrl + F12 | File Structure |
 | Ctrl + Alt + F12 | File Path |
 
-[Take me to the blog]({% link blog_list.md %})

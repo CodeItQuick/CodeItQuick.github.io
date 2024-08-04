@@ -40,19 +40,19 @@ I remember to update this blog when I find out.
 For those that would prefer a TLDR; in code form
 
 ```js
-    function GarbageInGarbageOut() {
-        // definitions
-        const developmentEstimation = "hard";
-        const storypointing = "estimation";
-        // logic
-        if (storypointing == estimation && 
-            developmentEstimation !== "easy" && 
-            developmentEstimation === "hard") {
-            return true;
-        } else {
-            return false;
-        }
+function GarbageInGarbageOut() {
+    // definitions
+    const developmentEstimation = "hard";
+    const storypointing = "estimation";
+    // logic
+    if (storypointing == estimation && 
+        developmentEstimation !== "easy" && 
+        developmentEstimation === "hard") {
+        return true;
+    } else {
+        return false;
     }
+}
 ```
 
 # Note
