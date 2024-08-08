@@ -22,6 +22,8 @@ Current Project Ideas:
 5. Spotify discover playlist/playlist maker tool
 6. Tailwind Theme Creator
 7. Thumbs Up/Thumbs Down meter for retros
+8. Home Assistant (https://www.home-assistant.io/getting-started/onboarding_dashboard/)
+9. Matter (https://github.com/project-chip/connectedhomeip)
 
 ## Getting Started
 
