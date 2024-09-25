@@ -24,7 +24,7 @@ tags: agile all
 # Further Thoughts
 With regards to:  
 
-- Testing: When we were really in trouble (losing by a lot) I think dropping our testing had lower risk, as our bought was broken anyways
+- Testing: When we were really in trouble (losing by a lot) I think dropping our testing had lower risk, as our bot was broken anyways
 - Testing: When we were winning, testing and deploying seemed very risky! What if we start losing afterall
 
 I think this is the result of "everythings on fire" syndrome vs "everythings fine". When things are going
