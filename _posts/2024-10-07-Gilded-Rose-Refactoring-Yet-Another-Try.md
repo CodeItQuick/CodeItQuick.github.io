@@ -147,15 +147,15 @@ fix it right now.
 ```ts
 const itemName = this.items[i].name;
 
-      const CalculateQuality = {
-        'Generic': this.CalculateGenericItem,
-        'Conjured': this.CalculateConjured,
-        'Brie': this.CalculateAgedBrie,
-        'Backstage': this.CalculatePasses,
-      }
+const CalculateQuality = {
+'Generic': this.CalculateGenericItem,
+'Conjured': this.CalculateConjured,
+'Brie': this.CalculateAgedBrie,
+'Backstage': this.CalculatePasses,
+}
 
-      const key = GildedRose.itemType(itemName);
-      CalculateQuality[key]?.(i, this.items[i]);
+const key = GildedRose.itemType(itemName);
+CalculateQuality[key]?.(i, this.items[i]);
 ```
 
 # Threefold Goal of the Exercise
