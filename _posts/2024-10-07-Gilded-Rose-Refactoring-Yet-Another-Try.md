@@ -2,7 +2,7 @@
 layout: post
 name: Yet Another Gilded Rose Solution
 description: What feels like my 15th attempt at gilded rose brings new learnings 
-image: zombie-poker-playing-moonlight-lean-poker.webp
+image: karate_kata_dnd.webp
 tags: refactoring all
 ---
 
@@ -76,10 +76,6 @@ All files       |     100 |       96 |     100 |     100 |
 6. The fact the code is so difficult to read it made it necessary to write way more tests than if it were more plainly described
 7. I could probably delete some of my tests after the exercise was done
 8. There are a number of bugs in the code that should be fixed to bring it into alignment with the requirements document
-9. I concluded the idea of the exercise is threefold  
-(1) write enough tests that we can stabilize the code  
-(2) add the feature  
-(3) remove any latent bugs
 
 # Testing Philosophy
 1. The loop is kind of immaterial to the testing. We only have to test the if statements, not the loop. So no need to increment multiple days.
