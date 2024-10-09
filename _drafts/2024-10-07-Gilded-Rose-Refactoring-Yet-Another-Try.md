@@ -69,14 +69,17 @@ All files       |     100 |       96 |     100 |     100 |
  gilded-rose.ts |     100 |       96 |     100 |     100 | 24                
 ----------------|---------|----------|---------|---------|-------------------
 ```
-2. That's a lot of coverage; way more than any executive would predict is necessary
+2. That's a lot of coverage; way more than I would have predicted is necessary
 3. The actual code deviated from the requirements a number of times
 4. The code likely relies in part on the valid items being fed into the function
 5. Sulfuras is just a pass through, and the code should read `if (name === 'Sulfuras') return;`
 6. The fact the code is so difficult to read it made it necessary to write way more tests than if it were more plainly described
 7. I could probably delete some of my tests after the exercise was done
 8. There are a number of bugs in the code that should be fixed to bring it into alignment with the requirements document
-9. I concluded the idea of the exercise is threefold (1) write enough tests that we can stabilize the code (2) add the feature (3) remove any latent bugs
+9. I concluded the idea of the exercise is threefold  
+(1) write enough tests that we can stabilize the code  
+(2) add the feature  
+(3) remove any latent bugs
 
 # Testing Philosophy
 1. The loop is kind of immaterial to the testing. We only have to test the if statements, not the loop. So no need to increment multiple days.
@@ -130,6 +133,27 @@ tests maximum to cover the behaviour. The exercise makes me wonder how often I w
 to be "safe". There are likely more cases of this in the suite. It follows, that for a large codebase that is legacy code,
 you may have to initially write way more tests than are necessary until the production code is brought back under
 control and some of these tests can be deleted.
+
+# An Improvement to my solution
+
+The following code snippet changes the multiple ifs to a single lookup to find the correct method, and then 
+dispatches that method. The ItemType function has similar dispatching logic to determine the right value to
+use for the key of "CalculateQuality". Still feels like there's some mess here, but I cannot be bothered to
+fix it right now.
+
+```ts
+const itemName = this.items[i].name;
+
+      const CalculateQuality = {
+        'Generic': this.CalculateGenericItem,
+        'Conjured': this.CalculateConjured,
+        'Brie': this.CalculateAgedBrie,
+        'Backstage': this.CalculatePasses,
+      }
+
+      const key = GildedRose.itemType(itemName);
+      CalculateQuality[key]?.(i, this.items[i]);
+```
 
 # Threefold Goal of the Exercise
 
