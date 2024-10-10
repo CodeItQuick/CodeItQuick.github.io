@@ -8,8 +8,6 @@ tags: editor all
 
 # Shortcutting your jetbrains (Windows only)
 
-# Shortcutting your jetbrains (Windows only)
-
 Here's a list of several shortcuts with some explanations of why they are useful. I'll try
 to list them in order of usefulness. There are very few navigation shortcuts in here, and I
 will hopefully make a new post that outlines all the navigation shortcuts that I'm not currently
