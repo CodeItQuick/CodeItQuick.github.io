@@ -1,71 +1,23 @@
 ---
 layout: post
-name: Thoughts on Stories
-description: In my blog article on agile story splitting, I explained how to break down large user stories into smaller, manageable pieces to fit within a single sprint.  
+name: Thoughts on Project and Task Estimation
+description: Exploring ideas within project and task estimation for development  
 image: story_splitting_zombies.png
 tags: agile all
 ---
 
-# Story Splitting
+# Methods of Estimation
 
-The concept of story splitting is simple enough. Your engineering manager wants you to go "faster"; really what he's asking
-for is more story points per sprint. The way to achieve this isn't actually to "code faster", since we're limited in how
-fast we code by a multitude of things. The real answer is to give your manager more insight into what you're doing at any
-given point in time. This is achieved by taking your current work and splitting it into more bite-sized chunks that are
-easily digestible. Yum. But how do you accomplish this?
+## Introduction
 
-After trying to split stories for about a year and a half seriously now, and very much failing. I had a kind of "AHA!" or
-Eureka! moment. What if I actually just treated every story given to me as an "epic"? Really, the tasks/stories given to me
-are just functionality we need added to the website, in one way or another. They typically last 1->6 months (in the worst cases).
-So in the extreme cases they actually _are_ epics lasting 6 months, and in the short-case they are still not what's thought of as
-"thin vertical slices".
-
-So after my big aha, I put the task I'm given at the "design" phase, and then start splitting off stories on what I'm pull
-requesting into the codebase. The other big "aha!" moment immediately after this - just because I PR something into the 
-codebase doesn't mean the actual _behaviour_ of the codebase has to change. Really I've just made a stepwise change 
-that improves something, adds a feature, or the ability to add a feature. My current task is to get rid of some large methods
-on an even larger class. I start making each move of a large method a PR, and thus it is also a story on my board. Whether
-its separating domain logic from database logic, or figuring out where that gnarly utility method _actually_ belongs and moving 
-it, they are all stories.
-
-The jury is still out on my story-splitting experiment. I plan on creating new stories for the next week, until either the
-sprint retrospective on Wednesday, or my Engineering Manager 1-on-1 on Thursday. I want to see how it pans out - is this 
-actually a useful exercise? Or a total waste of time and purely a thought experiment? I don't really know, but hopefully 
-I remember to update this blog when I find out.
-  
-# Story Pointing - Evil or Not
-
-# Argument Outline
-
-For those that would prefer a TLDR; in code form
-
-```js
-function GarbageInGarbageOut() {
-    // definitions
-    const developmentEstimation = "hard";
-    const storypointing = "estimation";
-    // logic
-    if (storypointing == estimation && 
-        developmentEstimation !== "easy" && 
-        developmentEstimation === "hard") {
-        return true;
-    } else {
-        return false;
-    }
-}
-```
-
-# Note
-
-I actually have to re-read this article, in light of my above logic. Writing out the argument in code allowed me to
-see flaws in the arguments. This article is currently a WIP until I remove this note and flush out my thoughts more.
-
-# Story Pointing - Evil or Not
+We'll first talk about general problems with estimation. Since there will always be someone in the organization (frequently a
+business person, or someone who has to pay for the work), estimation will likely exist for quite some time. Let's first discuss
+some downfalls of estimation.
 
 ## Garbage in Garbage Out
 
-The underlying problem for developers posed by "lets do story-pointing", or trying to record a length/complexity of time for a task,
-is that their tasks are not easy to estimate. In fact, they fit what ChatGPT defines as a poor tasks to estimate.
+The underlying problem for developers posed by "lets do estimation", or trying to record a length/complexity of time for a task,
+is that their tasks are not easy to estimate. 
 
 What makes a task easy to estimate? It's tasks that fit on the following dimensions
 
@@ -91,7 +43,7 @@ What makes a task easy to estimate? It's tasks that fit on the following dimensi
    and making standard operating procedures (SOPs) would be a major antipattern for development as none of the tasks are
    routine enough.
 
-What makes a task hard to estimate? ChatGPT rates it difficult if it falls into the following dimensions
+What makes a task hard to estimate? 
 
 1. Novel or Innovative Tasks
 2. Complex and Multifaceted Tasks
@@ -127,17 +79,18 @@ These four items I think takes a bit more convincing that it's a benefit of esti
 
 6. **Planning and Scheduling**:  
    While agile methodologies emphasize flexibility and adaptability, planning and scheduling are still essential.
-   Story pointing and time estimation provide a framework to balance these needs.
+   Time estimation provide a framework to balance these needs.
 7. **Improving Efficiency**:   
-   Story pointing and time estimation can drive continuous improvement in efficiency by providing data for analysis and reflection.
+   Time estimation can drive continuous improvement in efficiency by providing data for analysis and reflection.
 8. **Resource Allocation**:  
-   Story points and time estimates can guide effective resource allocation by providing a clear picture of workload distribution.
+   Time estimates can guide effective resource allocation by providing a clear picture of workload distribution.
 9. **Progress Tracking**:    
-   Story pointing and time estimation are fundamental to tracking progress in a structured manner.
+   Time estimation are fundamental to tracking progress in a structured manner.
 
 # The value proposition of project management
 
-The value proposition of project management lies in its ability to systematically plan, execute, and complete projects efficiently and effectively. Here are the key components of this value proposition:
+The value proposition of project management lies in its ability to systematically plan, execute, and complete projects 
+efficiently and effectively. Here are the key components of this value proposition:
 
 1. Improved Planning and Organization
 2. Enhanced Resource Management
@@ -149,48 +102,7 @@ The value proposition of project management lies in its ability to systematicall
 8. Continuous Improvement
 9. Stakeholder Satisfaction
 
-The value proposition of project management is its ability to deliver projects successfully by enhancing planning, resource management, risk mitigation, communication, quality, time management, cost control, continuous improvement, and stakeholder satisfaction. This comprehensive approach ensures that projects are completed efficiently, effectively, and to the satisfaction of all parties involved.
-
-Why track a Say/Do Ratio? What's the point?
-=========
-
-The say do ratio is used to prevent spillover from stories/tasks in a single sprint. Its a ratio that
-is meant to drive splitting stories or working in smaller incremental values.
-
-Definitions
------------
-User Story: A single chunk of work that is scoped down to the minimum possible increment that STILL has meaning to the user.
-Example: If you are clicking a button and that triggers 10 microservices in the backend, the smallest unit of work is the button click
-and whatever behaviour changes in reference to the user afterwards (Perhaps an email gets sent).
-
-Technical Task: A single chunk of work divided from a user story that still delivers an incremental piece of value that still has meaning to a developer.
-Example: If you are clicking a button and that triggers 10 microservices that are all in separate repositories, the incremental value unit will be at
-least as big as 10 pull requests into each microservice (assuming these are separated).
-
-Say/Do Ratio: A ratio made in an effort to size down or further split a unit of work - this could either be a User Story or a Technical Task. Story points
-are supposed to be used to get the units. These should be "committed" status stories only in the numerator, and I believe all stories are the denominator.
-
-Examples - User Stories:
-Sprint Results 01/01/2024 (2 week increment):
-* User Story 1 (13 points): Spills Over
-* User Story 2 (8 points): Completed
-* User Story 3 (5 points): Completed  
-  Say Do Ratio: (5 points + 8 points) / (5 + 8 + 13) points = 50%
-
-Examples - Technical Tasks:  
-Sprint Results 01/01/2024 (2 week increment):
-* User Story 1 (8 points): Spills Over
-* User Story 2 (5 points): Completed
-* User Story 3 (3 points): Completed  
-  Say Do Ratio: (5 points + 3 points) / (5 points + 3 points + 8 points) = 50%
-
-Observations
-------------
-1. User Stories are larger than technical tasks essentially by definition.
-2. The largest technical task would be exactly equal to the user story.
-3. User Stories are significantly harder to scope down without paying down technical debt in advance.
-4. Technical Tasks almost always have further divisions that may not be useful, but can be made.
-5. User Stories will have a single unit of work that is the minimum acceptable by product/sales,
-   and it will be extremely difficult to scope down after that point.
-6. User stories have direct value to the customer
-7. Technical tasks are only value to the customer if treated in their groupings (user stories)
+The value proposition of project management is its ability to deliver projects successfully by enhancing planning, 
+resource management, risk mitigation, communication, quality, time management, cost control, continuous improvement, and 
+stakeholder satisfaction. This comprehensive approach ensures that projects are completed efficiently, effectively, and 
+to the satisfaction of all parties involved.
