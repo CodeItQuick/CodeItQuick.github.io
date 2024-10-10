@@ -21,24 +21,24 @@ is that their tasks are not easy to estimate.
 
 What makes a task easy to estimate? It's tasks that fit on the following dimensions
 
-1. Repetitive or Routine Tasks  
+1. **Repetitive or Routine Tasks**  
    Two tasks in development could even look the same to an outside observer, and be entirely different.
-2. Well-Defined Tasks  
+2. **Well-Defined Tasks**  
    There are "no well-defined tasks" in development. In fact, a common mistake by a junior developer is to say "it will be easy", or "its just".
-3. Small, Independent Tasks  
+3. **Small, Independent Tasks**  
    In development there are so many unknown dependencies that unit testing/regression testing is extremely helpful. Regression
    testing allows us to make sure our codebase doesn't take a step back when making a change.
-4. Tasks with Established Patterns or Templates  
+4. **Tasks with Established Patterns or Templates**  
    There may be patterns in the code, but more often times the patterns are very loosely defined.
-5. Tasks with High Historical Data  
+5. **Tasks with High Historical Data**  
    Each task in development is unique, so there are no historical information on the task.
-6. Low Complexity Tasks  
+6. **Low Complexity Tasks**  
    There are also no low complexity or easy tasks. See the earlier note. Calling a task "low complexity" is a negative free-roll.
    You are either right, and people are happy you finish the task on time, or it is a complex task, and you are way later. Therefore,
    it's much smarter to severally sandbag the tasks.
-7. Tasks with Limited Dependencies  
+7. **Tasks with Limited Dependencies**  
    There could be limited dependencies, but there are *often* unknown dependencies, which is even worse.
-8. Well-Documented and Standardized Tasks  
+8. **Well-Documented and Standardized Tasks**  
    The tasks could be well documented, and you could even invest more time into documentation. But they are never standardized,
    and making standard operating procedures (SOPs) would be a major antipattern for development as none of the tasks are
    routine enough.
