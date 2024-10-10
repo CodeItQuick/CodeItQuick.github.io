@@ -14,7 +14,7 @@ We'll first talk about general problems with estimation. Since there will always
 business person, or someone who has to pay for the work), estimation will likely exist for quite some time. Let's first discuss
 some downfalls of estimation.
 
-## Garbage in Garbage Out
+## Garbage In Garbage Out
 
 The underlying problem for developers posed by "lets do estimation", or trying to record a length/complexity of time for a task,
 is that their tasks are not easy to estimate. 
@@ -63,8 +63,8 @@ estimating something.
 There is an obvious counter-point here. If you know exactly how long a task is going to take, why estimate it at all?
 You could just give the person the task, and come back however many days needed later to pick-up the item.
 
-What is the purpose of estimating? Estimating time for tasks fits into the following categories. These initial four I saw
-the value immediately.
+What is the purpose of estimating? Estimating time for tasks fits into the following categories. These initial four 
+I saw the value immediately.
 
 1. **Customer Satisfaction**:   
    Being able to deliver features on time and within scope on a small feature basis is valuable.
