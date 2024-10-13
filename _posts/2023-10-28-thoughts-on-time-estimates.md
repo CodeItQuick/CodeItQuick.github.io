@@ -6,6 +6,13 @@ image: story_splitting_zombies.png
 tags: agile all
 ---
 
+# Outline
+1. The Problems Inherent With Time Estimation
+2. Why Estimate?
+3. Kinds of Estimation
+4. 
+
+
 # Methods of Estimation
 
 ## Introduction
@@ -87,22 +94,13 @@ These four items I think takes a bit more convincing that it's a benefit of esti
 9. **Progress Tracking**:    
    Time estimation are fundamental to tracking progress in a structured manner.
 
-# The value proposition of project management
+# The Solution: Longer Term Soft Deadlines
 
-The value proposition of project management lies in its ability to systematically plan, execute, and complete projects 
-efficiently and effectively. Here are the key components of this value proposition:
+I believe estimation at the task level is asking for trouble. It can lead to micromanagement, and a level of perceived
+detail that does not exist. There are other options in project estimation, including hard deadlines and soft deadlines.
+The option I've seen most commonly in contracting, or solo development are soft deadlines. I'll get this to you in 2-3
+months, and if it's late by a week or two that's ok. I think budgeting is another valid approach to the problem. Decide
+how much time you can afford to spend on a problem, then invest that time and see what happens. Make each new decision
+of time investment at successive intervals.
 
-1. Improved Planning and Organization
-2. Enhanced Resource Management
-3. Risk Mitigation
-4. Improved Communication and Collaboration
-5. Higher Quality Deliverables
-6. Better Time Management
-7. Cost Control
-8. Continuous Improvement
-9. Stakeholder Satisfaction
 
-The value proposition of project management is its ability to deliver projects successfully by enhancing planning, 
-resource management, risk mitigation, communication, quality, time management, cost control, continuous improvement, and 
-stakeholder satisfaction. This comprehensive approach ensures that projects are completed efficiently, effectively, and 
-to the satisfaction of all parties involved.
