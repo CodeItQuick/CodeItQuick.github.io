@@ -6,13 +6,6 @@ image: story_splitting_zombies.png
 tags: agile all
 ---
 
-# Outline
-1. The Problems Inherent With Time Estimation
-2. Why Estimate?
-3. Kinds of Estimation
-4. 
-
-
 # Methods of Estimation
 
 ## Introduction
