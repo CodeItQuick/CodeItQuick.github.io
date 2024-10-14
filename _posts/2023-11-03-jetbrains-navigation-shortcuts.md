@@ -25,7 +25,7 @@ These are the basic shortcuts everyone should really be using. Rename variable a
 are probably the most useful. List function parameters is a recent one I've learned that is handy a lot.
 Autocomplete allows for grabbing methods without having to look at the function itself etc.
 
-## Moving around the editor
+## Basic Editor Movements
 
 | Shortcut       | Function                                            |
 |----------------|-----------------------------------------------------|
