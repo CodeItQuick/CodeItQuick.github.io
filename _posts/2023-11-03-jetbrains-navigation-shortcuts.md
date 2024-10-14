@@ -25,7 +25,7 @@ These are the basic shortcuts everyone should really be using. Rename variable a
 are probably the most useful. List function parameters is a recent one I've learned that is handy a lot.
 Autocomplete allows for grabbing methods without having to look at the function itself etc.
 
-## Dipsy-Doodles
+## Moving around the editor
 
 | Shortcut       | Function                                            |
 |----------------|-----------------------------------------------------|
@@ -49,7 +49,7 @@ Moving lines up and down is slightly faster than cut/paste and looks a little bi
 | Ctrl + Alt + F | Extract Field                                       |
 
 Most of the refactoring shortcuts are ctrl + alt + *some command*. If you want to learn
-one shortcut only, remember the the first one. That shortcut (alt + enter) will allow
+one shortcut only, remember the first one. That shortcut (alt + enter) will allow
 for a lot of functionality that is built-in to the editor.
 
 ## General Search Window Shortcuts
@@ -66,7 +66,7 @@ There are shortcuts to go to each individual tab as detailed below.
 
 ## Basic Editor Moving Around
 Moving around in the editor, these shortcuts are used frequently. The goto error
-and previous error is especially useful to find compile errors. Its also possible
+and previous error is especially useful to find compile errors. It's also possible
 to jump between methods.
 
 | Shortcut       | Function                                            |
