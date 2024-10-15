@@ -6,7 +6,7 @@ tags: TDD ensembling beginner
 url: https://github.com/swkBerlin/kata-bootstraps
 layout: dojo
 ---
-﻿Law Of Demeter
+Law Of Demeter
 ===============================
 See Wikipedia article for general description: https://en.wikipedia.org/wiki/Law_of_Demeter
 Probably the reason for this article (Getters and Setters are evil): https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html
