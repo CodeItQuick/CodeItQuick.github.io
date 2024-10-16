@@ -120,17 +120,17 @@ to guess how much work the group can do due to the story points alone. This last
 the work they are willing to take on, there are no pointing needed for that task.
 
 A quick list of all the undelivered promises for story pointing in my view:
-1. **Promotes Consistency in Delivery**:
+1. **Promotes Consistency in Delivery**:  
 The work has no consistency, how can its delivery therefore have consistency?
-2. **Facilitates Continuous Improvement**: 
+2. **Facilitates Continuous Improvement**:  
 I've seen way more dysfunction than improvement from them
-3. **Neutralizes Time-Based Pressure**: 
+3. **Neutralizes Time-Based Pressure**:  
 Because measuring in complexity takes the pressure off? I think not.
-4. **Promotes Fair Workload Distribution**: 
+4. **Promotes Fair Workload Distribution**:   
 Everyone is different, their workloads will be different. Also, story points doesn't solve this.
-5. **Improves Sprint Planning and Forecasting**: 
+5. **Improves Sprint Planning and Forecasting**:   
 Never even seen it attempted; The storypointing I've seen has been so far from this ideal it's a major complaint of mine
-6. **Promotes Team Autonomy and Self Organization**: 
+6. **Promotes Team Autonomy and Self Organization**:   
 This is a product of good communication on the development team.
 
 # The Solution: Longer Term Soft Deadlines
