@@ -9,13 +9,11 @@ tags: agile all
 # Methods of Estimation
 
 ## Introduction
-
 We'll first talk about general problems with estimation. Since there will always be someone in the organization looking
 to figure out costs, or when a feature will get in the hands of a customer, estimation will likely exist for quite some 
 time. Let's first discuss some downfalls of estimation.
 
-## Garbage In Garbage Out
-
+## The Estimation Inputs - Are they reliable?
 The underlying problem for developers posed by "lets do estimation", or trying to record a length/complexity of time for a task,
 is that their tasks are not easy to estimate. 
 
