@@ -58,35 +58,6 @@ What makes a task hard to estimate?
 In short form, we can answer "yes" to all the above. Development tasks readily fit into the buckets we don't want for
 estimating something.
 
-# Why continue to try to estimate these tasks?
-
-There is an obvious counter-point here. If you know exactly how long a task is going to take, why estimate it at all?
-You could just give the person the task, and come back however many days needed later to pick up the item.
-
-What is the purpose of estimating? Estimating time for tasks fits into the following categories. These initial four 
-I saw the value immediately.
-
-1. **Customer Satisfaction**:   
-   Being able to deliver features on time and within scope on a small feature basis is valuable.
-2. **Goal Setting**:  
-   Setting goals as a developer can be helpful for staying motivated.
-3. **Risk Management**:  
-   Managing the scope and how of the task is necessary to not overrun on either scope or time.
-4. **Managing Expectations**:  
-   Tempering the team leads expectations with the task is important and a continual battle.
-
-These four items I think takes a bit more convincing that it's a benefit of estimating developer tasks.
-
-6. **Planning and Scheduling**:  
-   While agile methodologies emphasize flexibility and adaptability, planning and scheduling are still essential.
-   Time estimation provide a framework to balance these needs.
-7. **Improving Efficiency**:   
-   Time estimation can drive continuous improvement in efficiency by providing data for analysis and reflection.
-8. **Resource Allocation**:  
-   Time estimates can guide effective resource allocation by providing a clear picture of workload distribution.
-9. **Progress Tracking**:    
-   Time estimation are fundamental to tracking progress in a structured manner.
-
 # It's not the metrics we want - it's the discussion
 
 As a previous business analyst, it became apparent fairly often my measurements were more about the discussion than the
