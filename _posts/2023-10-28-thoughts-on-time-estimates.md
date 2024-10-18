@@ -32,9 +32,7 @@ will be easier. The factors we cannot control can be the most discouraging, but 
 task that is repetitive and routine, not complex, and standardized would be easy to estimate. If we added on top of this 
 repetitive task a significant amount of historical data, we could accurately estimate with some error bars how long it 
 will take. Unfortunately, the picture I just painted more readily resembles an old-fashioned car assembly line than 
-anything we'll see in a developers in-progress lane. Creative tasks are also very difficult, and perhaps trying to take the
-coding out of the creativity is the answer here, but really I've never found an easy way to minimize this as far as a project
-risk goes.
+anything we'll see in a developers in-progress lane. 
 
 If we split tasks so that one blocks another, this is going to slow down development. We have essentially turned what
 could be agile development of independent elements, into waterfall development of progress steps. Ideally, we want small
@@ -48,6 +46,8 @@ novel or innovative, then by its nature it will be all new to us, and well, ever
 the project, I often find it useful to go off and learn those technologies or learnings on my own before applying them
 to the project. Finally, we should minimize project risk or uncertainty. A typical mitigation strategy would be using
 familiar technologies to us, rather than new technologies that require the developer to go off and learn a bunch of concepts.
+Creative tasks are also very difficult, and perhaps trying to take the coding out of the creativity is the answer here, 
+but really I've never found an easy way to minimize this as far as a project risk goes.
 
 There are challenges inherent in collaboration, especially with external parties. So we have to have these external customer
 meetings preferable upfront, and often during the project to fully understand the customer request. High collaboration needs
