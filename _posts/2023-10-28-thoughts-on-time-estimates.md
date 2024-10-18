@@ -29,10 +29,8 @@ Missed hard deadlines being probably the biggest pain point, so what are some wa
 
 ## 3. Solutions: Managing Estimation and Task Risk
 ### **Beyond Our Control**
-First I'm going to go through ways a task can be easier to estimate, then we will discuss complicating factors in task estimation. 
-If we do our best to control for these factors by making them more prominent, our estimates, or maybe it's really the work, 
-will be easier. The factors we cannot control can be the most discouraging, but I think in this case it's not so bad. A 
-task that is repetitive and routine, not complex, and standardized would be easy to estimate. If we added on top of this 
+The factors we cannot control can be the most discouraging, but I think in this case it's not so bad. A task that is 
+repetitive and routine, not complex, and standardized would be easy to estimate. If we added on top of this 
 repetitive task a significant amount of historical data, we could accurately estimate with some error bars how long it 
 will take. Unfortunately, the picture I just painted more readily resembles an old-fashioned car assembly line than 
 anything we'll see in a developers in-progress lane. 
