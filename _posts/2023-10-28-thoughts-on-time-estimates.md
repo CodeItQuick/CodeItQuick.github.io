@@ -13,62 +13,56 @@ We'll first talk about general problems with estimation. Since there will always
 to figure out costs, or when a feature will get in the hands of a customer, estimation will likely exist for quite some 
 time. Let's first discuss some downfalls of estimation.
 
-## 2. Undelivered Promises
-My biggest criticism of story pointing in particular is with undelivered promises. The pro-storypointers tend to pitch you
-on theory, and not the reality of the implementation. We'll make burndown charts of our velocity, figure out deadlines months
-in advance, and be able to predict the future! Unfortunately I haven't seen anything further from the truth in their implementation.
-I've never seen a meaningful velocity calculated, seen accurate points estimates given in terms of complexity, or been able
-to guess how much work the group can do due to the story points alone. This last point, each engineer can somewhat guess
-the work they are willing to take on, there are no pointing needed for that task.
+## 2. The Pain's of Estimation
+It's very difficult to estimate individual developer tasks, stories, and project timelines. I've always experienced pain
+in someone asking for a widget, website, etc. in a given timeline and then not being able to deliver it in the "required"
+timeline. As my career progresses this pain has gotten to be less and less, but I don't think story pointing is really
+the reason for this. Instead, being better at building software overall, and better communication skills are the reasons.
 
-A quick list of all the undelivered promises for story pointing in my view:
-1. **Promotes Consistency in Delivery**:  
-   The work has no consistency, how can its delivery therefore have consistency?
-2. **Facilitates Continuous Improvement**:  
-   I've seen way more dysfunction than improvement from them
-3. **Neutralizes Time-Based Pressure**:  
-   Because measuring in complexity takes the pressure off? I think not.
-4. **Promotes Fair Workload Distribution**:   
-   Everyone is different, their workloads will be different. Also, story points doesn't solve this.
-5. **Improves Sprint Planning and Forecasting**:   
-   Never even seen it attempted; The storypointing I've seen has been so far from this ideal it's a major complaint of mine
-6. **Promotes Team Autonomy and Self Organization**:   
-   This is a product of good communication on the development team.
+I think the goal of estimation overall is to improve customer satisfaction by better managing expectations. Now is this
+the right viewpoint for delivering software, I'm not so sure. Showing continual progress in the development of the software
+is probably the most impressive thing a software developer can do. Still, there is major pain in time estimation for developers.
+Missed hard deadlines being probably the biggest pain point, so what are some ways we can minimize this pain, beyond just
+"be a better developer".
 
 ## 3. Managing Estimation and Task Risk
-There are several aspects of developer tasks that are beyond our control, including whether they have high historical 
-data, are repetitive or routine, have low complexity, or are standardized. Tasks with high historical data provide 
-insights based on previous experiences, but we cannot manufacture such history if it doesn't exist. Similarly, whether a 
-task is repetitive or routine depends on the nature of the work itself, as some projects inherently involve novelty or 
-one-off challenges. The complexity of a task is also often dictated by the problem being solved, and while we can strive 
-to simplify processes, some tasks will remain complex by their very nature. Lastly, standardization depends on the 
-maturity of the processes in place—some tasks may be too unique or exploratory to fit into standardized frameworks. 
-These factors, while helpful when present, cannot always be engineered or influenced by the team.
+First I'm going to go through ways a task can be easier to estimate, then we will discuss complicating factors in task estimation. 
+If we do our best to control for these factors by making them more prominent, our estimates, or maybe it's really the work, 
+will be easier. The factors we cannot control can be the most discouraging, but I think in this case it's not so bad. A 
+task that is repetitive and routine, not complex, and standardized would be easy to estimate. If we added on top of this 
+repetitive task a significant amount of historical data, we could accurately estimate with some error bars how long it 
+will take. Unfortunately, the picture I just painted more readily resembles an old-fashioned car assembly line than 
+anything we'll see in a developers in-progress lane. Creative tasks are also very difficult, and perhaps trying to take the
+coding out of the creativity is the answer here, but really I've never found an easy way to minimize this as far as a project
+risk goes.
 
-To increase the likelihood of task completion, it is important to strive for certain qualities. Limiting dependencies 
-helps prevent bottlenecks and delays caused by waiting on others. Well-documented tasks ensure clarity, reducing the 
-need for back-and-forth communication and minimizing misunderstandings. Established patterns or templates streamline 
-work by providing proven solutions, saving time and effort. Keeping tasks small and independent makes them more manageable 
-and easier to track, while well-defined tasks with clear objectives reduce ambiguity, ensuring the team understands what 
-needs to be done from the outset. These practices together create a smoother workflow and improve the chances of tasks 
-being completed on time.
+If we split tasks so that one blocks another, this is going to slow down development. We have essentially turned what
+could be agile development of independent elements, into waterfall development of progress steps. Ideally, we want small
+PR's that are easy to review and merge in, and the work to be done as independently as possible so we can parallelize tasks
+so that work can get done simultaneously. Making sure the ask is well-defined will further help the developer get to work
+when needed on each task.
 
-Certain factors can make tasks more difficult, and reducing these challenges increases the likelihood of success. Tasks 
-that are complex and multifaceted require more effort to manage and execute, while novel or innovative work introduces 
-uncertainty since there are no precedents to follow. High collaboration needs can slow progress due to coordination 
-challenges, and tasks involving significant learning or exploration demand extra time for research and upskilling. 
-Dynamic or changing requirements can lead to rework, while creative or design-oriented tasks often require iterative 
-processes that are hard to predict. Poorly defined or ambiguous tasks create confusion and delays, and those dependent 
-on external factors introduce risks beyond the team’s control. Tasks with high uncertainty or risk can also stall progress, 
-making it harder to estimate timelines or plan effectively. Addressing these difficulties helps streamline the workflow 
-and improves the chances of successful task completion.
+If what we are working on is complex and novel, that is going to bring a number of challenges. If the task requires many
+moving parts, breaking these down by using techniques like the Makoto Method will be productive. If the project is somehow
+novel or innovative, then by its nature it will be all new to us, and well, everyone. If we have to learn a lot to complete
+the project, I often find it useful to go off and learn those technologies or learnings on my own before applying them
+to the project. Finally, we should minimize project risk or uncertainty. A typical mitigation strategy would be using
+familiar technologies to us, rather than new technologies that require the developer to go off and learn a bunch of concepts.
 
-## 4. What are the intangibles?
+There are challenges inherent in collaboration, especially with external parties. So we have to have these external customer
+meetings preferable upfront, and often during the project to fully understand the customer request. High collaboration needs
+during the project can be the result of not properly breaking up the tasks into independent chunks, where developers are
+not blocking each other's work.
+
+We have to avoid tasks that shift in their goals, or lack the clarity needed to begin the work. This increases the likelihood
+of unnecessary rework.
+
+## 4. Benefits of Estimation
 
 What are some positives that we get out of estimation beyond the forecasting?
 
 ### 4a. Encourages Team Collaboration and Shared Understanding
-The act of story-pointing has resulted in product discussion with developers about general scope and what they want to
+The act of estimating has resulted in product discussion with developers about general scope and what they want to
 accomplish from a requirements point of view. I think these processes cannot easily be replaced, but the acceptance testing
 philosophy of defining requirements with tests could be one replacement. I don't think story points need to be the main
 output, but if they cause these discussions to happen that's probably a good thing.
@@ -89,4 +83,5 @@ the engineers when they give their honest estimate. Or perhaps not being willing
 ## Overall
 
 As a previous business analyst, it became apparent fairly often my measurements were more about the discussion than the
-numbers.
+numbers. Figuring out how to break down tasks properly, and divvy them out in a logical manner will keep developers, managers,
+and customers alike happy. Hopefully more work in this area will reduce the divide between management and developers.
