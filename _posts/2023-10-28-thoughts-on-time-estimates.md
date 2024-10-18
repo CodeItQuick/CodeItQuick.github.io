@@ -11,7 +11,7 @@ tags: agile all
 ## 1. Introduction
 We'll first talk about general problems with estimation. Since there will always be someone in the organization looking
 to figure out costs, or when a feature will get in the hands of a customer, estimation will likely exist for quite some 
-time. Let's first discuss some downfalls of estimation.
+time. 
 
 ## 2. Problem Statement: The Pain's of Estimation
 ### 2a. It's A Common Pain Point
