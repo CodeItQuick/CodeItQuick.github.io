@@ -13,7 +13,7 @@ We'll first talk about general problems with estimation. Since there will always
 to figure out costs, or when a feature will get in the hands of a customer, estimation will likely exist for quite some 
 time. 
 
-## 2. Problem Statement: The Pain's of Estimation
+## 2. The Pain's of Estimation
 ### **It's A Common Pain Point**
 It's very difficult to estimate individual developer tasks, stories, and project timelines. I've always experienced pain
 in someone asking for a widget, website, etc. in a given timeline and then not being able to deliver it in the "required"
@@ -27,7 +27,7 @@ is probably the most impressive thing a software developer can do. Still, there 
 Missed hard deadlines being probably the biggest pain point, so what are some ways we can minimize this pain, beyond just
 "be a better developer".
 
-## 3. Solutions: Managing Estimation and Task Risk
+## 3. Solutions Resulting From Estimation 
 ### **Beyond Our Control**
 The factors we cannot control can be the most discouraging, but I think in this case it's not so bad. A task that is 
 repetitive and routine, not complex, and standardized would be easy to estimate. If we added on top of this 
