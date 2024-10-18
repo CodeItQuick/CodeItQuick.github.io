@@ -43,7 +43,7 @@ These are things we cannot control about developer tasks.
 * Low Complexity 
 * Standardized
 
-These are within our control to limit within a developer task.
+These are important to strive for to make tasks more likely to complete.
 
 * Limited Dependencies  
 * Well-Documented   
@@ -51,7 +51,8 @@ These are within our control to limit within a developer task.
 * Small, Independent   
 * Well-Defined   
 
-What makes tasks difficult
+These are the opposite - things that make tasks difficult. If we can reduce the difficult we increase our likelihood
+of success.
 
 * Complex and Multifaceted 
 * Novel or Innovative 
@@ -62,9 +63,6 @@ What makes tasks difficult
 * Poorly Defined or Ambiguous 
 * Dependent on External Factors
 * High Uncertainty or Risk
-
-In short form, we can answer "yes" to all the above. Development tasks readily fit into the buckets we don't want for
-estimating something.
 
 ## 4. It's not the estimates we want - it's the discussion
 
