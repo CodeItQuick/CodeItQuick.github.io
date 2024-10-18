@@ -67,8 +67,8 @@ not blocking each other's work.
 ### 4a. Encourages Team Collaboration and Shared Understanding
 The act of estimating has resulted in product discussion with developers about general scope and what they want to
 accomplish from a requirements point of view. I think these processes cannot easily be replaced, but the acceptance testing
-philosophy of defining requirements with tests could be one replacement. I don't think story points need to be the main
-output, but if they cause these discussions to happen that's probably a good thing.
+philosophy of defining requirements with tests could be one replacement. I don't think estimation need to be the main
+input, but if they cause these discussions to happen that's probably a good thing.
 
 ### 4b. Identifies Risks and Unknowns Early
 Identifying risks upfront or as early as possible is important. Funny enough, XP and scrum I think somewhat disagree on
