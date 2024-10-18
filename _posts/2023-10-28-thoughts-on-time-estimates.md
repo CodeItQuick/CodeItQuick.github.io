@@ -102,7 +102,7 @@ Never even seen it attempted; The storypointing I've seen has been so far from t
 6. **Promotes Team Autonomy and Self Organization**:   
 This is a product of good communication on the development team.
 
-## 5. The Solution: Longer Term Soft Deadlines
+## 5. The Unavoidable: Longer Term Soft Deadlines
 I believe estimation at the task level is asking for trouble. It can lead to micromanagement, and a level of perceived
 detail that does not exist. There are other options in project estimation, including hard deadlines and soft deadlines.
 The option I've seen most commonly in contracting, or solo development are soft deadlines. I'll get this to you in 2-3
