@@ -16,7 +16,7 @@ time. Let's first discuss some downfalls of estimation.
 ## 2. The Pain's of Estimation
 It's very difficult to estimate individual developer tasks, stories, and project timelines. I've always experienced pain
 in someone asking for a widget, website, etc. in a given timeline and then not being able to deliver it in the "required"
-timeline. As my career progresses this pain has gotten to be less and less, but I don't think story pointing is really
+timeline. As my career progresses this pain has gotten to be less and less, but I don't think better estimates is really
 the reason for this. Instead, being better at building software overall, and better communication skills are the reasons.
 
 I think the goal of estimation overall is to improve customer satisfaction by better managing expectations. Now is this
