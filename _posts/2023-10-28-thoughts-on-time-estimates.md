@@ -40,9 +40,8 @@ anything we'll see in a developers in-progress lane.
 ### 3b. The Ideal Task
 If we split tasks so that one blocks another, this is going to slow down development. We have essentially turned what
 could be agile development of independent elements, into waterfall development of progress steps. Ideally, we want small
-PR's that are easy to review and merge in, and the work to be done as independently as possible so we can parallelize tasks
-so that work can get done simultaneously. Making sure the ask is well-defined will further help the developer get to work
-when needed on each task.
+PR's that are easy to review and merge in, and the work to be done as independently as possible so we can parallelize tasks. 
+Making sure the ask is well-defined will further help the developer get to work when needed on each task.
 
 ### 3c. Complicating Factors
 If what we are working on is complex and novel, that is going to bring a number of challenges. If the task requires many
