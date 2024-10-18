@@ -13,19 +13,22 @@ We'll first talk about general problems with estimation. Since there will always
 to figure out costs, or when a feature will get in the hands of a customer, estimation will likely exist for quite some 
 time. Let's first discuss some downfalls of estimation.
 
-## 2. The Pain's of Estimation
+## 2. Problem Statement: The Pain's of Estimation
+### 2a. It's A Common Pain Point
 It's very difficult to estimate individual developer tasks, stories, and project timelines. I've always experienced pain
 in someone asking for a widget, website, etc. in a given timeline and then not being able to deliver it in the "required"
 timeline. As my career progresses this pain has gotten to be less and less, but I don't think better estimates is really
 the reason for this. Instead, being better at building software overall, and better communication skills are the reasons.
 
+### 2b. Minimizing The Pain
 I think the goal of estimation overall is to improve customer satisfaction by better managing expectations. Now is this
 the right viewpoint for delivering software, I'm not so sure. Showing continual progress in the development of the software
 is probably the most impressive thing a software developer can do. Still, there is major pain in time estimation for developers.
 Missed hard deadlines being probably the biggest pain point, so what are some ways we can minimize this pain, beyond just
 "be a better developer".
 
-## 3. Managing Estimation and Task Risk
+## 3. Solutions: Managing Estimation and Task Risk
+### 3a. Beyond Our Control
 First I'm going to go through ways a task can be easier to estimate, then we will discuss complicating factors in task estimation. 
 If we do our best to control for these factors by making them more prominent, our estimates, or maybe it's really the work, 
 will be easier. The factors we cannot control can be the most discouraging, but I think in this case it's not so bad. A 
@@ -34,33 +37,34 @@ repetitive task a significant amount of historical data, we could accurately est
 will take. Unfortunately, the picture I just painted more readily resembles an old-fashioned car assembly line than 
 anything we'll see in a developers in-progress lane. 
 
+### 3b. The Ideal Task
 If we split tasks so that one blocks another, this is going to slow down development. We have essentially turned what
 could be agile development of independent elements, into waterfall development of progress steps. Ideally, we want small
 PR's that are easy to review and merge in, and the work to be done as independently as possible so we can parallelize tasks
 so that work can get done simultaneously. Making sure the ask is well-defined will further help the developer get to work
 when needed on each task.
 
+### 3c. Complicating Factors
 If what we are working on is complex and novel, that is going to bring a number of challenges. If the task requires many
 moving parts, breaking these down by using techniques like the Makoto Method will be productive. If the project is somehow
 novel or innovative, then by its nature it will be all new to us, and well, everyone. If we have to learn a lot to complete
 the project, I often find it useful to go off and learn those technologies or learnings on my own before applying them
-to the project. Finally, we should minimize project risk or uncertainty. A typical mitigation strategy would be using
-familiar technologies to us, rather than new technologies that require the developer to go off and learn a bunch of concepts.
-Creative tasks are also very difficult, and perhaps trying to take the coding out of the creativity is the answer here, 
-but really I've never found an easy way to minimize this as far as a project risk goes.
+to the project. Creative tasks are also very difficult, and perhaps trying to take the coding out of the creativity is the answer
+here, but really I've never found an easy way to minimize this as far as a project risk goes. 
 
+### 3d. Scope, Uncertainty, And Shifting Priorities
+Finally, we should minimize project risk or uncertainty. A typical mitigation strategy would be using familiar technologies 
+to us, rather than new technologies that require the developer to go off and learn a bunch of concepts. We have to avoid 
+tasks that shift in their goals, or lack the clarity needed to begin the work. This increases the likelihood of unnecessary 
+rework. 
+
+### 3e. Collaboration Issues
 There are challenges inherent in collaboration, especially with external parties. So we have to have these external customer
 meetings preferable upfront, and often during the project to fully understand the customer request. High collaboration needs
 during the project can be the result of not properly breaking up the tasks into independent chunks, where developers are
 not blocking each other's work.
 
-We have to avoid tasks that shift in their goals, or lack the clarity needed to begin the work. This increases the likelihood
-of unnecessary rework.
-
-## 4. Benefits of Estimation
-
-What are some positives that we get out of estimation beyond the forecasting?
-
+## 4. Rewards: Benefits of Estimation
 ### 4a. Encourages Team Collaboration and Shared Understanding
 The act of estimating has resulted in product discussion with developers about general scope and what they want to
 accomplish from a requirements point of view. I think these processes cannot easily be replaced, but the acceptance testing
@@ -80,7 +84,7 @@ from the backlog only to discover it's a significant amount of work to implement
 I've seen overruns in general features countless times as well, but honestly the root cause of those overruns is not believing
 the engineers when they give their honest estimate. Or perhaps not being willing to accept the answer.
 
-## Overall
+## Conclusion
 
 As a previous business analyst, it became apparent fairly often my measurements were more about the discussion than the
 numbers. Figuring out how to break down tasks properly, and divvy them out in a logical manner will keep developers, managers,
