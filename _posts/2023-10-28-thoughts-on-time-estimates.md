@@ -36,38 +36,36 @@ A quick list of all the undelivered promises for story pointing in my view:
    This is a product of good communication on the development team.
 
 ## 3. Managing Estimation and Task Risk
-These are things we cannot control about developer tasks.
+There are several aspects of developer tasks that are beyond our control, including whether they have high historical 
+data, are repetitive or routine, have low complexity, or are standardized. Tasks with high historical data provide 
+insights based on previous experiences, but we cannot manufacture such history if it doesn't exist. Similarly, whether a 
+task is repetitive or routine depends on the nature of the work itself, as some projects inherently involve novelty or 
+one-off challenges. The complexity of a task is also often dictated by the problem being solved, and while we can strive 
+to simplify processes, some tasks will remain complex by their very nature. Lastly, standardization depends on the 
+maturity of the processes in place—some tasks may be too unique or exploratory to fit into standardized frameworks. 
+These factors, while helpful when present, cannot always be engineered or influenced by the team.
 
-* High Historical Data  
-* Repetitive or Routine   
-* Low Complexity 
-* Standardized
+To increase the likelihood of task completion, it is important to strive for certain qualities. Limiting dependencies 
+helps prevent bottlenecks and delays caused by waiting on others. Well-documented tasks ensure clarity, reducing the 
+need for back-and-forth communication and minimizing misunderstandings. Established patterns or templates streamline 
+work by providing proven solutions, saving time and effort. Keeping tasks small and independent makes them more manageable 
+and easier to track, while well-defined tasks with clear objectives reduce ambiguity, ensuring the team understands what 
+needs to be done from the outset. These practices together create a smoother workflow and improve the chances of tasks 
+being completed on time.
 
-These are important to strive for to make tasks more likely to complete.
-
-* Limited Dependencies  
-* Well-Documented   
-* Established Patterns or Templates  
-* Small, Independent   
-* Well-Defined   
-
-These are the opposite - things that make tasks difficult. If we can reduce the difficulty we increase our likelihood
-of success.
-
-* Complex and Multifaceted 
-* Novel or Innovative 
-* High Collaboration Needs
-* Involving Significant Learning Or Exploration
-* Dynamic or Changing Requirements
-* Creative or Design-Oriented 
-* Poorly Defined or Ambiguous 
-* Dependent on External Factors
-* High Uncertainty or Risk
+Certain factors can make tasks more difficult, and reducing these challenges increases the likelihood of success. Tasks 
+that are complex and multifaceted require more effort to manage and execute, while novel or innovative work introduces 
+uncertainty since there are no precedents to follow. High collaboration needs can slow progress due to coordination 
+challenges, and tasks involving significant learning or exploration demand extra time for research and upskilling. 
+Dynamic or changing requirements can lead to rework, while creative or design-oriented tasks often require iterative 
+processes that are hard to predict. Poorly defined or ambiguous tasks create confusion and delays, and those dependent 
+on external factors introduce risks beyond the team’s control. Tasks with high uncertainty or risk can also stall progress, 
+making it harder to estimate timelines or plan effectively. Addressing these difficulties helps streamline the workflow 
+and improves the chances of successful task completion.
 
 ## 4. It's not the estimates we want - it's the discussion
 
-As a previous business analyst, it became apparent fairly often my measurements were more about the discussion than the
-numbers.
+What are some positives that we get out of estimation beyond the forecasting?
 
 ### 4a. Encourages Team Collaboration and Shared Understanding
 The act of story-pointing has resulted in product discussion with developers about general scope and what they want to
@@ -88,5 +86,7 @@ from the backlog only to discover it's a significant amount of work to implement
 I've seen overruns in general features countless times as well, but honestly the root cause of those overruns is not believing
 the engineers when they give their honest estimate. Or perhaps not being willing to accept the answer.
 
-Development is a lot about getting a solution into the hands of a customer, so the customer can tell you what they don't
-like about the solution, and you can build on-top of that.
+## Overall
+
+As a previous business analyst, it became apparent fairly often my measurements were more about the discussion than the
+numbers.
