@@ -51,7 +51,7 @@ These are important to strive for to make tasks more likely to complete.
 * Small, Independent   
 * Well-Defined   
 
-These are the opposite - things that make tasks difficult. If we can reduce the difficult we increase our likelihood
+These are the opposite - things that make tasks difficult. If we can reduce the difficulty we increase our likelihood
 of success.
 
 * Complex and Multifaceted 
