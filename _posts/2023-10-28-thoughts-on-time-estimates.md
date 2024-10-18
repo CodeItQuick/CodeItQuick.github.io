@@ -1,12 +1,12 @@
 ---
 layout: post
-name: Thoughts on Project and Task Estimation
+name: Let's Estimate Our Developer Pain
 description: Exploring ideas within project and task estimation for development  
 image: story_splitting_zombies.png
 tags: agile all
 ---
 
-# Methods of Estimation
+# Let's Estimate Our Developer Pain
 
 ## 1. Introduction
 We'll first talk about general problems with estimation. Since there will always be someone in the organization looking
