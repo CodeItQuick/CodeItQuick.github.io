@@ -63,7 +63,7 @@ on external factors introduce risks beyond the team’s control. Tasks with high
 making it harder to estimate timelines or plan effectively. Addressing these difficulties helps streamline the workflow 
 and improves the chances of successful task completion.
 
-## 4. It's not the estimates we want - it's the discussion
+## 4. What are the intangibles?
 
 What are some positives that we get out of estimation beyond the forecasting?
 
