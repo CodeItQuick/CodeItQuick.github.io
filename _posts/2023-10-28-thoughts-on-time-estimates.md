@@ -30,7 +30,7 @@ Missed hard deadlines being probably the biggest pain point, so what are some wa
 "be a better developer".
 
 ## 3. Solutions Resulting From Estimation
-<img src="/assets/images/zombie_engineer_solving_complex.webp"  alt="Zombie Engineer Solving Problem"/>  
+![Zombie Engineer Solving Problem](/assets/images/zombie_engineer_solving_complex.webp "Zombie Engineer Solving Problem")  
 ### **Beyond Our Control**
 The factors we cannot control can be the most discouraging, but I think in this case it's not so bad. A task that is 
 repetitive and routine, not complex, and standardized would be easy to estimate. If we added on top of this 
