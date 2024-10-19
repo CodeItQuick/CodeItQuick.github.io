@@ -30,7 +30,7 @@ Missed hard deadlines being probably the biggest pain point, so what are some wa
 "be a better developer".
 
 ## 3. Solutions Resulting From Estimation
-<img src="/assets/images/zombie_engineer_solving_complex.webp"  alt="Zombie Leaping Over Chasm"/>  
+<img src="/assets/images/zombie_engineer_solving_complex.webp"  alt="Zombie Engineer Solving Problem"/>  
 ### **Beyond Our Control**
 The factors we cannot control can be the most discouraging, but I think in this case it's not so bad. A task that is 
 repetitive and routine, not complex, and standardized would be easy to estimate. If we added on top of this 
@@ -65,7 +65,7 @@ during the project can be the result of not properly breaking up the tasks into 
 not blocking each other's work.
 
 ## 4. Rewards: Benefits of Estimation
-<img src="/assets/images/zombie_gold_riches.webp"  alt="Zombie Leaping Over Chasm"/>  
+<img src="/assets/images/zombie_gold_riches.webp"  alt="Zombie Gold Riches"/>  
 ### **Encourages Team Collaboration and Shared Understanding**
 The act of estimating has resulted in product discussion with developers about general scope and what they want to
 accomplish from a requirements point of view. I think these processes cannot easily be replaced, but the acceptance testing
