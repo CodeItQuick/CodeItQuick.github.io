@@ -15,9 +15,9 @@ about general problems with estimation, then go into some of the benefits of the
 some form of estimation, and finally conclude that further decreasing this mentioned developer/manager divide will be beneficial. 
 
 ## 2. The Pain's of Estimation
-<div style="text-align: center">
+<p align="center" width="100%">
     <img src="/assets/images/zombie_chasm_estimation.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
-</div>
+</p>
 ### **It's A Common Pain Point**
 It's very difficult to estimate individual developer tasks, stories, and project timelines. I've always experienced pain
 in someone asking for a widget, website, etc. in a given timeline and then not being able to deliver it in the "required"
