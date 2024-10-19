@@ -92,7 +92,9 @@ I've seen overruns in general features countless times as well, but honestly the
 the engineers when they give their honest estimate. Or perhaps not being willing to accept the answer.
 
 ## 5. Conclusion
-
+<p align="center" width="100%">
+    <img src="/assets/images/zombies_lasting_friendship.webp"  alt="Zombie Lasting Friendship" height="512" width="512" />
+</p>
 As a previous business analyst, it became apparent fairly often my measurements were more about the discussion than the
 numbers. Figuring out how to break down tasks properly, and divvy them out in a logical manner will keep developers, managers,
 and customers alike happy. Hopefully more work in this area will reduce the divide between management and developers.
