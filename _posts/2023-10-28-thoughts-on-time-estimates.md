@@ -15,7 +15,7 @@ about general problems with estimation, then go into some of the benefits of the
 some form of estimation, and finally conclude that further decreasing this mentioned developer/manager divide will be beneficial. 
 
 ## 2. The Pain's of Estimation
-![Zombie Leaping Over Chasm](/assets/images/zombie_chasm_estimation.webp "Zombie Leaping Over Chasm")  
+<img src="/assets/images/zombie_chasm_estimation.webp"  alt="Zombie Leaping Over Chasm"/>  
 ### **It's A Common Pain Point**
 It's very difficult to estimate individual developer tasks, stories, and project timelines. I've always experienced pain
 in someone asking for a widget, website, etc. in a given timeline and then not being able to deliver it in the "required"
@@ -30,7 +30,7 @@ Missed hard deadlines being probably the biggest pain point, so what are some wa
 "be a better developer".
 
 ## 3. Solutions Resulting From Estimation
-![Zombie Engineer Solving Problem](/assets/images/zombie_engineer_solving_complex.webp "Zombie Engineer Solving Problem")  
+<img src="/assets/images/zombie_engineer_solving_complex.webp"  alt="Zombie Engineer Solving Problem" height="512" width="512" />  
 ### **Beyond Our Control**
 The factors we cannot control can be the most discouraging, but I think in this case it's not so bad. A task that is 
 repetitive and routine, not complex, and standardized would be easy to estimate. If we added on top of this 
@@ -65,7 +65,7 @@ during the project can be the result of not properly breaking up the tasks into 
 not blocking each other's work.
 
 ## 4. Rewards: Benefits of Estimation
-![Zombie Gold Riches](/assets/images/zombie_gold_riches.webp "Zombie Gold Riches")  
+<img src="/assets/images/zombie_gold_riches.webp"  alt="Zombie Gold Riches"/>  
 ### **Encourages Team Collaboration and Shared Understanding**
 The act of estimating has resulted in product discussion with developers about general scope and what they want to
 accomplish from a requirements point of view. I think these processes cannot easily be replaced, but the acceptance testing
