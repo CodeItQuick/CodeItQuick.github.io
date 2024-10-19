@@ -9,9 +9,11 @@ tags: agile all
 # Let's Estimate Our Developer Pain
 
 ## 1. Introduction
-We'll first talk about general problems with estimation. Since there will always be someone in the organization looking
-to figure out costs, or when a feature will get in the hands of a customer, estimation will likely exist for quite some 
-time. 
+<img src="/assets/images/zombie_chasm_estimation.webp"  alt="Zombie Leaping Over Chasm"/>
+If you bring up a previous late project with really any developer, you'll quickly get a negative response back. The differences
+between developer promises and management expectations has caused a divide between the two for a long time. We'll first talk 
+about general problems with estimation, then go into some of the benefits of the estimation process, the rewards from doing 
+some form of estimation, and finally conclude that further decreasing this mentioned developer/manager divide will be beneficial. 
 
 ## 2. The Pain's of Estimation
 ### **It's A Common Pain Point**
