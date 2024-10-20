@@ -64,7 +64,7 @@ rework.
 
 ### **Collaboration Issues**
 There are challenges inherent in collaboration, especially with external parties. So we have to have these external customer
-meetings preferable upfront, and often during the project to fully understand the customer request. High collaboration needs
+meetings preferable upfront, and often during the project to fully understand the customer request. High coordination needs
 during the project can be the result of not properly breaking up the tasks into independent chunks, where developers are
 not blocking each other's work.
 
