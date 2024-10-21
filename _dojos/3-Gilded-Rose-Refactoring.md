@@ -146,17 +146,17 @@ use for the key of "CalculateQuality". Still feels like there's some mess here, 
 fix it right now.
 
 ```ts
-const itemName = this.items[i].name;
+const item = this.items[i];
 
 const CalculateQuality = {
-'Generic': this.CalculateGenericItem,
-'Conjured': this.CalculateConjured,
-'Brie': this.CalculateAgedBrie,
-'Backstage': this.CalculatePasses,
+  'Generic': this.CalculateGenericItem,
+  'Conjured': this.CalculateConjured,
+  'Brie': this.CalculateAgedBrie,
+  'Backstage': this.CalculatePasses,
 }
 
-const key = GildedRose.itemType(itemName);
-CalculateQuality[key]?.(i, this.items[i]);
+const key = GildedRose.itemType(item.name);
+CalculateQuality[key]?.(i, item);
 ```
 
 # Threefold Goal of the Exercise
