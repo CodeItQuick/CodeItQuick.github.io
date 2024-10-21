@@ -17,8 +17,9 @@ some form of estimation, and finally conclude that further decreasing this menti
 ## **2. The Pain's of Estimation**
 <p align="center" width="100%">
     <img src="/assets/images/zombie_chasm_estimation.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
-</p>
-### **It's A Common Pain Point**
+</p>  
+
+### It's A Common Pain Point
 It's very difficult to estimate individual developer tasks, stories, and project timelines. I've always experienced pain
 in someone asking for a widget, website, etc. in a given timeline and then not being able to deliver it in the "required"
 timeline. As my career progresses this pain has gotten to be less and less, but I don't think better estimates is really
@@ -72,6 +73,7 @@ not blocking each other's work.
 <p align="center" width="100%">
     <img src="/assets/images/zombie_gold_riches.webp"  alt="Zombie Gold Riches" height="512" width="512" />
 </p>
+
 ### Encourages Team Collaboration and Shared Understanding
 The act of estimating has resulted in product discussion with developers about general scope and what they want to
 accomplish from a requirements point of view. I think these processes cannot easily be replaced, but the acceptance testing
