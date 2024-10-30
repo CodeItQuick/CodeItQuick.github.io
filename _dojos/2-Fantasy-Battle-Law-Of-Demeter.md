@@ -27,8 +27,9 @@ how much damage they do to the monsters. Monsters also vary according to what
 armour and equipment they are wearing. This part of the code is concerned with 
 calculating how much damage the player is doing to a monster when they fight.
 
-The kata is designed to teach you something about the [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter).
-The 'Player' class perhaps doesn't follow this law very well.
+The kata is designed to teach you something about the Law of Demeter 
+(https://en.wikipedia.org/wiki/Law_of_Demeter). The 'Player' class perhaps doesn't 
+follow this law very well.
 
 Try to write a test for the method 'calculateDamage' on the Player class, without
 changing any of the production code. Use the description below to help you design
