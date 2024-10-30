@@ -30,4 +30,22 @@
         font-size: 1.12rem;
         line-height: 1.8rem;
     }
+    ol {
+        padding-left: 1.25rem;
+        list-style-type: decimal;
+        list-style-position: inside;
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+    }
+    ul {
+        padding-left: 1.25rem;
+        list-style-type: decimal;
+        list-style-position: inside;
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+    }
 }
