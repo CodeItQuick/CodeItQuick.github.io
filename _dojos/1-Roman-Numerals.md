@@ -84,11 +84,11 @@ where multiple asserts may be needed.
 ## TDD Basics: The Guidelines
 
 These were brainstormed up quickly, not all apply directly to this kata (eg: 7 does not apply, as there are no dependencies):
-1. Minimize the number of asserts per test - Consider multiple tests if this occurs
-2. Avoid mid-test asserts, consider two separate tests instead
-3. Test suites should run in under 10 seconds
-4. Test first code tends to trend toward 100% test coverage, however 80% at the start is more than acceptable
-5. The test suite should be run every 5 minutes at the slowest
-6. No control statements in your tests
-7. Don't test what you don't own
-8. If too many tests fail at once you've gone too fast, backup and try again with more frequent smaller changes
+* Minimize the number of asserts per test - Consider multiple tests if this occurs
+* Avoid mid-test asserts, consider two separate tests instead
+* Test suites should run in under 10 seconds
+* Test first code tends to trend toward 100% test coverage, however 80% at the start is more than acceptable
+* The test suite should be run every 5 minutes at the slowest
+* No control statements in your tests
+* Don't test what you don't own
+* If too many tests fail at once you've gone too fast, backup and try again with more frequent smaller changes
