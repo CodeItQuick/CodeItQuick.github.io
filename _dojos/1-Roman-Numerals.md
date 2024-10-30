@@ -12,7 +12,6 @@ layout: dojo
     <img src="/assets/images/roman_numerals_kata_zombie.webp"  alt="Zombie Lasting Friendship" height="512" width="512" />
 </p>
 
-
 A kata is an exercise in karate that is practiced over and over again to get down a technique.
 This is similar to the practice in software development, where a coding kata is meant to practice
 particular techniques in code in a small sample problem. The gilded rose is a long since popularized
