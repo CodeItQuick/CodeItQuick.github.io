@@ -4,6 +4,12 @@
 
 A historical take on the kata's and side projects I have worked on since 2021. Built using GithubPages and Ruby's Jekyll. 
 
+## Kata Shortlist
+* DeliveryController Refactoring Kata
+* Parrot Refactoring
+* Necklace Refactoring Kata
+
+
 ## Content Rewrites Needed
 1. Refactoring Goals
 2. Code Smells and Anti Patterns

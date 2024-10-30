@@ -8,6 +8,9 @@ layout: dojo
 ---
 
 # Background
+<p align="center" width="100%">
+    <img src="/assets/images/roman_numerals_kata_zombie.webp"  alt="Zombie Lasting Friendship" height="512" width="512" />
+</p>
 
 
 A kata is an exercise in karate that is practiced over and over again to get down a technique.
