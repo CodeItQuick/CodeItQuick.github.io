@@ -1,7 +1,7 @@
 ---
 layout: post
-name: TDD Code Smells And Anti-Patterns
-description: Discussing the many code smells and anti-patterns that prevent TDD  
+name: Code Smells And Anti-Patterns
+description: Discussing the many code smells and anti-patterns  
 image: story_splitting_zombies.png
 tags: TDD all
 ---

@@ -4,6 +4,13 @@
 
 A historical take on the kata's and side projects I have worked on since 2021. Built using GithubPages and Ruby's Jekyll. 
 
+## Content Rewrites Needed
+1. Refactoring Goals
+2. Code Smells and Anti Patterns
+3. Aggregates Explained
+4. Heuristics of TDD/Why TDD?
+5. Testing Around Databases
+
 ## Current TODOs
 
 1. Flush out the blog articles more, both in terms of styling md->html, and content

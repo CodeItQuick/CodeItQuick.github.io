@@ -6,46 +6,44 @@ tags: TDD ensembling beginner
 url: https://github.com/swkBerlin/kata-bootstraps
 layout: dojo
 ---
-Law Of Demeter
-===============================
-See Wikipedia article for general description: https://en.wikipedia.org/wiki/Law_of_Demeter
-Probably the reason for this article (Getters and Setters are evil): https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html
-Note: the above is not the original highly-influential article on the subject.
 
-Be sure to see the OOP Principle CQS.md (not to be confused with CQRS - they are similar but different concepts) file
-located in this directory for information on how to "solve" the code smell.
+# Roman Numerals
+## About this Kata
+I wasn’t there, but I believe this Kata was performed at XP2001 by Kent Beck.
 
-Fantasy Battle Refactoring Kata
-===============================
+Difficulty - Easy.
 
-This code is part of a larger fantasy battle game. Players in the game will fight monsters using the equipment they are wearing.
-The type of equipment will affect how much damage they do to the monsters. Monsters also vary according to what armour and equipment they are wearing.
-This part of the code is concerned with calculating how much damage the player is doing to a monster when they fight.
+Problem Description
+The Romans were a clever bunch. They conquered most of Europe and ruled it for hundreds of years.
+They invented concrete and straight roads and even bikinis. One thing they never discovered though was the number zero.
+This made writing and dating extensive histories of their exploits slightly more challenging, but the system of numbers
+they came up with is still in use today. For example the BBC uses Roman numerals to date their programmes.
 
-The kata is designed to teach you something about the [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter).
-The 'Player' class perhaps doesn't follow this law very well.
+The Romans wrote numbers using letters : I, V, X, L, C, D, M. (notice these letters have lots of straight lines and are hence easy to hack into stone tablets)
 
-Try to write a test for the method 'calculateDamage' on the Player class, without changing any of the production code.
-Use the description below to help you design a test scenario. Note there are two example test cases to start from. Choose the one you prefer.
-Give yourself a time box of 10 minutes, then reflect on why this method is hard to test.
+### Part I
+The Kata says you should write a function to convert from normal numbers to Roman Numerals: eg
 
-When you have reflected, you should refactor the 'calculateDamage' method to better follow the Law of Demeter.
-Also add test cases to cover the functionality in the Player class.
+     1 --> I
+     10 --> X
+     7 --> VII
+etc.
 
-When you feel that you are done, depending on how much time you have, you may continue to implement tests until you have good coverage or look through the TODO in the code (Alt+6 in IntelliJ). Reflect on which of these TODO hints will now be easier to address compared with before your refactoring work, then try to implement those features.
+For a full description of how it works, take a look at : which includes an implementation of the Kata in javascript.
 
-Example Data for use in Test cases
-----------------------------------
+There is no need to be able to convert numbers larger than about 3000. (The Romans themselves didn’t tend to go any higher)
 
-Example equipment:
+### Part II
+Write a function to convert in the other direction, ie numeral to digit
 
-| Where     | What            | Base Damage | Damage Modifier |
-|-----------|-----------------|-------------|-----------------|
-| right hand|  flashy sword of danger | 10  | 1.0             |
-| right hand|  excalibur              | 20  | 1.5             |
-| left hand |  round shield           |  0  | 1.4             |
-| feet      |  ten league boots       |  0  | 0.1             |
-| head      |  helmet of swiftness    |  0  | 1.2             |
-| chest     |  breastplate of steel   |  0  | 1.4             |
-
-At present the only kind of enemy supported is a SimpleEnemy. This kind of target has one Buff with a soakModifier of 1.0 and damage modifier of 1.0. It wears an Armor with a Damage Soak of 5.
+Clues
+* Can you make the code really beautiful and highly readable?
+* does it help to break out lots of small named functions from the main function, or is it better to keep it all in one function?
+* if you don’t know an algorithm to do this already, can you derive one using strict TDD?
+* does the order you take the tests in affect the final design of your algorithm?
+* Would it be better to work out an algorithm first before starting with TDD?
+* if you do know an algorithm already, can you implement it using strict TDD?
+* Can you think of another algorithm?
+* what are the best data structures for storing all the numeral letters? (I, V, D, M etc)
+* can you define the test cases in a csv file and use FIT, or generate test cases in xUnit?
+* what is the best way to verify your tests are correct?
