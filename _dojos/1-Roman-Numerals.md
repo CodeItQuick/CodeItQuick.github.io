@@ -9,11 +9,10 @@ layout: dojo
 
 # Roman Numerals
 ## About this Kata
-I wasn’t there, but I believe this Kata was performed at XP2001 by Kent Beck.
 
-Difficulty - Easy.
+### Difficulty - Easy.
 
-Problem Description
+### Problem Description
 The Romans were a clever bunch. They conquered most of Europe and ruled it for hundreds of years.
 They invented concrete and straight roads and even bikinis. One thing they never discovered though was the number zero.
 This made writing and dating extensive histories of their exploits slightly more challenging, but the system of numbers
@@ -29,21 +28,19 @@ The Kata says you should write a function to convert from normal numbers to Roma
      7 --> VII
 etc.
 
-For a full description of how it works, take a look at : which includes an implementation of the Kata in javascript.
-
 There is no need to be able to convert numbers larger than about 3000. (The Romans themselves didn’t tend to go any higher)
 
 ### Part II
 Write a function to convert in the other direction, ie numeral to digit
 
 Clues
-* Can you make the code really beautiful and highly readable?
-* does it help to break out lots of small named functions from the main function, or is it better to keep it all in one function?
-* if you don’t know an algorithm to do this already, can you derive one using strict TDD?
-* does the order you take the tests in affect the final design of your algorithm?
-* Would it be better to work out an algorithm first before starting with TDD?
-* if you do know an algorithm already, can you implement it using strict TDD?
-* Can you think of another algorithm?
-* what are the best data structures for storing all the numeral letters? (I, V, D, M etc)
-* can you define the test cases in a csv file and use FIT, or generate test cases in xUnit?
-* what is the best way to verify your tests are correct?
+1. Can you make the code really beautiful and highly readable?
+2. Does it help to break out lots of small named functions from the main function, or is it better to keep it all in one function?
+3. If you don’t know an algorithm to do this already, can you derive one using strict TDD?
+4. Does the order you take the tests in affect the final design of your algorithm?
+5. Would it be better to work out an algorithm first before starting with TDD?
+6. If you do know an algorithm already, can you implement it using strict TDD?
+7. Can you think of another algorithm?
+8. What are the best data structures for storing all the numeral letters? (I, V, D, M etc)
+9. Can you define the test cases in a csv file and use FIT, or generate test cases in xUnit?
+10. What is the best way to verify your tests are correct?
