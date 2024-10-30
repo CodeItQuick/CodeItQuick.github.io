@@ -1,6 +1,6 @@
 ---
 name: Fantasy Battle
-description: Learn A Tenant of OOP - The Law of Demeter/CQS Pattern
+description: Learn A Tenant of OOP - The Law of Demeter and CQS Pattern
 image: fantasy_battle_zombie.webp
 tags: beginner OOP
 url: https://github.com/Neppord/FantasyBattle-Refactoring-Kata
