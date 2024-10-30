@@ -7,12 +7,17 @@ url: https://github.com/swkBerlin/kata-bootstraps
 layout: dojo
 ---
 
-# Roman Numerals
-## About this Kata
+# Background
 
-### Difficulty - Easy.
 
-### Problem Description
+A kata is an exercise in karate that is practiced over and over again to get down a technique.
+This is similar to the practice in software development, where a coding kata is meant to practice
+particular techniques in code in a small sample problem. The gilded rose is a long since popularized
+coding kata that involves refactoring. The idea behind it is to write a suite of tests, then refactor
+the code to be readable and maintainable.
+
+The specification for the kata is given below:
+```
 The Romans were a clever bunch. They conquered most of Europe and ruled it for hundreds of years.
 They invented concrete and straight roads and even bikinis. One thing they never discovered though was the number zero.
 This made writing and dating extensive histories of their exploits slightly more challenging, but the system of numbers
@@ -44,3 +49,33 @@ Clues
 * What are the best data structures for storing all the numeral letters? (I, V, D, M etc)
 * Can you define the test cases in a csv file and use FIT, or generate test cases in xUnit?
 * What is the best way to verify your tests are correct?
+```
+
+# Learnings
+
+This kata as meant as a guided introduction to TDD and its practices. Focus on how to introduce tests, following red-green-refactor.
+Since the test order is largely self-determined (I, II, III, IV, etc.) the navigator/driver can focus more on the TDD flow and
+less on the mechanics. Follow some of the TDD basics listed below:
+
+## TDD Basics: Red Green Refactor
+The TDD cycle is known as red-green-refactor. Red: write a failing test. Green: write the simplest thing that makes the test
+pass (initially this is just a stub). Refactor: Reduce duplication while refactoring either test-code or production-code. No
+behaviour changes allowed - in other words, the tests should continue to pass after this step.
+
+## TDD Basics: Given/When/Then
+The general format of writing a test is given, when, then. Give a certain setup, when I call a method/series of methods, then
+I get some result. Often the given can get much too large, where test factories, builders, etc. can be used to reduce this. When
+tends to be just a single method, and the assert should be a single assert ideally - sometimes we are testing properties, however,
+where multiple asserts may be needed.
+
+## TDD Basics: The Guidelines
+
+These were brainstormed up quickly, not all apply directly to this kata (eg: 7 does not apply, as there are no dependencies):
+1. Minimize the number of asserts per test - Consider multiple tests if this occurs
+2. Avoid mid-test asserts, consider two separate tests instead
+3. Test suites should run in under 10 seconds
+4. Test first code tends to trend toward 100% test coverage, however 80% at the start is more than acceptable
+5. The test suite should be run every 5 minutes at the slowest
+6. No control statements in your tests
+7. Don't test what you don't own
+8. If too many tests fail at once you've gone too fast, backup and try again with more frequent smaller changes
