@@ -92,3 +92,7 @@ These were brainstormed up quickly, not all apply directly to this kata (eg: 7 d
 * No control statements in your tests
 * Don't test what you don't own
 * If too many tests fail at once you've gone too fast, backup and try again with more frequent smaller changes
+
+# Goal of the Exercise
+
+Learn the basics of TDD while converting roman numerals to the base-10 digit system.  
