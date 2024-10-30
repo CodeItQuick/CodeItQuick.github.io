@@ -34,13 +34,13 @@ There is no need to be able to convert numbers larger than about 3000. (The Roma
 Write a function to convert in the other direction, ie numeral to digit
 
 Clues
-1. Can you make the code really beautiful and highly readable?
-2. Does it help to break out lots of small named functions from the main function, or is it better to keep it all in one function?
-3. If you don’t know an algorithm to do this already, can you derive one using strict TDD?
-4. Does the order you take the tests in affect the final design of your algorithm?
-5. Would it be better to work out an algorithm first before starting with TDD?
-6. If you do know an algorithm already, can you implement it using strict TDD?
-7. Can you think of another algorithm?
-8. What are the best data structures for storing all the numeral letters? (I, V, D, M etc)
-9. Can you define the test cases in a csv file and use FIT, or generate test cases in xUnit?
-10. What is the best way to verify your tests are correct?
+* Can you make the code really beautiful and highly readable?
+* Does it help to break out lots of small named functions from the main function, or is it better to keep it all in one function?
+* If you don’t know an algorithm to do this already, can you derive one using strict TDD?
+* Does the order you take the tests in affect the final design of your algorithm?
+* Would it be better to work out an algorithm first before starting with TDD?
+* If you do know an algorithm already, can you implement it using strict TDD?
+* Can you think of another algorithm?
+* What are the best data structures for storing all the numeral letters? (I, V, D, M etc)
+* Can you define the test cases in a csv file and use FIT, or generate test cases in xUnit?
+* What is the best way to verify your tests are correct?
