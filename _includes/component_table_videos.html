@@ -1,0 +1,14 @@
+<div x-data="{ pageNumber: 0, tag_filter: 'main' }" class="bg-neutral py-4">
+        <div class="w-full mx-auto grid gap-6 grid-cols-1 p-8 lg:gap-16 2xl:w-max">
+            {% assign currentIndex = 0 %}
+            {% for row in site.videos %}
+            <div>
+                {% include course_list_higher_order.html
+                name=row.name
+                description=row.content
+                image=row.image
+                %}
+            </div>
+            {% endfor %}
+        </div>
+</div>

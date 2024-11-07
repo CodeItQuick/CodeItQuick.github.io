@@ -1,3 +1,0 @@
----
-layout: course_list
----
