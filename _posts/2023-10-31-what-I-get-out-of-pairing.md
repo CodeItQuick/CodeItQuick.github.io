@@ -15,6 +15,10 @@ important features/work are usually done in pairs.
 
 ## Better Collaboration
 
+<p align="center" width="100%">
+    <img src="/assets/images/zombie_shoulder_surfing.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+</p>  
+
 I've noticed my work relationships have improved thanks to pairing. Little things, like oh we should ask this person 
 this question become less about are you "afraid to talk to them" and more "is this faster than not talking to them". 
 I've also had my pair point out work decorum things I had not been doing. 
@@ -40,6 +44,10 @@ through the idiosyncrasies of the code.
 
 ## Pairing Dynamics
 
+<p align="center" width="100%">
+    <img src="/assets/images/engineer_zombie.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+</p>  
+
 ### Senior <-> Junior/Intern Pairings
 
 These pairings have a very different feeling than senior/senior. I can only speak to this from the viewpoint of the 
@@ -58,6 +66,10 @@ knowledge to others. Do I directly tell them? Do I show them repeatedly how I go
 in pairing is that you get to try all of the above.
 
 ## Pairing in Retrospect
+
+<p align="center" width="100%">
+    <img src="/assets/images/reflection_zombie.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+</p>  
 
 Although we don't pair very often at work, I think having done it is overall very valuable. We now collaborate more, meeting
 daily to discuss the current code we are working on, bounce ideas off each other, and get general direction. Also, if we
