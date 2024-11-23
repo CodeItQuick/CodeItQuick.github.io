@@ -8,12 +8,20 @@ tags: theory all
 
 # Beginner Phase (0 -> 5 Years)
 
+<p align="center" width="100%">
+    <img src="/assets/images/zombie_beginner.png"  alt="Beginner Zombie First Form" height="512" width="512" />
+</p>  
+
 For the first 5 years of my development career I didn't test anything. Then one day I went to a local devs Meetup, and met JB Rainserberger 
 (a well-known author in agile coaching, unit testing and in the ways of TDD). He presented a lot of ideas that very much challenged my ways of
 thinking).
    
 # Learning Phase (5 -> 6 Years)
-   
+
+<p align="center" width="100%">
+    <img src="/assets/images/zombie_beginner_two.png"  alt="Beginner Zombie Second Form" height="512" width="512" />
+</p>  
+
 **Learning the mechanics of TDD was challenging, so I decided to seek the help of a coach.** I joined two book clubs, JitterTeds, and JB Rainsbergers. Ted began reviewing my
 code and I finally got some feedback on code quality. At this point the learning began. It took at least half an hour to write a single test, 
 with most tests taking hours to write. I worked on getting more test coverage on side projects, and only worked on testing on side projects as it was too 
@@ -40,6 +48,10 @@ how to refactor code with unit tests, and how to design tests to be concise. I d
 changed in long enough.
 
 # Collaboration Phase (8.5 -> 10 Years)
+
+<p align="center" width="100%">
+    <img src="/assets/images/final_form_zombie.png"  alt="Zombie in the final form" height="512" width="512" />
+</p>  
 
 Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagreed on several topics. Where I am at on a variety 
 of testing topics:
