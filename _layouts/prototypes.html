@@ -21,11 +21,11 @@
 
   <body class="bg-neutral text-neutral-content mx-auto antialiased font-[body]"  x-bind:data-theme="getMode()">
 
-    {% include component_navbar.html %}
+    {% include navbar.html %}
 
     {% assign filtered_posts=site.projects | where_exp:"item", "item.project_type == 'prototype'" %}
 
-    {% include component_table.html table=filtered_posts %}
+    {% include table.html table=filtered_posts %}
 
   </body>
   <footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content">

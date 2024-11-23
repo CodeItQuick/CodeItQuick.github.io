@@ -1,6 +1,14 @@
 <div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: {{ site.posts.size }} }" class="bg-neutral w-full">
     <div class="w-10/12 py-8 mx-auto md:p-8 flex flex-col justify-center">
-        {% include component_table_blog_post.html %}
+        <div class="mx-auto hidden sm:flex m-4 " >
+            {% for tag in site.tags %}
+                <button class="btn font-[nav] " :class="tag_filter === '{{ tag[0] }}' ?
+                    'btn btn-primary' : 'btn-base-200' "
+                        x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">
+                    {{ tag[0] }}
+                </button>
+            {% endfor %}
+        </div>
         <div x-data="{ index: 0 }" class="grid md:grid-cols-2 gap-8 w-max-xl mx-auto">
              {% for tag in site.tags %}
                      {% assign currentIndex = 0 %}
@@ -8,7 +16,7 @@
                                 <div x-show="'{{ tag[0] }}'.includes(tag_filter)"
                                      :class="{ 'hidden' : +'{{ currentIndex }}' < (pageNumber) * 6 || +'{{ currentIndex }}' > (pageNumber + 1) * 6 - 1 }"
                                 >
-                                   {% include component_list_higher_order.html
+                                   {% include card.html
                                         image=row.image
                                         title=row.name
                                         description=row.description

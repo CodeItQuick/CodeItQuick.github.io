@@ -1,0 +1,26 @@
+<div x-data="{ pageNumber: 0, tag_filter: 'main' }" class="bg-neutral py-4">
+    <div class="w-full mx-auto grid gap-6 grid-cols-1 p-8 lg:gap-16 2xl:w-max">
+        {% assign currentIndex = 0 %}
+        {% for row in site.videos %}
+        <div>
+            <div class="card card-side bg-base-200 shadow-xl max-w-3xl lg:h-96 mx-auto">
+                <div class="hidden lg:block">
+                    <figure class="min-h-20">
+                        <img src="./assets/images/{{ row.image }}"
+                             alt="{{ row.name }}-figure"
+                             class="hidden lg:block aspect-cover object-cover w-full lg:h-96" />
+                    </figure>
+                </div>
+                <div class="card-body min-h-32 p-3 lg:p-5 text-neutral-content w-2/3">
+                    <h2 class="card-title lg:text-2xl line-clamp-4 font-[display]">{{ row.name }}</h2>
+                    <div class="card-actions flex w-full flex-col justify-start lg:justify-between grow">
+                        {{ row.content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+

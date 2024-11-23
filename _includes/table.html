@@ -3,7 +3,7 @@
             {% assign currentIndex = 0 %}
             {% for row in include.table %}
             <div>
-                {% include component_list_higher_order.html
+                {% include card.html
                 main=true
                 name=row.name
                 image=row.image
