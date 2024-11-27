@@ -10,4 +10,3 @@ image: learning_journal_zombie.png
 * [Gilding the Rose Refactoring-Driven Development - Kevlin Henney - ACCU 2023](https://www.youtube.com/watch?v=kTcDBYCpj7Q)
 * [Beware the Integrated Tests Scam: A Retrospective and an Apology](https://www.youtube.com/watch?v=NGs23Q8WHxA)
 * [TDD Revisited - Ian Cooper](https://www.youtube.com/watch?v=IN9lftH0cJc&t=563s)
-* [TDD, Where Did It All Go Wrong - Ian Cooper](https://www.youtube.com/watch?v=EZ05e7EMOLM&t=41s)
