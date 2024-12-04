@@ -2,7 +2,7 @@
 layout: post
 name: Automated Pull Request Reviewer
 description: Outlining vision of providing feedback to pull requests  
-image: zombie-poker-playing-moonlight-lean-poker.webp
+image: robot_zombie_big_idea.png
 tags: quality all
 ---
 
