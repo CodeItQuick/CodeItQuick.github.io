@@ -9,7 +9,7 @@ tags: agile all
 # Let's Estimate Our Developer Pain
 
 ## **1. Introduction**
-If you bring up a previous late project with a developer, you'll get a negative response back. Management often have 
+If you bring up a previous late project with a developer, you'll get a negative emotional response back. Management often have 
 unreasonable expectations, while developers struggle to code vague requirements. We'll first talk about general problems 
 with estimation. We'll go into some of the benefits of the estimation process. We'll detail the rewards of estimation. 
 Decreasing this divide between managers and developers will be beneficial.
