@@ -9,10 +9,9 @@ tags: agile all
 # Let's Estimate Our Developer Pain
 
 ## **1. Introduction**
-If you bring up a previous late project with a developer, you'll get a negative emotional response back. Management often have 
-unreasonable expectations, while developers struggle to code vague requirements. We'll first talk about general problems 
-with estimation. We'll go into some of the benefits of the estimation process. We'll detail the rewards of estimation. 
-Decreasing this divide between managers and developers will be beneficial.
+Developers are rife with stories about late projects. Management often have unreasonable expectations, while developers 
+struggle to code vague requirements. We'll first talk about general problems with estimation. We'll go into some of the 
+benefits and rewards of the estimation process. Decreasing this divide between managers and developers will be beneficial.
 
 ## **2. The Pain's of Estimation**
 <p align="center" width="100%">
@@ -34,6 +33,7 @@ point. What are some ways we can remove this pain, beyond "being a better develo
 <p align="center" width="100%">
     <img src="/assets/images/zombie_engineer_solving_complex.webp"  alt="Zombie Engineer Solving Problem" height="512" width="512" />  
 </p>
+
 ### Beyond Our Control
 The factors we cannot control can be the most discouraging. A task that is repetitive and routine, not complex, and 
 standardized would be easy to estimate. If we added a lot of historical data to this repetitive task, we could estimate 
@@ -41,14 +41,14 @@ how long it will take. Unfortunately, these tasks resemble an old car assembly l
 repetitive and routine.
 
 ### The Ideal Task
-If we split tasks so that one blocks another, this is going to slow down development. We have turned potential agile 
-development into a waterfall process. We want small pull requests that are easy to review and merge. Independent scoped 
+Stories dependent on each other will slow down development. These dependent stories make for a waterfall process. 
+Independent stories should be the goal. We want small pull requests that are easy to review and merge. Independent scoped 
 work enables parallelized tasks. Making sure the ask is well-defined will further help the developer do the job.
 
 ### Complicating Factors
 If what we are working on is complex and novel, that is going to bring many challenges. Novel or innovative tasks make 
-development even more challenging. There is often a creative element to development. These factors can cause high demands 
-on learning. Finding ways to reduce complexity is not simple.
+development even more challenging. There is often a creative element to development. Finding ways to reduce complexity 
+is not simple. These factors can cause high demands on learning.
 
 ### Scope, Uncertainty, And Shifting Priorities
 Finally, we should cut project risk or uncertainty. A typical mitigation strategy would be to use familiar tech while 
@@ -84,6 +84,6 @@ in general features countless times as well. The cause is not believing the engi
 <p align="center" width="100%">
     <img src="/assets/images/zombies_lasting_friendship.webp"  alt="Zombie Lasting Friendship" height="512" width="512" />
 </p>
-As a previous business analyst, I found the most value in discussions around metrics. Time estimates result in similar 
+As a previous business analyst, I found the most value in discussions about metrics. Time estimates result in similar 
 discussions. The answer is to learn with the business how to develop the feature. So use time estimation as an aide for 
 development.
