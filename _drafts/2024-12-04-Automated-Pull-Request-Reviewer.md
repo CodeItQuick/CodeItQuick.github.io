@@ -30,37 +30,37 @@ how readable the code that was just generated is. I think the main facet of this
 etc. This can be done either through rules, or by using AI to give more subjective feedback.
 
 The five levels of code readability:
-1. Does Bare Minimum
+1. Does Bare Minimum  
 Probably LLM - Too subjective for anything else?
-2. Idiomatic
+2. Idiomatic  
 Probably LLM - Too subjective for anything else?
-3. Tactical Use of Typing
+3. Tactical Use of Typing  
 This is using interfaces, primitives, etc. in a manner to help in readability. Will be similar solutions to abstraction
 layers.
-4. Does not mix levels of abstraction
-Possible solutions:
-1. Use LLM's for generalized solutions. They can rank words from most abstract to most concrete
-2. NLTK - Natural Language Processing library that has what we need
-3. ConceptNet - Provides Semantic Network that would allow for determining abstraction levels
+4. Does not mix levels of abstraction  
+Possible solutions:  
+1. Use LLM's for generalized solutions. They can rank words from most abstract to most concrete  
+2. NLTK - Natural Language Processing library that has what we need  
+3. ConceptNet - Provides Semantic Network that would allow for determining abstraction levels  
 
-Note: NLTK has some way to directly talk to ConceptNet. I think these two libraries are used together at least occasionally.
+Note: NLTK has some way to directly talk to ConceptNet. I think these two libraries are used together at least occasionally.  
 
-6. Speaks language of the business
-Use k-means clustering and self organizing maps
-If the word used is too far from the centroid of a cluster, alert the user
+6. Speaks language of the business  
+Use k-means clustering and self organizing maps  
+If the word used is too far from the centroid of a cluster, alert the user  
 
-The five facets of comprehensibility (in writing, i.e. readability):
+The five facets of comprehensibility (in writing, i.e. readability):  
 
-1. ECONOMY: Only provide information relevant to your intent
-2. ORDER: Reveal information in a progressive, logical way (i.e. control flow)
-3. STRUCTURE: ... just go read Eats Shoots and Leaves
-4. EMPHASIS: Ensure the most critical information isn't lost among supporting details
-5. SIZE: Use the time and space you need
+1. ECONOMY: Only provide information relevant to your intent  
+2. ORDER: Reveal information in a progressive, logical way (i.e. control flow)  
+3. STRUCTURE: ... just go read Eats Shoots and Leaves  
+4. EMPHASIS: Ensure the most critical information isn't lost among supporting details  
+5. SIZE: Use the time and space you need  
 
-Three main variables for readability in english:
-* words per sentence
-* average grade level of words
-* characters per word
+Three main variables for readability in english:  
+* words per sentence  
+* average grade level of words  
+* characters per word  
 
 See: https://en.wikipedia.org/wiki/Readability for a starting list of readability formulas
 
