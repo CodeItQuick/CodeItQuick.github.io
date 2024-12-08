@@ -40,7 +40,7 @@ layers.
 4. Does not mix levels of abstraction  
 Possible solutions:  
 * Use LLM's for generalized solutions. They can rank words from most abstract to most concrete    
-* NLTK - Natural Language Processing library that has what we need (Maybe use Spice)  
+* NLTK - Natural Language Processing library that has what we need (Maybe use Spacey)  
 * ConceptNet - Provides Semantic Network that would allow for determining abstraction levels    
 
 Note: NLTK has some way to directly talk to ConceptNet. I think these two libraries are used together at least occasionally.  
