@@ -52,8 +52,8 @@ is not simple. Keep it novel, but avoid the complexity.
 
 ### Scope, Uncertainty, And Shifting Priorities
 Finally, we should cut project risk or uncertainty. A typical mitigation strategy would be to use familiar tech while 
-avoiding new tech. We have to avoid tasks that shift in their goals or lack the clarity needed to begin the work. These 
-tasks increase the likelihood of unnecessary rework.
+avoiding new tech. We have to avoid tasks that shift in their goals or lack the clarity needed. These tasks increase the 
+likelihood of unnecessary rework.
 
 ### Collaboration Issues
 There are challenges inherent in collaboration, especially with external parties. External customer meetings are necessary 
