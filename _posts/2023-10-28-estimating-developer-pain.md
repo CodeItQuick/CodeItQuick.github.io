@@ -9,9 +9,9 @@ tags: agile all
 # Let's Estimate Our Developer Pain
 
 ## **1. Introduction**
-Developers are rife with stories about late projects. Management often have unreasonable expectations, while developers 
-struggle to code vague requirements. We'll first talk about general problems with estimation. We'll go into some of the 
-benefits and rewards of the estimation process. Decreasing this divide between managers and developers will be beneficial.
+Developers are rife with stories about late projects. Management's unreasonable expectations combine with developers 
+struggle to code vague requirements. There are many common problems with estimation. However, what are some of the benefits?
+We'll go into the rewards of the estimation process. We are attempting to remove the divide between managers and developers.
 
 ## **2. The Pain's of Estimation**
 <p align="center" width="100%">
@@ -20,14 +20,14 @@ benefits and rewards of the estimation process. Decreasing this divide between m
 
 ### It's A Common Pain Point
 It's very difficult to estimate individual developer tasks, stories, and project timelines. A natural gap exists between 
-when I promise to deliver the feature and the actual delivery date. As my career progresses, this pain has gotten to be 
-less and less. The main reason it's become easier is that I'm better at building software.
+the promise of a feature and the delivery. This gap causes pain between the parties. As my career progresses, this pain 
+has reduced. The main reason it's become easier is that I'm better at building software.
 
 ### Minimizing The Pain
-The goal of estimation is to improve customer satisfaction by better managing expectations. Now, is this the right 
-viewpoint for delivering software? I'm not so sure. Software developers must show continual progress in the software's 
-development. Still, there is major pain in time estimation for developers. Missed hard deadlines are the biggest pain 
-point. What are some ways we can remove this pain, beyond "being a better developer"?
+The goal of estimation is to better managing expectations. Now, is this the right viewpoint for delivering software? I'm
+not so sure. Software developers must show continual progress in the software's development. Still, there is major pain 
+in time estimation for developers. Missed hard deadlines are the biggest pain point. What are some ways we can remove 
+this pain, beyond "being a better developer"?
 
 ## **3. Solutions Resulting From Estimation**
 <p align="center" width="100%">
@@ -42,13 +42,13 @@ repetitive and routine.
 
 ### The Ideal Task
 Stories dependent on each other will slow down development. These dependent stories make for a waterfall process. 
-Independent stories should be the goal. We want small pull requests that are easy to review and merge. Independent scoped 
-work enables parallelized tasks. Making sure the ask is well-defined will further help the developer do the job.
+The goal is neatly fitting independent stories. We want small pull requests that are easy to review and merge. Independent 
+scoped work enables parallelized tasks. To succeed, make sure the ask is well-defined.
 
 ### Complicating Factors
 If what we are working on is complex and novel, that is going to bring many challenges. Novel or innovative tasks make 
 development even more challenging. There is often a creative element to development. Finding ways to reduce complexity 
-is not simple. These factors can cause high demands on learning.
+is not simple. Keep it novel, but avoid the complexity.
 
 ### Scope, Uncertainty, And Shifting Priorities
 Finally, we should cut project risk or uncertainty. A typical mitigation strategy would be to use familiar tech while 
@@ -56,9 +56,9 @@ avoiding new tech. We have to avoid tasks that shift in their goals or lack the 
 tasks increase the likelihood of unnecessary rework.
 
 ### Collaboration Issues
-There are challenges inherent in collaboration, especially with external parties. We must have external customer meetings 
-throughout the project. It's common for projects to need high coordination. Tasks must be independent; otherwise, 
-developers will interfere with each other.
+There are challenges inherent in collaboration, especially with external parties. External customer meetings are necessary 
+throughout the project. It's common for projects to need high coordination. There is no replacement for good working 
+relationships.  
 
 ## **4. Rewards: Benefits of Estimation**
 <p align="center" width="100%">
