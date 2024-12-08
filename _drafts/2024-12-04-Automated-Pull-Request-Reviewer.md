@@ -39,9 +39,9 @@ This is using interfaces, primitives, etc. in a manner to help in readability. W
 layers.
 4. Does not mix levels of abstraction  
 Possible solutions:  
-1. Use LLM's for generalized solutions. They can rank words from most abstract to most concrete  
-2. NLTK - Natural Language Processing library that has what we need  
-3. ConceptNet - Provides Semantic Network that would allow for determining abstraction levels  
+* Use LLM's for generalized solutions. They can rank words from most abstract to most concrete    
+* NLTK - Natural Language Processing library that has what we need   
+* ConceptNet - Provides Semantic Network that would allow for determining abstraction levels    
 
 Note: NLTK has some way to directly talk to ConceptNet. I think these two libraries are used together at least occasionally.  
 
