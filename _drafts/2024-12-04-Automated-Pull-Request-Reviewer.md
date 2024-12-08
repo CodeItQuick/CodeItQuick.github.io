@@ -6,6 +6,12 @@ image: robot_zombie_big_idea.png
 tags: quality all
 ---
 
+# Main Question
+
+What should we focus on first? I'm thinking code abstractions would be the "most useful" and "most interesting". Which
+means we'd have to learn how to use the nltk library, how to separate out the words in code, and build our own model
+for determining the level of abstraction of concepts within the code.
+
 # What is the automated pull request reviewer primarily focused on?
 
 First we have to define what it's not focused on. Mainly, we do not want to overlap with already readily available
@@ -25,10 +31,23 @@ etc. This can be done either through rules, or by using AI to give more subjecti
 
 The five levels of code readability:
 1. Does Bare Minimum
+Probably LLM - Too subjective for anything else?
 2. Idiomatic
+Probably LLM - Too subjective for anything else?
 3. Tactical Use of Typing
+This is using interfaces, primitives, etc. in a manner to help in readability. Will be similar solutions to abstraction
+layers.
 4. Does not mix levels of abstraction
-5. Speaks language of the business
+Possible solutions:
+1. Use LLM's for generalized solutions. They can rank words from most abstract to most concrete
+2. NLTK - Natural Language Processing library that has what we need
+3. ConceptNet - Provides Semantic Network that would allow for determining abstraction levels
+
+Note: NLTK has some way to directly talk to ConceptNet. I think these two libraries are used together at least occasionally.
+
+6. Speaks language of the business
+Use k-means clustering and self organizing maps
+If the word used is too far from the centroid of a cluster, alert the user
 
 The five facets of comprehensibility (in writing, i.e. readability):
 
