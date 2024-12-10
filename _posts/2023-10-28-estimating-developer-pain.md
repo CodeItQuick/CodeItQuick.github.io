@@ -9,9 +9,9 @@ tags: agile all
 # Let's Estimate Our Developer Pain
 
 ## **1. Introduction**
-Developers are rife with stories about late projects. Management's unreasonable expectations combine with developers 
-struggle to code vague requirements. There are many common problems with estimation. However, what are some of the benefits?
-We'll go into the rewards of the estimation process. We are attempting to remove the divide between managers and developers.
+Developers are rife with stories about late projects. Management’s unreasonable expectations combine with developers' 
+struggles to code vague requirements. There are many common problems with estimation. Yet, what are some of the benefits? 
+We’ll go into the rewards of the estimation process. We are attempting to remove the divide between managers and developers.
 
 ## **2. The Pain's of Estimation**
 <p align="center" width="100%">
@@ -24,12 +24,12 @@ the promise of a feature and the delivery. This gap causes pain between the part
 has reduced. The main reason it's become easier is that I'm better at building software.
 
 ### Minimizing The Pain
-The goal of estimation is to better managing expectations. Now, is this the right viewpoint for delivering software? I'm
+The goal of estimating is to better manage expectations. Now, is this the right viewpoint for delivering software? I'm
 not so sure. Software developers must show continual progress in the software's development. Still, there is major pain 
 in time estimation for developers. Missed hard deadlines are the biggest pain point. What are some ways we can remove 
 this pain, beyond "being a better developer"?
 
-## **3. Solutions Resulting From Estimation**
+## **3. Estimation Results**
 <p align="center" width="100%">
     <img src="/assets/images/zombie_engineer_solving_complex.webp"  alt="Zombie Engineer Solving Problem" height="512" width="512" />  
 </p>
@@ -42,7 +42,7 @@ repetitive and routine.
 
 ### The Ideal Task
 Stories dependent on each other will slow down development. These dependent stories make for a waterfall process. 
-The goal is neatly fitting independent stories. We want small pull requests that are easy to review and merge. Independent 
+The goal is fitting independent stories. We want small pull requests that are easy to review and merge. Independent 
 scoped work enables parallelized tasks. To succeed, make sure the ask is well-defined.
 
 ### Complicating Factors
