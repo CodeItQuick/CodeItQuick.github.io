@@ -1,5 +1,11 @@
 # Project Graveyard
 
+# Article Thoughts
+
+1. The Hot Take of Hot Takes
+2. Code It, Quickly, Now!
+
+
 ## General Description
 
 A historical take on the kata's and side projects I have worked on since 2021. Built using GithubPages and Ruby's Jekyll. 
