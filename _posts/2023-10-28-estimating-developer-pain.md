@@ -1,35 +1,35 @@
 ---
 layout: post
-name: Let's Estimate Our Developer Pain
-description: Exploring ideas within project and task estimation for development  
+name: Beyond Time Estimation
+description: A guide of real outputs from time estimation  
 image: story_splitting_zombies.png
 tags: agile all
 ---
 
-# Let's Estimate Our Developer Pain
+# Beyond Time Estimation
 
 ## **1. Introduction**
 Developers are rife with stories about late projects. Management’s unreasonable expectations combine with developers' 
 struggles to code vague requirements. There are many common problems with estimation. Yet, what are some of the benefits? 
-We’ll go into the rewards of the estimation process. We are attempting to remove the divide between managers and developers.
+What are we getting out of time estimation in development?
 
-## **2. The Pain's of Estimation**
+## **2. Time Estimation On Hard Mode**
 <p align="center" width="100%">
     <img src="/assets/images/zombie_chasm_estimation.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  
 
-### It's A Common Pain Point
+### How long is a task?
 It's very difficult to estimate individual developer tasks, stories, and project timelines. A natural gap exists between 
 the promise of a feature and the delivery. This gap causes pain between the parties. As my career progresses, this pain 
 has reduced. The main reason it's become easier is that I'm better at building software.
 
-### Minimizing The Pain
+### What is the goal?
 The goal of estimating is to better manage expectations. Now, is this the right viewpoint for delivering software? I'm
 not so sure. Software developers must show continual progress in the software's development. Still, there is major pain 
 in time estimation for developers. Missed hard deadlines are the biggest pain point. What are some ways we can remove 
 this pain, beyond "being a better developer"?
 
-## **3. Estimation Results**
+## **3. Problems With Task Estimation**
 <p align="center" width="100%">
     <img src="/assets/images/zombie_engineer_solving_complex.webp"  alt="Zombie Engineer Solving Problem" height="512" width="512" />  
 </p>
@@ -60,7 +60,7 @@ There are challenges inherent in collaboration, especially with external parties
 throughout the project. It's common for projects to need high coordination. There is no replacement for good working 
 relationships.  
 
-## **4. Rewards: Benefits of Estimation**
+## **4. Rewards: Benefits of Task Estimation**
 <p align="center" width="100%">
     <img src="/assets/images/zombie_gold_riches.webp"  alt="Zombie Gold Riches" height="512" width="512" />
 </p>
@@ -77,13 +77,13 @@ I've seen, the latter is a bit of a pipe dream. Still, the truth lies between th
 ### Helps Manage Scope Creep
 Scope in general is something I've been thinking about more lately. How do we identify all parts of this epic, story, or 
 ticket, so we don't end up in the trap of ever-expanding scope creep? I've been the guy who picked up "one task" from 
-the backlog. It turned out to be a lot of work to install it in every library that needs the change. I've seen overruns 
-in general features countless times as well. The cause is not believing the engineers' honest estimates.
+the backlog. It turned out to be a change needed in multiple codebases. I've seen overruns in general features countless 
+times as well. The cause is not believing the engineers' honest estimates.
 
 ## **5. Conclusion**
 <p align="center" width="100%">
     <img src="/assets/images/zombies_lasting_friendship.webp"  alt="Zombie Lasting Friendship" height="512" width="512" />
 </p>
-As a previous business analyst, I found the most value in discussions about metrics. Time estimates result in similar 
-discussions. The answer is to learn with the business how to develop the feature. So use time estimation as an aide for 
+As a previous business analyst, I find the most value in discussions about metrics. Time estimates result in similar 
+discussions. The answer is to learn with the business how to develop the feature. So use task tracking as an aide for 
 development.
