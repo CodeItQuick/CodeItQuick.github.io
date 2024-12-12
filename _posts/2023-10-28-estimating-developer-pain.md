@@ -10,8 +10,8 @@ tags: agile all
 
 ## **1. Introduction**
 Developers are rife with stories about late projects. Management’s unreasonable expectations combine with developers' 
-struggles to code vague requirements. There are many common problems with estimation. Yet, what are some of the benefits? 
-What are we getting out of time estimation in development?
+struggles to code vague requirements. Despite these challenges, there are tangible benefits. The primary question is, what
+are we getting out of time estimation in development?
 
 ## **2. Time Estimation On Hard Mode**
 <p align="center" width="100%">
@@ -20,14 +20,13 @@ What are we getting out of time estimation in development?
 
 ### How long is a task?
 It's very difficult to estimate individual developer tasks, stories, and project timelines. A natural gap exists between 
-the promise of a feature and the delivery. This gap causes pain between the parties. As my career progresses, this pain 
-has reduced. The main reason it's become easier is that I'm better at building software.
+the promise of a feature and the delivery. This gap causes the feeling of "hard mode" for the development team. As my 
+career progresses, my delivery speed has improved resulting in this mode being reduced.
 
 ### What is the goal?
-The goal of estimating is to better manage expectations. Now, is this the right viewpoint for delivering software? I'm
-not so sure. Software developers must show continual progress in the software's development. Still, there is major pain 
-in time estimation for developers. Missed hard deadlines are the biggest pain point. What are some ways we can remove 
-this pain, beyond "being a better developer"?
+The goal of estimating is to better manage expectations. Software developers must show continual progress in the software's 
+development. Still, there is major difficulty in time estimation for developers. Missed hard deadlines can cause distance
+between business and development. What are some ways we can remove this difficulty, beyond "being a better developer"?
 
 ## **3. Problems With Task Estimation**
 <p align="center" width="100%">
@@ -55,12 +54,12 @@ Finally, we should cut project risk or uncertainty. A typical mitigation strateg
 avoiding new tech. We have to avoid tasks that shift in their goals or lack the clarity needed. These tasks increase the 
 likelihood of unnecessary rework.
 
-### Collaboration Issues
-There are challenges inherent in collaboration, especially with external parties. External customer meetings are necessary 
-throughout the project. It's common for projects to need high coordination. There is no replacement for good working 
-relationships.  
+### Collaboration As A Risk Factor
+Collaborating with others is a time sync. The more collaboration required, the more likely we are to miss deadlines. 
+External parties introduce even more difficulty in collaboration. External customer meetings are necessary throughout 
+the project. It's common for projects to need high coordination. There is no replacement for good working relationships.  
 
-## **4. Rewards: Benefits of Task Estimation**
+## **4. Benefits of Task Estimation**
 <p align="center" width="100%">
     <img src="/assets/images/zombie_gold_riches.webp"  alt="Zombie Gold Riches" height="512" width="512" />
 </p>
@@ -74,7 +73,7 @@ Identifying risks upfront or as early as possible is important. Funny enough, XP
 gathering. XP believes requirements are more incremental. Scrum believes a large part of tasks is estimable. From what 
 I've seen, the latter is a bit of a pipe dream. Still, the truth lies between these two statements.
 
-### Helps Manage Scope Creep
+### Manage Scope To Build Trust
 Scope in general is something I've been thinking about more lately. How do we identify all parts of this epic, story, or 
 ticket, so we don't end up in the trap of ever-expanding scope creep? I've been the guy who picked up "one task" from 
 the backlog. It turned out to be a change needed in multiple codebases. I've seen overruns in general features countless 
