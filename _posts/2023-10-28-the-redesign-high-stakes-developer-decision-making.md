@@ -13,7 +13,7 @@ the code base and change everything? As a seasoned pro, is it time to finally di
 are big decisions about when and how to redesign, rewrite, and refactor. We will cover when to finally reach for the secret 
 weapon, the code redesign.
 
-## What are your options: Refactor, Redesign, Rewrite
+## What are your options: Refactor, Rewrite, Redesign
 Refactoring has been around for a long time. It is the cheapest of the three alternatives. Refactoring is changing the 
 code's internals without altering its behaviour. Refactoring involves making the code better as you go. It is the boy scout 
 rule "leave it better than you found it.". The practice is best learned from Martin Fowler's Refactoring book. Looking for 
