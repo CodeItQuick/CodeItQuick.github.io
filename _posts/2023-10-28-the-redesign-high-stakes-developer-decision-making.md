@@ -36,7 +36,7 @@ later if needed. This is when refactoring works the best. Right after we've writ
 remove it. 
 
 This type of work is not what is inherent when large mistakes creep into the codebase. Large inadvertent changes take 
-months to fix. The time for refactoring is enough has already passed.
+months to fix. Refactoring is no longer solving the challenges in code.
 
 ## Alternative: Why can't we just make a massive rewrite?
 If the code base sucks, why not throw it out? The problem with this is there is a lot of inherent knowledge within that 
