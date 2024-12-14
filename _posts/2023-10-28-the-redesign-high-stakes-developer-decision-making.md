@@ -1,7 +1,7 @@
 ---
 layout: post
 name: The Redesign - High-Stakes Developer Decision-Making
-description: The decision-making process for developers on whether to refactor, rewrite, or redesign code. 
+description: The decision to refactor, rewrite, or redesign code. 
 image: refactoring_zombie_2.png
 tags: theory all
 ---
