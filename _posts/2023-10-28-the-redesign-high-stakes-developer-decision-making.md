@@ -69,8 +69,8 @@ that the new design is better by giving clear reasons why.
 
 ## Selling it to the business
 Business needs should flow from the reasons for the redesign. We will now be able to push more features. Developers can 
-add more functionality faster. The company can provide better support to our customers. Correct functions that don't work. 
-These are valid sales pitches for the new redesign.
+add more functionality faster. The company can provide better support to our customers. The websites features will finally
+all work. These are valid sales pitches for the new redesign.
 
 ## The Final Decision: Redesign or Not?
 There is a mental checklist for the final decision. Does this redesign delete code? Does the redesign make it easier to 
