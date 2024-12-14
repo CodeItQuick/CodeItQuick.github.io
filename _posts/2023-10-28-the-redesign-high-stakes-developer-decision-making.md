@@ -75,5 +75,5 @@ These are valid sales pitches for the new redesign.
 ## The Final Decision: Redesign or Not?
 There is a mental checklist for the final decision. Does this redesign delete code? Does the redesign make it easier to 
 produce features? Does the redesign make the codebase easier and faster to work in? Yes to a few of these questions is 
-enough to rewrite the code. Taking into account your own experience level. The trust the team has in you to make good 
-decisions, and the health of the codebase.
+enough to rewrite the code. Taking into account three things. Your own experience level. The trust the team has in you.
+And finally, the health of the codebase.
