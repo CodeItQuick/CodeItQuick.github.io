@@ -19,10 +19,10 @@ code's internals without altering its behaviour. Refactoring involves making the
 rule "leave it better than you found it.". The practice is best learned from Martin Fowler's Refactoring book. Looking for 
 a better way to write code has a lot of value. 
 
-Rewriting is often pitched as the be-all solution to our currently bad software. 
-The classic example is a new developer in a new code base. He immediately declares it trash, to cast off any old developers 
-and let him rewrite it from scratch. Other times, the code base may have outlived its useful life, and it's time for a rewrite. 
-This change is often radical, and depending on the use case, can cause a lot of havoc for the user base. 
+Rewriting is often pitched as the be-all solution to our currently bad software. The classic example is a new developer 
+in a new code base. He immediately declares it trash, to cast off any old developers and let him rewrite it from scratch. 
+Other times, the code base may have outlived its useful life, and it's time for a rewrite. This change is often radical, 
+and depending on the use case, can cause a lot of havoc for the user base. 
 
 The redesign is taking some old code and giving it the love it needs. It could or could not involve a change in behaviour. 
 It's changing the structure of the code. Refactoring old code and improving the maintainability. Why should we choose 
@@ -32,8 +32,8 @@ redesigning over the other options?
 The adage "You don't ask your manager to compile" applies here. We should write clean code on the first attempt. Before 
 submitting the pull request, I make sure everything looks correct. This includes rewriting or redrafting sections. Making 
 sure my abstractions are good and all the logic works. I include a comprehensive suite of tests so that I can make changes 
-later if needed. This is when refactoring works the best. Right after we've written the code. We realized there's duplication and need to 
-remove it. 
+later if needed. This is when refactoring works the best. Right after we've written the code. We realized there's duplication 
+and need to remove it. 
 
 This type of work is not what is inherent when large mistakes creep into the codebase. Large inadvertent changes take 
 months to fix. Refactoring is no longer solving the challenges in code.
