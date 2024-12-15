@@ -1,11 +1,11 @@
 ---
 layout: post
-name: From Chaos to Collaboration - Introducing Pair Programming to Your Team
+name: From Chaos to Collaboration - Introducing Pair Programming
 description: In my article on pair programming, I discussed how two developers work together, with one coding and the other reviewing.  
 image: what_pairing_zombie.png
 tags: agile all
 ---
-# From Chaos to Collaboration - Introducing Pair Programming to Your Team
+# From Chaos to Collaboration - Introducing Pair Programming
 <p align="center" width="100%">
     <img src="/assets/images/zombie_shoulder_surfing.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  
