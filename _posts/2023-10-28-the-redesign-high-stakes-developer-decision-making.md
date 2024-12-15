@@ -32,7 +32,7 @@ redesigning over the other options?
 The adage "You don't ask your manager to compile" applies here. We should write clean code on the first attempt. Before 
 submitting the pull request, I make sure everything looks correct. This includes rewriting or redrafting sections. Making 
 sure my abstractions are good and all the logic works. I include a comprehensive suite of tests so that I can make changes 
-later if needed. This is when refactoring works the best. Right after we've written the code. We realized there's duplication 
+later if needed. This is when refactoring works the best, right after we've written the code. We realized there's duplication 
 and need to remove it. 
 
 This type of work is not what is inherent when large mistakes creep into the codebase. Large inadvertent changes take 
@@ -63,7 +63,7 @@ The most important part of a redesign is defining success. The team must code ne
 codebase has improved is swaths of deleted code. We now get the same functionality with fewer lines of code. This increases 
 the code's maintainability. The test suite is another important part of the codebase.
 
-Improving the testing suite makes refactoring easier. The developer should go through an internal checklist. Does he 
+Improving the testing suite makes refactoring easier. The developer should go through an internal checklist: Does he 
 understand the codebase's warts? How can he do more than move food around the plate? He has to convince other developers 
 that the new design is better by giving clear reasons why.
 
@@ -75,5 +75,5 @@ all work. These are valid sales pitches for the new redesign.
 ## The Final Decision: Redesign or Not?
 There is a mental checklist for the final decision. Does this redesign delete code? Does the redesign make it easier to 
 produce features? Does the redesign make the codebase easier and faster to work in? Yes to a few of these questions is 
-enough to rewrite the code. Taking into account three things: Your own experience level. The trust the team has in you.
-And finally, the health of the codebase.
+enough to rewrite the code. Taking into account three things: Your own experience level, the trust the team has in you,
+and finally, the health of the codebase.
