@@ -5,8 +5,6 @@ description: In my article on pair programming, I discussed how two developers w
 image: what_pairing_zombie.png
 tags: agile all
 ---
-
-
 # From Chaos to Collaboration - Introducing Pair Programming to Your Team
 <p align="center" width="100%">
     <img src="/assets/images/zombie_shoulder_surfing.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
