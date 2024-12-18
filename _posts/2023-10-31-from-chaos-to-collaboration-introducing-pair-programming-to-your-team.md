@@ -68,7 +68,7 @@ code. This latter solution was a huge success in beginning to build team unity.
 
 After the abject failure of ensemble programming. We hired a couple of developers and began pair programming. The pairing 
 reduced both the risk and length of on-boarding new developers. We measured on-boarding in weeks instead of months. We got 
-workable code immediately because a knowledgeable developer are helping. The team built trust and capability. The biggest 
+workable code immediately because a knowledgeable developer is helping. The team built trust and capability. The biggest 
 shining point of pair programming is on-boarding new developers.
 
 Currently, we’ve shifted into a more lax version of pair programming culture. Daily, I meet with another developer for one 
