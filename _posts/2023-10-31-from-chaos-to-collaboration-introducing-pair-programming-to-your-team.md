@@ -28,11 +28,10 @@ is ideal for opening up new ways of working, and is the place we all want to wor
 </p>  
 
 There are two roles while pairing: a navigator and a driver. The analogy follows from driving a car. The driver operates 
-the vehicle and the navigator provides directions. The driver and navigator take turns, lasting 15 minutes at a time. You 
-can achieve this by setting a 5-minute timer for coding only. The pair stops the timer anytime general discussions happen. 
-The simpler method is to have a 15-minute continuous timer. If there is any resistance, tend towards the latter solution. 
-Daily sessions last between one and three hours. Any lower than this and developers are running around solo too much. 
-Attempting longer sessions can cause developer burnout.
+the vehicle and the navigator provides directions. You can achieve this by setting a 5-minute timer for coding only. The 
+pair stops the timer anytime general discussions happen. The simpler method is to have a 15-minute continuous timer. If 
+there is any resistance, tend towards the latter solution. Daily sessions last between one and three hours. Any lower than 
+this and developers are running around solo too much. Attempting longer sessions can cause developer burnout.
 
 The driver will have minor disagreements about the way the problem is being tackled. These types of objections are sometimes 
 called “nits” in pull request reviews. The navigator and driver should continue writing code. The pair must discuss large 
