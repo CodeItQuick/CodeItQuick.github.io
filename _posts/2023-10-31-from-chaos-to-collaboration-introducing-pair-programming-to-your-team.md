@@ -1,7 +1,7 @@
 ---
 layout: post
 name: From Chaos to Collaboration - Introducing Pair Programming
-description: In my article on pair programming, I discussed how two developers work together, with one coding and the other reviewing.  
+description: Adopt pair programming to reduce development chaos  
 image: what_pairing_zombie.png
 tags: agile all
 ---
