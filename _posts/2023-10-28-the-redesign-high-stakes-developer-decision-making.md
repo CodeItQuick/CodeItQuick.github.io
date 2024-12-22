@@ -30,9 +30,8 @@ for the user base.
 
 The definition of redesign is going back and fixing accumulated tech debt. This is the tech debt that has built up over months,
 or years. It's not as simple as in the refactoring case, where you are doing 5-10 minutes of cleanup. Large structural changes
-that take weeks are necessary, and generally these changes have to be OK'd by the person in product. The redesign is taking
-some old code and giving it the love it needs. It could or could not involve a change in behaviour. Why should we choose 
-redesigning over the other options? 
+that take weeks are necessary, and generally these changes have to be OK'd by the person in product. It could or could not 
+involve a change in behaviour. Why should we choose redesigning over the other options? 
 
 ## Alternative: Why can't we quickly refactor it instead?
 The adage "You don't ask your manager to compile" applies here. We should write clean code on the first attempt. Before 
