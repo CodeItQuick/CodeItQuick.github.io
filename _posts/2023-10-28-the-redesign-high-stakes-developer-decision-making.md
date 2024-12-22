@@ -15,17 +15,23 @@ weapon, the code redesign.
 
 ## What are your options: Refactor, Rewrite, Redesign
 Refactoring has been around for a long time. It is the cheapest of the three alternatives. Refactoring is changing the 
-code's internals without altering its behaviour. Refactoring involves making the code better as you go. It is the boy scout 
-rule "leave it better than you found it.". The practice is best learned from Martin Fowler's Refactoring book. Looking for 
-a better way to write code has a lot of value. 
+code's internals without altering its behaviour. This article has an unusually narrow definition of refactoring. It is the
+"clean-up" work done during the course of a pull request, or adding code to the codebase. Refactoring is the extra 5-10 minutes
+taken after writing something the first time a bit messy to improve it. Refactoring involves making the code better as you go. 
+It is the boy scout rule "leave it better than you found it.". The practice is best learned from Martin Fowler's Refactoring 
+book. Looking for a better way to write code has a lot of value. 
 
-Rewriting is often pitched as the be-all solution to our currently bad software. The classic example is a new developer 
-in a new code base. He immediately declares it trash, to cast off any old developers and let him rewrite it from scratch. 
-Other times, the code base may have outlived its useful life, and it's time for a rewrite. This change is often radical, 
-and depending on the use case, can cause a lot of havoc for the user base. 
+The definition for rewriting is entirely different. A rewrite is starting a brand-new repository and putting all the old code
+into that repository. Then getting rid of the old repository. Rewriting is often pitched as the be-all solution to our 
+currently bad software. The classic example is a new developer in a new code base. He immediately declares it trash, to 
+cast off any old developers and let him rewrite it from scratch. Other times, the code base may have outlived its useful 
+life, and it's time for a rewrite. This change is often radical, and depending on the use case, can cause a lot of havoc 
+for the user base. 
 
-The redesign is taking some old code and giving it the love it needs. It could or could not involve a change in behaviour. 
-It's changing the structure of the code. Refactoring old code and improving the maintainability. Why should we choose 
+The definition of redesign is going back and fixing accumulated tech debt. This is the tech debt that has built up over months,
+or years. It's not as simple as in the refactoring case, where you are doing 5-10 minutes of cleanup. Large structural changes
+that take weeks are necessary, and generally these changes have to be OK'd by the person in product. The redesign is taking
+some old code and giving it the love it needs. It could or could not involve a change in behaviour. Why should we choose 
 redesigning over the other options? 
 
 ## Alternative: Why can't we quickly refactor it instead?
