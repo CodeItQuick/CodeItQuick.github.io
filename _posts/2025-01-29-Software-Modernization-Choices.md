@@ -18,7 +18,8 @@ tags: theory all
 **9. Cost Optimization vs. Feature Expansion**  
 **10. Legacy Compatibility vs. Modernization**  
 
-# **Summary of Groups**
+# **Summary of Groups**  
+
 | **Category** | **Approaches** |
 |-------------|--------------|
 | **Migration Strategies** | Lift and Shift, Replatform, Serverless Migration, Hybrid Cloud, Cross-Platform Migration |
