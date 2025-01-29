@@ -1,10 +1,14 @@
 ---
 layout: post
 name: Software Modernization Choices
-description: New article outline 
+description: New article outline - Modernization or other choices for a software system. 
 image: ancient_young_hip_zombie.webp
 tags: theory all
 ---
+
+# Software Overall Strategy  
+
+Modernization or other choices for a software system.  
 
 # Software Overall Trade-Offs
 **1. Speed vs. Depth of Change**  
