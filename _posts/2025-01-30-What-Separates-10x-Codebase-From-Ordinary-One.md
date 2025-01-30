@@ -8,7 +8,7 @@ tags: quality all
 
 # What Separates a 10x Codebase from an Ordinary One?
 
-1. Introduction: The Myth of the 10x Developer vs. The Reality of the 10x Codebase
+## Introduction: The Myth of the 10x Developer vs. The Reality of the 10x Codebase
 
 Attributing the speed of a developer to that developer alone is a myth. Put a very fast developer
 into a slow codebase, and he'll code quite slowly. Really the only time these two factors meet is
