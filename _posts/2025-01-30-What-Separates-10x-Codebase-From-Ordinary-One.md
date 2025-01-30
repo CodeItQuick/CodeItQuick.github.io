@@ -1,4 +1,10 @@
-
+---
+layout: post
+name: What Separates a 10x Codebase from an Ordinary One?
+description: 10x Developers are a Myth. Unlike 10x Codebases.
+image: robot_zombie_big_idea.png
+tags: quality all
+---
 
 # What Separates a 10x Codebase from an Ordinary One?
 
