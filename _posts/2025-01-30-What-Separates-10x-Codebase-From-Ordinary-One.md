@@ -28,6 +28,7 @@ to get features out. DevOps is another major factor to the speed a developer wor
 <p align="center" width="100%">
     <img src="/assets/images/prestine-technically-advanced-graveyard.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  
+
 ## Readability & Simplicity: The Foundation of a Scalable Codebase
 
 The mark of an exceptional coder is that the code is easy to understand. Often people expect the opposite. A smarter coders 
