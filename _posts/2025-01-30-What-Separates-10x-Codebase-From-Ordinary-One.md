@@ -8,6 +8,10 @@ tags: quality all
 
 # Introduction: The Myth of the 10x Developer vs. The Reality of the 10x Codebase
 
+<p align="center" width="100%">
+    <img src="/assets/images/mythic-zombie-and-graveyard.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+</p>  
+
 Attributing the speed of a developer to that developer alone is a myth. Put a very fast developer into a slow codebase, 
 and he’ll code slow. The only time these two factors meet is a fast developer in a codebase and an environment he can 
 excel in. The biggest form factor available to coders is the codebase they work in. Having a codebase that is well 
@@ -21,6 +25,9 @@ to get features out. DevOps is another major factor to the speed a developer wor
 
 # The Core Traits of a 10x Codebase
 
+<p align="center" width="100%">
+    <img src="/assets/images/prestine-technically-advanced-graveyard.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+</p>  
 ## Readability & Simplicity: The Foundation of a Scalable Codebase
 
 The mark of an exceptional coder is that the code is easy to understand. Often people expect the opposite. A smarter coders 
@@ -73,6 +80,9 @@ website is unreachable during peak times it will not sustain its user-base.
 
 # The Pitfalls of an Ordinary (or 0.1x) Codebase
 
+<p align="center" width="100%">
+    <img src="/assets/images/dystopian-graveyard-disrepair.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+</p>  
 ## The “Ship Fast, Fix Later” Mentality
 
 Quick fixes within a codebase can be some of the most guilty solutions of poor abstractions. It is faster to get the feature 
