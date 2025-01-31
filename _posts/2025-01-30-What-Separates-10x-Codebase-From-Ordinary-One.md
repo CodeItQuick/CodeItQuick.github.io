@@ -6,7 +6,7 @@ image: robot_zombie_big_idea.png
 tags: quality all
 ---
 
-# Introduction: The Myth of the 10x Developer vs. The Reality of the 10x Codebase
+# The Myth of the 10x Developer vs. The Reality of the 10x Codebase
 
 <p align="center" width="100%">
     <img src="/assets/images/mythic-zombie-and-graveyard.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
