@@ -83,6 +83,7 @@ website is unreachable during peak times it will not sustain its user-base.
 <p align="center" width="100%">
     <img src="/assets/images/dystopian-graveyard-disrepair.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  
+
 ## The “Ship Fast, Fix Later” Mentality
 
 Quick fixes within a codebase can be some of the most guilty solutions of poor abstractions. It is faster to get the feature 
