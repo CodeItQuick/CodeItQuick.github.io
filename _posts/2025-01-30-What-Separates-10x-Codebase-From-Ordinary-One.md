@@ -51,60 +51,70 @@ Battling bugs is a failure state a codebase can exist in. High defect rates resu
 produced. Large interruptions to planned work can occur due to the discovery of existing bugs. Constant firefighting within 
 a codebase can hinder or halt progress. Leaving this state is necessary for true progress within the codebase.
 
-# Developer Experience: A Codebase Engineers Love Working With
+## Developer Experience: A Codebase Engineers Love Working With
 
 Developer experience can be a tough sell to the business. New language features and framework features are often targeted 
 at developer productivity. The new features in the language itself allow for simpler expression of ideas.  Framework 
 developments can improve factors including website performance. Its a “free upgrade” given you can upgrade to the newer 
 version of the tooling.
 
-# Automation & Tooling: Reducing Manual Effort
+## Automation & Tooling: Reducing Manual Effort
 
 Developer’s control over their IDE and tools can result in huge productivity gains. Understanding refactoring shortcuts 
 speed up developers and increase maintainability. Tests ensure that the code works to the new requirements. Introducing 
 automation lowers the manual effort in maintaining the code. This general flow  speeds up the team overall.
 
-Performance & Scalability: Code That Grows With the Business
+## Performance & Scalability: Code That Grows With the Business
 
 Codebases have to be fast and scalable once sales have begun. Its important that despite the data size of the customers 
-it doesn’t affect their experience. The application is architected based on data needs.
+it doesn’t affect their experience. The application has to be scalable for large amounts data. Large customers or users 
+cannot bring the application to a halt. The codebase also has to be able to handle a given amount of traffic. If the 
+website is unreachable during peak times it will not sustain its user-base.
 
-The Pitfalls of an Ordinary (or 0.1x) Codebase
+# The Pitfalls of an Ordinary (or 0.1x) Codebase
 
-The “Ship Fast, Fix Later” Mentality
+## The “Ship Fast, Fix Later” Mentality
 
-Quick fixes within a codebase can be some of the most guilty solutions of poor abstractions. It is faster to get the 
-feature out than make the code maintainable in the process. It is possible to get the feature out, and then later clean 
-things up later.
+Quick fixes within a codebase can be some of the most guilty solutions of poor abstractions. It is faster to get the feature 
+out than make the code maintainable in the process. It is possible to get the feature out, and then later clean things 
+up later. The "duct-tape" programmer is great for prototyping new ideas. This programmer can find new markets and new 
+products. This same programmer is weak at creating codebases that are easy to maintain and grow.
 
-Over-Engineering & Unnecessary Abstractions
+## Over-Engineering & Unnecessary Abstractions
 
 A more maintainable solution will often look “over engineered”. The problem with over-engineering is in the beginning. 
 Premature optimization can run rampant. Often we don’t understand the problem enough early on. Good abstractions are 
 created by duplicate functions.
 
-Poor Documentation & Tribal Knowledge
+## Poor Documentation & Tribal Knowledge
 
 Poor documentation and tribal knowledge being necessary is a code smell. It shows the existing codebase, variable names, 
 and class names do not describe the intent. Tests can act as a double re-assurance that the original intention is correct.
 
-How to Turn an Ordinary Codebase Into a 10x Codebase
+# How to Turn an Ordinary Codebase Into a 10x Codebase
 
-Start With Small, Incremental Improvements
+## Start With Small, Incremental Improvements
 
 Refactoring as we go is a key to keeping a codebase in at least as good a state as the current developers will allow. 
-Improving the ability of the developers to produce readable, testable code.
+Improving the ability of the developers to produce readable, testable code. Improve the naming in the codebase. Create 
+proper abstractions with smaller functions. Remove any dead code. Add meaningful error messages. Improve the logging of 
+errors. These are all low hanging fruit of improving a codebase. Gradual addition of code can create these improvements.
 
-Invest in Developer Productivity
+## Invest in Developer Productivity
 
-Teach developers new ways of collaborative working. Introduce concepts such as pair programming, and ensembling. This better 
-communication is the real benefit of these changes.
+Teach developers new ways of collaborative working. Introduce concepts such as pair programming, and ensembling. This 
+better communication is the real benefit of these changes. Automate the repetitive tasks involved, especially around tasks 
+necessary to deploy. Developers must optimize their local development environment. Improve knowledge sharing and 
+documentation through pair programming, ADRS, public documentation around APIs. Reduce the amount of tribal knowledge 
+necessary to work in the codebase.
 
-Make Code Quality a Team-Wide Priority
+## Make Code Quality a Team-Wide Priority
 
 Realizing the benefit of high quality code has to be a high priority. Testing is often a focal point that allow developers 
-to rally around automation. The more automated testing the quicker the team can release.
+to rally around automation. The more automated testing the quicker the team can release. Review all code at least once. 
+Introduce collaborative ways of working such as pair programming and ensembling. Establish definitions of done and work 
+to automate the quality checks.
 
-Conclusion: The Competitive Advantage of a 10x Codebase
+## Conclusion: The Competitive Advantage of a 10x Codebase
 
 The advantage of a 10x codebase is it aides developers in creating solutions. Do not let your competitors win this battle. 
