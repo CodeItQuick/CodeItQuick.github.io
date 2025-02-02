@@ -13,7 +13,7 @@ tags: quality all
 </p>  
 
 Attributing the speed of a developer to that developer alone is a myth. Put a very fast developer into a slow codebase, 
-and he’ll code slow. The only time these two factors meet is a fast developer in a codebase and an environment he can 
+and they’ll code slow. The only time these two factors meet is a fast developer in a codebase and an environment they can 
 excel in. The biggest form factor available to coders is the codebase they work in. Having a codebase that is well 
 maintained and easy to make changes is a worthwhile pursuit. It allows for everyone working in it to work faster despite 
 their current ability level.
