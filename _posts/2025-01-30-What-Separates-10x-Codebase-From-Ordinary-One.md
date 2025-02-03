@@ -75,9 +75,8 @@ automation lowers the manual effort in maintaining the code. This general flow  
 ## Performance & Scalability: Code That Grows With the Business
 
 Codebases have to be fast and scalable once sales have begun. Its important that despite the data size of the customers 
-it doesn’t affect their experience. The application has to be scalable for large amounts data. Large customers or users 
-cannot bring the application to a halt. The codebase also has to be able to handle a given amount of traffic. If the 
-website is unreachable during peak times it will not sustain its user-base.
+it doesn’t affect their experience. Large customers or users cannot bring the application to a halt. The codebase also 
+has to be able to handle a given amount of traffic. If the website is unreachable during peak times it will not sustain its user-base.
 
 # The Pitfalls of an Ordinary (or 0.1x) Codebase
 
@@ -94,7 +93,7 @@ products. This same programmer is weak at creating codebases that are easy to ma
 
 ## Over-Engineering & Unnecessary Abstractions
 
-A more maintainable solution will often look “over engineered”. The problem with over-engineering is in the beginning. 
+A more maintainable solution will often look “over-engineered”. The problem with over-engineering is in the beginning. 
 Premature optimization can run rampant. Often we don’t understand the problem enough early on. Good abstractions are 
 created by duplicate functions.
 
@@ -110,22 +109,21 @@ and class names do not describe the intent. Tests can act as a double re-assuran
 Refactoring as we go is a key to keeping a codebase in at least as good a state as the current developers will allow. 
 Improving the ability of the developers to produce readable, testable code. Improve the naming in the codebase. Create 
 proper abstractions with smaller functions. Remove any dead code. Add meaningful error messages. Improve the logging of 
-errors. These are all low hanging fruit of improving a codebase. Gradual addition of code can create these improvements.
+errors. These are all low-hanging fruit of improving a codebase. Gradual addition of code can create these improvements.
 
 ## Invest in Developer Productivity
 
 Teach developers new ways of collaborative working. Introduce concepts such as pair programming, and ensembling. This 
-better communication is the real benefit of these changes. Automate the repetitive tasks involved, especially around tasks 
+improves communication is the real benefit of these changes. Automate the repetitive tasks involved, especially around tasks 
 necessary to deploy. Developers must optimize their local development environment. Improve knowledge sharing and 
 documentation through pair programming, ADRS, public documentation around APIs. Reduce the amount of tribal knowledge 
 necessary to work in the codebase.
 
 ## Make Code Quality a Team-Wide Priority
 
-Realizing the benefit of high quality code has to be a high priority. Testing is often a focal point that allow developers 
+Realizing the benefit of quality code has to be a high priority. Testing is often a focal point that allows developers 
 to rally around automation. The more automated testing the quicker the team can release. Review all code at least once. 
-Introduce collaborative ways of working such as pair programming and ensembling. Establish definitions of done and work 
-to automate the quality checks.
+Establish "definitions of done" and work to automate the quality checks.
 
 ## Conclusion: The Competitive Advantage of a 10x Codebase
 
