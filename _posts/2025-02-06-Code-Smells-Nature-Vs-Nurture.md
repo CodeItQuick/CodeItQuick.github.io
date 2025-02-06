@@ -13,10 +13,6 @@ god classes, and extra long methods. There is no concept of single responsibilit
 code as that code which is "obviously bad". Meaning a junior developer to senior developer will want it rewritten. How 
 does this code come into existence?
 
-# Defining "Bad Code"
-
-Overview of Nature vs Nurture Debate
-
 # The Nature Argument
 
 ## "I'm a bad developer with good habits" - Kent Beck
