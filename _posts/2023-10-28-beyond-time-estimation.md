@@ -3,6 +3,7 @@ layout: post
 name: Beyond Time Estimation
 description: A guide of real outputs from time estimation  
 image: story_splitting_zombies.png
+time: 3 minutes 37 seconds
 tags: agile all
 ---
 

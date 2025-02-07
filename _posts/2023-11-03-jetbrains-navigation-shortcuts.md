@@ -3,6 +3,7 @@ layout: post
 name: Navigation Shortcuts in your jetbrains
 description: In my blog article on JetBrains IDE shortcuts, I covered essential keyboard shortcuts designed to enhance productivity and efficiency while coding. 
 image: navigation_shortcuts_zombie.png
+time: 5 minutes 25 seconds
 tags: editor all
 ---
 

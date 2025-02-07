@@ -3,6 +3,7 @@ layout: post
 name: Poker Staking Learnings
 description: Back in college, I was a broke student who turned to poker to make money. I relate these learnings to development. 
 image: poker_zombie_graveyard.webp
+time: 4 minutes 8 seconds
 tags: theory all
 ---
 

@@ -3,6 +3,7 @@ layout: post
 name: My Journey Through TDD
 description: In the first five years of my development career, I didn't test anything. Over the next 2.5 years, I improved my testing speed and techniques, plateauing due to stagnant learning sources.
 image: zombie_journey_through_tdd.webp
+time: 2 minutes 41 seconds
 tags: theory all
 ---
 

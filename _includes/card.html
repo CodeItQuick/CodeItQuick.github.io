@@ -54,7 +54,12 @@
             </div>
             {% else %}
                 {% if include.url %}
-                <div class="w-full flex justify-end">
+                <div class="w-full flex justify-between">
+                    {% if include.time %}
+                    <div class="text-sm hidden md:block">
+                        Time: {{ include.time }}
+                    </div>
+                    {% endif %}
                     <a href="{{ include.url }}" ><button class="btn btn-primary text-neutral-content font-[body]">Read</button></a>
                 </div>
                 {% endif %}
