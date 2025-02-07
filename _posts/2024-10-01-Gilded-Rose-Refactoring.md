@@ -109,10 +109,10 @@ in behaviour from the requirements. For example, the requirement:
 Well, for generic items one of my tests shows this to be false. The following tests return a negative "finalQuality".
 
 ```
-    { itemName: 'Generic Item', itemSellIn: 0, itemQuality: -1, finalQuality: -1 }, 
-    { itemName: 'Generic Item', itemSellIn: -1, itemQuality: -1, finalQuality: -1 }, 
-    { itemName: 'Generic Item', itemSellIn: 2, itemQuality: -2, finalQuality: -2 }, 
-    { itemName: 'Generic Item', itemSellIn: -2, itemQuality: -2, finalQuality: -2 },  
+{ itemName: 'Generic Item', itemSellIn: 0, itemQuality: -1, finalQuality: -1 }, 
+{ itemName: 'Generic Item', itemSellIn: -1, itemQuality: -1, finalQuality: -1 }, 
+{ itemName: 'Generic Item', itemSellIn: 2, itemQuality: -2, finalQuality: -2 }, 
+{ itemName: 'Generic Item', itemSellIn: -2, itemQuality: -2, finalQuality: -2 },  
 ```
 
 Another example, I'm not sure its clear aged brie actually increases in quality twice as fast after the sellin date.
@@ -123,18 +123,18 @@ decrement of sellin, the quality will be 50 and hit the pass-through (thus not c
 Good luck communicating that in details in a requirement document.
 
 ```ts
-  private CalculateAgedBrie(i: number) {
-    if (this.items[i].quality >= 50) {
-      this.items[i].sellIn = this.items[i].sellIn - 1;
-      return;
-    }
-
-    this.items[i].quality = this.items[i].quality + 1
+private CalculateAgedBrie(i: number) {
+  if (this.items[i].quality >= 50) {
     this.items[i].sellIn = this.items[i].sellIn - 1;
-    if (this.items[i].sellIn < 0 && this.items[i].quality < 50) {
-      this.items[i].quality = this.items[i].quality + 1
-    }
+    return;
   }
+
+  this.items[i].quality = this.items[i].quality + 1
+  this.items[i].sellIn = this.items[i].sellIn - 1;
+  if (this.items[i].sellIn < 0 && this.items[i].quality < 50) {
+    this.items[i].quality = this.items[i].quality + 1
+  }
+}
 ```
 
 # Sulfuras is just a pass-through
