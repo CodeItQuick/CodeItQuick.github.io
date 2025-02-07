@@ -27,9 +27,7 @@
 
     {% include hero.html title=site.title description=site.description image="hero_project_graveyard.webp" %}
 
-    {% assign filtered_posts=site.projects | where_exp:"item", "item.project_type == 'mvp'" %}
-
-    {% include table.html table=filtered_posts %}
+    {% include table.html table=site.projects %}
     
   </body>
   <footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content">

@@ -3,6 +3,7 @@ name: Easy Sweet Potato Curry
 description: Make tasty potato curry, quick and healthy
 image: zombie_spicy_indian.png
 layout: recipe
+tags: delicious simple
 ---
 
 # Ingredients

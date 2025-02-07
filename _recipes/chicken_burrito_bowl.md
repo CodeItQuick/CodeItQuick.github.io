@@ -3,6 +3,7 @@ name: Chicken Burrito Bowl
 description: Make several meals at a time
 image: zombie_burrito_bowl.webp
 layout: recipe
+tags: delicious simple
 ---
 
 # Ingredients

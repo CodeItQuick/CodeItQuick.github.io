@@ -1,4 +1,3 @@
-
 <div class="card card-side bg-base-200 shadow-xl max-w-xl max-w-3xl h-52 md:h-96 mx-auto" >
     <figure class="h-52 md:h-96">
         <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover w-full h-full" />
@@ -15,56 +14,33 @@
                     {% endif %}
                 {% endfor %}
             {% endif %}
-            {% if include.progress == 'complete' %}
-                <div class="badge badge-lg leading-3 badge-primary text-neutral-content mr-2">Launched</div>
-            {% elsif include.progress == 'in-progress' %}
-                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content mr-2">Pre Launch</div>
-            {% endif %}
-            {% if include.status == 'active' %}
-                <div class="badge badge-lg leading-3 badge-primary text-neutral-content mr-2">Active</div>
-            {% elsif include.status == 'inactive' %}
-                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content mr-2">Not Active</div>
-            {% endif %}
-            {% if include.project_type == 'mvp' %}
-                <div class="badge badge-lg leading-3 badge-primary text-neutral-content">MVP</div>
-            {% elsif include.project_type == 'prototype' %}
-                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content">Prototype</div>
-            {% elsif include.project_type == 'kata' %}
-                <div class="badge badge-lg leading-3 badge-neutral text-neutral-content">Kata</div>
-            {% endif %}
         </div>
         <div class="card-actions flex w-full flex-col justify-end lg:justify-between grow">
-            {{ if include.description or include.learningone }}
             <div class="text-sm hidden md:block">
                 {{ include.description }}
-                {% if include.learningone %}
-                    <div class="font-[body]">💀{{ include.learningone }}</div>
-                    <div class="font-[body]">💀{{ include.learningtwo }}</div>
-                    <div class="font-[body]">💀{{ include.learningthree }}</div>
-                {% endif %}
             </div>
-            {% if include.external %}
-            <div class="w-full flex justify-end">
-                <a href="{{ include.external }}" target="_blank" ><button class="btn btn-primary text-neutral-content font-[body]">Link</button></a>
-            </div>
-            {% endif %}
-            {% if include.github %}
-            <div class="w-full flex justify-end">
-                <a href="{{ include.github }}" target="_blank"><button class="btn btn-primary text-neutral-content font-[body]">Github</button></a>
-            </div>
-            {% else %}
-                {% if include.url %}
+            {% if include.url %}
                 <div class="w-full flex justify-between">
-                    {% if include.time %}
                     <div class="text-sm hidden md:block">
+                    {% if include.time %}
                         Time: {{ include.time }}
-                    </div>
                     {% endif %}
-                    <a href="{{ include.url }}" ><button class="btn btn-primary text-neutral-content font-[body]">Read</button></a>
+                    </div>
+                    {% if include.github %}
+                    <a href="{{ include.github }}" >
+                        <button class="btn btn-primary text-neutral-content font-[body]">
+                                Github
+                        </button>
+                    </a>
+                    {% else %}
+                    <a href="{{ include.url }}" >
+                        <button class="btn btn-primary text-neutral-content font-[body]">
+                            Read
+                        </button>
+                    </a>
+                    {% endif %}
                 </div>
-                {% endif %}
             {% endif %}
         </div>
     </div>
 </div>
-

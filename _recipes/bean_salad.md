@@ -1,8 +1,9 @@
 ---
+layout: recipe
 name: Bean Salad
 description: Make several side salads at a time
 image: zombie_bean_salad.webp
-layout: recipe
+tags: delicious simple
 ---
 
 # Ingredients
