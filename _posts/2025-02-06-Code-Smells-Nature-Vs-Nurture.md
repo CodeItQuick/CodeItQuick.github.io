@@ -21,6 +21,10 @@ does this code come into existence?
 
 # The Nature Argument
 
+<p align="center" width="100%">
+    <img src="/assets/images/naturistic_graveyard.webp"  alt="Naturistic Zombie Graveyard" height="512" width="512" />
+</p>  
+
 ## "I'm a bad developer with good habits" - Kent Beck
 
 This quote by Beck says that coders are the cumulation of their good habits. Good developers understand bad habits, as 
@@ -45,6 +49,10 @@ question is as important as the answer.
 
 # The Nurture Argument
 
+<p align="center" width="100%">
+    <img src="/assets/images/nurture_graveyard_zombie.webp"  alt="Nurture Zombie" height="512" width="512" />
+</p>  
+
 ## Tight Deadlines and Time Pressures
 
 When software projects become large messes, blame is the first to rear its ugly head. Is the bad code the result of 
@@ -63,6 +71,10 @@ solutions like "if only we weren't remote" are not a one size fits all answer. G
 in-person teams. It can exist in diverse or not-diverse teams.
 
 # Why it matters?
+
+<p align="center" width="100%">
+    <img src="/assets/images/nature_nurture_graveyard_zombie.webp"  alt="Nature And Nurture Zombie" height="512" width="512" />
+</p>  
 
 In the past coders gave all the credit to the nurture argument. This is blame-shifting onto other people. Developers 
 need to take more ownership of their habits. Through deliberate practice we can improve our craftmanship.

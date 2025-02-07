@@ -15,6 +15,7 @@ tags: theory all
 <p align="center" width="100%">
     <img src="/assets/images/designer_zombie.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  
+
 ## Should We Redesign?
 Every developer has faced it. The decision to refactor, rewrite, or redesign. As a new programmer, should I vault into 
 the code base and change everything? As a seasoned pro, is it time to finally dive in and fix that inherited method? These 
