@@ -1,11 +1,10 @@
 ---
+layout: post
 name: Gilded Rose Refactoring Kata
 description: This refactoring kata can help you to learn about refactoring messy code.
 image: roses_battle_zombies.webp
-tags: refactoring legacy all
 time: "7:15"
-url: https://github.com/swkBerlin/kata-bootstraps
-layout: dojo
+tags: refactoring legacy all
 ---
 
 <div class="w-full text-center">

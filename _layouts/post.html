@@ -17,7 +17,13 @@
         return this.mode;
     }
 }">
-{% include header.html %}
+{% include header.html
+    tags=page.tags
+    description=page.description
+    name=page.name
+    permalink=page.url
+    image=page.image
+%}
 
 <body class="bg-neutral text-neutral-content max-w-fit md:max-w-full antialiased font-[body]"
       x-bind:data-theme="getMode()">
