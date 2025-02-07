@@ -3,7 +3,7 @@ layout: post
 name: Finally starting a learning journal
 description: In my blog article on try-catch-finally and error handling, I covered how these constructs manage exceptions in various languages like Java, C#, Python, and JavaScript. 
 image: learning_journal_zombie.png
-time: 3 minutes 13 seconds
+time: "3:13"
 tags: code all
 ---
 

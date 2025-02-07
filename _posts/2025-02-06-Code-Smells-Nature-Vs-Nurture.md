@@ -3,7 +3,7 @@ layout: post
 name: Code Smells Nature vs Nurture
 description:  What causes your worst code?
 image: spartan_zombie.webp
-time: 2 minutes 24 seconds
+time: "2:24"
 tags: quality all
 ---
 

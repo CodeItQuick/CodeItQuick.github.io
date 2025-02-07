@@ -3,7 +3,7 @@ layout: post
 name: From Chaos to Collaboration - Introducing Pair Programming
 description: Adopt pair programming to reduce development chaos  
 image: what_pairing_zombie.png
-time: 4 minutes 27 seconds
+time: "4:27"
 tags: agile all
 ---
 

@@ -3,7 +3,7 @@ layout: post
 name: The Redesign - High-Stakes Developer Decision-Making
 description: The decision to refactor, rewrite, or redesign code. 
 image: refactoring_zombie_2.png
-time: 5 minutes 2 seconds
+time: "5:02"
 tags: theory all
 ---
 
