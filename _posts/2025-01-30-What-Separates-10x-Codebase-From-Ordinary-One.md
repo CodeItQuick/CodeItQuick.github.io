@@ -6,6 +6,8 @@ image: robot_zombie_big_idea.png
 tags: quality all
 ---
 
+# What Separates a 10x Codebase from an Ordinary One? (Reading Time: 6 minutes)
+
 # The Myth of the 10x Developer vs. The Reality of the 10x Codebase
 
 <p align="center" width="100%">

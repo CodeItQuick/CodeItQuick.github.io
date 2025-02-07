@@ -6,7 +6,7 @@ image: learning_journal_zombie.png
 tags: code all
 ---
 
-# Finally starting a learning journal
+# Finally starting a learning journal (Reading Time: 3 minutes 13 seconds)
 
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
 

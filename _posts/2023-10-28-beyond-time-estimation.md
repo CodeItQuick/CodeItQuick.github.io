@@ -6,7 +6,7 @@ image: story_splitting_zombies.png
 tags: agile all
 ---
 
-# Beyond Time Estimation
+# Beyond Time Estimation (Reading Time: 3 minutes 37 seconds)
 
 ## **1. Introduction**
 Developers are rife with stories about late projects. Management’s unreasonable expectations combine with developers' 

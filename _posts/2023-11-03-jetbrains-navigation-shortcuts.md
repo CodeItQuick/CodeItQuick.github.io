@@ -6,6 +6,8 @@ image: navigation_shortcuts_zombie.png
 tags: editor all
 ---
 
+# Navigation Shortcuts in your jetbrains (Reading Time: 5 minutes 25 seconds)
+
 # Shortcutting your jetbrains (Windows only)
 
 Here's a list of several shortcuts with some explanations of why they are useful. I'll try

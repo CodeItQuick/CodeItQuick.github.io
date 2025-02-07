@@ -6,6 +6,8 @@ image: zombie_journey_through_tdd.webp
 tags: theory all
 ---
 
+# TDD Journey (Reading Time: 2 minutes 41 seconds)
+
 # Beginner Phase (0 -> 5 Years)
 
 <p align="center" width="100%">

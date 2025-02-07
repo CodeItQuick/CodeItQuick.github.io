@@ -6,6 +6,8 @@ image: poker_zombie_graveyard.webp
 tags: theory all
 ---
 
+# Poker Staking Learnings (Reading Time: 4 minutes 8 seconds)
+
 # My Poker Business (15 years ago)
 
 So back in college, I was a broke student trying to find a high paying job that didn't require many hours. In this way, poker, eventually

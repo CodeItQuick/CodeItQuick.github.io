@@ -6,7 +6,8 @@ image: refactoring_zombie_2.png
 tags: theory all
 ---
 
-# The Redesign - High-Stakes Developer Decision-Making
+# The Redesign - High-Stakes Developer Decision-Making (Reading Time: 5 minutes 2 seconds)
+
 ## Should We Redesign?
 Every developer has faced it. The decision to refactor, rewrite, or redesign. As a new programmer, should I vault into 
 the code base and change everything? As a seasoned pro, is it time to finally dive in and fix that inherited method? These 

@@ -5,7 +5,9 @@ description: Adopt pair programming to reduce development chaos
 image: what_pairing_zombie.png
 tags: agile all
 ---
-# From Chaos to Collaboration - Introducing Pair Programming
+
+# From Chaos to Collaboration - Introducing Pair Programming (Reading Time: 4 minutes 27 seconds)
+
 <p align="center" width="100%">
     <img src="/assets/images/zombie_shoulder_surfing.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  

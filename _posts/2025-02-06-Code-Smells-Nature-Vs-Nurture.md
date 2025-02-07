@@ -6,6 +6,8 @@ image: spartan_zombie.webp
 tags: quality all
 ---
 
+# Code Smells Nature vs Nurture (Reading Time: 2 minutes 24 seconds)
+
 # Introduction
 
 Bad code is that codebase that keeps you up at night. As in you get support calls to fix the code. Bad code is full of 
@@ -18,7 +20,7 @@ does this code come into existence?
 ## "I'm a bad developer with good habits" - Kent Beck
 
 This quote by Beck says that coders are the cumulation of their good habits. Good developers understand bad habits, as 
-well as good habits. Bad habits include failing frequent compiling, testing, or linting.
+well as good habits. Bad habits include failing to frequently compile, test, or lint.
 
 Good habits are the positive aspects of these three activities. Making use of the full power of the editor. Creating 
 descriptive yet concise names within the code, and reducing duplication.
