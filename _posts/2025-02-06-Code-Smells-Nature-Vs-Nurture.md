@@ -7,7 +7,8 @@ time: 2 minutes 24 seconds
 tags: quality all
 ---
 
-# Code Smells Nature vs Nurture (Reading Time: 2 minutes 24 seconds)
+# Code Smells Nature vs Nurture 
+<h6>(Reading Time: 2 minutes 24 seconds)</h6>
 
 # Introduction
 

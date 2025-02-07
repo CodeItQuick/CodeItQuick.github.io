@@ -7,7 +7,8 @@ time: 5 minutes 25 seconds
 tags: editor all
 ---
 
-# Navigation Shortcuts in your jetbrains (Reading Time: 5 minutes 25 seconds)
+# Navigation Shortcuts in your jetbrains 
+<h6>(Reading Time: 5 minutes 25 seconds)</h6>
 
 # Shortcutting your jetbrains (Windows only)
 

@@ -7,7 +7,8 @@ time: 3 minutes 37 seconds
 tags: agile all
 ---
 
-# Beyond Time Estimation (Reading Time: 3 minutes 37 seconds)
+# Beyond Time Estimation 
+<h6>(Reading Time: 3 minutes 37 seconds)</h6>
 
 ## **1. Introduction**
 Developers are rife with stories about late projects. Management’s unreasonable expectations combine with developers' 

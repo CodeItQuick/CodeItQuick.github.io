@@ -7,13 +7,15 @@ time: 2 minutes 41 seconds
 tags: theory all
 ---
 
-# TDD Journey (Reading Time: 2 minutes 41 seconds)
-
-# Beginner Phase (0 -> 5 Years)
+# TDD Journey 
+<h6>(Reading Time: 2 minutes 41 seconds)</h6>
 
 <p align="center" width="100%">
     <img src="/assets/images/zombie_beginner.png"  alt="Beginner Zombie First Form" height="512" width="512" />
 </p>  
+
+# Beginner Phase (0 -> 5 Years)
+
 
 For the first 5 years of my development career I didn't test anything. Then one day I went to a local devs Meetup, and met JB Rainserberger 
 (a well-known author in agile coaching, unit testing and in the ways of TDD). He presented a lot of ideas that very much challenged my ways of

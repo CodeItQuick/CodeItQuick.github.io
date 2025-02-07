@@ -7,9 +7,8 @@ time: 4 minutes 8 seconds
 tags: theory all
 ---
 
-# Poker Staking Learnings (Reading Time: 4 minutes 8 seconds)
-
-# My Poker Business (15 years ago)
+# Poker Staking Learnings 
+<h6>(Reading Time: 4 minutes 8 seconds)</h6>
 
 So back in college, I was a broke student trying to find a high paying job that didn't require many hours. In this way, poker, eventually
 with a ton of work, made sense for this. I start with a $50 bankroll (you can think of this as cash on hand in a balance sheet), and built it to $3000.

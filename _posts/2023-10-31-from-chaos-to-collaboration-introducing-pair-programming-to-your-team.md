@@ -7,8 +7,8 @@ time: 4 minutes 27 seconds
 tags: agile all
 ---
 
-# From Chaos to Collaboration - Introducing Pair Programming (Reading Time: 4 minutes 27 seconds)
-
+# From Chaos to Collaboration - Introducing Pair Programming 
+<h6>(Reading Time: 4 minutes 27 seconds)</h6>
 <p align="center" width="100%">
     <img src="/assets/images/zombie_shoulder_surfing.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  

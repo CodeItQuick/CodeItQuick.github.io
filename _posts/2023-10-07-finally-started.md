@@ -7,7 +7,8 @@ time: 3 minutes 13 seconds
 tags: code all
 ---
 
-# Finally starting a learning journal (Reading Time: 3 minutes 13 seconds)
+# Finally starting a learning journal 
+<h6>(Reading Time: 3 minutes 13 seconds)</h6>
 
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
 
