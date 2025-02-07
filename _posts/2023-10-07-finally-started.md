@@ -7,8 +7,10 @@ time: "3:13"
 tags: code all
 ---
 
-# Finally starting a learning journal 
-<h6>(Reading Time: 3 minutes 13 seconds)</h6>
+<div class="w-full text-center">
+    <h1>Finally starting a learning journal</h1>
+    <h6>(Reading Time: 3 minutes 13 seconds)</h6>
+</div>
 
 I started with a code snippet trying to implement finally using some fetching logic on a react project.
 

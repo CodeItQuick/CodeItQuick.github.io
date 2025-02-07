@@ -7,8 +7,10 @@ time: "6:00"
 tags: quality all
 ---
 
-# What Separates a 10x Codebase from an Ordinary One? 
-<h6>(Reading Time: 6 minutes)</h6>
+<div class="w-full text-center">
+    <h1>What Separates a 10x Codebase from an Ordinary One?  </h1>
+    <h6>(Reading Time: 6 minutes)</h6>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/mythic-zombie-and-graveyard.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />

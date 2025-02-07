@@ -7,8 +7,10 @@ time: "3:37"
 tags: agile all
 ---
 
-# Beyond Time Estimation 
-<h6>(Reading Time: 3 minutes 37 seconds)</h6>
+<div class="w-full text-center">
+    <h1>Beyond Time Estimation</h1>
+    <h6>(Reading Time: 3 minutes 37 seconds)</h6>
+</div>
 
 ## **1. Introduction**
 Developers are rife with stories about late projects. Management’s unreasonable expectations combine with developers' 

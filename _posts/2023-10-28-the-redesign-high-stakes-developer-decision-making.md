@@ -7,8 +7,10 @@ time: "5:02"
 tags: theory all
 ---
 
-# The Redesign - High-Stakes Developer Decision-Making 
-<h6>(Reading Time: 5 minutes 2 seconds)</h6>
+<div class="w-full text-center">
+    <h1>The Redesign - High-Stakes Developer Decision-Making </h1>
+    <h6>(Reading Time: 5 minutes 2 seconds)</h6>
+</div>
 
 ## Should We Redesign?
 Every developer has faced it. The decision to refactor, rewrite, or redesign. As a new programmer, should I vault into 
