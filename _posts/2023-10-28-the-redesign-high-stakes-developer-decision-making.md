@@ -12,6 +12,9 @@ tags: theory all
     <h6>(Reading Time: 5 minutes 2 seconds)</h6>
 </div>
 
+<p align="center" width="100%">
+    <img src="/assets/images/designer_zombie.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+</p>  
 ## Should We Redesign?
 Every developer has faced it. The decision to refactor, rewrite, or redesign. As a new programmer, should I vault into 
 the code base and change everything? As a seasoned pro, is it time to finally dive in and fix that inherited method? These 
@@ -39,6 +42,11 @@ that take weeks are necessary, and generally these changes have to be OK'd by th
 involve a change in behaviour. Why should we choose redesigning over the other options? 
 
 ## Alternative: Why can't we quickly refactor it instead?
+
+<p align="center" width="100%">
+    <img src="/assets/images/touchup_zombie.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+</p>  
+
 The adage "You don't ask your manager to compile" applies here. We should write clean code on the first attempt. Before 
 submitting the pull request, I make sure everything looks correct. This includes rewriting or redrafting sections. Making 
 sure my abstractions are good and all the logic works. I include a comprehensive suite of tests so that I can make changes 
@@ -78,6 +86,11 @@ understand the codebase's warts? How can he do more than move food around the pl
 that the new design is better by giving clear reasons why.
 
 ## Selling it to the business
+
+<p align="center" width="100%">
+    <img src="/assets/images/beauty_building_zombie.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+</p>  
+
 Business needs should flow from the reasons for the redesign. We will now be able to push more features. Developers can 
 add more functionality faster. The company can provide better support to our customers. The websites features will finally
 all work. These are valid sales pitches for the new redesign.
