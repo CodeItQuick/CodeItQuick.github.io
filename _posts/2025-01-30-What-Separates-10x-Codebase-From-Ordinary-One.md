@@ -24,10 +24,12 @@ their current ability level.
 
 What kind of elements in a codebase cause a developer to slow down? If I have to edit behaviour in four places before it 
 is “live” to the customer is one obvious case. The inverse of this is also true. Clumsy abstractions make it difficult 
-to get features out. DevOps is another major factor to the speed a developer works in. So what defines a codebase to be 
+to get features out. Continuous Delivery is another major factor to the speed a developer works in. So what defines a codebase to be 
 10x versus 0.1x besides the nebulous and controversial “clean code”.
 
-# The Core Traits of a 10x Codebase
+<div class="w-full text-center">
+    <h1>The Core Traits of a 10x Codebase</h1>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/prestine-technically-advanced-graveyard.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
@@ -82,7 +84,9 @@ Codebases have to be fast and scalable once sales have begun. Its important that
 it doesn’t affect their experience. Large customers or users cannot bring the application to a halt. The codebase also 
 has to be able to handle a given amount of traffic. If the website is unreachable during peak times it will not sustain its user-base.
 
-# The Pitfalls of an Ordinary (or 0.1x) Codebase
+<div class="w-full text-center">
+    <h1>The Pitfalls of an Ordinary (or 0.1x) Codebase</h1>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/dystopian-graveyard-disrepair.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
