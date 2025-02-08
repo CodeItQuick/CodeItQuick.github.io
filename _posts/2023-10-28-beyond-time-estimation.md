@@ -17,7 +17,10 @@ Developers are rife with stories about late projects. Management’s unreasonabl
 struggles to code vague requirements. Despite these challenges, there are tangible benefits. The primary question is, what
 are we getting out of time estimation in development?
 
-## **2. Time Estimation On Hard Mode**
+<div class="w-full text-center">
+    <h1>2. Time Estimation On Hard Mode</h1>
+</div>
+
 <p align="center" width="100%">
     <img src="/assets/images/zombie_chasm_estimation.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  
@@ -32,7 +35,10 @@ The goal of estimating is to better manage expectations. Software developers mus
 development. Still, there is major difficulty in time estimation for developers. Missed hard deadlines can cause distance
 between business and development. What are some ways we can remove this difficulty, beyond "being a better developer"?
 
-## **3. Problems With Task Estimation**
+<div class="w-full text-center">
+    <h1>3. Problems With Task Estimation</h1>
+</div>
+
 <p align="center" width="100%">
     <img src="/assets/images/zombie_engineer_solving_complex.webp"  alt="Zombie Engineer Solving Problem" height="512" width="512" />  
 </p>
@@ -63,7 +69,10 @@ Collaborating with others is a time sync. The more collaboration required, the m
 External parties introduce even more difficulty in collaboration. External customer meetings are necessary throughout 
 the project. It's common for projects to need high coordination. There is no replacement for good working relationships.  
 
-## **4. Benefits of Task Estimation**
+<div class="w-full text-center">
+    <h1>4. Benefits of Task Estimation</h1>
+</div>
+
 <p align="center" width="100%">
     <img src="/assets/images/zombie_gold_riches.webp"  alt="Zombie Gold Riches" height="512" width="512" />
 </p>
@@ -83,7 +92,10 @@ ticket, so we don't end up in the trap of ever-expanding scope creep? I've been 
 the backlog. It turned out to be a change needed in multiple codebases. I've seen overruns in general features countless 
 times as well. The cause is not believing the engineers' honest estimates.
 
-## **5. Conclusion**
+<div class="w-full text-center">
+    <h1>5. Conclusion</h1>
+</div>
+
 <p align="center" width="100%">
     <img src="/assets/images/zombies_lasting_friendship.webp"  alt="Zombie Lasting Friendship" height="512" width="512" />
 </p>

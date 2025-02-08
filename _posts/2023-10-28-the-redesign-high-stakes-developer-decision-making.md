@@ -42,7 +42,9 @@ or years. It's not as simple as in the refactoring case, where you are doing 5-1
 that take weeks are necessary, and generally these changes have to be OK'd by the person in product. It could or could not 
 involve a change in behaviour. Why should we choose redesigning over the other options? 
 
-## Alternative: Why can't we quickly refactor it instead?
+<div class="w-full text-center">
+    <h1>Alternative: Why can't we quickly refactor it instead?</h1>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/touchup_zombie.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
@@ -86,7 +88,9 @@ Improving the testing suite makes refactoring easier. The developer should go th
 understand the codebase's warts? How can he do more than move food around the plate? He has to convince other developers 
 that the new design is better by giving clear reasons why.
 
-## Selling it to the business
+<div class="w-full text-center">
+    <h1>Selling it to the business</h1>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/beauty_building_zombie.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />

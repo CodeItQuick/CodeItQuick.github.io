@@ -28,7 +28,10 @@ relationships are born. Communication between developers becomes easy. The team 
 throughout the process. By the time the team performs the final check, they find only a few cursory issues. This environment 
 is ideal for opening up new ways of working, and is the place we all want to work in.
 
-## How Pair Programming Works
+<div class="w-full text-center">
+    <h1>How Pair Programming Works</h1>
+</div>
+
 <p align="center" width="100%">
     <img src="/assets/images/engineer_zombie.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  
@@ -61,7 +64,10 @@ about the general direction of the code. Give proper code directions as the navi
 direction to the most specific possible. For example, very abstract directions are “open a pull request.”. Very specific 
 directions would be “Type the following: git commit -m ‘first commit’”. Try to avoid "type this" directions if possible.
 
-## Stories of Big Wins
+<div class="w-full text-center">
+    <h1>Stories of Big Wins</h1>
+</div>
+
 <p align="center" width="100%">
     <img src="/assets/images/reflection_zombie.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  

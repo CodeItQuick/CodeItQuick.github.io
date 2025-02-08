@@ -19,7 +19,9 @@ god classes, and extra long methods. There is no concept of single responsibilit
 code as that code which is "obviously bad". Meaning a junior developer to senior developer will want it rewritten. How 
 does this code come into existence?
 
-# The Nature Argument
+<div class="w-full text-center">
+    <h1>The Nature Argument</h1>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/naturistic_graveyard.webp"  alt="Naturistic Zombie Graveyard" height="512" width="512" />
@@ -33,7 +35,9 @@ well as good habits. Bad habits include failing to frequently compile, test, or 
 Good habits are the positive aspects of these three activities. Making use of the full power of the editor. Creating 
 descriptive yet concise names within the code, and reducing duplication.
 
-## Poor Early Architecture Choices, Over-engineering, Improper Optimization
+<div class="w-full text-center">
+    <h1>Poor Early Architecture Choices, Over-engineering, Improper Optimization</h1>
+</div>
 
 <p class="flex flex-col items-center">
     <img src="https://imgs.xkcd.com/comics/the_general_problem.png"  alt="The General Problem" height="512" width="512" />
@@ -52,7 +56,9 @@ understanding takes years to form. Developers must have both the breadth and dep
 discovery and analysis of the problem. Understanding the correct question to ask the user is important. The right 
 question is as important as the answer.
 
-# The Nurture Argument
+<div class="w-full text-center">
+    <h1>The Nurture Argument</h1>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/nurture_graveyard_zombie.webp"  alt="Nurture Zombie" height="512" width="512" />
@@ -75,7 +81,9 @@ requires continual collaboration. Some of the solutions are frequent meetings, S
 solutions like "if only we weren't remote" are not a one size fits all answer. Good communication can exist in remote or 
 in-person teams. It can exist in diverse or not-diverse teams.
 
-# Why it matters?
+<div class="w-full text-center">
+    <h1>Why it matters?</h1>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/nature_nurture_graveyard_zombie.webp"  alt="Nature And Nurture Zombie" height="512" width="512" />
