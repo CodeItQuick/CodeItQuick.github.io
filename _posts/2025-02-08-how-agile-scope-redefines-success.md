@@ -23,11 +23,13 @@ One of the keys is build out the behaviour, not the functionality. The business 
 behaviour.
 
 The original idea of the project management triangle is quality is a product of time, money, and scope. Agile challenges 
-the definition of scope. Scope isn't defined once at the start of the one year project. Instead its an iterative process 
+the definition of scope. Scope isn't defined once at the start of the one-year project. Instead it's an iterative process 
 over the entirety of the project. There is a popular adage in software development. We started off thinking we needed a 
 bridge, but instead built a ferry.
 
-## Understanding the Agile MVP
+<div class="w-full text-center">
+    <h1>Understanding the Agile MVP</h1>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/designer_zombies_many.webp"  alt="Many Designer Zombie" height="512" width="512" />
@@ -57,7 +59,9 @@ is any unforeseen circumstances are not  budgeted. Adjustments to the design bas
 not possible. A bridge has a stagnant customer need, provide passage over some impediment (eg: water). Society has built 
 bridges for hundreds of years. There are not a lot of innovations in the discovery of building a bridge.
 
-## Strategies for Agile Scope Management
+<div class="w-full text-center">
+    <h1>Strategies for Agile Scope Management</h1>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/designer_zombies_many_2.webp"  alt="Many Designer Zombie 2" height="512" width="512" />
