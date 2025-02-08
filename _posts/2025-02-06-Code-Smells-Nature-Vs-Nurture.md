@@ -35,6 +35,11 @@ descriptive yet concise names within the code, and reducing duplication.
 
 ## Poor Early Architecture Choices, Over-engineering, Improper Optimization
 
+<p class="flex flex-col items-center">
+    <img src="https://imgs.xkcd.com/comics/the_general_problem.png"  alt="The General Problem" height="512" width="512" />
+    <a class="w-[512px] flex justify-start" href="https://www.xkcd.com/974/">XKCD - 974</a>
+</p>  
+
 Avoiding the "we need this later" syndrome is easier said than done. The pass the salt XKCD comic immediately comes to 
 mind. Pass the salt, and do not generalize until it becomes  obvious. The same is true about architectural decisions. 
 Reach for the smallest architecture that still solves the problem. Avoid the bloated solution, and seek the "KISS" 
