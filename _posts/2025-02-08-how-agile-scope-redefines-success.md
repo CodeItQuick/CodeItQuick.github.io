@@ -70,7 +70,7 @@ bridges for hundreds of years. There are not a lot of innovations in the discove
 Agile scope management requires clear, actionable goals within each sprint. Create stories that fit roughly within 1-2 
 sprints, and then set out to achieve them. Avoid making these stories either too large or too small. Granular stories 
 can result in micromanagement and over-fitting solutions to problems. Large stories do not provide enough insight into 
-the day to day operations. Regular demos of new feature developments provide valuable feedback to developers. Inject as 
+the day-to-day operations. Regular demos of new feature developments provide valuable feedback to developers. Inject as 
 many feedback mechanisms as possible the development of features. Define sprint objectives, break down user stories, and 
 hold sprint planning sessions.
 
