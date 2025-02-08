@@ -8,7 +8,7 @@ tags: quality all
 ---
 
 <div class="w-full text-center">
-    <h1>What Separates a 10x Codebase from an Ordinary One?  </h1>
+    <h1>What Separates a 10x Codebase from an Ordinary One?</h1>
     <h6>(Reading Time: 6 minutes)</h6>
 </div>
 

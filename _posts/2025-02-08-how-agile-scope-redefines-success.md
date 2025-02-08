@@ -7,7 +7,10 @@ time: "2m:41s"
 tags: quality all
 ---
 
-# How Agile Scope Redefines Success
+<div class="w-full text-center">
+    <h1>How Agile Scope Redefines Success</h1>
+    <h6>(Reading Time: 2 minutes 41 seconds)</h6>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/designer_zombie_2.webp"  alt="Designer Zombie 2" height="512" width="512" />
