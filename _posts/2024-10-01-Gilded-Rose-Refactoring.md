@@ -3,7 +3,7 @@ layout: post
 name: Gilded Rose Refactoring Kata
 description: This refactoring kata can help you to learn about refactoring messy code.
 image: roses_battle_zombies.webp
-time: "7:15"
+time: "7m:15s"
 tags: refactoring legacy all
 ---
 

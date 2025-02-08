@@ -3,7 +3,7 @@ layout: post
 name: Beyond Time Estimation
 description: A guide of real outputs from time estimation  
 image: story_splitting_zombies.png
-time: "3:37"
+time: "3m:37s"
 tags: agile all
 ---
 
