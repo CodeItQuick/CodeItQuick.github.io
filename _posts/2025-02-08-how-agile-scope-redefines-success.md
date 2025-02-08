@@ -9,6 +9,10 @@ tags: quality all
 
 # How Agile Scope Redefines Success
 
+<p align="center" width="100%">
+    <img src="/assets/images/designer_zombie_2.webp"  alt="Designer Zombie 2" height="512" width="512" />
+</p>  
+
 ## Introduction
 
 Developers understand in theory what a minimum viable product (MVP) is. Do they understand what that means in practice? 
@@ -21,6 +25,10 @@ over the entirety of the project. There is a popular adage in software developme
 bridge, but instead built a ferry.
 
 ## Understanding the Agile MVP
+
+<p align="center" width="100%">
+    <img src="/assets/images/designer_zombies_many.webp"  alt="Many Designer Zombie" height="512" width="512" />
+</p>  
 
 The minimum viable product definition used in this article is the following.  The smallest behaviour necessary to solve 
 the defined customer need. This definition throws out a few common pitfalls.
@@ -47,6 +55,10 @@ not possible. A bridge has a stagnant customer need, provide passage over some i
 bridges for hundreds of years. There are not a lot of innovations in the discovery of building a bridge.
 
 ## Strategies for Agile Scope Management
+
+<p align="center" width="100%">
+    <img src="/assets/images/designer_zombies_many_2.webp"  alt="Many Designer Zombie 2" height="512" width="512" />
+</p>  
 
 Agile scope management requires clear, actionable goals within each sprint. Create stories that fit roughly within 1-2 
 sprints, and then set out to achieve them. Avoid making these stories either too large or too small. Granular stories 
