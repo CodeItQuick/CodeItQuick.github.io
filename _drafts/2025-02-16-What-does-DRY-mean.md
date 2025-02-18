@@ -3,8 +3,11 @@ The Correct Application of DRY in Code
 # What does DRY mean?
 
 DRY stands for Don't Repeat Yourself. It means reducing complexity of code by eliminating duplication. 
-The purest form of code smells is duplication. The natural process of abstraction is to first write the code in triplicate. 
-Then find and make the duplication obvious. Finally, remove the duplication.
+The purest form of code smells is duplication. Removing this duplication allows for fewer lines of code. In the mindset that
+code is a liability, fewer lines of code is lower liability. It is easier to maintain. 
+
+The natural process of abstraction is to first write the code in triplicate. Then find and make the duplication obvious. 
+Finally, remove the duplication.
 
 # When to apply DRY
 
