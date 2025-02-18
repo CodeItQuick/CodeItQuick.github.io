@@ -80,6 +80,16 @@ describe('Roman Numerals', ({input, result}) => {
     // Assert
     expect(answer).toBe('II')
   })
+  it('should return III when given 3', () => {
+    // Arrange
+    const romanNumerals = new RomanNumerals()
+ 
+    // Act
+    const answer = romanNumerals.convert(3)
+ 
+    // Assert
+    expect(answer).toBe('III')
+  })
 })
 ```
 
