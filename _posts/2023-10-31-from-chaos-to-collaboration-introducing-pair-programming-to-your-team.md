@@ -74,7 +74,7 @@ directions would be “Type the following: git commit -m ‘first commit’”. 
 
 When starting at my current organization, developers worked in silos. The first two weeks we attempted to work in ensemble 
 programming. Ten developers all contributing to the code base at a single time. This attempt crashed and burned for a variety 
-of reasons. Afterwards, we set an ensemble meeting once every week. Developers got together and worked on a section of the 
+of reasons. Afterward, we set an ensemble meeting once every week. Developers got together and worked on a section of the 
 code. This latter solution was a huge success in beginning to build team unity.
 
 After the abject failure of ensemble programming. We hired a couple of developers and began pair programming. The pairing 
