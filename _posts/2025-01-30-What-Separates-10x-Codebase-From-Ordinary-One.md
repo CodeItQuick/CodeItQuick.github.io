@@ -3,7 +3,7 @@ layout: post
 name: What Separates a 10x Codebase from an Ordinary One?
 description: 10x Developers are a Myth. Unlike 10x Codebases.
 image: robot_zombie_big_idea.png
-time: "6m:00s"
+time: "3m:09s"
 tags: quality all
 ---
 
@@ -65,25 +65,6 @@ Battling bugs is a failure state a codebase can exist in. High defect rates resu
 produced. Large interruptions to planned work can occur due to the discovery of existing bugs. Constant firefighting within 
 a codebase can hinder or halt progress. Leaving this state is necessary for true progress within the codebase.
 
-## Developer Experience: A Codebase Engineers Love Working With
-
-Developer experience can be a tough sell to the business. New language features and framework features are often targeted 
-at developer productivity. The new features in the language itself allow for simpler expression of ideas.  Framework 
-developments can improve factors including website performance. Its a “free upgrade” given you can upgrade to the newer 
-version of the tooling.
-
-## Automation & Tooling: Reducing Manual Effort
-
-Developer’s control over their IDE and tools can result in huge productivity gains. Understanding refactoring shortcuts 
-speed up developers and increase maintainability. Tests ensure that the code works to the new requirements. Introducing 
-automation lowers the manual effort in maintaining the code. This general flow  speeds up the team overall.
-
-## Performance & Scalability: Code That Grows With the Business
-
-Codebases have to be fast and scalable once sales have begun. Its important that despite the data size of the customers 
-it doesn’t affect their experience. Large customers or users cannot bring the application to a halt. The codebase also 
-has to be able to handle a given amount of traffic. If the website is unreachable during peak times it will not sustain its user-base.
-
 <div class="w-full text-center">
     <h1>The Pitfalls of an Ordinary (or 0.1x) Codebase</h1>
 </div>
@@ -109,29 +90,6 @@ created by duplicate functions.
 
 Poor documentation and tribal knowledge being necessary is a code smell. It shows the existing codebase, variable names, 
 and class names do not describe the intent. Tests can act as a double re-assurance that the original intention is correct.
-
-# How to Turn an Ordinary Codebase Into a 10x Codebase
-
-## Start With Small, Incremental Improvements
-
-Refactoring as we go is a key to keeping a codebase in at least as good a state as the current developers will allow. 
-Improving the ability of the developers to produce readable, testable code. Improve the naming in the codebase. Create 
-proper abstractions with smaller functions. Remove any dead code. Add meaningful error messages. Improve the logging of 
-errors. These are all low-hanging fruit of improving a codebase. Gradual addition of code can create these improvements.
-
-## Invest in Developer Productivity
-
-Teach developers new ways of collaborative working. Introduce concepts such as pair programming, and ensembling. This 
-improves communication is the real benefit of these changes. Automate the repetitive tasks involved, especially around tasks 
-necessary to deploy. Developers must optimize their local development environment. Improve knowledge sharing and 
-documentation through pair programming, ADRS, public documentation around APIs. Reduce the amount of tribal knowledge 
-necessary to work in the codebase.
-
-## Make Code Quality a Team-Wide Priority
-
-Realizing the benefit of quality code has to be a high priority. Testing is often a focal point that allows developers 
-to rally around automation. The more automated testing the quicker the team can release. Review all code at least once. 
-Establish "definitions of done" and work to automate the quality checks.
 
 ## Conclusion: The Competitive Advantage of a 10x Codebase
 
