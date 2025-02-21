@@ -1,6 +1,6 @@
-The Correct Application of DRY in Code
+# The Correct Application of DRY in Code
 
-# What does DRY mean?
+## What does DRY mean?
 
 DRY stands for Don't Repeat Yourself. It means reducing complexity of code by eliminating duplication. 
 The purest form of code smells is duplication. Removing this duplication allows for fewer lines of code. In the mindset that
@@ -9,9 +9,9 @@ code is a liability, fewer lines of code is lower liability. It is easier to mai
 The natural process of abstraction is to first write the code in triplicate. Then find and make the duplication obvious. 
 Finally, remove the duplication.
 
-# When to apply DRY
+## When to apply DRY
 
-## In Production Code: Across logic within a function
+### In Production Code: Across logic within a function
 The Roman Numerals gives a good example of removing duplication. The following code shows obvious duplication with each if statement:
 
 ```ts
@@ -53,7 +53,7 @@ triplicate the duplication. Then we remove the duplication. The refactored code 
         })
 ```
 
-## In Test Code: Parametrize Tests Where Possible
+### In Test Code: Parametrize Tests Where Possible
 
 Theories are an excellent way to make tests more maintainable. They allow for obvious duplication of tests, easy understanding,
 and fewer lines written (which is more maintainable).
