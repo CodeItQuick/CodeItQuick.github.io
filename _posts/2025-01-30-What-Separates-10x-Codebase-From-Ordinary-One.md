@@ -67,7 +67,7 @@ enough traffic.
     <a class="w-[512px] flex justify-start" href="https://xkcd.com/1012/">XKCD - 1012</a>
 </p>  
 
-## Wrong Superhero - The villain is the hero
+## Wrong Superhero - The Villain is The Hero
 
 The problem with the hero-complex in code is often the villain is the hero. In codebases, the developer who best knows 
 how to fix a bug is the same person that created it. Just like in the etomologist fighting the ant instead of the entomologist. 
