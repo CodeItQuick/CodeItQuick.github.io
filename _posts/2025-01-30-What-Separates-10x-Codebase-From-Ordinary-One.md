@@ -59,25 +59,25 @@ that works 85% of the time. The reality is even a 15% “not working” is a sig
 enough traffic.
 
 <div class="w-full text-center">
-    <h1>The Pitfalls of an Ordinary (or 0.1x) Codebase</h1>
+    <h1>The 10x Developer: The Hero You Don't Want</h1>
 </div>
 
-<p align="center" width="100%">
-    <img src="/assets/images/dystopian-graveyard-disrepair.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+<p class="flex flex-col items-center">
+    <img src="https://imgs.xkcd.com/comics/wrong_superhero.png"  alt="Wrong Superhero" height="512" width="512" />
+    <a class="w-[512px] flex justify-start" href="https://xkcd.com/1012/">XKCD - 1012</a>
 </p>  
 
-## The “Ship Fast, Fix Later” Mentality
+## Wrong Superhero - The villain is the hero
 
-Quick fixes within a codebase can be some of the most guilty solutions of poor abstractions. It is faster to get the feature 
-out than make the code maintainable in the process. It is possible to get the feature out, and then later clean things 
-up later. The "duct-tape" programmer is great for prototyping new ideas. This programmer can find new markets and new 
-products. This same programmer is weak at creating codebases that are easy to maintain and grow.
+The problem with the hero-complex in code is often the villain is the hero. In codebases, the developer who best knows 
+how to fix a bug is the same person that created it. Just like in the etomologist fighting the ant instead of the entomologist. 
+What you wanted was an all-knowing developer that can ship anything. What you got was a developer that creates his own bugs 
+and fixes them.
 
-## Over-Engineering & Unnecessary Abstractions
-
-A more maintainable solution will often look “over-engineered”. The problem with over-engineering is in the beginning. 
-Premature optimization can run rampant. Often we don’t understand the problem enough early on. Good abstractions are 
-created by duplicate functions.
+I don't deny there are orders of magnitude more effective developers than others. They create bigger and better projects 
+in shorter periods of time. They generate the "shareholder value" our company needs. However, this type of developer exists 
+a lot less in the wild than we realize. Developers should focus on the code, and making it better. This is better than 
+comparing their relative skill-set to other, more skilled developers.
 
 ## Conclusion: The Competitive Advantage of a 10x Codebase
 
