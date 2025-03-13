@@ -3,13 +3,13 @@ layout: post
 name: What Separates a 10x Codebase from an Ordinary One?
 description: 10x Developers are a Myth. Unlike 10x Codebases.
 image: robot_zombie_big_idea.png
-time: "2m:12s"
+time: "2m:18s"
 tags: quality all
 ---
 
 <div class="w-full text-center">
     <h1>What Separates a 10x Codebase from an Ordinary One?</h1>
-    <h6>(Reading Time: 2 minutes 12 seconds)</h6>
+    <h6>(Reading Time: 2 minutes 18 seconds)</h6>
 </div>
 
 <p align="center" width="100%">
