@@ -3,13 +3,13 @@ layout: post
 name: What Separates a 10x Codebase from an Ordinary One?
 description: 10x Developers are a Myth. Unlike 10x Codebases.
 image: robot_zombie_big_idea.png
-time: "3m:09s"
+time: "2m:12s"
 tags: quality all
 ---
 
 <div class="w-full text-center">
     <h1>What Separates a 10x Codebase from an Ordinary One?</h1>
-    <h6>(Reading Time: 3 minutes 6 seconds)</h6>
+    <h6>(Reading Time: 2 minutes 12 seconds)</h6>
 </div>
 
 <p align="center" width="100%">
@@ -53,17 +53,10 @@ Maintainable code is easy to debug and find errors. Proper error handling involv
 Structured logging and monitoring allows for regular tracking of errors within production. Unit and integration tests to 
 catch error edge cases before reaching production. Acceptance tests ensure the code is workable before every release.
 
-Maintainable code requires modularity and a separation of concerns. Loose coupling between concerns within these modules, 
-and high cohesion within the classes. Predictable and consistent design patterns enable easier extension of the functionality.
-
 What does developing faster actually look like? Code that can change when presented with a new idea is the mark of a very 
 good codebase. These codebases enable  consistent and dependable addition of features. It’s not enough to push a new feature 
 that works 85% of the time. The reality is even a 15% “not working” is a significant bug to the end user, especially given 
 enough traffic.
-
-Battling bugs is a failure state a codebase can exist in. High defect rates result in necessary rework on each feature 
-produced. Large interruptions to planned work can occur due to the discovery of existing bugs. Constant firefighting within 
-a codebase can hinder or halt progress. Leaving this state is necessary for true progress within the codebase.
 
 <div class="w-full text-center">
     <h1>The Pitfalls of an Ordinary (or 0.1x) Codebase</h1>
@@ -85,11 +78,6 @@ products. This same programmer is weak at creating codebases that are easy to ma
 A more maintainable solution will often look “over-engineered”. The problem with over-engineering is in the beginning. 
 Premature optimization can run rampant. Often we don’t understand the problem enough early on. Good abstractions are 
 created by duplicate functions.
-
-## Poor Documentation & Tribal Knowledge
-
-Poor documentation and tribal knowledge being necessary is a code smell. It shows the existing codebase, variable names, 
-and class names do not describe the intent. Tests can act as a double re-assurance that the original intention is correct.
 
 ## Conclusion: The Competitive Advantage of a 10x Codebase
 
