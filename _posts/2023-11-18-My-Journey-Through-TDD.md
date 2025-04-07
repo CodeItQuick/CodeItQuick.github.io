@@ -70,8 +70,7 @@ Where I am at on a variety  of testing topics:
 1. Acceptance Tests/BDD: E2E/Acceptance tests have a place in their part of the testing pyramid. I get requirements, and assurance my software works. Just be careful how many I write.
 2. Output of TDD: To get better at TDD I need to get better at the **techniques** involved. HOW do I test this, and make the tests faster, and concise, while avoiding any interdependence among them.
 3. Mechanics of TDD: Significantly easier to write the tests while I code. However, if the codebase is gnarly, I'm going to be writing them after.
-4. Time Invested in TDD: I only write unit tests if it makes sense from a time and cost perspective. 80-90% of the time I write unit tests, the other 10-20% of the time
-it's not worth the investment.
+4. Time Invested in TDD: I vastly prefer to write tests in all scenarios, and the question is whether to TDD the tests or not.
 
 At the collaboration stage the team heavily tested, and I began to believe the time investment was well worth it in the medium to long run.
 I actively dislike not adding tests since I think short-term payoff is little to none.
