@@ -58,7 +58,7 @@ I did plateau during this phase as my learning sources had not changed in long e
 
 At the intermediate stage I started to see good arguments for testing, and thought it had its place in special circumstances.
 
-# Collaboration Phase (8.5 -> 10 Years)
+# Collaboration Phase (8.5 -> 11 Years)
 
 <p align="center" width="100%">
     <img src="/assets/images/final_form_zombie.png"  alt="Zombie in the final form" height="512" width="512" />
@@ -74,6 +74,7 @@ Where I am at on a variety  of testing topics:
 it's not worth the investment.
 
 At the collaboration stage the team heavily tested, and I began to believe the time investment was well worth it in the medium to long run.
+I actively dislike not adding tests since I think short-term payoff is little to none.
 
 
 
