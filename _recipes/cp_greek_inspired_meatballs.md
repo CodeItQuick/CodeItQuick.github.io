@@ -1,7 +1,7 @@
 ---
 name: Greek Inspired Meatballs
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: greek_inspired_meatballs.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

@@ -1,7 +1,7 @@
 ---
 name: Mushroom Ravioli With Parmesan Cream Sauce
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: mushroom_ravioli_with_parmesan_cream_sauce.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

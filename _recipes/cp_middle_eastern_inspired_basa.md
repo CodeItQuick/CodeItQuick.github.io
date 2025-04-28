@@ -1,7 +1,7 @@
 ---
 name: Middle Eastern Inspired Basa
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: middle_eastern_inspired_basa.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

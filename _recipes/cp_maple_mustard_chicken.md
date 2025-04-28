@@ -1,7 +1,7 @@
 ---
 name: Maple-Mustard Chicken
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: maple_mustard_chicken.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

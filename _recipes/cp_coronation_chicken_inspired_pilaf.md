@@ -1,7 +1,7 @@
 ---
 name: Coronation Chicken Inspired Pilaf 
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: coronation_chicken_inspired_pilaf.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

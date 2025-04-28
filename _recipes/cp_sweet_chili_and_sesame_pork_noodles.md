@@ -1,7 +1,7 @@
 ---
 name: Sweet Chili and Sesame Pork Noodles 
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: sweet_chili_and_sesame_pork_noodles.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

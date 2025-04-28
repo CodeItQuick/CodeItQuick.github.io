@@ -1,7 +1,7 @@
 ---
 name: Salmon Noodle Casserole 
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: salmon_noodle_casserole.jpg
 layout: recipe
 tags: chefsplate simple
 ---

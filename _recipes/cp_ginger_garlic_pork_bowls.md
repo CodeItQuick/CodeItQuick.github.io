@@ -1,7 +1,7 @@
 ---
 name: Ginger-Garlic Pork Bowls
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: ginger_garlic_pork_bowls.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

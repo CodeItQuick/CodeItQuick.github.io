@@ -1,7 +1,7 @@
 ---
 name: Quick Tortilla Crusted Chicken
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: quick_tortilla_crusted_chicken.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

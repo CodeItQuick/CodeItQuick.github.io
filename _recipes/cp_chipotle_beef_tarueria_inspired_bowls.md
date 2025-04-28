@@ -1,7 +1,7 @@
 ---
 name: Chipotle Beef Taqueria-Inspired Bowls
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: chipotle_beef_tarueria_inspired_bowls.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

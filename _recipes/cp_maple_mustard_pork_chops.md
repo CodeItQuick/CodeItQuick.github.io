@@ -1,7 +1,7 @@
 ---
 name: Maple Mustard Pork Chops
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: maple_mustard_pork_chops.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

@@ -1,7 +1,7 @@
 ---
 name: Hoisin Pork Peanut Noodles
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: hoisin_pork_peanut_noodles.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

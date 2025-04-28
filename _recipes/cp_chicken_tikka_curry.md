@@ -1,7 +1,7 @@
 ---
 name: Chicken Tikka Curry
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: chicken_tikka_curry.jpeg
 layout: recipe
 tags: chefsplate simple
 ---

@@ -1,7 +1,7 @@
 ---
 name: Shake Rattle N Roast Chicken
 description: Chef's plate speciality
-image: zombie_burrito_bowl.webp
+image: shake_rattle_n_roast_chicken.jpeg
 layout: recipe
 tags: chefsplate simple
 ---
