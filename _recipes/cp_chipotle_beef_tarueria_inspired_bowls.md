@@ -1,21 +1,37 @@
 ---
 name: Chipotle Beef Taqueria-Inspired Bowls
-description: Chef's plate speciality
+description: Simple And Quick
 image: chipotle_beef_tarueria_inspired_bowls.jpeg
 layout: recipe
 tags: chefsplate simple
 ---
 
-# Ingredients
+<div class="w-full text-center">
+    <h1>Chipotle Beef Taqueria-Inspired Bowls</h1>
+    <h6>(Cook Time: )</h6>
+    <h6>(Prep Time: )</h6>
+</div>
 
-* Ground Beef/Ground Turkey
-* Chipotle Sauce
-* Mayonnaise
-* Chili-Cumin spice blend
-* Tomato
-* Yellow Onion
-* Cheddar cheese, shredded
-* parboiled rice
+<p align="center" width="100%">
+    <img src="/assets/images/chipotle_beef_tarueria_inspired_bowls.jpeg"  alt="Chipotle Beef Taqueria-Inspired Bowls" style="display: block; max-width:700px; max-height:700px; width: auto; height: auto;" />
+</p>  
 
-# Directions
+<div class="flex w-[1024px] mx-auto">
+<div class="block min-w-max w-3/12">
+<h1>Ingredients</h1>
+<ul>
+<li>Ground Beef/Ground Turkey</li>
+<li>Chipotle Sauce</li>
+<li>Mayonnaise</li>
+<li>Chili-Cumin spice blend</li>
+<li>Tomato</li>
+<li>Yellow Onion</li>
+<li>Cheddar cheese, shredded</li>
+<li>parboiled rice</li>
+</ul>
+</div>
 
+<div  class="block ml-12 w-7/12">
+<h1>Directions</h1>
+</div>
+</div>
