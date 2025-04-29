@@ -16,7 +16,7 @@ tags: chefsplate simple
     <img src="/assets/images/middle_eastern_inspired_basa.jpeg"  alt="Middle Eastern Inspired Basa" style="display: block; max-width:700px; max-height:700px; width: auto; height: auto;" />
 </p>  
 
-<div class="flex w-[1024px] mx-auto">
+<div class="lg:flex lg:w-[1024px] mx-auto">
 <div class="block min-w-max w-3/12">
 <h1>Ingredients</h1>
 <ul>
@@ -35,7 +35,7 @@ tags: chefsplate simple
 </ul>
 </div>
 
-<div  class="block ml-12 w-7/12">
+<div class="block lg:ml-12 w-7/12">
 <h1>Directions</h1>
 </div>
 </div>
