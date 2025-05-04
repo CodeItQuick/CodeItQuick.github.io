@@ -8,8 +8,7 @@ tags: chefsplate simple
 
 <div class="w-full text-center">
     <h1>Coronation Chicken Inspired Pilaf </h1>
-    <h6>(Cook Time: )</h6>
-    <h6>(Prep Time: )</h6>
+    <h6>(Time: 35 Minutes)</h6>
 </div>
 
 <p align="center" width="100%">

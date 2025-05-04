@@ -8,8 +8,7 @@ tags: chefsplate simple
 
 <div class="w-full text-center">
     <h1>Chicken Tikka Curry</h1>
-    <h6>(Cook Time: )</h6>
-    <h6>(Prep Time: )</h6>
+    <h6>(Time: 20 Minutes)</h6>
 </div>
 
 <p align="center" width="100%">

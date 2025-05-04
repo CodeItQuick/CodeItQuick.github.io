@@ -9,8 +9,7 @@ tags: chefsplate simple
 
 <div class="w-full text-center">
     <h1>Shake Rattle N Roast Chicken</h1>
-    <h6>(Cook Time: )</h6>
-    <h6>(Prep Time: )</h6>
+    <h6>(Time: 35 Minutes)</h6>
 </div>
 
 <p align="center" width="100%">
@@ -37,6 +36,20 @@ tags: chefsplate simple
 
 <div class="block lg:ml-12 w-7/12">
 <h1>Directions</h1>
+<ol>
+<li>Preheat oven to 450 F</li>
+<li>Cut potatoes into 1 inch pieces</li>
+<li>To a large pot, add potatoes and enough water to cover</li>
+<li>Boil for 10-14 minutes</li>
+<li>Add cream, 1/4 tsp salt, 1 tbsp milk, 2 tbsp butter, season with pepper</li>
+<li>Trim snow peas</li>
+<li>Brush chicken all over with mayo, then cover with Panko Spice Blend</li>
+<li>In a large non-stick pan, cook chicken 2-3 minutes per side</li>
+<li>In a parchment-lined baking sheet, roast chicken in middle rack for 8-12 minutes</li>
+<li>Fry snow peas for 2-3 minutes</li>
+<li>Add gravy spice blend and butter to frying pan, add 1 cup water and chicken stock powder. Bring to a boil, cook for 4-5 minutes</li>
+<li>Combine meal and serve</li>
+</ol>
 </div>
 </div>
 

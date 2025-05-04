@@ -8,8 +8,7 @@ tags: chefsplate simple
 
 <div class="w-full text-center">
     <h1>Maple-Mustard Chicken</h1>
-    <h6>(Cook Time: )</h6>
-    <h6>(Prep Time: )</h6>
+    <h6>(Time: 30 Minutes)</h6>
 </div>
 
 <p align="center" width="100%">
@@ -32,6 +31,23 @@ tags: chefsplate simple
 
 <div class="block lg:ml-12 w-7/12">
 <h1>Directions</h1>
+<ol>
+<li>Preheat oven to 450</li>
+<li>Peel and cut potatoes into 1/2 inch pieces</li>
+<li>Large Pot: Add potatoes, salt, and enough water to cover</li>
+<li>Boil potatoes for 8-10 minutes</li>
+<li>Drain and return potatoes to the pot</li>
+<li>Add 3 tbsp milk, 2 tbsp butter, and mash potatoes until creamy, season with pepper</li>
+<li>Peel and cut carrots into 1/4 inch rounds</li>
+<li>Cut zucchini into 1/2 inch rounds</li>
+<li>Set aside half the maple-mustard mixture</li>
+<li>Season chicken with Applewood Smoke Spice</li>
+<li>Cook chicken in pan with oil for 1-2 min</li>
+<li>To baking sheet add chicken on one half with maple mustard mixture on it, and zucchini on other half</li>
+<li>Roast chicken and zucchini for 8-10 mins until chicken is cooked through</li>
+<li>Season with salt and pepper</li>
+<li>Combine and eat</li>
+</ol>
 </div>
 </div>
 

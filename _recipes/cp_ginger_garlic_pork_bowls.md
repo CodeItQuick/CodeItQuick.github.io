@@ -8,8 +8,7 @@ tags: chefsplate simple
 
 <div class="w-full text-center">
     <h1>Ginger-Garlic Pork Bowls</h1>
-    <h6>(Cook Time: )</h6>
-    <h6>(Prep Time: )</h6>
+    <h6>(Time: 25 Minutes)</h6>
 </div>
 
 <p align="center" width="100%">
@@ -35,5 +34,14 @@ tags: chefsplate simple
 
 <div class="block lg:ml-12 w-7/12">
 <h1>Directions</h1>
+<ol>
+<li>Cook Rice: Add Rice, vegetable stock powder, green onion whites to rice cooker</li>
+<li>Toast sesame seeds</li>
+<li>Cut vegetables</li>
+<li>To a medium bowl, add ginger sauce and garlic</li>
+<li>Add pork to the medium bowl, season with pepper</li>
+<li>Fry pork and veggies</li>
+<li>Put veggies and pork on top of rice and eat!</li>
+</ol>
 </div>
 </div>
