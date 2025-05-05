@@ -32,5 +32,14 @@ tags: chefsplate simple
 
 <div class="block lg:ml-12 w-7/12">
 <h1>Directions</h1>
+<ol>
+<li>Cook rice</li>
+<li>Cut onion, tomato, and cilantro</li>
+<li>Fry turkey, then add onions</li>
+<li>Fry corn, add tomato</li>
+<li>Add to the pan, chili-cumin spice blend, water</li>
+<li>Add to the pan chipotle sauce, mayo, and 1/2 tbsp of water</li>
+<li>Finish and serve</li>
+</ol>
 </div>
 </div>

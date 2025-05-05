@@ -33,5 +33,13 @@ tags: chefsplate simple
 
 <div class="block lg:ml-12 w-7/12">
 <h1>Directions</h1>
+<ol>
+<li>Cook rice</li>
+<li>Cut the onion, tomato, and spinach</li>
+<li>Fry chicken for 2-3 minutes</li>
+<li>Add onions to frying pan</li>
+<li>Add tomatoes and garlic to frying pan</li>
+<li>Add the tikka sauce, cream, and spinach</li>
+</ol>
 </div>
 </div>
