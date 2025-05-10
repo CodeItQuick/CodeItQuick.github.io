@@ -1,3 +1,4 @@
+Captain Rex (CT-7567), Commander Cody (CC-2224), Fives (CT-5555), Echo (CT-1409), Jesse (CT-5597), Hardcase, Tup, Dogma, Waxer, Boil
 ---
 name: Shake Rattle N Roast Chicken
 description: Simple And Quick
