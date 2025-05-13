@@ -170,6 +170,121 @@ Note: In particular, simply ignoring an exception is not permitted
 
 # Logging
 
+TRACE: Very detailed debugging info, usually off in production.
+DEBUG: Debugging information for developers.
+INFO: General application flow and state changes (e.g., "User logged in").
+WARN: Unexpected situations that don't halt the program (e.g., retry attempts).
+ERROR: Failures that need attention but allow the application to continue.
+FATAL: Critical issues causing a shutdown or severe malfunction.
+
+TRACE Examples:
+* Method Entry and Exit
+* Loop Iterations and Internal Processing Steps
+* Internal Component Communication
+* Detailed Cache Behaviour
+* Configuration and Startup Diagnostics
+* HTTP Request/Response Bodies **USEFUL**
+* ORM/Query Execution Details **USEFUL**
+* Thread or coroutine activity
+Notes: Disabled by default, only enabled in dev, staging, or temp production
+
+When is TRACE log level appropriate?
+* When you need extremely detailed, step-by-step logging
+* Much more verbose logging than DEBUG
+* Deep Diagnostics, performance execution, often at the method, loop, or internal event level
+* Use TRACE when you want to see **everything** your app is doing, internally, at a surgical level of detail.
+
+DEBUG Examples
+* Business Logic Steps
+* Input Validation Results
+* Configuration Values and Flags
+* External System Interactions (High-Level) **USEFUL**
+* Dependency Behaviour (interactions with caches, databases, search indexes) **MAYBE**
+* Decision-Making Branches
+* Non-critical Metrics and Counters
+* Thread or Task Start/Stop **MAYBE**
+* Cleanup and Resource Handling
+Notes: Enabled in Dev and QA. Enabled selectively in production. Avoid logging excessive or sensitive data
+
+When is DEBUG appropriate?
+* Detailed information about the internal workings of your application
+* Information useful for developers diagnosing issues
+* Not needed in production logs
+* Use when you need to follow the **how** and **why** of your code's behaviour
+
+INFO Examples
+* Major Application Events **USEFUL**
+* User Actions and State Changes
+* System Milestones or Workflow Progress
+* External System Calls (Summary Only) **MAYBE**
+* Configuration or Initialization Logs **USEFUL**
+* Feature Flag and Environment Information **USEFUL**
+* Periodic Or Summary Reporting 
+Notes: Enabled in production. Ideal for auditing, monitoring, and normal operation tracking. Avoid using for DEBUG or TRACE levels.
+
+When is INFO appropriate?
+* Important, high level events that are part of normal, expected operation
+* not errors, not detailed debugging either
+* Affirms the system is working as expected
+
+WARN Examples
+* Recoverable Errors
+* Deprecated Features
+* Configuration Issues
+* Resource Limitations
+* Potential Security Risks (eg: bad login 5 times)
+* Permissions and Access Issues
+* External System Slowness **USEFUL**
+* Missing Data or Unexpected State
+* System Maintenance or Temporary Unavailability
+* Time-based Warnings
+* Recoverable Errors or Retry Scenarios
+* Temporary Performance Degradation or Fallback
+* Using Defaults when configuration is missing
+
+When is WARN appropriate?
+* You want to flag potential issues without blocking functionality
+* For things that require investigation but are not urgent or critical
+* Useful for tracking non-fatal system behaviour that could affect the user experience or future stability
+* Can be applicable to specific domains like performance tuning, or security auditing
+
+ERROR Examples
+* Failed External API Call without Fallback
+* Data Persistence Failure
+* Uncaught Exceptions
+* Critical Business Logic Failures
+* Retry Limit Exceeded
+* Message Queue Processing Failure
+* System Resource Exhaustion
+* Invariant Assertion Failures
+* Security-Related Failures
+
+When to use ERROR?
+* Something failed and the system should respond eg: alerting or retry
+* The failure is unexpected or violates assumptions
+* You need to investigate, fix, or escalate the issue
+
+Include in the structured log:
+* Timestamps
+* Request ID / Correlation ID (Used to trace request flows)
+* User ID and Session Info
+* Service/Method Name
+* Environment
+* Request data/body with PII removed
+* Important internal database keys or external data source keys
+* The stack trace if applicable
+* Git SHA at startup or in log entries
+
+Centralize and Aggregate Logs with a consistent formatting
+
+Log the start and end of major operations
+```
+[INFO] Started data sync: source=db, target=cache
+[INFO] Finished data sync: duration=1482 ms
+```
+
+Review Logs Regularly
+
 Log Exceptions with full context (stack traces, environment info, failing inputs for debugging)
 
 ## References
