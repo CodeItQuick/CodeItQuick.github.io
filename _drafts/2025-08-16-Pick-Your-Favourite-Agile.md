@@ -15,10 +15,8 @@ TDD, Refactoring, CI/CD, Pair Programming, Stories, Weekly Cycle, Quarterly Cycl
 
 # Agile
 ## Why
-You want to ship software, faster, and better
+You want to instill a good software culture  
 ## What
-You recognize the general feedback loop:  
-Build something -> give something to customer -> customer gives you feedback -> incorporate feedback -> Build something   
 4 values, 12 principles
 
 # Scrum
