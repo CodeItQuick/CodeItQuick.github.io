@@ -8,9 +8,9 @@ You haven't chosen your favourite scrum framework (TM)
 Your just punching a time-clock until your next big gig
 
 # Extreme Programming (XP)
-# Why
+## Why
 You like testing and excellent communication
-# What
+## What
 TDD, Refactoring, CI/CD, Pair Programming, Stories, Weekly Cycle, Quarterly Cycle, Slack, Ten-Minute Build, Continuous Integration
 
 # Agile
@@ -28,7 +28,7 @@ Container: Sprint
 Activities: Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective
 
 # Kanban
-# Why
+## Why
 Use Kanban to make work visible, limit WIP, and improve flow so you deliver faster and more predictably with less stress.
 You have the most slack compared to the other methods
 ## What
@@ -36,9 +36,9 @@ Container: None
 Activities: Daily Standup, Weekly Replenishment
 
 # Lean Software Development
-# Why
+## Why
 There is a lot of extra non-important work being done.
-# What
+## What
 Eliminate the following kinds of waste:
 * Partially done work 
 * Extra features (overproduction)
