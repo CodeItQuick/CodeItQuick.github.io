@@ -3,9 +3,9 @@
 North Star: Agile Manifesto 
 # Chaos
 ## Why
-You haven't chosen your favourite scrum framework (TM)
+You haven't chosen anything else
 ## What
-Your just punching a time-clock until your next big gig
+You do what makes sense to you at the time
 
 # Extreme Programming (XP)
 ## Why
