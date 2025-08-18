@@ -11,7 +11,16 @@ You do what makes sense to you at the time
 ## Why
 You like testing and excellent communication
 ## What
-TDD, Refactoring, CI/CD, Pair Programming, Stories, Weekly Cycle, Quarterly Cycle, Slack, Ten-Minute Build, Continuous Integration
+* TDD  
+* Refactoring  
+* CI/CD  
+* Pair Programming  
+* Stories  
+* Weekly Cycle  
+* Quarterly Cycle  
+* Slack  
+* Ten-Minute Build  
+* Continuous Integration
 
 # Agile
 ## Why
