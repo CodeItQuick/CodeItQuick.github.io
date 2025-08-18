@@ -39,15 +39,15 @@ Activities: Daily Standup, Weekly Replenishment
 ## Why
 There is a lot of extra non-important work being done.
 ## What
-Eliminate the following kinds of waste:  
+### Eliminate the following kinds of waste:  
 * Partially done work   
 * Extra features (overproduction)  
 * Relearning  
 * Handoffs  
 * Task switching  
 * Waiting (delays)  
-* Defects  
-Activities:  
+* Defects
+### Activities:  
 * TDD/automation (unit/integration/e2e), CI/CD, and feature flags.  
 * Refactor continuously; keep code simple and cohesive.  
 * Poka-yoke (error-proofing): pre-commit hooks, linters, type checks, guardrails.  
