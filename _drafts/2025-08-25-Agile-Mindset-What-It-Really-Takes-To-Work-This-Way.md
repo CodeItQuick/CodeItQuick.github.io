@@ -1,7 +1,4 @@
-﻿
-## The article
-
-# From Manifesto to Method: Agile Values in XP Practices
+﻿# From Manifesto to Method: Agile Values in XP Practices
 
 I'm going to outline in this article how XP programming in a particular take and solution set to Agile Values and probably
 principles as well. For the sake of brevity I'll not be outlining each principle, since with 12 values that would make an
@@ -10,7 +7,7 @@ than a lot of organizations on how to "plan" software development. The majority 
 Finally, I outline the importance of the customer, which XP tends to only mention in passing through several of its sections.
 
 ## From Agile Values to XP Practice: Building Teams Around People, Not Processes
-## Agile Value: **Individuals and interactions** over processes and tools
+#### Agile Value: **Individuals and interactions** over processes and tools
 
 How do you interpret the agile value individuals and interactions over processes and tools? It could mean always keeping
 the Jira tool editor open on your other window while you work to some, while others may cast off Jira as an evil software
@@ -35,7 +32,7 @@ these practices. Setting a sustainable pace is another value that is easy to say
 tendency to treat developers as cogs in a machine, and ignore the fact you need them long term as well as short term.
 
 ## Designing in XP: Why Refactoring and CRC Cards Trump Heavy Docs
-## Agile Value: **Working Software** over comprehensive documentation
+#### Agile Value: **Working Software** over comprehensive documentation
 
 Agile came as a reaction to a reaction. Initially waterfall was overused in the development of software as the only method
 to produce this software. Management reacted to these failing projects by introducing even more processes and procedures,
@@ -98,7 +95,7 @@ XP's highly opinionated take on testing:
 
 
 ## Small Releases, Big Flexibility: How XP Turns Agile Change Into Action
-## Agile Value: **Responding to change** over following a plan
+#### Agile Value: **Responding to change** over following a plan
 
 Planning is one of the more informative takes XP has on "being agile". It perscribes user stories, release planning and
 scheduling, and dividing projects into iterations. I have to say, that the majority of this section is more detailed and
@@ -116,7 +113,7 @@ in building software, and what should actually be worked on has to be the focus.
 * Iteration Planning starts each iteration
 ```
 
-Agile Value: **Customer collaboration** over contract negotiation
+## Agile Value: **Customer collaboration** over contract negotiation
 
 The final agile value, which really only comes into effect in passing mention in XP under each broad category is **customer
 collaboration**. I think too many software platforms are written by coders going into a cave and then coming out 6 months
