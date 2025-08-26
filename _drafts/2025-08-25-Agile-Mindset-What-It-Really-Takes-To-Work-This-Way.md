@@ -2,7 +2,7 @@
 
 I'm going to outline in this article how XP programming applies to agile. For the sake of brevity I'll not be outlining 
 each principle, since with 12 values that would make a long article. At any rate, XP is heavy on how to write code, testing, 
-and collaboration. Its also more heavy than a lot of organizations on how to "plan" software development. The majority of 
+and collaboration. It's also more heavy than a lot of organizations on how to "plan" software development. The majority of 
 organizations kind of shirk this value.
 
 Finally, I outline the importance of the customer, which XP tends to only mention in passing through several of its sections.
@@ -11,7 +11,7 @@ Finally, I outline the importance of the customer, which XP tends to only mentio
 
 #### Agile Value: Individuals and interactions over processes and tools
 
-How do you interpret the agile value individuals and interactions over processes and tools? It could mean always keeping 
+How do you interpret the agile value: "individuals and interactions over processes and tools"? It could mean always keeping 
 the Jira tool editor open. Well, eXtreme Programming has a take on what "people and interactions" actually means, and 
 its under the title "Managing".
 
@@ -28,18 +28,17 @@ XP Outlines Managing Software Teams as:
 
 A lot of these practices, as the framework describes, are very extreme. I have found minimal use from "storypoints". I can
 see estimating a sprint of work is possible. Then the team can estimate when a project is completed. This has real-world 
-usefulness in the software process. Despite all the dysfunction (which may already be there) from using these practices. 
+usefulness in the software process despite all the dysfunction (which may already be there) from using these practices. 
 Setting a sustainable pace is another value that is easy to say, hard to implement. There is a very real tendency to treat 
 developers as cogs in a machine, and ignore the fact you need them long term as well as short term.
 
 ## Designing in XP: Why Refactoring and CRC Cards Trump Heavy Docs
-
 #### Agile Value: Working Software over comprehensive documentation
 
-Agile came as a reaction to a reaction. Waterfall was overused in the development of software as the only method to produce 
-this software. Management reacted to these failing projects by introducing even more processes and procedures. Programmers 
-disliked this change. It invited even more project failure at the time. Agile came about to course-correct this reaction. 
-Yet, the course correct is too far in the anti-planning direction.
+Agile came as a reaction to a reaction. Waterfall was overused in the development of software. Management reacted to these 
+failing projects by introducing even more processes and procedures. Programmers disliked this change. It invited even more 
+project failure at the time. Agile came about to course-correct this reaction. Yet, the course correct is too far in the 
+anti-planning direction.
 
 What does XP have to say about design?
 
@@ -79,7 +78,6 @@ in XP programming, and team or collective ownership on features. If there is a b
 failed or the system/process failed to catch the bug before it hit go-live.
 
 ## Testing as a First-Class Citizen: XP’s Approach to Agile Quality
-
 #### Agile Value: Working Software over comprehensive documentation
 
 The most opinionated take that XP has is on testing. Kent Beck, having founded XP, was also the founder of TDD. Its of no 
@@ -118,8 +116,8 @@ majority of workplaces. A stronger focus on what has to be worked on is needed.
 
 ## Agile Value: Customer collaboration over contract negotiation
 
-The final agile value, which only comes into effect in passing mention in XP under each broad category is 
-**customer collaboration**. Too many software platforms are written by coders going into a cave. The coder appears 6 months 
-later with "a great solution". However, the coder hasn't gotten any feedback. Feedback from customers, product owners, or 
-business people in general is necessary for good software. This is such a strong antipattern that agile has highlighted 
-this as a primary value in producing great software.
+The final agile value, which only comes into effect in passing mention in XP is **customer collaboration**. Too many 
+software platforms are written by coders going into a cave. The coder appears 6 months later with "a great solution". 
+However, the coder hasn't gotten any feedback. Feedback from customers, product owners, or business people in general is 
+necessary for good software. This is such a strong antipattern that agile has highlighted this as a primary value in 
+producing great software.
