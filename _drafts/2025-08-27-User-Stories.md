@@ -23,17 +23,18 @@ Epics:
 Vision (Customer Driven): Provide tools so intuitive they require no manual
 Strategic Theme: Onboarding Without Training, Intelligent Defaults & Automation
 Epics (Onboarding without Training):
-1. Progressive Onboarding
-2. Contextual Guidance
-3. Self-Discovery by Design
-4. First-Use Success
-5. Frictionless Account Setup
-Epics (Intelligent Defaults & Automation):
-1. Smart Defaults
-2. Adaptive Personalization
-3. Automated Workflows
-4. Error Prevention & Recovery
-5. AI-Assisted Guidance
+1. Progressive Onboarding  
+2. Contextual Guidance  
+3. Self-Discovery by Design  
+4. First-Use Success  
+5. Frictionless Account Setup  
+
+Epics (Intelligent Defaults & Automation):  
+1. Smart Defaults  
+2. Adaptive Personalization  
+3. Automated Workflows  
+4. Error Prevention & Recovery  
+5. AI-Assisted Guidance  
 
 Innovation & Technology: Bring cutting-edge innovation to industries slowed by legacy tools
 Strategic Theme: Seamless Integration with Legacy Systems
