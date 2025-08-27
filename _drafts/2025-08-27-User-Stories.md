@@ -43,4 +43,31 @@ Some other visions...
 Market Leadership Visions: Integrate with the most modern IoT Platforms  
 Empowerment & Enablement: Give every user the power of enterprise-grade tools without complexity.  
 Values & Trust-Centric Visions: Stand for ethical technology that improves lives, not exploits them.  
-Future & Transformation Visions: Be the partner that helps organizations adapt to change  
+Future & Transformation Visions: Be the partner that helps organizations adapt to change
+
+## Why User Stories Belong on the Roadmap (Not Just the Backlog)
+
+Most roadmaps live at the level of epics, features, or initiatives.  
+They outline the “big rocks” — the things executives want to see progress on quarter after quarter.    
+
+| Quarter | Vision          | Strategic Theme             | Epic   | Example User Story                                                               |
+|---------| --------------- | --------------------------- | ------ | -------------------------------------------------------------------------------- |
+| Q1      | Modern Software | Upgrade Tech Stack          | Epic A | *As a dev, I want latest .NET runtime so that I can use new security patches.*   |
+| Q1      | Modern Software | Modernize UX                | Epic B | *As a user, I want a responsive layout so that I can seamlessly switch devices.* |
+| Q2      | Intuitive Tools | Onboarding Without Training | Epic D | *As a first-time user, I want to be guided through my first key task.*           |
+| Q2      | Intuitive Tools | Intelligent Defaults        | Epic F | *As a new customer, I want recommended settings pre-configured.*                 |
+
+## Story Mapping as a Roadmap Tool  
+
+Top Row: User Activities / Journey Steps  
+1. Set Up the System  
+2. First-Time Use / Onboarding  
+3. Daily Workflows  
+4. Advanced Use / Scaling  
+5. Monitoring & Improvement
+
+## Vertical Stories Under Each Step
+1. Set Up the System
+* As a developer, I want the latest .NET runtime so that I can use modern libraries securely.
+* As an admin, I want the system containerized so deployments are consistent.
+* (Later) As an industry user, I want recommended settings preloaded so I can skip manual setup.
