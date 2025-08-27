@@ -36,11 +36,11 @@ Epics (Intelligent Defaults & Automation):
 4. Error Prevention & Recovery  
 5. AI-Assisted Guidance  
 
-Innovation & Technology: Bring cutting-edge innovation to industries slowed by legacy tools
-Strategic Theme: Seamless Integration with Legacy Systems
+Innovation & Technology: Bring cutting-edge innovation to industries slowed by legacy tools  
+Strategic Theme: Seamless Integration with Legacy Systems  
 
-Some other visions...
-Market Leadership Visions: Integrate with the most modern IoT Platforms
-Empowerment & Enablement: Give every user the power of enterprise-grade tools without complexity.
-Values & Trust-Centric Visions: Stand for ethical technology that improves lives, not exploits them.
-Future & Transformation Visions: Be the partner that helps organizations adapt to change
+Some other visions...  
+Market Leadership Visions: Integrate with the most modern IoT Platforms  
+Empowerment & Enablement: Give every user the power of enterprise-grade tools without complexity.  
+Values & Trust-Centric Visions: Stand for ethical technology that improves lives, not exploits them.  
+Future & Transformation Visions: Be the partner that helps organizations adapt to change  
