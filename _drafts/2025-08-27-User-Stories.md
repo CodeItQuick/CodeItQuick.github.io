@@ -9,10 +9,10 @@ Vision
 Strategic Theme / Epics
 User Stories
 
-Examples:
-Vision: Modern Software that evolves with the times
-Strategic Theme: Modernize the software solution
-Epics:
+Examples:  
+Vision: Modern Software that evolves with the times  
+Strategic Theme: Modernize the software solution  
+Epics:  
 1. Upgrade the tech stack: Frameworks, Libraries, and Runtime Environments
 2. Upgrade the user experience: Redesign the UI to meet standards, introduce responsive layouts, componentize the UI elements
 3. Strengthen Security & Compliance
@@ -20,9 +20,9 @@ Epics:
 5. Improve CI/CD Pipelines, Automate Testing, IAS
 6. Improve Load Times, Response Rates, System Stability, Introduce Monitoring/Alerts/SLOs
 
-Vision (Customer Driven): Provide tools so intuitive they require no manual
-Strategic Theme: Onboarding Without Training, Intelligent Defaults & Automation
-Epics (Onboarding without Training):
+Vision (Customer Driven): Provide tools so intuitive they require no manual  
+Strategic Theme: Onboarding Without Training, Intelligent Defaults & Automation  
+Epics (Onboarding without Training):  
 1. Progressive Onboarding  
 2. Contextual Guidance  
 3. Self-Discovery by Design  
