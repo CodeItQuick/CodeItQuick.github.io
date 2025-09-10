@@ -17,13 +17,13 @@ class FavouriteOOPThing {
         this.someInjectedField = someInjectedField;
     }
     commandOne(someShortLifetimeCommandParameter) {
-        return this.someInjectedField(someShortLifetimeCommandParameter + 2);
+        this.someInjectedField(someShortLifetimeCommandParameter + 2);
     }
     queryOne(someShortLifetimeQueryParameter) {
         return this.someInjectedField(someShortLifetimeQueryParameter);
     }
     commandTwo(someShortLifetimeCommandParameter) {
-        return this.someInjectedField(someShortLifetimeCommandParameter + 3);
+        this.someInjectedField(someShortLifetimeCommandParameter + 3);
     }
     queryTwo(someShortLifetimeQueryParameter) {
         return this.someInjectedField(someShortLifetimeQueryParameter);
@@ -53,7 +53,7 @@ class FavouriteOOPThing {
         this.someInjectedField = someInjectedField;
     }
     commandOne(someShortLifetimeCommandParameter) {
-        return this.someInjectedField(someShortLifetimeCommandParameter + 2);
+        this.someInjectedField(someShortLifetimeCommandParameter + 2);
     }
     queryOne(someShortLifetimeQueryParameter) {
         return this.someInjectedField(someShortLifetimeQueryParameter);
@@ -70,13 +70,13 @@ const FavouriteFunctionalThing = (someInjected) => (someShortLifetimeCommandPara
     let someInjectField = someInjected;
     return {
         commandOne(someShortLifetimeCommandParameter) {
-            return this.someInjectedField(someShortLifetimeCommandParameter + 2);
+            this.someInjectedField(someShortLifetimeCommandParameter + 2);
         },
         queryOne(someShortLifetimeQueryParameter) {
             return this.someInjectedField(someShortLifetimeQueryParameter);
         },
         commandTwo(someShortLifetimeCommandParameter) {
-            return this.someInjectedField(someShortLifetimeCommandParameter + 3);
+            this.someInjectedField(someShortLifetimeCommandParameter + 3);
         },
         queryTwo(someShortLifetimeQueryParameter) {
             return this.someInjectedField(someShortLifetimeQueryParameter);
