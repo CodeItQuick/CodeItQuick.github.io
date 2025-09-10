@@ -100,10 +100,10 @@ simply looks like this:
 ```js
 let someInjectedField;
 let init = (someInjected) => {
-    someInjected = someInjectedField;
+    someInjectedField = someInjected;
 } 
 const someMethod = (someShortLifetimeCommandParameter) => {
-    return this.someInjectedField(someShortLifetimeCommandParameter + 2);
+    return someInjectedField(someShortLifetimeCommandParameter + 2);
 }
 export { init, someMethod }
 ```
