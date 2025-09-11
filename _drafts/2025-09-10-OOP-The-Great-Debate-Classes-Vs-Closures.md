@@ -6,6 +6,61 @@ got "fedup" with some of the problems that got attributed to OOP. I say the latt
 because often we attribute our problems to the wrong thing. Oh my code sucks, what caused this? Its the general paradigm
 OOP that's the issue, not my code. Often its your code, but sometimes it could be the paradigm you are working in.
 
+# The prelude, definitions
+
+## Command Query Separation (CQS)
+
+Command query separation is necessary for "proper objected oriented" programming. It involves separation of commands (or the behaviour part)
+from queries (or returning simple values that represent status of something within that class). So here I talk about CQS,
+and separating out behaviour within the class, but then when I look at a request/response structure. If you implement request/response
+in your classes it gets quite messy, as your methods are becoming somewhat more static. Anyhow, this isn't an article on CQS,
+feel free to read up on the concept. Also, it's a more functionally focused article, so that's why I somewhat take the 
+functional side of the argument. Keep in mind, I am an OOP programmer at heart, and I see more value in the class structure
+as a whole than the functional structure.
+
+What I mean by very objected oriented code, is commands take care of all the state change, and queries return only value
+objects. For example, the entity hand in a blackjack game:
+
+```java
+public class Hand {
+
+    protected final List<Card> cards = new ArrayList<>();
+
+    public Hand(List<Card> cards) {
+        this.cards.addAll(cards);
+    }
+
+    // Command
+    public void drawFrom(Shoe shoe) {
+        cards.add(shoe.draw());
+    }
+    
+    // Queries below
+    // SNAPSHOT, not a live "View"
+    public List<Card> cards() {
+        return List.copyOf(cards);
+    }
+    
+    boolean isBusted() {
+        return value() > 21;
+    }
+
+}
+```
+
+## Command Query Responsibility Segregation (CQRS)
+
+This is the pattern by Greg Young that is CQRS. It's the CQS concept but applied at the architecture layer, in hexagonal
+the application code kind of morphs into its paradigms. It makes large use of concepts in eventing, specifically event-carried
+state transfer, and event sourcing. This code, characterized by object stereotypes like controller, services, and repositories,
+is a lot different looking code.
+
+## Request/Response 
+
+Request/response is more naturally a "functional concept". Where your methods are at least closer to pure functions. So when 
+I present functional, I switch to a request/response model that is just naturally more succinct. I think request/response 
+is significantly more intuitive, as evidenced by the shorter explanation.
+
 # The OOP Way, Classes
 
 A class in javascript is a fairly simple thing, and relatively easy to understand. I'll go over the basics of its declaration
