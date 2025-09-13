@@ -1,4 +1,13 @@
-﻿# OOP The Great Debate - Classes vs Closures
+﻿---
+layout: post
+name: OOP The Great Debate - Classes vs Closures
+description: A look at how functional closures differ from OOP classes 
+image: learning_journal_zombie.webp
+time: "5m:58s"
+tags: code all
+---
+
+# OOP The Great Debate - Classes vs Closures
 
 OOP is better than functional, or is functional better than OOP. Often OOP programmers have no knowledge of functional
 (being a primarily OOP developer I'm guilty of this), while functional programmers often come from an OOP background and
