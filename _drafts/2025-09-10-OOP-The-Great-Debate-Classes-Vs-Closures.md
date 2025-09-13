@@ -52,7 +52,7 @@ public class Hand {
 
 ## Command Query Responsibility Segregation (CQRS)
 
-This is the pattern by Greg Young that is CQRS. It's the CQS concept but applied at the architecture layer. In hexagonal
+This is the pattern invented by Greg Young. It's the CQS concept but applied at the architecture layer. In hexagonal
 the application code kind of morphs into its paradigms. It makes large use of concepts in eventing, specifically event-carried
 state transfer, and event sourcing. This code, characterized by object stereotypes like controller, services, and repositories,
 is a lot different looking code.
