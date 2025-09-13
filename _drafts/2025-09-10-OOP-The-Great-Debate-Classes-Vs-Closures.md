@@ -60,7 +60,7 @@ is a lot different looking code.
 We can take that same code from before and turn it into a CQRS pattern below:
 
 ```java
-public class HandService {
+public class HandCommandService {
 
     protected final HandRepository HandRepository;
 
@@ -68,12 +68,18 @@ public class HandService {
         this.HandRepository = handRepository;
     }
 
-    // Command
     public void addCard(Shoe shoe) {
         HandRepository.add(shoe.draw());
     }
+}
+public class HandQueryService {
+
+    protected final HandRepository HandRepository;
+
+    public HandService(HandRepository handRepository) {
+        this.HandRepository = handRepository;
+    }
     
-    // Queries below
     public List<Card> cards() {
         return HandRepository.listCards();
     }
