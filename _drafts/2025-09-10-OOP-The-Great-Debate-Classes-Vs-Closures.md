@@ -18,8 +18,7 @@ from queries (or returning simple values that represent status of something with
 and separating out behaviour within the class, but then when I look at a request/response structure. If you implement request/response
 in your classes it gets quite messy, as your methods are becoming somewhat more static. Anyhow, this isn't an article on CQS,
 feel free to read up on the concept. Also, it's a more functionally focused article, so that's why I somewhat take the 
-functional side of the argument. Keep in mind, I am an OOP programmer at heart, and I see more value in the class structure
-as a whole than the functional structure.
+functional side of the argument. 
 
 What I mean by very objected oriented code, is commands take care of all the state change, and queries return only value
 objects. For example, the entity hand in a blackjack game:
