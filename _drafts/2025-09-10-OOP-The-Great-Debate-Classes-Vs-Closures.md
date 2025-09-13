@@ -50,10 +50,33 @@ public class Hand {
 
 ## Command Query Responsibility Segregation (CQRS)
 
-This is the pattern by Greg Young that is CQRS. It's the CQS concept but applied at the architecture layer, in hexagonal
+This is the pattern by Greg Young that is CQRS. It's the CQS concept but applied at the architecture layer. In hexagonal
 the application code kind of morphs into its paradigms. It makes large use of concepts in eventing, specifically event-carried
 state transfer, and event sourcing. This code, characterized by object stereotypes like controller, services, and repositories,
 is a lot different looking code.
+
+We can take that same code from before and turn it into a CQRS pattern below:
+
+```java
+public class HandService {
+
+    protected final HandRepository HandRepository;
+
+    public HandService(HandRepository handRepository) {
+        this.HandRepository = handRepository;
+    }
+
+    // Command
+    public void addCard(Shoe shoe) {
+        HandRepository.add(shoe.draw());
+    }
+    
+    // Queries below
+    public List<Card> cards() {
+        return HandRepository.listCards();
+    }
+}
+```
 
 ## Request/Response 
 
