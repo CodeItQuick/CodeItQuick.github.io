@@ -112,14 +112,9 @@ class FavouriteOOPThing {
 ```
 
 Here we have some fields on the class, aptly named in this case `this.someInjectedField`. They can be services that offer
-their own ability to run commands/queries on them. CQS (Command Query Separation) is necessary for "proper OOP", so there are
-no getters and setters. Behaviour is what hides behind command/query, where get/set are just simple Data Transfer Objects (DTOs)
-that do not transform the data. Both closures with some currying and classes have the idea of "injected thing". The purpose
-of injected thing is to run the lifetime of the greater class, whereas the command and query parameters are short-lived 
-instances that disappear after the method has been run. Repositories feed Services that then feed Controllers, at times, or
-in domain code you're thinking about collaboration between different domain classes. We happily take all the similar commands,
-and group them onto the class, and then clump this behaviour into a single file. This allows us to better sort the code, 
-making it more maintainable.
+their own ability to run commands/queries on them. CQS is fully implemented here. Both closures with some currying and 
+classes have the idea of "injected thing". The purpose of injected thing is to run the lifetime of the greater class, whereas
+the command and query parameters are short-lived instances that disappear after the method has been run. 
 
 # But what are the issues of these classes?
 
@@ -164,8 +159,9 @@ const FavouriteFunctionalThing = (someInjected) => (someShortLifetimeCommandPara
     }
 }
 ```
-They look pretty similar don't they? And we can make the similar "improvement" we made to classes, to our closure, making
+They look pretty similar, don't they? And we can make the similar "improvement" we made to classes, to our closure, making
 it a bit more simplified looking:
+
 ```js
 const FavouriteFunctionalThing = (someInjected) => (someShortLifetimeCommandParameter) => {
     let someInjectField = someInjected;
