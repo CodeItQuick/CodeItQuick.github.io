@@ -8,6 +8,9 @@ OOP that's the issue, not my code. Often its your code, but sometimes it could b
 
 # The prelude, definitions
 
+I'm going to define CQS, CQRS, and request/response paradigms before discussing what is truly "OOP" code vs what is truly
+"functional" code. Keep in mind this is just my take, as a primarily OOP developer.
+
 ## Command Query Separation (CQS)
 
 Command query separation is necessary for "proper objected oriented" programming. It involves separation of commands (or the behaviour part)
