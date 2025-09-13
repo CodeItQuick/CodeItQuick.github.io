@@ -92,6 +92,22 @@ Request/response is more naturally a "functional concept". Where your methods ar
 I present functional, I switch to a request/response model that is just naturally more succinct. I think request/response 
 is significantly more intuitive, as evidenced by the shorter explanation.
 
+```java
+public class Hand {
+
+    protected final List<Card> cards = new ArrayList<>();
+
+    public Hand(List<Card> cards) {
+        this.cards.addAll(cards);
+    }
+
+    public List<Card> drawFrom(Shoe shoe) {
+        cards.add(shoe.draw());
+        return List.copyOf(cards);
+    }
+}
+```
+
 # The OOP Way, Classes
 
 A class in javascript is a fairly simple thing, and relatively easy to understand. I'll go over the basics of its declaration
