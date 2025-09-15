@@ -35,7 +35,7 @@ objects. For example, the entity hand in a blackjack game:
 ```js
 class Hand {
 
-    Hand(cards) {
+    constructor(cards) {
         this.cards.concat(cards);
     }
 
@@ -92,7 +92,7 @@ is significantly more intuitive, as evidenced by the shorter explanation.
 ```js
 class Hand {
 
-    Hand(cards) {
+    constructor(cards) {
         this.cards.addAll(cards);
     }
 
@@ -172,7 +172,7 @@ class HandService {
 Enter our close friend the closure, which can come in the exact same form as the class but look different under the hood.
 
 ```js
-const HandService = (handRepository) => () => {
+const HandService = (handRepository) => {
     let repository = handRepository;
     return {
         addCard(shoe) {
