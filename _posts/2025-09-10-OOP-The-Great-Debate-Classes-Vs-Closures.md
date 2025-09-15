@@ -51,11 +51,6 @@ public class Hand {
     public List<Card> cards() {
         return List.copyOf(cards);
     }
-    
-    boolean isBusted() {
-        return value() > 21;
-    }
-
 }
 ```
 
@@ -123,96 +118,96 @@ A class in javascript is a fairly simple thing, and relatively easy to understan
 and usages below:
 
 ```js
-class FavouriteOOPThing {
-    constructor(someInjectedField) {
-        this.someInjectedField = someInjectedField;
+class Hand {
+    constructor(cards) {
+        this.cards = cards;
     }
-    commandOne(someShortLifetimeCommandParameter) {
-        this.someInjectedField(someShortLifetimeCommandParameter + 2);
+    drawFrom(shoe) {
+        this.cards.push(shoe.draw());
     }
-    queryOne(someShortLifetimeQueryParameter) {
-        return this.someInjectedField(someShortLifetimeQueryParameter);
+    cards() {
+        return this.cards;
     }
-    commandTwo(someShortLifetimeCommandParameter) {
-        this.someInjectedField(someShortLifetimeCommandParameter + 3);
+    isBusted() {
+        return value() > 21;
     }
-    queryTwo(someShortLifetimeQueryParameter) {
-        return this.someInjectedField(someShortLifetimeQueryParameter);
+
+    value() {
+        let handValue = cards
+            .map(card => card.rankValue())
+            .reduce((acc, curr) => acc + curr, 0);
+
+        // does the hand contain at least 1 Ace?
+        const hasAce = cards
+            .any(card => card.rank() == Rank.ACE);
+
+        // if the total hand value <= 11, then count the Ace as 11 by adding 10
+        if (hasAce && handValue <= 11) {
+            handValue += 10;
+        }
+
+        return handValue;
     }
 }
 ```
 
-Here we have some fields on the class, aptly named in this case `this.someInjectedField`. They can be services that offer
-their own ability to run commands/queries on them. CQS is fully implemented here. Both closures with some currying and 
-classes have the idea of "injected thing". The purpose of injected thing is to run the lifetime of the greater class, whereas
-the command and query parameters are short-lived instances that disappear after the method has been run. 
-
-# But what are the issues of these classes?
-
-Well, what really ties commandOne to commandTwo, and queryOne, to queryTwo? Often these two things aren't tied together
-**AT ALL** and we have to inject all kinds of **this.someInjectedField**. What you quickly end up with is a class that is
-much too large, takes on too many things, etc. So maybe the preferred class structure is closer to the below:
+This works fine for the domain-modeled case, and is probably the preferred paradigm. However, if we are in more CQRS-style
+code, then the code can be decidedly more disconnected, and a new possible pattern can emerge. The problem with a lot of code
+like the below, is there can be a real disconnect between the methods. Where there's really no reason for all these methods
+to be on the same class.
 
 ```js
-class FavouriteOOPThing {
-    constructor(someInjectedField) {
-        this.someInjectedField = someInjectedField;
+class HandService {
+    HandService(handRepository) {
+        this.HandRepository = handRepository;
     }
-    commandOne(someShortLifetimeCommandParameter) {
-        this.someInjectedField(someShortLifetimeCommandParameter + 2);
+
+    addCard(shoe) {
+        this.HandRepository.push(shoe.draw());
     }
-    queryOne(someShortLifetimeQueryParameter) {
-        return this.someInjectedField(someShortLifetimeQueryParameter);
+    
+    cards() {
+        return this.HandRepository.listCards();
+    }
+    
+    handValues() {
+        return this.HandRepository.handValues();
     }
 }
 ```
 
-# Enter Closures, the classes close friend in "functional-style" programming
+# Enter Closures
 
 Enter our close friend the closure, which can come in the exact same form as the class but look different under the hood.
 
 ```js
-const FavouriteFunctionalThing = (someInjected) => (someShortLifetimeCommandParameter) => {
-    let someInjectField = someInjected;
+const HandService = (handRepository) => () => {
+    let repository = handRepository;
     return {
-        commandOne(someShortLifetimeCommandParameter) {
-            this.someInjectedField(someShortLifetimeCommandParameter + 2);
+        addCard(shoe) {
+            repository.push(shoe.draw());
         },
-        queryOne(someShortLifetimeQueryParameter) {
-            return this.someInjectedField(someShortLifetimeQueryParameter);
+        cards() {
+            repository.listCards();
         },
-        commandTwo(someShortLifetimeCommandParameter) {
-            this.someInjectedField(someShortLifetimeCommandParameter + 3);
-        },
-        queryTwo(someShortLifetimeQueryParameter) {
-            return this.someInjectedField(someShortLifetimeQueryParameter);
-        },
+        handValues() {
+            repository.handValues();
+        }
     }
 }
 ```
-They look pretty similar, don't they? And we can make the similar "improvement" we made to classes, to our closure, making
-it a bit more simplified looking:
+
+They look pretty similar, don't they? We can decompose these functions into single functions within a file, which cleans
+things up a bit:
 
 ```js
-const FavouriteFunctionalThing = (someInjected) => (someShortLifetimeCommandParameter) => {
-    let someInjectField = someInjected;
-    return this.someInjectedField(someShortLifetimeCommandParameter + 2);
-}
-```
+let repository;
 
-But wait, did us and functional just become best friends? All-the-sudden our "overly verbose" javascript class has become
-a very succinct FavouriteFunctionalThing. I've also seen this simplified even further into its own file, where the code
-simply looks like this:
+export const init = (handRepository) => repository = handRepository;
 
-```js
-let someInjectedField;
-let init = (someInjected) => {
-    someInjectedField = someInjected;
-} 
-const someMethod = (someShortLifetimeCommandParameter) => {
-    return someInjectedField(someShortLifetimeCommandParameter + 2);
-}
-export { init, someMethod }
+export const addCard = (shoe) => repository.push(shoe.draw());
+export const cards = () => repository.listCards();
+export const handValues = () => repository.handValues();
 ```
 
 # Take Away on Closures vs Classes
