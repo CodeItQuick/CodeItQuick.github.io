@@ -32,24 +32,21 @@ functional side of the argument.
 What I mean by very objected oriented code, is commands take care of all the state change, and queries return only value
 objects. For example, the entity hand in a blackjack game:
 
-```java
-public class Hand {
+```js
+class Hand {
 
-    protected final List<Card> cards = new ArrayList<>();
-
-    public Hand(List<Card> cards) {
-        this.cards.addAll(cards);
+    Hand(cards) {
+        this.cards.concat(cards);
     }
 
     // Command
-    public void drawFrom(Shoe shoe) {
+    drawFrom(shoe) {
         cards.add(shoe.draw());
     }
     
-    // Queries below
-    // SNAPSHOT, not a live "View"
-    public List<Card> cards() {
-        return List.copyOf(cards);
+    // Query
+    cards() {
+        return cards;
     }
 }
 ```
@@ -63,28 +60,24 @@ is a lot different looking code.
 
 We can take that same code from before and turn it into a CQRS pattern below:
 
-```java
-public class HandCommandService {
+```js
+class HandCommandService {
 
-    protected final HandRepository HandRepository;
-
-    public HandService(HandRepository handRepository) {
+    HandService(handRepository) {
         this.HandRepository = handRepository;
     }
 
-    public void addCard(Shoe shoe) {
+    addCard(shoe) {
         HandRepository.add(shoe.draw());
     }
 }
-public class HandQueryService {
+class HandQueryService {
 
-    protected final HandRepository HandRepository;
-
-    public HandService(HandRepository handRepository) {
+    HandService(handRepository) {
         this.HandRepository = handRepository;
     }
     
-    public List<Card> cards() {
+    cards() {
         return HandRepository.listCards();
     }
 }
@@ -96,18 +89,16 @@ Request/response is more naturally a "functional concept". Where your methods ar
 I present functional, I switch to a request/response model that is just naturally more succinct. I think request/response 
 is significantly more intuitive, as evidenced by the shorter explanation.
 
-```java
-public class Hand {
+```js
+class Hand {
 
-    protected final List<Card> cards = new ArrayList<>();
-
-    public Hand(List<Card> cards) {
+    Hand(cards) {
         this.cards.addAll(cards);
     }
 
-    public List<Card> drawFrom(Shoe shoe) {
-        cards.add(shoe.draw());
-        return List.copyOf(cards);
+    drawFrom(shoe) {
+        this.cards.add(shoe.draw());
+        return this.cards;
     }
 }
 ```
