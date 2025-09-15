@@ -196,7 +196,7 @@ let repository;
 
 export const init = (handRepository) => repository = handRepository;
 
-export const addCard = (shoe) => repository.push(shoe.draw());
+export const addCard = (shoe) => repository.save(shoe.draw());
 export const cards = () => repository.listCards();
 export const handValues = () => repository.handValues();
 ```
