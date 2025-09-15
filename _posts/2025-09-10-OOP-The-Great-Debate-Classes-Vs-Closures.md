@@ -63,7 +63,7 @@ We can take that same code from before and turn it into a CQRS pattern below:
 ```js
 class HandCommandService {
 
-    HandService(handRepository) {
+    HandCommandService(handRepository) {
         this.HandRepository = handRepository;
     }
 
@@ -73,7 +73,7 @@ class HandCommandService {
 }
 class HandQueryService {
 
-    HandService(handRepository) {
+    HandQueryService(handRepository) {
         this.HandRepository = handRepository;
     }
     
