@@ -124,12 +124,12 @@ class Hand {
     }
 
     value() {
-        let handValue = cards
+        let handValue = this.cards
             .map(card => card.rankValue())
             .reduce((acc, curr) => acc + curr, 0);
 
         // does the hand contain at least 1 Ace?
-        const hasAce = cards
+        const hasAce = this.cards
             .any(card => card.rank() == Rank.ACE);
 
         // if the total hand value <= 11, then count the Ace as 11 by adding 10
