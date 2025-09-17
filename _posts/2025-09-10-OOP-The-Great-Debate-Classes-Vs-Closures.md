@@ -36,17 +36,17 @@ objects. For example, the entity hand in a blackjack game:
 class Hand {
 
     constructor(cards) {
-        this.cards.concat(cards);
+        this.cards = [...cards];
     }
 
     // Command
     drawFrom(shoe) {
-        cards.add(shoe.draw());
+        this.cards.add(shoe.draw());
     }
     
     // Query
     cards() {
-        return cards;
+        return this.cards;
     }
 }
 ```
@@ -68,7 +68,7 @@ class HandCommandService {
     }
 
     addCard(shoe) {
-        HandRepository.add(shoe.draw());
+        HandRepository.addCard(shoe.draw());
     }
 }
 class HandQueryService {
@@ -93,11 +93,11 @@ is significantly more intuitive, as evidenced by the shorter explanation.
 class Hand {
 
     constructor(cards) {
-        this.cards.addAll(cards);
+        this.cards = [...cards];
     }
 
     drawFrom(shoe) {
-        this.cards.add(shoe.draw());
+        this.cards.addCard(shoe.draw());
         return this.cards;
     }
 }
@@ -111,7 +111,7 @@ and usages below:
 ```js
 class Hand {
     constructor(cards) {
-        this.cards = cards;
+        this.cards = [...cards];
     }
     drawFrom(shoe) {
         this.cards.push(shoe.draw());
@@ -154,7 +154,7 @@ class HandService {
     }
 
     addCard(shoe) {
-        this.HandRepository.push(shoe.draw());
+        this.HandRepository.addCard(shoe.draw());
     }
     
     cards() {
@@ -176,7 +176,7 @@ const HandService = (handRepository) => {
     let repository = handRepository;
     return {
         addCard(shoe) {
-            repository.push(shoe.draw());
+            repository.addCard(shoe.draw());
         },
         cards() {
             repository.listCards();
@@ -196,7 +196,7 @@ let repository;
 
 export const init = (handRepository) => repository = handRepository;
 
-export const addCard = (shoe) => repository.save(shoe.draw());
+export const addCard = (shoe) => repository.addCard(shoe.draw());
 export const cards = () => repository.listCards();
 export const handValues = () => repository.handValues();
 ```
@@ -206,3 +206,9 @@ export const handValues = () => repository.handValues();
 Regardless of whether you prefer the class declaration, the closure declaration, or something in-between, you should understand
 at its core both implementations. You will have to, over the course of your career, maintain code in both styles. Understanding
 how they work under the hood, what the concerns are, and how to test them is where the real metal hits the pavement.
+
+# References
+
+* Martin, Fowler. Command Query Separation. https://www.martinfowler.com/bliki/CommandQuerySeparation.html   
+* Martin, Fowler. Command Query Responsibility Segregation. https://martinfowler.com/bliki/CQRS.html  
+* Young, Greg. CQRS Introduction. https://cqrs.wordpress.com/documents/cqrs-introduction/  
