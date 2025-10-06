@@ -16,11 +16,13 @@ Most of April's activity centered on building and enhancing a recipe website:
 * Updated recipe descriptions to be more concise  
 * Created Chef's Plate specialty recipes with ingredients and directions  
 * Added 4 new recipes with complete details  
+
 ## Responsive Design Improvements (April 29):  
 * Modified CSS styles for card and image elements  
 * Implemented min-width of 512px for larger screens  
 * Ensured images display at original size and aspect ratio  
 * Prevented image distortion and compression on different screen sizes  
+
 ## Work in Progress (April 27):  
 * Commit noted as "WIP - terrible spot" suggesting iterative development challenges  
 
