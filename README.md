@@ -1,3 +1,9 @@
+# Random Day TODO List
+* write an article about "pick your favourite agile"
+* write some C code for an rUDP server
+* 
+
+
 # Project Graveyard
 
 # Article Thoughts

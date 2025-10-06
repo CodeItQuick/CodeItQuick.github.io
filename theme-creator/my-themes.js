@@ -10,8 +10,8 @@ let secondaryColorPalette = colorArrayDark('#a855f7');
 let accentColorPalette = colorArrayDark('#0369a1');
 const myThemes =[
     {
-        dark: {
-            colors: {
+        'dark': {
+            'colors': {
                 'primary': primaryColorPalette.colors,
                 'secondary': secondaryColorPalette.colors,
                 'accent': accentColorPalette.colors
@@ -43,8 +43,8 @@ const myThemes =[
         },
     },
     {
-        light: {
-            colors: {
+        'light': {
+            'colors': {
                 'primary': colorArrayLight(primaryColorChoice).colors,
                 'secondary': colorArrayLight(secondaryColorChoice).colors,
                 'accent': colorArrayLight(accentColorChoice).colors
