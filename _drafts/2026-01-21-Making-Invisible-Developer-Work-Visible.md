@@ -22,6 +22,10 @@ This framework gives you language and prioritization criteria to make all develo
 
 ## The Five Buckets of Work
 
+<p align="center" width="100%">
+    <img src="/assets/images/product_iceberg.png"  alt="Product Iceberg" height="512" width="512" />
+</p>  
+
 Every piece of development work fits into one of five categories, each optimizing for different outcomes:
 
 ### **Build** (Product Change)
@@ -148,6 +152,9 @@ Each bucket optimizes for different outcomes, creating natural tensions:
 
 ## Recommended Balance by Context
 
+<p align="center" width="100%">
+    <img src="/assets/images/product_stages.png"  alt="Product Iceberg" height="512" width="512" />
+</p>  
 | Context | Build | Fix | Improve | Run | Evolve |
 |---------|-------|-----|---------|-----|--------|
 | **Startup/Early Product** | 60-70% | 15-20% | 5-10% | 5-10% | 0-5% |
