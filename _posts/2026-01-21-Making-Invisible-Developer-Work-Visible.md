@@ -163,6 +163,7 @@ Each bucket optimizes for different outcomes, creating natural tensions:
 <p align="center" width="100%">
     <img src="/assets/images/five_stages_with_buckets.jpg"  alt="Product Iceberg" height="512" width="512" />
 </p>  
+
 | Context | Build | Fix | Improve | Run | Evolve |
 |---------|-------|-----|---------|-----|--------|
 | **Startup/Early Product** | 60-70% | 15-20% | 5-10% | 5-10% | 0-5% |
