@@ -161,7 +161,7 @@ Each bucket optimizes for different outcomes, creating natural tensions:
 ## Recommended Balance by Context
 
 <p align="center" width="100%">
-    <img src="/assets/images/five_stages_with_buckets.jpg"  alt="Product Iceberg" height="512" width="512" />
+    <img src="/assets/images/garden_stages_cropped.gif"  alt="Product Garden" height="512" width="512" />
 </p>  
 
 | Context | Build | Fix | Improve | Run | Evolve |
