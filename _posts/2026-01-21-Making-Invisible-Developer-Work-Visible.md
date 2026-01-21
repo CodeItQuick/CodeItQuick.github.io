@@ -1,4 +1,12 @@
-﻿# Making the Invisible 60% of Development Work Visible
+﻿---
+layout: post
+name: Making the Invisible 60% of Development Work Visible
+description: What is the developer iceberg of work and how do we tackle it
+image: spartan_zombie.webp
+time: "10m:00s"
+tags: quality all
+---
+# Making the Invisible 60% of Development Work Visible
 
 ## Executive Summary
 
