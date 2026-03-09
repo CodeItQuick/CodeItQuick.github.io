@@ -29,9 +29,9 @@ by AI is "smooth a speed mismatch between producer and consumer", and I'm not to
 
 Broadly, they can fit into three categories:
 
-**Population Strategies:** How data gets into the cache and stays consistent
-**Eviction Policies:** How data leaves the cache when it's full.
-**Cache Types By Location:** Where the cache lives in the system
+**Population Strategies:** How data gets into the cache and stays consistent  
+**Eviction Policies:** How data leaves the cache when it's full.  
+**Cache Types By Location:** Where the cache lives in the system  
 
 Of the three, the last one, cache types by location, is probably the most intuitive. Population strategies are commonly 
 memoization (eg: used in react on the frontend with hooks such as useMemo), TTL (used to browse webpages on a lazy-load 
