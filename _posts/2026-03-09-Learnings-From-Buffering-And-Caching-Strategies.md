@@ -44,7 +44,7 @@ question of what to do once our cache has filled. Population is more concerned w
 policies of who pays the price when an entry has to leave the cache. In that way, population is more complicated than 
 eviction.
 
-Buffering fits into three categories, by flush trigger, structure, or write behaviour. Flush triggers are how the buffer 
+Buffering fits into **three categories**, by _flush trigger_, _structure_, or _write behaviour_. Flush triggers are how the buffer 
 gets emptied on write, structure is the shape of the memory allocated (linear, ring, etc. You may have to pick a "weird" 
 one if memory is severly limited). Write behaviour determines how writing the buffer out makes a difference to the consumer. 
 Do we care more that the message gets there as fast as possible (pick Write-back Buffer), or do we want a true source of 
