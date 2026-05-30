@@ -82,8 +82,8 @@ is huge! We never did look at the bigger picture. What if we rethought-again the
 
 ```
 A. Spike: Discover how many restaurants are in town, and review method
-B. Check Yelp all of the restaurants reviews, find the top 10%
-C. For the top 10% of restaurants, complete a detailed review
+B. Check Yelp for all of the restaurants reviews, find the top 10
+C. For the top 10 of restaurants, complete a detailed review
 ```
 
 # Conclusion
