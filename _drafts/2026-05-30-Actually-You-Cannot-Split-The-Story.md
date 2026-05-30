@@ -93,7 +93,7 @@ all of them? While if there's 3000, maybe we only both to review the top 5?
 
 By changing how we think about the problem, and how we ship the solution, we have added value to the process. We have rethought
 our approach, and can now ship with confidence knowing we will complete our customer need in the allotted time. Previously with
-story splitting we were merely taking reviewing all the restaurants in town and micromanaging out poor reviewer. By changing
+story splitting we were merely taking reviewing all the restaurants in town and micromanaging our poor reviewer. By changing
 how it ships, we've taken what would originally have taken years, and shortened it down to whatever time the owner is willing
 to put into the project.
 
