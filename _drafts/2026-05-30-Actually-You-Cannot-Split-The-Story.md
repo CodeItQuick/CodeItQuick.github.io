@@ -86,6 +86,9 @@ B. Check Yelp for all of the restaurants reviews, find the top 10
 C. For the top 10 of restaurants, complete a detailed review
 ```
 
+Once our spike is done, B and C can be done in parallel. If there are only 15 restaurants in town, maybe we want to review
+all of them? While if there's 3000, maybe we only both to review the top 5?
+
 # Conclusion
 
 By changing how we think about the problem, and how we ship the solution, we have added value to the process. We have rethought
