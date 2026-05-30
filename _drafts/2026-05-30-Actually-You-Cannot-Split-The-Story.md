@@ -87,7 +87,7 @@ C. For the top 10 of restaurants, complete a detailed review
 ```
 
 Once our spike is done, B and C can be done in parallel. If there are only 15 restaurants in town, maybe we want to review
-all of them? While if there's 3000, maybe we only both to review the top 5?
+all of them? While if there's 3000, maybe we only bother to review the top 5?
 
 # Conclusion
 
