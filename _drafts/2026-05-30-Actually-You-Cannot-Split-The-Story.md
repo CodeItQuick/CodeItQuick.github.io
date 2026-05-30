@@ -7,7 +7,7 @@ time: "9m:00s"
 tags: quality all
 ---
 
-# Actually, Stop Story Splitting! For the Health of the Project!
+# Actually, Stop Story Splitting, For the Health of the Project
 
 Stop the story splitting, immediately. Yes, you are doing it in good faith. And yes, sometimes it even "works". The problem
 is your focusing on the wrong thing, and bringing dysfunction to your team. 
