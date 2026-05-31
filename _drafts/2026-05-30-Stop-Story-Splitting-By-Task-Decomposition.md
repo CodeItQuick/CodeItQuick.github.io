@@ -1,19 +1,18 @@
 ﻿---
 layout: post
-name: Actually, You Cannot Split The Story
+name: Stop Story Splitting By Task Decomposition
 description: Discussions of why story splitting does not work
 image: spartan_zombie.webp
 time: "9m:00s"
 tags: quality all
 ---
 
-# Actually, Stop Story Splitting, For the Health of the Project
+# Stop Story Splitting By Task Decomposition
 
-Stop the story splitting, immediately. Yes, you are doing it in good faith. And yes, sometimes it even "works". The problem
-is your focusing on the wrong thing, and bringing dysfunction to your team. 
+The common failure mode of story splitting by task decomposition is a common failure mode of agile methodology. 
 
-In this article I will illustrate why story splitting is a waste of time, while changing how the feature ships to production
-is a meaningful reframe.
+In this article I will illustrate why story splitting by task decomposition is oversimplified and not helpful. I will 
+show how to implement the SPIDR framework on effective story splitting.
 
 # The Purpose of Story Splitting
 
@@ -29,7 +28,8 @@ But what are we really trying to achieve with this exercise? Is it actually help
 two smaller tasks? What have we gained? Well we've really only gained something if task A can suddenly be done by developer A,
 and task B can be done by developer B in parallel. We've also gained something if the tasks are done in sequence, because all the sudden
 blocking task A can go into sprint 1, and our unblock task B can go into sprint 2. So whether it's a parallelize or serializable
-task, we have gained something.
+task, we have gained something. We also gain something by de-risking the epic/story. It is better to implement a 2-day story and change
+direction over a 2-week story.
 
 What if task A has no relation to a PR going into the codebase? So in the serialization example we've merely communicated "Oh I completed x thing",
 but no code has been changed. No value has been inherently delivered until Task B is completed.
@@ -64,30 +64,24 @@ D. Write down their critique into a piece of paper and send it to the owner (us)
 
 But something is off. Our loyal food critic feels micromanaged, unheard, and like an order taker. But what have we done wrong?
 
-# Introducing Changing How It Ships
+# SPIDR Story Splitting the Restaurant Example
 
-Well, now we rethink how we operate. Rather than story splitting, we are going to change how it ships. The main offender:
-Walk to a restaurant (1 hour) will first be tackled. What if you drove? So now our task list is:
+The previous story split was by task composition. What we actually want is smaller vertical slices that still produce a 
+usable outcome. The SPIDR framework adds a helpful framing for story splitting:
 
-```
-Title: Repeat until all 100 restaurants in town are reviewed
-A. Drive to restaurant (15 minutes)
-B. Order food (30 minutes)
-C. Eat food (30 minutes)
-D. Write down their critique into a piece of paper and send it to the owner (us) (30 minutes)
-```
+Now to expand this to all the acronym title's of story splitting:
 
-Whew, everything is in one sprint now. Well that's refreshing. However, we have to review all 100 restaurants in town, our epic 
-is huge! We never did look at the bigger picture. What if we rethought-again the task at the epic level?
+Split By Spike: How many restaurants are actually in the area? How many public data sources are available?
+Split By Data Subset: Review just the Top 5 Restaurants
+Split By Workflow Path: Review the restaurants with public-review research only (eg: Yelp, etc.)
+Split By Interface: The reviewer uses Yelp/Google reviews first, then physically reviews only selected restaurants.
+Split By Business Rules: Start with a 1-5 overall score rating, then later add category score ratings
 
-```
-A. Spike: Discover how many restaurants are in town, and review method
-B. Check Yelp for all of the restaurants reviews, find the top 10
-C. For the top 10 of restaurants, complete a detailed review
-```
-
-Once our spike is done, B and C can be done in parallel. If there are only 15 restaurants in town, maybe we want to review
-all of them? While if there's 3000, maybe we only bother to review the top 5?
+To bring it all together, to split by the various mechanisms for a story:
+A. (Spike) Discover all the restaurants in my area
+B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review all restaurants and use 1-5 score ratings (Business Rules)
+C. (Interface) Deeply review (Business Rules) the top restaurants (Data Subset) and use category score ratings (Business Rules)
+D. (Spike) Synthesize the Report: What is important to getting a high critic score?
 
 # Conclusion
 
