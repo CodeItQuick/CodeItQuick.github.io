@@ -34,7 +34,7 @@ direction over a 2-week story.
 What if task A has no relation to a PR going into the codebase? So in the serialization example we've merely communicated "Oh I completed x thing",
 but no code has been changed. No value has been inherently delivered until Task B is completed.
 
-# A Metaphor: Reviewing All Restaurants in Your City
+# An Example: Reviewing All Restaurants in Your City
 
 Let's use a metaphor now, rather than these abstract task A, task B. Our goal is to project manage reviewing all of the
 restaurants within our city. So we begin by asking a review how long it will take, and they tell us 6 months. We think this
