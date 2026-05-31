@@ -67,21 +67,21 @@ But something is off. Our loyal food critic feels micromanaged, unheard, and lik
 # SPIDR Story Splitting the Restaurant Example
 
 The previous story split was by task composition. What we actually want is smaller vertical slices that still produce a 
-usable outcome. The SPIDR framework adds a helpful framing for story splitting:
+usable outcome. The SPIDR framework adds a helpful framing for story splitting:  
 
-Now to expand this to all the acronym title's of story splitting:
+Now to expand this to all the acronym title's of story splitting:  
 
-Split By Spike: How many restaurants are actually in the area? How many public data sources are available?
-Split By Data Subset: Review just the Top 5 Restaurants
-Split By Workflow Path: Review the restaurants with public-review research only (eg: Yelp, etc.)
-Split By Interface: The reviewer uses Yelp/Google reviews first, then physically reviews only selected restaurants.
-Split By Business Rules: Start with a 1-5 overall score rating, then later add category score ratings
+Split By Spike: How many restaurants are actually in the area? How many public data sources are available?  
+Split By Data Subset: Review just the Top 5 Restaurants   
+Split By Workflow Path: Review the restaurants with public-review research only (eg: Yelp, etc.)  
+Split By Interface: The reviewer uses Yelp/Google reviews first, then physically reviews only selected restaurants.  
+Split By Business Rules: Start with a 1-5 overall score rating, then later add category score ratings  
 
 To bring it all together, to split by the various mechanisms for a story:
-A. (Spike) Discover all the restaurants in my area
-B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review all restaurants and use (Business Rules) 1-5 score ratings
-C. (Interface) Deeply review (Data Subset) the top restaurants and use (Business Rules) category score ratings
-D. (Spike) Synthesize the Report: What is important to getting a high critic score?
+A. (Spike) Discover all the restaurants in my area  
+B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review all restaurants and use (Business Rules) 1-5 score ratings  
+C. (Interface) Deeply review (Data Subset) the top restaurants and use (Business Rules) category score ratings  
+D. (Spike) Synthesize the Report: What is important to getting a high critic score?  
 
 # Conclusion
 
