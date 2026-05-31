@@ -79,8 +79,8 @@ Split By Business Rules: Start with a 1-5 overall score rating, then later add c
 
 To bring it all together, to split by the various mechanisms for a story:
 A. (Spike) Discover all the restaurants in my area
-B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review all restaurants and use 1-5 score ratings (Business Rules)
-C. (Interface) Deeply review (Business Rules) the top restaurants (Data Subset) and use category score ratings (Business Rules)
+B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review all restaurants and use (Business Rules) 1-5 score ratings
+C. (Interface) Deeply review (Data Subset) the top restaurants and use (Business Rules) category score ratings
 D. (Spike) Synthesize the Report: What is important to getting a high critic score?
 
 # Conclusion
