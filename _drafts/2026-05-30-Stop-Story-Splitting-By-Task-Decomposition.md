@@ -19,7 +19,7 @@ show how to implement the SPIDR framework on effective story splitting.
 Why do we split the story? The goal could be multi-tasking (giving multiple developers tasks), project coordination, shotgunning
 a feature, or just estimating costs. At the core of scrum, and agile seems to be this philosophy around story estimation, splitting,
 and velocity calculations. And sure, they do have meaning. When the business owner wants to introduce a feature that will generate
-so much revenue, meet some customer need, or create a greater product, we owe it to him to give some semblance of cost of both the
+so much revenue, meet some customer need, or create a greater product, we owe it to them to give some semblance of cost of both the
 feature and the cost of delay. 
 
 # The Reason for Story Splitting
@@ -53,6 +53,7 @@ D. Write down their critique into a piece of paper and send it to the owner (us)
 
 But wait, our 1 hour estimate is outside our sprint timeframe. So we must split the walk to a restaurant story into:
 
+
 ```
 Title: Repeat until all 100 restaurants in town are reviewed
 A. Walk halfway to restaurant (30 minutes)
@@ -83,6 +84,20 @@ A. (Spike) Discover all the restaurants in my area
 B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review all restaurants and use (Business Rules) 1-5 score ratings  
 C. (Interface) Deeply review (Data Subset) the top restaurants and use (Business Rules) category score ratings  
 D. (Spike) Synthesize the Report: What is important to getting a high critic score?  
+
+
+Epic: Authentication
+* Signup
+* Login
+* Verify Email
+* Identity Provider (Auth0, etc.)
+
+Epic: Authentication (User can login)
+* Spike: How are we going to integrate with the identity provider Auth0?
+* Implement the registration/login flow
+* Add authorization to the application
+* Add OAuth or something
+
 
 # Conclusion
 
