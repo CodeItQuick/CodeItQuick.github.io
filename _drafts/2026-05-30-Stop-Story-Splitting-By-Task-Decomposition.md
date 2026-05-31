@@ -77,7 +77,8 @@ Split By Workflow Path: Review the restaurants with public-review research only 
 Split By Interface: The reviewer uses Yelp/Google reviews first, then physically reviews only selected restaurants.  
 Split By Business Rules: Start with a 1-5 overall score rating, then later add category score ratings  
 
-To bring it all together, to split by the various mechanisms for a story:
+To bring it all together, to split by the various mechanisms for a story:  
+
 A. (Spike) Discover all the restaurants in my area  
 B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review all restaurants and use (Business Rules) 1-5 score ratings  
 C. (Interface) Deeply review (Data Subset) the top restaurants and use (Business Rules) category score ratings  
