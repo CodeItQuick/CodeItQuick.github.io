@@ -12,8 +12,8 @@ tags: quality all
 The common failure mode is not story splitting itself. It is confusing task decomposition with value slicing.
 
 **Task decomposition** is splitting work by the activities required to complete it. The work is smaller, but each step does
-produce useful work on its own. Decomposition is a failure to vertically slice. **Value decomposition** is splitting work by
-smaller usable outcomes that still provide value, feedback, learning, and risk reduction.
+not necessarily produce useful work on its own. Decomposition is a failure to vertically slice. **Value decomposition** 
+is splitting work by smaller usable outcomes that still provide value, feedback, learning, and risk reduction.
 
 In this article I will illustrate why story splitting by task decomposition is oversimplified and not helpful. I will 
 show how to implement the SPIDR framework on effective story splitting.
@@ -21,19 +21,16 @@ show how to implement the SPIDR framework on effective story splitting.
 # Why we split stories
 
 The goal could be multi-tasking (giving multiple developers tasks), project coordination, shotgunning a feature, or just 
-estimating costs. At the core of scrum, and agile seems to be this philosophy around story estimation, splitting,
-and velocity calculations. And sure, they do have meaning. When the business owner wants to introduce a feature that will generate
-so much revenue, meet some customer need, or create a greater product, we owe it to them to give some semblance of cost of both the
-feature and the cost of delay. 
+estimating costs. Many scrum implementations end up centering around story estimation, splitting, and velocity calculations. 
+And sure, they do have meaning. When the business owner wants to introduce a feature that will generate so much revenue, 
+meet some customer need, or create a greater product, we owe it to them to give some semblance of cost of both the feature 
+and the cost of delay. 
 
 But what are we really trying to achieve when we split a story? The goal is not merely to create smaller tasks, fill a 
 sprint, or give multiple developers something to do. Those may be useful side effects, but they are not the point. The 
 real value of story splitting is that it gives us a smaller outcome we can deliver, validate, or learn from. A split is 
 useful when it reduces risk, creates feedback, or lets the business make a better decision sooner. A split is weak when 
 it only says, “we completed step one,” but nothing usable, testable, or valuable has changed.
-
-What if task A has no relation to a PR going into the codebase? So in the serialization example we've merely communicated "Oh I completed x thing",
-but no code has been changed. No value has been inherently delivered until Task B is completed.
 
 # An Example: Reviewing All Restaurants in Your City
 
@@ -91,8 +88,8 @@ D. (Spike) Synthesize the Report: What is important to getting a high critic sco
 # Conclusion
 
 By changing how we think about the problem, and how we ship the solution, we have added value to the process. We have rethought
-our approach, and can now ship with confidence knowing we will complete our customer need in the allotted time. Previously with
-story splitting we were merely taking reviewing all the restaurants in town and micromanaging our poor reviewer. By changing
-how it ships, we've taken what would originally have taken years, and shortened it down to whatever time the owner is willing
-to put into the project.
+our approach, and can now ship with confidence knowing we can now deliver the most useful version of the customer need within
+the time available. Previously with story splitting we were merely taking reviewing all the restaurants in town and 
+micromanaging our poor reviewer. By changing how it ships, we've taken what would originally have taken years, and shortened 
+it down to whatever time the owner is willing to put into the project.
 
