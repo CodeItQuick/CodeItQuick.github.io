@@ -35,11 +35,10 @@ it only says, “we completed step one,” but nothing usable, testable, or valu
 
 # An Example: Reviewing All Restaurants in Your City
 
-Let's use a metaphor now, rather than these abstract task A, task B. Our goal is to project manage reviewing all the
-restaurants within our city. So we begin by asking a review how long it will take, and they tell us 6 months. Six months 
-is a long time to wait for feedback, so we ask whether the work can be split into smaller pieces.. We need to know more 
-about the inner workings of our food critique, so we ask for a task breakdown. Split the story. We give them a sprint 
-timeframe of 30 minutes.
+Our goal is to project manage reviewing all the restaurants within our city. So we begin by asking a review how long it 
+will take, and they tell us 6 months. Six months is a long time to wait for feedback, so we ask whether the work can be 
+split into smaller pieces.. We need to know more about the inner workings of our food critique, so we ask for a task 
+breakdown. Split the story. We give them a sprint timeframe of 30 minutes.
 
 So they give us roughly:
 
