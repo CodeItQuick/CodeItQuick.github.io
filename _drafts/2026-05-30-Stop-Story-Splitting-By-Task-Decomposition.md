@@ -9,34 +9,31 @@ tags: quality all
 
 # Stop Story Splitting By Task Decomposition
 
-The common failure mode of story splitting by task decomposition is a common failure mode of agile methodology. 
+The common failure mode is not story splitting itself. It is confusing task decomposition with value slicing.
 
 In this article I will illustrate why story splitting by task decomposition is oversimplified and not helpful. I will 
 show how to implement the SPIDR framework on effective story splitting.
 
-# The Purpose of Story Splitting
+# Why we split stories
 
-Why do we split the story? The goal could be multi-tasking (giving multiple developers tasks), project coordination, shotgunning
-a feature, or just estimating costs. At the core of scrum, and agile seems to be this philosophy around story estimation, splitting,
+The goal could be multi-tasking (giving multiple developers tasks), project coordination, shotgunning a feature, or just 
+estimating costs. At the core of scrum, and agile seems to be this philosophy around story estimation, splitting,
 and velocity calculations. And sure, they do have meaning. When the business owner wants to introduce a feature that will generate
 so much revenue, meet some customer need, or create a greater product, we owe it to them to give some semblance of cost of both the
 feature and the cost of delay. 
 
-# The Reason for Story Splitting
-
-But what are we really trying to achieve with this exercise? Is it actually helpful to take one large task and split it into
-two smaller tasks? What have we gained? Well we've really only gained something if task A can suddenly be done by developer A,
-and task B can be done by developer B in parallel. We've also gained something if the tasks are done in sequence, because all the sudden
-blocking task A can go into sprint 1, and our unblock task B can go into sprint 2. So whether it's a parallelize or serializable
-task, we have gained something. We also gain something by de-risking the epic/story. It is better to implement a 2-day story and change
-direction over a 2-week story.
+But what are we really trying to achieve when we split a story? The goal is not merely to create smaller tasks, fill a 
+sprint, or give multiple developers something to do. Those may be useful side effects, but they are not the point. The 
+real value of story splitting is that it gives us a smaller outcome we can deliver, validate, or learn from. A split is 
+useful when it reduces risk, creates feedback, or lets the business make a better decision sooner. A split is weak when 
+it only says, “we completed step one,” but nothing usable, testable, or valuable has changed.
 
 What if task A has no relation to a PR going into the codebase? So in the serialization example we've merely communicated "Oh I completed x thing",
 but no code has been changed. No value has been inherently delivered until Task B is completed.
 
 # An Example: Reviewing All Restaurants in Your City
 
-Let's use a metaphor now, rather than these abstract task A, task B. Our goal is to project manage reviewing all of the
+Let's use a metaphor now, rather than these abstract task A, task B. Our goal is to project manage reviewing all the
 restaurants within our city. So we begin by asking a review how long it will take, and they tell us 6 months. We think this
 isn't good enough, 6 months is too much cost. We need to know more about the inner workings of our food critique, so we
 ask for a task breakdown. Split the story. We give them a sprint timeframe of 30 minutes.
@@ -84,20 +81,6 @@ A. (Spike) Discover all the restaurants in my area
 B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review all restaurants and use (Business Rules) 1-5 score ratings  
 C. (Interface) Deeply review (Data Subset) the top restaurants and use (Business Rules) category score ratings  
 D. (Spike) Synthesize the Report: What is important to getting a high critic score?  
-
-
-Epic: Authentication
-* Signup
-* Login
-* Verify Email
-* Identity Provider (Auth0, etc.)
-
-Epic: Authentication (User can login)
-* Spike: How are we going to integrate with the identity provider Auth0?
-* Implement the registration/login flow
-* Add authorization to the application
-* Add OAuth or something
-
 
 # Conclusion
 
