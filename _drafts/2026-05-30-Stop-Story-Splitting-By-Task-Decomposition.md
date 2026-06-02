@@ -11,6 +11,10 @@ tags: quality all
 
 The common failure mode is not story splitting itself. It is confusing task decomposition with value slicing.
 
+**Task decomposition** is splitting work by the activities required to complete it. The work is smaller, but each step does
+produce useful work on its own. Decomposition is a failure to vertically slice. **Value decomposition** is splitting work by
+smaller usable outcomes that still provide value, feedback, learning, and risk reduction.
+
 In this article I will illustrate why story splitting by task decomposition is oversimplified and not helpful. I will 
 show how to implement the SPIDR framework on effective story splitting.
 
@@ -50,7 +54,6 @@ D. Write down their critique into a piece of paper and send it to the owner (us)
 
 But wait, our 1 hour estimate is outside our sprint timeframe. So we must split the walk to a restaurant story into:
 
-
 ```
 Title: Repeat until all 100 restaurants in town are reviewed
 A. Walk halfway to restaurant (30 minutes)
@@ -62,10 +65,13 @@ D. Write down their critique into a piece of paper and send it to the owner (us)
 
 But something is off. Our loyal food critic feels micromanaged, unheard, and like an order taker. But what have we done wrong?
 
+Ultimately, we have split the story by task decomposition rather than value decomposition. Each task is split by the activities
+required to complete it. 
+
 # SPIDR Story Splitting the Restaurant Example
 
-The previous story split was by task composition. What we actually want is smaller vertical slices that still produce a 
-usable outcome. The SPIDR framework adds a helpful framing for story splitting:  
+We will now attempt to split the stories by a value decomposition method using the SPIDR framework. What we actually want 
+is smaller vertical slices that still produce a usable outcome. The SPIDR framework adds a helpful framing for story splitting:  
 
 Now to expand this to all the acronym title's of story splitting:  
 
