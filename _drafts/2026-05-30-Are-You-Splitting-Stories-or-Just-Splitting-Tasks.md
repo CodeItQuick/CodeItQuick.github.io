@@ -35,9 +35,9 @@ it reduces risk, creates feedback, or lets the business make a better decision s
 
 # An Example: Reviewing All Restaurants in Your City
 
-Our goal is to project manage reviewing all the restaurants within our city. So we begin by asking a review how long it 
+Our goal is to project manage reviewing all the restaurants within our city. So we begin by asking a reviewer how long it 
 will take, and they tell us 6 months. Six months is a long time to wait for feedback, so we ask whether the work can be 
-split into smaller pieces.. We need to know more about the inner workings of our food critique, so we ask for a task 
+split into smaller pieces. We need to know more about the inner workings of our food critique, so we ask for a task 
 breakdown. Split the story. To make the example exaggerated, imagine our planning window is only 30 minutes.
 
 So they give us roughly:
@@ -68,12 +68,12 @@ to complete it.
 
 # SPIDR Story Splitting the Restaurant Example
 
-SPIDR gives us a different way to look at the same problem. What we actually want is smaller vertical slices that still 
+SPIDR gives us a different way to look at the same problem. What we want is smaller vertical slices that still 
 produce a usable outcome. The SPIDR framework adds a helpful framing for story splitting:  
 
 SPIDR gives us several ways to look for smaller outcomes:  
 
-Split By Spike: How many restaurants are actually in the area? How many public data sources are available?  
+Split By Spike: How many restaurants are in the area? How many public data sources are available?  
 Split By Data Subset: Review just the Top 5 Restaurants   
 Split By Workflow Path: Review the restaurants with public-review research only (eg: Yelp, etc.)  
 Split By Interface: The reviewer uses Yelp/Google reviews first, then physically reviews only selected restaurants.  
@@ -88,9 +88,9 @@ D. (Spike) Synthesize the Report: What is important to getting a high critic sco
 
 # Conclusion
 
-By changing how we think about the problem, and how we ship the solution, we have added value to the process. We have rethought
-our approach, and can now ship with confidence knowing we can now deliver the most useful version of the customer need within
-the time available. Previously, we had made the activities smaller without making the outcome smaller. By changing how it ships, 
-we make partial value possible. The owner no longer has to choose between the entire project or nothing; they can choose 
-the most useful outcome for the time available.
+By changing how we think about the problem, and how we ship the solution, we have added value to the process. We have 
+rethought our approach, and can ship with confidence knowing we can deliver the most useful version of the customer need 
+within the time available. Previously, we had made the activities smaller without making the outcome smaller. By changing 
+how it ships, we make partial value possible. The owner no longer has to choose between the entire project or nothing; 
+they can choose the most useful outcome for the time available.
 
