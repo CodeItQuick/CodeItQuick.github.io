@@ -1,30 +1,31 @@
 ﻿---
 layout: post
-name: Stop Story Splitting By Task Decomposition
+name: Are You Splitting Stories, or Just Splitting Tasks?
 description: Discussions of why story splitting does not work
 image: spartan_zombie.webp
 time: "9m:00s"
 tags: quality all
 ---
 
-# Stop Story Splitting By Task Decomposition
+# Are You Splitting Stories, or Just Splitting Tasks?
 
 The common failure mode is not story splitting itself. It is confusing task decomposition with value slicing.
 
 **Task decomposition** is splitting work by the activities required to complete it. The work is smaller, but each step does
-not necessarily produce useful work on its own. Decomposition is a failure to vertically slice. **Value decomposition** 
-is splitting work by smaller usable outcomes that still provide value, feedback, learning, and risk reduction.
+not necessarily produce useful work on its own. **Value decomposition** is splitting work by smaller usable outcomes that 
+still provide value, feedback, learning, and risk reduction. When task decomposition replaces value decomposition, the team 
+may end up with smaller work items that still do not produce a usable outcome.
 
-In this article I will illustrate why story splitting by task decomposition is oversimplified and not helpful. I will 
-show how to implement the SPIDR framework on effective story splitting.
+I will show why task decomposition is often mistaken for story splitting, and why that mistake creates smaller tasks without 
+creating smaller outcomes.
 
 # Why we split stories
 
 The goal could be multi-tasking (giving multiple developers tasks), project coordination, shotgunning a feature, or just 
-estimating costs. Many scrum implementations end up centering around story estimation, splitting, and velocity calculations. 
-And sure, they do have meaning. When the business owner wants to introduce a feature that will generate so much revenue, 
-meet some customer need, or create a greater product, we owe it to them to give some semblance of cost of both the feature 
-and the cost of delay. 
+estimating costs. Many scrum implementations end up centering around story estimation, splitting, and velocity calculations.
+These practices can be useful, especially when the business needs to reason about cost, delay, sequencing, and risk. When 
+the business owner wants to introduce a feature that will generate so much revenue, meet some customer need, or create a 
+greater product, we owe it to them to give some semblance of cost of both the feature and the cost of delay. 
 
 But what are we really trying to achieve when we split a story? The goal is not merely to create smaller tasks, fill a 
 sprint, or give multiple developers something to do. Those may be useful side effects, but they are not the point. The 
@@ -35,9 +36,10 @@ it only says, “we completed step one,” but nothing usable, testable, or valu
 # An Example: Reviewing All Restaurants in Your City
 
 Let's use a metaphor now, rather than these abstract task A, task B. Our goal is to project manage reviewing all the
-restaurants within our city. So we begin by asking a review how long it will take, and they tell us 6 months. We think this
-isn't good enough, 6 months is too much cost. We need to know more about the inner workings of our food critique, so we
-ask for a task breakdown. Split the story. We give them a sprint timeframe of 30 minutes.
+restaurants within our city. So we begin by asking a review how long it will take, and they tell us 6 months. Six months 
+is a long time to wait for feedback, so we ask whether the work can be split into smaller pieces.. We need to know more 
+about the inner workings of our food critique, so we ask for a task breakdown. Split the story. We give them a sprint 
+timeframe of 30 minutes.
 
 So they give us roughly:
 
@@ -49,7 +51,7 @@ C. Eat food (30 minutes)
 D. Write down their critique into a piece of paper and send it to the owner (us) (30 minutes)
 ```
 
-But wait, our 1 hour estimate is outside our sprint timeframe. So we must split the walk to a restaurant story into:
+But wait, our 1 hour estimate is outside our sprint timeframe. If we split purely by duration, we might arrive at something like this:
 
 ```
 Title: Repeat until all 100 restaurants in town are reviewed
@@ -60,7 +62,7 @@ C. Eat food (30 minutes)
 D. Write down their critique into a piece of paper and send it to the owner (us) (30 minutes)
 ```
 
-But something is off. Our loyal food critic feels micromanaged, unheard, and like an order taker. But what have we done wrong?
+But something is off. The work is now smaller, but the outcome is not. Nothing useful has been reviewed, validated, or delivered.
 
 Ultimately, we have split the story by task decomposition rather than value decomposition. Each task is split by the activities
 required to complete it. 
@@ -70,7 +72,7 @@ required to complete it.
 We will now attempt to split the stories by a value decomposition method using the SPIDR framework. What we actually want 
 is smaller vertical slices that still produce a usable outcome. The SPIDR framework adds a helpful framing for story splitting:  
 
-Now to expand this to all the acronym title's of story splitting:  
+SPIDR gives us several ways to look for smaller outcomes:  
 
 Split By Spike: How many restaurants are actually in the area? How many public data sources are available?  
 Split By Data Subset: Review just the Top 5 Restaurants   
