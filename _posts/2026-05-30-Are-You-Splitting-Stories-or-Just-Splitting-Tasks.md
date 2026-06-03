@@ -8,7 +8,7 @@ tags: quality all
 ---
 
 <p align="center" width="100%">
-    <img src="/assets/images/splitting_stories_or_tasks.png"  alt="Story Splitting Generic" height="512" width="512" />
+    <img src="/assets/images/splitting_stories_or_tasks.png"  alt="Are we Splitting Stories or Just Splitting Tasks" height="512" width="512" />
 </p>  
 A common failure mode is not story splitting itself. It is confusing task decomposition with value slicing.
 
