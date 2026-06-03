@@ -2,7 +2,7 @@
 layout: post
 name: Are You Splitting Stories, or Just Splitting Tasks?
 description: Discussions of why story splitting does not work
-image: spartan_zombie.webp
+image: splitting_stories_or_tasks.png
 time: "6m:54s"
 tags: quality all
 ---
