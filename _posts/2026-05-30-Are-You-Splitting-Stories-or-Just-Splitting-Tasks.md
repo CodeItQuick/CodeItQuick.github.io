@@ -35,6 +35,10 @@ it reduces risk, creates feedback, or lets the business make a better decision s
 
 # An Example: Reviewing All Restaurants in Your City
 
+<p align="center" width="100%">
+    <img src="/assets/images/restaurant_reviewing.png"  alt="Story Splitting Generic" height="512" width="512" />
+</p>  
+
 Our goal is to project manage reviewing all the restaurants within our city. So we begin by asking a reviewer how long it 
 will take, and they tell us 6 months. Six months is a long time to wait for feedback, so we ask whether the work can be 
 split into smaller pieces. We need to know more about the inner workings of our food critique, so we ask for a task 
@@ -66,6 +70,10 @@ delivered. So what changed? We made the work smaller, but not the delivered outc
 required to complete it. 
 
 # SPIDR Story Splitting the Restaurant Example
+
+<p align="center" width="100%">
+    <img src="/assets/images/story_splitting_generic.png"  alt="Story Splitting Generic" height="512" width="512" />
+</p>  
 
 SPIDR gives us a different way to look at the same problem. What we want is smaller vertical slices that still 
 produce a usable outcome. The SPIDR framework adds a helpful framing for story splitting:  
