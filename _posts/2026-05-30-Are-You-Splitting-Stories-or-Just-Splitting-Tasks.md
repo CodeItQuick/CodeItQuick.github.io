@@ -81,18 +81,22 @@ produce a usable outcome. The SPIDR framework adds a helpful framing for story s
 
 SPIDR gives us several ways to look for smaller outcomes:  
 
+```
 Split By Spike: How many restaurants are in the area? How many public data sources are available?  
 Split By Data Subset: Review just the Top 5 Restaurants   
 Split By Workflow Path: Review the restaurants with public-review research only (eg: Yelp, etc.)  
 Split By Interface: The reviewer uses Yelp/Google reviews first, then physically reviews only selected restaurants.  
 Split By Business Rules: Start with a 1-5 overall score rating, then later add category score ratings  
+```
 
 To bring it all together, to split by the various mechanisms for a story:  
 
+```
 A. (Spike) Discover all the restaurants in my area  
 B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review all restaurants and use (Business Rules) 1-5 score ratings  
 C. (Interface) Deeply review (Data Subset) the top restaurants and use (Business Rules) category score ratings  
 D. (Spike) Synthesize the Report: What is important to getting a high critic score?  
+```
 
 # Conclusion
 
