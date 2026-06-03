@@ -7,8 +7,6 @@ time: "6m:54s"
 tags: quality all
 ---
 
-# Are You Splitting Stories, or Just Splitting Tasks?
-
 <p align="center" width="100%">
     <img src="/assets/images/splitting_stories_or_tasks.png"  alt="Story Splitting Generic" height="512" width="512" />
 </p>  
