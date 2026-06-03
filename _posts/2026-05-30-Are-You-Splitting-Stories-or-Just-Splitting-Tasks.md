@@ -61,10 +61,9 @@ C. Eat food (30 minutes)
 D. Write down their critique into a piece of paper and send it to the owner (us) (30 minutes)
 ```
 
-But something is off. The work is now smaller, but the outcome is not. Nothing useful has been reviewed, validated, or delivered.
-
-So what changed? We made the work smaller, but not the delivered outcome. Each task is split by the activities required 
-to complete it. 
+But something is off. The work is now smaller, but the outcome is not. Nothing useful has been reviewed, validated, or 
+delivered. So what changed? We made the work smaller, but not the delivered outcome. Each task is split by the activities 
+required to complete it. 
 
 # SPIDR Story Splitting the Restaurant Example
 
