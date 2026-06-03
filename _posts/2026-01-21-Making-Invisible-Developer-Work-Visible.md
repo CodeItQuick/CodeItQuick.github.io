@@ -2,7 +2,7 @@
 layout: post
 name: Making the Invisible 60% of Development Work Visible
 description: What is the developer iceberg of work and how do we tackle it
-image: iceberg_buckets.jpg
+image: caching_and_buffering.png
 time: "9m:00s"
 tags: quality all
 ---
