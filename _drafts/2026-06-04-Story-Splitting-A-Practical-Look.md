@@ -53,7 +53,6 @@ Now we want to take this original list of 10 stories, and decompose them instead
 The general SPIDR format is: setup a SPIKE to learn the general formatting, then go through the minimum skeleton path. After
 we have the skeleton done, we can begin filling in the path with the Interface, Rules, and finally the Data.
 
-
 <p align="center" width="100%">
     <img src="/assets/images/SPIDR_car_building.png"  alt="SPIDR Building A Car" height="512" width="512" />
 </p>  
