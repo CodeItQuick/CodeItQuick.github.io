@@ -97,7 +97,7 @@ To bring it all together, to split by the various mechanisms for a story:
 
 ```
 A. (Spike) Discover all the restaurants in my area  
-B. (Workflow Path) Collect public data on all the restaurants in my area/Lightly review 
+B. (Workflow Path) Collect pu   blic data on all the restaurants in my area/Lightly review 
     all restaurants and use (Business Rules) 1-5 score ratings  
 C. (Interface) Deeply review (Data Subset) the top restaurants and use (Business Rules) 
     category score ratings  

@@ -1,0 +1,117 @@
+﻿---
+layout: post
+name: Are You Splitting Stories, or Just Splitting Tasks?
+description: Discussions of why story splitting does not work
+image: splitting_stories_or_tasks.png
+time: "6m:54s"
+tags: quality all
+---
+
+# Introduction
+
+The first article in this series was an "explain like I'm 5" explanation of story splitting. We are now going to attempt
+a much more mature version of the same article. Instead of critiquing restaurant's, we will run through an authentication
+example. The general task is to complete authentication for our e-commerce website. 
+
+# Authentication as Pure Task Decomposition
+
+So off we go; we are going to produce a first round of stories through task decomposition. This, less efficient way of breaking
+up the story will give us some insight into the variety of methods to create an epic.
+
+```
+1. Create the user database table
+2. Add password hashing
+3. Build the registration endpoint
+4. Build the login endpoint
+5. Add session or token generation
+6. Add authentication middleware
+7. Create the protected account endpoint
+8. Build the registration UI
+9. Build the login UI
+10. Add frontend authentication state and logout
+```
+
+# Reframing Authentication with SPIDR
+
+Now we want to take this original list of 10 stories, and decompose them instead by using SPIDR. We come up with the new
+
+| SPIDR     | Story title                                           | Blocked by                  |
+| --------- | ----------------------------------------------------- | --------------------------- |
+| Spike     | Decide the minimum authentication approach            | Not blocked                 |
+| Path      | Register with email and password                      | #1                          |
+| Path      | Log in with email and password                        | #2                          |
+| Path      | Log out of the application                            | #3                          |
+| Path      | View a protected account page after logging in        | #3                          |
+| Path      | Show useful errors for failed registration and login  | Partly blocked by #2 and #3 |
+| Interface | Keep the browser UI in sync with authentication state | #3 and #4                   |
+| Interface | Stay logged in across page refreshes                  | #7                          |
+| Rule      | Prevent unauthenticated access to protected pages     | #5                          |
+| Rule      | Reject invalid or expired sessions                    | #3 and #8                   |
+
+# The SPIDR Fanout
+
+The general SPIDR format is: setup a SPIKE to learn the general formatting, then go through the minimum skeleton path. After
+we have the skeleton done, we can begin filling in the path with the Interface, Rules, and finally the Data.
+
+
+<p align="center" width="100%">
+    <img src="/assets/images/SPIDR_car_building.png"  alt="SPIDR Building A Car" height="512" width="512" />
+</p>  
+
+# Removing the blocking portions to have independent stories
+
+The key to the rewrite is that we need thin vertical slices for each story at the start, so start the SPIDR sequence with
+Path, and then split on the variety of different methods to fill in the gaps in the main epic.
+
+| SPIDR     | Story title                                                    | Blocked by                                  |
+| --------- | -------------------------------------------------------------- | ------------------------------------------- |
+| Spike     | Decide the minimum authentication approach                     | Nothing                                     |
+| Path      | Complete minimal register/login/logout flow                    | Decide the minimum authentication approach  |
+| Path      | Handle failed registration attempts                            | Complete minimal register/login/logout flow |
+| Path      | Handle failed login attempts                                   | Complete minimal register/login/logout flow |
+| Interface | Keep browser authentication state correct after refresh        | Complete minimal register/login/logout flow |
+| Rule      | Prevent unauthenticated access to protected pages              | Complete minimal register/login/logout flow |
+| Rule      | Reject invalid or expired sessions                             | Complete minimal register/login/logout flow |
+| Rule      | Store passwords securely                                       | Complete minimal register/login/logout flow |
+| Rule      | Limit repeated failed login attempts                           | Complete minimal register/login/logout flow |
+| Data      | Return the current authenticated user’s basic account identity | Complete minimal register/login/logout flow |
+
+# Further Improvements - Moving the Epic into Milestones
+
+## Milestone 1: Internal demo / walking skeleton
+| SPIDR | Story title                                                                 |
+| ----- | --------------------------------------------------------------------------- |
+| Spike | Decide the minimum authentication approach                                  |
+| Path  | Complete minimal register/login/logout flow on a protected placeholder page |
+
+> A user can register, log in, see that they are authenticated, view a protected placeholder page, and log out in a controlled/internal environment.
+
+## Milestone 2: Minimum safe authentication release
+| SPIDR     | Story title                                             |
+| --------- | ------------------------------------------------------- |
+| Rule      | Store passwords securely                                |
+| Rule      | Prevent unauthenticated access to protected pages       |
+| Rule      | Reject invalid or expired sessions                      |
+| Path      | Handle failed registration attempts safely              |
+| Path      | Handle failed login attempts safely                     |
+| Interface | Keep browser authentication state correct after refresh |
+| Rule      | Limit repeated failed login attempts                    |
+
+Milestone Outcome
+> Users can safely register, log in, remain logged in during normal browser use, access protected pages, and receive safe error handling when authentication fails.
+
+## Milestone 3: Account Recovery and Authentication Hardening
+| SPIDR     | Story title                                                          |
+| --------- | -------------------------------------------------------------------- |
+| Path      | Reset a forgotten password                                           |
+| Path      | Verify email before using account-only features                      |
+| Rule      | Expire password reset links after a short period                     |
+| Rule      | Prevent reuse of invalid or expired recovery links                   |
+| Interface | Provide clear account recovery UI states                             |
+| Rule      | Log important authentication events for audit/debugging              |
+| Rule      | Notify users about sensitive account changes                         |
+| Data      | Track account status such as active, locked, or pending verification |
+
+Milestone Outcome
+> Users can recover access to their account, verify ownership of their email, and rely on stronger protections around sensitive authentication events.
+
