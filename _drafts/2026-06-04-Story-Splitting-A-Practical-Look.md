@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 name: Are You Splitting Stories, or Just Splitting Tasks?
-description: Discussions of why story splitting does not work
+description: Discussions of how to story split
 image: splitting_stories_or_tasks.png
 time: "6m:54s"
 tags: quality all
@@ -114,3 +114,8 @@ Milestone Outcome
 Milestone Outcome
 > Users can recover access to their account, verify ownership of their email, and rely on stronger protections around sensitive authentication events.
 
+## Further Article Ideas
+* FAQ on SPIDR
+* Details on how to apply SPIDR to a mature system rather than greenfield
+* Details on once we have an epic setup, how to split stories/change the flow
+* Common Failure Modes?
