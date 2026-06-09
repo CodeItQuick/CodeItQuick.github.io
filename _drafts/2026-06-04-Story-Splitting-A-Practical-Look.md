@@ -62,7 +62,7 @@ the abbreviated/niave parts.
 # Further Improvements - Moving the Epic into Milestones
 
 Adding milestones into our story can further help us detail out the stages, and make decisions about what to deliver first.
-Is milestone 2 more important than milestone 2? We should be able to swap them. It also introduces the delivery aspect into
+Is milestone 2 more important than milestone 1? We should be able to swap them. It also introduces the delivery aspect into
 the story. At what point do we turn off the feature flags to allow for delivery of the story?
 
 ## Milestone 1: Internal demo / walking skeleton
