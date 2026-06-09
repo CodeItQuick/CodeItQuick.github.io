@@ -108,3 +108,4 @@ Milestone Outcome
 * Details on how to apply SPIDR to a mature system rather than greenfield
 * Details on once we have an epic setup, how to split stories/change the flow
 * Common Failure Modes?
+* How to integrate these stories into deployment schemes (Feature Flags, Continuous Delivery/Deployment, Internal Demos, etc.)
