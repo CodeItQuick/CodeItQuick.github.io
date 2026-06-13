@@ -1,9 +1,9 @@
 ﻿---
 layout: post
-name: Are You Splitting Stories, or Just Splitting Tasks?
-description: Discussions of how to story split
-image: splitting_stories_or_tasks.png
-time: "6m:54s"
+name: Story Splitting A Practical Look
+description: Story Splitting - the practical details
+image: sooner-not-faster-picture.png
+time: "4m:18s"
 tags: quality all
 ---
 
