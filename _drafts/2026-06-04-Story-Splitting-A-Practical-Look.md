@@ -10,12 +10,17 @@ tags: quality all
 # Introduction
 
 The first article in this series was an "explain like I'm 5" explanation of story splitting. We are now going to attempt
-a much more mature version of the same article. Instead of critiquing restaurant's, we will run through an authentication
-example. The general task is to complete authentication for our e-commerce website. 
+a much more mature version of the same article. The niave approach to story-splitting is thinking of it as a quick thing
+we can do in a meeting, that takes maybe 5 minutes tops. Split this story, and *poof* the story is split. The reality is
+significantly different to have good splits of stories. You have to understand the current codebase, current patterns, and
+used paradigms within your team. Then, have a meeting that looks a lot more like a design meeting to come to an understanding
+of what the code should look like. Finally, splitting according to an acronym like SPIDR is possible. 
 
 # Begin by Reframing Authentication with SPIDR
 
-We are going to start with attempting SPIDR kind of blindly in our first attempt. We come up with the list of:
+For our old authentication example, we are going to start with attempting SPIDR kind of blindly in our first attempt. 
+We want to write out our epic for the entire authentication flow. After some homework (or maybe just asking chatgpt for 
+a list properly) we come up with the below list:
 
 | SPIDR     | Story title                                           | Blocked by                  |
 | --------- | ----------------------------------------------------- | --------------------------- |
@@ -30,7 +35,9 @@ We are going to start with attempting SPIDR kind of blindly in our first attempt
 | Rule      | Prevent unauthenticated access to protected pages     | #5                          |
 | Rule      | Reject invalid or expired sessions                    | #3 and #8                   |
 
-Something is off here as well. A lot of the work is sequential. The part we missed is **thin vertical slices**.
+Something is off here as well. A lot of the work is sequential. The part we missed is **thin vertical slices**. Sure, we
+identified the components within the general epic, but we have failed (yet again) to identify the thin vertical slices.
+These slices should look iterative, not like a puzzle piece/components. 
 
 # The SPIDR Fanout
 
@@ -59,53 +66,44 @@ we have the skeleton done, we can begin filling in the path with the Interface, 
 Now the only thing that usually blocks us is the first two stories. We need a minimal skeleton built, before we fill in
 the abbreviated/niave parts.
 
-# Further Improvements - Moving the Epic into Milestones
+# The Agile Core - Sooner not Faster
 
-Adding milestones into our story can further help us detail out the stages, and make decisions about what to deliver first.
-Is milestone 2 more important than milestone 1? We should be able to swap them. It also introduces the delivery aspect into
-the story. At what point do we turn off the feature flags to allow for delivery of the story?
+The general idea here is to deliver sooner, not faster. The way we can deliver the same feature in a shorter period of time
+is either to just go generally faster (very hard to achieve), or we start doing things like playing with the scope, and
+iterative development. So with the skeleton approach, we are building out the entire flow in a very brief manner, so that
+we understand all the pieces of the system in a simplistic and niave manner. Then, we can fill in the blanks of each portion
+of the authentication flow.
 
-## Milestone 1: Internal demo / walking skeleton
-| SPIDR | Story title                                                                 |
-| ----- | --------------------------------------------------------------------------- |
-| Spike | Decide the minimum authentication approach                                  |
-| Path  | Complete minimal register/login/logout flow on a protected placeholder page |
+<p align="center" width="100%">
+    <img src="/assets/images/sooner-not-faster-picture.png"  alt="Sooner Not Faster" height="512" width="512" />
+</p>  
 
-Milestone Outcome  
-> A user can register, log in, see that they are authenticated, view a protected placeholder page, and log out in a controlled/internal environment.
+It's funny, I've seen this picture probably a 100 times now, and I feel like now I finally understand it. Chances are, however,
+that I still don't understand it (as I've gotten it wrong at least 99 times now). But hey, let us take another crack at it.
+The idea is that while building a transportation vehicle for the client, we have iteratively developed better and better
+solutions for the same valuable thing your product does. Building a wheel has no value, just like building a pair of wheels
+also has no value. However, if we first give the customer a skateboard, then a scooter, etc. they will have something useful
+every time. Think of this in terms of feature development as well. If we think of each component as the car as a simple
+"feature we must build" we have also accidentally fallen into thinking about what we want in components. Instead, we need
+to iteratively build a better and better solution to whatever solves the core customer need.
 
-## Milestone 2: Minimum safe authentication release
-| SPIDR     | Story title                                             |
-| --------- | ------------------------------------------------------- |
-| Rule      | Store passwords securely                                |
-| Rule      | Prevent unauthenticated access to protected pages       |
-| Rule      | Reject invalid or expired sessions                      |
-| Path      | Handle failed registration attempts safely              |
-| Path      | Handle failed login attempts safely                     |
-| Interface | Keep browser authentication state correct after refresh |
-| Rule      | Limit repeated failed login attempts                    |
+Actually, there are three different ways we could build this feature. And we may fall into the tradeoffs of one of the three
+modes below:
 
-Milestone Outcome  
-> Users can safely register, log in, remain logged in during normal browser use, access protected pages, and receive safe error handling when authentication fails.
+| Technique                         | What it optimizes for                                        | Tradeoff                                                                         |
+| --------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| **Sooner, not faster**            | Early usable value and feedback                              | Requires careful slicing; may feel slower because each slice must be end-to-end  |
+| **Parts-first / component-first** | Building the required pieces in a logical construction order | Progress is real, but value appears late because the pieces are not usable alone |
+| **Technical-layer slicing**       | Team specialization and architectural separation             | Easy to assign work by skill area, but integration risk and feedback arrive late |
 
-## Milestone 3: Account Recovery and Authentication Hardening
-| SPIDR     | Story title                                                          |
-| --------- | -------------------------------------------------------------------- |
-| Path      | Reset a forgotten password                                           |
-| Path      | Verify email before using account-only features                      |
-| Rule      | Expire password reset links after a short period                     |
-| Rule      | Prevent reuse of invalid or expired recovery links                   |
-| Interface | Provide clear account recovery UI states                             |
-| Rule      | Log important authentication events for audit/debugging              |
-| Rule      | Notify users about sensitive account changes                         |
-| Data      | Track account status such as active, locked, or pending verification |
+So yes, sometimes we want to validate our product idea, and in this case **sooner, not faster** is the ideal build paradigm.
+However, other-times we just want to show the product owner/team that we are making progress towards some portion of the feature.
+Parts-first works well in these cases, where they can see the UI being build, API, and then database layers. Finally, we may
+divide up the work by logical technical boundaries, such as microservices. So we assign a developer to each architecture piece,
+and give definitions for the interfaces that exist between each code structure (with minimal communication between the microservices).
 
-Milestone Outcome  
-> Users can recover access to their account, verify ownership of their email, and rely on stronger protections around sensitive authentication events.
+# Conclusion - Understand the Product Focus
 
-## Further Article Ideas
-* FAQ on SPIDR
-* Details on how to apply SPIDR to a mature system rather than greenfield
-* Details on once we have an epic setup, how to split stories/change the flow
-* Common Failure Modes?
-* How to integrate these stories into deployment schemes (Feature Flags, Continuous Delivery/Deployment, Internal Demos, etc.)
+The key here, is once we have discovered the key need our product solves, we want to iterate on the delivery of this feature
+to continually give the customer a better experience while using our solution. Don't just pump out features that noone ever
+uses, but instead give the customer a stronger value proposition for choosing you over competitors.
