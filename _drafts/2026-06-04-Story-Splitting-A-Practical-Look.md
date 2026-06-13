@@ -107,3 +107,8 @@ and give definitions for the interfaces that exist between each code structure (
 The key here, is once we have discovered the key need our product solves, we want to iterate on the delivery of this feature
 to continually give the customer a better experience while using our solution. Don't just pump out features that noone ever
 uses, but instead give the customer a stronger value proposition for choosing you over competitors.
+
+# References
+
+* http://butunclebob.com/ArticleS.TimOttinger.SoonerNotFaster
+* 
