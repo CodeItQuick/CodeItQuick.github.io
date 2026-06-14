@@ -21,7 +21,7 @@ still provide value, feedback, learning, and risk reduction. When task decomposi
 may end up with smaller work items that still do not produce a usable outcome.
 
 I will show why task decomposition is often mistaken for story splitting, and why that mistake creates smaller tasks without 
-creating smaller outcomes.
+creating smaller outcomes. We will learn to deliver the same value, but sooner.
 
 # Why we split stories
 
