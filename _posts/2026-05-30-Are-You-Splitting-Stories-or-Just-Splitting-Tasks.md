@@ -13,7 +13,7 @@ tags: quality all
 
 We are given a large task to breakdown. So we divide it into several separate tasks, and call them user stories. User stories
 are frequently too large on first draft, so we have a need to split them into smaller tasks. A common failure mode is not 
-story splitting itself. It is confusing task decomposition with value slicing.
+story splitting itself. It is confusing task decomposition with value decomposition.
 
 **Task decomposition** is splitting work by the activities required to complete it. The work is smaller, but each step does
 not necessarily produce useful work on its own. **Value decomposition** is splitting work by smaller usable outcomes that 
