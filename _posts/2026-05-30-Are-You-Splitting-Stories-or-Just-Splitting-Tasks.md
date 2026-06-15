@@ -61,7 +61,7 @@ C. Eat food (30 minutes)
 D. Write down their critique into a piece of paper and send it to the owner (us) (30 minutes)
 ```
 
-But wait, our 1 hour estimate is outside our sprint timeframe. If we split purely by duration, we might arrive at something like this:
+But wait, our hour estimate is outside our sprint timeframe. If we split purely by duration, we might arrive at something like this:
 
 ```
 Title: Repeat until all 100 restaurants in town are reviewed
