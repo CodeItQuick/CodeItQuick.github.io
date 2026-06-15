@@ -12,13 +12,16 @@ tags: quality all
 </p>  
 
 We are given a large task to breakdown. So we divide it into several separate tasks, and call them user stories. User stories
-are frequently too large on first draft, so we have a need to split them into smaller tasks. A common failure mode is not 
-story splitting itself. It is confusing task decomposition with value decomposition.
+are frequently too large on first draft, so we have a need to split them into smaller tasks. We want to split these stories 
+because large stories delay learning. The value, feedback, and decision making we get from early feedback on what we are 
+build is valuable. A common failure mode is while story splitting is confusing task decomposition with value decomposition.
 
-**Task decomposition** is splitting work by the activities required to complete it. The work is smaller, but each step does
-not necessarily produce useful work on its own. **Value decomposition** is splitting work by smaller usable outcomes that 
+> **Task decomposition** is splitting work by the activities required to complete it. The work is smaller, but each step does
+not necessarily produce useful work on its own.   
+
+> **Value decomposition** is splitting work by smaller usable outcomes that 
 still provide value, feedback, learning, and risk reduction. When task decomposition replaces value decomposition, the team 
-may end up with smaller work items that still do not produce a usable outcome.
+may end up with smaller work items that still do not produce a usable outcome.  
 
 I will show why task decomposition is often mistaken for story splitting, and why that mistake creates smaller tasks without 
 creating smaller outcomes. We will learn to deliver the same value, but sooner.
