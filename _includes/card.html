@@ -1,45 +1,33 @@
-<div class="card card-side bg-base-200 shadow-xl w-full h-52 md:h-96 mx-auto" >
-    <figure class="h-52 w-52 md:w-96 md:h-96">
-        <img src="./assets/images/{{ include.image }}" class="aspect-cover object-cover w-full h-full" />
-    </figure>
-    <div class="card-body min-h-32 p-3 lg:p-5 text-neutral-content w-2/3">
-        <h2 class="card-title lg:text-2xl line-clamp-3 font-[display]" style="word-break: break-all">{{ include.title }}{{ include.name }}</h2>
-        <div class="hidden md:flex">
+<div class="card bg-backgroundSecondary shadow-xl mx-auto h-full">
+    <div class="card-body">
+        <h2 class="card-header h-[5.8rem] flex items-start flex-col"><span>{{ include.title }}{{ include.name }}</span>
             {% if include.tag_size > 0 %}
-                {% for content in include.tags %}
-                    {% if content != 'all' %}
-                    <span class="badge badge-lg leading-3 badge-neutral-content badge-outline text-neutral-content font-[body] mr-2">
+            {% for content in include.tags %}
+            {% if content != 'all' %}
+            <span class="badge badge-outline font-[body]">
                         {{ content }}
                     </span>
-                    {% endif %}
-                {% endfor %}
             {% endif %}
-        </div>
-        <div class="card-actions flex w-full flex-col justify-end lg:justify-between grow">
-            <div class="text-sm hidden md:block">
-                {{ include.description }}
+            {% endfor %}
+            {% endif %}</h2>
+        <div class="text-content2">
+            <div>
+                {% if include.time %}
+                Time: {{ include.time }}
+                {% endif %}
             </div>
+        </div>
+        <div class="card-footer">
             {% if include.url %}
-                <div class="w-full flex justify-between">
-                    <div class="text-sm hidden md:block">
-                    {% if include.time %}
-                        Time: {{ include.time }}
-                    {% endif %}
-                    </div>
-                    {% if include.github %}
-                    <a href="{{ include.github }}" >
-                        <button class="btn btn-primary text-neutral-content font-[body]">
-                                Github
-                        </button>
-                    </a>
-                    {% else %}
-                    <a href="{{ include.url }}" >
-                        <button class="btn btn-primary text-neutral-content font-[body]">
-                            Read
-                        </button>
-                    </a>
-                    {% endif %}
-                </div>
+            {% if include.github %}
+            <a href="{{ include.github }}">
+                <button class="btn btn-primary font-[body]">Github</button>
+            </a>
+            {% else %}
+            <a href="{{ include.url }}">
+                <button class="btn btn-primary font-[body]">Read</button>
+            </a>
+            {% endif %}
             {% endif %}
         </div>
     </div>

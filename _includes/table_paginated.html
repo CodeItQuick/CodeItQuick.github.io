@@ -1,136 +1,53 @@
-<div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: {{ site.posts.size }} }" class="bg-neutral w-full">
-    <div class="w-10/12 py-8 mx-auto md:p-8 flex flex-col justify-center">
-        <div class="mx-auto hidden sm:flex m-4 " >
-            {% for tag in site.tags %}
-                <button class="btn font-[nav] " :class="tag_filter === '{{ tag[0] }}' ?
-                    'btn btn-primary' : 'btn-base-200' "
+<div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: {{ site.posts.size }}, pageSize: window.innerWidth >= 1024 ? 6 : 3 }"
+     x-init="() => { const handler = () => { pageSize = window.innerWidth >= 1024 ? 6 : 3; pageNumber = 0; }; window.addEventListener('resize', handler); return () => window.removeEventListener('resize', handler); }"
+     class="w-full h-full max-w-3xl mx-auto">
+    <div class="py-8 mx-auto md:p-8 flex flex-col justify-center">
+        <div class="mx-auto hidden sm:flex m-4 gap-2 flex flex-wrap">
+            <button class="btn font-[nav]" :class="tag_filter === 'all' ? 'btn-primary' : 'btn-ghost'"
+                    x-on:click="tag_filter = 'all'; tag_count = {{ site.posts.size }}; pageNumber = 0;">
+                All
+            </button>
+            {% assign sorted_tags = site.tags | sort | where_exp: "tag", "tag[0] != 'all'" %}
+            {% for tag in sorted_tags %}
+                <button class="btn font-[nav] mx-auto " :class="tag_filter === '{{ tag[0] }}' ?
+                    'btn-primary' : 'btn-ghost'"
                         x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">
                     {{ tag[0] }}
                 </button>
             {% endfor %}
         </div>
-        <div x-data="{ index: 0 }" class="grid lg:grid-cols-2 gap-8 w-max-xl mx-auto">
-             {% for tag in site.tags %}
-                     {% assign currentIndex = 0 %}
-                     {% for row in tag[1] %}
-                                <div x-show="'{{ tag[0] }}'.includes(tag_filter)"
-                                     :class="{ 'hidden' : +'{{ currentIndex }}' < (pageNumber) * 6 || +'{{ currentIndex }}' > (pageNumber + 1) * 6 - 1 }"
-                                >
-                                   {% include card.html
-                                        image=row.image
-                                        title=row.name
-                                        time=row.time
-                                        description=row.description
-                                        tags=row.tags
-                                        tag_size=row.tags.size
-                                        url=row.url
-                                  %}
-                                </div>
-                       {% assign currentIndex = currentIndex | plus: 1 %}
-                    {% endfor %}
-             {% endfor %}
+        <div class="mx-auto">
+            <div x-data="{ index: 0 }" class="grid grid-rows-3 lg:grid-cols-2 gap-8">
+                 {% for tag in site.tags %}
+                         {% assign currentIndex = 0 %}
+                         {% for row in tag[1] %}
+                                    <div x-show="'{{ tag[0] }}'.includes(tag_filter)"
+                                         class="px-4"
+                                         :class="{ 'hidden' : +'{{ currentIndex }}' < (pageNumber) * pageSize || +'{{ currentIndex }}' > (pageNumber + 1) * pageSize - 1 }"
+                                    >
+                                       {% include card.html
+                                            image=row.image
+                                            title=row.name
+                                            time=row.time
+                                            description=row.description
+                                            tags=row.tags
+                                            tag_size=row.tags.size
+                                            url=row.url
+                                      %}
+                                    </div>
+                           {% assign currentIndex = currentIndex | plus: 1 %}
+                        {% endfor %}
+                 {% endfor %}
+            </div>
         </div>
     </div>
-    <div
-        class="w-full md:w-1/2 mx-auto py-6 flex justify-between items-center"
-        x-show="{{ site.posts.size }}"
-    >
-    <!--First Button-->
-    <button
-      x-on:click="pageNumber = 0"
-      :disabled="pageNumber==0"
-      :class="{ 'disabled cursor-not-allowed' : pageNumber==0 }"
-    >
-      <svg
-        class="h-8 w-8 text-neutral-content"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <polygon points="19 20 9 12 19 4 19 20"></polygon>
-        <line x1="5" y1="19" x2="5" y2="5"></line>
-      </svg>
-    </button>
-
-    <!--Previous Button-->
-    <button
-      x-on:click="--pageNumber"
-      :disabled="pageNumber==0"
-      :class="{ 'disabled cursor-not-allowed' : pageNumber==0 }"
-    >
-      <svg
-        class="h-8 w-8 text-neutral-content"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-    </button>
-
-    <!-- Display page numbers -->
-    <template x-for="index in Math.ceil(tag_count / 6)">
-      <button
-        class="px-3 py-2 rounded text-neutral-content"
-        :class="{ 'bg-primary text-white font-bold' : index - 1 === pageNumber }"
-        type="button"
-        x-on:click="pageNumber = index - 1"
-      >
-        <span x-text="index"></span>
-      </button>
-    </template>
-
-    <!--Next Button-->
-    <button
-      x-on:click="++pageNumber"
-      :disabled="pageNumber >= Math.floor(tag_count / 6)"
-      :class="{ 'disabled cursor-not-allowed' : pageNumber >= Math.floor(tag_count / 6) }"
-    >
-      <svg
-        class="h-8 w-8 text-neutral-content"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-    </button>
-
-    <!--Last Button-->
-    <button
-      x-on:click="++pageNumber"
-      :disabled="pageNumber >= Math.floor(tag_count / 6)"
-      :class="{ 'disabled cursor-not-allowed' : pageNumber >= Math.floor(tag_count / 6) }"
-    >
-      <svg
-        class="h-8 w-8 text-neutral-content"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <polygon points="5 4 15 12 5 20 5 4"></polygon>
-        <line x1="19" y1="5" x2="19" y2="19"></line>
-      </svg>
-    </button>
-  </div>
+    <div class="flex justify-center py-6" x-show="{{ site.posts.size }}">
+        <div class="pagination pagination-rounded flex gap-2">
+            <button class="btn" @click="pageNumber--" :disabled="pageNumber === 0">‹</button>
+            <template x-for="index in Math.ceil(tag_count / pageSize)">
+                <button class="btn" :class="{ 'btn-active': index - 1 === pageNumber }" @click="pageNumber = index - 1" x-text="index"></button>
+            </template>
+            <button class="btn" @click="pageNumber++" :disabled="pageNumber >= Math.ceil(tag_count / pageSize) - 1">›</button>
+        </div>
+    </div>
 </div>

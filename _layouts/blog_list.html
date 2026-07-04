@@ -16,16 +16,22 @@
         }
         return this.mode;
     }
-}" >
+}">
 {% include header.html %}
 
-<body class="bg-neutral text-neutral-content mx-auto font-[body] min-h-svh flex flex-col" x-bind:data-theme="getMode()">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M88FQM8M"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    {% include navbar.html %}
+<body class="bg-backgroundPrimary font-[body] flex flex-col min-h-screen "
+      x-bind:data-theme="getMode()">
 
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M88FQM8M"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="grow max-w-3xl mx-auto w-full">
+    {% include navbar.html %}
+</nav>
+<main class="grow max-w-3xl mx-auto">
     {% include table_paginated.html %}
 
     <footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content mt-auto">
@@ -33,6 +39,8 @@
             <p>Copyright © 2024 - All right reserved by CodeItQuick</p>
         </aside>
     </footer>
+
+</main>
 </body>
 
 </html>

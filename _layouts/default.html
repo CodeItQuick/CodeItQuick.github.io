@@ -18,19 +18,22 @@
     }
 }" >
   {% include header.html %}
-  <body class="bg-neutral text-neutral-content mx-auto antialiased font-[body] min-h-svh flex flex-col"  x-bind:data-theme="getMode()">
+  <nav class="grow max-w-3xl mx-auto w-full">
+    {% include navbar.html %}
+  </nav>
+  <body class="mx-auto antialiased font-[body] min-h-svh flex flex-col"  x-bind:data-theme="getMode()">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M88FQM8M"
                     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-    {% include navbar.html %}
 
+
+  <div class="grow max-w-3xl mx-auto w-full">
     {% include hero.html title=site.title description=site.description image="hero_project_graveyard.webp" %}
+  </div>
 
-    {% include table.html table=site.projects %}
-    
   </body>
-  <footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content mt-auto">
+  <footer class="footer footer-center m-0 p-4 bg-backgroundSecondary text-base-content mt-auto">
     <aside>
       <p>Copyright © 2024 - All right reserved by CodeItQuick</p>
     </aside>

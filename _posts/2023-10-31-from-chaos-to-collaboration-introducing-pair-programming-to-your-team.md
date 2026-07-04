@@ -1,6 +1,6 @@
 ---
 layout: post
-name: From Chaos to Collaboration - Introducing Pair Programming
+name: From Chaos to Collaboration - Pair Programming
 description: Adopt pair programming to reduce development chaos  
 image: what_pairing_zombie.png
 time: "4m:27s"
