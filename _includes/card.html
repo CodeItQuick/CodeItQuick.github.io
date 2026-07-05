@@ -1,6 +1,7 @@
 <div class="card bg-backgroundSecondary shadow-xl mx-auto h-full">
     <div class="card-body">
-        <h2 class="card-header h-[5.8rem] flex items-start flex-col"><span>{{ include.title }}{{ include.name }}</span>
+        <h2 class="card-header h-[108px] flex items-start flex-col">
+            <span class="h-full">{{ include.title }}{{ include.name }}</span>
             {% if include.tag_size > 0 %}
             {% for content in include.tags %}
             {% if content != 'all' %}
