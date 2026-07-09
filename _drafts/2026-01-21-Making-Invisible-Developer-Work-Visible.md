@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post  
 name: Making the Invisible 60% of Development Work Visible  
 description: What is the developer iceberg of work and how do we tackle it  
@@ -44,6 +44,7 @@ Understanding what capabilities each type of work builds helps you make strategi
 | **Improve** | **Maintainability**, **Changeability**, **Testability** | Developer velocity, Readability, Consistency, Reduced defect rate over time |
 | **Run**     | **Reliability**, **Observability**, **Operability**     | Recoverability, Performance under load, Cost control, Compliance readiness  |
 | **Evolve**  | **Scalability**, **Extensibility**, **Adaptability**    | Portability, Architecture agility, Future-proofing, Strategic alignment     |
+{: .table .table-zebra .table-hover}
 
 We tend to think in terms of only build/fix. It is an interesting observation that "fix" really goes along with every task
 that is manageable. However, improve and run are important aspects of software once it has been built. We have to ensure
@@ -71,6 +72,7 @@ Each bucket optimizes for different outcomes, creating natural tensions:
 | **Improve vs. Run**       | Beautiful, testable code that crashes in production or can't be diagnosed when it fails | System stays up but becomes increasingly hard to change; tech debt makes even simple changes risky |
 | **Improve vs. Evolve**    | Locally optimal but globally constrained; clean code trapped in wrong architecture | New architecture with messy implementation; grand vision but poor execution quality |
 | **Run vs. Evolve**        | Stable but architecturally locked in; can't scale or adapt; "keeping the lights on" with no path forward | Bold architectural changes destabilize production; operational excellence sacrificed for future vision |
+{: .table .table-zebra .table-hover}
 
 ## Recommended Balance by Context
 
@@ -85,6 +87,7 @@ Each bucket optimizes for different outcomes, creating natural tensions:
 | **Mature Product** | 25-35% | 10-15% | 20-30% | 20-25% | 10-15% |
 | **Crisis/Incident Mode** | 5-10% | 30-40% | 5-10% | 40-50% | 0% |
 | **Major Migration** | 20-30% | 10-15% | 15-20% | 15-20% | 30-40% | 
+{: .table .table-zebra .table-hover}
 
 ---
 

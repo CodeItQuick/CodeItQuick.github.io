@@ -36,6 +36,7 @@ work layered onto a system that already runs.
 | Rule      | Store passwords securely                                       | Complete minimal login/logout flow          |
 | Rule      | Limit repeated failed login attempts                           | Complete minimal login/logout flow          |
 | Data      | Return the current authenticated user's basic account identity | Complete minimal login/logout flow          |
+{: .table .table-zebra .table-hover}
 
 Look at the "Blocked by" column. Only two stories are truly sequential — the spike, and the skeleton path that follows it. 
 Every story after that is blocked by the skeleton, not by each other. That means once the skeleton ships, the team can 

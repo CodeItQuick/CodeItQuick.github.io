@@ -1,4 +1,4 @@
-﻿
+
 
 # Further Improvements - Moving the Epic into Milestones
 
@@ -11,6 +11,7 @@ the story. At what point do we turn off the feature flags to allow for delivery 
 | ----- | --------------------------------------------------------------------------- |
 | Spike | Decide the minimum authentication approach                                  |
 | Path  | Complete minimal register/login/logout flow on a protected placeholder page |
+{: .table .table-zebra .table-hover}
 
 Milestone Outcome
 > A user can register, log in, see that they are authenticated, view a protected placeholder page, and log out in a controlled/internal environment.
@@ -25,6 +26,7 @@ Milestone Outcome
 | Path      | Handle failed login attempts safely                     |
 | Interface | Keep browser authentication state correct after refresh |
 | Rule      | Limit repeated failed login attempts                    |
+{: .table .table-zebra .table-hover}
 
 Milestone Outcome
 > Users can safely register, log in, remain logged in during normal browser use, access protected pages, and receive safe error handling when authentication fails.
@@ -40,6 +42,7 @@ Milestone Outcome
 | Rule      | Log important authentication events for audit/debugging              |
 | Rule      | Notify users about sensitive account changes                         |
 | Data      | Track account status such as active, locked, or pending verification |
+{: .table .table-zebra .table-hover}
 
 Milestone Outcome
 > Users can recover access to their account, verify ownership of their email, and rely on stronger protections around sensitive authentication events.

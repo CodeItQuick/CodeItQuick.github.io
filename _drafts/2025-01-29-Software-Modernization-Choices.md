@@ -35,6 +35,7 @@ Modernization or other choices for a software system.
 | **Security & Compliance** | Zero Trust, Blockchain |
 | **Code Optimization & AI** | Reverse Engineering, AI-Assisted Refactoring |
 | **Low-Code Development** | Low-Code/No-Code Migration |
+{: .table .table-zebra .table-hover}
 
 
 # **Software Modernization Approaches & Their Tradeoffs**
@@ -66,3 +67,4 @@ Modernization or other choices for a software system.
 | **Zero Trust Security Implementation** | Enhancing security with **strict access control policies**. | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐ | Security-focused enterprises. |
 | **Cross-Platform Migration** | Moving an app between OS environments (e.g., Windows → Linux, iOS → Android). | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | Expanding platform reach. |
 | **Blockchain Integration** | Adding **blockchain-based security, identity, or smart contracts**. | ⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Decentralized apps, fintech. |
+{: .table .table-zebra .table-hover}

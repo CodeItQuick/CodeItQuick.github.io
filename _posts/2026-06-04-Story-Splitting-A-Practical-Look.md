@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 name: Story Splitting A Practical Look
 description: Story Splitting - the practical details
@@ -36,6 +36,7 @@ a list properly) we come up with the below list:
 | Interface | Stay logged in across page refreshes                  | #7                          |
 | Rule      | Prevent unauthenticated access to protected pages     | #5                          |
 | Rule      | Reject invalid or expired sessions                    | #3 and #8                   |
+{: .table .table-zebra .table-hover}
 
 Something is off here as well. A lot of the work is sequential. The part we missed is **thin vertical slices**. Sure, we
 identified the components within the general epic, but we have failed (yet again) to identify the thin vertical slices.
@@ -52,18 +53,19 @@ we have the skeleton done, we can begin filling in the path with the Interface, 
 
 ## Removing the blocking portions to have independent stories
 
-| SPIDR     | Story title                                                    | Blocked by                                  |
-| --------- | -------------------------------------------------------------- | ------------------------------------------- |
-| Spike     | Decide the minimum authentication approach                     | Nothing                                     |
-| Path      | Complete minimal register/login/logout flow                    | Decide the minimum authentication approach  |
-| Path      | Handle failed registration attempts                            | Complete minimal register/login/logout flow |
-| Path      | Handle failed login attempts                                   | Complete minimal register/login/logout flow |
-| Interface | Keep browser authentication state correct after refresh        | Complete minimal register/login/logout flow |
-| Rule      | Prevent unauthenticated access to protected pages              | Complete minimal register/login/logout flow |
-| Rule      | Reject invalid or expired sessions                             | Complete minimal register/login/logout flow |
-| Rule      | Store passwords securely                                       | Complete minimal register/login/logout flow |
-| Rule      | Limit repeated failed login attempts                           | Complete minimal register/login/logout flow |
-| Data      | Return the current authenticated user’s basic account identity | Complete minimal register/login/logout flow |
+| SPIDR     | Story title                                                    | Blocked by                   |
+| --------- | -------------------------------------------------------------- | ---------------------------- |
+| Spike     | Decide the minimum authentication approach                     | Nothing                      |
+| Path      | Complete minimal register/login/logout flow                    | Decide the minimum approach  |
+| Path      | Handle failed registration attempts                            | Complete minimal flow |
+| Path      | Handle failed login attempts                                   | Complete minimal flow |
+| Interface | Keep browser authentication state correct after refresh        | Complete minimal flow |
+| Rule      | Prevent unauthenticated access to protected pages              | Complete minimal flow |
+| Rule      | Reject invalid or expired sessions                             | Complete minimal flow |
+| Rule      | Store passwords securely                                       | Complete minimal flow |
+| Rule      | Limit repeated failed login attempts                           | Complete minimal flow |
+| Data      | Return the current authenticated user’s basic account identity | Complete minimal flow |
+{: .table .table-zebra .table-hover}
 
 Now the only thing that usually blocks us is the first two stories. We need a minimal skeleton built, before we fill in
 the abbreviated/niave parts.
@@ -92,11 +94,12 @@ to iteratively build a better and better solution to whatever solves the core cu
 Actually, there are three different ways we could build this feature. And we may fall into the tradeoffs of one of the three
 modes below:
 
-| Technique                         | What it optimizes for                                        | Tradeoff                                                                         |
-| --------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-| **Sooner, not faster**            | Early usable value and feedback                              | Requires careful slicing; may feel slower because each slice must be end-to-end  |
-| **Parts-first / component-first** | Building the required pieces in a logical construction order | Progress is real, but value appears late because the pieces are not usable alone |
-| **Technical-layer slicing**       | Team specialization and architectural separation             | Easy to assign work by skill area, but integration risk and feedback arrive late |
+| Technique                         | What it optimizes for           | Tradeoff                                                                         |
+| --------------------------------- |---------------------------------| -------------------------------------------------------------------------------- |
+| **Sooner, not faster**            | Early usable value and feedback | Requires careful slicing  |
+| **Parts-first / component-first** | logical construction order      | value appears late |
+| **Technical-layer slicing**       | architectural separation        | integration risk and feedback arrive late |
+{: .table .table-zebra .table-hover}
 
 So yes, sometimes we want to validate our product idea, and in this case **sooner, not faster** is the ideal build paradigm.
 However, other-times we just want to show the product owner/team that we are making progress towards some portion of the feature.

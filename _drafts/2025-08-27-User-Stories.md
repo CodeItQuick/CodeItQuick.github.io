@@ -1,4 +1,4 @@
-﻿# How to Use User Stories to Drive Product Roadmaps
+# How to Use User Stories to Drive Product Roadmaps
 
 ## Introduction
 Stop obsessing over Gantt charts—start obsessing over stories.
@@ -56,6 +56,7 @@ They outline the “big rocks” — the things executives want to see progress 
 | Q1      | Modern Software | Modernize UX                | Epic B | *As a user, I want a responsive layout so that I can seamlessly switch devices.* |
 | Q2      | Intuitive Tools | Onboarding Without Training | Epic D | *As a first-time user, I want to be guided through my first key task.*           |
 | Q2      | Intuitive Tools | Intelligent Defaults        | Epic F | *As a new customer, I want recommended settings pre-configured.*                 |
+{: .table .table-zebra .table-hover}
 
 ## Story Mapping as a Roadmap Tool  
 

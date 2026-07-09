@@ -24,6 +24,7 @@ using.
 | Shift + F6     | Rename Variable                                     |
 | Ctrl + P       | List function parameters |
 | Ctrl + Space   | Trigger autocomplete manually |
+{: .table .table-zebra .table-hover}
 
 These are the basic shortcuts everyone should really be using. Rename variable and alt + enter
 are probably the most useful. List function parameters is a recent one I've learned that is handy a lot.
@@ -36,6 +37,7 @@ Autocomplete allows for grabbing methods without having to look at the function 
 | Alt + Up/Down Arrows | Move line Up/Down |
 | Alt + J | Grab next occurance of whatever is highlighted |
 | Ctrl + Left/Right Arrows | Skip to next word |
+{: .table .table-zebra .table-hover}
 
 This set lets you move things around. Alt + J and combined with Ctrl + arrows lets
 you skip between things in multiple lines and apply whatever is needed - good for mass editing.
@@ -51,6 +53,7 @@ Moving lines up and down is slightly faster than cut/paste and looks a little bi
 | Ctrl + Alt + V | Extract Variable                                    |
 | Ctrl + Alt + P | Extract Parameter                                   |
 | Ctrl + Alt + F | Extract Field                                       |
+{: .table .table-zebra .table-hover}
 
 Most of the refactoring shortcuts are ctrl + alt + *some command*. If you want to learn
 one shortcut only, remember the first one. That shortcut (alt + enter) will allow
@@ -67,6 +70,7 @@ There are shortcuts to go to each individual tab as detailed below.
 | Ctrl + N | Go to Class |
 | Ctrl + Shift + N | Go To Files |
 | Ctrl + Alt + Shift + N | Go To Symbols |
+{: .table .table-zebra .table-hover}
 
 ## Basic Editor Moving Around
 Moving around in the editor, these shortcuts are used frequently. The goto error
@@ -80,6 +84,7 @@ to jump between methods.
 | Alt + Down | Next Method |
 | F2 | Go to Next Error |
 | Shift + F2 | Go To Previous Error |
+{: .table .table-zebra .table-hover}
 
 ## Goto by Reference Actions
 I use goto declaration or usage frequently, and need to start trying some of the other shortcuts in here more frequently.
@@ -93,4 +98,5 @@ I use goto declaration or usage frequently, and need to start trying some of the
 | Ctrl + Shift + T | Go To Test |
 | Ctrl + F12 | File Structure |
 | Ctrl + Alt + F12 | File Path |
+{: .table .table-zebra .table-hover}
 
