@@ -94,10 +94,10 @@ to iteratively build a better and better solution to whatever solves the core cu
 Actually, there are three different ways we could build this feature. And we may fall into the tradeoffs of one of the three
 modes below:
 
-| Technique                         | What it optimizes for           | Tradeoff                                                                         |
-| --------------------------------- |---------------------------------| -------------------------------------------------------------------------------- |
-| **Sooner, not faster**            | Early usable value and feedback | Requires careful slicing  |
-| **Parts-first / component-first** | logical construction order      | value appears late |
+| Technique                         | What it optimizes for           | Tradeoff                                  |
+| --------------------------------- |---------------------------------|-------------------------------------------|
+| **Sooner, not faster**            | Early usable value and feedback | Requires careful slicing                  |
+| **Parts-first / component-first** | logical construction order      | value appears late                        |
 | **Technical-layer slicing**       | architectural separation        | integration risk and feedback arrive late |
 {: .table .table-zebra .table-hover}
 
