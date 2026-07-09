@@ -1,16 +1,29 @@
 <div class="card bg-backgroundSecondary shadow-xl mx-auto h-full">
     <div class="card-body">
-        <h2 class="card-header h-[108px] flex items-start flex-col">
-            <span class="h-full">{{ include.title }}{{ include.name }}</span>
-            {% if include.tag_size > 0 %}
-            {% for content in include.tags %}
-            {% if content != 'all' %}
-            <span class="badge badge-outline font-[body]">
-                        {{ content }}
-                    </span>
-            {% endif %}
-            {% endfor %}
-            {% endif %}</h2>
+
+            <h2 class="card-header h-[108px] flex items-start flex-col">
+                {% if include.url %}
+                {% if include.github %}
+                <a href="{{ include.github }}">
+                    <span class="h-full">{{ include.title }}{{ include.name }}</span>
+                </a>
+                {% else %}
+                <a href="{{ include.url }}">
+                    <span class="h-full">{{ include.title }}{{ include.name }}</span>
+                </a>
+                {% endif %}
+                {% endif %}
+
+                {% if include.tag_size > 0 %}
+                {% for content in include.tags %}
+                {% if content != 'all' %}
+                <span class="badge badge-outline font-[body]">
+                            {{ content }}
+                        </span>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+            </h2>
         <div class="text-content2">
             <div>
                 {% if include.time %}

@@ -16,7 +16,9 @@ significantly different to have good splits of stories. You have to understand t
 used paradigms within your team. Then, have a meeting that looks a lot more like a design meeting to come to an understanding
 of what the code should look like. Finally, splitting according to an acronym like SPIDR is possible. 
 
-# Begin by Reframing Authentication with SPIDR
+# Applying SPIDR to Authentication
+
+## Begin by Reframing Authentication with SPIDR
 
 For our old authentication example, we are going to start with attempting SPIDR kind of blindly in our first attempt. 
 We want to write out our epic for the entire authentication flow. After some homework (or maybe just asking chatgpt for 
@@ -39,7 +41,7 @@ Something is off here as well. A lot of the work is sequential. The part we miss
 identified the components within the general epic, but we have failed (yet again) to identify the thin vertical slices.
 These slices should look iterative, not like a puzzle piece/components. 
 
-# The SPIDR Fanout
+## The SPIDR Fanout
 
 The general SPIDR format is: setup a SPIKE to learn the general formatting, then go through the minimum skeleton path. After
 we have the skeleton done, we can begin filling in the path with the Interface, Rules, and finally the Data.
@@ -48,7 +50,7 @@ we have the skeleton done, we can begin filling in the path with the Interface, 
     <img src="/assets/images/SPIDR_car_building.png"  alt="SPIDR Building A Car" height="512" width="512" />
 </p>  
 
-# Removing the blocking portions to have independent stories
+## Removing the blocking portions to have independent stories
 
 | SPIDR     | Story title                                                    | Blocked by                                  |
 | --------- | -------------------------------------------------------------- | ------------------------------------------- |
@@ -111,4 +113,3 @@ uses, but instead give the customer a stronger value proposition for choosing yo
 # References
 
 * http://butunclebob.com/ArticleS.TimOttinger.SoonerNotFaster
-* 
