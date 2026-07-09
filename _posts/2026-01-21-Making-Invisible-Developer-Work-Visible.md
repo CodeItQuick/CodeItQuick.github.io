@@ -9,27 +9,98 @@ tags: quality all
 # Introduction
 
 Development teams rarely move out of the "build" mindset in later stages of development, or in crisis/migration situations.
-This article buckets the 30 types of developer work into 5 separate bins, and then gives guidelines on what to focus on
-in different product development situations.
-
----
+The pain described in this article is frequent. Developer's are explaining to stakeholders the variety of work they encounter
+on a day-to-day basis, with the fear that the business really only understands two things - features and bugs. We conclude
+with the 6 buckets of development work for a shared understanding of the day-to-day.
 
 # The Problem
 
 Developers often struggle to explain where their time goes to the product owners and business side of the equation. Business
 stakeholders often see only "features" and "bugs", but developers know there's a lot more work involved. Furthermore, 
-once the feature is built and fixed, there is still significantly more work to be done in terms of maintenance costs. These
-other four buckets are fix, improve, run, and evolve. Finally, the kinds of work that should be focused on varies depending
-on what stage of development the product is in.
+once the feature is built and fixed, there is still significantly more work to be done in terms of maintenance costs. What
+are these other kinds of work we frequently forget about, and how can we clearly define them so there is a shared understanding?
 
----
+## The Top of The Iceberg 
+### Product Work & Fixing Things
+
+**Product Work**    
+* Features    
+* Enhancements    
+* Experimentation    
+* Product Polish    
+
+**Fixing Things**  
+* Production Incident    
+* Bugs    
+* Defect Prevention    
+
+This is the obvious work that developers do. The feature that is shipped, the button enhancements, experimentation, and 
+just overall product polish. Noone really debates the importance of this work, it's just that it's not the entire picture.
+So while this work is extremely important, and perhaps we should even optimize for this type of work, it is not the entire
+picture. 
+
+## The Iceberg
+### Business As Usual: Operations - Platform / Infrastructure Work, Architecture & System Evolution
+
+**Platform / Infrastructure Work**
+* DevEx / Tooling   
+* CI / CD   
+* Infrastructure Changes   
+* Monitoring Operations   
+
+**Architecture & System Evolution**
+* Architecture Changes   
+* Migrations   
+* Integration Work   
+
+There is also the portion of work we pay operations for and just "forget about it". These are the renewing SSL certificates,
+giving permissions to different user groups. It includes other things however that are often forgotten or thrown to the wayside,
+like Developer Tooling, and CI / CD. These portions of work are frequently not budgeted in our planning systems, and as
+a result are not tackled and left to rot for long periods of time.
+
+### Table Stakes: Quality Work, Support & Collaboration, and Discovery & Planning Work
+
+**Quality Work**  
+* Testing Work  
+* QA Support  
+* Observability  
+
+**Support & Collaboration**  
+* Code Review  
+* Debugging / Investigation  
+* Documentation  
+* Stakeholder Communication  
+
+**Discovery / Planning Work**  
+* Spikes / Research  
+* Design  
+* Backlog Grooming  
+
+Then there's the activities that are simply assumed to be necessary. The work has to be high quality; the software has to
+work properly. So we build automated test suites, invest in our manual QA team, and verify everything that has shipped 
+works in production, under load, for the largest of our customers.
+
+
+### The Never Addressed: Improve How it Works & Keeping Things Current
+
+**Improve How It Works**
+* Refactoring  
+* Tech Debt  
+* Performance Work  
+* Reliability / Resilience  
+* Security Work  
+* Maintainability  
+
+**Keeping Things Current**
+* Dependency Upgrades  
+* Compliance / Policy Work  
+
+Finally there is the true metaphorical bottom of the iceberg. The things we rarely have time for - large refactors or rewrites
+of the system as it's use cases potentially change. Performance work to keep the solution generally scaling; making sure
+the code base is easy to maintain, and not costly to make fixes or understand. As well as keeping the system up-to-date
+in terms of dependency upgrades, compliance, policies, etc.
 
 # The Five Buckets of Work
-
-<p align="center" width="100%">
-    <img src="/assets/images/iceberg_buckets.jpg"  alt="Product Iceberg" height="512" width="512" />
-</p>  
-
 ## What Each Bucket Builds
 
 Understanding what capabilities each type of work builds helps you make strategic decisions about where to invest time.
@@ -47,97 +118,13 @@ We tend to think in terms of only build/fix. It is an interesting observation th
 that is manageable. However, improve and run are important aspects of software once it has been built. We have to ensure
 SSL certificates are updated, the code continues to perform at a high level, and that our costs are reasonable.
 
----
-
-# The Tradeoffs
-
-Each bucket optimizes for different outcomes, creating natural tensions:
-
-* **Build**: Delivers value NOW
-* **Fix**: Restores trust and correctness
-* **Improve**: Makes future changes faster and safer
-* **Run**: Keeps the lights on
-* **Evolve**: Positions you for future scale/flexibility
-
-## Tradeoff Comparison Table
-
-| Comparison                | Too Much of First | Too Much of Second |
-|---------------------------|-------------------|-------------------|
-| **Build/Fix vs. Improve** | Tech debt accumulates; velocity crashes later; code becomes fragile and hard to change; simple changes take longer | Over-engineering; perfect code nobody uses; lost market opportunities; feature delivery stalls |
-| **Build/Fix vs. Run**     | Production becomes unreliable; outages increase; can't diagnose issues; no operational confidence | System stays stable but feature-starved; competitors ship faster; business value stagnates |
-| **Build/FIx vs. Evolve**  | Features pile up on weak foundations; system becomes unmaintainable; architectural collapse; rewrites loom | Grand architecture plans while missing market windows; over-designed platforms no one needs yet |
-| **Improve vs. Run**       | Beautiful, testable code that crashes in production or can't be diagnosed when it fails | System stays up but becomes increasingly hard to change; tech debt makes even simple changes risky |
-| **Improve vs. Evolve**    | Locally optimal but globally constrained; clean code trapped in wrong architecture | New architecture with messy implementation; grand vision but poor execution quality |
-| **Run vs. Evolve**        | Stable but architecturally locked in; can't scale or adapt; "keeping the lights on" with no path forward | Bold architectural changes destabilize production; operational excellence sacrificed for future vision |
-{: .table .table-zebra .table-hover}
-
-# Recommended Balance by Context
-
+# Conclusion - The Iceberg
 <p align="center" width="100%">
-    <img src="/assets/images/garden_stages_cropped.gif"  alt="Product Garden" height="512" width="512" />
+    <img src="/assets/images/iceberg_buckets.jpg"  alt="Product Iceberg" height="512" width="512" />
 </p>  
 
-| Context | Build | Fix | Improve | Run | Evolve |
-|---------|-------|-----|---------|-----|--------|
-| **Startup/Early Product** | 60-70% | 15-20% | 5-10% | 5-10% | 0-5% |
-| **Growth Phase** | 40-50% | 15-20% | 15-20% | 10-15% | 5-10% |
-| **Mature Product** | 25-35% | 10-15% | 20-30% | 20-25% | 10-15% |
-| **Crisis/Incident Mode** | 5-10% | 30-40% | 5-10% | 40-50% | 0% |
-| **Major Migration** | 20-30% | 10-15% | 15-20% | 15-20% | 30-40% | 
-{: .table .table-zebra .table-hover}
-
----
-
-# Appendix: Kinds of Work
-
-Here's how common development tasks map to the five buckets, with priority guidance:
-
-## Product Work
-* **Features** → *Build* • Priority: *High* — New user-visible or business-visible capability (new screen/endpoint/workflow)
-* **Enhancements** → *Build* • Priority: *High* — Improvements to existing features, UX refinements
-* **Experimentation** → *Build* • Priority: *Medium* — A/B tests, prototypes, or small experiments to validate an idea quickly
-* **Product Polish** → *Build* • Priority: *Medium* — UX tweaks, copy changes, accessibility improvements, "fit and finish"
-
-## Fixing Things
-* **Production Incident** → *Fix* • Priority: **Immediate** — Restore service fast (hotfix, rollback, mitigation)
-* **Bugs** → *Fix/Improve* • Priority: *Higher* — Correctness issues (crashes, wrong results, regressions, edge cases)
-* **Defect Prevention** → *Improve* • Priority: *High* — Hardening code paths that frequently fail to reduce future bugs/incidents
-
-## Quality Work
-* **Testing Work** → *Improve* • Priority: *High* — Add/improve unit/integration/e2e tests; reduce flakiness; target risky areas
-* **QA Support** → *Fix/Improve* • Priority: *High* — Repro steps + test data to close a specific issue (Fix); lasting automation/process improvements (Improve)
-* **Observability** → *Run* • Priority: *Higher* — Logs/metrics/traces/dashboards/alerts that make issues visible early and diagnosable
-
-## "Improve How It Works"
-* **Refactoring** → *Improve* • Priority: *Medium* — Restructure code to be clearer/safer without changing behavior
-* **Tech Debt** → *Improve* • Priority: *Medium* — Remove shortcuts that slow future work or increase risk
-* **Performance Work** → *Improve/Run* • Priority: *High* — Latency/build speed/memory/query tuning
-* **Reliability / Resilience** → *Run* • Priority: *Higher* — Timeouts, retries, idempotency, graceful degradation, circuit breakers
-* **Security Work** → *Run/Fix* • Priority: **Highest** — Vulnerability fixes, authz/authn improvements, security upgrades
-* **Maintainability** → *Improve* • Priority: *High* — Simplify design, improve modularity, reduce duplication, clearer interfaces
-
-## Platform / Infrastructure Work
-* **DevEx / Tooling** → *Improve* • Priority: *Medium* — Faster local setup, scripts, linting/formatting, generators, internal CLIs
-* **CI / CD** → *Run* • Priority: *Higher* — Build/deploy automation, release process, environment parity
-* **Infrastructure Changes** → *Evolve* • Priority: *High* — Cloud resources, networking, scaling, cost optimization
-* **Monitoring Operations** → *Run* • Priority: *Higher* — On-call runbooks, SLOs/SLIs, incident playbooks, alert tuning
-
-## Architecture & System Evolution
-* **Architecture Changes** → *Evolve* • Priority: *High* — New services/modules, boundary changes, domain modeling shifts
-* **Migrations** → *Evolve* • Priority: *Higher* — DB schema/data moves, API versioning, framework upgrades
-* **Integration Work** → *Build/Fix* • Priority: *Higher* — Third-party APIs, identity providers, payments, webhooks
-
-## Keeping Things Current
-* **Dependency Upgrades** → *Run/Evolve* • Priority: *High* — Library/runtime/OS/container upgrades
-* **Compliance / Policy Work** → *Run* • Priority: **Highest** — Data retention, privacy requirements, audit logs, access reviews
-
-## Support & Collaboration
-* **Code Review** → *Improve* • Priority: *High* — Catch issues early, improve consistency, spread knowledge
-* **Debugging / Investigation** → *Fix* • Priority: *Higher* — Root cause analysis, "why is this slow/flaky?"
-* **Documentation** → *Improve/Run* • Priority: *Medium* — Dev docs/onboarding/ADRs (Improve) and operational runbooks (Run)
-* **Stakeholder Communication** → *Build* • Priority: *High* — Estimates, tradeoffs, scope alignment, release notes
-
-## Discovery / Planning Work
-* **Spikes / Research** → *Build/Evolve* • Priority: *Medium* — Time-boxed exploration to reduce uncertainty
-* **Design** → *Build/Evolve* • Priority: *High* — Specs/RFCs/diagrams/test plans to align implementation
-* **Backlog Grooming** → *Build* • Priority: *Medium* — Break epics into tickets, define acceptance criteria, clarify "done"
+The product iceberg, which is composed of the 5 kinds of work identified in this article, allows for us to succinctly understand
+what kinds of work is available to be tackled. Since we have very limited time and budget in basically all development scenarios
+(startups really are just an extra-extreme case), we have to decide what portions of development we cannot skimp on. We
+also have to realize that a large amount of planning and design should go into all of the solutions we propose, and that 
+not all developer time is deep-work coding activities.
