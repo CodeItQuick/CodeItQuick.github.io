@@ -1,10 +1,10 @@
 ---
 layout: post
-name: Story Splitting A Practical Look
+name: Part 2 - Story Splitting A Practical Look
 description: Story Splitting - the practical details
 image: story_splitting_practical_look_zombies.png
 time: "4m:18s"
-tags: quality all
+tags: agile all
 ---
 
 # Introduction
