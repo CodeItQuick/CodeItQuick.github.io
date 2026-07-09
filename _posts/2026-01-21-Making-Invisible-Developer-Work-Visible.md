@@ -20,8 +20,11 @@ stakeholders often see only "features" and "bugs", but developers know there's a
 once the feature is built and fixed, there is still significantly more work to be done in terms of maintenance costs. What
 are these other kinds of work we frequently forget about, and how can we clearly define them so there is a shared understanding?
 
-## The Top of The Iceberg 
-### Product Work & Fixing Things
+# The Top of The Iceberg 
+## Product Work & Fixing Things
+
+<div class="iceberg-columns" markdown="1">
+<div class="iceberg-columns__list" markdown="1">
 
 **Product Work**    
 * Features    
@@ -34,13 +37,22 @@ are these other kinds of work we frequently forget about, and how can we clearly
 * Bugs    
 * Defect Prevention    
 
+</div>
+<div class="iceberg-columns__text" markdown="1">
+
 This is the obvious work that developers do. The feature that is shipped, the button enhancements, experimentation, and 
 just overall product polish. Noone really debates the importance of this work, it's just that it's not the entire picture.
 So while this work is extremely important, and perhaps we should even optimize for this type of work, it is not the entire
 picture. 
 
-## The Iceberg
-### Business As Usual: Operations - Platform / Infrastructure Work, Architecture & System Evolution
+</div>
+</div>
+
+# The Iceberg
+## Business As Usual: Operations - Platform / Infrastructure Work, Architecture & System Evolution
+
+<div class="iceberg-columns" markdown="1">
+<div class="iceberg-columns__list" markdown="1">
 
 **Platform / Infrastructure Work**
 * DevEx / Tooling   
@@ -53,12 +65,21 @@ picture.
 * Migrations   
 * Integration Work   
 
+</div>
+<div class="iceberg-columns__text" markdown="1">
+
 There is also the portion of work we pay operations for and just "forget about it". These are the renewing SSL certificates,
 giving permissions to different user groups. It includes other things however that are often forgotten or thrown to the wayside,
 like Developer Tooling, and CI / CD. These portions of work are frequently not budgeted in our planning systems, and as
 a result are not tackled and left to rot for long periods of time.
 
-### Table Stakes: Quality Work, Support & Collaboration, and Discovery & Planning Work
+</div>
+</div>
+
+## Table Stakes: Quality Work, Support & Collaboration, and Discovery & Planning Work
+
+<div class="iceberg-columns" markdown="1">
+<div class="iceberg-columns__list" markdown="1">
 
 **Quality Work**  
 * Testing Work  
@@ -76,12 +97,21 @@ a result are not tackled and left to rot for long periods of time.
 * Design  
 * Backlog Grooming  
 
+</div>
+<div class="iceberg-columns__text" markdown="1">
+
 Then there's the activities that are simply assumed to be necessary. The work has to be high quality; the software has to
 work properly. So we build automated test suites, invest in our manual QA team, and verify everything that has shipped 
 works in production, under load, for the largest of our customers.
 
+</div>
+</div>
 
-### The Never Addressed: Improve How it Works & Keeping Things Current
+
+## The Never Addressed: Improve How it Works & Keeping Things Current
+
+<div class="iceberg-columns" markdown="1">
+<div class="iceberg-columns__list" markdown="1">
 
 **Improve How It Works**
 * Refactoring  
@@ -95,10 +125,16 @@ works in production, under load, for the largest of our customers.
 * Dependency Upgrades  
 * Compliance / Policy Work  
 
+</div>
+<div class="iceberg-columns__text" markdown="1">
+
 Finally there is the true metaphorical bottom of the iceberg. The things we rarely have time for - large refactors or rewrites
 of the system as it's use cases potentially change. Performance work to keep the solution generally scaling; making sure
 the code base is easy to maintain, and not costly to make fixes or understand. As well as keeping the system up-to-date
 in terms of dependency upgrades, compliance, policies, etc.
+
+</div>
+</div>
 
 # The Five Buckets of Work
 ## What Each Bucket Builds
