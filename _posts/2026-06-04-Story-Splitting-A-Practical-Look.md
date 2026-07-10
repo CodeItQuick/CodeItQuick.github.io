@@ -7,6 +7,11 @@ time: "4m:18s"
 tags: agile all
 ---
 
+<div class="w-full text-center">
+    <h1>Part 2 - Story Splitting A Practical Look</h1>
+    <h6>(Reading Time: 4 minutes 18 seconds)</h6>
+</div>
+
 # Introduction
 
 The first article in this series was an "explain like I'm 5" explanation of story splitting. We are now going to attempt

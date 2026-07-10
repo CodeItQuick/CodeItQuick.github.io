@@ -7,9 +7,10 @@ time: "6m:54s"
 tags: agile all
 ---
 
-<p align="center" width="100%">
-    <img src="/assets/images/splitting_stories_or_tasks.png"  alt="Are we Splitting Stories or Just Splitting Tasks" height="512" width="512" />
-</p>  
+<div class="w-full text-center">
+    <h1>Part 1 - Are You Splitting Stories, or Just Splitting Tasks?</h1>
+    <h6>(Reading Time: 6 minutes 54 seconds)</h6>
+</div>
 
 We are given a large task to breakdown. So we divide it into several separate tasks, and call them user stories. User stories
 are frequently too large on first draft, so we have a need to split them into smaller tasks. We want to split these stories 

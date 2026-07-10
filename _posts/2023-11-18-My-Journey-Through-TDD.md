@@ -7,8 +7,10 @@ time: 2m:41s
 tags: theory all
 ---
 
-# TDD Journey 
-<h6>(Reading Time: 2 minutes 41 seconds)</h6>
+<div class="w-full text-center">
+    <h1>My Journey Through TDD</h1>
+    <h6>(Reading Time: 2 minutes 41 seconds)</h6>
+</div>
 
 <p align="center" width="100%">
     <img src="/assets/images/zombie_beginner.png"  alt="Beginner Zombie First Form" height="512" width="512" />

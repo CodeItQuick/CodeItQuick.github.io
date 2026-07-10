@@ -28,7 +28,7 @@ const someReactQueryOrJavascriptWhatever = () => {
 }
 ```
 
-## What's wrong with this code?
+# What's wrong with this code?
 
 Well - if I double click the code, for example, the spinner will never resolve. I'll get an infinite spin, and depending on the logic
 I'm using, the button/etc. could be disabled. Terrible result. But Why? Well the promise is actually returned in the result, and the finally executes
@@ -37,7 +37,7 @@ immediately. My intention was to do a fetch, and then do any cleanup necessary (
 
 After contacting my local javascript finally wizards (Juan in trashdevs discord, and Mark in my local dev community) I discovered the way. Which is succinctly put:
 
-### Method One (Try-Catch-Finally)
+## Method One (Try-Catch-Finally)
 
 ```ts
 const someReactQueryOrJavascriptWhatever = async () => {
@@ -61,7 +61,7 @@ const someReactQueryOrJavascriptWhatever = async () => {
 The code can also be re-written (yet again) to use a then/catch promise syntax. Something like (and this is me so forgive me for my mistakes):
 
 
-### Method Two (Then/Catch)
+## Method Two (Then/Catch)
 
 ```ts
 const someReactQueryOrJavascriptWhatever = () => {
@@ -82,7 +82,7 @@ const someReactQueryOrJavascriptWhatever = () => {
 Which is better? I'll let you decide, the second has duplicate code but is "shorter", the first is a bit more verbose/maybe more intention revealing.
 
 
-### Also a common gotchya in try catch finally land
+## Also a common gotchya in try catch finally land
 
 ```ts
 const myfunc = () => {
@@ -98,7 +98,7 @@ const myfunc = () => {
 This will return true, then return false. Very weird behaviour, so a do-not-attempt-in-real-life kind of code smell.
 
 
-## Debounced Solution (Credit: Mark)
+# Debounced Solution (Credit: Mark)
 
 
 Wrap the function with the below to stop it executing twice when undesired:
@@ -114,8 +114,7 @@ const debounce = (func, delay) => {
 }
 ```
 
-## Method THREE: No try catch
-
+# Method THREE: No try catch
 
 Instead of relying on throwing and catch errors in place, use type safety to handle success vs error cases.
 

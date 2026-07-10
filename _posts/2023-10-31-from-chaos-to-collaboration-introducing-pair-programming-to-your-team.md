@@ -16,7 +16,7 @@ tags: agile all
     <img src="/assets/images/zombie_shoulder_surfing.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
 </p>  
 
-## Introducing Solo Development Chaos
+# Introducing Solo Development Chaos
 Typical development is rather chaotic. Developers go off for one to two weeks at a time working on a ticket. They open a 
 pull request at the end of the process, get feedback, and then incorporate it. Then the worst can happen. The team scraps 
 the pull request if the direction is wrong. How do we stop checking our work at the last possible moment? How do we increase 
@@ -47,7 +47,7 @@ called “nits” in pull request reviews. The navigator and driver should conti
 objections about the general direction of the code. The driver must stop coding. Then the pair decides on the general 
 solution before continuing.
 
-## Introducing the Path to Collaboration
+# Introducing the Path to Collaboration
 Introducing the practice can be quite difficult. The pair programming promoter could encounter considerable resistance. 
 Generally, frame the activity as an experiment for different ways of working. Put a time limit on it, which should be at 
 least two weeks. It takes quite a while to completely figure out the forms of pair programming that will work for the 
@@ -64,9 +64,7 @@ about the general direction of the code. Give proper code directions as the navi
 direction to the most specific possible. For example, very abstract directions are “open a pull request.”. Very specific 
 directions would be “Type the following: git commit -m ‘first commit’”. Try to avoid "type this" directions if possible.
 
-<div class="w-full text-center">
-    <h1>Stories of Big Wins</h1>
-</div>
+# Stories of Big Wins
 
 <p align="center" width="100%">
     <img src="/assets/images/reflection_zombie.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />

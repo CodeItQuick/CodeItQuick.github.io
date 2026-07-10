@@ -7,7 +7,12 @@ time: "2m:48s"
 tags: technical all
 ---
 
-# Learnings From Buffering And Caching Strategies
+<div class="w-full text-center">
+    <h1>Learnings From Buffering And Caching Strategies</h1>
+    <h6>(Reading Time: 2 minutes 48 seconds)</h6>
+</div>
+
+# Introduction: Learnings From Buffering And Caching Strategies
 
 I made a deep dive of buffering and caching strategies here: https://github.com/CodeItQuick/cacheing-strategies/blob/main/NAVIGATION_TIPS.md
 

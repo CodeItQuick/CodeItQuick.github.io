@@ -7,7 +7,12 @@ time: "5m:58s"
 tags: code all
 ---
 
-# OOP The Great Debate - Classes vs Closures
+<div class="w-full text-center">
+    <h1>OOP The Great Debate - Classes vs Closures</h1>
+    <h6>(Reading Time: 5 minutes 58 seconds)</h6>
+</div>
+
+# Introduction
 
 OOP is better than functional, or is functional better than OOP. Often OOP programmers have no knowledge of functional
 (being a primarily OOP developer I'm guilty of this), while functional programmers often come from an OOP background and
@@ -15,7 +20,7 @@ got "fedup" with some of the problems that got attributed to OOP. I say the latt
 because often we attribute our problems to the wrong thing. Oh my code sucks, what caused this? Its the general paradigm
 OOP that's the issue, not my code. Often its your code, but sometimes it could be the paradigm you are working in.
 
-# The prelude, definitions
+# The Prelude, Definitions
 
 I'm going to define CQS, CQRS, and request/response paradigms before discussing what is truly "OOP" code vs what is truly
 "functional" code. Keep in mind this is just my take, as a primarily OOP developer.

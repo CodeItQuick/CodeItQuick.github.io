@@ -6,6 +6,12 @@ image: iceberg_buckets.jpg
 time: "9m:00s"
 tags: quality all
 ---
+
+<div class="w-full text-center">
+    <h1>Making the Invisible 60% of Development Work Visible</h1>
+    <h6>(Reading Time: 9 minutes 00 seconds)</h6>
+</div>
+
 # Introduction
 
 Development teams rarely move out of the "build" mindset in later stages of development, or in crisis/migration situations.

@@ -16,7 +16,7 @@ tags: quality all
     <img src="/assets/images/designer_zombie_2.webp"  alt="Designer Zombie 2" height="512" width="512" />
 </p>  
 
-## Introduction
+# Introduction
 
 Developers understand in theory what a minimum viable product (MVP) is. Do they understand what that means in practice? 
 One of the keys is build out the behaviour, not the functionality. The business wants a lean solution that has the value-add 
@@ -27,9 +27,7 @@ the definition of scope. Scope isn't defined once at the start of the one-year p
 over the entirety of the project. There is a popular adage in software development. We started off thinking we needed a 
 bridge, but instead built a ferry.
 
-<div class="w-full text-center">
-    <h1>Understanding the Agile MVP</h1>
-</div>
+# Understanding the Agile MVP
 
 <p align="center" width="100%">
     <img src="/assets/images/designer_zombies_many.webp"  alt="Many Designer Zombie" height="512" width="512" />
@@ -51,7 +49,7 @@ What does the use of "agile" in "agile MVP" mean? The key to the development is 
 Feedback is central to definition of the solution. Short feedback cycles are the cornerstone of agile. These cycles mitigate 
 risk from large project scopes. We are avoiding building a large solution that does not solve a customer need.
 
-## The Limitations of Traditional Scope Management
+# The Limitations of Traditional Scope Management
 
 Construction projects use conventional scope management. A team decides to build a bridge, scopes out a design, and then 
 builds it to the specification. The final design matches the initial design as exactly as possible. The limitation of this 
@@ -59,9 +57,8 @@ is any unforeseen circumstances are not  budgeted. Adjustments to the design bas
 not possible. A bridge has a stagnant customer need, provide passage over some impediment (eg: water). Society has built 
 bridges for hundreds of years. There are not a lot of innovations in the discovery of building a bridge.
 
-<div class="w-full text-center">
-    <h1>Strategies for Agile Scope Management</h1>
-</div>
+
+## Strategies for Agile Scope Management
 
 <p align="center" width="100%">
     <img src="/assets/images/designer_zombies_many_2.webp"  alt="Many Designer Zombie 2" height="512" width="512" />
