@@ -1,6 +1,6 @@
 ---
 layout: post
-name: Making the Invisible 60% of Development Work Visible
+name: The Cost of Ignoring Invisible Development Work
 description: What is the developer iceberg of work and how do we tackle it
 image: iceberg_buckets.jpg
 time: "9m:00s"
@@ -8,23 +8,22 @@ tags: quality all
 ---
 
 <div class="w-full text-center">
-    <h1>Making the Invisible 60% of Development Work Visible</h1>
+    <h1>The Cost of Ignoring Invisible Development Work</h1>
     <h6>(Reading Time: 9 minutes 00 seconds)</h6>
 </div>
 
 # Introduction
 
 Development teams rarely move out of the "build" mindset in later stages of development, or in crisis/migration situations.
-The pain described in this article is frequent. Developer's are explaining to stakeholders the variety of work they encounter
-on a day-to-day basis, with the fear that the business really only understands two things - features and bugs. We conclude
-with the 6 buckets of development work for a shared understanding of the day-to-day.
+The pain described in this article is frequent. Developers frequently fail to get important technical debt work prioritized,
+which results in expensive migrations, technical debt paydown, or a difficult to change codebase later on. 
 
 # The Problem
 
 Developers often struggle to explain where their time goes to the product owners and business side of the equation. Business
 stakeholders often see only "features" and "bugs", but developers know there's a lot more work involved. Furthermore, 
 once the feature is built and fixed, there is still significantly more work to be done in terms of maintenance costs. What
-are these other kinds of work we frequently forget about, and how can we clearly define them so there is a shared understanding?
+are these other kinds of work we frequently forget about, and how can we clearly define them so they do get worked on?
 
 # The Top of The Iceberg 
 ## Product Work & Fixing Things
@@ -74,10 +73,11 @@ picture.
 </div>
 <div class="iceberg-columns__text" markdown="1">
 
-There is also the portion of work we pay operations for and just "forget about it". These are the renewing SSL certificates,
-giving permissions to different user groups. It includes other things however that are often forgotten or thrown to the wayside,
-like Developer Tooling, and CI / CD. These portions of work are frequently not budgeted in our planning systems, and as
-a result are not tackled and left to rot for long periods of time.
+Once this work is in place and "complete" the tendency is to not iterate on it. But there is a hidden cost to never updating
+pipelines, never changing database tables, or never making data migrations. The problem is eventually you will be bitten
+by putting it off for so long. Circle-CI pipelines left to rot on an old version will eventually not work; node modules 
+are eventually not supported anymore for Node v12, etc. Don't get stuck in a situation where a particular service is about
+to be sunsetted and no longer offered; forcing an upgrade, or you lose the customer base.
 
 </div>
 </div>
@@ -108,7 +108,10 @@ a result are not tackled and left to rot for long periods of time.
 
 Then there's the activities that are simply assumed to be necessary. The work has to be high quality; the software has to
 work properly. So we build automated test suites, invest in our manual QA team, and verify everything that has shipped 
-works in production, under load, for the largest of our customers.
+works in production, under load, for the largest of our customers. If the developers begin to sell this work as "extra"
+it becomes a very real problem. Bake in the testing-time, stamping out bugs, and more as if it is "compile time". You don't
+ask your boss whether you should compile the code or not; likewise, you shuoldn't have to ask permission to make certain
+it's working correctly.
 
 </div>
 </div>
@@ -157,8 +160,9 @@ Understanding what capabilities each type of work builds helps you make strategi
 {: .table .table-zebra .table-hover}
 
 We tend to think in terms of only build/fix. It is an interesting observation that "fix" really goes along with every task
-that is manageable. However, improve and run are important aspects of software once it has been built. We have to ensure
-SSL certificates are updated, the code continues to perform at a high level, and that our costs are reasonable.
+that is manageable. However, all of the activities under the iceberg have to be taken care of "eventually". Maybe they can
+be put off for a year, five years, ten years, or even longer. However, eventually being on Python 2.7 will come to bite you,
+even if it takes them 10+ years to sunset the language.
 
 # Conclusion - The Iceberg
 <p align="center" width="100%">
@@ -168,5 +172,5 @@ SSL certificates are updated, the code continues to perform at a high level, and
 The product iceberg, which is composed of the 5 kinds of work identified in this article, allows for us to succinctly understand
 what kinds of work is available to be tackled. Since we have very limited time and budget in basically all development scenarios
 (startups really are just an extra-extreme case), we have to decide what portions of development we cannot skimp on. We
-also have to realize that a large amount of planning and design should go into all of the solutions we propose, and that 
+also have to realize that a large amount of planning and design should go into all solutions we propose, and that 
 not all developer time is deep-work coding activities.
