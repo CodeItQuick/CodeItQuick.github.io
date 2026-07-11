@@ -15,7 +15,7 @@ tags: quality all
 # Introduction
 Alright, now "Split the story. Eight is too many story points and we need smaller stories.". Perhaps you've heard this a
 lot, and to your agile team the developers are refusing to do as asked. But is it really that simple to split stories?
-In practice understanding the how of what your building is integral to story estimation. This article discusses the meetings
+In practice understanding the how of what you are building is integral to story estimation. This article discusses the meetings
 necessary to continually get your Jira planning more correct.
 
 # Some Background
