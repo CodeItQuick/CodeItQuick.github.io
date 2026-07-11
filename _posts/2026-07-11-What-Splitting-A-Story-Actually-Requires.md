@@ -4,7 +4,7 @@ name: Part 3 - What Splitting a Story Actually Requires
 description: How to split stories, and what to call the meeting it's done in
 image: story_splitting_generic.png
 time: "3m:20s"
-tags: quality all
+tags: agile all
 ---
 
 <div class="w-full text-center">
