@@ -24,7 +24,7 @@ The backend team began having a meeting every Tuesday. The conversation was too 
 We have backlog grooming and sprint planning already. In theory "splitting the story" is supposed to happen in those meetings.
 However, in practice doing it properly takes hours. So the discussion migrated to its own slot.
 
-## Describing the meeting
+## Describing The Meeting
 
 What actually happens during this meeting? We pull up the existing plan in Jira tickets, and propose ways to tackle the
 existing problem. The ideas could be purely architectural, like "we should make this part of the system similar to this
