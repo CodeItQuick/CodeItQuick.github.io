@@ -13,7 +13,7 @@ tags: agile all
 </div>
 
 # Introduction
-Alright, now "Split the story. Eight is too many story points and we need smaller stories.". Perhaps you've heard this a
+Alright, now "Split the story. Eight is too many story points and we need smaller stories". Perhaps you've heard this a
 lot, and to your agile team the developers are refusing to do as asked. But is it really that simple to split stories?
 In practice understanding the how of what you are building is integral to story estimation. This article discusses the meetings
 necessary to continually get your Jira planning more correct.
@@ -41,11 +41,17 @@ think the answer is clear.
 
 # What Does XP Think Of This?
 What does my inner XP-programmer think of all this planning? Well not a lot, and really it runs counter to a lot of the
-lessons we learned through XP. Xp says "just start coding", and you'll "discover the design as you go". However, is that
-really sufficient when someone else wants to know how long it's going to take? How much is this feature going to cost? I
-argue it isn't, we owe the business reasonable estimates for timelines. Sure, the timelines will be pushed back, rearranged
-multiple times, and look nothing like they did at the start. However, we should make an effort to hit our thumb-in-the-air
-estimations for the overall time period of the project.
+lessons we learned through XP. As a beginner introduced to XP, I interpreted it telling me "just start coding", and 
+you'll "discover the design as you go". However, is that really sufficient when someone else wants to know how long it's 
+going to take? How much is this feature going to cost? I argue it isn't, we owe the business reasonable estimates for 
+timelines. Sure, the timelines will be pushed back, rearranged multiple times, and look nothing like they did at the start. 
+However, we should make an effort to hit our thumb-in-the-air estimations for the overall time period of the project.
+
+In fact, I've misquoted XP above. Visiting the Extreme Programming website, there is information on story pointing, velocity,
+etc. I think XP was probably one of the early adopters of figuring out what to code (at some much more brief level) then
+discovering the design as we coded. XP is telling us to not get too muddled in the details of the design beforehand - that 
+doesn't mean don't attempt to look at it beforehand. It means once we've discussed and outlined the general plan, don't
+be shy about throwing away the original plan as we discover more about the domain.
 
 A major benefit of all of this planning is we can start to think how to transform the plan. What if we attempted to deliver
 what we are looking for sooner? We understand the "why" of what we are doing, and are looking for the end result with some
