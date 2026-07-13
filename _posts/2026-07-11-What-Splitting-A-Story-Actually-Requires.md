@@ -8,7 +8,7 @@ tags: agile all
 ---
 
 <div class="w-full text-center">
-    <h1>What Splitting a Story Actually Requires</h1>
+    <h1>Part 3 - What Splitting a Story Actually Requires</h1>
     <h6>(Reading Time: 3 minutes 20 seconds)</h6>
 </div>
 
