@@ -32,7 +32,6 @@ other part of the system". Other times we are doing story point arithmetic, eg: 
 actually just not understand the work involved yet? Then there are further questions: with this story split in this manner
 can we have multiple people work on it in parallel?
   
-  
 There are two tasks happening at once: shape the design, divide the work. Splitting for size and parallelism is very tricky,
 and often not possible. Does the way we divide the work effect the shape of the design? Sometimes absolutely, if we have 
 multiple microservices built into the architecture one of the key ideas is to allow for parallel work, or easily allow for
