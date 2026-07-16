@@ -12,6 +12,8 @@ tags: agile all
     <h6>(Reading Time: 6 minutes 54 seconds)</h6>
 </div>
 
+# Introduction
+
 We are given a large task to breakdown. So we divide it into several separate tasks, and call them user stories. User stories
 are frequently too large on first draft, so we have a need to split them into smaller tasks. We want to split these stories 
 because large stories delay learning. The value, feedback, and decision making we get from early feedback on what we are 

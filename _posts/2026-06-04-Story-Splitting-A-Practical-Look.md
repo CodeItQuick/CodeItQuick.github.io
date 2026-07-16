@@ -21,6 +21,10 @@ significantly different to have good splits of stories. You have to understand t
 used paradigms within your team. Then, have a meeting that looks a lot more like a design meeting to come to an understanding
 of what the code should look like. Finally, splitting according to an acronym like SPIDR is possible. 
 
+<p align="center" width="100%">
+    <img src="/assets/images/SPIDR-colorful-graphic.png"  alt="SPIDR Graphic" height="512" width="512" />
+</p>  
+
 # Applying SPIDR to Authentication
 
 ## Begin by Reframing Authentication with SPIDR
@@ -56,6 +60,10 @@ These slices should look iterative, not like a puzzle piece/components.
 
 The general SPIDR format is: setup a SPIKE to learn the general formatting, then go through the minimum skeleton path. After
 we have the skeleton done, we can begin filling in the path with the Interface, Rules, and finally the Data.
+
+<p align="center" width="100%">
+    <img src="/assets/images/untangling-the-blockers.png"  alt="SPIDR Graphic" height="512" width="512" />
+</p>  
 
 ## Removing the blocking portions to have independent stories
 
@@ -97,6 +105,10 @@ every time. Think of this in terms of feature development as well. If we think o
 "feature we must build" we have also accidentally fallen into thinking about what we want in components. Instead, we need
 to iteratively build a better and better solution to whatever solves the core customer need.
 
+<p align="center" width="100%">
+    <img src="/assets/images/three-ways-to-slice.png"  alt="Three Ways To Slice" height="512" width="512" />
+</p>  
+
 # The Agile Core - Build Methods
 
 Actually, there are three different ways we could build this feature. And we may fall into the tradeoffs of one of the three
@@ -114,6 +126,10 @@ However, other-times we just want to show the product owner/team that we are mak
 Parts-first works well in these cases, where they can see the UI being build, API, and then database layers. Finally, we may
 divide up the work by logical technical boundaries, such as microservices. So we assign a developer to each architecture piece,
 and give definitions for the interfaces that exist between each code structure (with minimal communication between the microservices).
+
+<p align="center" width="100%">
+    <img src="/assets/images/build-core-features.png"  alt="Build Core Features" height="512" width="512" />
+</p>  
 
 # Conclusion - Understand the Product Focus
 
