@@ -18,11 +18,15 @@ lot, and to your agile team the developers are refusing to do as asked. But is i
 In practice understanding the how of what you are building is integral to story estimation. This article discusses the meetings
 necessary to continually get your Jira planning more correct.
 
+<p align="center" width="100%">
+    <img src="/assets/images/jira-before-after-story-splitting.png"  alt="Jira Before And After" height="512" width="512" />
+</p>  
+
 # Some Background
 ## What We Ended Up With
 The backend team began having a meeting every Tuesday. The conversation was too technical to include anyone else really. 
 We have backlog grooming and sprint planning already. In theory "splitting the story" is supposed to happen in those meetings.
-However, in practice doing it properly takes hours. So the discussion migrated to its own slot.
+However, in practice doing it properly takes hours. Therefore, the discussion migrated to it's own time.
 
 ## Describing The Meeting
 
@@ -37,6 +41,10 @@ and often not possible. Does the way we divide the work effect the shape of the 
 multiple microservices built into the architecture one of the key ideas is to allow for parallel work, or easily allow for
 upstream or downstream work to be completed. This is a question more to mull around in the back of your head, since I don't
 think the answer is clear.
+
+<p align="center" width="100%">
+    <img src="/assets/images/shaping-design-and-splitting-work.png"  alt="Shape Design And Split Work" height="512" width="512" />
+</p>  
 
 # What Does XP Think Of This?
 What does my inner XP-programmer think of all this planning? Well not a lot, and really it runs counter to a lot of the
@@ -57,6 +65,10 @@ what we are looking for sooner? We understand the "why" of what we are doing, an
 hard coding, maybe there is no fancy UI to allow us to configure the changes easily, etc. Only invest what is necessary
 to get the feature completed.
 
+<p align="center" width="100%">
+    <img src="/assets/images/plan-first-or-discover-design.png"  alt="Plan First or Discover Design" height="512" width="512" />
+</p>  
+
 # What Should We Call The Meeting?
 On the calendar our meeting is just simply called 'pairing'. A misnamed meeting that is its own issue. However, the obvious
 names are not so obvious:
@@ -66,6 +78,10 @@ names are not so obvious:
 - **Tech spec meeting / architecture review.** Doesn't fit either, these kinds of meetings are typically across projects
 - **Design meeting.** Closer. The design is exactly what informs how the stories get split, structured, and pointed.
 - **Technical refinement.** Also closer
+
+<p align="center" width="100%">
+    <img src="/assets/images/name-the-meeting.png"  alt="Name The Meeting" height="512" width="512" />
+</p>  
 
 # Working-Sessions to Determine Your Jira Plan
 The meeting is itself a working-session, and the output are the Jira tickets we get out of it to feed the backend developer

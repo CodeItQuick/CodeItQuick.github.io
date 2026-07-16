@@ -4,11 +4,16 @@
 @import "output.css";
 @import "rouge.css";
 .markdown {
+    img {
+        margin-top: 16rem;
+        margin-bottom: 16rem;
+    }
+
     h1 {
         font-size: 1.875rem;
         line-height: 2.25rem;
         font-weight: 700;
-        margin-top: 2rem;
+        margin-top: 16rem;
         margin-bottom: 0.5rem;
     }
 

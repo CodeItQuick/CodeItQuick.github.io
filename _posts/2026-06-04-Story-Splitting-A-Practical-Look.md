@@ -47,14 +47,15 @@ Something is off here as well. A lot of the work is sequential. The part we miss
 identified the components within the general epic, but we have failed (yet again) to identify the thin vertical slices.
 These slices should look iterative, not like a puzzle piece/components. 
 
+<p align="center" width="100%">
+    <img src="/assets/images/SPIDR_car_building.png"  alt="SPIDR Building A Car" height="512" width="512" />
+</p>  
+
+
 ## The SPIDR Fanout
 
 The general SPIDR format is: setup a SPIKE to learn the general formatting, then go through the minimum skeleton path. After
 we have the skeleton done, we can begin filling in the path with the Interface, Rules, and finally the Data.
-
-<p align="center" width="100%">
-    <img src="/assets/images/SPIDR_car_building.png"  alt="SPIDR Building A Car" height="512" width="512" />
-</p>  
 
 ## Removing the blocking portions to have independent stories
 
@@ -75,6 +76,10 @@ we have the skeleton done, we can begin filling in the path with the Interface, 
 Now the only thing that usually blocks us is the first two stories. We need a minimal skeleton built, before we fill in
 the abbreviated/niave parts.
 
+<p align="center" width="100%">
+    <img src="/assets/images/sooner-not-faster-picture.png"  alt="Sooner Not Faster" height="512" width="512" />
+</p>  
+
 # The Agile Core - Sooner not Faster
 
 The general idea here is to deliver sooner, not faster. The way we can deliver the same feature in a shorter period of time
@@ -82,10 +87,6 @@ is either to just go generally faster (very hard to achieve), or we start doing 
 iterative development. So with the skeleton approach, we are building out the entire flow in a very brief manner, so that
 we understand all the pieces of the system in a simplistic and niave manner. Then, we can fill in the blanks of each portion
 of the authentication flow.
-
-<p align="center" width="100%">
-    <img src="/assets/images/sooner-not-faster-picture.png"  alt="Sooner Not Faster" height="512" width="512" />
-</p>  
 
 It's funny, I've seen this picture probably a 100 times now, and I feel like now I finally understand it. Chances are, however,
 that I still don't understand it (as I've gotten it wrong at least 99 times now). But hey, let us take another crack at it.
@@ -95,6 +96,8 @@ also has no value. However, if we first give the customer a skateboard, then a s
 every time. Think of this in terms of feature development as well. If we think of each component as the car as a simple
 "feature we must build" we have also accidentally fallen into thinking about what we want in components. Instead, we need
 to iteratively build a better and better solution to whatever solves the core customer need.
+
+# The Agile Core - Build Methods
 
 Actually, there are three different ways we could build this feature. And we may fall into the tradeoffs of one of the three
 modes below:
