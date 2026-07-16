@@ -13,13 +13,13 @@ behaviour changes allowed - in other words, the tests should continue to pass af
 
 ## ZOMBIES
 A simple acronym for knowing how to test a variety of use cases within a system under test. The Acronym Stands for:
-Z - Zero items within the user case
+Zero - Zero items within the user case
 One - One items within the user case
 Many - many items within the user case
-B - Boundaries in the use case
-I - Interfaces in the use case, construct any interfaces? Never fully understood this one
-E - Exceptions in the use case
-S - This one doesn't really mean anything, but rounds out the acronym
+Boundaries - Boundaries in the use case
+Interfaces - Properly shape the interface of the function you are testing against
+Exceptions - Test all exception scenarios
+Simple Scenarios Simple Solutions - Write simple scenarios to make sure the overall code flow works
 
 ## Given/When/Then
 The general format of writing a test is given, when, then. Give a certain setup, when I call a method/series of methods, then 
