@@ -9,7 +9,7 @@ tags: agile all
 
 <div class="w-full text-center">
     <h1>Part 1 - Are You Splitting Stories, or Just Splitting Tasks?</h1>
-    <h6>(Reading Time: 6 minutes 54 seconds)</h6>
+    <h6>(Reading Time: 4 minutes 31 seconds)</h6>
 </div>
 
 # Introduction
