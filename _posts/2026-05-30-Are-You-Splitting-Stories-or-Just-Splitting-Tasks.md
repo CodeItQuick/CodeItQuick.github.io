@@ -33,7 +33,7 @@ creating smaller outcomes. We will learn to deliver the same value, but sooner.
     <img src="/assets/images/task-vs-value-decomposition.png"  alt="Task Vs Value Decomposition" height="512" width="512" />
 </p>  
 
-# Why we split stories
+# Why We Split Stories
 
 Teams split stories for many reasons: coordinating work, sequencing delivery, estimating cost, reducing risk, or enabling 
 multiple people to contribute. Many scrum implementations end up centering around story estimation, splitting, and velocity 

@@ -65,7 +65,7 @@ we have the skeleton done, we can begin filling in the path with the Interface, 
     <img src="/assets/images/untangling-the-blockers.png"  alt="SPIDR Graphic" height="512" width="512" />
 </p>  
 
-## Removing the blocking portions to have independent stories
+## Removing The Blocking Portions to Have Independent Stories
 
 | SPIDR     | Story title                                                    | Blocked by                   |
 | --------- | -------------------------------------------------------------- | ---------------------------- |
