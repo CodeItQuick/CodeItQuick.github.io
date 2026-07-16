@@ -29,6 +29,10 @@ may end up with smaller work items that still do not produce a usable outcome.
 I will show why task decomposition is often mistaken for story splitting, and why that mistake creates smaller tasks without 
 creating smaller outcomes. We will learn to deliver the same value, but sooner.
 
+<p align="center" width="100%">
+    <img src="/assets/images/task-vs-value-decomposition.png"  alt="Task Vs Value Decomposition" height="512" width="512" />
+</p>  
+
 # Why we split stories
 
 Teams split stories for many reasons: coordinating work, sequencing delivery, estimating cost, reducing risk, or enabling 
@@ -43,11 +47,12 @@ of story splitting is that it gives us a smaller outcome we can deliver, validat
 it reduces risk, creates feedback, or lets the business make a better decision sooner. A split is weak when it only says, 
 “we completed step one,” but nothing usable, testable, or valuable has changed.
 
-# An Example: Reviewing All Restaurants in Your City
 
 <p align="center" width="100%">
     <img src="/assets/images/restaurant_reviewing.png"  alt="Story Splitting Generic" height="512" width="512" />
 </p>  
+
+# An Example: Reviewing All Restaurants in Your City
 
 Our goal is to project manage reviewing all the restaurants within our city. So we begin by asking a reviewer how long it 
 will take, and they tell us 6 months. Six months is a long time to wait for feedback, so we ask whether the work can be 
@@ -61,7 +66,7 @@ Title: Repeat until all 100 restaurants in town are reviewed
 A. Walk to restaurant (1 hour)
 B. Order food (30 minutes)
 C. Eat food (30 minutes)
-D. Write down their critique into a piece of paper and send it to the owner (us) (30 minutes)
+D. Write down their critique (30 minutes)
 ```
 
 But wait, our hour estimate is outside our sprint timeframe. If we split purely by duration, we might arrive at something like this:
@@ -72,18 +77,18 @@ A. Walk halfway to restaurant (30 minutes)
 B. Walk the other half to the restuarant (30 minutes)
 B. Order food (30 minutes)
 C. Eat food (30 minutes)
-D. Write down their critique into a piece of paper and send it to the owner (us) (30 minutes)
+D. Write down their critique (30 minutes)
 ```
 
 But something is off. The work is now smaller, but the outcome is not. Nothing useful has been reviewed, validated, or 
 delivered. So what changed? We made the work smaller, but not the delivered outcome. Each task is split by the activities 
 required to complete it. 
 
-# SPIDR Story Splitting the Restaurant Example
-
 <p align="center" width="100%">
     <img src="/assets/images/story_splitting_generic.png"  alt="Story Splitting Generic" height="512" width="512" />
 </p>  
+
+# SPIDR Story Splitting the Restaurant Example
 
 SPIDR gives us a different way to look at the same problem. What we want is smaller vertical slices that still 
 produce a usable outcome. The SPIDR framework adds a helpful framing for story splitting:  
@@ -91,27 +96,27 @@ produce a usable outcome. The SPIDR framework adds a helpful framing for story s
 SPIDR gives us several ways to look for smaller outcomes:  
 
 ```
-Split By Spike: How many restaurants are in the area? How many public data
-    sources are available?  
+Split By Spike: How many restaurants are in the area?
 Split By Data Subset: Review just the Top 5 Restaurants   
-Split By Workflow Path: Review the restaurants with public-review research 
-    only (eg: Yelp, etc.)  
-Split By Interface: The reviewer uses Yelp/Google reviews first, then physically 
-    reviews only selected restaurants.  
-Split By Business Rules: Start with a 1-5 overall score rating, then later add 
-    category score ratings  
+Split By Workflow Path: Review the restaurants with Yelp
+Split By Interface: The reviewer uses Yelp/Google reviews
+Split By Interface: Physically reviews only selected restaurants.  
+Split By Business Rules: Start with a 1-5 overall score rating
+Split By Business Rules: Add category score ratings  
 ```
 
 To bring it all together, to split by the various mechanisms for a story:  
 
 ```
 A. (Spike) Discover all the restaurants in my area  
-B. (Workflow Path) Collect pu   blic data on all the restaurants in my area/Lightly review 
-    all restaurants and use (Business Rules) 1-5 score ratings  
-C. (Interface) Deeply review (Data Subset) the top restaurants and use (Business Rules) 
-    category score ratings  
-D. (Spike) Synthesize the Report: What is important to getting a high critic score?  
+B. (Workflow Path) Collect public data on all the restaurants
+C. (Interface) Deeply review (Data Subset) the top restaurants 
+D. (Spike) What is important to getting a high critic score?  
 ```
+
+<p align="center" width="100%">
+    <img src="/assets/images/bigger-steps-smaller-outcome.png"  alt="Smaller Outcomes" height="512" width="512" />
+</p>  
 
 # Conclusion
 
