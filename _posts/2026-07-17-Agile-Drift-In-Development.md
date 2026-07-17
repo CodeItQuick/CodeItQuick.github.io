@@ -2,7 +2,7 @@
 layout: post
 name: Agile Drift in Development
 description: How to implement changes in your Agile Ceremonies
-image: story_splitting_generic.png
+image: cargo-cult-vs-real-agile.png
 time: "2m:42s"
 tags: agile all
 ---
