@@ -69,7 +69,7 @@ can be filled with praise and kudos, or reflection on what has been going well o
 
 # The Guardrail Is You
 Not all good ideas should be introduced to the team. I've often been in a scenario where I was presented with conflicting
-opinions to my own, and rather than dig in to my arguments I had to take a step back. It's important to go with the will
+opinions to my own, and rather than dig into my arguments I had to take a step back. It's important to go with the will
 of the team. If most of the team disagrees with your suggested "improvement" then it should not go through. Introducing
 adjustments to Agile through the retro is a valued practice that allows for necessary adapation of the Agile Manifesto, or
 XP principles.
