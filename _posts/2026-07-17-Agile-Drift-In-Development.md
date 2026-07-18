@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-name: Agile Drift in Development
+name: Agile And Scrum Drift in Development
 description: How to implement changes in your Agile Ceremonies
 image: cargo-cult-vs-real-agile.png
 time: "2m:42s"
@@ -8,7 +8,7 @@ tags: agile all
 ---
 
 <div class="w-full text-center">
-    <h1>Agile Drift In Development</h1>
+    <h1>Agile And Scrum Drift In Development</h1>
     <h6>(Reading Time: 2 minutes 42 seconds)</h6>
 </div>
 
