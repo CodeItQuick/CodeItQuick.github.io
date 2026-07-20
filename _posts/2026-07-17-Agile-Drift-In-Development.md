@@ -13,11 +13,16 @@ tags: agile all
 </div>
 
 # Introduction
-Dogmatic following of the agile manifesto, also known as Cargo-culting, is a common failure state in agile. A lot of companies
-claim to be agile without following the actual principles. True buy-in of agile involves an understanding that they are 
-a necessarily ideal set of values and principles. It also isn't a blind following of rules, and never was. The agile or
-XP way of working is meant as a starting point that should be constantly adjusted. We will discuss different ways the
-teams I have worked on have deviated from traditional agile in productive manners.
+There are many failure states of agile. One well known one is cargo-culting, where the rules of agile are followed on the
+surface without a deeper understanding of the practices. Another one is dogmatism, where the rules of agile are followed
+too strictly. This article deals more with dogmatism, and gives information on ways my team have deviated from strict-agile.
+Still, as a beginner blindly following rules, guardrails, or ceremonies is probably a good idea. Once the underlying principles
+are understood it's a lot easier to start deviating from them. A lot of companies claim to be agile without following the 
+actual principles. Beginners to agile should follow the rules more closely, before they start learning when and where to
+deviate. Being an experienced agilist involves an understanding that they are a necessarily ideal set of values and 
+principles. It also isn't a blind following of rules, and never was. The agile or XP way of working is meant as a starting 
+point that should be constantly adjusted. We will discuss different ways the teams I have worked on have deviated from 
+traditional agile in productive manners.
 
 <p align="center" width="100%">
     <img src="/assets/images/cargo-cult-vs-real-agile.png"  alt="Cargo Cult Vs Real Agile" height="512" width="512" />
