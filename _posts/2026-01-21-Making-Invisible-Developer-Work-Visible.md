@@ -9,7 +9,7 @@ tags: quality all
 
 <div class="w-full text-center">
     <h1>The Cost of Ignoring Invisible Development Work</h1>
-    <h6>(Reading Time: 9 minutes 00 seconds)</h6>
+    <h6>(Reading Time: 3 minutes 40 seconds)</h6>
 </div>
 
 # Introduction
