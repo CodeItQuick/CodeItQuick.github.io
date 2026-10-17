@@ -110,7 +110,7 @@ Then there's the activities that are simply assumed to be necessary. The work ha
 work properly. So we build automated test suites, invest in our manual QA team, and verify everything that has shipped 
 works in production, under load, for the largest of our customers. If the developers begin to sell this work as "extra"
 it becomes a very real problem. Bake in the testing-time, stamping out bugs, and more as if it is "compile time". You don't
-ask your boss whether you should compile the code or not; likewise, you shuoldn't have to ask permission to make certain
+ask your boss whether you should compile the code or not; likewise, you shouldn't have to ask permission to make certain
 it's working correctly.
 
 </div>
