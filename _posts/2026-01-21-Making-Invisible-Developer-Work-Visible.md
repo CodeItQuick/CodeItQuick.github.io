@@ -3,7 +3,7 @@ layout: post
 name: The Cost of Ignoring Invisible Development Work
 description: What is the developer iceberg of work and how do we tackle it
 image: iceberg_buckets.jpg
-time: "9m:00s"
+time: "3m:40s"
 tags: quality all
 ---
 
