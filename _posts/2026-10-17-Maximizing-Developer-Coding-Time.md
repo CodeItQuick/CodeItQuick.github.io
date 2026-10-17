@@ -3,13 +3,13 @@ layout: post
 name: Part 2 - The Four Ways to Reclaim Developer Time
 description: What is the developer iceberg of work and how do we tackle it
 image: iceberg_buckets.jpg
-time: "3m:00s"
+time: "2m:10s"
 tags: quality all
 ---
 
 <div class="w-full text-center">
     <h1>The Cost of Ignoring Invisible Development Work</h1>
-    <h6>(Reading Time: 3 minutes 00 seconds)</h6>
+    <h6>(Reading Time: 2 minutes 10 seconds)</h6>
 </div>
 
 # Introduction
