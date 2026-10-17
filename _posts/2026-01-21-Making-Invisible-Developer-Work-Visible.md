@@ -1,14 +1,14 @@
 ---
 layout: post
-name: Part 1 - The Cost of Ignoring Invisible Development Work
-description: What is the developer iceberg of work and how do we tackle it
+name: Part 1 - j
+description: Part 1 - Making Invisible Developer Work Visible
 image: iceberg_buckets.jpg
 time: "3m:40s"
 tags: quality all
 ---
 
 <div class="w-full text-center">
-    <h1>Part 1 - The Cost of Ignoring Invisible Development Work</h1>
+    <h1>Part 1 - Making Invisible Developer Work Visible</h1>
     <h6>(Reading Time: 3 minutes 40 seconds)</h6>
 </div>
 
