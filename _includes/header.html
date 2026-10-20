@@ -71,6 +71,11 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-JHM2HP3NJY');
+        {% assign content_group = page.collection | default: page.layout %}
+        {% if page.url == '/' %}{% assign content_group = 'home' %}{% endif %}
+        {% if page.collection == 'posts' %}
+            {% for tag in page.tags %}{% if tag != 'all' %}{% assign content_group = tag %}{% endif %}{% endfor %}
+        {% endif %}
+        gtag('config', 'G-JHM2HP3NJY', { content_group: {{ content_group | jsonify }} });
     </script>
 </head>

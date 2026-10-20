@@ -50,11 +50,11 @@
     </div>
     <div class="flex justify-center py-6" x-show="{{ site.posts.size }}">
         <div class="pagination pagination-rounded flex gap-2">
-            <button class="btn" @click="pageNumber--" :disabled="pageNumber === 0">‹</button>
+            <button class="btn" @click="pageNumber--; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });":disabled="pageNumber === 0">‹</button>
             <template x-for="index in Math.ceil(tag_count / pageSize)">
-                <button class="btn" :class="{ 'btn-active': index - 1 === pageNumber }" @click="pageNumber = index - 1" x-text="index"></button>
+                <button class="btn" :class="{ 'btn-active': index - 1 === pageNumber }" @click="pageNumber = index - 1; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });"x-text="index"></button>
             </template>
-            <button class="btn" @click="pageNumber++" :disabled="pageNumber >= Math.ceil(tag_count / pageSize) - 1">›</button>
+            <button class="btn" @click="pageNumber++; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });":disabled="pageNumber >= Math.ceil(tag_count / pageSize) - 1">›</button>
         </div>
     </div>
 </div>
