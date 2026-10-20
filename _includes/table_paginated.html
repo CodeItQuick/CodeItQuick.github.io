@@ -4,14 +4,14 @@
     <div class="py-8 mx-auto md:p-8 flex flex-col justify-center">
         <div class="mx-auto hidden sm:flex m-4 gap-2 flex flex-wrap">
             <button class="btn font-[nav]" :class="tag_filter === 'all' ? 'btn-primary' : 'btn-ghost'"
-                    x-on:click="tag_filter = 'all'; tag_count = {{ site.posts.size }}; pageNumber = 0;">
+                    x-on:click="tag_filter = 'all'; tag_count = {{ site.posts.size }}; pageNumber = 0; gtag('event', 'select_topic', { topic: 'all' });">
                 All
             </button>
             {% assign sorted_tags = site.tags | sort | where_exp: "tag", "tag[0] != 'all'" %}
             {% for tag in sorted_tags %}
                 <button class="btn font-[nav] mx-auto " :class="tag_filter === '{{ tag[0] }}' ?
                     'btn-primary' : 'btn-ghost'"
-                        x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0;">
+                        x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0; gtag('event', 'select_topic', { topic: '{{ tag[0] }}' });">
                     {{ tag[0] }}
                 </button>
             {% endfor %}
@@ -26,6 +26,10 @@
                          {% for row in rows %}
                                     <div x-show="'{{ tag[0] }}'.includes(tag_filter)"
                                          class="px-4"
+                                         data-post-title="{{ row.name | escape }}"
+                                         data-featured="{{ row.featured | default: false }}"
+                                         data-position="{{ currentIndex | plus: 1 }}"
+                                         x-on:click="if ($event.target.closest('a')) gtag('event', 'select_post', { post_title: $el.dataset.postTitle, featured: $el.dataset.featured, position: +$el.dataset.position, topic: tag_filter });"
                                          :class="{ 'hidden' : +'{{ currentIndex }}' < (pageNumber) * pageSize || +'{{ currentIndex }}' > (pageNumber + 1) * pageSize - 1 }"
                                     >
                                        {% include card.html
