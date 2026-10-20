@@ -4,7 +4,7 @@ name: What Separates a 10x Codebase from an Ordinary One?
 description: 10x Developers are a Myth. Unlike 10x Codebases.
 image: robot_zombie_big_idea.png
 time: "2m:18s"
-tags: quality all
+tags: code-quality all
 ---
 
 <div class="w-full text-center">

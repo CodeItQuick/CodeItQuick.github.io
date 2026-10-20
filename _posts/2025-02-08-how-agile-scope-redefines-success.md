@@ -4,7 +4,7 @@ name: How Agile Scope Redefines Success
 description:  Embrace scope creep in your agile projects
 image: sizing_project_zombie.webp
 time: "2m:41s"
-tags: quality all
+tags: agile-planning all
 ---
 
 <div class="w-full text-center">

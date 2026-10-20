@@ -4,7 +4,7 @@ name: Finally starting a learning journal
 description: Why finally runs too early with promises, and three ways to fix async cleanup.
 image: learning_journal_zombie.png
 time: "3m:13s"
-tags: code all
+tags: code-quality all
 ---
 
 <div class="w-full text-center">

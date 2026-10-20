@@ -4,7 +4,7 @@ name: Code Smells Nature vs Nurture
 description:  What causes your worst code?
 image: spartan_zombie.webp
 time: "2m:24s"
-tags: quality all
+tags: code-quality all
 ---
 
 <div class="w-full text-center">

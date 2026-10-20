@@ -4,7 +4,7 @@ name: Part 2 - The Four Ways to Reclaim Developer Time
 description: Cut, automate, and delegate busywork to protect developer focus time.
 image: iceberg_buckets.jpg
 time: "2m:10s"
-tags: quality all
+tags: developer-time all
 ---
 
 <div class="w-full text-center">

@@ -4,7 +4,7 @@ name: Learnings From Buffering And Caching Strategies
 description: When to use caching versus buffering, and how TTL differs from refresh-ahead.
 image: caching_and_buffering.png
 time: "2m:48s"
-tags: technical all
+tags: code-quality all
 ---
 
 <div class="w-full text-center">

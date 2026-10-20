@@ -4,7 +4,7 @@ name: OOP The Great Debate - Classes vs Closures
 description: A look at how functional closures differ from OOP classes 
 image: learning_journal_zombie.webp
 time: "5m:58s"
-tags: code all
+tags: code-quality all
 ---
 
 <div class="w-full text-center">

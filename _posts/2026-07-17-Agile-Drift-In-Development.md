@@ -4,7 +4,7 @@ name: Agile And Scrum Drift in Development
 description: How to implement changes in your Agile Ceremonies
 image: cargo-cult-vs-real-agile.png
 time: "2m:42s"
-tags: agile all
+tags: agile-planning all
 ---
 
 <div class="w-full text-center">

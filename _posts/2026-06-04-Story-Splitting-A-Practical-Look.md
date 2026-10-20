@@ -4,7 +4,7 @@ name: Part 2 - Story Splitting A Practical Look
 description: Story Splitting - the practical details
 image: story_splitting_practical_look_zombies.png
 time: "4m:18s"
-tags: agile all
+tags: agile-planning all
 ---
 
 <div class="w-full text-center">

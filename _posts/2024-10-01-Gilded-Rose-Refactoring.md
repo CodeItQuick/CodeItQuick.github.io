@@ -4,7 +4,7 @@ name: Gilded Rose Refactoring Kata
 description: This refactoring kata can help you to learn about refactoring messy code.
 image: roses_battle_zombies.webp
 time: "7m:15s"
-tags: refactoring all
+tags: code-quality all
 ---
 
 <div class="w-full text-center">

@@ -4,7 +4,7 @@ name: Beyond Time Estimation
 description: A guide of real outputs from time estimation  
 image: story_splitting_zombies.png
 time: "3m:37s"
-tags: agile all
+tags: agile-planning all
 ---
 
 <div class="w-full text-center">
