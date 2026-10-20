@@ -52,10 +52,11 @@ I did plateau during this phase as my learning sources had not changed in long e
 
 At the intermediate stage I started to see good arguments for testing, and thought it had its place in special circumstances.
 
-# Collaboration Phase (8.5 → 9.5 Years)
+# Collaboration Phase (8.5 → 10.5 Years)
 
-Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagreed on several topics. 
-Where I am at on a variety  of testing topics:
+Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagreed on several topics.  
+
+Where I am at on a variety of testing topics:
 
 1. Acceptance Tests/BDD: E2E/Acceptance tests have a place in their part of the testing pyramid. I get requirements, and assurance my software works. Just be careful how many I write.
 2. Output of TDD: To get better at TDD I need to get better at the **techniques** involved. HOW do I test this, and make the tests faster, and concise, while avoiding any interdependence among them.
@@ -65,6 +66,15 @@ Where I am at on a variety  of testing topics:
 At the collaboration stage the team heavily tested, and I began to believe the time investment was well worth it in the medium to long run.
 I actively dislike not adding tests since I think short-term payoff is little to none.
 
-# (9.5 Years → 11.5 Years)
+# The AI Revolution Phase (10.5 Years → 11.5 Years)
 
+With AI slowly getting worked into my flow, testing has completely been morphed. I was a fairly late adopter, I think this
+is attributed to having to abandon my old TDD workflow, embrace test-after, and have the robots write a majority of the code.  
+
+Where I am at on a variety of testing topics:
+
+1. Acceptance Tests/BDD: Now significantly cheaper (thanks AI), a much more important part of the development flow.
+2. Integration vs Unit Testing: Jury is kinda out. In the previous phase with manual coding I preferred integration, so that is just the defacto right now
+3. TDD as a way of working: Essentially abandoned
+4. TCR as a new technique: Has some promise, I'm not sure of the costs yet
 
