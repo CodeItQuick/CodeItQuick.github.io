@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 name: Learnings From Buffering And Caching Strategies
-description: What is the developer iceberg of work and how do we tackle it
+description: When to use caching versus buffering, and how TTL differs from refresh-ahead.
 image: caching_and_buffering.png
 time: "2m:48s"
 tags: technical all
