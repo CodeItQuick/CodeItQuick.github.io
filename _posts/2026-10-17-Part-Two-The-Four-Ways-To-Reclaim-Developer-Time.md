@@ -23,7 +23,7 @@ In part 1 of this series we explored the activities that are more than coding fo
 
 But shouldn't we be maximizing our time regardless? It's not that these activities necessarily have _low_ value it's more
 how do we pick and choose which activities to spend the most time on. Making sure we surface the majority of work we're 
-doing in Jira is important for self reflection. How do we realize when digging through Kibana logs could have just been
+doing in Jira is important for self reflection. How do we realize when digging through logs could have just been
 a one time (and very shortly spent) period of creating a dashboard.
 
 # Eliminate or Reduce Unnecessary Work
