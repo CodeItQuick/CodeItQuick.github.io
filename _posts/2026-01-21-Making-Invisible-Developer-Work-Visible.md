@@ -5,6 +5,7 @@ description: Eliminate, automate, and delegate work to reclaim developer coding 
 image: iceberg_buckets.jpg
 time: "3m:40s"
 tags: developer-time all
+featured: true
 ---
 
 <div class="w-full text-center">

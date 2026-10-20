@@ -20,7 +20,10 @@
             <div x-data="{ index: 0 }" class="grid grid-rows-3 lg:grid-cols-2 gap-8">
                  {% for tag in site.tags %}
                          {% assign currentIndex = 0 %}
-                         {% for row in tag[1] %}
+                         {% assign featured_rows = tag[1] | where_exp: "p", "p.featured == true" %}
+                         {% assign other_rows = tag[1] | where_exp: "p", "p.featured != true" %}
+                         {% assign rows = featured_rows | concat: other_rows %}
+                         {% for row in rows %}
                                     <div x-show="'{{ tag[0] }}'.includes(tag_filter)"
                                          class="px-4"
                                          :class="{ 'hidden' : +'{{ currentIndex }}' < (pageNumber) * pageSize || +'{{ currentIndex }}' > (pageNumber + 1) * pageSize - 1 }"
@@ -31,6 +34,7 @@
                                             description=row.description
                                             tags=row.tags
                                             tag_size=row.tags.size
+                                            featured=row.featured
                                             url=row.url
                                       %}
                                     </div>

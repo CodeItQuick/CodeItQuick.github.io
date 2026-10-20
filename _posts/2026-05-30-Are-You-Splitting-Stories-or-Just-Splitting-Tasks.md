@@ -5,6 +5,7 @@ description: Discussions of why story splitting does not work
 image: splitting_stories_or_tasks.png
 time: "6m:54s"
 tags: agile-planning all
+featured: true
 ---
 
 <div class="w-full text-center">

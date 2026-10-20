@@ -5,6 +5,7 @@ description: 10x Developers are a Myth. Unlike 10x Codebases.
 image: robot_zombie_big_idea.png
 time: "2m:18s"
 tags: code-quality all
+featured: true
 ---
 
 <div class="w-full text-center">

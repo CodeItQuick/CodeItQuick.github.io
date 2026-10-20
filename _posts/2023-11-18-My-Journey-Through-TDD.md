@@ -5,6 +5,7 @@ description: In the first five years of my development career, I didn't test any
 image: zombie_journey_through_tdd.webp
 time: 2m:41s
 tags: team-practices all
+featured: true
 ---
 
 <div class="w-full text-center">
