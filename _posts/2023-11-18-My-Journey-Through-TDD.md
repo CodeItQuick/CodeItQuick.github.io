@@ -12,10 +12,6 @@ tags: theory all
     <h6>(Reading Time: 2 minutes 41 seconds)</h6>
 </div>
 
-<p align="center" width="100%">
-    <img src="/assets/images/zombie_beginner.png"  alt="Beginner Zombie First Form" height="512" width="512" />
-</p>  
-
 # Beginner Phase (0 -> 5 Years)
 
 For the first 5 years of my development career I didn't test anything. Then one day I was introduced to the concept at a
@@ -31,11 +27,7 @@ I think this stage is characterized for me by:
 * Thinking it's an inferior way of coding
 * Thinking the people who TDD are dogmatic zealots who must do it everywhere
    
-# Learning Phase (5 -> 6 Years)
-
-<p align="center" width="100%">
-    <img src="/assets/images/zombie_beginner_two.png"  alt="Beginner Zombie Second Form" height="512" width="512" />
-</p>  
+# Learning Phase (5 → 6 Years)
 
 **Learning the mechanics of TDD was challenging, so I decided to seek the help of a coach.** I joined two book clubs. 
 I began having my code reviewed and I finally got some feedback on code quality. At this point the learning began. It 
@@ -46,12 +38,12 @@ I think this is where I was on the variety of testing topics:
 
 * Acceptance Tests/BDD: No acceptances written as I was currently learning unit tests
 * Output of TDD: Higher test coverage is better
-* Mechanics of TDD; I could write tests 30 minutes->hours
+* Mechanics of TDD; I could write tests 30 minutes→hours
 * Time invested in TDD: I was only working on unit testing on side projects
 
 A big characteristic of the beginner phase is I didn't believe yet that testing was worth it from a time perspective.
 
-# Intermediate Phase (6 -> 8.5 Years)
+# Intermediate Phase (6 → 8.5 Years)
 
 During this period, I was able to unit test faster, with most tests being made in seconds to minutes. I could now TDD in 
 new projects that hadn't been developed yet. I started attending a learning ensemble every week. There I learned the 
@@ -60,11 +52,7 @@ I did plateau during this phase as my learning sources had not changed in long e
 
 At the intermediate stage I started to see good arguments for testing, and thought it had its place in special circumstances.
 
-# Collaboration Phase (8.5 -> 11 Years)
-
-<p align="center" width="100%">
-    <img src="/assets/images/final_form_zombie.png"  alt="Zombie in the final form" height="512" width="512" />
-</p>  
+# Collaboration Phase (8.5 → 9.5 Years)
 
 Here, I had new colleagues to challenge my ideas. They had informed opinions on testing, and we disagreed on several topics. 
 Where I am at on a variety  of testing topics:
@@ -77,6 +65,6 @@ Where I am at on a variety  of testing topics:
 At the collaboration stage the team heavily tested, and I began to believe the time investment was well worth it in the medium to long run.
 I actively dislike not adding tests since I think short-term payoff is little to none.
 
-
+# (9.5 Years → 11.5 Years)
 
 
