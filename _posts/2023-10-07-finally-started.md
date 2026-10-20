@@ -97,27 +97,9 @@ const myfunc = () => {
 
 This will return true, then return false. Very weird behaviour, so a do-not-attempt-in-real-life kind of code smell.
 
-
-# Debounced Solution (Credit: Mark)
-
-
-Wrap the function with the below to stop it executing twice when undesired:
-
-
-```ts
-const debounce = (func, delay) => {
-  let timeoutId
-  return (...args) => {
-    clearTimeout(timeoutId)
-    timeoutId = setTimeout(() => func(...args), delay)
-  }
-}
-```
-
 # Method THREE: No try catch
 
 Instead of relying on throwing and catch errors in place, use type safety to handle success vs error cases.
-
 
 ```ts
 const someReactQueryOrJavascriptWhatever = () => {
