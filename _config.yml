@@ -1,5 +1,6 @@
 plugins:
   - jekyll/theme # add this line to the plugins list if you already have one
+  - jekyll-redirect-from
 title: Project Graveyard
 description: Welcome to the numerous projects I have worked on since 2021
 blog: Musings of the Project Graveyard
