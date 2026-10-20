@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Part 2 - The Four Ways to Reclaim Developer Time
-description: What is the developer iceberg of work and how do we tackle it
+description: Cut, automate, and delegate busywork to protect developer focus time.
 image: iceberg_buckets.jpg
 time: "2m:10s"
 tags: quality all

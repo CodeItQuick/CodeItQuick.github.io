@@ -1,7 +1,7 @@
 ---
 layout: post
-name: Part 1 - j
-description: Part 1 - Making Invisible Developer Work Visible
+name: Part 1 - Making Invisible Developer Work Visible
+description: Eliminate, automate, and delegate work to reclaim developer coding time.
 image: iceberg_buckets.jpg
 time: "3m:40s"
 tags: quality all
