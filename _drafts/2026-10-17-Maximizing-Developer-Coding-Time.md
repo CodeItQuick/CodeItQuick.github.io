@@ -8,7 +8,7 @@ tags: quality all
 ---
 
 <div class="w-full text-center">
-    <h1>The Cost of Ignoring Invisible Development Work</h1>
+    <h1>Part 2 - The Four Ways to Reclaim Developer Time</h1>
     <h6>(Reading Time: 9 minutes 00 seconds)</h6>
 </div>
 
