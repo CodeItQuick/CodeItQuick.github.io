@@ -11,53 +11,93 @@ redirect_from:
 
 <div class="w-full text-center">
     <h1>Part 2 - The Four Ways to Reclaim Developer Time</h1>
-    <h2>NEEDS HEAVY REVISION - I have like 2-3 pages of notes on how to improve this. I would not bother reading</h2>    
-    <h6>(Reading Time: 2 minutes 10 seconds)</h6>
+    <h6>(Reading Time: 3 minutes 30 seconds)</h6>
 </div>
 
 # Introduction
 
-# Developers Do More Than Code
+In [part 1](/2026/01/21/Making-Invisible-Developer-Work-Visible.html) of this series we looked at all the work developers
+do that isn't coding. Meetings, troubleshooting, support requests, collecting metrics, and other administrative work are
+all part of the job.
 
-In part 1 of this series we explored the activities that are more than coding for a developer. These include the following:
-  * Platform / Infrastructure Work, Architecture & System Evolution
-  * Quality Work, Support & Collaboration, and Discovery & Planning Work
-  * Improving the Codebase & Keeping it Current
+Some of this work is necessary. But are we performing it in the most effective way? More importantly, should we be doing
+it at all?
 
-But shouldn't we be maximizing our time regardless? It's not that these activities necessarily have _low_ value it's more
-how do we pick and choose which activities to spend the most time on. Making sure we surface the majority of work we're 
-doing in Jira is important for self reflection. How do we realize when digging through logs could have just been
-a one time (and very shortly spent) period of creating a dashboard.
+Before trying to optimize an activity, we should understand why we're doing it, what value it provides, and whether that
+value justifies the time spent. There are four approaches we can take: eliminating, automating, delegating, and enabling
+self-service.
 
-# Eliminate or Reduce Unnecessary Work
+# 1. Eliminate Unnecessary Work
 
-The first, easiest, and probably also potentially most dangerous method is to reduce unnecessary work. The classic "this 
-meeting could have been an email". We need to realize times when our work is not going towards coding, then thinking back
-on where the time is going, and finally coming up with solutions on how to resolve these time syncs. Telling your manager
-can help as well, as a portion of their job is enabling you through these kinds of actions.
+The most effective way to complete a task is to avoid doing it in the first place. Before accepting recurring work, ask:
+  * What problem are we actually solving?
+  * What happens if we stop doing this?
+  * Is the work worth the time we're spending on it?
 
-Challenge how frequently activities need to happen. This is reducing the number of daily standup meetings when they are
-not useful, synchronizing less often with coworkers/other developers when it is not needed, and mostly just being comfortable
-saying "no". We need to address the underlying problems rather than just managing the syptoms/surface level requests.
+The classic example is "this meeting could have been an email". A recurring meeting or status report usually starts for a
+good reason, but that reason can disappear long before the meeting does. Standups are a good candidate. They are supposed
+to be daily, but as I covered in [Agile And Scrum Drift in Development](/2026/07/17/Agile-Drift-In-Development.html), our
+team runs fewer of them because the stakeholders only need updates a couple of days a week.
 
-# Automate Repetitive Activities
+Rather than optimizing the process, consider eliminating it or reducing its scope. Start with the assumption that the work
+may not be necessary, and establish why it should continue. Start with no, then move toward maybe.
 
-Nowadays AI can be used to automate repetitive tasks. Need to notify several people of a change? We can use AI on slack 
-to notify them without spending much time drafting responses, etc. We also want to use automated testing over manual testing
-whenever possible - ideally we should be fairly certain when a change goes out that it will work on the standard use-case.
+# 2. Automate Repetitive Activities
 
-Internal tooling is a lot cheaper now. AI can be used to dramatically reduce the costs of creating these internal tools.
+If work cannot be eliminated, we should consider whether it can be automated.
 
-# Delegate Work and Enable Self-Service
+We were spending 2-3 hours each day collecting deployment metrics. A dashboard can replace much of that manual activity.
+Automated testing is the same idea: we want to be fairly certain a change works on the standard use-case without someone
+clicking through it by hand every release.
 
-Groups like customer service, QA, and other departments interactions can be minimized by enabling their requests through
-self service mechanism. Devops requests could potentially be automated requests that are filled out and OK'd via a form.
-QA requests or IT requests can be automated through slack bots to cut down on these repetitive and mechanical activities
-time sync on our day. We want to enable other teams, while at the same time minimize the amount of administration work
-our department is doing. The metrics dashboard is another example of a tool that can be built to inform product owners of
-how a particular initiative is going.
+However, automation introduces costs of its own. Before building something, consider:
+  * Does an existing tool already provide this functionality?
+  * Could we purchase or configure something instead?
+  * How much time would automation save?
+  * What are the implementation and ongoing maintenance costs?
 
-# Conclusion
+AI may reduce implementation effort, but making something cheaper to build doesn't necessarily make it worth building.
 
-Find ways to maximize your time using AI, reducing unnecessary process, automating repetitive activities, and delegating
-work by enabling self-service solutions.
+# 3. Delegate Work
+
+Some activities need to happen, but don't necessarily need to be performed by developers. DevOps requests, QA requests, and
+IT requests are common examples. A request might go through a form that someone outside the development team approves,
+instead of landing on a developer's desk.
+
+Delegation shouldn't simply transfer the problem elsewhere. Consider the cost of the handoff. How much knowledge or context
+must be transferred? Does another team understand the underlying problem, or are we just sending them a narrowly defined
+ticket?
+
+Sometimes a brief conversation is more effective than a detailed ticket and several rounds of clarification. The goal is to
+reduce the overall cost of completing the work, rather than simply move it off the developer's plate.
+
+# 4. Enable Self-Service
+
+Developers are often interrupted by requests for information, access, or other routine activities. When these requests are
+common, repeatable, and well understood, self-service may be an effective solution.
+
+Instead of having developers manually provide deployment information, make that information available through a dashboard.
+The deployment metrics dashboard does this for product owners who want to know how a particular initiative is going.
+
+But self-service isn't appropriate for every problem. Some requests require discussion to understand what the person
+actually needs. A ticketing system or form can reduce interruptions, but it can also strip away important context.
+Self-service works best when the problem and the expected outcome are already understood.
+
+# Putting It Into Practice
+
+Start by identifying where developer time is going. Make recurring activities visible, then question why they exist.
+
+For each activity:
+  1. **Eliminate:** Does this work need to happen?
+  2. **Automate:** Can technology reduce the effort required?
+  3. **Delegate:** Is someone else better positioned to perform it?
+  4. **Self-service:** Can the person needing the result obtain it independently?
+
+These techniques are not mutually exclusive, and they shouldn't be applied blindly.
+
+If improving the workflow requires authority beyond your role, bring the problem to your manager with a concrete
+explanation of the time spent, the proposed change, and the expected benefit. A portion of their job is enabling you
+through these kinds of changes.
+
+The objective isn't simply to maximize the hours developers spend coding. It's to reduce unnecessary effort while
+preserving the outcomes that matter.
