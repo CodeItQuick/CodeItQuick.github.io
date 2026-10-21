@@ -11,6 +11,7 @@ redirect_from:
 
 <div class="w-full text-center">
     <h1>Part 2 - The Four Ways to Reclaim Developer Time</h1>
+    <h2>NEEDS HEAVY REVISION - I have like 2-3 pages of notes on how to improve this. I would not bother reading</h2>    
     <h6>(Reading Time: 2 minutes 10 seconds)</h6>
 </div>
 
