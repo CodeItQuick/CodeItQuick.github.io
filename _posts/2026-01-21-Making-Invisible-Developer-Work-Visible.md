@@ -155,7 +155,7 @@ supported by several activities (detailed in this section).
 </div>
 
 
-## The Engineering Iceberg
+# The Engineering Iceberg
 
 | Bucket      | Primary Purpose                         | Example            |
 | ----------- |-----------------------------------------|--------------------|
@@ -166,12 +166,12 @@ supported by several activities (detailed in this section).
 | **Evolve**  | Adapt to changing constraints           | Migrate Runtimes   |
 {: .table .table-zebra .table-hover}
 
-### Why Some Work is More Visible
+## Why Some Work is More Visible
 Building a feature produces something stakeholders can see. Fixing a production issue restores something that was broken. 
 But improving maintainability, preparing for a migration, or keeping operational systems healthy may receive less attention 
 because the benefits aren't always immediately obvious.
 
-### The Visibility of Work
+## The Visibility of Work
 
 The iceberg represents how visible different kinds of engineering work may be to stakeholders. It does not represent
 their relative cost, frequency, or importance.
