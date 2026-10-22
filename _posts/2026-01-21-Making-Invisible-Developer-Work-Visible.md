@@ -80,10 +80,6 @@ for the full range of engineering responsibilities.
 * Reliability Improvements
 * Maintainability Improvements
 
-**Keeping Things Current**
-* Dependency Upgrades
-* Compliance / Policy Work
-
 </div>
 <div class="iceberg-columns__text" markdown="1">
 
@@ -104,11 +100,13 @@ capability, rather than primarily introducing a new one.
 * Operational Maintenance   
 * Backup And Recovery 
 
-**Evolve: Adapt the system to changing constraints**
+**Evolve: Adapting to Change**
 * Runtime Migration   
+* Dependency Upgrades
 * Architecture Modernization
 * Infrastructure Transitions
 * Major Integration Changes
+* Regulatory / Compliance Changes
 
 </div>
 <div class="iceberg-columns__text" markdown="1">
@@ -116,6 +114,7 @@ Run is the work required to keep existing systems operating. That includes monit
 the infrastructure we depend on. Evolve is different: it's about adapting those systems when their surroundings or requirements 
 change.
 
+This includes everything from migrating unsupported dependencies to adapting existing systems to changing regulatory requirements.
 Systems aren't an independent, isolated instance of a service. They have dependencies like everything else. Customers who
 depend on them working, partners who rely on that infrastructure, and any other manner you reach an end consumer. Vendors
 will retire services, dependencies lose support, and infrastructure requirements change. Sometimes (and frequently we do)
