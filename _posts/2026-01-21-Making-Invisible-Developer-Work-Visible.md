@@ -13,32 +13,34 @@ featured: true
     <h6>(Reading Time: 3 minutes 40 seconds)</h6>
 </div>
 
-# Introduction
+# Introduction: Engineering Work Beyond Features and Bugs
 
-Development teams rarely move out of the "build" mindset in later stages of development, or in crisis/migration situations.
-The pain described in this article is frequent. Developers frequently fail to get important technical debt work prioritized,
-which results in expensive migrations, technical debt paydown, or a difficult to change codebase later on. 
+Building features and fixing bugs are easy to recognize as development work. However, engineers spend time on other activities
+that are often not realized. Items like keeping systems running, improving how they work, and adapting them to changing requirements
+also consumes engineering capacity. Without describing these responsibilities, we have a harder time discussing them with
+the rest of the business.
 
 # The Problem
 
-Developers often struggle to explain where their time goes to the product owners and business side of the equation. Business
-stakeholders often see only "features" and "bugs", but developers know there's a lot more work involved. Furthermore, 
-once the feature is built and fixed, there is still significantly more work to be done in terms of maintenance costs. What
-are these other kinds of work we frequently forget about, and how can we clearly define them so they do get worked on?
+Before we decide how to optimize our work, how to prioritize it, or what to work on, we need a common understanding of 
+what the work is and what we are actually doing. Have you ever been given the difficult task: "What would you say... you do here" (Bob Slydell while interviewing Tom Smykowski in office space).
+Just because every activity is visible does not mean every activity should be done. Have you ever wondered as a developer
+why we are working on certaings, why do I spend so much time on testing, etc? Well this article series will answer those questions.
+Finally, developers can have a discussion with the part of the business we affectionately call "the business" on where our
+time should be spent.
 
-# The Top of The Iceberg 
-## Product Work & Fixing Things
+# The Five Types of Engineering Work
 
 <div class="iceberg-columns" markdown="1">
 <div class="iceberg-columns__list" markdown="1">
 
-**Product Work**    
+**Build: Product Work**    
 * Features    
 * Enhancements    
 * Experimentation    
 * Product Polish    
 
-**Fixing Things**  
+**Fix: Restore Expected Behaviour**  
 * Production Incident    
 * Bugs    
 * Defect Prevention    
@@ -47,78 +49,75 @@ are these other kinds of work we frequently forget about, and how can we clearly
 <div class="iceberg-columns__text" markdown="1">
 
 This is the obvious work that developers do. The feature that is shipped, the button enhancements, experimentation, and 
-just overall product polish. Noone really debates the importance of this work, it's just that it's not the entire picture.
-So while this work is extremely important, and perhaps we should even optimize for this type of work, it is not the entire
-picture. 
+just overall product polish. All of these are important aspects of engineering and development, but they do not account
+for the full range of engineering responsibilities.
 
 </div>
 </div>
-
-# The Iceberg
-## Business As Usual: Operations - Platform / Infrastructure Work, Architecture & System Evolution
 
 <div class="iceberg-columns" markdown="1">
 <div class="iceberg-columns__list" markdown="1">
 
-**Platform / Infrastructure Work**
-* DevEx / Tooling   
-* CI / CD   
-* Infrastructure Changes   
-* Monitoring Operations   
+**Run: Keep the existing system working**
+* Monitoring   
+* Incident Readiness
+* Operational Maintenance   
+* Backup And Recovery 
 
-**Architecture & System Evolution**
-* Architecture Changes   
-* Migrations   
-* Integration Work   
+**Evolve: Adapt the system to changing constraints**
+* Runtime Migration   
+* Architecture Modernization
+* Infrastructure Transitions
+* Major Integration Changes
 
 </div>
 <div class="iceberg-columns__text" markdown="1">
 
-Once this work is in place and "complete" the tendency is to not iterate on it. But there is a hidden cost to never updating
-pipelines, never changing database tables, or never making data migrations. The problem is eventually you will be bitten
-by putting it off for so long. Circle-CI pipelines left to rot on an old version will eventually not work; node modules 
-are eventually not supported anymore for Node v12, etc. Don't get stuck in a situation where a particular service is about
-to be sunsetted and no longer offered; forcing an upgrade, or you lose the customer base.
+Systems aren't an indepenent, isolated instance of a service. They have dependencies like everything else. Customers who
+depend on them working, partners who rely on that infrastructure, and any other manner you reach an end consumer. Vendors
+will retire services, dependencies lose support, and infrastructure requirements change. Sometimes (and frequently we do)
+defer these changes for years. Judging during this time that they "aren't worth it". Evolve is the work of adapting an existing
+system when those constraints change, at the right time, for the right reasons.
 
 </div>
 </div>
 
-## Table Stakes: Quality Work, Support & Collaboration, and Discovery & Planning Work
+# The Work Behind the Work
 
 <div class="iceberg-columns" markdown="1">
 <div class="iceberg-columns__list" markdown="1">
 
-**Quality Work**  
 * Testing Work  
-* QA Support  
-* Observability  
-
-**Support & Collaboration**  
-* Code Review  
-* Debugging / Investigation  
-* Documentation  
-* Stakeholder Communication  
-
-**Discovery / Planning Work**  
-* Spikes / Research  
-* Design  
-* Backlog Grooming  
+* Coding  
+* Testing
+* Reviewing
+* Research
+* Designing
+* Debugging
+* Planning
+* Communicating
+* Documenting
 
 </div>
 <div class="iceberg-columns__text" markdown="1">
 
-Then there's the activities that are simply assumed to be necessary. The work has to be high quality; the software has to
-work properly. So we build automated test suites, invest in our manual QA team, and verify everything that has shipped 
-works in production, under load, for the largest of our customers. If the developers begin to sell this work as "extra"
-it becomes a very real problem. Bake in the testing-time, stamping out bugs, and more as if it is "compile time". You don't
-ask your boss whether you should compile the code or not; likewise, you shouldn't have to ask permission to make certain
-it's working correctly.
+Consider updating a dependency in your node packages. The primary purpose may be to evolve, upgrading from Angular 10 
+to Angular 22, but completing it could involve researching how to perform these upgrades, in addition to: coding, testing,
+code review, deployment, and coordination. The upgrade is one piece of engineering work (which we mentioned in the previous section)
+support by several activities (detailed in this section).
 
 </div>
 </div>
 
 
-## The Never Addressed: Improve How it Works & Keeping Things Current
+## The Engineering Iceberg
+
+The iceberg represents how visible different kinds of engineering work may be to stakeholders. It does not represent
+their relative cost, frequency, or importance.
+
+<p align="center" width="100%">
+    <img src="/assets/images/iceberg_buckets.jpg"  alt="Product Iceberg" height="512" width="512" />
+</p>  
 
 <div class="iceberg-columns" markdown="1">
 <div class="iceberg-columns__list" markdown="1">
@@ -126,9 +125,9 @@ it's working correctly.
 **Improve How It Works**
 * Refactoring  
 * Tech Debt  
-* Performance Work  
+* Performance Optimization  
 * Reliability / Resilience  
-* Security Work  
+* Security Fixes 
 * Maintainability  
 
 **Keeping Things Current**
@@ -138,10 +137,10 @@ it's working correctly.
 </div>
 <div class="iceberg-columns__text" markdown="1">
 
-Finally there is the true metaphorical bottom of the iceberg. The things we rarely have time for - large refactors or rewrites
-of the system as it's use cases potentially change. Performance work to keep the solution generally scaling; making sure
-the code base is easy to maintain, and not costly to make fixes or understand. As well as keeping the system up-to-date
-in terms of dependency upgrades, compliance, policies, etc.
+Improve is work that makes an existing system easier, safer, or more efficient to operate and change. Sometimes that's a refactoring
+of a critical system. Sometimes it performance improvements to allow for deployments to a larger number of devices. Other
+times we are seeking better security, or improved reliability. The important distinction is that we are improving an existing
+capability, rather than primarily introducing a new one.
 
 </div>
 </div>
@@ -149,29 +148,21 @@ in terms of dependency upgrades, compliance, policies, etc.
 # The Five Buckets of Work
 ## What Each Bucket Builds
 
-Understanding what capabilities each type of work builds helps you make strategic decisions about where to invest time.
+These categories describe the primary purpose of engineering work, not rigid boundaries. A migration might improve performance,
+reliability, maintainability all at the same time. The goal isn't to classify every activity perfectly; it's to make the work easier
+to discuss.
 
-| Bucket      | Primary Capabilities It Builds                          | 
-| ----------- | ------------------------------------------------------- | 
-| **Build**   | **Capability**, **Value delivery**, **Usability**       | 
-| **Fix**     | **Correctness**, **Stability**, **Trust**               | 
-| **Improve** | **Maintainability**, **Changeability**, **Testability** | 
-| **Run**     | **Reliability**, **Observability**, **Operability**     | 
-| **Evolve**  | **Scalability**, **Extensibility**, **Adaptability**    | 
+| Bucket      | Primary Purpose                         | Example            |
+| ----------- |-----------------------------------------|--------------------|
+| **Build**   | Create or enhance a capability          | Add a feature      |
+| **Fix**     | Restore expected behavior               | Resolve a defect   |
+| **Improve** | Improve existing system characteristics | Reduce build time  |
+| **Run**     | Keep systems operating                  | Monitor Production |
+| **Evolve**  | Adapt to changing constraints           | Migrate Runtimes   |
 {: .table .table-zebra .table-hover}
 
-We tend to think in terms of only build/fix. It is an interesting observation that "fix" really goes along with every task
-that is manageable. However, all of the activities under the iceberg have to be taken care of "eventually". Maybe they can
-be put off for a year, five years, ten years, or even longer. However, eventually being on Python 2.7 will come to bite you,
-even if it takes them 10+ years to sunset the language.
-
 # Conclusion - The Iceberg
-<p align="center" width="100%">
-    <img src="/assets/images/iceberg_buckets.jpg"  alt="Product Iceberg" height="512" width="512" />
-</p>  
 
-The product iceberg, which is composed of the 5 kinds of work identified in this article, allows for us to succinctly understand
-what kinds of work is available to be tackled. Since we have very limited time and budget in basically all development scenarios
-(startups really are just an extra-extreme case), we have to decide what portions of development we cannot skimp on. We
-also have to realize that a large amount of planning and design should go into all solutions we propose, and that 
-not all developer time is deep-work coding activities.
+Build, Fix, Improve, Run, and Evolve give us five ways to describe what engineering teams are trying to accomplish. But 
+knowing the work exists doesn't tell us how much time it consumes, whether it's worth doing, or what we should prioritize. 
+Those are separate questions, and they start with making the work visible.
