@@ -58,7 +58,6 @@ to discuss.
 **Fix: Restore Expected Behaviour**  
 * Production Incident    
 * Bugs    
-* Defect Prevention    
 * Security Fixes
 
 </div>
@@ -67,33 +66,6 @@ to discuss.
 This is the obvious work that developers do. The feature that is shipped, the button enhancements, experimentation, and 
 just overall product polish. All of these are important aspects of engineering and development, but they do not account
 for the full range of engineering responsibilities.
-
-</div>
-</div>
-
-<div class="iceberg-columns" markdown="1">
-<div class="iceberg-columns__list" markdown="1">
-
-**Run: Keep the existing system working**
-* Monitoring   
-* Incident Readiness
-* Operational Maintenance   
-* Backup And Recovery 
-
-**Evolve: Adapt the system to changing constraints**
-* Runtime Migration   
-* Architecture Modernization
-* Infrastructure Transitions
-* Major Integration Changes
-
-</div>
-<div class="iceberg-columns__text" markdown="1">
-
-Systems aren't an independent, isolated instance of a service. They have dependencies like everything else. Customers who
-depend on them working, partners who rely on that infrastructure, and any other manner you reach an end consumer. Vendors
-will retire services, dependencies lose support, and infrastructure requirements change. Sometimes (and frequently we do)
-defer these changes for years. Judging during this time that they "aren't worth it". Evolve is the work of adapting an existing
-system when those constraints change, at the right time, for the right reasons.
 
 </div>
 </div>
@@ -123,6 +95,36 @@ capability, rather than primarily introducing a new one.
 </div>
 </div>
 
+<div class="iceberg-columns" markdown="1">
+<div class="iceberg-columns__list" markdown="1">
+
+**Run: Keep the existing system working**
+* Monitoring   
+* Incident Readiness
+* Operational Maintenance   
+* Backup And Recovery 
+
+**Evolve: Adapt the system to changing constraints**
+* Runtime Migration   
+* Architecture Modernization
+* Infrastructure Transitions
+* Major Integration Changes
+
+</div>
+<div class="iceberg-columns__text" markdown="1">
+Run is the work required to keep existing systems operating. That includes monitoring, backup and recovery, and maintaining 
+the infrastructure we depend on. Evolve is different: it's about adapting those systems when their surroundings or requirements 
+change.
+
+Systems aren't an independent, isolated instance of a service. They have dependencies like everything else. Customers who
+depend on them working, partners who rely on that infrastructure, and any other manner you reach an end consumer. Vendors
+will retire services, dependencies lose support, and infrastructure requirements change. Sometimes (and frequently we do)
+defer these changes for years. Judging during this time that they "aren't worth it". Evolve is the work of adapting an existing
+system when those constraints change, at the right time, for the right reasons.
+
+</div>
+</div>
+
 # The Work Behind the Work
 
 <div class="iceberg-columns" markdown="1">
@@ -145,11 +147,10 @@ The five buckets describe what we're trying to accomplish. But they don't necess
 Whether we're building something new, fixing something broken, or modernizing an existing system, the work involves many 
 of the same activities.  
 
-
 Consider updating a dependency in your node packages. The primary purpose may be to evolve, upgrading from Angular 10 
 to Angular 22, but completing it could involve researching how to perform these upgrades, in addition to: coding, testing,
-code review, deployment, and coordination. The upgrade is one piece of engineering work (which we mentioned in the previous section)
-supported by several activities (detailed in this section).
+code review, deployment, and coordination. The migration is one piece of engineering work, supported by several different 
+activities.
 
 </div>
 </div>
