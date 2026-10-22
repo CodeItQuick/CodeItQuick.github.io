@@ -17,7 +17,7 @@ featured: true
 
 Building features and fixing bugs are easy to recognize as development work. However, engineers spend time on other activities
 that are often not realized. Items like keeping systems running, improving how they work, and adapting them to changing requirements
-also consumes engineering capacity. Without describing these responsibilities, we have a harder time discussing them with
+also consume engineering capacity. Without describing these responsibilities, we have a harder time discussing them with
 the rest of the business.
 
 # The Problem
