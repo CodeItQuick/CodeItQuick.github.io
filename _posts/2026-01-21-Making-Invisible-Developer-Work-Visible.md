@@ -1,16 +1,16 @@
 ---
 layout: post
 name: Part 1 - Making Invisible Developer Work Visible
-description: Eliminate, automate, and delegate work to reclaim developer coding time.
+description: Accurately describe developer work
 image: iceberg_buckets.jpg
-time: "3m:40s"
+time: "4m:30s"
 tags: developer-time all
 featured: true
 ---
 
 <div class="w-full text-center">
     <h1>Part 1 - Making Invisible Developer Work Visible</h1>
-    <h6>(Reading Time: 3 minutes 40 seconds)</h6>
+    <h6>(Reading Time: 4 minutes 30 seconds)</h6>
 </div>
 
 # Introduction: Engineering Work Beyond Features and Bugs
@@ -25,11 +25,26 @@ the rest of the business.
 Before we decide how to optimize our work, how to prioritize it, or what to work on, we need a common understanding of 
 what the work is and what we are actually doing. Have you ever been given the difficult task: "What would you say... you do here" (Bob Slydell while interviewing Tom Smykowski in office space).
 Just because every activity is visible does not mean every activity should be done. Have you ever wondered as a developer
-why we are working on certaings, why do I spend so much time on testing, etc? Well this article series will answer those questions.
-Finally, developers can have a discussion with the part of the business we affectionately call "the business" on where our
-time should be spent.
+why we are working on certain things? Well this article series will describe the different kinds of work within the development cycle. 
+Finally, developers can have a discussion with the part of the business we affectionately call "the business" on where our time should be spent.
 
 # The Five Types of Engineering Work
+## What Each Bucket Builds
+
+These categories describe the primary purpose of engineering work, not rigid boundaries. A migration might improve performance,
+reliability, maintainability all at the same time. The goal isn't to classify every activity perfectly; it's to make the work easier
+to discuss.
+
+| Bucket      | Primary Purpose                         | Example            |
+| ----------- |-----------------------------------------|--------------------|
+| **Build**   | Create or enhance a capability          | Add a feature      |
+| **Fix**     | Restore expected behavior               | Resolve a defect   |
+| **Improve** | Improve existing system characteristics | Reduce build time  |
+| **Run**     | Keep systems operating                  | Monitor Production |
+| **Evolve**  | Adapt to changing constraints           | Migrate Runtimes   |
+{: .table .table-zebra .table-hover}
+
+## Each Bucket in Detail
 
 <div class="iceberg-columns" markdown="1">
 <div class="iceberg-columns__list" markdown="1">
@@ -44,6 +59,7 @@ time should be spent.
 * Production Incident    
 * Bugs    
 * Defect Prevention    
+* Security Fixes
 
 </div>
 <div class="iceberg-columns__text" markdown="1">
@@ -73,11 +89,36 @@ for the full range of engineering responsibilities.
 </div>
 <div class="iceberg-columns__text" markdown="1">
 
-Systems aren't an indepenent, isolated instance of a service. They have dependencies like everything else. Customers who
+Systems aren't an independent, isolated instance of a service. They have dependencies like everything else. Customers who
 depend on them working, partners who rely on that infrastructure, and any other manner you reach an end consumer. Vendors
 will retire services, dependencies lose support, and infrastructure requirements change. Sometimes (and frequently we do)
 defer these changes for years. Judging during this time that they "aren't worth it". Evolve is the work of adapting an existing
 system when those constraints change, at the right time, for the right reasons.
+
+</div>
+</div>
+
+<div class="iceberg-columns" markdown="1">
+<div class="iceberg-columns__list" markdown="1">
+
+**Improve How It Works**
+* Refactoring
+* Tech Debt Remediation
+* Performance Optimization
+* Reliability Improvements
+* Maintainability Improvements
+
+**Keeping Things Current**
+* Dependency Upgrades
+* Compliance / Policy Work
+
+</div>
+<div class="iceberg-columns__text" markdown="1">
+
+Improve is work that makes an existing system easier, safer, or more efficient to operate and change. Sometimes that's a refactoring
+of a critical system. Sometimes it's performance improvements to allow for deployments to a larger number of devices. Other
+times we are seeking better security, or improved reliability. The important distinction is that we are improving an existing
+capability, rather than primarily introducing a new one.
 
 </div>
 </div>
@@ -87,7 +128,6 @@ system when those constraints change, at the right time, for the right reasons.
 <div class="iceberg-columns" markdown="1">
 <div class="iceberg-columns__list" markdown="1">
 
-* Testing Work  
 * Coding  
 * Testing
 * Reviewing
@@ -101,56 +141,21 @@ system when those constraints change, at the right time, for the right reasons.
 </div>
 <div class="iceberg-columns__text" markdown="1">
 
+The five buckets describe what we're trying to accomplish. But they don't necessarily describe how we accomplish it. 
+Whether we're building something new, fixing something broken, or modernizing an existing system, the work involves many 
+of the same activities.  
+
+
 Consider updating a dependency in your node packages. The primary purpose may be to evolve, upgrading from Angular 10 
 to Angular 22, but completing it could involve researching how to perform these upgrades, in addition to: coding, testing,
 code review, deployment, and coordination. The upgrade is one piece of engineering work (which we mentioned in the previous section)
-support by several activities (detailed in this section).
+supported by several activities (detailed in this section).
 
 </div>
 </div>
 
 
 ## The Engineering Iceberg
-
-The iceberg represents how visible different kinds of engineering work may be to stakeholders. It does not represent
-their relative cost, frequency, or importance.
-
-<p align="center" width="100%">
-    <img src="/assets/images/iceberg_buckets.jpg"  alt="Product Iceberg" height="512" width="512" />
-</p>  
-
-<div class="iceberg-columns" markdown="1">
-<div class="iceberg-columns__list" markdown="1">
-
-**Improve How It Works**
-* Refactoring  
-* Tech Debt  
-* Performance Optimization  
-* Reliability / Resilience  
-* Security Fixes 
-* Maintainability  
-
-**Keeping Things Current**
-* Dependency Upgrades  
-* Compliance / Policy Work  
-
-</div>
-<div class="iceberg-columns__text" markdown="1">
-
-Improve is work that makes an existing system easier, safer, or more efficient to operate and change. Sometimes that's a refactoring
-of a critical system. Sometimes it performance improvements to allow for deployments to a larger number of devices. Other
-times we are seeking better security, or improved reliability. The important distinction is that we are improving an existing
-capability, rather than primarily introducing a new one.
-
-</div>
-</div>
-
-# The Five Buckets of Work
-## What Each Bucket Builds
-
-These categories describe the primary purpose of engineering work, not rigid boundaries. A migration might improve performance,
-reliability, maintainability all at the same time. The goal isn't to classify every activity perfectly; it's to make the work easier
-to discuss.
 
 | Bucket      | Primary Purpose                         | Example            |
 | ----------- |-----------------------------------------|--------------------|
@@ -160,6 +165,20 @@ to discuss.
 | **Run**     | Keep systems operating                  | Monitor Production |
 | **Evolve**  | Adapt to changing constraints           | Migrate Runtimes   |
 {: .table .table-zebra .table-hover}
+
+### Why Some Work is More Visible
+Building a feature produces something stakeholders can see. Fixing a production issue restores something that was broken. 
+But improving maintainability, preparing for a migration, or keeping operational systems healthy may receive less attention 
+because the benefits aren't always immediately obvious.
+
+### The Visibility of Work
+
+The iceberg represents how visible different kinds of engineering work may be to stakeholders. It does not represent
+their relative cost, frequency, or importance.
+
+<p align="center" width="100%">
+    <img src="/assets/images/iceberg_buckets.jpg"  alt="Product Iceberg" height="512" width="512" />
+</p>  
 
 # Conclusion - The Iceberg
 
