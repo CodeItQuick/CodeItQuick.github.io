@@ -115,11 +115,11 @@ the infrastructure we depend on. Evolve is different: it's about adapting those 
 change.
 
 This includes everything from migrating unsupported dependencies to adapting existing systems to changing regulatory requirements.
-Systems aren't an independent, isolated instance of a service. They have dependencies like everything else. Customers who
-depend on them working, partners who rely on that infrastructure, and any other manner you reach an end consumer. Vendors
-will retire services, dependencies lose support, and infrastructure requirements change. Sometimes (and frequently we do)
-defer these changes for years. Judging during this time that they "aren't worth it". Evolve is the work of adapting an existing
-system when those constraints change, at the right time, for the right reasons.
+Systems don't exist in isolation. They have dependencies, customers who rely on them, and partners who depend on their infrastructure. 
+Vendors retire services, dependencies lose support, and infrastructure requirements change.
+
+Sometimes we defer these changes for years because we judge that they aren't worth addressing yet. Evolve is the work of 
+adapting an existing system when those constraints change, at the right time, for the right reasons.
 
 </div>
 </div>
@@ -156,15 +156,6 @@ activities.
 
 
 # The Engineering Iceberg
-
-| Bucket      | Primary Purpose                         | Example            |
-| ----------- |-----------------------------------------|--------------------|
-| **Build**   | Create or enhance a capability          | Add a feature      |
-| **Fix**     | Restore expected behavior               | Resolve a defect   |
-| **Improve** | Improve existing system characteristics | Reduce build time  |
-| **Run**     | Keep systems operating                  | Monitor Production |
-| **Evolve**  | Adapt to changing constraints           | Migrate Runtimes   |
-{: .table .table-zebra .table-hover}
 
 ## Why Some Work is More Visible
 Building a feature produces something stakeholders can see. Fixing a production issue restores something that was broken. 
