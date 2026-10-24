@@ -104,7 +104,7 @@ Our engineering team has a certain amount of capacity available. During the two-
 
 We can group the resources consumed by that activity into a *cost pool*.
 
-In a monetary model, the pool would contain the relevant costs of providing the review activity, such as the labour cost of the time spent reviewing. For now, we'll use developer-hours as a measure of effort. Part 2C will look more closely at the financial costs of supplying engineering capacity.
+In a monetary model, the pool would contain the relevant costs of providing the review activity, such as the labour cost of the time spent reviewing. If each developer earns a salary of $80,000 a year, the pool would include the share of that salary for those 40 hours, plus benefits and other employment costs. For now, we'll use developer-hours as a measure of effort. Part 2C will look more closely at the financial costs of supplying engineering capacity.
 
 How do we determine what belongs in the review pool?
 

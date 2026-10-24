@@ -38,7 +38,7 @@ In [Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html), we es
 
 Now we need to understand how much it costs to supply that capacity.
 
-The obvious starting point is developer salaries. If a developer makes $130,000 annually, we know at least part of the cost of employing that developer.
+The obvious starting point is developer salaries. If a developer makes $80,000 annually, we know at least part of the cost of employing that developer.
 
 However, salary is not the total cost to the organization.
 
@@ -50,20 +50,20 @@ Consider a fictional developer with the following annual costs:
 
 | Cost | Annual Amount |
 |---|--------------:|
-| Base Salary |      $160,000 |
-| Benefits and Employer Payroll Costs |       $48,000 |
-| Allocated Equipment, Tools, and Shared Overhead |       $42,000 |
-| **Total Annual Resource Cost** |  **$250,000** |
+| Base Salary |       $80,000 |
+| Benefits and Employer Payroll Costs |       $24,000 |
+| Allocated Equipment, Tools, and Shared Overhead |       $21,000 |
+| **Total Annual Resource Cost** |  **$125,000** |
 
 Suppose we have 1,800 available working hours per year after vacations, holidays, and other time off. These hours still include meetings, reviews, and other engineering activities. We aren't assuming every hour is spent coding.
 
-Dividing $180,000 by 1,800 gives us an approximate loaded cost of $100 per working hour.
+Dividing $125,000 by 1,800 gives us an approximate loaded cost of $69 per working hour.
 
 This provides a useful planning number. We can take the activities identified in Part 2B and assign an approximate monetary cost to the capacity they consume.
 
 But there are limitations.
 
-An organization may already be paying that salary regardless of what the developer works on. Allocating $1,000 of labour cost to a particular task does not mean the company spent an additional $1,000 in cash because that task was performed.
+An organization may already be paying that salary regardless of what the developer works on. Allocating $500 of labour cost to a particular task does not mean the company spent an additional $500 in cash because that task was performed.
 
 Contractors are somewhat different. Depending on their agreements, assigning additional hours might create additional expenditures. Cloud infrastructure can also produce costs that vary with usage, while other infrastructure and software subscriptions may have already been purchased.
 
@@ -119,13 +119,13 @@ That difference matters when estimating costs.
 
 ## 3. Capacity Isn't Capability
 
-Suppose Developer A has a loaded hourly rate of $120, while Developer B costs $75 per hour.
+Suppose Developer A has a loaded hourly rate of $60, while Developer B costs $37.50 per hour.
 
 A simple resource-cost comparison suggests that assigning work to Developer B should be cheaper.
 
 But what happens when Developer A can finish the task in four hours, while Developer B requires twenty?
 
-Developer A costs $480. Developer B costs $1,500.
+Developer A costs $240. Developer B costs $750.
 
 The developer with the higher hourly rate is considerably cheaper for this particular task.
 
@@ -173,7 +173,7 @@ Suppose we need to modify a billing integration to handle failed payment request
 
 We have two developers available.
 
-Developer A is familiar with the billing system and has a loaded labour cost of $120 per hour. Developer B is experienced but unfamiliar with this particular service, and has a loaded cost of $75 per hour.
+Developer A is familiar with the billing system and has a loaded labour cost of $60 per hour. Developer B is experienced but unfamiliar with this particular service, and has a loaded cost of $37.50 per hour.
 
 For the sake of this example, both developers can produce an implementation meeting the same requirements. We are comparing two possible assignments, not evaluating the employees themselves.
 
@@ -181,21 +181,21 @@ For the sake of this example, both developers can produce an implementation meet
 
 | Activity | Calculation | Cost |
 |---|---|---:|
-| Implementation and testing by A | 10 hours × $120 | $1,200 |
-| Code review by B | 3 hours × $75 | $225 |
-| Additional test environment usage | Estimated | $80 |
-| **Total** | | **$1,505** |
+| Implementation and testing by A | 10 hours × $60 | $600 |
+| Code review by B | 3 hours × $37.50 | $112.50 |
+| Additional test environment usage | Estimated | $40 |
+| **Total** | | **$752.50** |
 
 **Option B: Developer B implements the change with assistance.**
 
 | Activity | Calculation | Cost |
 |---|---|---:|
-| Implementation and testing by B | 24 hours × $75 | $1,800 |
-| Knowledge transfer and pairing by A | 6 hours × $120 | $720 |
-| Additional rework by B | 6 hours × $75 | $450 |
-| Code review by A | 3 hours × $120 | $360 |
-| Additional test environment usage | Estimated | $120 |
-| **Total** | | **$3,450** |
+| Implementation and testing by B | 24 hours × $37.50 | $900 |
+| Knowledge transfer and pairing by A | 6 hours × $60 | $360 |
+| Additional rework by B | 6 hours × $37.50 | $225 |
+| Code review by A | 3 hours × $60 | $180 |
+| Additional test environment usage | Estimated | $60 |
+| **Total** | | **$1,725** |
 
 These are fictional estimates, not measured productivity differences. We're assuming the loaded labour rates exclude the separately charged test environment costs, and that the listed activities don't overlap.
 
@@ -217,7 +217,7 @@ In both examples, we allocated a monetary cost to the engineering capacity consu
 
 If both developers are salaried employees, their compensation may remain unchanged regardless of which option we choose.
 
-The $1,505 and $3,450 estimates describe the resource costs attributed to the work. They are not necessarily the additional cash costs of choosing one option over another.
+The $752.50 and $1,725 estimates describe the resource costs attributed to the work. They are not necessarily the additional cash costs of choosing one option over another.
 
 An expenditure generally refers to spending money or acquiring something with a payment obligation. An accounting expense is a cost recognized against income in a particular reporting period.
 
@@ -255,7 +255,7 @@ Shared overhead is particularly difficult. An organization's office lease, secur
 
 The same problem exists with loaded hourly rates.
 
-A $100 hourly cost might be a reasonable estimate for planning. But if the actual work requires seventeen hours instead of ten, calculating a more precise hourly rate won't fix the estimate.
+A $69 hourly cost might be a reasonable estimate for planning. But if the actual work requires seventeen hours instead of ten, calculating a more precise hourly rate won't fix the estimate.
 
 And if the task requires expertise that isn't available, knowing the exact hourly rate is of limited help.
 

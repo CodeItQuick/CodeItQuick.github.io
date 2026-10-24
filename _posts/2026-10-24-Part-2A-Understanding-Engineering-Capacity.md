@@ -240,4 +240,6 @@ That picture doesn't tell us whether we're spending our time wisely. It doesn't 
 
 But it gives us a starting point for a different question: **what does all this engineering capacity actually cost?**
 
+Suppose each of our five developers earns a salary of $80,000 a year. That salary is part of the answer, but it isn't the whole cost.
+
 That's where we'll go next.
