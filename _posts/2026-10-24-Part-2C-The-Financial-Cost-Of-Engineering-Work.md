@@ -49,11 +49,11 @@ Accountants sometimes describe a more complete employment cost as a *fully loade
 Consider a fictional developer with the following annual costs:
 
 | Cost | Annual Amount |
-|---|---:|
-| Base Salary | $130,000 |
-| Benefits and Employer Payroll Costs | $28,000 |
-| Allocated Equipment, Tools, and Shared Overhead | $22,000 |
-| **Total Annual Resource Cost** | **$180,000** |
+|---|--------------:|
+| Base Salary |      $160,000 |
+| Benefits and Employer Payroll Costs |       $48,000 |
+| Allocated Equipment, Tools, and Shared Overhead |       $42,000 |
+| **Total Annual Resource Cost** |  **$250,000** |
 
 Suppose we have 1,800 available working hours per year after vacations, holidays, and other time off. These hours still include meetings, reviews, and other engineering activities. We aren't assuming every hour is spent coding.
 
