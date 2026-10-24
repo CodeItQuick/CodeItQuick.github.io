@@ -2,3 +2,5 @@ node_modules
 .idea
 _site
 .jekyll-metadata
+
+share.html
