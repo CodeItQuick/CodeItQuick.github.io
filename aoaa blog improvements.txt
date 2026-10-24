@@ -1,0 +1,42 @@
+aoaa blog improvements
+* CARD IS NOT CLICKABLE
+* space between paragraphs -> we want to display things between the paragraphs
+* need a cover picture and visuals
+* header for table is a rounded thing, something is missing in the table
+* I need a template (use medium?), or substack? blogger? tumblr? 1.8 between paragraphs for example on a medium article, line height at 2.14 rems, bunch of individual cases in the template
+* Find a blog that feels right to me, and then analyze it to use that as a base
+* should be left aligned the title? ahh if there was a cover the header would work "it's too "column-width" too"
+* column width-> bigger or smaller pick one
+* text -> caption -> text
+* https://medium.engineering/dark-mode-was-never-on-our-roadmap-heres-how-it-got-built-b8e0a54c1d12
+** breaking up the blog post with text -> caption or text -> text -> caption, text -> something else -> text -> something else
+
+
+why don't you read it
+* Introduction should be an eyebrow
+* Problem is a bit of a section
+* Five Types of Engineering Work is a heading/eyebrow as a section definition
+* paragraph -> table -> aside, at the same time, it's harder to parse and read and understand. And the section that is related to the behaviour, the leaves white space that doesn't need to be there. Is this the best layout for that section?
+* no contininuity between the sections. More aside is more complex?
+* hand made and hand coded to do the work? 
+* not enough work being done? not doing a ton of changes? output speed doesn't match the need?
+* "saas landing page design"
+
+https://lawsofux.com/
+https://www.toools.design/ -> Learnings
+
+* weird font, meme font, landing page sucks?
+* have articles as rows? for each tag? featured + agile next to each other, layout to be different
+
+"blog page design" on pinterest, take a look at all the layouts etc. why it works, why it doesn't work, etc. and do 6 hours before you touch the site again, 100-200-500 pages visual design layouts that they stay in your head
+->design
+->photography
+->historical
+->high converting
+different categories
+
+go for a specific look and feel -> inspiration & research & inspiration again
+
+last point: aphantasia test, if you are 5, it's difficult to do this
+
+muz.li ? if you don't want proactive, use this
