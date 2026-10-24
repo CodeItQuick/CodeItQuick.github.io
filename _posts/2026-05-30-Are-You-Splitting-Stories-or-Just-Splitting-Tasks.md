@@ -85,10 +85,6 @@ But something is off. The work is now smaller, but the outcome is not. Nothing u
 delivered. So what changed? We made the work smaller, but not the delivered outcome. Each task is split by the activities 
 required to complete it. 
 
-<p align="center" width="100%">
-    <img src="/assets/images/story_splitting_generic.png"  alt="Story Splitting Generic" height="512" width="512" />
-</p>  
-
 # SPIDR Story Splitting the Restaurant Example
 
 SPIDR gives us a different way to look at the same problem. What we want is smaller vertical slices that still 
