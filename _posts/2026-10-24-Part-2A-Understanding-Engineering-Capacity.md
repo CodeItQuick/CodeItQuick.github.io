@@ -1,123 +1,88 @@
 ---
 layout: post
 name: Part 2A - Understanding Engineering Capacity
-description: Jira tracks work, not capacity. Build a capacity statement to see where engineering time really goes.
+description: Understanding where engineering capacity goes and building a simple capacity statement.
 image: iceberg_buckets.jpg
-time: "9m:00s"
+time: "6m:30s"
 tags: developer-time all
 ---
 
 <div class="w-full text-center">
     <h1>Part 2A - Understanding Engineering Capacity</h1>
-    <h6>(Reading Time: 9 minutes)</h6>
+    <h6>(Reading Time: 6 minutes 30 seconds)</h6>
 </div>
 
-## 1. Jira Isn't a Capacity Statement
+# Jira Isn't a Capacity Statement
 
-Have you ever been asked why a development team isn't delivering more features? Maybe the team has five developers, each working 40 hours a week. That's 200 hours of engineering capacity every week. So where are those 200 hours going?
+Have you ever been asked why a development team isn't delivering more features? Let's say we have five developers working 
+forty hours a week. That's 200 hours of engineering capacity every week. It sounds like a lot of time, so where is it going? 
+Usually we open Jira, look at the stories that were completed, and try to explain what everyone was doing.
 
-The obvious answer is to look at Jira. We can pull up the sprint board, review completed stories, inspect bugs, and get some understanding of what the developers have been doing.
+There's nothing wrong with starting there. A Jira board can tell us what work we're managing, what has been completed, and 
+what we still intend to do. Depending on how we estimate our work, it may even give us an idea of the effort involved. But 
+a list of completed stories isn't the same thing as accounting for the team's available capacity.
 
-But does that explain where our engineering capacity went?
+Consider a feature estimated at twenty hours. That estimate might include researching the problem, writing the code, testing it, 
+reviewing the changes, and deploying the solution. We don't need a separate ticket for every one of those activities; they're 
+already part of delivering the feature. Now consider the same developer interviewing a candidate, attending a company meeting, 
+or helping another team investigate a production issue. Some teams record that work, others don't. Either way, those hours 
+are no longer available for whatever was planned on the board.
 
-Jira is useful for tracking work. It tells us what the team is trying to accomplish, what has been completed, and what remains. Depending on how the team manages its work, it may also give us some understanding of the effort involved.
+This doesn't mean the developer wasn't working, or that Jira is somehow broken. It means we're asking a work-tracking tool 
+to answer a different question. Before we can understand the cost of engineering work, we should at least have an idea of 
+how much capacity we're consuming and where it's going.
 
-What it doesn't necessarily provide is a complete accounting of engineering capacity.
+# Where Engineering Capacity Goes
 
-Consider a developer working on a feature estimated at 20 hours. That estimate might already include researching the requirements, writing code, testing, reviewing changes, and deploying the solution. Those activities don't need individual tickets to be accounted for. They're part of delivering the feature.
+In [Part 1, Making Invisible Developer Work Visible](/2026/01/21/Making-Invisible-Developer-Work-Visible.html), I 
+introduced five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. These describe what we're trying to 
+accomplish, rather than all of the individual activities involved in accomplishing it.
 
-Now consider the same developer attending a company-wide meeting, interviewing a job candidate, and helping another team diagnose an operational problem.
-
-Where do those activities appear?
-
-Sometimes they appear as tickets. Sometimes they appear in calendars. Sometimes they aren't recorded anywhere.
-
-Does that mean the developer wasn't working? Of course not.
-
-There's an important distinction here. **A work-tracking system describes work being managed. A capacity statement attempts to explain how the team's available working time was consumed.**
-
-We shouldn't assume missing tickets mean missing work. We also shouldn't assume that every hour not represented by a ticket is available for building features.
-
-Before we can understand the cost of engineering work, we need to understand where engineering capacity is actually going.
-
-## 2. Where Engineering Capacity Goes
-
-In Part 1, [*Making Invisible Developer Work Visible*](/2026/01/21/Making-Invisible-Developer-Work-Visible.html), I introduced five purposes of engineering work: Build, Fix, Improve, Run, and Evolve.
-
-These categories describe why engineering work exists, rather than the individual activities required to complete it.
-
-Consider a team responsible for a customer portal, a billing service, and the infrastructure supporting both.
-
-That team might spend its time on:
+Consider a team responsible for a customer portal, a billing service, and the infrastructure supporting both. Some of 
+its work might look like this:
 
 | Purpose | Example |
-|---|---|
-| Build | Adding a new customer account feature |
-| Fix | Correcting an invoice calculation defect |
-| Improve | Reducing the time required to execute automated tests |
-| Run | Monitoring production systems and verifying backups |
-| Evolve | Migrating an application to a supported .NET runtime |
+| ------- | ------- |
+| **Build** | Add a new customer account feature |
+| **Fix** | Correct an invoice calculation defect |
+| **Improve** | Reduce the time required to run automated tests |
+| **Run** | Monitor production systems and verify backups |
+| **Evolve** | Migrate an application to a supported .NET runtime |
+{: .table .table-zebra .table-hover}
 
-All five activities consume capacity. And all five may involve designing, coding, testing, reviewing, documenting, or communicating.
+Each of these purposes can involve coding, testing, code review, design, research, and communication. Two developers might 
+spend an afternoon reviewing and testing a customer feature. That's still Build work; it doesn't become a new category of 
+engineering work because someone opened a pull request. If we already counted their review and testing time in Build, 
+counting it again under code review would make our capacity statement wrong.
 
-We shouldn't create separate capacity categories for every development activity when those activities are already part of delivering the work.
+There's also work that doesn't fit neatly into any of the five purposes. Hiring interviews, general company meetings, 
+mandatory training, and some team coordination all consume capacity. A meeting to investigate a particular production 
+defect could be counted under Fix, while a general department meeting may be better represented as shared organizational 
+work. The classification depends on what the meeting was for, not whether it happened in a calendar or a ticket.
 
-For example, if two developers spend an afternoon reviewing and testing a new customer feature, that's still Build work. The work doesn't suddenly become a sixth engineering purpose because someone opened a pull request.
+None of this tells us whether a meeting was worth attending or whether the team should be spending more time on Build 
+than Run. That's a different discussion. For now, we're interested in the capacity required to do the work we've taken 
+on, including responsibilities that aren't represented by a feature or defect.
 
-But not everything a development team does can be attributed to one of these five purposes.
+# Building an Engineering Capacity Statement
 
-Developers attend organizational meetings, participate in hiring, complete administrative requirements, and spend time learning. Teams also have coordination responsibilities that don't belong to any particular feature, defect, or system.
+Let's continue with our hypothetical five-developer team and look at two weeks of work. Assuming ten working days at eight 
+hours per day, we start with 400 scheduled person-hours. One developer takes two days of vacation and another takes a 
+sick day, leaving 376 available person-hours. We should subtract that time before examining the work; otherwise, we might 
+end up trying to explain twenty-four hours that nobody was available to work.
 
-A team-wide planning meeting may concern several different kinds of engineering work. A discussion about changing the team's development practices might not be attributable to any particular deliverable.
+We're counting *person-hours*, not elapsed time. If two developers pair on a problem for three hours, that consumes six 
+person-hours. A one-hour meeting with all five developers consumes five. This doesn't make developers interchangeable units 
+of output. It just gives us a common unit for describing how much of the team's working time was available and consumed.
 
-We can distinguish these activities from work attributable to a specific engineering purpose.
+## Accounting for the Work
 
-**Attributable engineering work** is capacity consumed in delivering something within Build, Fix, Improve, Run, or Evolve.
-
-**Shared and organizational activities** consume engineering capacity but aren't necessarily attributable to a particular deliverable.
-
-That distinction isn't a judgment about whether the activities are necessary.
-
-Helping another developer solve a problem could be essential. A planning meeting might prevent weeks of wasted development. Training could allow a team to take responsibility for a system it previously couldn't support.
-
-The purpose here isn't to determine which activities are valuable. We'll get to that later in the series.
-
-For now, we're asking a simpler question: how much capacity do these responsibilities consume?
-
-## 3. Building an Engineering Capacity Statement
-
-Let's use a hypothetical team of five developers. They maintain our customer portal, billing service, and supporting infrastructure.
-
-We're going to examine a two-week period.
-
-Assuming five working days per week, eight paid working hours per day, and no holidays, we start with:
-
-**5 developers × 10 days × 8 hours = 400 person-hours**
-
-Notice that we're measuring person-hours, not elapsed time.
-
-If two developers pair on a problem for three hours, they've consumed six person-hours of capacity. The activity took three hours on the calendar, but involved two people.
-
-Likewise, a one-hour meeting involving all five developers consumes five person-hours.
-
-This doesn't imply that five developers are interchangeable, or that five hours from one developer will produce the same results as five hours from another. We're measuring the amount of working time available to the team, not converting people into identical units of productive output.
-
-### Start With Available Capacity
-
-Our team has 400 scheduled person-hours, but one developer takes two days of vacation and another takes one sick day.
-
-That removes 24 person-hours.
-
-We now have **376 available person-hours** during the period.
-
-We need to account for leave before examining what happened to the remaining capacity. Otherwise, we could mistake unavailable time for unexplained work.
-
-### Estimate the Work Performed
-
-Using completed work records, estimates, operational information, and the team's knowledge of what happened, we reconstruct an approximate statement.
+Using completed work, incident records, calendars, and what the team remembers about the period, we might come up with the 
+following statement. The numbers are made up, but the exercise is something a team could do without introducing a new 
+time-tracking system.
 
 | Capacity allocation | Person-hours |
-|---|---:|
+| ------------------- | -----------: |
 | Build | 112 |
 | Fix | 40 |
 | Improve | 32 |
@@ -127,119 +92,70 @@ Using completed work records, estimates, operational information, and the team's
 | Shared coordination | 56 |
 | Organizational administration | 24 |
 | General learning and onboarding | 16 |
-| Unmeasured / unexplained | 32 |
+| Unmeasured or unexplained | 32 |
 | **Total available capacity** | **376** |
+{: .table .table-zebra .table-hover}
 
-The statement reconciles with our available capacity.
+Of the original 400 scheduled hours, twenty-four were lost to leave. We can approximately account for 344 of the remaining 
+376 hours, leaving thirty-two unexplained. That isn't a failure of the exercise. It's an admission that we don't have a 
+perfect record of everything that happened over two weeks.
 
-Of the original 400 scheduled person-hours, 24 were unavailable. Of the remaining 376, we've approximately attributed 344 hours to identifiable activities, with 32 hours left unmeasured.
+## Where Do the Numbers Come From?
 
-These are hypothetical numbers. In practice, we would be estimating them, not pretending to know exactly how every minute was spent.
+We can start with information we already collect. Work items and incident records help reconstruct feature development, 
+fixes, operational support, and migrations. Calendars tell us about meetings, provided we account for how many developers 
+attended. Then we can talk to the team about significant work that wasn't recorded anywhere. We probably won't remember 
+every interruption, but we don't need to reconstruct everyone's day in fifteen-minute increments to learn something useful.
 
-### How Would We Collect This Information?
+We do need to be careful about estimates. A feature originally estimated at twenty hours could have taken thirty-five 
+after the team discovered an unexpected dependency. Adding the original estimates together tells us what we expected to 
+consume, not necessarily what we actually consumed. For a statement about the past, we need the best reasonable estimate 
+of work performed.
 
-We don't need every developer recording what they were doing in fifteen-minute intervals.
+We also have to avoid counting the same work twice. Suppose a feature consumed thirty person-hours, including six hours 
+of design discussions and code review. If the thirty hours are already included under Build, we shouldn't add another six 
+under shared coordination. The same applies to an incident discussion that has already been counted under Fix. It may be 
+easier to use broad categories than to pretend we can accurately distribute every meeting across several features.
 
-Start with information the team already has.
+What about the thirty-two unexplained hours? Perhaps there was unrecorded support, interruptions, gaps between activities, 
+or simply inaccurate estimates. We don't know, which is why I would leave them unexplained. Moving them into another 
+category makes the total look tidy, but doesn't make it more accurate.
 
-Jira can provide a reasonable starting point for attributable engineering work, especially when tickets have estimates expressed in effort-hours. If the team uses story points, we shouldn't invent a universal conversion to hours. We can instead reconstruct approximate effort for the period with the team.
+# What the Statement Tells Us
 
-Operational records can help identify incidents, monitoring responsibilities, deployment work, and unexpected support requests.
+In our example, 248 of the 376 available hours went toward work attributable to Build, Fix, Improve, Run, or Evolve. That's 
+about 66% of the team's available capacity. Does that mean the developers were only 66% productive? No. It means roughly 
+two-thirds of their available time was attributed to those five purposes, while the rest went toward shared responsibilities 
+or wasn't adequately measured.
 
-Calendars can provide rough estimates for recurring meetings and organizational commitments. Remember to account for the number of developers involved, not simply the duration of the meeting.
+The statement also shows fifty-six hours of shared coordination, about 15% of available capacity. Perhaps some of those 
+meetings could have been removed. Perhaps others prevented costly mistakes, resolved dependencies, or helped the team 
+coordinate work it couldn't complete independently. The capacity statement doesn't tell us which explanation is right, 
+and removing twenty hours of meetings doesn't guarantee twenty additional hours of completed feature development.
 
-We can use a short team discussion to identify anything significant that those records missed.
+## Looking for Patterns
 
-For the first attempt, estimates rounded to a few hours may be sufficient. We're trying to understand the distribution of capacity, not produce a minute-by-minute history.
+One two-week statement gives us a snapshot. Repeating the exercise occasionally might reveal something more interesting. 
+If Run gradually consumes more capacity, has the team taken responsibility for more services? If Fix grows after releases, 
+are we dealing with recurring production problems? If shared coordination increases as the company grows, is the team 
+spending more of its time working across organizational boundaries?
 
-One particularly important consideration is **double-counting**.
+Those questions don't require us to decide immediately that any category is too large. They give developers and managers 
+a place to investigate. They can also make planning discussions more realistic. If a team takes ownership of another 
+service, monitoring, maintenance, and support have to come from somewhere. We shouldn't simply assume the team will 
+continue delivering the same amount of feature work while absorbing those responsibilities.
 
-Suppose a team estimates that a feature consumed 30 person-hours. That estimate already includes design discussions, implementation, testing, and code reviews by the people involved.
+There are limits to this approach. Hours don't tell us how difficult the work was, how effectively someone performed it, 
+or what the organization received in return. Two developers might each spend eight hours fixing a defect, with one producing 
+a lasting correction and the other creating a temporary workaround. Both used eight person-hours. The accounting alone 
+doesn't tell us which outcome was better.
 
-If we then add another six hours of code review to our capacity statement, we've counted some of the same work twice.
+# Conclusion - Understanding Capacity
 
-Likewise, a meeting dedicated to resolving a particular production incident might already be part of Fix. We shouldn't automatically put it under shared coordination simply because it appears in a calendar.
+Part 1 gave us five ways to describe the purpose of engineering work. Here we've taken a first pass at accounting for the 
+capacity consumed by that work, along with shared responsibilities that may never appear on the sprint board. We don't 
+need a perfect record of every developer's day to start asking better questions about where the time goes.
 
-The distinction is whether the effort has already been included in the relevant work category.
-
-There's another complication. Estimates made before starting work aren't necessarily the capacity actually consumed. A 20-hour estimate might turn into 35 hours because of an unexpected dependency. For a retrospective statement, we should use our best approximation of the work performed, not simply add up the original estimates.
-
-And what about those remaining 32 hours?
-
-We don't know.
-
-They might represent unrecorded assistance, interruptions, ordinary gaps between activities, inaccurate estimates, or work that nobody thought to mention.
-
-That's why we've kept an unexplained category. Forcing those hours into Build or Run would make the spreadsheet look better without improving our understanding.
-
-## 4. What the Statement Reveals
-
-Let's return to our team.
-
-We started with 400 scheduled person-hours. After leave, 376 remained. Of those, approximately 248 were attributable to one of our five engineering purposes.
-
-That's roughly two-thirds of the team's available capacity.
-
-Does that mean the team was only 66% productive?
-
-No.
-
-It tells us that approximately 66% of its available capacity was attributed to identifiable engineering work within those five categories. The remaining capacity was consumed by other responsibilities or wasn't adequately measured.
-
-Productivity and capacity consumption aren't the same thing.
-
-Consider the 56 hours of shared coordination. That's about 15% of our available capacity. Perhaps some of those meetings could have been emails. Perhaps other meetings prevented expensive mistakes.
-
-We can't determine that from the capacity statement alone.
-
-Nor can we assume that eliminating 20 hours of meetings would produce 20 additional hours of feature development. The meetings may have been resolving dependencies that otherwise would have delayed development. Some saved time may become fragmented across the team rather than available as a useful block of effort.
-
-The statement tells us where to investigate, not necessarily what to eliminate.
-
-### Look for Patterns
-
-One two-week period isn't particularly informative on its own.
-
-Imagine repeating the statement over several periods.
-
-We might notice that Run consistently consumes more capacity than expected. Or that Fix increases following certain releases. Perhaps shared coordination grows significantly as more teams become dependent on our services.
-
-These patterns allow us to ask better questions.
-
-Why is operational support consuming so much capacity? Are we spending more time fixing production defects than we previously understood? Has our organizational coordination changed as the company has grown?
-
-None of these questions can be answered by looking at a sprint board alone.
-
-The statement also gives us a way to discuss changing responsibilities.
-
-If our team takes ownership of another service, we should expect some change in its capacity allocation. Additional monitoring, maintenance, and support responsibilities have to be accommodated somewhere.
-
-We can't assume that the team will continue delivering the same amount of feature work while absorbing those responsibilities.
-
-### Don't Confuse Precision With Understanding
-
-There are limits to this approach.
-
-Hours spent working don't tell us how difficult the work was, how effectively it was performed, or what the organization received from it.
-
-Two developers might each spend eight hours resolving similar defects, with very different outcomes. One might permanently address the cause while another implements a temporary workaround.
-
-Our statement records sixteen person-hours. It doesn't tell us which solution was better.
-
-Our classifications are also approximations. Work may span several purposes, and some shared responsibilities won't fit neatly into our categories.
-
-The goal isn't to force a perfect accounting system onto software development. It's to produce a reasonable description of where the team's capacity is being consumed, understand the uncertainty, and improve that understanding over time.
-
-## Conclusion
-
-A Jira board can tell us what work we're managing. It doesn't necessarily explain where all our engineering capacity is going.
-
-By looking at available person-hours, attributable engineering work, shared responsibilities, and unexplained capacity, we can develop a more complete picture.
-
-That picture doesn't tell us whether we're spending our time wisely. It doesn't tell us how productive our developers are, either.
-
-But it gives us a starting point for a different question: **what does all this engineering capacity actually cost?**
-
-Suppose each of our five developers earns a salary of $80,000 a year. That salary is part of the answer, but it isn't the whole cost.
-
-That's where we'll go next.
+We also haven't established whether that capacity was well spent. That's a separate question. Before we can get there, we 
+should look more closely at the activities involved in engineering work, and what actually creates demand for them. That's 
+where activity-based costing becomes useful in Part 2B.
