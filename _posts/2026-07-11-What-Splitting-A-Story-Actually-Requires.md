@@ -5,6 +5,7 @@ description: How to split stories, and what to call the meeting it's done in
 image: story_splitting_generic.png
 time: "3m:20s"
 tags: agile-planning all
+series: story-splitting
 ---
 
 <div class="w-full text-center">

@@ -1,282 +1,194 @@
 ---
 layout: post
 name: Part 2C - The Financial Cost of Engineering Work
-description: Developer-hours aren't interchangeable. Turn engineering capacity into dollars without ignoring who can actually do the work.
+description: Understanding the monetary cost of engineering capacity and why developer-hours are not interchangeable.
 image: iceberg_buckets.jpg
-time: "11m:00s"
+time: "9m:00s"
 tags: developer-time all
+series: developer-time
 ---
 
 <div class="w-full text-center">
     <h1>Part 2C - The Financial Cost of Engineering Work</h1>
-    <h6>(Reading Time: 11 minutes)</h6>
+    <h6>(Reading Time: 9 minutes)</h6>
 </div>
 
-## Introduction
+# From Engineering Hours to Dollars
 
-In the previous articles, we looked at where engineering capacity goes, and how different activities consume that capacity. We can now begin describing the cost of engineering work in terms of hours. But how do we translate those hours into dollars?
+In [Part 2A, Understanding Engineering Capacity](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html), we looked at
+where a development team's time was going. In [Part 2B, Understanding Activity-Based Engineering Costs](/2026/10/24/Part-2B-Understanding-Activity-Based-Engineering-Costs.html),
+we examined the activities that consume capacity, and the features and services that demand them. Now we need to put
+a monetary cost against that capacity.
 
-At first, this seems relatively simple. Developers have salaries, contractors have hourly rates, and infrastructure has operating costs. If we know how many hours a particular activity takes, we should be able to calculate how much it costs.
+That sounds like the easy part. Developers have salaries, contractors have rates, and infrastructure has bills. If we know
+how many hours an activity consumed, shouldn't we be able to calculate what it cost?
 
-There is a problem with this approach. Not every developer can accomplish the same work in the same amount of time.
+Let's start with a fictional developer earning $80,000 a year. Salary isn't the full cost of employing someone. The employer
+also pays benefits and payroll costs, and provides equipment, software, and other shared support. For planning purposes, we
+might estimate the annual cost of supplying that developer's capacity as follows:
 
-An organization might employ ten software engineers, each working forty hours a week. That's 400 hours of engineering capacity. But does that mean we have 400 hours available to work on any engineering problem?
+| Resource cost | Annual amount |
+| --- | ---: |
+| Salary | $80,000 |
+| Benefits and employer payroll costs | $17,000 |
+| Allocated equipment, tools, and shared overhead | $20,000 |
+| **Total annual resource cost** | **$117,000** |
+{: .table .table-zebra .table-hover }
 
-Not necessarily.
+Assume the developer has 1,800 available working hours in the year after leave and holidays. Those hours still include
+meetings, reviews, production support, and other responsibilities. Dividing $117,000 by 1,800 gives us an estimated loaded
+resource cost of $65 per available hour. This is a planning rate, not the employee's salary converted into an hourly wage.
 
-One developer may know everything about the billing service, while another has never worked on it. One might be experienced with database performance, while another specializes in frontend development. Even developers with similar skills may have substantially different knowledge of the systems they maintain.
+In [Part 2B](/2026/10/24/Part-2B-Understanding-Activity-Based-Engineering-Costs.html), our hypothetical team attributed 248 person-hours to the customer portal, billing service, and engineering
+platform. If we used an average loaded rate of $65 per hour, that would represent $16,120 in attributed resource costs.
+That's the monetary layer missing from our earlier activity-based costing example.
 
-<p align="center" width="100%">
-    <img src="/assets/images/resource_planning_comic.svg"  alt="Resource Planning Comic" height="512" width="724" />
-</p>  
+But there's an assumption hiding in that calculation. We treated all 248 hours as if they cost the same amount, and as if
+any available hour could be used for any engineering problem. Neither is necessarily true.
 
-The financial cost of engineering involves more than assigning a monetary value to a developer's time. We need to understand who can perform the work, what resources they require, and how much effort completing the work will actually consume.
+# The Problem With Generic Resources
 
-## 1. From Engineering Hours to Dollars
+Engineering plans frequently describe people as resources. We have five developers, we need another developer, or we have
+200 developer-hours available to finish a project. That can be useful when describing available time. The problem
+starts when we assume those hours are interchangeable.
 
-In [Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html), we established that engineering teams have finite capacity. In [Part 2B](/2026/10/24/Part-2B-Understanding-Activity-Based-Engineering-Costs.html), we looked at the activities consuming that capacity, and how those activities could be attributed to the systems, products, and other things we support.
+<!-- Insert the four-panel resource-planning comic here. -->
 
-Now we need to understand how much it costs to supply that capacity.
+Suppose our team has two developers available to update a billing integration. Developer A has worked on the billing service
+for several years. They know the payment provider, the business rules, and which tests have a habit of failing for reasons
+that aren't immediately obvious. Developer B is an experienced programmer but has never worked on this service.
 
-The obvious starting point is developer salaries. If a developer makes $80,000 annually, we know at least part of the cost of employing that developer.
+Both developers have eight hours available tomorrow. Do we have sixteen hours of equivalent billing-service capability?
+Not really. Developer B may need to investigate an integration Developer A already understands.
 
-However, salary is not the total cost to the organization.
+That doesn't make Developer A a better developer. The situation might be reversed on the customer portal or deployment
+platform. Capability depends on the work; familiarity with one system doesn't necessarily transfer to another.
 
-There are also employer-paid benefits, payroll taxes, equipment, software subscriptions, and the shared costs associated with supporting the employee. Depending on the organization, there may be additional expenses for offices, administrative support, and other overhead.
+This matters because a staffing plan might identify an available developer without identifying an available capability.
+One developer might know the programming language but not the domain. Another might know the system but be busy
+with an incident. People are interchangeable in theory, which is why theory never has to fix prod.
 
-Accountants sometimes describe a more complete employment cost as a *fully loaded labour cost*. For management planning, we can use that cost to calculate an approximate hourly resource rate.
+Of course, developers can substitute for one another. Otherwise no team could survive a vacation. But substitution may
+require training, pairing, or additional reviews. Those activities consume capacity whether or not we create tickets for them.
 
-Consider a fictional developer with the following annual costs:
+# Capacity Isn't Capability
 
-| Cost | Annual Amount |
-|---|--------------:|
-| Base Salary |       $80,000 |
-| Benefits and Employer Payroll Costs |       $24,000 |
-| Allocated Equipment, Tools, and Shared Overhead |       $21,000 |
-| **Total Annual Resource Cost** |  **$125,000** |
+Consider two developers with loaded resource costs of $80 and $50 per hour. If we choose purely by hourly rate, the second
+developer looks cheaper. But suppose the first can complete a particular change in four hours, while the second needs twenty.
+The first option consumes $320 of attributed labour cost. The second consumes $1,000.
 
-Suppose we have 1,800 available working hours per year after vacations, holidays, and other time off. These hours still include meetings, reviews, and other engineering activities. We aren't assuming every hour is spent coding.
+This doesn't establish that expensive developers are more productive. A lower rate doesn't guarantee a lower cost for a
+particular task, and a different task might reverse the result.
 
-Dividing $125,000 by 1,800 gives us an approximate loaded cost of $69 per working hour.
+Assistance makes this more complicated. What if the developer unfamiliar with the system needs another developer to explain
+the architecture, review an approach, or help investigate an unexpected failure? Both developers are now consuming capacity,
+even if the ticket is assigned to only one of them.
 
-This provides a useful planning number. We can take the activities identified in Part 2B and assign an approximate monetary cost to the capacity they consume.
+We see a similar problem when several developers depend on one specialist. Imagine three changes to the billing service
+being developed simultaneously. Each developer needs help from the same person who understands the payment integration.
+We've added three developers to the project, but their progress may still depend on the availability of one person.
 
-But there are limitations.
+Adding people increases available hours, but not necessarily immediately usable capacity for a particular task. Knowledge
+transfer, coordination, and work that can't easily be split create constraints a headcount estimate may miss.
 
-An organization may already be paying that salary regardless of what the developer works on. Allocating $500 of labour cost to a particular task does not mean the company spent an additional $500 in cash because that task was performed.
+That doesn't mean we should keep all the billing-service knowledge with one developer. Pairing, code review, documentation,
+and shared ownership can make other developers effective on the system. That work consumes capacity now, but may reduce
+dependencies and prevent rework later.
 
-Contractors are somewhat different. Depending on their agreements, assigning additional hours might create additional expenditures. Cloud infrastructure can also produce costs that vary with usage, while other infrastructure and software subscriptions may have already been purchased.
+We need to estimate the capacity required to complete the work, including collaboration, rather than assuming every hour
+on the team's calendar contributes equally to every task.
 
-We need to distinguish the cost of providing capacity from the additional money required to perform particular work.
+# Financial Cost Versus Cost of Completion
 
-And even with accurate resource rates, we still haven't answered one important question.
+Let's return to the billing service and put some more realistic numbers behind it. Suppose we need to update the payment
+integration to handle failed requests more reliably. The work involves understanding the current behaviour, implementing
+the change, testing it, reviewing it, and deploying it.
 
-Can the available developer actually complete the task?
+Developer A knows the billing service and has a loaded cost of $80 per hour. Developer B has a loaded cost of $50 per hour,
+but is unfamiliar with this integration. We assume either approach meets the same requirements. The following estimates are
+fictional.
 
-## 2. The Problem with Generic Resources
+Under the first option, Developer A spends ten hours implementing and testing the change, and Developer B spends three hours
+reviewing it. Under the second, Developer B spends twenty-four hours implementing and testing, plus six hours on rework.
+Developer A contributes six hours of knowledge transfer and pairing, followed by three hours of review. Assume we also incur
+some additional test environment usage that isn't included in the loaded labour rates.
 
-Engineering managers and project planners frequently describe staffing in terms of resources.
+| Resource consumed | A implements | B implements |
+| --- | ---: | ---: |
+| Developer A at $80/hour | 10 hours = $800 | 9 hours = $720 |
+| Developer B at $50/hour | 3 hours = $150 | 30 hours = $1,500 |
+| Additional test environment costs | $80 | $120 |
+| **Estimated total resource cost** | **$1,030** | **$2,340** |
+| **Total developer-hours** | **13** | **39** |
+{: .table .table-zebra .table-hover }
 
-We have five developers. We need another two developers. A project requires 200 developer-hours. Someone is assigned 50% to one project and 50% to another.
+Developer B has the lower rate, but the second option consumes three times as many developer-hours and more than twice the
+attributed resource cost. It still requires nine hours from the person familiar with billing.
 
-These are reasonable ways to describe capacity, but they make an important assumption if we use them without further qualification.
+Does that make the first option the obvious choice? Not necessarily. Developer A might be unavailable until next week, or
+Developer B might learn enough to handle the next change independently. Costing and resource planning are related, but they
+answer different questions.
 
-They treat developer-hours as interchangeable.
+## Are We Actually Spending More Money?
 
-Suppose we're estimating an upgrade to a billing service. The upgrade involves modifying a third-party payment integration, updating several database operations, and ensuring existing customers aren't charged incorrectly.
+There's another distinction we need to make. The $1,030 and $2,340 figures are estimated costs *attributed* to the work.
+They aren't necessarily the additional cash expenditures caused by doing it.
 
-We have two developers available.
+If A and B are salaried employees, the organization may pay them the same amount regardless of which task they work on.
+Assigning their existing capacity doesn't automatically increase payroll. It does use time that could have gone elsewhere.
+Contractor hours, overtime, and usage-based cloud services may create additional costs.
 
-Developer A has worked on the billing service for several years. They understand the payment provider, know which parts of the system are particularly fragile, and are familiar with the tests needed to verify the changes.
+Accounting also distinguishes an expenditure from an expense. An organization can acquire something and incur an obligation
+to pay for it before cash changes hands. An expense is recognized in financial reporting in the period required by the
+applicable accounting rules. For example, purchasing a server can involve an expenditure up front, while its cost is
+recognized as depreciation expense over its useful life.
 
-Developer B has similar general programming experience, but has never worked on this service.
+Some software development costs can also qualify for capitalization, depending on the work and the accounting standards
+being applied. Under IFRS, qualifying development costs may be recognized as an asset once specific conditions are met;
+research costs generally are not. U.S. GAAP has different rules depending on the type of software and circumstances.
+Capitalization changes the timing of expense recognition. It doesn't make the engineering work free.
 
-Both are competent developers. Both have eight hours available tomorrow.
+So we have at least three different financial questions. How much resource cost should be attributed to the work? How much
+additional or avoidable cost does the work create? And when is that cost recognized as an accounting expense? The answers
+can be different, even when we're talking about the same feature.
 
-Do we really have sixteen hours of equivalent billing-service expertise?
+# What Financial Costing Reveals and Misses
 
-No.
+Combining the capacity statement, the activity-based cost model, and loaded resource rates lets us estimate the costs
+attributed to supporting services, maintaining a deployment pipeline, or implementing a feature.
 
-Developer B might spend much of that time learning how the system works. Developer A might already know exactly where to make the changes.
+We can also begin to see why apparently similar work has different costs. Perhaps a billing change requires specialized
+knowledge. Perhaps the customer portal takes more review time because it affects several applications. Perhaps a shared
+platform consumes resources even when nobody is currently delivering a feature that depends on it. The calculations give
+us something to investigate, not an explanation by themselves.
 
-This difference is not necessarily about seniority or overall programming ability. Developer B might be substantially more effective than Developer A when working on the frontend application, or a completely different backend service.
+Shared overhead is one limitation. We might allocate the cost of equipment, subscriptions, and supporting departments
+across developers or projects, but those allocations depend on conventions. Assigning $500 of shared infrastructure to a
+feature doesn't prove that canceling the feature would save $500. The infrastructure may still be needed by everyone else.
 
-Capability depends on the work being performed.
+Resource rates depend on assumptions as well. Another organization might use a different number of practical working hours,
+or report shared overhead separately. We need to know what's included so we don't count costs twice.
 
-There are several dimensions to consider. Developers have different technical skills, knowledge of particular systems, familiarity with business rules, and experience with the tools required to accomplish the task.
+And then there's uncertainty about the work itself. If a billing change takes thirty hours instead of ten, a beautifully
+calculated rate of $65.37 per hour isn't going to rescue the estimate. A more precise rate doesn't make an uncertain
+implementation estimate more precise.
 
-Availability is another constraint. The developer with the necessary expertise might be working on something else, supporting production, or simply unavailable when the work needs to happen.
+I also wouldn't use this information to rank developers by their cost per ticket or lines of code. A developer who spends
+an afternoon helping colleagues understand a difficult system may appear to complete less individual work while making the
+team more capable. The purpose is to estimate the cost of accomplishing engineering work, not to turn salaries and Jira
+tickets into a productivity leaderboard.
 
-This doesn't mean every developer is irreplaceable. Most knowledge can be transferred, and many tasks can be performed by different people. But the cost of making that substitution is not necessarily zero.
+A team-wide average rate is sufficient for some questions. Others require task-specific effort and capabilities. The
+level of detail should match what we're trying to estimate.
 
-A spreadsheet might identify two available developers with identical job titles. It cannot automatically tell us that only one of them understands why changing a particular database column breaks the invoicing process.
+# Conclusion - The Financial Cost of Engineering Work
 
-That difference matters when estimating costs.
+[Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html) showed us where engineering capacity went. [Part 2B](/2026/10/24/Part-2B-Understanding-Activity-Based-Engineering-Costs.html) connected that capacity to activities and the systems and
+features consuming them. Here we've added monetary resource costs, and the complication that developers don't all supply
+the same capabilities at the same time.
 
-<p align="center" width="100%">
-    <img src="/assets/images/granularity_comic.svg"  alt="Granularity Comic" height="512" width="724" />
-</p>  
+Engineering capacity can be counted in hours, but engineering capability can't be reduced to interchangeable hours. A
+hundred developer-hours are still a hundred hours. That doesn't mean they're a hundred hours of the expertise we need.
 
-## 3. Capacity Isn't Capability
-
-Suppose Developer A has a loaded hourly rate of $60, while Developer B costs $37.50 per hour.
-
-A simple resource-cost comparison suggests that assigning work to Developer B should be cheaper.
-
-But what happens when Developer A can finish the task in four hours, while Developer B requires twenty?
-
-Developer A costs $240. Developer B costs $750.
-
-The developer with the higher hourly rate is considerably cheaper for this particular task.
-
-<p align="center" width="100%">
-    <img src="/assets/images/detailed_costing_comic.svg"  alt="Detailed Costing Comic" height="512" width="724" />
-</p>  
-
-Does that mean organizations should always assign expensive developers to difficult work?
-
-Of course not.
-
-Higher compensation doesn't automatically mean higher capability, and capability isn't uniform across different engineering problems. We're also assuming the task is completed to the same standard, without additional assistance or rework.
-
-What happens if Developer B needs help from Developer A?
-
-Now we're consuming capacity from both developers. We might also need time for reviewing the changes, understanding the implementation, and correcting mistakes.
-
-Collaboration is not free.
-
-This becomes especially important when multiple developers depend on the same person.
-
-Imagine three developers working on separate changes to the billing service. Each one needs the assistance of the same experienced developer to understand a different part of the application.
-
-We have three developers working independently, at least in theory. In practice, all three might be waiting on the same person.
-
-Adding another developer would increase the team's total available hours. It would not necessarily increase its immediate ability to complete billing-service work.
-
-This is one reason increasing staffing doesn't produce a proportional increase in completed work. There are costs associated with onboarding, communicating, coordinating, and transferring knowledge. Some tasks also cannot be divided effectively among several developers.
-
-However, specialization is not necessarily a permanent constraint.
-
-Pairing, reviewing code, documenting important decisions, and collectively maintaining systems can spread knowledge across the team. A developer who requires significant assistance today might be able to perform similar work independently next month.
-
-In some situations, pairing can even reduce the total effort required by catching misunderstandings early.
-
-The question isn't whether developers should collaborate. It's how much capacity that collaboration consumes, and what capabilities are available afterward.
-
-When we estimate financial costs, we need to account for the resources involved in completing the work, rather than assuming an arbitrary number of developer-hours can accomplish it.
-
-## 4. Financial Cost Versus Cost of Completion
-
-Let's put some numbers behind this.
-
-Suppose we need to modify a billing integration to handle failed payment requests more reliably. The work includes understanding the existing integration, changing the application, testing the changes, and deploying them safely.
-
-We have two developers available.
-
-Developer A is familiar with the billing system and has a loaded labour cost of $60 per hour. Developer B is experienced but unfamiliar with this particular service, and has a loaded cost of $37.50 per hour.
-
-For the sake of this example, both developers can produce an implementation meeting the same requirements. We are comparing two possible assignments, not evaluating the employees themselves.
-
-**Option A: Developer A implements the change.**
-
-| Activity | Calculation | Cost |
-|---|---|---:|
-| Implementation and testing by A | 10 hours × $60 | $600 |
-| Code review by B | 3 hours × $37.50 | $112.50 |
-| Additional test environment usage | Estimated | $40 |
-| **Total** | | **$752.50** |
-
-**Option B: Developer B implements the change with assistance.**
-
-| Activity | Calculation | Cost |
-|---|---|---:|
-| Implementation and testing by B | 24 hours × $37.50 | $900 |
-| Knowledge transfer and pairing by A | 6 hours × $60 | $360 |
-| Additional rework by B | 6 hours × $37.50 | $225 |
-| Code review by A | 3 hours × $60 | $180 |
-| Additional test environment usage | Estimated | $60 |
-| **Total** | | **$1,725** |
-
-These are fictional estimates, not measured productivity differences. We're assuming the loaded labour rates exclude the separately charged test environment costs, and that the listed activities don't overlap.
-
-Developer B has the lower hourly cost, yet Option B consumes considerably more engineering resources.
-
-It also requires 39 developer-hours rather than 13, including time from Developer A.
-
-The cost difference is not caused by Developer B being a worse engineer. It's caused by differences in task-specific familiarity, the assistance required, and the amount of work involved in reaching the same result.
-
-There is another issue. What if Developer A isn't available for two weeks?
-
-Option A may require less effort and carry a lower attributed cost, but it might not be possible to start immediately. This is why financial costing and resource planning need to work together. The first describes monetary costs; the second considers when the required capabilities are available.
-
-### Are These Real Expenses?
-
-There's an important accounting distinction here.
-
-In both examples, we allocated a monetary cost to the engineering capacity consumed. That does not mean the organization necessarily incurred an equivalent amount of additional cash expenditure.
-
-If both developers are salaried employees, their compensation may remain unchanged regardless of which option we choose.
-
-The $752.50 and $1,725 estimates describe the resource costs attributed to the work. They are not necessarily the additional cash costs of choosing one option over another.
-
-An expenditure generally refers to spending money or acquiring something with a payment obligation. An accounting expense is a cost recognized against income in a particular reporting period.
-
-These don't always occur at the same time.
-
-For example, purchasing a server can create a cash expenditure today, while the cost may be recognized as depreciation expense over several years.
-
-Software development has another complication. Depending on the accounting standards and circumstances, qualifying development costs may be capitalized as assets rather than immediately recognized as expenses.
-
-Under IFRS, for example, research costs are generally expensed, while qualifying development costs are capitalized once the required criteria are satisfied. U.S. GAAP has its own rules for internal-use and externally marketed software.
-
-Capitalization changes when costs appear in the income statement. It doesn't make the resources free, or eliminate the underlying expenditures.
-
-For planning purposes, we therefore need to keep three different numbers straight: the cost attributed to consuming engineering capacity, the additional costs the organization would actually incur, and the expenses recognized in financial reporting.
-
-They answer different questions.
-
-## 5. What Financial Costing Reveals—and Misses
-
-Once we understand both the activities being performed and the resources required to perform them, we can build a more complete picture of engineering costs.
-
-We can estimate how much engineering capacity different systems consume, translate that capacity into monetary terms, and understand which capabilities are required to support particular kinds of work.
-
-We can also identify potential constraints.
-
-Perhaps the organization has plenty of frontend capacity but limited experience with database performance. Perhaps most changes to a particular system require assistance from a single developer. Or perhaps a supposedly inexpensive task regularly requires several people to coordinate before anything can be completed.
-
-These details are important when estimating the financial cost of maintaining and changing software.
-
-However, adding more detail doesn't necessarily make our estimates more accurate.
-
-We still have to make assumptions about how much time activities consume, which people can perform them, and how shared costs should be allocated.
-
-Shared overhead is particularly difficult. An organization's office lease, security team, and common infrastructure may support many engineering activities. Allocating those costs to individual tasks can help explain where organizational spending is attributed, but the allocation doesn't establish how much expenditure could actually be avoided.
-
-The same problem exists with loaded hourly rates.
-
-A $69 hourly cost might be a reasonable estimate for planning. But if the actual work requires seventeen hours instead of ten, calculating a more precise hourly rate won't fix the estimate.
-
-And if the task requires expertise that isn't available, knowing the exact hourly rate is of limited help.
-
-We should also avoid turning these estimates into individual productivity measurements.
-
-The purpose isn't to discover which employee produces the cheapest line of code, or to rank developers according to their salaries. A developer who spends an afternoon helping three colleagues might appear less productive individually while making the team substantially more capable.
-
-The useful unit of analysis is the work we need to accomplish and the resources required to complete it.
-
-Sometimes a simple team-wide rate is sufficient. Sometimes the distinction between a particular capability and a generic developer-hour is essential. The amount of detail should depend on the decision the estimate is intended to support.
-
-The goal is to understand costs, not manufacture precision.
-
-## Conclusion
-
-Engineering capacity can be counted in hours, but engineering capability cannot be reduced to interchangeable hours.
-
-Financial costing helps us understand the monetary cost of supplying engineering resources. However, the cost of completing work depends on which capabilities are required, who has them, their availability, and the additional effort required to accomplish the task.
-
-A hundred developer-hours are still a hundred hours. They just aren't necessarily a hundred hours of the capability we need.
-
-Now that we've identified the work, its activities, the capacity it consumes, and its financial costs, we have a better foundation for discussing engineering decisions.
-
-Understanding what something costs is one question. Understanding what it's worth is another.
+We now have a way to estimate what engineering work costs, along with some reasons those estimates can be wrong. Whether
+the work is worth those costs is a separate question, and one we'll return to when we discuss value.

@@ -5,6 +5,7 @@ description: Cut, automate, and delegate busywork to protect developer focus tim
 image: iceberg_buckets.jpg
 time: "2m:10s"
 tags: developer-time all
+series: developer-time
 redirect_from:
   - /2026/10/17/Maximizing-Developer-Coding-Time.html
 ---

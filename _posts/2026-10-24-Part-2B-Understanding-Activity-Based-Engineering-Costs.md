@@ -5,6 +5,7 @@ description: Understanding how engineering activities consume capacity and what 
 image: iceberg_buckets.jpg
 time: "9m:00s"
 tags: developer-time all
+series: developer-time
 ---
 
 <div class="w-full text-center">
@@ -15,7 +16,7 @@ tags: developer-time all
 # From Purpose to Activity
 
 In [Part 1, Making Invisible Developer Work Visible](/2026/01/21/Making-Invisible-Developer-Work-Visible.html), I introduced 
-five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. In Part 2A, we used those purposes to understand 
+five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. In [Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html), we used those purposes to understand 
 where a team's capacity was going. We started with 400 scheduled person-hours over two weeks, subtracted twenty-four hours 
 of leave, and tried to account for the remaining 376 hours.
 
@@ -61,7 +62,7 @@ The distinction also depends on what we're measuring. Maintaining the deployment
 engineering platform and an indirect cost of the account feature. The activity hasn't changed; the cost object has.
 
 For now, we'll follow engineering effort in person-hours rather than dollars. ABC normally allocates monetary resource 
-costs, which we'll address in Part 2C. Using hours here lets us look at demand for engineering capacity without pretending 
+costs, which we'll address in [Part 2C](/2026/10/24/Part-2C-The-Financial-Cost-Of-Engineering-Work.html). Using hours here lets us look at demand for engineering capacity without pretending 
 every developer-hour has an identical financial cost.
 
 # Activities, Cost Pools, and Cost Drivers
@@ -102,11 +103,11 @@ of supplying practical resource capacity and an estimate of the time different a
 vary with the characteristics of the work, rather than assuming every occurrence takes the same amount of time. That can 
 be useful for fairly repeatable activities, such as standard releases or routine support requests. It's harder to apply 
 to novel development work, where we may not know what the problem involves until we've investigated it. We'll return to 
-the monetary capacity rates in Part 2C.
+the monetary capacity rates in [Part 2C](/2026/10/24/Part-2C-The-Financial-Cost-Of-Engineering-Work.html).
 
 # Applying Activity-Based Costing to Engineering
 
-Let's return to the five-developer team from Part 2A. The team had 400 scheduled hours, twenty-four hours of leave, and 
+Let's return to the five-developer team from [Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html). The team had 400 scheduled hours, twenty-four hours of leave, and 
 376 available person-hours. Of those available hours, we attributed 248 to Build, Fix, Improve, Run, and Evolve. The rest 
 included fifty-six hours of shared coordination, twenty-four hours of organizational administration, sixteen hours of 
 general learning, and thirty-two hours we couldn't confidently explain.
@@ -126,7 +127,7 @@ the work and talking with the developers, we might come up with this additional 
 {: .table .table-zebra .table-hover }
 
 These are invented numbers, not observations from a real engineering team. They're also another view of the same 248 hours, 
-not 248 additional hours. We haven't added coding, testing, and reviewing on top of the Build and Fix work from Part 2A. 
+not 248 additional hours. We haven't added coding, testing, and reviewing on top of the Build and Fix work from [Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html). 
 We've divided that work by activity and attributed it to three different cost objects. The shared coordination, administration, 
 learning, and unexplained time remain outside this table rather than being forced into the features and services.
 
@@ -180,7 +181,7 @@ to understand those differences before treating one service as more efficient th
 Allocated effort also isn't necessarily avoidable effort. Suppose we assign ten hours of shared platform maintenance to 
 a feature. Canceling that feature doesn't mean ten hours of platform work disappear. Some costs are shared, some responsibilities 
 remain, and some capacity can't immediately be recovered or redirected. Financial decisions need that distinction, which 
-is one reason this article cannot replace Part 2C.
+is one reason this article cannot replace [Part 2C](/2026/10/24/Part-2C-The-Financial-Cost-Of-Engineering-Work.html).
 
 Finally, we should consider the effort required to maintain the model. If the team spends several hours each week recording, 
 reconciling, and arguing about activity classifications, we've created another activity that consumes engineering capacity. 
@@ -192,10 +193,10 @@ us something about the work being demanded, not the relative ability or value of
 
 # Conclusion - Understanding Activity-Based Costs
 
-Part 2A showed us how available engineering capacity was distributed across different responsibilities. Here we've taken 
+[Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html) showed us how available engineering capacity was distributed across different responsibilities. Here we've taken 
 a closer look at the activities involved and the features, services, and shared systems that demand them. Activity-based 
 costing gives us a way to connect those pieces, provided we're careful about what our allocations do and don't establish.
 
 We still haven't shown the financial cost of supplying that capacity. Developer-hours aren't interchangeable in financial 
-terms, and an allocated cost isn't always a cost we can avoid. That's where we'll go next in Part 2C - The Financial 
-Cost of Engineering Work.
+terms, and an allocated cost isn't always a cost we can avoid. That's where we'll go next in [Part 2C - The Financial 
+Cost of Engineering Work](/2026/10/24/Part-2C-The-Financial-Cost-Of-Engineering-Work.html).

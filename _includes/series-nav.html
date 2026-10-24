@@ -1,0 +1,16 @@
+{% comment %} ponytail: parts sort by name ("Part 1", "Part 2", "Part 2A"...), breaks at Part 10; add a series_order field if a series gets that long {% endcomment %}
+{% assign parts = site.posts | where: "series", page.series | sort: "name" %}
+<nav class="series-nav my-8 p-4 rounded border border-base-300" aria-label="Article series">
+    <p class="font-bold">This article is part of a series:</p>
+    <ol>
+        {% for part in parts %}
+        <li>
+            {% if part.url == page.url %}
+            <a href="{{ part.url | relative_url }}" aria-current="page"><strong>{{ part.name }}</strong></a>
+            {% else %}
+            <a href="{{ part.url | relative_url }}">{{ part.name }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ol>
+</nav>

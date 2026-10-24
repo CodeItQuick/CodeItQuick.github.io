@@ -5,6 +5,7 @@ description: Story Splitting - the practical details
 image: story_splitting_practical_look_zombies.png
 time: "4m:18s"
 tags: agile-planning all
+series: story-splitting
 ---
 
 <div class="w-full text-center">
@@ -14,7 +15,7 @@ tags: agile-planning all
 
 # Introduction
 
-The first article in this series was an "explain like I'm 5" explanation of story splitting. We are now going to attempt
+[The first article in this series](/2026/05/30/Are-You-Splitting-Stories-or-Just-Splitting-Tasks.html) was an "explain like I'm 5" explanation of story splitting. We are now going to attempt
 a much more mature version of the same article. The naive approach to story-splitting is thinking of it as a quick thing
 we can do in a meeting, that takes maybe 5 minutes tops. Split this story, and *poof* the story is split. The reality is
 significantly different to have good splits of stories. You have to understand the current codebase, current patterns, and

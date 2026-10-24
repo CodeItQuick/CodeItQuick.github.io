@@ -5,6 +5,7 @@ description: Understanding where engineering capacity goes and building a simple
 image: iceberg_buckets.jpg
 time: "6m:30s"
 tags: developer-time all
+series: developer-time
 ---
 
 <div class="w-full text-center">
@@ -152,10 +153,10 @@ doesn't tell us which outcome was better.
 
 # Conclusion - Understanding Capacity
 
-Part 1 gave us five ways to describe the purpose of engineering work. Here we've taken a first pass at accounting for the 
+[Part 1](/2026/01/21/Making-Invisible-Developer-Work-Visible.html) gave us five ways to describe the purpose of engineering work. Here we've taken a first pass at accounting for the 
 capacity consumed by that work, along with shared responsibilities that may never appear on the sprint board. We don't 
 need a perfect record of every developer's day to start asking better questions about where the time goes.
 
 We also haven't established whether that capacity was well spent. That's a separate question. Before we can get there, we 
 should look more closely at the activities involved in engineering work, and what actually creates demand for them. That's 
-where activity-based costing becomes useful in Part 2B.
+where activity-based costing becomes useful in [Part 2B](/2026/10/24/Part-2B-Understanding-Activity-Based-Engineering-Costs.html).

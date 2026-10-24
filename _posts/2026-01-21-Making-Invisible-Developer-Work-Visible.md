@@ -5,6 +5,7 @@ description: Accurately describe developer work
 image: iceberg_buckets.jpg
 time: "4m:30s"
 tags: developer-time all
+series: developer-time
 featured: true
 ---
 
