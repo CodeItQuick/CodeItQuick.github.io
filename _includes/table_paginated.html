@@ -2,22 +2,23 @@
      x-init="() => { const handler = () => { pageSize = window.innerWidth >= 1024 ? 6 : 3; pageNumber = 0; }; window.addEventListener('resize', handler); return () => window.removeEventListener('resize', handler); }"
      class="w-full h-full max-w-3xl mx-auto">
     <div class="py-8 mx-auto md:p-8 flex flex-col justify-center">
-        <div class="mx-auto hidden sm:flex m-4 gap-2 flex flex-wrap">
-            <button class="btn font-[nav]" :class="tag_filter === 'all' ? 'btn-primary' : 'btn-ghost'"
+        <div class="topic-chips">
+            <button class="btn font-[body]" :class="tag_filter === 'all' ? 'btn-primary' : 'btn-ghost'"
                     x-on:click="tag_filter = 'all'; tag_count = {{ site.posts.size }}; pageNumber = 0; gtag('event', 'select_topic', { topic: 'all' });">
                 All
             </button>
             {% assign sorted_tags = site.tags | sort | where_exp: "tag", "tag[0] != 'all'" %}
+            {% assign mobile_tags = "agile-planning,code-quality" | split: "," %}
             {% for tag in sorted_tags %}
-                <button class="btn font-[nav] mx-auto " :class="tag_filter === '{{ tag[0] }}' ?
+                <button class="btn font-[body]{% unless mobile_tags contains tag[0] %} topic-chip--desktop-only{% endunless %}" :class="tag_filter === '{{ tag[0] }}' ?
                     'btn-primary' : 'btn-ghost'"
                         x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0; gtag('event', 'select_topic', { topic: '{{ tag[0] }}' });">
                     {{ tag[0] }}
                 </button>
             {% endfor %}
         </div>
-        <div class="mx-auto">
-            <div x-data="{ index: 0 }" class="grid grid-rows-3 lg:grid-cols-2 gap-8">
+        <div class="mx-auto w-full">
+            <div x-data="{ index: 0 }" class="post-grid">
                  {% for tag in site.tags %}
                          {% assign currentIndex = 0 %}
                          {% assign featured_rows = tag[1] | where_exp: "p", "p.featured == true" %}
@@ -49,7 +50,7 @@
         </div>
     </div>
     <div class="flex justify-center py-6" x-show="{{ site.posts.size }}">
-        <div class="pagination pagination-rounded flex gap-2">
+        <div class="pagination pagination-rounded flex gap-2" role="navigation" aria-label="Blog pages">
             <button class="btn" @click="pageNumber--; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });":disabled="pageNumber === 0">‹</button>
             <template x-for="index in Math.ceil(tag_count / pageSize)">
                 <button class="btn" :class="{ 'btn-active': index - 1 === pageNumber }" @click="pageNumber = index - 1; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });"x-text="index"></button>

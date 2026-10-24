@@ -1,51 +1,37 @@
-<div class="card bg-backgroundSecondary shadow-xl mx-auto h-full">
+{% if include.github %}{% assign card_link = include.github %}{% assign card_cta = 'GitHub' %}{% else %}{% assign card_link = include.url %}{% assign card_cta = 'Read' %}{% endif %}
+<div class="card post-card bg-backgroundSecondary shadow-xl mx-auto h-full">
     <div class="card-body">
-
-            <h2 class="card-header h-[108px] flex items-start flex-col">
-                {% if include.url %}
-                {% if include.github %}
-                <a href="{{ include.github }}">
-                    <span class="h-full">{{ include.title }}{{ include.name }}</span>
-                </a>
-                {% else %}
-                <a href="{{ include.url }}">
-                    <span class="h-full">{{ include.title }}{{ include.name }}</span>
-                </a>
-                {% endif %}
-                {% endif %}
-
-                {% if include.featured %}
-                <span class="badge font-[body]" style="background-color: #16a34a; border-color: #16a34a; color: #ffffff;">Featured</span>
-                {% endif %}
-                {% if include.tag_size > 0 %}
-                {% for content in include.tags %}
-                {% if content != 'all' %}
-                <span class="badge badge-outline font-[body]">
-                            {{ content }}
-                        </span>
-                {% endif %}
-                {% endfor %}
-                {% endif %}
-            </h2>
-        <div class="text-content2">
-            <div>
-                {% if include.time %}
-                Time: {{ include.time }}
-                {% endif %}
-            </div>
+        <div class="post-card__tags">
+            {% if include.featured %}
+            <span class="badge font-[body]" style="background-color: #16a34a; border-color: #16a34a; color: #ffffff;">Featured</span>
+            {% endif %}
+            {% if include.tag_size > 0 %}
+            {% for content in include.tags %}
+            {% if content != 'all' %}
+            <span class="badge badge-outline font-[body]">{{ content }}</span>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
         </div>
-        <div class="card-footer">
-            {% if include.url %}
-            {% if include.github %}
-            <a href="{{ include.github }}">
-                <button class="btn btn-primary font-[body]">Github</button>
-            </a>
+
+        <h2 class="card-header post-card__title">
+            {% if card_link %}
+            <a href="{{ card_link }}">{{ include.title }}{{ include.name }}</a>
             {% else %}
-            <a href="{{ include.url }}">
-                <button class="btn btn-primary font-[body]">Read</button>
-            </a>
+            {{ include.title }}{{ include.name }}
             {% endif %}
-            {% endif %}
-        </div>
+        </h2>
+
+        {% if include.description %}
+        <p class="post-card__description text-content2">{{ include.description | strip }}</p>
+        {% endif %}
+
+        {% if include.time %}
+        <p class="text-content2">Time: {{ include.time }}</p>
+        {% endif %}
+
+        {% if card_link %}
+        <span class="post-card__cta" aria-hidden="true">{{ card_cta }} &rarr;</span>
+        {% endif %}
     </div>
 </div>

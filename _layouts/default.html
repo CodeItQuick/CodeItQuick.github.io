@@ -18,20 +18,20 @@
     }
 }" >
   {% include header.html %}
-  <nav class="grow max-w-3xl mx-auto w-full">
+  <body class="bg-backgroundPrimary antialiased font-[body] min-h-svh flex flex-col" x-bind:data-theme="getMode()">
+  <nav class="max-w-3xl mx-auto w-full">
     {% include navbar.html %}
   </nav>
-  <body class="mx-auto antialiased font-[body] min-h-svh flex flex-col"  x-bind:data-theme="getMode()">
 
 
   <div class="grow max-w-3xl mx-auto w-full">
     {% include hero.html title=site.title description=site.description image="hero_project_graveyard.webp" %}
   </div>
 
-  </body>
-  <footer class="footer footer-center m-0 p-4 bg-backgroundSecondary text-base-content mt-auto">
+  <footer class="site-footer footer footer-center m-0 p-4 bg-backgroundSecondary text-base-content mt-auto">
     <aside>
-      <p>Copyright © 2024 - All right reserved by CodeItQuick</p>
+      <p>Copyright © {{ site.time | date: '%Y' }} - All rights reserved by CodeItQuick</p>
     </aside>
   </footer>
+  </body>
 </html>

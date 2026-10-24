@@ -1,16 +1,18 @@
 {
   "collection": "ms_codeitquick_github_io_0388f992",
   "failed_files": [],
-  "last_completed_at": "2026-07-21T10:31:36.581973Z",
-  "last_error": "RuntimeError: milvus-lite does not support Windows (no wheels on PyPI).\nUse a remote Milvus server instead:\n  docker run -d -p 19530:19530 milvusdb/milvus:latest standalone\n  MemSearch(milvus_uri='http://localhost:19530')\nOr run memsearch inside WSL2: https://learn.microsoft.com/en-us/windows/wsl/install",
-  "last_failed_at": "2026-07-21T10:31:36.581973Z",
-  "last_started_at": "2026-07-21T10:31:35.033162Z",
+  "indexed_chunks": 1,
+  "indexed_files": 17,
+  "last_completed_at": "2026-10-24T08:20:44.076046Z",
+  "last_started_at": "2026-10-24T08:20:41.983733Z",
+  "last_success_at": "2026-10-24T08:20:44.076046Z",
   "milvus_uri": "~/.memsearch/milvus.db",
   "operation": "index",
   "paths": [
     "C:/Users/evano/WebstormProjects/CodeItQuick.github.io/.memsearch/memory"
   ],
   "schema_version": 1,
-  "status": "error",
-  "updated_at": "2026-07-21T10:31:36.581973Z"
+  "status": "ok",
+  "total_files": 17,
+  "updated_at": "2026-10-24T08:20:44.076046Z"
 }

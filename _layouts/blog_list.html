@@ -22,19 +22,18 @@
 <body class="bg-backgroundPrimary font-[body] flex flex-col min-h-screen "
       x-bind:data-theme="getMode()">
 
-<nav class="grow max-w-3xl mx-auto w-full">
+<nav class="max-w-3xl mx-auto w-full">
     {% include navbar.html %}
 </nav>
-<main class="grow max-w-3xl mx-auto">
+<main class="grow max-w-3xl mx-auto w-full">
     {% include table_paginated.html %}
-
-    <footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content mt-auto">
-        <aside>
-            <p>Copyright © 2024 - All right reserved by CodeItQuick</p>
-        </aside>
-    </footer>
-
 </main>
+
+<footer class="site-footer footer footer-center m-0 p-4 bg-base-300 text-base-content mt-auto">
+    <aside>
+        <p>Copyright © {{ site.time | date: '%Y' }} - All rights reserved by CodeItQuick</p>
+    </aside>
+</footer>
 </body>
 
 </html>
