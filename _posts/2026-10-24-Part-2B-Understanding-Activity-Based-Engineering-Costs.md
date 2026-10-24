@@ -1,333 +1,161 @@
 ---
 layout: post
-name: Part 2B - Understanding Activity-Based Engineering Costs
-description: Use activity-based costing to trace engineering hours back to the features and services that demand them.
+name: Part 2A - Understanding Engineering Capacity
+description: Understanding where engineering capacity goes and building a simple capacity statement.
 image: iceberg_buckets.jpg
-time: "12m:00s"
+time: "6m:30s"
 tags: developer-time all
 ---
 
 <div class="w-full text-center">
-    <h1>Part 2B - Understanding Activity-Based Engineering Costs</h1>
-    <h6>(Reading Time: 12 minutes)</h6>
+    <h1>Part 2A - Understanding Engineering Capacity</h1>
+    <h6>(Reading Time: 6 minutes 30 seconds)</h6>
 </div>
 
-## 1. From Purpose to Activity
-
-In [Part 1](/2026/01/21/Making-Invisible-Developer-Work-Visible.html), we introduced five types of engineering work: Build, Fix, Improve, Run, and Evolve. These describe what we're trying to accomplish, whether that's delivering a new feature, fixing a defect, or adapting an existing system to changing requirements.
-
-In [Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html), we began looking at the capacity these responsibilities consume. We looked at how a team of five developers might spend 400 hours over two weeks, and how much of that time goes toward implementation, testing, reviewing, coordination, investigation, and reporting.
-
-But there is another question we haven't answered.
-
-**What is actually demanding those activities?**
-
-Knowing that our team spent 70 hours testing tells us something about how our capacity was consumed. It doesn't tell us what required that testing.
-
-Consider two developers working on completely different things.
-
-One is building a new checkout feature. The other is upgrading an unsupported framework. Their work has different organizational purposes. The first is Build, while the second is Evolve.
-
-However, both developers may spend time on:
-
-- Writing code
-- Testing changes
-- Reviewing pull requests
-- Investigating unexpected behaviour
-- Coordinating releases
-
-The activities are similar, even when the reasons for performing them are different.
-
-Now imagine management asks why the team spends so much time reviewing pull requests. Do we have too many pull requests? Are they too large? Is the code difficult to understand? Are reviewers waiting on other developers?
-
-We cannot answer those questions by knowing we spent 40 hours reviewing code.
-
-We need to connect the activities back to the work that required them.
-
-This is where activity-based costing becomes useful.
-
-## 2. Direct Costs, Indirect Costs, and Overhead
-
-Accounting has a concept called a *cost object*. It's whatever we're trying to determine the cost of.
-
-In manufacturing, that might be a product. In engineering, it could be a feature, a project, an application, a service, or even a customer.
-
-Suppose we're building a checkout feature. We want to understand how much engineering effort it requires.
-
-The time spent implementing that feature is relatively easy to identify. If a developer spends 20 hours working directly on the feature, those hours can be attributed to it.
-
-This is a direct cost.
-
-But implementation isn't the only activity involved. Someone needs to review the code, test the changes, and potentially investigate an issue before the feature reaches production.
-
-If we can reasonably identify the time spent on those activities for the checkout feature, they're also direct costs.
-
-The important distinction is that **direct costs are costs we can trace to a particular cost object**. They aren't limited to writing code.
-
-Now consider a developer maintaining a shared deployment pipeline. That pipeline supports our checkout feature, but it also supports fifteen other services.
-
-How much of that developer's time should we attribute to the checkout feature?
-
-We could divide the cost equally across the services. We could allocate it based on deployment frequency. Or perhaps we could measure the actual effort required to support deployments for each service.
-
-But each approach makes assumptions.
-
-Costs that cannot be conveniently or economically traced to a particular object are indirect costs. When these are shared support costs, we may describe them as overhead.
-
-Overhead is not necessarily wasted time. A shared deployment pipeline might make every other development activity substantially easier.
-
-And direct versus indirect is relative to what we're measuring.
-
-Maintaining the pipeline could be a direct cost of operating our deployment platform, but an indirect cost of delivering the checkout feature.
-
-Why does this matter?
-
-Because an engineering team might appear to spend most of its time delivering features while the cost of supporting those features is distributed across activities nobody associates with the original work.
-
-We don't need to assign every hour to a feature. In many cases, retaining a category for shared responsibilities is more defensible than inventing a precise allocation.
-
-What matters is understanding which costs we can reasonably attribute, which costs are shared, and what assumptions we're making when we distribute them.
-
-## 3. Activities, Cost Pools, and Cost Drivers
-
-Activity-based costing, or ABC, provides an established approach for relating resource costs to the activities consuming those resources and then to the cost objects requiring those activities.
-
-In conventional ABC, the flow looks something like this:
-
-**Resources → Activities → Cost Objects**
-
-This is an accounting relationship. It doesn't describe the order in which management decides what work should be performed.
-
-Let's take code reviews as an example.
-
-Our engineering team has a certain amount of capacity available. During the two-week period, developers spend 40 hours reviewing code.
-
-We can group the resources consumed by that activity into a *cost pool*.
-
-In a monetary model, the pool would contain the relevant costs of providing the review activity, such as the labour cost of the time spent reviewing. If each developer earns a salary of $80,000 a year, the pool would include the share of that salary for those 40 hours, plus benefits and other employment costs. For now, we'll use developer-hours as a measure of effort. Part 2C will look more closely at the financial costs of supplying engineering capacity.
-
-How do we determine what belongs in the review pool?
-
-We need some basis for assigning resources to activities. In ABC, these are often called *resource drivers*.
-
-For engineering labour, the amount of developer time spent performing an activity is a reasonable starting point. We might estimate it using short periods of observation, team-level sampling, or records we already maintain.
-
-Once we have our review cost pool, we need to understand which features or services consumed that reviewing activity.
-
-This requires an *activity driver*: a measure with a plausible relationship to how much of the activity a cost object consumes.
-
-For example, consider three engineering activities:
-
-| Activity | Possible activity driver |
-|---|---|
-| Pull-request reviews | Review time required by a change |
-| Testing | Testing effort required by a change or release |
-| Operational support | Support or investigation time required by a service |
-
-We could try using the number of pull requests, test executions, or production incidents instead. These are easier to count.
-
-But do they adequately explain the consumption of resources?
-
-Imagine our team reviewed 20 pull requests over two weeks, consuming 40 developer-hours.
-
-That's an average of two hours per pull request.
-
-We might decide that every pull request should be allocated two hours of review effort.
-
-Except one pull request might be a trivial dependency update, while another involves changing how payments are processed across several services.
-
-Both count as one pull request.
-
-We've calculated an average, but that doesn't mean we've found a particularly useful cost driver.
-
-A good driver should have a defensible relationship with the resources being consumed. The number of pull requests may be useful when their review requirements are reasonably consistent. When they aren't, we may need to account for differences in complexity or estimate the time required.
-
-If review time can already be traced directly to a particular feature, there may be little reason to allocate it using an average in the first place.
-
-There is also a variation of ABC called *time-driven activity-based costing*, developed by Robert Kaplan and Steven Anderson.
-
-Rather than maintaining a large collection of activity allocations, time-driven ABC models the cost of supplying resource capacity and estimates the time required for different transactions or activities. These time estimates can account for variations in the work.
-
-This may be particularly interesting for recurring engineering activities, such as routine support requests, standardized releases, or operational procedures.
-
-It is less straightforward when every task is different.
-
-Software development is not an assembly line, and trying to reduce novel engineering problems to one standard duration would introduce many of the same problems we encounter with task estimation.
-
-Still, the underlying idea is useful: **understand what resources an activity consumes, then understand what demands that activity.**
-
-## 4. Applying Activity-Based Costing to Engineering
-
-Let's return to the hypothetical team from [Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html).
-
-We have five developers working over two weeks, representing 400 hours of total scheduled working capacity, assuming 40 hours per developer per week and no absences.
-
-Our initial activity breakdown looked like this:
-
-| Activity | Hours |
-|---|---:|
-| Implementation and changes | 180 |
-| Testing | 70 |
-| Code review | 40 |
-| Meetings and coordination | 50 |
-| Investigation and research | 40 |
-| Reporting and administration | 20 |
-| **Total** | **400** |
-
-This gives us an approximate capacity statement.
-
-But what if we want to understand which parts of our engineering responsibilities are demanding those activities?
-
-Imagine that during these two weeks, our team is primarily working on a new checkout feature, supporting an existing billing service, and maintaining shared team infrastructure and responsibilities.
-
-For simplicity, assume the checkout feature and billing-service work are separate assignments, so we don't attribute the same hour to both.
-
-After examining the work, we construct the following hypothetical allocation:
-
-| Activity | Checkout feature | Billing service | Shared / unallocated | Total |
-|---|---:|---:|---:|---:|
-| Implementation | 110 | 45 | 25 | 180 |
-| Testing | 40 | 20 | 10 | 70 |
-| Code review | 22 | 12 | 6 | 40 |
-| Coordination | 15 | 10 | 25 | 50 |
-| Investigation | 5 | 30 | 5 | 40 |
-| Reporting | 5 | 5 | 10 | 20 |
-| **Total** | **197** | **122** | **81** | **400** |
-
-*All figures are illustrative estimates, not measurements from an actual team. Shared or unallocated hours are retained rather than forcibly assigned to the two deliverables.*
-
-This changes the questions we can ask.
-
-Previously, we knew that reviewing code consumed 40 hours.
-
-Now we can see that 22 hours were attributed to the checkout feature, 12 hours to the billing service, and six hours remained shared.
-
-Why did the checkout feature consume more review effort?
-
-Perhaps the implementation required more complicated changes. Perhaps the code was unfamiliar to reviewers. Perhaps there were several rounds of review because the requirements changed.
-
-Or perhaps we simply assigned the hours incorrectly.
-
-The allocation itself doesn't answer the question. It tells us where to investigate.
-
-We can do something similar with operational support.
-
-The billing service consumed 30 hours of investigation, compared with just five for the checkout feature.
-
-Was the service experiencing production failures? Were developers investigating intermittent behaviour? Was there a difficult customer issue? Or were they researching a planned change?
-
-Those are different problems, with potentially different solutions.
-
-The distribution of hours gives us a starting point for understanding which conditions are creating demand for engineering work.
-
-### What About Testing?
-
-Testing provides another interesting example.
-
-The checkout feature consumed 40 hours of testing, compared with 20 for the billing service.
-
-Does this mean we're spending too much time testing the checkout feature?
-
-Not necessarily.
-
-We might discover that the additional testing effort was associated with less subsequent rework, fewer escaped defects, or a smoother release.
-
-Alternatively, the feature might have required more testing because its implementation was unusually complicated.
-
-Testing could also be consuming excessive time because the test suite is slow, unreliable, or difficult to maintain.
-
-We cannot distinguish these explanations from the activity allocation alone.
-
-What we can do is compare the patterns with additional information: changes in implementation effort, rework, production defects, release problems, and the difficulty of modifying the code.
-
-Over time, we might observe that work receiving more testing effort also takes longer initially but requires less subsequent rework.
-
-That's worth investigating.
-
-It is not proof that more testing caused the reduction in rework. The nature of the work, team experience, system complexity, and many other factors could also explain the difference.
-
-### How Would We Collect This Information?
-
-We don't need every developer recording fifteen-minute blocks against Jira tickets.
-
-We can start with information the team already has.
-
-Pull-request histories can help identify where reviews occurred. Incident records can associate support work with particular services. Calendar information provides some visibility into coordination. Periodic team discussions or brief sampling exercises can help estimate activities that aren't otherwise recorded.
-
-None of these sources is perfect. A pull request tells us that a review happened, not necessarily how long it took.
-
-The objective is to produce a reasonable team-level model that developers recognize as plausible.
-
-If we cannot confidently attribute an activity to a particular feature or service, we can leave it shared or unallocated.
-
-A model that admits uncertainty is more useful than one that manufactures precision.
-
-## 5. What Cost Allocation Can and Cannot Explain
-
-Activity-based costing gives us a way to organize the consumption of engineering resources.
-
-It does not automatically explain why that consumption occurred.
-
-There are several problems worth keeping in mind.
-
-First, our measurements are imperfect.
-
-A developer might spend an afternoon debugging a production incident, only to discover that the problem originated in another service. Which service should receive that investigation cost?
-
-The answer depends on the purpose of our analysis. We might attribute the effort to the incident being investigated, or to the service ultimately responsible, but these are different accounting choices.
-
-Second, engineering activities aren't always cleanly separated.
-
-When practicing TDD, writing tests and implementing code can be part of the same continuous activity. Pair programming may involve implementation, review, design, and knowledge sharing simultaneously.
-
-We can establish conventions for classification without pretending these boundaries are absolute.
-
-Third, activities differ in complexity.
-
-One production incident might take ten minutes to resolve. Another could consume several developers for several days. Counting incidents as though they have identical costs will distort our understanding of the services involved.
-
-The same applies to pull requests, deployments, test executions, and almost every other activity we might want to measure.
-
-Fourth, cost allocation is not the same as understanding what caused the cost.
-
-Imagine one service consistently demands twice as much support effort as another.
-
-Is the first service poorly engineered?
-
-Maybe. But it could also serve ten times as many customers, support more complicated business rules, or be subject to stricter reliability requirements.
-
-Our model tells us where the effort was consumed. It does not tell us whether that consumption was justified or avoidable.
-
-And finally, we need to be careful about what decisions we make using this information.
-
-If a team spends 80 hours supporting a service, those hours don't necessarily represent 80 hours we can eliminate by shutting it down or replacing it. Some engineering capacity is shared, some is committed to other responsibilities, and some costs won't immediately disappear when demand changes.
-
-There is also a cost to maintaining the accounting model itself.
-
-We could spend several hours every week trying to improve the accuracy of our activity allocations. At some point, we'd be consuming significant engineering capacity to account for engineering capacity.
-
-That's not particularly helpful.
-
-The goal should be to use enough detail to support better questions and decisions, without creating another administrative responsibility that outweighs the benefit.
-
-And this information should not become a ranking of individual developers. A developer doing difficult investigative work may produce very little visible output while consuming substantial time. That tells us something about the nature of the assignment, not how productive the developer is.
-
-## Conclusion
-
-[Part 2A](/2026/10/24/Part-2A-Understanding-Engineering-Capacity.html) helped us understand where engineering capacity was being consumed.
-
-Activity-based costing takes that investigation further, connecting resources and activities to the features, services, and responsibilities that demand them.
-
-We can begin to understand how much effort is associated with developing a feature, maintaining a service, or supporting the engineering organization itself.
-
-But an allocation is still an estimate, built on assumptions about the work and how we measure it.
-
-It doesn't establish whether that work was valuable, necessary, or performed efficiently.
-
-Those are questions we'll return to when we examine value and prioritization.
-
-Before we can make financial decisions, however, we need to understand another part of the equation.
-
-We've looked at engineering capacity in developer-hours. What does it actually cost the organization to supply those hours?
-
-That's the subject of [Part 2C — The Financial Cost of Engineering Work](/2026/10/24/Part-2C-The-Financial-Cost-Of-Engineering-Work.html).
+# Jira Isn't a Capacity Statement
+
+Have you ever been asked why a development team isn't delivering more features? Let's say we have five developers working 
+forty hours a week. That's 200 hours of engineering capacity every week. It sounds like a lot of time, so where is it 
+going? Usually we open Jira, look at the stories that were completed, and try to explain what everyone was doing.
+
+There's nothing wrong with starting there. A Jira board can tell us what work we're managing, what has been completed, 
+and what we still intend to do. Depending on how we estimate our work, it may even give us an idea of the effort involved. 
+But a list of completed stories isn't the same thing as accounting for the team's available capacity.
+
+Consider a feature estimated at twenty hours. That estimate might include researching the problem, writing the code, 
+testing it, reviewing the changes, and deploying the solution. We don't need a separate ticket for every one of those 
+activities; they're already part of delivering the feature. Now consider the same developer interviewing a candidate, 
+attending a company meeting, or helping another team investigate a production issue. Some teams record that work, others 
+don't. Either way, those hours are no longer available for whatever was planned on the board.
+
+This doesn't mean the developer wasn't working, or that Jira is somehow broken. It means we're asking a work-tracking 
+tool to answer a different question. Before we can understand the cost of engineering work, we should at least have an 
+idea of how much capacity we're consuming and where it's going.
+
+# Where Engineering Capacity Goes
+
+In [Part 1, Making Invisible Developer Work Visible](/2026/01/21/Making-Invisible-Developer-Work-Visible.html), I 
+introduced five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. These describe what we're trying to 
+accomplish, rather than all of the individual activities involved in accomplishing it.
+
+Consider a team responsible for a customer portal, a billing service, and the infrastructure supporting both. Some of 
+its work might look like this:
+
+| Purpose | Example |
+| ------- | ------- |
+| **Build** | Add a new customer account feature |
+| **Fix** | Correct an invoice calculation defect |
+| **Improve** | Reduce the time required to run automated tests |
+| **Run** | Monitor production systems and verify backups |
+| **Evolve** | Migrate an application to a supported .NET runtime |
+{: .table .table-zebra .table-hover}
+
+Each of these purposes can involve coding, testing, code review, design, research, and communication. Two developers might 
+spend an afternoon reviewing and testing a customer feature. That's still Build work; it doesn't become a new category 
+of engineering work because someone opened a pull request. If we already counted their review and testing time in Build, 
+counting it again under code review would make our capacity statement wrong.
+
+There's also work that doesn't fit neatly into any of the five purposes. Hiring interviews, general company meetings, 
+mandatory training, and some team coordination all consume capacity. A meeting to investigate a particular production 
+defect could be counted under Fix, while a general department meeting may be better represented as shared organizational 
+work. The classification depends on what the meeting was for, not whether it happened in a calendar or a ticket.
+
+None of this tells us whether a meeting was worth attending or whether the team should be spending more time on Build 
+than Run. That's a different discussion. For now, we're interested in the capacity required to do the work we've taken 
+on, including responsibilities that aren't represented by a feature or defect.
+
+# Building an Engineering Capacity Statement
+
+Let's continue with our hypothetical five-developer team and look at two weeks of work. Assuming ten working days at eight
+hours per day, we start with 400 scheduled person-hours. One developer takes two days of vacation and another takes a sick 
+day, leaving 376 available person-hours. We should subtract that time before examining the work; otherwise, we might end 
+up trying to explain twenty-four hours that nobody was available to work.
+
+We're counting *person-hours*, not elapsed time. If two developers pair on a problem for three hours, that consumes six 
+person-hours. A one-hour meeting with all five developers consumes five. This doesn't make developers interchangeable units 
+of output. It just gives us a common unit for describing how much of the team's working time was available and consumed.
+
+## Accounting for the Work
+
+Using completed work, incident records, calendars, and what the team remembers about the period, we might come up with 
+the following statement. The numbers are made up, but the exercise is something a team could do without introducing a 
+new time-tracking system.
+
+| Capacity allocation | Person-hours |
+| ------------------- | -----------: |
+| Build | 112 |
+| Fix | 40 |
+| Improve | 32 |
+| Run | 32 |
+| Evolve | 32 |
+| **Attributable engineering work** | **248** |
+| Shared coordination | 56 |
+| Organizational administration | 24 |
+| General learning and onboarding | 16 |
+| Unmeasured or unexplained | 32 |
+| **Total available capacity** | **376** |
+{: .table .table-zebra .table-hover}
+
+Of the original 400 scheduled hours, twenty-four were lost to leave. We can approximately account for 344 of the remaining 
+376 hours, leaving thirty-two unexplained. That isn't a failure of the exercise. It's an admission that we don't have a 
+perfect record of everything that happened over two weeks.
+
+## Where Do the Numbers Come From?
+
+We can start with information we already collect. Work items and incident records help reconstruct feature development, 
+fixes, operational support, and migrations. Calendars tell us about meetings, provided we account for how many developers 
+attended. Then we can talk to the team about significant work that wasn't recorded anywhere. We probably won't remember 
+every interruption, but we don't need to reconstruct everyone's day in fifteen-minute increments to learn something useful.
+
+We do need to be careful about estimates. A feature originally estimated at twenty hours could have taken thirty-five 
+after the team discovered an unexpected dependency. Adding the original estimates together tells us what we expected to 
+consume, not necessarily what we actually consumed. For a statement about the past, we need the best reasonable estimate 
+of work performed.
+
+We also have to avoid counting the same work twice. Suppose a feature consumed thirty person-hours, including six hours 
+of design discussions and code review. If the thirty hours are already included under Build, we shouldn't add another 
+six under shared coordination. The same applies to an incident discussion that has already been counted under Fix. It may 
+be easier to use broad categories than to pretend we can accurately distribute every meeting across several features.
+
+What about the thirty-two unexplained hours? Perhaps there was unrecorded support, interruptions, gaps between activities, 
+or simply inaccurate estimates. We don't know, which is why I would leave them unexplained. Moving them into another 
+category makes the total look tidy, but doesn't make it more accurate.
+
+# What the Statement Tells Us
+
+In our example, 248 of the 376 available hours went toward work attributable to Build, Fix, Improve, Run, or Evolve. 
+That's about 66% of the team's available capacity. Does that mean the developers were only 66% productive? No. It means 
+roughly two-thirds of their available time was attributed to those five purposes, while the rest went toward shared 
+responsibilities or wasn't adequately measured.
+
+The statement also shows fifty-six hours of shared coordination, about 15% of available capacity. Perhaps some of those 
+meetings could have been removed. Perhaps others prevented costly mistakes, resolved dependencies, or helped the team 
+coordinate work it couldn't complete independently. The capacity statement doesn't tell us which explanation is right, 
+and removing twenty hours of meetings doesn't guarantee twenty additional hours of completed feature development.
+
+## Looking for Patterns
+
+One two-week statement gives us a snapshot. Repeating the exercise occasionally might reveal something more interesting. 
+If Run gradually consumes more capacity, has the team taken responsibility for more services? If Fix grows after releases, 
+are we dealing with recurring production problems? If shared coordination increases as the company grows, is the team 
+spending more of its time working across organizational boundaries?
+
+Those questions don't require us to decide immediately that any category is too large. They give developers and managers 
+a place to investigate. They can also make planning discussions more realistic. If a team takes ownership of another 
+service, monitoring, maintenance, and support have to come from somewhere. We shouldn't simply assume the team will 
+continue delivering the same amount of feature work while absorbing those responsibilities.
+
+There are limits to this approach. Hours don't tell us how difficult the work was, how effectively someone performed it, 
+or what the organization received in return. Two developers might each spend eight hours fixing a defect, with one producing 
+a lasting correction and the other creating a temporary workaround. Both used eight person-hours. The accounting alone 
+doesn't tell us which outcome was better.
+
+# Conclusion - Understanding Capacity
+
+Part 1 gave us five ways to describe the purpose of engineering work. Here we've taken a first pass at accounting for the 
+capacity consumed by that work, along with shared responsibilities that may never appear on the sprint board. We don't 
+need a perfect record of every developer's day to start asking better questions about where the time goes.
+
+We also haven't established whether that capacity was well spent. That's a separate question. Before we can get there, 
+we should look more closely at the activities involved in engineering work, and what actually creates demand for them. 
+That's where activity-based costing becomes useful in Part 2B.
