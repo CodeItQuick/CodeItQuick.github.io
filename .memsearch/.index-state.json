@@ -1,11 +1,11 @@
 {
   "collection": "ms_codeitquick_github_io_0388f992",
   "failed_files": [],
-  "indexed_chunks": 1,
+  "indexed_chunks": 2,
   "indexed_files": 17,
-  "last_completed_at": "2026-10-24T08:20:44.076046Z",
-  "last_started_at": "2026-10-24T08:20:41.983733Z",
-  "last_success_at": "2026-10-24T08:20:44.076046Z",
+  "last_completed_at": "2026-10-24T08:37:06.542663Z",
+  "last_started_at": "2026-10-24T08:37:04.217729Z",
+  "last_success_at": "2026-10-24T08:37:06.542663Z",
   "milvus_uri": "~/.memsearch/milvus.db",
   "operation": "index",
   "paths": [
@@ -14,5 +14,5 @@
   "schema_version": 1,
   "status": "ok",
   "total_files": 17,
-  "updated_at": "2026-10-24T08:20:44.076046Z"
+  "updated_at": "2026-10-24T08:37:06.542663Z"
 }

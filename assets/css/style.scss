@@ -132,8 +132,10 @@ body {
         -webkit-line-clamp: 3;
         overflow: hidden;
         line-height: 1.35;
-        // Always reserve 3 lines so descriptions start at the same height
-        min-height: calc(1.35em * 3);
+        // In the 2-column grid, reserve 3 lines so side-by-side descriptions line up
+        @media (min-width: 1024px) {
+            min-height: calc(1.35em * 3);
+        }
 
         // Stretch the title link over the whole card so the card is clickable
         a::after {
@@ -151,7 +153,9 @@ body {
         overflow: hidden;
         font-size: 0.9375rem;
         line-height: 1.5;
-        min-height: calc(1.5em * 2);
+        @media (min-width: 1024px) {
+            min-height: calc(1.5em * 2);
+        }
     }
 
     .post-card__cta {
