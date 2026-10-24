@@ -26,7 +26,9 @@ Not necessarily.
 
 One developer may know everything about the billing service, while another has never worked on it. One might be experienced with database performance, while another specializes in frontend development. Even developers with similar skills may have substantially different knowledge of the systems they maintain.
 
-*[Insert Resource Planning four-panel comic here]*
+<p align="center" width="100%">
+    <img src="/assets/images/resource_planning_comic.svg"  alt="Resource Planning Comic" height="512" width="724" />
+</p>  
 
 The financial cost of engineering involves more than assigning a monetary value to a developer's time. We need to understand who can perform the work, what resources they require, and how much effort completing the work will actually consume.
 
@@ -111,6 +113,10 @@ A spreadsheet might identify two available developers with identical job titles.
 
 That difference matters when estimating costs.
 
+<p align="center" width="100%">
+    <img src="/assets/images/granularity_comic.svg"  alt="Granularity Comic" height="512" width="724" />
+</p>  
+
 ## 3. Capacity Isn't Capability
 
 Suppose Developer A has a loaded hourly rate of $120, while Developer B costs $75 per hour.
@@ -122,6 +128,10 @@ But what happens when Developer A can finish the task in four hours, while Devel
 Developer A costs $480. Developer B costs $1,500.
 
 The developer with the higher hourly rate is considerably cheaper for this particular task.
+
+<p align="center" width="100%">
+    <img src="/assets/images/detailed_costing_comic.svg"  alt="Detailed Costing Comic" height="512" width="724" />
+</p>  
 
 Does that mean organizations should always assign expensive developers to difficult work?
 
