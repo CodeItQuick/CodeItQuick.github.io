@@ -48,7 +48,7 @@ Cost Object:
 > a product, service, project, system, department, or customer. If we look at the work distributed to the different 
 > activities throughout that week
 
-**First Week - Sprint One**
+**Two Week Summary - Sprint One**
 
 | Person      | Task                                | Activity Cost Pool | Activity Cost Driver | Cost Objects           | Hours |   
 |-------------|-------------------------------------|--------------------|----------------------|------------------------|-------|
@@ -60,7 +60,7 @@ Cost Object:
 | Developer 3 | Migrate database to new format      | Evolve             | Designing            | Engineering Department | 40    | 
 {: .table .table-zebra .table-hover}
 
-**Second Week - Sprint Two**
+**Two Week Summary - Sprint Two**
 
 | Person      | Task                                   | Activity Cost Pool | Activity Cost Driver | Cost Objects           | Hours |   
 |-------------|----------------------------------------|--------------------|----------------------|------------------------|------|
@@ -73,32 +73,39 @@ Cost Object:
 
 **Monthly Summary - Customer Portal Cost Summary**
 
-| Activity Cost Pool | Cost Driver    | Customer Portal | 
+| Activity Cost Pool | Cost Driver    | Customer Portal |
 |--------------------|----------------|-----------------|
-| Build              | Coding         | 80              |
-| Fix                | Debugging      |                 |
+| Build              | Coding         | 40              |
+| Build              | Testing        | 40              |
 | Run                | Build Pipeline | 10              |
-| Run                | Build Pipeline | 10              |
+| Run                | Observability  | 30              |
+| **Total**          |                | **120**         |
+{: .table .table-zebra .table-hover}
 
-**Customer Portal Cost Summary**
+**Invoice Calculation Cost Summary**
 
-| Activity Cost Pool | Cost Driver    | Invoice Calculation | 
+| Activity Cost Pool | Cost Driver    | Invoice Calculation |
 |--------------------|----------------|---------------------|
-| Build              | Coding         | 5                   |
 | Fix                | Debugging      | 20                  |
-| Run                | Build Pipeline | 10                  |
-| Run                | Build Pipeline | 10                  |
+| Fix                | Coding         | 5                   |
+| Fix                | Testing        | 15                  |
+| Fix                | Build Pipeline | 10                  |
+| Fix                | Observability  | 30                  |
+| **Total**          |                | **80**              |
+{: .table .table-zebra .table-hover}
 
 **Engineering Cost Summary**
 
-| Activity Cost Pool | Cost Driver    | Invoice Calculation | 
-|--------------------|----------------|---------------------|
-| Build              | Coding         | 0                   |
-| Fix                | Debugging      | 0                   |
-| Improve            | Build Pipeline | 0                   |
-| Run                | Build Pipeline | 0                   |
-| Evolve             | Designing      | 40                  |
-| Evolve             | Coding         | 40                  |
+| Activity Cost Pool | Cost Driver    | Engineering Department |
+|--------------------|----------------|------------------------|
+| Build              | Coding         | 0                      |
+| Fix                | Debugging      | 0                      |
+| Improve            | Build Pipeline | 0                      |
+| Run                | Build Pipeline | 0                      |
+| Evolve             | Designing      | 40                     |
+| Evolve             | Coding         | 40                     |
+| **Total**          |                | **80**                 |
+{: .table .table-zebra .table-hover}
 
 
 Note: whether a cost is direct (Customer Portal/Invoice Service) or indirect (Database Platform) depends on the cost object, not on the cost driver
