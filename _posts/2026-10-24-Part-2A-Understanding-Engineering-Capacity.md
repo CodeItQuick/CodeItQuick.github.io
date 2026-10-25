@@ -51,14 +51,14 @@ If we look at the work distributed to the different activities over two sprints,
 
 **Two Week Summary - Sprint One**
 
-| Person      | Task                                | Activity Cost Pool | Activity Cost Driver | Cost Object            | Hours |   
-|-------------|-------------------------------------|--------------------|----------------------|------------------------|-------|
-| Developer 1 | Add button to Customer Portal       | Build              | Coding               | Customer Portal        | 40    |
-| Developer 1 | Test button added to Portal         | Build              | Testing              | Customer Portal        | 40    |  
-| Developer 2 | Find invoice bug                    | Fix                | Debugging            | Invoice Calculation    | 20    | 
-| Developer 2 | Fix invoice bug                     | Fix                | Coding               | Invoice Calculation    | 5     | 
-| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing              | Invoice Calculation    | 15    | 
-| Developer 3 | Migrate database to new format      | Evolve             | Designing            | Engineering Department | 80    | 
+| Person      | Task                                | Activity Cost Pool | Activities | Cost Object            | Activity Cost Driver (Hours) |   
+|-------------|-------------------------------------|--------------------|------------|------------------------|------------------------------|
+| Developer 1 | Add button to Customer Portal       | Build              | Coding     | Customer Portal        | 40                           |
+| Developer 1 | Test button added to Portal         | Build              | Testing    | Customer Portal        | 40                           |  
+| Developer 2 | Find invoice bug                    | Fix                | Debugging  | Invoice Calculation    | 20                           | 
+| Developer 2 | Fix invoice bug                     | Fix                | Coding     | Invoice Calculation    | 5                            | 
+| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing    | Invoice Calculation    | 15                           | 
+| Developer 3 | Migrate database to new format      | Evolve             | Designing  | Engineering Department | 80                           | 
 {: .table .table-zebra .table-hover}
 
 **Two Week Summary - Sprint Two**
@@ -86,11 +86,19 @@ If we look at the work distributed to the different activities over two sprints,
 Note: whether a cost is direct (Customer Portal/Invoice Calculation) or indirect (Engineering Department) depends on the cost object, not on the cost driver.
 
 # Conclusion - Understanding Capacity
+## Conclusion - Understanding Capacity
 
-[Part 1](/2026/01/21/Making-Invisible-Developer-Work-Visible.html) gave us five ways to describe the purpose of engineering work. Here we've taken a first pass at accounting for the 
-capacity consumed by that work, along with shared responsibilities that may never appear on the sprint board. We don't 
-need a perfect record of every developer's day to start asking better questions about where the time goes.
+In [Part 1 - Making Invisible Developer Work Visible](https://codeitquick.github.io/2026/01/21/Making-Invisible-Developer-Work-Visible.html), 
+we established five different purposes of engineering work. We've now taken that a step further by looking at how engineering capacity is consumed, 
+what activities developers are performing, and where that effort is going.
 
-We also haven't established whether that capacity was well spent. That's a separate question. Before we can get there, we 
-should look more closely at the activities involved in engineering work, and what actually creates demand for them. That's 
-where activity-based costing becomes useful in [Part 2B](/2026/10/24/Part-2B-Understanding-Activity-Based-Engineering-Costs.html).
+In our example, we accounted for 480 hours of development work over two sprints. We can see how much time was spent building 
+features, fixing defects, and evolving existing systems. We can also see which activities consumed that capacity and which 
+parts of the system they supported. That's more information than simply knowing which Jira tickets were completed.
+
+Knowing where our capacity went doesn't tell us whether it was well spent. We also haven't established what any of that 
+work actually cost the organization. What we have is a starting point for understanding how engineering resources are consumed.
+
+In [Part 2B - Understanding Activity-Based Engineering Costs](https://codeitquick.github.io/2026/10/24/Part-2B-Understanding-Activity-Based-Engineering-Costs.html), 
+we'll take a closer look at how activities consume engineering capacity, and how we can allocate that effort to the features, 
+services, and systems that demand it.
