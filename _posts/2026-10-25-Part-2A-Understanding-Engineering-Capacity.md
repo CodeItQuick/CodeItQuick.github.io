@@ -55,16 +55,16 @@ If we look at the work distributed to the different activities over two sprints,
 |-------------|-------------------------------------|--------------------|------------|------------------------|------------------------------|
 | Developer 1 | Add button to Customer Portal       | Build              | Coding     | Customer Portal        | 40                           |
 | Developer 1 | Test button added to Portal         | Build              | Testing    | Customer Portal        | 40                           |  
-| Developer 2 | Find invoice bug                    | Fix                | Debugging  | Invoice Calculation    | 20                           | 
-| Developer 2 | Fix invoice bug                     | Fix                | Coding     | Invoice Calculation    | 5                            | 
-| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing    | Invoice Calculation    | 15                           | 
+| Developer 2 | Find invoice bug                    | Fix                | Debugging  | Invoice Calculation    | 40                           | 
+| Developer 2 | Fix invoice bug                     | Fix                | Coding     | Invoice Calculation    | 10                           | 
+| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing    | Invoice Calculation    | 30                           | 
 | Developer 3 | Migrate database to new format      | Evolve             | Designing  | Engineering Department | 80                           | 
 {: .table .table-zebra .table-hover}
 
 **Two Week Summary - Sprint Two**
 
-| Person      | Task                                   | Activity Cost Pool | Activity Cost Driver | Cost Object            | Hours |   
-|-------------|----------------------------------------|--------------------|----------------------|------------------------|------|
+| Person      | Task                                   | Activity Cost Pool | Activities           | Cost Object            | Activity Cost Driver (Hours) |   
+|-------------|----------------------------------------|--------------------|----------------------|------------------------|------------------------------|
 | Developer 1 | Release button to production           | Build              | Build Pipeline       | Customer Portal        | 20   |
 | Developer 1 | Ensure button works                    | Build              | Observability        | Customer Portal        | 60   |  
 | Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Invoice Calculation    | 20   | 
@@ -86,7 +86,6 @@ If we look at the work distributed to the different activities over two sprints,
 Note: whether a cost is direct (Customer Portal/Invoice Calculation) or indirect (Engineering Department) depends on the cost object, not on the cost driver.
 
 # Conclusion - Understanding Capacity
-## Conclusion - Understanding Capacity
 
 In [Part 1 - Making Invisible Developer Work Visible](https://codeitquick.github.io/2026/01/21/Making-Invisible-Developer-Work-Visible.html), 
 we established five different purposes of engineering work. We've now taken that a step further by looking at how engineering capacity is consumed, 
