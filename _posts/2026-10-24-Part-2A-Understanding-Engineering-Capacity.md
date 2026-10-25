@@ -16,7 +16,7 @@ series: developer-time
 # Jira Isn't a Capacity Statement
 
 Have you ever been asked why a development team isn't delivering more features? Let's say we have three developers working 
-forty hours a week. That's 160 hours of engineering capacity every week. It sounds like a lot of time, so where is it going? 
+forty hours a week. That's 120 hours of engineering capacity every week. It sounds like a lot of time, so where is it going? 
 Usually we open Jira, look at the stories that were completed, and try to explain what everyone was doing.
 
 There's nothing wrong with starting there. A Jira board can tell us what work we're managing, what has been completed, and 
@@ -55,9 +55,9 @@ If we look at the work distributed to the different activities over two sprints,
 |-------------|-------------------------------------|--------------------|----------------------|------------------------|-------|
 | Developer 1 | Add button to Customer Portal       | Build              | Coding               | Customer Portal        | 40    |
 | Developer 1 | Test button added to Portal         | Build              | Testing              | Customer Portal        | 40    |  
-| Developer 2 | Find invoice bug                    | Fix                | Debugging            | Invoice Calculation    | 40    | 
-| Developer 2 | Fix invoice bug                     | Fix                | Coding               | Invoice Calculation    | 10    | 
-| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing              | Invoice Calculation    | 30    | 
+| Developer 2 | Find invoice bug                    | Fix                | Debugging            | Invoice Calculation    | 20    | 
+| Developer 2 | Fix invoice bug                     | Fix                | Coding               | Invoice Calculation    | 5     | 
+| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing              | Invoice Calculation    | 15    | 
 | Developer 3 | Migrate database to new format      | Evolve             | Designing            | Engineering Department | 80    | 
 {: .table .table-zebra .table-hover}
 
