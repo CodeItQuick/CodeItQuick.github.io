@@ -45,8 +45,9 @@ Activity Cost Driver:
 
 Cost Object:
 > A cost object is anything for which an organization wants to separately measure, accumulate, or assign costs, such as 
-> a product, service, project, system, department, or customer. If we look at the work distributed to the different 
-> activities throughout that week
+> a product, service, project, system, department, or customer.
+
+If we look at the work distributed to the different activities over two sprints, it looks like this:
 
 **Two Week Summary - Sprint One**
 
@@ -82,7 +83,7 @@ Cost Object:
 | **Total**          |                | **160**         |
 {: .table .table-zebra .table-hover}
 
-**Invoice Calculation Cost Summary**
+**Monthly Summary - Invoice Calculation Cost Summary**
 
 | Activity Cost Pool | Cost Driver    | Invoice Calculation |
 |--------------------|----------------|---------------------|
@@ -94,7 +95,7 @@ Cost Object:
 | **Total**          |                | **160**             |
 {: .table .table-zebra .table-hover}
 
-**Engineering Cost Summary**
+**Monthly Summary - Engineering Cost Summary**
 
 | Activity Cost Pool | Cost Driver    | Engineering Department |
 |--------------------|----------------|------------------------|
@@ -108,7 +109,7 @@ Cost Object:
 {: .table .table-zebra .table-hover}
 
 
-Note: whether a cost is direct (Customer Portal/Invoice Service) or indirect (Database Platform) depends on the cost object, not on the cost driver
+Note: whether a cost is direct (Customer Portal/Invoice Calculation) or indirect (Engineering Department) depends on the cost object, not on the cost driver.
 
 # Conclusion - Understanding Capacity
 
