@@ -72,36 +72,36 @@ If we look at the work distributed to the different activities over two sprints,
 | Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 80   | 
 {: .table .table-zebra .table-hover}
 
-**Monthly Summary - Customer Portal Cost Summary**
+**Monthly Summary - Customer Portal Building Cost Summary**
 
-| Activity Cost Pool | Cost Driver    | Customer Portal |
-|--------------------|----------------|-----------------|
-| Build              | Coding         | 40              |
-| Build              | Testing        | 40              |
-| Build              | Build Pipeline | 20              |
-| Build              | Observability  | 60              |
-| **Total**          |                | **160**         |
+| Cost Driver    | Customer Portal |
+|----------------|-----------------|
+| Coding         | 40              |
+| Testing        | 40              |
+| Build Pipeline | 20              |
+| Observability  | 60              |
+| **Total**      | **160**         |
 {: .table .table-zebra .table-hover}
 
-**Monthly Summary - Invoice Calculation Cost Summary**
+**Monthly Summary - Invoice Calculation Fixing Cost Summary**
 
-| Activity Cost Pool | Cost Driver    | Invoice Calculation |
-|--------------------|----------------|---------------------|
-| Fix                | Debugging      | 40                  |
-| Fix                | Coding         | 10                  |
-| Fix                | Testing        | 30                  |
-| Fix                | Build Pipeline | 20                  |
-| Fix                | Observability  | 60                  |
-| **Total**          |                | **160**             |
+| Cost Driver      | Invoice Calculation |
+|------------------|---------------------|
+| Debugging        | 40                  |
+| Coding           | 10                  |
+| Testing          | 30                  |
+| Build Pipeline   | 20                  |
+| Observability    | 60                  |
+| **Total**        | **160**             |
 {: .table .table-zebra .table-hover}
 
-**Monthly Summary - Engineering Cost Summary**
+**Monthly Summary - Engineering Evolving Cost Summary**
 
-| Activity Cost Pool | Cost Driver    | Engineering Department |
-|--------------------|----------------|------------------------|
-| Evolve             | Designing      | 80                     |
-| Evolve             | Coding         | 80                     |
-| **Total**          |                | **160**                |
+| Cost Driver     | Engineering Department |
+|-----------------|------------------------|
+| Designing       | 80                     |
+| Coding          | 80                     |
+| **Total**       | **160**                |
 {: .table .table-zebra .table-hover}
 
 
