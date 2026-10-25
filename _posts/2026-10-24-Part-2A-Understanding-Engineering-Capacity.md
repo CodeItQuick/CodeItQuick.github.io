@@ -51,14 +51,14 @@ If we look at the work distributed to the different activities over two sprints,
 
 **Two Week Summary - Sprint One**
 
-| Person      | Task                                | Activity Cost Pool | Activity Cost Driver | Cost Object            | Hours |   
-|-------------|-------------------------------------|--------------------|----------------------|------------------------|-------|
-| Developer 1 | Add button to Customer Portal       | Build              | Coding               | Customer Portal        | 40    |
-| Developer 1 | Test button added to Portal         | Build              | Testing              | Customer Portal        | 40    |  
-| Developer 2 | Find invoice bug                    | Fix                | Debugging            | Invoice Calculation    | 40    | 
-| Developer 2 | Fix invoice bug                     | Fix                | Coding               | Invoice Calculation    | 10    | 
-| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing              | Invoice Calculation    | 30    | 
-| Developer 3 | Migrate database to new format      | Evolve             | Designing            | Engineering Department | 80    | 
+| Person      | Task                                | Activity Cost Pool | Activity Cost Driver | Cost Object            | Cost Object Type | Hours |   
+|-------------|-------------------------------------|--------------------|----------------------|------------------------|------------------|-------|
+| Developer 1 | Add button to Customer Portal       | Build              | Coding               | Customer Portal        | Direct           | 40    |
+| Developer 1 | Test button added to Portal         | Build              | Testing              | Customer Portal        | Direct           | 40    |  
+| Developer 2 | Find invoice bug                    | Fix                | Debugging            | Invoice Calculation    | Direct           | 40    | 
+| Developer 2 | Fix invoice bug                     | Fix                | Coding               | Invoice Calculation    | Direct           | 10    | 
+| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing              | Invoice Calculation    | Direct           | 30    | 
+| Developer 3 | Migrate database to new format      | Evolve             | Designing            | Engineering Department | Indirect         | 80    | 
 {: .table .table-zebra .table-hover}
 
 **Two Week Summary - Sprint Two**
@@ -72,36 +72,14 @@ If we look at the work distributed to the different activities over two sprints,
 | Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 80   | 
 {: .table .table-zebra .table-hover}
 
-**Monthly Summary - Customer Portal Building Cost Summary**
+**Monthly Summary - Cost by Cost Object**
 
-| Cost Driver    | Customer Portal |
-|----------------|-----------------|
-| Coding         | 40              |
-| Testing        | 40              |
-| Build Pipeline | 20              |
-| Observability  | 60              |
-| **Total**      | **160**         |
-{: .table .table-zebra .table-hover}
-
-**Monthly Summary - Invoice Calculation Fixing Cost Summary**
-
-| Cost Driver      | Invoice Calculation |
-|------------------|---------------------|
-| Debugging        | 40                  |
-| Coding           | 10                  |
-| Testing          | 30                  |
-| Build Pipeline   | 20                  |
-| Observability    | 60                  |
-| **Total**        | **160**             |
-{: .table .table-zebra .table-hover}
-
-**Monthly Summary - Engineering Evolving Cost Summary**
-
-| Cost Driver     | Engineering Department |
-|-----------------|------------------------|
-| Designing       | 80                     |
-| Coding          | 80                     |
-| **Total**       | **160**                |
+| Cost Object            | Activity Cost Pool | Designing | Debugging | Coding  | Testing | Build Pipeline | Observability | Total   |
+|------------------------|--------------------|-----------|-----------|---------|---------|----------------|---------------|---------|
+| Customer Portal        | Build              | 0         | 0         | 40      | 40      | 20             | 60            | 160     |
+| Invoice Calculation    | Fix                | 0         | 40        | 10      | 30      | 20             | 60            | 160     |
+| Engineering Department | Evolve             | 80        | 0         | 80      | 0       | 0              | 0             | 160     |
+| **Total**              |                    | **80**    | **40**    | **130** | **70**  | **40**         | **120**       | **480** |
 {: .table .table-zebra .table-hover}
 
 
