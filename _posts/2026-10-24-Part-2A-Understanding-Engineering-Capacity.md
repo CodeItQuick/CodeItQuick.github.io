@@ -50,24 +50,24 @@ Cost Object:
 
 **Two Week Summary - Sprint One**
 
-| Person      | Task                                | Activity Cost Pool | Activity Cost Driver | Cost Objects           | Hours |   
+| Person      | Task                                | Activity Cost Pool | Activity Cost Driver | Cost Object            | Hours |   
 |-------------|-------------------------------------|--------------------|----------------------|------------------------|-------|
 | Developer 1 | Add button to Customer Portal       | Build              | Coding               | Customer Portal        | 40    |
 | Developer 1 | Test button added to Portal         | Build              | Testing              | Customer Portal        | 40    |  
-| Developer 2 | Find invoice bug                    | Fix                | Debugging            | Invoice  Calculation   | 40    | 
-| Developer 2 | Fix invoice bug                     | Fix                | Coding               | Invoice  Calculation   | 10    | 
-| Developer 2 | Add tests to prevent bug reaccuring | Fix                | Testing              | Invoice  Calculation   | 30    | 
+| Developer 2 | Find invoice bug                    | Fix                | Debugging            | Invoice Calculation    | 40    | 
+| Developer 2 | Fix invoice bug                     | Fix                | Coding               | Invoice Calculation    | 10    | 
+| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing              | Invoice Calculation    | 30    | 
 | Developer 3 | Migrate database to new format      | Evolve             | Designing            | Engineering Department | 80    | 
 {: .table .table-zebra .table-hover}
 
 **Two Week Summary - Sprint Two**
 
-| Person      | Task                                   | Activity Cost Pool | Activity Cost Driver | Cost Objects           | Hours |   
+| Person      | Task                                   | Activity Cost Pool | Activity Cost Driver | Cost Object            | Hours |   
 |-------------|----------------------------------------|--------------------|----------------------|------------------------|------|
-| Developer 1 | Release button to production           | Run                | Build Pipeline       | Customer Portal        | 20   |
-| Developer 1 | Ensure button works                    | Run                | Observability        | Customer Portal        | 60   |  
-| Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Invoice  Calculation   | 20   | 
-| Developer 2 | Ensure hot fix works                   | Fix                | Observability        | Invoice  Calculation   | 60   | 
+| Developer 1 | Release button to production           | Build              | Build Pipeline       | Customer Portal        | 20   |
+| Developer 1 | Ensure button works                    | Build              | Observability        | Customer Portal        | 60   |  
+| Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Invoice Calculation    | 20   | 
+| Developer 2 | Ensure hot fix works                   | Fix                | Observability        | Invoice Calculation    | 60   | 
 | Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 80   | 
 {: .table .table-zebra .table-hover}
 
@@ -77,8 +77,8 @@ Cost Object:
 |--------------------|----------------|-----------------|
 | Build              | Coding         | 40              |
 | Build              | Testing        | 40              |
-| Run                | Build Pipeline | 20              |
-| Run                | Observability  | 60              |
+| Build              | Build Pipeline | 20              |
+| Build              | Observability  | 60              |
 | **Total**          |                | **160**         |
 {: .table .table-zebra .table-hover}
 
