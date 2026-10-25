@@ -3,14 +3,14 @@ layout: post
 name: Part 2A - Understanding Engineering Capacity
 description: Understanding where engineering capacity goes and building a simple capacity statement.
 image: iceberg_buckets.jpg
-time: "6m:30s"
+time: "4m:30s"
 tags: developer-time all
 series: developer-time
 ---
 
 <div class="w-full text-center">
     <h1>Part 2A - Understanding Engineering Capacity</h1>
-    <h6>(Reading Time: 6 minutes 30 seconds)</h6>
+    <h6>(Reading Time: 4 minutes 30 seconds)</h6>
 </div>
 
 # Jira Isn't a Capacity Statement
