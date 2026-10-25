@@ -15,8 +15,8 @@ series: developer-time
 
 # Jira Isn't a Capacity Statement
 
-Have you ever been asked why a development team isn't delivering more features? Let's say we have five developers working 
-forty hours a week. That's 200 hours of engineering capacity every week. It sounds like a lot of time, so where is it going? 
+Have you ever been asked why a development team isn't delivering more features? Let's say we have three developers working 
+forty hours a week. That's 160 hours of engineering capacity every week. It sounds like a lot of time, so where is it going? 
 Usually we open Jira, look at the stories that were completed, and try to explain what everyone was doing.
 
 There's nothing wrong with starting there. A Jira board can tell us what work we're managing, what has been completed, and 
@@ -51,14 +51,14 @@ If we look at the work distributed to the different activities over two sprints,
 
 **Two Week Summary - Sprint One**
 
-| Person      | Task                                | Activity Cost Pool | Activity Cost Driver | Cost Object            | Cost Object Type | Hours |   
-|-------------|-------------------------------------|--------------------|----------------------|------------------------|------------------|-------|
-| Developer 1 | Add button to Customer Portal       | Build              | Coding               | Customer Portal        | Direct           | 40    |
-| Developer 1 | Test button added to Portal         | Build              | Testing              | Customer Portal        | Direct           | 40    |  
-| Developer 2 | Find invoice bug                    | Fix                | Debugging            | Invoice Calculation    | Direct           | 40    | 
-| Developer 2 | Fix invoice bug                     | Fix                | Coding               | Invoice Calculation    | Direct           | 10    | 
-| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing              | Invoice Calculation    | Direct           | 30    | 
-| Developer 3 | Migrate database to new format      | Evolve             | Designing            | Engineering Department | Indirect         | 80    | 
+| Person      | Task                                | Activity Cost Pool | Activity Cost Driver | Cost Object            | Hours |   
+|-------------|-------------------------------------|--------------------|----------------------|------------------------|-------|
+| Developer 1 | Add button to Customer Portal       | Build              | Coding               | Customer Portal        | 40    |
+| Developer 1 | Test button added to Portal         | Build              | Testing              | Customer Portal        | 40    |  
+| Developer 2 | Find invoice bug                    | Fix                | Debugging            | Invoice Calculation    | 40    | 
+| Developer 2 | Fix invoice bug                     | Fix                | Coding               | Invoice Calculation    | 10    | 
+| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing              | Invoice Calculation    | 30    | 
+| Developer 3 | Migrate database to new format      | Evolve             | Designing            | Engineering Department | 80    | 
 {: .table .table-zebra .table-hover}
 
 **Two Week Summary - Sprint Two**
