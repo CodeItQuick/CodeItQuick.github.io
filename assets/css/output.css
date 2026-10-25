@@ -1391,12 +1391,6 @@ html {
   gap: .75rem;
   padding: 2rem;
 }
-.card-footer {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 .card.card-image-cover:not(:has(.card-header),:has(.card-body),:has(.card-footer)) img {
   border-radius: .5rem;
 }
@@ -1888,12 +1882,13 @@ html {
 .m-0 {
   margin: 0px;
 }
-.m-4 {
-  margin: 1rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -1925,23 +1920,8 @@ html {
 .h-8 {
   height: 2rem;
 }
-.h-\[6rem\] {
-  height: 6rem;
-}
 .h-full {
   height: 100%;
-}
-.h-\[6\.5rem\] {
-  height: 6.5rem;
-}
-.h-\[6\.7rem\] {
-  height: 6.7rem;
-}
-.h-\[108\] {
-  height: 108;
-}
-.h-\[108px\] {
-  height: 108px;
 }
 .min-h-20 {
   min-height: 5rem;
@@ -1993,14 +1973,8 @@ html {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
 .flex-col {
   flex-direction: column;
-}
-.flex-wrap {
-  flex-wrap: wrap;
 }
 .items-start {
   align-items: flex-start;
@@ -2026,8 +2000,14 @@ html {
 .text-wrap {
   text-wrap: wrap;
 }
+.rounded {
+  border-radius: 0.25rem;
+}
 .rounded-lg {
   border-radius: 0.5rem;
+}
+.border {
+  border-width: 1px;
 }
 .bg-backgroundPrimary {
   --tw-bg-opacity: 1;
@@ -2079,20 +2059,6 @@ html {
 .font-\[body\] {
   font-family: body;
 }
-.font-\[display\] {
-  font-family: display;
-}
-.font-\[nav\] {
-  font-family: nav;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -2113,12 +2079,6 @@ html {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-@media (min-width: 640px) {
-
-  .sm\:flex {
-    display: flex;
-  }
 }
 @media (min-width: 768px) {
 
@@ -2205,3 +2165,6 @@ html {
     width: max-content;
   }
 }
+
+/* Let article table cells wrap so wide tables fit the column. */
+.markdown .table td, .markdown .table th { white-space: normal; }
