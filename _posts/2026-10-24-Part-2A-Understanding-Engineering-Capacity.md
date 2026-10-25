@@ -99,10 +99,6 @@ If we look at the work distributed to the different activities over two sprints,
 
 | Activity Cost Pool | Cost Driver    | Engineering Department |
 |--------------------|----------------|------------------------|
-| Build              | Coding         | 0                      |
-| Fix                | Debugging      | 0                      |
-| Improve            | Build Pipeline | 0                      |
-| Run                | Build Pipeline | 0                      |
 | Evolve             | Designing      | 80                     |
 | Evolve             | Coding         | 80                     |
 | **Total**          |                | **160**                |
