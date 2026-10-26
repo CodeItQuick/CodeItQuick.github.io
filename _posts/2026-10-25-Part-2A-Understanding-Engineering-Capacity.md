@@ -82,7 +82,6 @@ If we look at the work distributed to the different activities over two sprints,
 | **Total**              |                    | **80**    | **40**    | **130** | **70**  | **40**         | **120**       | **480** |
 {: .table .table-zebra .table-hover}
 
-
 Note: whether a cost is direct (Customer Portal/Invoice Calculation) or indirect (Engineering Department) depends on the cost object, not on the cost driver.
 
 # Conclusion - Understanding Capacity
