@@ -88,6 +88,6 @@ eighty hours are a direct cost. Measured against the customer portal and the inv
 an indirect cost, split forty and forty. The work didn't change. The question we asked did. And that even split is a 
 choice we made, not something we discovered about how the work was done.
 
-We still haven't shown the financial cost of supplying that capacity. Developer-hours aren't interchangeable in financial 
-terms, and an allocated cost isn't always a cost we can avoid. That's where we'll go next in [Part 2C - The Financial 
-Cost of Engineering Work](/2026/10/27/Part-2C-The-Financial-Cost-Of-Engineering-Work.html).
+We now have a way to estimate what engineering work costs, and who it costs for. Whether the work is worth those 
+costs is a separate question. In [Part 4 - The Four Ways to Reclaim Developer Time](/2026/10/17/Part-Two-The-Four-Ways-To-Reclaim-Developer-Time.html), 
+we'll look at that hidden work and decide whether to eliminate it, automate it, delegate it, or turn it into self-service.
