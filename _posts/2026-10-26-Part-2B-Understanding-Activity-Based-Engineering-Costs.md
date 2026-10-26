@@ -67,6 +67,7 @@ never made it onto the board at all.
 | Developer 3 | Direct Costs      | 80    | 60   | 4800  |
 | Developer 3 | Indirect Costs    | 0     | 60   | 0     |
 | Developer 3 | Overhead Costs    | 3     | 60   | 180   |
+{: .table .table-zebra .table-hover}
 
 # Department Total Costs 
 
@@ -75,6 +76,7 @@ never made it onto the board at all.
 | Customer Portal      | 3200         | 20             | 40       | 3260       | 
 | Invoice Service      | 1600         | 40             | 20       | 1660       | 
 | Engineering Platform | 4800         | 0              | 300      | 5100       | 
+{: .table .table-zebra .table-hover}
 
 # Conclusion - Understanding Activity-Based Costs
 
