@@ -3,14 +3,14 @@ layout: post
 name: Part 2B - Understanding Activity-Based Engineering Costs
 description: Understanding how engineering activities consume capacity and what creates demand for them.
 image: iceberg_buckets.jpg
-time: "9m:00s"
+time: "2m:54s"
 tags: developer-time all
 series: developer-time
 ---
 
 <div class="w-full text-center">
     <h1>Part 2B - Understanding Activity-Based Engineering Costs</h1>
-    <h6>(Reading Time: 9 minutes)</h6>
+    <h6>(Reading Time: 2 minutes 54 seconds)</h6>
 </div>
 
 # From Purpose to Activity

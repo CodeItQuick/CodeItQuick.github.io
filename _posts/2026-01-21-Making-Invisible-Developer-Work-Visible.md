@@ -3,7 +3,7 @@ layout: post
 name: Part 1 - Making Invisible Developer Work Visible
 description: Accurately describe developer work
 image: iceberg_buckets.jpg
-time: "4m:30s"
+time: "4m:04s"
 tags: developer-time all
 series: developer-time
 featured: true
@@ -11,7 +11,7 @@ featured: true
 
 <div class="w-full text-center">
     <h1>Part 1 - Making Invisible Developer Work Visible</h1>
-    <h6>(Reading Time: 4 minutes 30 seconds)</h6>
+    <h6>(Reading Time: 4 minutes 4 seconds)</h6>
 </div>
 
 # Introduction: Engineering Work Beyond Features and Bugs
