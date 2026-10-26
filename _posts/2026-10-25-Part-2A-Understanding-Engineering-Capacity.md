@@ -72,7 +72,7 @@ If we look at the work distributed to the different activities over two sprints,
 | Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 80   | 
 {: .table .table-zebra .table-hover}
 
-**Monthly Summary - Cost by Cost Object**
+**Monthly Summary - Activity by Cost Object**
 
 | Cost Object            | Activity Cost Pool | Designing | Debugging | Coding  | Testing | Build Pipeline | Observability | Total   |
 |------------------------|--------------------|-----------|-----------|---------|---------|----------------|---------------|---------|
