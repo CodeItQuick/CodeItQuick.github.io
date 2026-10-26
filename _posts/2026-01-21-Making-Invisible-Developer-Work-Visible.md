@@ -163,6 +163,12 @@ Building a feature produces something stakeholders can see. Fixing a production 
 But improving maintainability, preparing for a migration, or keeping operational systems healthy may receive less attention 
 because the benefits aren't always immediately obvious.
 
+Visibility also depends on who the work is for. Some work traces directly to a single feature or service, like shipping a 
+button for the customer portal. That's a direct cost. Some work is shared, like a database migration that supports several 
+systems at once. That's an indirect cost. And some work, like meetings and direct messages, supports everything 
+without belonging to anything in particular. That's overhead. The further work sits from a single feature, the further 
+below the waterline it tends to sink.
+
 ## The Visibility of Work
 
 The iceberg represents how visible different kinds of engineering work may be to stakeholders. It does not represent
