@@ -59,7 +59,7 @@ If we look at the work distributed to the different activities over two sprints,
 | Developer 2 | Fix invoice bug                     | Fix                | Coding     | Invoice Calculation    | 10                           | 
 | Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing    | Invoice Calculation    | 30                           | 
 | Developer 3 | Migrate database to new format      | Evolve             | Designing  | Engineering Department | 80                           | 
-{: .table .table-zebra .table-hover}
+{: .table .table-zebra}
 
 **Two Week Summary - Sprint Two**
 
@@ -70,7 +70,7 @@ If we look at the work distributed to the different activities over two sprints,
 | Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Invoice Calculation    | 20   | 
 | Developer 2 | Ensure hot fix works                   | Fix                | Observability        | Invoice Calculation    | 60   | 
 | Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 80   | 
-{: .table .table-zebra .table-hover}
+{: .table .table-zebra}
 
 **Monthly Summary - Activity by Cost Object**
 
@@ -80,7 +80,7 @@ If we look at the work distributed to the different activities over two sprints,
 | Invoice Calculation    | Fix                | 0         | 40        | 10      | 30      | 20             | 60            | 160     |
 | Engineering Department | Evolve             | 80        | 0         | 80      | 0       | 0              | 0             | 160     |
 | **Total**              |                    | **80**    | **40**    | **130** | **70**  | **40**         | **120**       | **480** |
-{: .table .table-zebra .table-hover}
+{: .table .table-zebra}
 
 Note: whether a cost is direct (Customer Portal/Invoice Calculation) or indirect (Engineering Department) depends on the cost object, not on the cost driver.
 

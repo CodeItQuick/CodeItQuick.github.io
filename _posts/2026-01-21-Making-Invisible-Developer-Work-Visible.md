@@ -43,7 +43,7 @@ to discuss.
 | **Improve** | Improve existing system characteristics | Reduce build time  |
 | **Run**     | Keep systems operating                  | Monitor Production |
 | **Evolve**  | Adapt to changing constraints           | Migrate Runtimes   |
-{: .table .table-zebra .table-hover}
+{: .table .table-zebra}
 
 ## Each Bucket in Detail
 
