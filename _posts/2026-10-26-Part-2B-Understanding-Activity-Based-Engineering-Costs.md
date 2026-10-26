@@ -54,6 +54,28 @@ never made it onto the board at all.
 | Developer 3 | Migrate database by creating test data | Evolve             | Customer Portal      | 40                           | Indirect Cost | 
 {: .table .table-zebra .table-hover}
 
+# Total Costs - Development Work
+
+| Person      | Classification    | Hours | Rate | Total | 
+|-------------|-------------------|-------|------|-------|
+| Developer 1 | Direct Costs      | 80    | 40   | 3200  |
+| Developer 1 | Indirect Costs    | 1     | 40   | 40    |
+| Developer 1 | Overhead Costs    | 4     | 40   | 160   |
+| Developer 2 | Direct Costs      | 80    | 20   | 1600  |
+| Developer 2 | Indirect Costs    | 1     | 20   | 20    |
+| Developer 2 | Overhead Costs    | 1     | 20   | 20    |
+| Developer 3 | Direct Costs      | 80    | 60   | 4800  |
+| Developer 3 | Indirect Costs    | 0     | 60   | 0     |
+| Developer 3 | Overhead Costs    | 3     | 60   | 180   |
+
+# Department Total Costs 
+
+| Cost Objects         | Direct Costs | Indirect Costs | Overhead | Total Cost |
+|----------------------|--------------|----------------|----------|------------|
+| Customer Portal      | 3200         | 20             | 40       | 3260       | 
+| Invoice Service      | 1600         | 40             | 20       | 1660       | 
+| Engineering Platform | 4800         | 0              | 300      | 5100       | 
+
 # Conclusion - Understanding Activity-Based Costs
 
 [Part 2A](/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html) told us where the team's capacity went. Here 
