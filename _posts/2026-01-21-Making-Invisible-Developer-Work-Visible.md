@@ -45,6 +45,10 @@ to discuss.
 | **Evolve**  | Adapt to changing constraints           | Migrate Runtimes   |
 {: .table .table-zebra}
 
+<p align="center" width="100%">
+    <img src="/assets/images/a_clean_high_resolution_technical_illustration_di_1.png" alt="Build, Fix, Improve, Run, and Evolve as gears in one engine" width="768" />
+</p>
+
 ## Each Bucket in Detail
 
 <div class="iceberg-columns" markdown="1">
@@ -163,6 +167,10 @@ Building a feature produces something stakeholders can see. Fixing a production 
 But improving maintainability, preparing for a migration, or keeping operational systems healthy may receive less attention 
 because the benefits aren't always immediately obvious.
 
+<p align="center" width="100%">
+    <img src="/assets/images/a_detailed_cinematic_editorial_illustration_of_a_t_3_batch_2.png" alt="Build and Fix in the spotlight while Run, Improve, and Evolve work backstage" width="768" />
+</p>
+
 Visibility also depends on who the work is for. Some work traces directly to a single feature or service, like shipping a 
 button for the customer portal. That's a direct cost. Some work is shared, like a database migration that supports several 
 systems at once. That's an indirect cost. And some work, like meetings and direct messages, supports everything 
@@ -175,8 +183,8 @@ The iceberg represents how visible different kinds of engineering work may be to
 their relative cost, frequency, or importance.
 
 <p align="center" width="100%">
-    <img src="/assets/images/iceberg_buckets.jpg"  alt="Product Iceberg" height="512" width="512" />
-</p>  
+    <img src="/assets/images/wide_cinematic_infographic_style_illustration_of_4.png" alt="Iceberg of visible and less visible work" width="768" />
+</p>
 
 # Conclusion - The Iceberg
 
