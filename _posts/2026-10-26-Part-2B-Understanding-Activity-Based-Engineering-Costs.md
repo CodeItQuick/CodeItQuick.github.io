@@ -29,7 +29,7 @@ In this article, we'll take the second sprint from Part 2A and ask a different q
 who the work was for. Some of it traces cleanly to a single feature or service. Some of it is shared, and some of it 
 never made it onto the board at all.
 
-# Direct Consumption, Indirect Consumption
+# Direct Consumption
 
 | Person      | Task                                   | Activity Pool | Consumption Object   | Activity Driver (Hours) | Classification       |
 |-------------|----------------------------------------|---------------|----------------------|-------------------------|----------------------|
@@ -37,10 +37,9 @@ never made it onto the board at all.
 | Developer 1 | Ensure button works                    | Build         | Customer Portal      | 55                      | Direct Consumption   | 
 | Developer 2 | Release hot fix                        | Fix           | Invoice Calculation  | 6                       | Direct Consumption   |
 | Developer 2 | Ensure hot fix works                   | Fix           | Invoice Calculation  | 61                      | Direct Consumption   | 
-| Developer 3 | Migrate database by creating test data | Evolve        | Engineering Platform | 74                      | Direct Consumption   | 
 {: .table .table-zebra}
 
-# Hidden Consumption - Invisible Development Work
+# Indirect and Overhead Consumption
 
 | Person      | Task                                   | Activity Pool | Consumption Object   | Activity Driver (Hours) | Classification       |
 |-------------|----------------------------------------|---------------|----------------------|-------------------------|----------------------|
@@ -64,8 +63,8 @@ never made it onto the board at all.
 | Developer 2 | Direct Consumption   | 67    |
 | Developer 2 | Indirect Consumption | 5     |
 | Developer 2 | Overhead Consumption | 8     |
-| Developer 3 | Direct Consumption   | 74    |
-| Developer 3 | Indirect Consumption | 0     |
+| Developer 3 | Direct Consumption   | 0     |
+| Developer 3 | Indirect Consumption | 74    |
 | Developer 3 | Overhead Consumption | 6     |
 {: .table .table-zebra}
 
@@ -73,22 +72,23 @@ never made it onto the board at all.
 
 | Consumption Objects  | Direct Consumption | Indirect Consumption | Overhead Consumption | Total Consumption (Hours) |
 |----------------------|--------------------|----------------------|----------------------|---------------------------|
-| Customer Portal      | 61                 | 5                    | 8                    | 74                        | 
-| Invoice Calculation  | 67                 | 5                    | 8                    | 80                        | 
-| Engineering Platform | 74                 | 0                    | 12                   | 86                        | 
+| Customer Portal      | 61                 | 42                   | 8                    | 111                       | 
+| Invoice Calculation  | 67                 | 42                   | 8                    | 117                       | 
+| Engineering Platform | 0                  | 0                    | 12                   | 12                        | 
 {: .table .table-zebra}
 
 # Conclusion - Understanding Activity-Based Consumption
 
 [Part 2A](/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html) told us where the team's capacity went. Here 
-we've asked who that work was for. Most of the second sprint traces directly to the customer portal or the invoice 
-calculation. The rest is reviews, meetings, and messages. Each one is small on its own, but they touch every developer 
+we've asked who that work was for. Just over half of the second sprint traces directly to the customer portal or the invoice 
+calculation. The rest is the migration, plus reviews, meetings, and messages. Each one is small on its own, but they touch every developer 
 and every consumption object, and they rarely show up on a Jira board.
 
 The database migration shows why the classification matters. Measured against the engineering platform, Developer 3's 
 seventy-four hours are direct consumption. Measured against the customer portal and the invoice calculation, the same 
 hours become indirect consumption, split thirty-seven and thirty-seven. The work didn't change. The question we asked did. 
-And that even split is a choice we made, not something we discovered about how the work was done.
+We can only count those hours once, so the tables above use the second view. And that even split is a choice we made, 
+not something we discovered about how the work was done.
 
 We now have a way to see what consumes engineering effort, and who that effort is for. Whether the work is worth that effort 
 is a separate question. In [Part 4 - The Four Ways to Reclaim Developer Time](/2026/10/17/Part-Two-The-Four-Ways-To-Reclaim-Developer-Time.html), 
