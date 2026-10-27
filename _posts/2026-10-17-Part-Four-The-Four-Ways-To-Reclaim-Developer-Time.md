@@ -8,6 +8,7 @@ tags: developer-time all
 series: developer-time
 redirect_from:
   - /2026/10/17/Maximizing-Developer-Coding-Time.html
+  - /2026/10/17/Part-Two-The-Four-Ways-To-Reclaim-Developer-Time.html
 ---
 
 <div class="w-full text-center">

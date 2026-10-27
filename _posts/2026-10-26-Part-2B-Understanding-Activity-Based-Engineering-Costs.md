@@ -91,5 +91,5 @@ We can only count those hours once, so the tables above use the second view. And
 not something we discovered about how the work was done.
 
 We now have a way to see what consumes engineering effort, and who that effort is for. Whether the work is worth that effort 
-is a separate question. In [Part 4 - The Four Ways to Reclaim Developer Time](/2026/10/17/Part-Two-The-Four-Ways-To-Reclaim-Developer-Time.html), 
+is a separate question. In [Part 4 - The Four Ways to Reclaim Developer Time](/2026/10/17/Part-Four-The-Four-Ways-To-Reclaim-Developer-Time.html), 
 we'll look at that hidden work and decide whether to eliminate it, automate it, delegate it, or turn it into self-service.
