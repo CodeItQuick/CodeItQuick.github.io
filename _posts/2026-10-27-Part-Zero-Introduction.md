@@ -18,8 +18,8 @@ featured: true
 
 As this framework sits today, it is at version 0.1. We're talking, beginnings of beginnings. So if you have some dream
 of implementing a Scrum-style quality framework into your organization like this one (which this one doesn't currently have a name,
-I was considering "Maple Syrup" in passing both to encourage people to _slow-down_ and because Canada). At best this fits
-like a perfect glove to my current organization, and not at all to whatever organization you may currently be working at.
+I was considering "Maple Syrup" in passing both to encourage people to _slow-down_ and because Canada), I honestly would question
+why bother. At best this fits like a perfect glove to my current organization, and not at all to whatever organization you may currently be working at.
 
 Think of the agile manifesto, and how that came about. Yeah, I cannot think of that either. But first probably 5-10 years
 prior maybe something similar to this popped up. In the 90s at some time, some dude went 'I have an idea!'. Maybe people listened,
