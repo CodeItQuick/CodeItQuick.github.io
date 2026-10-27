@@ -29,4 +29,4 @@ I just described, so keep that in mind. I'm going to get comments into all the b
 I figure out what actually works, what doesn't, and what is inbetween.
 
 Thanks to the several people who contributed to this framework. If you are one of them (if you're reading this the answer is
-likely yes), feel to send me a message and I'll add you to an explicit thanks list.
+likely yes), feel free to send me a message and I'll add you to an explicit thanks list.
