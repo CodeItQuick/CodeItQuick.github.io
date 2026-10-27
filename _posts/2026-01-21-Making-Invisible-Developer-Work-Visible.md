@@ -6,7 +6,6 @@ image: iceberg_buckets.jpg
 time: "4m:04s"
 tags: developer-time all
 series: developer-time
-featured: true
 ---
 
 <div class="w-full text-center">
