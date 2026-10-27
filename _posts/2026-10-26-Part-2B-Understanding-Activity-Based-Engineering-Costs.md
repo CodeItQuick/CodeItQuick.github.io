@@ -17,7 +17,7 @@ series: developer-time
 
 In [Part 1, Making Invisible Developer Work Visible](/2026/01/21/Making-Invisible-Developer-Work-Visible.html), I introduced 
 five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. In [Part 2A](/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html), 
-we followed three developers through two sprints and accounted for 480 hours of work. We could see which purposes and 
+we followed three developers through two sprints and accounted for 442 of their 480 hours. We could see which purposes and 
 activities consumed that time, and which parts of the system it supported.
 
 But those sprint tables only show the work somebody thought to write down. Releasing a button and checking that it works 
@@ -33,49 +33,49 @@ never made it onto the board at all.
 
 | Person      | Task                                   | Activity Cost Pool | Cost Object          | Activity Cost Driver (Hours) | Classification 
 |-------------|----------------------------------------|--------------------|----------------------|------------------------------|----------------|
-| Developer 1 | Release button to production           | Build              | Customer Portal      | 20                           | Direct Cost    |
-| Developer 1 | Ensure button works                    | Build              | Customer Portal      | 60                           | Direct Cost    | 
-| Developer 2 | Release hot fix                        | Fix                | Invoice Calculation  | 20                           | Direct Cost    |
-| Developer 2 | Ensure hot fix works                   | Fix                | Invoice Calculation  | 60                           | Direct Cost    | 
-| Developer 3 | Migrate database by creating test data | Evolve             | Engineering Platform | 80                           | Direct Cost    | 
+| Developer 1 | Release button to production           | Build              | Customer Portal      | 6                            | Direct Cost    |
+| Developer 1 | Ensure button works                    | Build              | Customer Portal      | 55                           | Direct Cost    | 
+| Developer 2 | Release hot fix                        | Fix                | Invoice Calculation  | 6                            | Direct Cost    |
+| Developer 2 | Ensure hot fix works                   | Fix                | Invoice Calculation  | 61                           | Direct Cost    | 
+| Developer 3 | Migrate database by creating test data | Evolve             | Engineering Platform | 74                           | Direct Cost    | 
 {: .table .table-zebra}
 
 # Hidden Costs - Invisible Development Work
 
 | Person      | Task                                   | Activity Cost Pool | Cost Object          | Activity Cost Driver (Hours) | Classification 
 |-------------|----------------------------------------|--------------------|----------------------|------------------------------|----------------|
-| Developer 1 | PR Review                              | Fix                | Invoice Calculation  | 1                            | Indirect Cost  |
-| Developer 1 | Scrum Meeting                          | Build              | Customer Portal      | 1                            | Overhead       |
-| Developer 1 | Direct Messages                        | Build              | Engineering Platform | 3                            | Overhead       |
-| Developer 2 | PR Review                              | Build              | Customer Portal      | 1                            | Indirect Cost  |
-| Developer 2 | Scrum Meeting                          | Build              | Invoice Calculation  | 1                            | Overhead       | 
-| Developer 3 | Direct Messages                        | Evolve             | Engineering Platform | 3                            | Overhead       | 
-| Developer 3 | Migrate database by creating test data | Evolve             | Invoice Calculation  | 40                           | Indirect Cost | 
-| Developer 3 | Migrate database by creating test data | Evolve             | Customer Portal      | 40                           | Indirect Cost | 
+| Developer 1 | PR Review                              | Fix                | Invoice Calculation  | 5                            | Indirect Cost  |
+| Developer 1 | Scrum Meeting                          | Build              | Customer Portal      | 8                            | Overhead       |
+| Developer 1 | Direct Messages                        | Build              | Engineering Platform | 6                            | Overhead       |
+| Developer 2 | PR Review                              | Build              | Customer Portal      | 5                            | Indirect Cost  |
+| Developer 2 | Scrum Meeting                          | Build              | Invoice Calculation  | 8                            | Overhead       | 
+| Developer 3 | Direct Messages                        | Evolve             | Engineering Platform | 6                            | Overhead       | 
+| Developer 3 | Migrate database by creating test data | Evolve             | Invoice Calculation  | 37                           | Indirect Cost | 
+| Developer 3 | Migrate database by creating test data | Evolve             | Customer Portal      | 37                           | Indirect Cost | 
 {: .table .table-zebra}
 
 # Total Costs - Development Work
 
 | Person      | Classification    | Hours | Rate | Total | 
 |-------------|-------------------|-------|------|-------|
-| Developer 1 | Direct Costs      | 80    | 40   | 3200  |
-| Developer 1 | Indirect Costs    | 1     | 40   | 40    |
-| Developer 1 | Overhead Costs    | 4     | 40   | 160   |
-| Developer 2 | Direct Costs      | 80    | 20   | 1600  |
-| Developer 2 | Indirect Costs    | 1     | 20   | 20    |
-| Developer 2 | Overhead Costs    | 1     | 20   | 20    |
-| Developer 3 | Direct Costs      | 80    | 60   | 4800  |
-| Developer 3 | Indirect Costs    | 0     | 60   | 0     |
-| Developer 3 | Overhead Costs    | 3     | 60   | 180   |
+| Developer 1 | Direct Costs      | 61    | 75   | 4575  |
+| Developer 1 | Indirect Costs    | 5     | 75   | 375   |
+| Developer 1 | Overhead Costs    | 14    | 75   | 1050  |
+| Developer 2 | Direct Costs      | 67    | 55   | 3685  |
+| Developer 2 | Indirect Costs    | 5     | 55   | 275   |
+| Developer 2 | Overhead Costs    | 8     | 55   | 440   |
+| Developer 3 | Direct Costs      | 74    | 95   | 7030  |
+| Developer 3 | Indirect Costs    | 0     | 95   | 0     |
+| Developer 3 | Overhead Costs    | 6     | 95   | 570   |
 {: .table .table-zebra}
 
 # Department Total Costs 
 
 | Cost Objects         | Direct Costs | Indirect Costs | Overhead | Total Cost |
 |----------------------|--------------|----------------|----------|------------|
-| Customer Portal      | 3200         | 20             | 40       | 3260       | 
-| Invoice Service      | 1600         | 40             | 20       | 1660       | 
-| Engineering Platform | 4800         | 0              | 300      | 5100       | 
+| Customer Portal      | 4575         | 275            | 600      | 5450       | 
+| Invoice Service      | 3685         | 375            | 440      | 4500       | 
+| Engineering Platform | 7030         | 0              | 1020     | 8050       | 
 {: .table .table-zebra}
 
 # Conclusion - Understanding Activity-Based Costs
@@ -86,8 +86,8 @@ calculation. The rest is reviews, meetings, and messages. Each one is small on i
 and every cost object, and they rarely show up on a Jira board.
 
 The database migration shows why the classification matters. Measured against the engineering platform, Developer 3's 
-eighty hours are a direct cost. Measured against the customer portal and the invoice calculation, the same hours become 
-an indirect cost, split forty and forty. The work didn't change. The question we asked did. And that even split is a 
+seventy-four hours are a direct cost. Measured against the customer portal and the invoice calculation, the same hours become 
+an indirect cost, split thirty-seven and thirty-seven. The work didn't change. The question we asked did. And that even split is a 
 choice we made, not something we discovered about how the work was done.
 
 We now have a way to estimate what engineering work costs, and who it costs for. Whether the work is worth those 
