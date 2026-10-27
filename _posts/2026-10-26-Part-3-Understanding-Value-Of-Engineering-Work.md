@@ -3,10 +3,15 @@ layout: post
 name: Part 3 - Understanding the Value of Engineering Work
 description: Understanding engineering work
 image: iceberg_buckets.jpg
-time: "2m:54s"
+time: "4m:53s"
 tags: developer-time all
 series: developer-time
 ---
+
+<div class="w-full text-center">
+    <h1>Part 3 - Understanding the Value of Engineering Work</h1>
+    <h6>(Reading Time: 4 minutes 53 seconds)</h6>
+</div>
 
 # From Cost to Value
 
@@ -137,8 +142,9 @@ ticket or the engineering activities involved.
 We've now examined what engineering teams do, how much capacity their activities consume, what those activities cost, and 
 what value they are expected to produce.
 
-But understanding cost and value doesn't tell us which work should be done first.
+But understanding cost and value doesn't tell us what to do about work that isn't worth its hours.
 
-That's the next problem: how do we decide between competing investments when engineering capacity is limited?
+That's the next problem: engineering capacity is limited, so every hour we spend on one activity is an hour we can't spend on another.
 
-In Part 4, *Prioritizing Engineering Work*, we'll examine how costs, expected benefits, risk, and opportunity costs influence those decisions.
+In [Part 4 - The Four Ways to Reclaim Developer Time](/2026/10/27/Part-Four-The-Four-Ways-To-Reclaim-Developer-Time.html), 
+we'll look at the opportunity cost of that work, and how eliminating, automating, delegating, and enabling self-service can give those hours back.
