@@ -65,11 +65,11 @@ If we look at the work distributed to the different activities over two sprints,
 
 | Person      | Task                                   | Activity Cost Pool | Activities           | Cost Object            | Activity Cost Driver (Hours) |   
 |-------------|----------------------------------------|--------------------|----------------------|------------------------|------------------------------|
-| Developer 1 | Release button to production           | Build              | Build Pipeline       | Customer Portal        | 20   |
-| Developer 1 | Ensure button works                    | Build              | Observability        | Customer Portal        | 60   |  
-| Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Invoice Calculation    | 20   | 
-| Developer 2 | Ensure hot fix works                   | Fix                | Observability        | Invoice Calculation    | 60   | 
-| Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 80   | 
+| Developer 1 | Release button to production           | Build              | Build Pipeline       | Customer Portal        | 20                           |
+| Developer 1 | Ensure button works                    | Build              | Observability        | Customer Portal        | 60                           |  
+| Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Invoice Calculation    | 20                           | 
+| Developer 2 | Ensure hot fix works                   | Fix                | Observability        | Invoice Calculation    | 60                           | 
+| Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 80                           | 
 {: .table .table-zebra}
 
 **Monthly Summary - Activity by Cost Object**
