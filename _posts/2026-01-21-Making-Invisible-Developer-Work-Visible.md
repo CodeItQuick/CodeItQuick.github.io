@@ -177,7 +177,7 @@ systems at once. That's an indirect cost. And some work, like meetings and direc
 without belonging to anything in particular. That's overhead. The further work sits from a single feature, the further 
 below the waterline it tends to sink.
 
-## The Visibility of Work
+## The Stakeholder Visibility of Work
 
 The iceberg represents how visible different kinds of engineering work may be to stakeholders. It does not represent
 their relative cost, frequency, or importance.
@@ -185,6 +185,8 @@ their relative cost, frequency, or importance.
 <p align="center" width="100%">
     <img src="/assets/images/wide_cinematic_infographic_style_illustration_of_4.png" alt="Iceberg of visible and less visible work" width="768" />
 </p>
+
+Note: The waterline represents stakeholder attention
 
 # Conclusion - The Iceberg
 
