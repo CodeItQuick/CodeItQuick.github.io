@@ -24,7 +24,7 @@ five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. Buildin
 everyone sees. Keeping systems running, improving how they work, and adapting them to change usually sit below the waterline.
 
 In [Part 2A](/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html), we followed three developers through two sprints
-and accounted for 442 of their 480 hours. In [Part 2B](/2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html),
+and accounted for 424 of their 480 hours. In [Part 2B](/2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html),
 we asked who that work was for, and found the pull request reviews, scrum meetings, and direct messages that never made it
 onto the board. In [Part 3](/2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html), we looked at the technical,
 tactical, and strategic value that engineering work is expected to produce.
@@ -45,14 +45,14 @@ automating, delegating, and enabling self-service.
 
 # Where to Look First
 
-Part 2B split the second sprint's 240 hours into three kinds of consumption. 128 hours were direct, 84 were indirect, and
-28 were overhead. Each kind points us toward a different approach.
+Part 2B split the second sprint's 240 hours into three kinds of consumption. 120 hours were direct, 74 were indirect, and
+46 were overhead. Each kind points us toward a different approach.
 
 | Classification       | Sprint Two (Hours) | Who It Serves                       | Start With                  |
 |----------------------|--------------------|-------------------------------------|-----------------------------|
-| Overhead Consumption | 28                 | Everything, and nothing in particular | Eliminate                   |
-| Indirect Consumption | 84                 | Several consumption objects at once | Delegate or self-service    |
-| Direct Consumption   | 128                | A single feature or service         | Automate                    |
+| Overhead Consumption | 46                 | Everything, and nothing in particular | Eliminate                   |
+| Indirect Consumption | 74                 | Several consumption objects at once | Delegate or self-service    |
+| Direct Consumption   | 120                | A single feature or service         | Automate                    |
 {: .table .table-zebra}
 
 Overhead is the first place to look. Scrum meetings and direct messages support every consumption object, which means no
@@ -62,7 +62,7 @@ coordinate it. That coordination is where delegation and self-service help. The 
 be the one answering it.
 
 Direct work is the work we wanted to do. We aren't asking whether the customer portal needs its button. We're asking whether
-55 hours of checking that the button works is the right way to get there. That's where automation pays off. These aren't 
+47 hours of checking that the button works is the right way to get there. That's where automation pays off. These aren't 
 rules. Overhead can be automated and direct work can be delegated. But the classification tells us where to start asking.
 
 # 1. Eliminate Unnecessary Work
@@ -96,8 +96,8 @@ We were spending 2-3 hours each day collecting deployment metrics. A dashboard c
 Automated testing is the same idea: we want to be fairly certain a change works on the standard use-case without someone
 clicking through it by hand every release.
 
-Look at the second sprint again. Developer 1 spent 55 hours making sure the button works. Developer 2 spent 61 hours making
-sure the hot fix works. That's 116 of the sprint's 240 hours, almost half, spent watching two changes in production.
+Look at the second sprint again. Developer 1 spent 47 hours making sure the button works. Developer 2 spent 61 hours making
+sure the hot fix works. That's 108 of the sprint's 240 hours, almost half, spent watching two changes in production.
 Automated checks won't take that to zero, but they can bring it down to something like 30.
 
 However, automation introduces costs of its own. Before building something, consider:
@@ -125,7 +125,7 @@ ticket?
 Sometimes a brief conversation is more effective than a detailed ticket and several rounds of clarification. The goal is to
 reduce the overall cost of completing the work, rather than simply move it off the developer's plate.
 
-The database migration is a good example of when not to delegate. Developer 3 spent 74 hours creating test data for it.
+The database migration is a good example of when not to delegate. Developer 3 spent 64 hours creating test data for it.
 On paper, that looks like work a QA team could take on. But Developer 3 designed the migration in the first sprint, and
 the test data depends on that design. By the time we transferred the context, we'd have spent most of the hours we were
 trying to save. So the migration stays where it is.
@@ -138,9 +138,10 @@ common, repeatable, and well understood, self-service may be an effective soluti
 Instead of having developers manually provide deployment information, make that information available through a dashboard.
 The deployment metrics dashboard does this for product owners who want to know how a particular initiative is going.
 
-In our second sprint, Developers 1 and 3 each spent 6 hours on direct messages. If most of those messages are "is it
-deployed yet?" or "how is the migration going?", a dashboard can answer them without interrupting anyone. That won't
-remove every message, but it can cut the 12 hours in half.
+In our second sprint, Developers 1 and 3 spent about 3 hours a day between them answering direct messages and digging
+through logs for the answers. Over a ten-day sprint, that's 30 hours spent producing, by hand, what could have been this
+dashboard. If most of those messages are "is it deployed yet?" or "how is the migration going?", a dashboard can answer
+them without interrupting anyone. That won't remove every message, but it can cut the 30 hours in half.
 
 But self-service isn't appropriate for every problem. Some requests require discussion to understand what the person
 actually needs. A ticketing system or form can reduce interruptions, but it can also strip away important context.
@@ -167,10 +168,10 @@ The pull request reviews, the release tasks, and the database migration stay as 
 | Activity                         | Classification       | Approach     | Before (Hours) | After (Hours) | Reclaimed (Hours) |
 |----------------------------------|----------------------|--------------|----------------|---------------|-------------------|
 | Scrum Meeting                    | Overhead Consumption | Eliminate    | 16             | 8             | 8                 |
-| Direct Messages                  | Overhead Consumption | Self-Service | 12             | 6             | 6                 |
-| Ensure button / hot fix works    | Direct Consumption   | Automate     | 116            | 30            | 86                |
+| Direct Messages                  | Overhead Consumption | Self-Service | 30             | 15            | 15                |
+| Ensure button / hot fix works    | Direct Consumption   | Automate     | 108            | 31            | 77                |
 | PR Review                        | Indirect Consumption | Keep         | 10             | 10            | 0                 |
-| Migrate database                 | Indirect Consumption | Keep         | 74             | 74            | 0                 |
+| Migrate database                 | Indirect Consumption | Keep         | 64             | 64            | 0                 |
 | Release button / hot fix         | Direct Consumption   | Keep         | 12             | 12            | 0                 |
 | **Total**                        |                      |              | **240**        | **140**       | **100**           |
 {: .table .table-zebra}
@@ -187,7 +188,7 @@ first 40 hours go into building them. That's Improve work. The rest finally gets
 {: .table .table-zebra}
 
 Look at that second table from the other direction. The next customer portal feature and the dependency upgrade were
-always the price of 116 hours of manual checking. We were paying it every sprint. Nobody wrote it down, because nobody
+always the price of 108 hours of manual checking. We were paying it every sprint. Nobody wrote it down, because nobody
 compared the checking against the work it displaced.
 
 The Improve hours are a one-time cost. In the sprints after that, all 100 hours are available for Build, Fix, Run, and

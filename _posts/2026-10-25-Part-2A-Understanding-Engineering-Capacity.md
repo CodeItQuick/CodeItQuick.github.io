@@ -66,20 +66,20 @@ If we look at the work distributed to the different activities over two sprints,
 | Person      | Task                                   | Activity Cost Pool | Activities           | Cost Object            | Activity Cost Driver (Hours) |   
 |-------------|----------------------------------------|--------------------|----------------------|------------------------|------------------------------|
 | Developer 1 | Release button to production           | Build              | Build Pipeline       | Customer Portal        | 6                            |
-| Developer 1 | Ensure button works                    | Build              | Observability        | Customer Portal        | 55                           |  
+| Developer 1 | Ensure button works                    | Build              | Observability        | Customer Portal        | 47                           |  
 | Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Invoice Calculation    | 6                            | 
 | Developer 2 | Ensure hot fix works                   | Fix                | Observability        | Invoice Calculation    | 61                           | 
-| Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 74                           | 
+| Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 64                           | 
 {: .table .table-zebra}
 
 **Monthly Summary - Activity by Cost Object**
 
 | Cost Object            | Activity Cost Pool | Designing | Debugging | Coding  | Testing | Build Pipeline | Observability | Total   |
 |------------------------|--------------------|-----------|-----------|---------|---------|----------------|---------------|---------|
-| Customer Portal        | Build              | 0         | 0         | 40      | 40      | 6              | 55            | 141     |
+| Customer Portal        | Build              | 0         | 0         | 40      | 40      | 6              | 47            | 133     |
 | Invoice Calculation    | Fix                | 0         | 40        | 10      | 30      | 6              | 61            | 147     |
-| Engineering Department | Evolve             | 80        | 0         | 74      | 0       | 0              | 0             | 154     |
-| **Total**              |                    | **80**    | **40**    | **124** | **70**  | **12**         | **116**       | **442** |
+| Engineering Department | Evolve             | 80        | 0         | 64      | 0       | 0              | 0             | 144     |
+| **Total**              |                    | **80**    | **40**    | **114** | **70**  | **12**         | **108**       | **424** |
 {: .table .table-zebra}
 
 Note: whether a cost is direct (Customer Portal/Invoice Calculation) or indirect (Engineering Department) depends on the cost object, not on the cost driver.
@@ -90,7 +90,7 @@ In [Part 1 - Making Invisible Developer Work Visible](https://codeitquick.github
 we established five different purposes of engineering work. We've now taken that a step further by looking at how engineering capacity is consumed, 
 what activities developers are performing, and where that effort is going.
 
-In our example, we accounted for 442 of the team's 480 hours over two sprints. The other 38 hours never made it onto the board. We can see how much time was spent building 
+In our example, we accounted for 424 of the team's 480 hours over two sprints. The other 56 hours never made it onto the board. We can see how much time was spent building 
 features, fixing defects, and evolving existing systems. We can also see which activities consumed that capacity and which 
 parts of the system they supported. That's more information than simply knowing which Jira tickets were completed.
 
