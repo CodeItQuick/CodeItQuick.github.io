@@ -97,6 +97,6 @@ parts of the system they supported. That's more information than simply knowing 
 Knowing where our capacity went doesn't tell us whether it was well spent. We also haven't established what any of that 
 work actually cost the organization. What we have is a starting point for understanding how engineering resources are consumed.
 
-In [Part 2B - Understanding Activity-Based Engineering Costs](https://codeitquick.github.io/2026/10/24/Part-2B-Understanding-Activity-Based-Engineering-Costs.html), 
+In [Part 2B - Understanding Activity-Based Engineering Costs](https://codeitquick.github.io/2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html), 
 we'll take a closer look at how activities consume engineering capacity, and how we can allocate that effort to the features, 
 services, and systems that demand it.
