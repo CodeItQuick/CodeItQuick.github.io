@@ -3,7 +3,11 @@
 <nav class="series-nav my-8 p-4 rounded border border-base-300" aria-label="Article series">
     <p class="font-bold">This article is part of a series:</p>
     <ol>
+        {% assign planned = site.data.series[page.series] %}
+        {% assign prev = "" %}
         {% for part in parts %}
+        {% for p in planned %}{% if p > prev and p < part.name %}<li>{{ p }} <em>(coming soon)</em></li>{% endif %}{% endfor %}
+        {% assign prev = part.name %}
         <li>
             {% if part.url == page.url %}
             <a href="{{ part.url | relative_url }}" aria-current="page"><strong>{{ part.name }}</strong></a>
@@ -12,8 +16,6 @@
             {% endif %}
         </li>
         {% endfor %}
-        {% for planned in site.data.series[page.series] %}
-        <li>{{ planned }} <em>(coming soon)</em></li>
-        {% endfor %}
+        {% for p in planned %}{% if p > prev %}<li>{{ p }} <em>(coming soon)</em></li>{% endif %}{% endfor %}
     </ol>
 </nav>

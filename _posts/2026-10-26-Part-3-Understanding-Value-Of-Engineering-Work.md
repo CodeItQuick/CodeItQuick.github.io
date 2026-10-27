@@ -146,5 +146,5 @@ But understanding cost and value doesn't tell us what to do about work that isn'
 
 That's the next problem: engineering capacity is limited, so every hour we spend on one activity is an hour we can't spend on another.
 
-In [Part 4 - The Four Ways to Reclaim Developer Time](/2026/10/27/Part-Four-The-Four-Ways-To-Reclaim-Developer-Time.html), 
+In [Part 5 - The Four Ways to Reclaim Developer Time](/2026/10/27/Part-Five-The-Four-Ways-To-Reclaim-Developer-Time.html), 
 we'll look at the opportunity cost of that work, and how eliminating, automating, delegating, and enabling self-service can give those hours back.
