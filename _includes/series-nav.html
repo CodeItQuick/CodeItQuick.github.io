@@ -12,5 +12,8 @@
             {% endif %}
         </li>
         {% endfor %}
+        {% for planned in site.data.series[page.series] %}
+        <li>{{ planned }} <em>(coming soon)</em></li>
+        {% endfor %}
     </ol>
 </nav>
