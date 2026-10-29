@@ -1,15 +1,17 @@
 ﻿---
 layout: post
-name: Part 6 - Delivering New Engineering Value
+name: Part 5 - Delivering New Engineering Value
 description: Turning engineering capacity into useful delivered outcomes
 image: iceberg_buckets.jpg
 time: "5m:00s"
 tags: developer-time all
 series: developer-time
+redirect_from:
+  - /2026/10/29/Part-6-Delivering-New-Engineering-Value.html
 ---
 
 <div class="w-full text-center">
-    <h1>Part 6 - Delivering New Engineering Value</h1>
+    <h1>Part 5 - Delivering New Engineering Value</h1>
     <h6>(Reading Time: Approximately 5 minutes)</h6>
 </div>
 
@@ -96,7 +98,7 @@ The work hasn't changed. What we're examining is how its benefits contribute to 
 
 Let's return to our three-developer team and the customer portal example.
 
-In Part 5, we reclaimed 100 hours of engineering capacity by reducing unnecessary meetings, automating repetitive
+In Part 4, we reclaimed 100 hours of engineering capacity by reducing unnecessary meetings, automating repetitive
 checks, and providing self-service access to information. We allocated that capacity to three activities:
 
 | Work                    | Capacity  | Purpose |
@@ -121,7 +123,7 @@ Our estimated contribution is:
 
 That's a projected financial contribution, not necessarily $6,000 in additional company profit. Other business costs
 may apply, and we're making assumptions about how much revenue the feature will actually produce. This also raises an
-important distinction from Part 5. **Reclaiming 100 hours of engineering capacity isn't the same thing as saving 100 hours
+important distinction from Part 4. **Reclaiming 100 hours of engineering capacity isn't the same thing as saving 100 hours
 of salary expenses.**
 
 We're still paying those developers. What we've created is the opportunity to invest their time somewhere else. That
