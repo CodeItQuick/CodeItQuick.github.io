@@ -34,7 +34,7 @@ their costs.
 
 # Understanding the Remainder
 
-Let's consider the two sides of the equation. In Part 3, we introduced Technical, Tactical, and Strategic value. These
+Let's consider the two sides of the equation. In Part 4, we introduced Technical, Tactical, and Strategic value. These
 describe why engineering work might be worth doing. In Part 2, we examined engineering capacity and consumption, giving
 us a way to understand the resources required to perform that work.
 
@@ -98,7 +98,7 @@ The work hasn't changed. What we're examining is how its benefits contribute to 
 
 Let's return to our three-developer team and the customer portal example.
 
-In Part 4, we reclaimed 100 hours of engineering capacity by reducing unnecessary meetings, automating repetitive
+In Part 3, we reclaimed 100 hours of engineering capacity by reducing unnecessary meetings, automating repetitive
 checks, and providing self-service access to information. We allocated that capacity to three activities:
 
 | Work                    | Capacity  | Purpose |
@@ -123,7 +123,7 @@ Our estimated contribution is:
 
 That's a projected financial contribution, not necessarily $6,000 in additional company profit. Other business costs
 may apply, and we're making assumptions about how much revenue the feature will actually produce. This also raises an
-important distinction from Part 4. **Reclaiming 100 hours of engineering capacity isn't the same thing as saving 100 hours
+important distinction from Part 3. **Reclaiming 100 hours of engineering capacity isn't the same thing as saving 100 hours
 of salary expenses.**
 
 We're still paying those developers. What we've created is the opportunity to invest their time somewhere else. That
@@ -147,7 +147,7 @@ important, but not every useful engineering contribution produces an immediate, 
 # Conclusion - What Did We Gain?
 
 Engineering capacity is limited, and every activity consumes some of it. Part 2 gave us a way to understand that consumption.
-Part 3 gave us a way to describe the value we expect from the work. Prioritization and optimization help us decide where
+Part 4 gave us a way to describe the value we expect from the work. Prioritization and optimization help us decide where
 to spend our capacity and how to make more of it available.
 
 Now we've brought those ideas together. Engineering can improve the organization's position by generating additional revenue,

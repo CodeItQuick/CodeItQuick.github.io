@@ -1,15 +1,17 @@
 ﻿---
 layout: post
-name: Part 3 - Understanding the Value of Engineering Work
+name: Part 4 - Understanding the Value of Engineering Work
 description: Understanding engineering work
 image: iceberg_buckets.jpg
 time: "4m:53s"
 tags: developer-time all
 series: developer-time
+redirect_from:
+  - /2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html
 ---
 
 <div class="w-full text-center">
-    <h1>Part 3 - Understanding the Value of Engineering Work</h1>
+    <h1>Part 4 - Understanding the Value of Engineering Work</h1>
     <h6>(Reading Time: 4 minutes 53 seconds)</h6>
 </div>
 
@@ -18,12 +20,13 @@ series: developer-time
 In [Part 1, Making Invisible Developer Work Visible](https://codeitquick.github.io/2026/01/21/Making-Invisible-Developer-Work-Visible.html), 
 we introduced five different purposes of engineering work: Build, Fix, Improve, Run, and Evolve.
 
-In [Part 2A, Understanding Engineering Capacity](https://codeitquick.github.io/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html), 
-we examined where engineering capacity goes. In [Part 2B, Understanding Activity-Based Engineering Costs](https://codeitquick.github.io/2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html), 
-we examined how engineering consumption can be attributed to different activities and systems.
+In [Part 2A, Understanding Activity-Based Engineering Costs](https://codeitquick.github.io/2026/10/25/Part-2A-Understanding-Activity-Based-Engineering-Costs.html), 
+we examined how engineering consumption can be attributed to different activities and systems. In [Part 2B, Understanding Engineering Capacity](https://codeitquick.github.io/2026/10/26/Part-2B-Understanding-Engineering-Capacity.html), 
+we examined where engineering capacity goes. In [Part 3, The Four Ways to Reclaim Developer Time](https://codeitquick.github.io/2026/10/26/Part-3-The-Four-Ways-To-Reclaim-Developer-Time.html), 
+we looked at how to give back the hours spent on work that isn't worth them.
 
 We now have a way to describe the work, identify the activities involved, and estimate what they cost. But we haven't 
-answered an important question: what value does that work actually produce? Consider the database migration from Part 2B. 
+answered an important question: what value does that work actually produce? Consider the database migration from Part 2A. 
 We know how much engineering time was spent performing the migration, and we know which systems benefit from it. That doesn't 
 tell us why the migration was worth doing in the first place.
 
@@ -142,9 +145,8 @@ ticket or the engineering activities involved.
 We've now examined what engineering teams do, how much capacity their activities consume, what those activities cost, and 
 what value they are expected to produce.
 
-But understanding cost and value doesn't tell us what to do about work that isn't worth its hours.
+In Part 3, we reclaimed hours from work that wasn't worth them. But engineering capacity is limited, so every hour we 
+spend on one activity is an hour we can't spend on another.
 
-That's the next problem: engineering capacity is limited, so every hour we spend on one activity is an hour we can't spend on another.
-
-In [Part 4 - The Four Ways to Reclaim Developer Time](/2026/10/27/Part-Four-The-Four-Ways-To-Reclaim-Developer-Time.html), 
-we'll look at the opportunity cost of that work, and how eliminating, automating, delegating, and enabling self-service can give those hours back.
+In [Part 5 - Delivering New Engineering Value](/2026/10/29/Part-5-Delivering-New-Engineering-Value.html), 
+we'll bring cost and value together, and look at how to turn that capacity into delivered outcomes.

@@ -1,32 +1,34 @@
 ---
 layout: post
-name: Part 2B - Understanding Activity-Based Engineering Consumption
+name: Part 2A - Understanding Activity-Based Engineering Consumption
 description: Understanding how engineering activities consume capacity and what creates demand for them.
 image: iceberg_buckets.jpg
 time: "2m:54s"
 tags: developer-time all
 series: developer-time
+redirect_from:
+  - /2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html
 ---
 
 <div class="w-full text-center">
-    <h1>Part 2B - Understanding Activity-Based Engineering Consumption</h1>
+    <h1>Part 2A - Understanding Activity-Based Engineering Consumption</h1>
     <h6>(Reading Time: 2 minutes 54 seconds)</h6>
 </div>
 
 # From Purpose to Activity
 
 In [Part 1, Making Invisible Developer Work Visible](/2026/01/21/Making-Invisible-Developer-Work-Visible.html), I introduced 
-five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. In [Part 2A](/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html), 
-we followed three developers through two sprints and accounted for 424 of their 480 hours. We could see which purposes and 
-activities consumed that time, and which parts of the system it supported.
+five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. In this article, 
+we'll follow three developers through two sprints. Their sprint tables account for 424 of their 480 hours, and show which 
+purposes and activities consumed that time, and which parts of the system it supported.
 
 But those sprint tables only show the work somebody thought to write down. Releasing a button and checking that it works 
 are easy to record. The pull request review before the release, the daily scrum, and the steady stream of direct messages 
 usually aren't. Neither is the fact that a database migration for the engineering platform is really being done on behalf 
 of the customer portal and the invoice calculation.
 
-In this article, we'll take the second sprint from Part 2A and ask a different question. Not where the time went, but 
-who the work was for. Some of it traces cleanly to a single feature or service. Some of it is shared, and some of it 
+In this article, we'll take the second sprint and ask who the work was for. We'll come back to where the time went 
+in [Part 2B](/2026/10/26/Part-2B-Understanding-Engineering-Capacity.html). Some of it traces cleanly to a single feature or service. Some of it is shared, and some of it 
 never made it onto the board at all.
 
 # Direct Consumption
@@ -79,8 +81,7 @@ never made it onto the board at all.
 
 # Conclusion - Understanding Activity-Based Consumption
 
-[Part 2A](/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html) told us where the team's capacity went. Here 
-we've asked who that work was for. Half of the second sprint traces directly to the customer portal or the invoice 
+Here we've asked who the team's work was for. Half of the second sprint traces directly to the customer portal or the invoice 
 calculation. The rest is the migration, plus reviews, meetings, and messages. Each one is small on its own, but they touch every developer 
 and every consumption object, and they rarely show up on a Jira board.
 
@@ -90,6 +91,5 @@ hours become indirect consumption, split thirty-two and thirty-two. The work did
 We can only count those hours once, so the tables above use the second view. And that even split is a choice we made, 
 not something we discovered about how the work was done.
 
-We now have a way to see what consumes engineering effort, and who that effort is for. Whether the work is worth that effort 
-is a separate question. In [Part 3 - Understanding the Value of Engineering Work](/2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html), 
-we'll look at the technical, tactical, and strategic value that engineering work produces.
+We now have a way to see what consumes engineering effort, and who that effort is for. In [Part 2B - Understanding Engineering Capacity](/2026/10/26/Part-2B-Understanding-Engineering-Capacity.html), 
+we'll step back and look at where the team's capacity went across both sprints.

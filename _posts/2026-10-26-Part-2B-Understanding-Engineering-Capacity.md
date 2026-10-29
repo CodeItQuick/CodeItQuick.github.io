@@ -1,15 +1,17 @@
 ---
 layout: post
-name: Part 2A - Understanding Engineering Capacity
+name: Part 2B - Understanding Engineering Capacity
 description: Understanding where engineering capacity goes and building a simple capacity statement.
 image: iceberg_buckets.jpg
 time: "3m:16s"
 tags: developer-time all
 series: developer-time
+redirect_from:
+  - /2026/10/25/Part-2A-Understanding-Engineering-Capacity.html
 ---
 
 <div class="w-full text-center">
-    <h1>Part 2A - Understanding Engineering Capacity</h1>
+    <h1>Part 2B - Understanding Engineering Capacity</h1>
     <h6>(Reading Time: 3 minutes 16 seconds)</h6>
 </div>
 
@@ -94,9 +96,8 @@ In our example, we accounted for 424 of the team's 480 hours over two sprints. T
 features, fixing defects, and evolving existing systems. We can also see which activities consumed that capacity and which 
 parts of the system they supported. That's more information than simply knowing which Jira tickets were completed.
 
-Knowing where our capacity went doesn't tell us whether it was well spent. We also haven't established what any of that 
-work actually cost the organization. What we have is a starting point for understanding how engineering resources are consumed.
+Knowing where our capacity went doesn't tell us whether it was well spent. In [Part 2A - Understanding Activity-Based Engineering Costs](https://codeitquick.github.io/2026/10/25/Part-2A-Understanding-Activity-Based-Engineering-Costs.html), 
+we saw who that work was for. Together, the two parts give us a starting point for understanding how engineering resources are consumed.
 
-In [Part 2B - Understanding Activity-Based Engineering Costs](https://codeitquick.github.io/2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html), 
-we'll take a closer look at how activities consume engineering capacity, and how we can allocate that effort to the features, 
-services, and systems that demand it.
+In [Part 3 - The Four Ways to Reclaim Developer Time](/2026/10/26/Part-3-The-Four-Ways-To-Reclaim-Developer-Time.html), 
+we'll look at what to do about the hours that go to work that isn't worth them.

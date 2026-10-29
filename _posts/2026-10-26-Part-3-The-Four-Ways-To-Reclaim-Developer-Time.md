@@ -1,12 +1,13 @@
 ---
 layout: post
-name: Part 4 - The Four Ways to Reclaim Developer Time
+name: Part 3 - The Four Ways to Reclaim Developer Time
 description: Cut, automate, and delegate busywork to protect developer focus time.
 image: iceberg_buckets.jpg
 time: "7m:42s"
 tags: developer-time all
 series: developer-time
 redirect_from:
+  - /2026/10/27/Part-Four-The-Four-Ways-To-Reclaim-Developer-Time.html
   - /2026/10/17/Maximizing-Developer-Coding-Time.html
   - /2026/10/17/Part-Two-The-Four-Ways-To-Reclaim-Developer-Time.html
   - /2026/10/17/Part-Four-The-Four-Ways-To-Reclaim-Developer-Time.html
@@ -14,7 +15,7 @@ redirect_from:
 ---
 
 <div class="w-full text-center">
-    <h1>Part 4 - The Four Ways to Reclaim Developer Time</h1>
+    <h1>Part 3 - The Four Ways to Reclaim Developer Time</h1>
     <h6>(Reading Time: 7 minutes 42 seconds)</h6>
 </div>
 
@@ -24,18 +25,17 @@ In [Part 1, Making Invisible Developer Work Visible](/2026/01/21/Making-Invisibl
 five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. Building features and fixing bugs are the work
 everyone sees. Keeping systems running, improving how they work, and adapting them to change usually sit below the waterline.
 
-In [Part 2A](/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html), we followed three developers through two sprints
-and accounted for 424 of their 480 hours. In [Part 2B](/2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html),
-we asked who that work was for, and found the pull request reviews, scrum meetings, and direct messages that never made it
-onto the board. In [Part 3](/2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html), we looked at the technical,
-tactical, and strategic value that engineering work is expected to produce.
+In [Part 2A](/2026/10/25/Part-2A-Understanding-Activity-Based-Engineering-Costs.html), we followed three developers through a sprint
+and asked who their work was for. We found the pull request reviews, scrum meetings, and direct messages that never made it
+onto the board. In [Part 2B](/2026/10/26/Part-2B-Understanding-Engineering-Capacity.html), we accounted for 424 of their
+480 hours across two sprints.
 
-So we can now describe the work, see where the time goes, and explain why we expect it to matter. That leaves the question
+So we can now describe the work, see where the time goes, and see who it serves. That leaves the question
 the earlier parts didn't answer. Once the work is visible, what do we do about the parts that aren't worth the time? Some 
 of this work is necessary. But are we performing it in the most effective way? More importantly, should we be doing it at 
 all?
 
-There's one more cost the earlier parts didn't capture. Part 2B told us what an activity consumes. It didn't tell us what
+There's one more cost the earlier parts didn't capture. Part 2A told us what an activity consumes. It didn't tell us what
 that activity pushed out. Every hour spent on a status meeting is an hour that wasn't spent on the next feature, the bug
 fix in the backlog, or the upgrade we keep postponing. That's the opportunity cost: the value of the best work we gave up
 to do this work instead. It never shows up on a Jira board, because the work it describes never happened.
@@ -46,7 +46,7 @@ automating, delegating, and enabling self-service.
 
 # Where to Look First
 
-Part 2B split the second sprint's 240 hours into three kinds of consumption. 120 hours were direct, 74 were indirect, and
+Part 2A split the second sprint's 240 hours into three kinds of consumption. 120 hours were direct, 74 were indirect, and
 46 were overhead. Each kind points us toward a different approach.
 
 | Classification       | Sprint Two (Hours) | Who It Serves                       | Start With                  |
@@ -68,8 +68,8 @@ rules. Overhead can be automated and direct work can be delegated. But the class
 
 # 1. Eliminate Unnecessary Work
 
-The most effective way to complete a task is to avoid doing it in the first place. In [Part 3](/2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html),
-we described three dimensions of value. Before accepting recurring work, ask which of them it provides:
+The most effective way to complete a task is to avoid doing it in the first place. In [Part 4](/2026/10/27/Part-4-Understanding-Value-Of-Engineering-Work.html),
+we'll look at value in more depth. For now, consider three dimensions of value. Before accepting recurring work, ask which of them it provides:
   * **Technical:** Does it improve our engineering capabilities?
   * **Tactical:** Does it address an immediate business or operational need?
   * **Strategic:** Does it support a longer-term organizational objective?
@@ -107,8 +107,8 @@ However, automation introduces costs of its own. Before building something, cons
   * How much time would automation save?
   * What are the implementation and ongoing maintenance costs?
 
-This is the comparison the earlier parts set up. Part 2B gives us the cost side: the hours the activity consumes today,
-plus the hours to build and maintain the automation. Part 3 gives us the value side: what we expect to do with the hours we
+This is the comparison the series builds toward. Part 2A gives us the cost side: the hours the activity consumes today,
+plus the hours to build and maintain the automation. Part 4 will give us the value side: what we expect to do with the hours we
 get back. After the automation ships, check whether we actually got those hours back, and whether they went somewhere useful.
 
 AI may reduce implementation effort, but making something cheaper to build doesn't necessarily make it worth building.
@@ -162,7 +162,7 @@ These techniques are not mutually exclusive, and they shouldn't be applied blind
 
 ## The Second Sprint, Revisited
 
-Let's apply them to the second sprint from Part 2B. We cut the scrum meetings back to a couple of days a week, put the
+Let's apply them to the second sprint from Part 2A. We cut the scrum meetings back to a couple of days a week, put the
 answers to the most common direct messages on a dashboard, and replace most of the manual checking with automated checks.
 The pull request reviews, the release tasks, and the database migration stay as they are. They already have a clear value.
 
@@ -197,12 +197,12 @@ Evolve work. That's the real question behind reclaiming developer time. Not how 
 with them now, and whether that's worth more than what we were doing before.
 
 If improving the workflow requires authority beyond your role, bring the problem to your manager. You don't have to show
-up with a complaint about meetings. The earlier parts of this series give you the case:
-  * **The time spent:** [Part 2A](/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html) shows where the hours went,
-    including the ones that never made it onto the board.
-  * **Who it serves:** [Part 2B](/2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html) shows whether
+up with a complaint about meetings. The other parts of this series give you the case:
+  * **Who it serves:** [Part 2A](/2026/10/25/Part-2A-Understanding-Activity-Based-Engineering-Costs.html) shows whether
     those hours are direct, indirect, or overhead.
-  * **The expected benefit:** [Part 3](/2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html) explains what
+  * **The time spent:** [Part 2B](/2026/10/26/Part-2B-Understanding-Engineering-Capacity.html) shows where the hours went,
+    including the ones that never made it onto the board.
+  * **The expected benefit:** [Part 4](/2026/10/27/Part-4-Understanding-Value-Of-Engineering-Work.html) explains what
     value the work provides, and what value the reclaimed hours could provide instead.
 
 Add the proposed change and a before-and-after table like the one above, and you have a conversation your manager can act
