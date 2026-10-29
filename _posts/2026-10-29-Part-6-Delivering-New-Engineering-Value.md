@@ -10,7 +10,7 @@ series: developer-time
 ---
 layout: post
 name: Part 6 - Delivering New Engineering Value
-description: Turning engineering capacity into useful delivered outcomes
+description: Understanding how engineering value and costs contribute to organizational profitability
 image: iceberg_buckets.jpg
 time: "5m:00s"
 tags: developer-time all
@@ -22,121 +22,146 @@ series: developer-time
     <h6>(Reading Time: Approximately 5 minutes)</h6>
 </div>
 
-# Introduction
+# Introduction - Bringing Cost and Value Together
 
-In the previous articles, we've worked through understanding what engineering does, how much capacity that work consumes,
-what value it might produce, and how we can prioritize and reclaim engineering capacity.
+In the previous articles, we've examined engineering capacity, how that capacity is consumed, and the technical, tactical,
+and strategic value that engineering work is expected to produce. We've also looked at prioritizing that work and reclaiming
+capacity through elimination, automation, delegation, and self-service.
 
-In Part 5 - The Four Ways to Reclaim Developer Time, we looked at eliminating, automating, delegating, and enabling self-service
-to reclaim engineering capacity. We've identified work worth doing, and we've made time available to do it. Now what?
+We've established what our work costs, why we expect it to be valuable, and where we're going to invest our limited capacity.
+But we haven't really examined what happens when we bring those things together. At the organizational level, the basic
+financial equation is straightforward:
 
-Having the right priorities and enough engineering capacity doesn't guarantee that we'll actually deliver anything useful.
-We still need to turn that capacity into working software, improved systems, or whatever outcome we originally intended to
-produce.
+**Profit = Revenue - Costs**
 
-This is where engineering delivery comes in.
+Engineering contributes to both sides of this equation. We can develop capabilities that increase revenue, reduce the
+cost of existing operations, or protect the revenue and capabilities the organization already depends on. The question is
+how we turn our engineering investments into something that improves the organization's position after accounting for
+their costs.
 
-# Breaking Work into Deliverable Value
+# Understanding the Remainder
 
-Let's return to the customer portal example from Part 5.
+Let's consider the two sides of the equation. In Part 3, we introduced Technical, Tactical, and Strategic value. These
+describe why engineering work might be worth doing. In Part 2, we examined engineering capacity and consumption, giving
+us a way to understand the resources required to perform that work.
 
-We've reclaimed engineering capacity and decided to invest some of it into a new customer portal feature. The team estimates
-that the feature will require several weeks of work.
+Revenue and costs are financial quantities. Engineering value is broader than revenue, and capacity is measured in hours
+rather than dollars. We need to be careful about treating these as interchangeable. For example, a feature that generates
+additional customer purchases has a direct relationship to revenue. Improving reliability might instead protect existing
+revenue by preventing outages. A database migration might reduce future costs or enable capabilities that haven't generated
+revenue yet.
 
-How should we approach delivering it?
+These activities can all be valuable without producing an immediate increase in sales. When we can estimate their financial
+benefits and costs, we can calculate a contribution. Where the benefits are not financially measurable, we should describe
+the expected net value rather than pretending we've calculated profit. The objective isn't to assign an imaginary dollar
+value to every engineering task. It's to understand what we're gaining relative to what we're spending.
 
-We could break the feature into tasks: database changes, backend implementation, frontend implementation, testing, and
-deployment. Each task gets assigned to an engineer, and we begin working through them. The problem is that completing these
-tasks doesn't necessarily deliver any value. Until they're integrated into something usable, we've mostly produced unfinished work.
+# Three Ways to Improve the Equation
 
-An alternative is to break the feature into smaller pieces of deliverable value. Perhaps the first iteration allows customers
-to view the status of their requests. The next lets them update those requests, and another introduces notifications. Each
-iteration delivers something useful independently of the remaining work. This is the distinction between **task decomposition
-and value decomposition**. Smaller tasks aren't inherently better. Smaller deliverable outcomes let us realize benefits sooner,
-reduce the amount of unfinished work, and discover problems before we've invested months into a solution.
+There are three broad ways engineering can improve the organization's economic position.
 
-Not every piece of engineering work needs to be customer-facing. A dependency migration, reliability improvement, or internal
-tooling change can also deliver useful value. The important question is whether the work produces a meaningful result, rather
-than simply completing another activity.
+**Increase revenue.** Building a feature that attracts new customers, enabling a new market, or improving a purchasing
+experience can increase the revenue the organization generates. This is perhaps the most recognizable contribution
+from engineering, but it isn't the only one.
 
-# Understanding Engineering Flow
+**Reduce costs.** Improving infrastructure efficiency, eliminating recurring manual work, or reducing operational
+expenses can improve profitability without generating any additional revenue. If we deliver the same capability at a
+lower cost, the remainder increases.
 
-Once we've decided what to deliver, we need to understand how work moves through our engineering organization.
+**Protect existing value.** Fixing critical defects, maintaining reliability, and adapting systems to changing
+requirements can prevent lost revenue or avoid future expenses. Sometimes the most valuable engineering work is
+preventing something bad from happening.
 
-Consider a feature that requires two days of development, three days waiting for code review, another four days waiting
-for testing, and a week before the next scheduled deployment. We've spent two days writing code, but it takes several
-weeks before anyone can use the result. We could try to make our developers code twice as fast. That would save a day,
-but it wouldn't solve the underlying problem.
+These mechanisms aren't mutually exclusive. Improving a service's performance might reduce infrastructure costs while
+also allowing the organization to support more customers. The important distinction is that **engineering work can increase
+the remainder without necessarily increasing revenue.**
 
-**The constraint isn't necessarily how quickly we can write software. It's how quickly we can deliver it.**
+# Connecting the Five Types of Engineering Work
 
-This is why understanding engineering flow matters.
+Let's return to the five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. Each of these represents a
+different reason for performing engineering work. None of them determines the economic outcome by itself.
 
-We need to consider the entire process, from beginning implementation through integration, validation, and release. That
-includes the time spent waiting for another engineer, another team, or some organizational process. Work in progress matters
-here as well. When developers are juggling several partially completed features, they introduce context switching,
-increase coordination, and potentially delay finishing any one of them. This is one of the problems we examine in
-[Agile Drift in Development](/2026/07/17/Agile-Drift-In-Development.html).
+| Engineering Work | Possible Economic Contribution |
+|---|---|
+| Build | Generate additional revenue through a new capability |
+| Fix | Restore a purchasing process that was losing sales |
+| Improve | Reduce the infrastructure costs of an existing service |
+| Run | Protect existing revenue through operational reliability |
+| Evolve | Avoid future maintenance costs or enable entry into a new market |
 
-Starting more work isn't necessarily the same as delivering more work.
+These examples aren't exclusive relationships. Building something might reduce costs. Improving an existing system might
+enable new revenue. Evolving a system might be necessary simply to continue operating. We already know that one work item
+can produce Technical, Tactical, and Strategic value simultaneously. Now we're asking another question: **How does that
+value affect the organization's economic position?**
 
-# Removing Barriers to Delivery
+Consider a database migration. The work belongs primarily in Evolve, but the economic contribution depends on why
+we're performing it. Replacing an unsupported database might prevent future maintenance expenses. Improving database
+performance might reduce infrastructure costs. Supporting additional customers might increase revenue.
 
-Once we understand how work flows through the organization, we can start addressing the things slowing it down.
+The work hasn't changed. What we're examining is how its benefits contribute to the remainder.
 
-Some of those barriers are technical. Automated testing can reduce the time required to validate a change, something I've
-discussed previously in [My Journey Through TDD](/2023/11/18/My-Journey-Through-TDD.html). Continuous integration can expose
-problems earlier. Smaller changes can make code reviews easier, and deployment automation can reduce the effort and risk
-associated with releasing software. The benefits of breaking work into smaller, independently manageable pieces are also
-discussed in [Beyond Time Estimation](/2023/10/28/beyond-time-estimation.html).
+# Reinvesting Engineering Capacity
 
-Other barriers are organizational. Perhaps a team needs approval from three other teams before releasing a feature. Perhaps
-testing happens exclusively at the end of a development cycle. Maybe nobody is available to review changes because everyone
-is busy working on their own priorities. These problems won't necessarily be solved by adding developers or asking existing
-developers to work harder.
+Let's return to our three-developer team and the customer portal example.
 
-We also need to consider how teams are organized. If every feature requires multiple handoffs between specialized teams,
-coordination becomes part of the cost of delivery. That doesn't mean specialization is inherently bad. Engineers possess
-different skills, experience, and knowledge. Treating them as interchangeable units of capacity, as we discussed in Part 2,
-doesn't reflect how engineering actually works.
+In Part 5, we reclaimed 100 hours of engineering capacity by reducing unnecessary meetings, automating repetitive
+checks, and providing self-service access to information. We allocated that capacity to three activities:
 
-The objective should be to reduce unnecessary dependencies and handoffs, while preserving the expertise required to
-deliver the work correctly.
+| Work | Capacity | Purpose |
+|---|---|---|
+| Automated checks | 40 hours | Improve |
+| Customer portal feature | 40 hours | Build |
+| Dependency upgrade | 20 hours | Evolve |
+| Total | 100 hours | |
 
-# Delivering in Smaller Increments
+What have we actually gained?
 
-One of the benefits of delivering smaller increments is that we're making fewer assumptions at once.
+The automated checks might reduce future engineering consumption. The customer portal feature might generate additional
+revenue. The dependency upgrade might prevent an expensive failure or eliminate a constraint on future development. Let's
+put some hypothetical numbers against the customer portal feature. Suppose the 40 hours of engineering effort cost $4,000
+when we account for compensation and related expenses. We expect the feature to generate $12,000 in additional revenue over
+the next year, with another $2,000 in support and operating costs over that period.
 
-Imagine spending three months developing the entire customer portal feature before releasing anything. We're assuming
-that our requirements are correct, that our design will work, and that customers will find the result useful.
+Our estimated contribution is:
 
-Now imagine releasing a smaller capability after two weeks. We can validate whether the software works in its intended
-environment, discover integration problems, and identify technical issues before building additional functionality on top
-of it. We haven't necessarily proven that the feature produces the business value we expected. That's a separate question.
+**$12,000 - $4,000 - $2,000 = $6,000**
 
-What we've done is reduce the distance between implementation and delivery. This also gives us opportunities to reconsider
-our original decisions. If an early increment reveals that our approach is unnecessarily complicated, changing direction
-is generally easier than after we've completed the entire feature. The goal isn't to release software as frequently as
-possible. It's to make useful changes available without accumulating unnecessary delays, risks, or unfinished work.
+That's a projected financial contribution, not necessarily $6,000 in additional company profit. Other business costs
+may apply, and we're making assumptions about how much revenue the feature will actually produce. This also raises an
+important distinction from Part 5.* *Reclaiming 100 hours of engineering capacity isn't the same thing as saving 100 hours
+of salary expenses.**
 
-# Delivery Isn't the Same as Realized Value
+We're still paying those developers. What we've created is the opportunity to invest their time somewhere else. That
+might increase revenue, reduce future expenditures, avoid additional hiring, or produce other benefits. The financial result
+depends on what those reclaimed hours accomplish.
 
-Let's assume we've finished the customer portal feature. It's implemented, tested, deployed, and available to customers.
-From an engineering delivery perspective, we've accomplished what we set out to do.
+# Not Every Investment Needs to Generate Revenue
 
-But what if customers don't use it? What if we intended to reduce customer support requests, but the number of requests
-remains unchanged? We may have delivered exactly what we planned, without producing the value we expected. In Part 3 -
-Understanding the Value of Engineering Work, we distinguished between expected value and delivered value. That distinction
-matters here because engineering delivery is only one part of the broader framework.
+There's a danger in reducing all engineering decisions to whether a feature generates more money than it costs.
 
-We can understand our costs, prioritize correctly based on the information available, and deliver efficiently, while
-still making incorrect assumptions about the benefits of our work. That doesn't necessarily mean our delivery process
-failed. It means we need to examine the results.
+Some work is necessary to preserve the organization's ability to operate. Consider the dependency upgrade from our example.
+It might generate no additional revenue. But perhaps the current dependency is approaching end-of-support, and leaving it
+unchanged exposes the organization to significant operational risk.
 
-# Conclusion - Delivering Engineering Value
+Does that make the migration worthless? Of course not. The expected value may come from avoiding a future expense, protecting
+existing revenue, or maintaining the ability to continue developing the product. We should consider the likelihood and
+consequences of those risks rather than assuming that avoiding an uncertain future cost is the same as receiving money today.
+This is why our earlier classification of Technical, Tactical, and Strategic value matters. Financial returns are
+important, but not every useful engineering contribution produces an immediate, directly measurable return.
 
-Engineering capacity is limited, and how effectively we turn that capacity into deliverable results matters. Breaking
-work into useful increments, reducing unnecessary waiting and handoffs, and improving our ability to integrate and release
-changes all help us deliver the work we've chosen to pursue. But delivery is not the end of the process. We've made a
-change available. Now we need to determine whether that change actually produced the benefits we expected, and what we
-should do differently as a result.
+# Conclusion - What Did We Gain?
+
+Engineering capacity is limited, and every activity consumes some of it. Part 2 gave us a way to understand that consumption.
+Part 3 gave us a way to describe the value we expect from the work. Prioritization and optimization help us decide where
+to spend our capacity and how to make more of it available.
+
+Now we've brought those ideas together. Engineering can improve the organization's position by generating additional revenue,
+reducing costs, or protecting existing value. Build, Fix, Improve, Run, and Evolve can each contribute to those outcomes
+in different ways.
+
+But our calculations are still based on expectations. A feature expected to generate $12,000 might generate $2,000. An
+automation expected to reclaim 100 hours might only reclaim 20. A migration intended to reduce operational risk might
+introduce new problems. We've made our investment and delivered the work. Now we need to determine whether we actually
+received the benefits we expected.
+
+That brings us to Part 7 - Measuring Outcomes and Feedback.
