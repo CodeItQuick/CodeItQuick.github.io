@@ -119,7 +119,7 @@ Our estimated contribution is:
 
 That's a projected financial contribution, not necessarily $6,000 in additional company profit. Other business costs
 may apply, and we're making assumptions about how much revenue the feature will actually produce. This also raises an
-important distinction from Part 5.* *Reclaiming 100 hours of engineering capacity isn't the same thing as saving 100 hours
+important distinction from Part 5. **Reclaiming 100 hours of engineering capacity isn't the same thing as saving 100 hours
 of salary expenses.**
 
 We're still paying those developers. What we've created is the opportunity to invest their time somewhere else. That
