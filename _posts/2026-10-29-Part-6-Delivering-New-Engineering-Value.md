@@ -73,21 +73,16 @@ Starting more work isn't necessarily the same as delivering more work.
 
 # Removing Barriers to Delivery
 
-Once we understand how work flows through the organization, we can start addressing the things slowing it down.
-
-Some of those barriers are technical.
+Once we understand how work flows through the organization, we can start addressing the things slowing it down. Some of 
+those barriers are technical.
 
 Automated testing can reduce the time required to validate a change. Continuous integration can expose problems earlier.
 Smaller changes can make code reviews easier, and deployment automation can reduce the effort and risk associated with
-releasing software.
-
-Other barriers are organizational.
+releasing software. Other barriers are organizational.
 
 Perhaps a team needs approval from three other teams before releasing a feature. Perhaps testing happens exclusively at
 the end of a development cycle. Maybe nobody is available to review changes because everyone is busy working on their own
-priorities.
-
-These problems won't necessarily be solved by adding developers or asking existing developers to work harder.
+priorities. These problems won't necessarily be solved by adding developers or asking existing developers to work harder.
 
 We also need to consider how teams are organized. If every feature requires multiple handoffs between specialized teams,
 coordination becomes part of the cost of delivery. That doesn't mean specialization is inherently bad. Engineers possess 
