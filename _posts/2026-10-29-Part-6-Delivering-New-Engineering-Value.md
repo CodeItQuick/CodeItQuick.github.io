@@ -7,15 +7,6 @@ time: "5m:00s"
 tags: developer-time all
 series: developer-time
 ---
----
-layout: post
-name: Part 6 - Delivering New Engineering Value
-description: Understanding how engineering value and costs contribute to organizational profitability
-image: iceberg_buckets.jpg
-time: "5m:00s"
-tags: developer-time all
-series: developer-time
----
 
 <div class="w-full text-center">
     <h1>Part 6 - Delivering New Engineering Value</h1>
