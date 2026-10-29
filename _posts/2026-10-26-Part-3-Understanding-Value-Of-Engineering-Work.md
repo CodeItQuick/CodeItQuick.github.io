@@ -7,144 +7,161 @@ time: "4m:53s"
 tags: developer-time all
 series: developer-time
 ---
+---
+layout: post
+name: Part 6 - Delivering New Engineering Value
+description: Understanding how engineering value and costs contribute to organizational profitability
+image: iceberg_buckets.jpg
+time: "5m:00s"
+tags: developer-time all
+series: developer-time
+---
 
 <div class="w-full text-center">
-    <h1>Part 3 - Understanding the Value of Engineering Work</h1>
-    <h6>(Reading Time: 4 minutes 53 seconds)</h6>
+    <h1>Part 6 - Delivering New Engineering Value</h1>
+    <h6>(Reading Time: Approximately 5 minutes)</h6>
 </div>
 
-# From Cost to Value
+# Introduction - Bringing Cost and Value Together
 
-In [Part 1, Making Invisible Developer Work Visible](https://codeitquick.github.io/2026/01/21/Making-Invisible-Developer-Work-Visible.html), 
-we introduced five different purposes of engineering work: Build, Fix, Improve, Run, and Evolve.
+In the previous articles, we've examined engineering capacity, how that capacity is consumed, and the technical, tactical,
+and strategic value that engineering work is expected to produce. We've also looked at prioritizing that work and reclaiming
+capacity through elimination, automation, delegation, and self-service.
 
-In [Part 2A, Understanding Engineering Capacity](https://codeitquick.github.io/2026/10/25/Part-2A-Understanding-Engineering-Capacity.html), 
-we examined where engineering capacity goes. In [Part 2B, Understanding Activity-Based Engineering Costs](https://codeitquick.github.io/2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html), 
-we examined how engineering consumption can be attributed to different activities and systems.
+We've established what our work costs, why we expect it to be valuable, and where we're going to invest our limited capacity.
+But we haven't really examined what happens when we bring those things together. At the organizational level, the basic 
+financial equation is straightforward:
 
-We now have a way to describe the work, identify the activities involved, and estimate what they cost. But we haven't 
-answered an important question: what value does that work actually produce? Consider the database migration from Part 2B. 
-We know how much engineering time was spent performing the migration, and we know which systems benefit from it. That doesn't 
-tell us why the migration was worth doing in the first place.
+**Profit = Revenue - Costs**
 
-Maybe the existing database was approaching the end of support. Maybe the migration would improve performance. Maybe it 
-would allow the organization to introduce new capabilities that weren't previously possible. Each of these represents a 
-different reason for performing the same work. To understand engineering value, we need to look beyond what work is being 
-performed and examine what the organization expects to gain from it.
+Engineering contributes to both sides of this equation. We can develop capabilities that increase revenue, reduce the
+cost of existing operations, or protect the revenue and capabilities the organization already depends on. The question is 
+how we turn our engineering investments into something that improves the organization's position after accounting for 
+their costs.
 
-# Three Dimensions of Engineering Value
+# Understanding the Remainder
 
-I want to introduce three dimensions for describing the value of engineering work: Technical, Tactical, and Strategic. These 
-aren't mutually exclusive categories. A single piece of engineering work can provide value in more than one dimension.
+Let's consider the two sides of the equation. In Part 3, we introduced Technical, Tactical, and Strategic value. These 
+describe why engineering work might be worth doing. In Part 2, we examined engineering capacity and consumption, giving 
+us a way to understand the resources required to perform that work.
 
-| Value | Primary Question | Examples |
+Revenue and costs are financial quantities. Engineering value is broader than revenue, and capacity is measured in hours
+rather than dollars. We need to be careful about treating these as interchangeable. For example, a feature that generates 
+additional customer purchases has a direct relationship to revenue. Improving reliability might instead protect existing 
+revenue by preventing outages. A database migration might reduce future costs or enable capabilities that haven't generated 
+revenue yet.
+
+These activities can all be valuable without producing an immediate increase in sales. When we can estimate their financial 
+benefits and costs, we can calculate a contribution. Where the benefits are not financially measurable, we should describe 
+the expected net value rather than pretending we've calculated profit. The objective isn't to assign an imaginary dollar 
+value to every engineering task. It's to understand what we're gaining relative to what we're spending.
+
+# Three Ways to Improve the Equation
+
+There are three broad ways engineering can improve the organization's economic position.
+
+**Increase revenue.** Building a feature that attracts new customers, enabling a new market, or improving a purchasing
+experience can increase the revenue the organization generates. This is perhaps the most recognizable contribution
+from engineering, but it isn't the only one.
+
+**Reduce costs.** Improving infrastructure efficiency, eliminating recurring manual work, or reducing operational
+expenses can improve profitability without generating any additional revenue. If we deliver the same capability at a
+lower cost, the remainder increases.
+
+**Protect existing value.** Fixing critical defects, maintaining reliability, and adapting systems to changing
+requirements can prevent lost revenue or avoid future expenses. Sometimes the most valuable engineering work is
+preventing something bad from happening.
+
+These mechanisms aren't mutually exclusive. Improving a service's performance might reduce infrastructure costs while
+also allowing the organization to support more customers. The important distinction is that **engineering work can increase 
+the remainder without necessarily increasing revenue.**
+
+# Connecting the Five Types of Engineering Work
+
+Let's return to the five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. Each of these represents a 
+different reason for performing engineering work. None of them determines the economic outcome by itself.
+
+| Engineering Work | Possible Economic Contribution |
+|---|---|
+| Build | Generate additional revenue through a new capability |
+| Fix | Restore a purchasing process that was losing sales |
+| Improve | Reduce the infrastructure costs of an existing service |
+| Run | Protect existing revenue through operational reliability |
+| Evolve | Avoid future maintenance costs or enable entry into a new market |
+
+These examples aren't exclusive relationships. Building something might reduce costs. Improving an existing system might
+enable new revenue. Evolving a system might be necessary simply to continue operating. We already know that one work item 
+can produce Technical, Tactical, and Strategic value simultaneously. Now we're asking another question: **How does that 
+value affect the organization's economic position?**
+
+Consider a database migration. The work belongs primarily in Evolve, but the economic contribution depends on why
+we're performing it. Replacing an unsupported database might prevent future maintenance expenses. Improving database
+performance might reduce infrastructure costs. Supporting additional customers might increase revenue.
+
+The work hasn't changed. What we're examining is how its benefits contribute to the remainder.
+
+# Reinvesting Engineering Capacity
+
+Let's return to our three-developer team and the customer portal example.
+
+In Part 5, we reclaimed 100 hours of engineering capacity by reducing unnecessary meetings, automating repetitive
+checks, and providing self-service access to information. We allocated that capacity to three activities:
+
+| Work | Capacity | Purpose |
 |---|---|---|
-| Technical | How does this improve our engineering capabilities? | Maintainability, reliability, performance, developer productivity |
-| Tactical | How does this address an immediate business or operational need? | Defect resolution, customer requests, operational problems |
-| Strategic | How does this support longer-term organizational objectives? | New markets, future capabilities, scalability, reducing long-term risk |
-{: .table .table-zebra}
+| Automated checks | 40 hours | Improve |
+| Customer portal feature | 40 hours | Build |
+| Dependency upgrade | 20 hours | Evolve |
+| Total | 100 hours | |
 
-## Technical Value
+What have we actually gained?
 
-Technical value comes from improving the systems, tools, and capabilities that engineering relies on.
+The automated checks might reduce future engineering consumption. The customer portal feature might generate additional
+revenue. The dependency upgrade might prevent an expensive failure or eliminate a constraint on future development. Let's 
+put some hypothetical numbers against the customer portal feature. Suppose the 40 hours of engineering effort cost $4,000 
+when we account for compensation and related expenses. We expect the feature to generate $12,000 in additional revenue over 
+the next year, with another $2,000 in support and operating costs over that period.
 
-Consider improving an automated test suite. The immediate result might not be a new customer-facing feature. Instead, the 
-improvement makes it easier to detect regressions, reduces manual testing, or allows developers to make changes with greater 
-confidence. Technical value is not necessarily visible to the customer, but that doesn't make it less important. However, 
-simply changing technology doesn't guarantee technical value. Rewriting a functioning service in a different language might 
-improve maintainability, or it might introduce complexity without solving a meaningful problem.
+Our estimated contribution is:
 
-The value comes from the improvement produced, not the technical activity itself.
+**$12,000 - $4,000 - $2,000 = $6,000**
 
-## Tactical Value
+That's a projected financial contribution, not necessarily $6,000 in additional company profit. Other business costs
+may apply, and we're making assumptions about how much revenue the feature will actually produce. This also raises an 
+important distinction from Part 5.* *Reclaiming 100 hours of engineering capacity isn't the same thing as saving 100 hours 
+of salary expenses.**
 
-Tactical value addresses an immediate business or operational need.
+We're still paying those developers. What we've created is the opportunity to invest their time somewhere else. That
+might increase revenue, reduce future expenditures, avoid additional hiring, or produce other benefits. The financial result 
+depends on what those reclaimed hours accomplish.
 
-Fixing a production defect, implementing a customer-requested enhancement, or resolving an operational problem may all 
-provide tactical value. Consider a production defect preventing customers from completing a purchase. Fixing the defect 
-restores an existing business capability and addresses an immediate problem. But tactical value isn't limited to work 
-customers can see. A developer investigating logs to answer a product manager's question may provide information required 
-to resolve an operational issue or make an immediate decision.
+# Not Every Investment Needs to Generate Revenue
 
-That activity might never become an independent Jira ticket, but it can still provide tactical value.
+There's a danger in reducing all engineering decisions to whether a feature generates more money than it costs.
 
-## Strategic Value
+Some work is necessary to preserve the organization's ability to operate. Consider the dependency upgrade from our example. 
+It might generate no additional revenue. But perhaps the current dependency is approaching end-of-support, and leaving it 
+unchanged exposes the organization to significant operational risk.
 
-Strategic value contributes to longer-term organizational objectives or future capabilities.
+Does that make the migration worthless? Of course not. The expected value may come from avoiding a future expense, protecting 
+existing revenue, or maintaining the ability to continue developing the product. We should consider the likelihood and 
+consequences of those risks rather than assuming that avoiding an uncertain future cost is the same as receiving money today.
+This is why our earlier classification of Technical, Tactical, and Strategic value matters. Financial returns are
+important, but not every useful engineering contribution produces an immediate, directly measurable return.
 
-Consider an organization planning to expand into a new market. Supporting that market might require changes to its 
-architecture, new integrations, or additional infrastructure. The strategic value comes from enabling the organization's 
-longer-term objective, rather than simply completing the technical work. Strategic value can also come from preserving 
-future options. A migration might prevent the organization from becoming dependent on unsupported technology, reducing a 
-constraint on future development.
+# Conclusion - What Did We Gain?
 
-However, not every long-term technical improvement is automatically strategic. The connection to an organizational 
-objective still needs to be established.
+Engineering capacity is limited, and every activity consumes some of it. Part 2 gave us a way to understand that consumption. 
+Part 3 gave us a way to describe the value we expect from the work. Prioritization and optimization help us decide where 
+to spend our capacity and how to make more of it available.
 
-# Relating Value to the Five Types of Engineering Work
+Now we've brought those ideas together. Engineering can improve the organization's position by generating additional revenue, 
+reducing costs, or protecting existing value. Build, Fix, Improve, Run, and Evolve can each contribute to those outcomes 
+in different ways.
 
-In Part 1, we introduced Build, Fix, Improve, Run, and Evolve as five purposes of engineering work. These categories describe 
-what we are trying to accomplish. The three value dimensions describe why accomplishing that work matters. The distinction 
-is important because the same purpose of work can produce different kinds of value.
+But our calculations are still based on expectations. A feature expected to generate $12,000 might generate $2,000. An 
+automation expected to reclaim 100 hours might only reclaim 20. A migration intended to reduce operational risk might 
+introduce new problems. We've made our investment and delivered the work. Now we need to determine whether we actually 
+received the benefits we expected. 
 
-| Engineering Work | Technical Value | Tactical Value | Strategic Value |
-|---|---|---|---|
-| Build | Introduce a reusable capability | Deliver a requested feature | Enable a new product or market |
-| Fix | Eliminate an underlying technical weakness | Restore broken functionality | Protect a critical business capability |
-| Improve | Reduce complexity or improve reliability | Remove an immediate performance bottleneck | Support expected growth |
-| Run | Maintain system health and operational reliability | Restore or sustain business operations | Preserve continuity of a strategically important service |
-| Evolve | Modernize technology and dependencies | Meet an upcoming compliance deadline | Enable future capabilities or reduce long-term constraints |
-{: .table .table-zebra}
-
-These examples aren't fixed relationships. They demonstrate that **the purpose of the work doesn't determine the type of value it produces**.
-
-Consider the database migration from Part 2. The migration belongs primarily in Evolve because we're adapting an existing 
-system to changing constraints. But the benefits depend on why we're performing it. If the migration replaces an unsupported 
-database, it may provide technical value by reducing maintenance and compatibility risks. If the old database is causing 
-immediate operational problems, the same migration may also provide tactical value. If the new database supports an expansion 
-into another market, it may provide strategic value.
-
-We haven't changed the type of engineering work. We've identified several reasons why performing that work could matter. 
-This is also why technical work shouldn't automatically be classified as delivering only technical value, or product work 
-as delivering only tactical or strategic value.
-
-A technical improvement can support a business objective. A feature can improve the underlying engineering system. The 
-categories are independent, even when they influence one another.
-
-# Expected Value Versus Delivered Value
-
-There's one more distinction we need to make. **The value we expect from engineering work is not necessarily the value we 
-receive.** Suppose a team spends twenty hours improving the performance of a service because they believe it will reduce 
-customer wait times. The work might be completed successfully, the tests might pass, and the improvement might be deployed. 
-But if the service wasn't responsible for the customers' performance problems, the expected business benefit may never 
-materialize.
-
-The team completed the engineering work. That doesn't mean it delivered the expected value. The opposite can also happen. 
-An experiment might fail to produce the desired product improvement but reveal an important constraint or invalidate an 
-assumption. That information can still be useful, even though the original expected outcome wasn't achieved.
-
-This distinction applies to all three value dimensions. Technical value might be expected to reduce maintenance effort. 
-Tactical value might be expected to resolve an operational problem. Strategic value might be expected to enable a future 
-business opportunity. In each case, the classification describes the benefit we're trying to achieve. It doesn't establish 
-that the benefit occurred.
-
-Not every benefit can be measured precisely, and not every useful activity needs its own financial return. But we should 
-be able to explain why we expect the work to matter and, where practical, examine whether it achieved that purpose.
-
-# Conclusion - Understanding Engineering Value
-
-Build, Fix, Improve, Run, and Evolve describe the purposes of engineering work. Technical, Tactical, and Strategic describe 
-different dimensions of the value that work may produce.
-
-A single piece of work can produce multiple forms of value, and those benefits aren't necessarily obvious from the Jira 
-ticket or the engineering activities involved.
-
-We've now examined what engineering teams do, how much capacity their activities consume, what those activities cost, and 
-what value they are expected to produce.
-
-But understanding cost and value doesn't tell us what to do about work that isn't worth its hours.
-
-That's the next problem: engineering capacity is limited, so every hour we spend on one activity is an hour we can't spend on another.
-
-In [Part 5 - The Four Ways to Reclaim Developer Time](/2026/10/27/Part-Five-The-Four-Ways-To-Reclaim-Developer-Time.html), 
-we'll look at the opportunity cost of that work, and how eliminating, automating, delegating, and enabling self-service can give those hours back.
+That brings us to Part 7 - Measuring Outcomes and Feedback.
