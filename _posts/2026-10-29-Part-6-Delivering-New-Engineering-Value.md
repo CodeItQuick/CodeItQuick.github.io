@@ -114,7 +114,7 @@ Let's assume we've finished the customer portal feature. It's implemented, teste
 From an engineering delivery perspective, we've accomplished what we set out to do.
 
 But what if customers don't use it? What if we intended to reduce customer support requests, but the number of requests 
-remains unchanged? We may have delivered exactly what we planned, without producing the value we expected. In[Part 3 - Understanding the Value of Engineering Work](/2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html),
+remains unchanged? We may have delivered exactly what we planned, without producing the value we expected. In [Part 3 - Understanding the Value of Engineering Work](/2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html),
 we distinguished between expected value and delivered value. That distinction matters here because engineering delivery
 is only one part of the broader framework.
 
