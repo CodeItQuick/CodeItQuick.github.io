@@ -72,13 +72,14 @@ the remainder without necessarily increasing revenue.**
 Let's return to the five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. Each of these represents a
 different reason for performing engineering work. None of them determines the economic outcome by itself.
 
-| Engineering Work | Possible Economic Contribution |
-|---|---|
-| Build | Generate additional revenue through a new capability |
-| Fix | Restore a purchasing process that was losing sales |
-| Improve | Reduce the infrastructure costs of an existing service |
-| Run | Protect existing revenue through operational reliability |
-| Evolve | Avoid future maintenance costs or enable entry into a new market |
+| Engineering Work | Possible Economic Contribution                                    |
+|------------------|-------------------------------------------------------------------|
+| Build            | Generate additional revenue through a new capability              |
+| Fix              | Restore a purchasing process that was losing sales                |
+| Improve          | Reduce the infrastructure costs of an existing service            |
+| Run              | Protect existing revenue through operational reliability          |
+| Evolve           | Avoid future maintenance costs or enable entry into a new market  |
+{: .table .table-zebra}
 
 These examples aren't exclusive relationships. Building something might reduce costs. Improving an existing system might
 enable new revenue. Evolving a system might be necessary simply to continue operating. We already know that one work item
@@ -98,12 +99,13 @@ Let's return to our three-developer team and the customer portal example.
 In Part 5, we reclaimed 100 hours of engineering capacity by reducing unnecessary meetings, automating repetitive
 checks, and providing self-service access to information. We allocated that capacity to three activities:
 
-| Work | Capacity | Purpose |
-|---|---|---|
-| Automated checks | 40 hours | Improve |
-| Customer portal feature | 40 hours | Build |
-| Dependency upgrade | 20 hours | Evolve |
-| Total | 100 hours | |
+| Work                    | Capacity  | Purpose |
+|-------------------------|-----------|---------|
+| Automated checks        | 40 hours  | Improve |
+| Customer portal feature | 40 hours  | Build   |
+| Dependency upgrade      | 20 hours  | Evolve  |
+| Total                   | 100 hours |         |
+{: .table .table-zebra}
 
 What have we actually gained?
 
