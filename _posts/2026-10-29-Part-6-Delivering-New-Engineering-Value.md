@@ -73,16 +73,16 @@ Starting more work isn't necessarily the same as delivering more work.
 
 # Removing Barriers to Delivery
 
-Once we understand how work flows through the organization, we can start addressing the things slowing it down. Some of 
-those barriers are technical.
+Once we understand how work flows through the organization, we can start addressing the things slowing it down. 
 
-Automated testing can reduce the time required to validate a change. Continuous integration can expose problems earlier.
-Smaller changes can make code reviews easier, and deployment automation can reduce the effort and risk associated with
-releasing software. Other barriers are organizational.
+Some of those barriers are technical. Automated testing can reduce the time required to validate a change. Continuous 
+integration can expose problems earlier. Smaller changes can make code reviews easier, and deployment automation can 
+reduce the effort and risk associated with releasing software. 
 
-Perhaps a team needs approval from three other teams before releasing a feature. Perhaps testing happens exclusively at
-the end of a development cycle. Maybe nobody is available to review changes because everyone is busy working on their own
-priorities. These problems won't necessarily be solved by adding developers or asking existing developers to work harder.
+Other barriers are organizational. Perhaps a team needs approval from three other teams before releasing a feature. Perhaps 
+testing happens exclusively at the end of a development cycle. Maybe nobody is available to review changes because everyone 
+is busy working on their own priorities. These problems won't necessarily be solved by adding developers or asking existing 
+developers to work harder.
 
 We also need to consider how teams are organized. If every feature requires multiple handoffs between specialized teams,
 coordination becomes part of the cost of delivery. That doesn't mean specialization is inherently bad. Engineers possess 
@@ -99,29 +99,22 @@ One of the benefits of delivering smaller increments is that we're making fewer 
 Imagine spending three months developing the entire customer portal feature before releasing anything. We're assuming
 that our requirements are correct, that our design will work, and that customers will find the result useful.
 
-Now imagine releasing a smaller capability after two weeks.
+Now imagine releasing a smaller capability after two weeks. We can validate whether the software works in its intended 
+environment, discover integration problems, and identify technical issues before building additional functionality on top 
+of it. We haven't necessarily proven that the feature produces the business value we expected. That's a separate question.
 
-We can validate whether the software works in its intended environment, discover integration problems, and identify
-technical issues before building additional functionality on top of it. We haven't necessarily proven that the feature 
-produces the business value we expected. That's a separate question.
-
-What we've done is reduce the distance between implementation and delivery.
-
-This also gives us opportunities to reconsider our original decisions. If an early increment reveals that our approach
-is unnecessarily complicated, changing direction is generally easier than after we've completed the entire feature. The 
-goal isn't to release software as frequently as possible. It's to make useful changes available without accumulating
-unnecessary delays, risks, or unfinished work.
+What we've done is reduce the distance between implementation and delivery. This also gives us opportunities to reconsider 
+our original decisions. If an early increment reveals that our approach is unnecessarily complicated, changing direction 
+is generally easier than after we've completed the entire feature. The goal isn't to release software as frequently as 
+possible. It's to make useful changes available without accumulating unnecessary delays, risks, or unfinished work.
 
 # Delivery Isn't the Same as Realized Value
 
 Let's assume we've finished the customer portal feature. It's implemented, tested, deployed, and available to customers. 
 From an engineering delivery perspective, we've accomplished what we set out to do.
 
-But what if customers don't use it?
-
-What if we intended to reduce customer support requests, but the number of requests remains unchanged?
-
-We may have delivered exactly what we planned, without producing the value we expected. In [Part 3 - Understanding the Value of Engineering Work](/2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html),
+But what if customers don't use it? What if we intended to reduce customer support requests, but the number of requests 
+remains unchanged? We may have delivered exactly what we planned, without producing the value we expected. In[Part 3 - Understanding the Value of Engineering Work](/2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html),
 we distinguished between expected value and delivered value. That distinction matters here because engineering delivery
 is only one part of the broader framework.
 
@@ -131,9 +124,8 @@ failed. It means we need to examine the results.
 
 # Conclusion - Delivering Engineering Value
 
-Engineering capacity is limited, and how effectively we turn that capacity into deliverable results matters.
-
-Breaking work into useful increments, reducing unnecessary waiting and handoffs, and improving our ability to integrate
-and release changes all help us deliver the work we've chosen to pursue. But delivery is not the end of the process. We've 
-made a change available. Now we need to determine whether that change actually produced the benefits we expected, and what 
-we should do differently as a result
+Engineering capacity is limited, and how effectively we turn that capacity into deliverable results matters. Breaking 
+work into useful increments, reducing unnecessary waiting and handoffs, and improving our ability to integrate and release 
+changes all help us deliver the work we've chosen to pursue. But delivery is not the end of the process. We've made a 
+change available. Now we need to determine whether that change actually produced the benefits we expected, and what we 
+should do differently as a result
