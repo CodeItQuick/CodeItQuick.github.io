@@ -1,13 +1,18 @@
 {
   "collection": "ms_codeitquick_github_io_0388f992",
-  "last_started_at": "2026-11-11T08:26:13.719732Z",
-  "last_success_at": "2026-11-11T08:24:23.514464Z",
+  "failed_files": [],
+  "indexed_chunks": 2,
+  "indexed_files": 22,
+  "last_completed_at": "2026-11-11T08:28:53.411094Z",
+  "last_started_at": "2026-11-11T08:28:50.365794Z",
+  "last_success_at": "2026-11-11T08:28:53.411094Z",
   "milvus_uri": "~/.memsearch/milvus.db",
   "operation": "index",
   "paths": [
     "C:/Users/evano/WebstormProjects/CodeItQuick.github.io/.memsearch/memory"
   ],
   "schema_version": 1,
-  "status": "running",
-  "updated_at": "2026-11-11T08:26:13.719732Z"
+  "status": "ok",
+  "total_files": 22,
+  "updated_at": "2026-11-11T08:28:53.411094Z"
 }

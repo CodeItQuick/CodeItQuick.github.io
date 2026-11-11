@@ -34,6 +34,8 @@
     <main class="grow max-w-3xl mx-auto w-full">
         <div class="md:max-w-4xl py-8 mx-auto">
             <div class="w-full markdown text-wrap p-4">
+                {% assign topic = page.tags | where_exp: "t", "t != 'all'" | first %}
+                <p><a href="{{ '/' | relative_url }}{% if topic %}?topic={{ topic | uri_escape }}{% endif %}" class="inline-block py-3">&larr; {% if topic %}All <span style="text-transform: capitalize">{{ topic }}</span> posts{% else %}All posts{% endif %}</a></p>
                 {{ content }}
                 {% if page.series %}{% include series-nav.html %}{% endif %}
                 <p><a href="{{ '/' | relative_url }}" class="inline-block py-3">&larr; All posts</a></p>
