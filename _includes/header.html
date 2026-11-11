@@ -29,7 +29,7 @@
     <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
           rel="stylesheet"
           type="text/css">
-    <title>CodeItQuick Project Graveyard</title>
+    <title>{% if page.collection and page.name %}{{ page.name | escape }} | {% endif %}CodeItQuick Project Graveyard</title>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
