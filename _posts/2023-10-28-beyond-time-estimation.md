@@ -9,7 +9,7 @@ tags: agile-planning all
 
 <div class="w-full text-center">
     <h1>Beyond Time Estimation</h1>
-    <h6>(Reading Time: 3 minutes 37 seconds)</h6>
+    <p class="reading-time">Reading time: 3 minutes 37 seconds</p>
 </div>
 
 # **1. Introduction**

@@ -11,7 +11,7 @@ featured: true
 
 <div class="w-full text-center">
     <h1>Part 1 - Are You Splitting Stories, or Just Splitting Tasks?</h1>
-    <h6>(Reading Time: 4 minutes 31 seconds)</h6>
+    <p class="reading-time">Reading time: 4 minutes 31 seconds</p>
 </div>
 
 # Introduction

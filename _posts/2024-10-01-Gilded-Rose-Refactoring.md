@@ -9,7 +9,7 @@ tags: code-quality all
 
 <div class="w-full text-center">
     <h1>Gilded Rose Refactoring Kata  </h1>
-    <h6>(Reading Time: 7 minutes 15 seconds)</h6>
+    <p class="reading-time">Reading time: 7 minutes 15 seconds</p>
 </div>
 
 <p align="center" width="100%">

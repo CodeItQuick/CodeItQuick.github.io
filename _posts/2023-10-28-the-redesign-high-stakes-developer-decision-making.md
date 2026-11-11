@@ -9,7 +9,7 @@ tags: code-quality all
 
 <div class="w-full text-center">
     <h1>The Redesign - High-Stakes Developer Decision-Making </h1>
-    <h6>(Reading Time: 5 minutes 2 seconds)</h6>
+    <p class="reading-time">Reading time: 5 minutes 2 seconds</p>
 </div>
 
 <p align="center" width="100%">

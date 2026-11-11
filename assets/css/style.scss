@@ -69,15 +69,6 @@ body {
         display: none;
     }
 
-    // Phones only show the main topics; the rest appear from 640px up
-    .topic-chip--desktop-only {
-        display: none;
-
-        @media (min-width: 640px) {
-            display: inline-flex;
-        }
-    }
-
     .btn {
         flex: 0 0 auto;
         scroll-snap-align: start;
@@ -253,6 +244,12 @@ body {
         margin-bottom: 0.75rem;
         line-height: 1.8;
         opacity: 85%;
+    }
+
+    .reading-time {
+        margin-top: 0;
+        font-size: 0.875rem;
+        color: rgb(var(--content2) / 1);
     }
 
     a {

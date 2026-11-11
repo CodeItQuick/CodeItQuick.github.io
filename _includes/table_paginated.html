@@ -1,5 +1,13 @@
-<div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: {{ site.posts.size }}, pageSize: window.innerWidth >= 1024 ? 6 : 3 }"
-     x-init="() => { const handler = () => { pageSize = window.innerWidth >= 1024 ? 6 : 3; pageNumber = 0; }; window.addEventListener('resize', handler); return () => window.removeEventListener('resize', handler); }"
+{% assign sorted_tags = site.tags | sort | where_exp: "tag", "tag[0] != 'all'" %}
+<div x-data="{ pageNumber: 0, tag_filter: 'all', tag_count: {{ site.posts.size }}, pageSize: window.innerWidth >= 1024 ? 6 : 3,
+               counts: { all: {{ site.posts.size }}{% for tag in sorted_tags %}, '{{ tag[0] }}': {{ tag[1].size }}{% endfor %} } }"
+     x-init="() => {
+         const params = new URLSearchParams(location.search);
+         if (params.get('topic') in counts) { tag_filter = params.get('topic'); tag_count = counts[tag_filter]; }
+         pageNumber = Math.min(Math.max((+params.get('page') || 1) - 1, 0), Math.ceil(tag_count / pageSize) - 1);
+         const syncUrl = () => { const q = new URLSearchParams(); if (tag_filter !== 'all') q.set('topic', tag_filter); if (pageNumber > 0) q.set('page', pageNumber + 1); history.replaceState(null, '', q.size ? '?' + q : location.pathname); };
+         $watch('pageNumber', syncUrl); $watch('tag_filter', syncUrl);
+         const handler = () => { const size = window.innerWidth >= 1024 ? 6 : 3; if (size !== pageSize) { pageSize = size; pageNumber = 0; } }; window.addEventListener('resize', handler); return () => window.removeEventListener('resize', handler); }"
      class="w-full h-full max-w-3xl mx-auto">
     <div class="py-8 mx-auto md:p-8 flex flex-col justify-center">
         <div class="topic-chips">
@@ -7,10 +15,8 @@
                     x-on:click="tag_filter = 'all'; tag_count = {{ site.posts.size }}; pageNumber = 0; gtag('event', 'select_topic', { topic: 'all' });">
                 All
             </button>
-            {% assign sorted_tags = site.tags | sort | where_exp: "tag", "tag[0] != 'all'" %}
-            {% assign mobile_tags = "agile-planning,code-quality" | split: "," %}
             {% for tag in sorted_tags %}
-                <button class="btn font-[body]{% unless mobile_tags contains tag[0] %} topic-chip--desktop-only{% endunless %}" :class="tag_filter === '{{ tag[0] }}' ?
+                <button class="btn font-[body]" :class="tag_filter === '{{ tag[0] }}' ?
                     'btn-primary' : 'btn-ghost'"
                         x-on:click="tag_filter = '{{ tag[0]}}'; tag_count = {{ tag[1].size }}; pageNumber = 0; gtag('event', 'select_topic', { topic: '{{ tag[0] }}' });">
                     {{ tag[0] }}
@@ -51,11 +57,11 @@
     </div>
     <div class="flex justify-center py-6" x-show="{{ site.posts.size }}">
         <div class="pagination pagination-rounded flex gap-2" role="navigation" aria-label="Blog pages">
-            <button class="btn" @click="pageNumber--; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });":disabled="pageNumber === 0">‹</button>
+            <button class="btn" aria-label="Previous page" @click="pageNumber--; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });" :disabled="pageNumber === 0">‹</button>
             <template x-for="index in Math.ceil(tag_count / pageSize)">
-                <button class="btn" :class="{ 'btn-active': index - 1 === pageNumber }" @click="pageNumber = index - 1; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });"x-text="index"></button>
+                <button class="btn" :class="{ 'btn-active': index - 1 === pageNumber }" :aria-label="'Page ' + index" :aria-current="index - 1 === pageNumber ? 'page' : null" @click="pageNumber = index - 1; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });" x-text="index"></button>
             </template>
-            <button class="btn" @click="pageNumber++; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });":disabled="pageNumber >= Math.ceil(tag_count / pageSize) - 1">›</button>
+            <button class="btn" aria-label="Next page" @click="pageNumber++; gtag('event', 'change_page', { page_number: pageNumber + 1, topic: tag_filter });" :disabled="pageNumber >= Math.ceil(tag_count / pageSize) - 1">›</button>
         </div>
     </div>
 </div>

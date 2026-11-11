@@ -9,7 +9,7 @@ tags: code-quality all
 
 <div class="w-full text-center">
     <h1>Code Smells Nature vs Nurture</h1>
-    <h6>(Reading Time: 2 minutes 24 seconds)</h6>
+    <p class="reading-time">Reading time: 2 minutes 24 seconds</p>
 </div>
 
 # Introduction

@@ -9,7 +9,7 @@ tags: code-quality all
 
 <div class="w-full text-center">
     <h1>OOP The Great Debate - Classes vs Closures</h1>
-    <h6>(Reading Time: 5 minutes 58 seconds)</h6>
+    <p class="reading-time">Reading time: 5 minutes 58 seconds</p>
 </div>
 
 # Introduction

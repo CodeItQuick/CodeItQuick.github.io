@@ -9,7 +9,7 @@ tags: agile-planning all
 
 <div class="w-full text-center">
     <h1>Agile And Scrum Drift In Development</h1>
-    <h6>(Reading Time: 2 minutes 42 seconds)</h6>
+    <p class="reading-time">Reading time: 2 minutes 42 seconds</p>
 </div>
 
 # Introduction

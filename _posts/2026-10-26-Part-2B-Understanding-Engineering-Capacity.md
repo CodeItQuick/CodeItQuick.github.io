@@ -12,7 +12,7 @@ redirect_from:
 
 <div class="w-full text-center">
     <h1>Part 2B - Understanding Engineering Capacity</h1>
-    <h6>(Reading Time: 3 minutes 16 seconds)</h6>
+    <p class="reading-time">Reading time: 3 minutes 16 seconds</p>
 </div>
 
 # Jira Isn't a Capacity Statement

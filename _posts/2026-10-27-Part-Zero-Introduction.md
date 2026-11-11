@@ -11,7 +11,7 @@ featured: true
 
 <div class="w-full text-center">
     <h1>Part 0 - Introduction, Failings of The Framework</h1>
-    <h6>(Reading Time: 1 minute 5 seconds)</h6>
+    <p class="reading-time">Reading time: 1 minute 5 seconds</p>
 </div>
 
 # The failings of an initial framework.

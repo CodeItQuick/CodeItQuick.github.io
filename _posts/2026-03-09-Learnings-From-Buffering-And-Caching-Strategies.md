@@ -9,7 +9,7 @@ tags: code-quality all
 
 <div class="w-full text-center">
     <h1>Learnings From Buffering And Caching Strategies</h1>
-    <h6>(Reading Time: 2 minutes 48 seconds)</h6>
+    <p class="reading-time">Reading time: 2 minutes 48 seconds</p>
 </div>
 
 # Introduction: Learnings From Buffering And Caching Strategies

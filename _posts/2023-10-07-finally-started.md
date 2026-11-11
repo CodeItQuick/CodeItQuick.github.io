@@ -9,7 +9,7 @@ tags: code-quality all
 
 <div class="w-full text-center">
     <h1>Finally starting a learning journal</h1>
-    <h6>(Reading Time: 3 minutes 13 seconds)</h6>
+    <p class="reading-time">Reading time: 3 minutes 13 seconds</p>
 </div>
 
 I started with a code snippet trying to implement finally using some fetching logic on a react project.

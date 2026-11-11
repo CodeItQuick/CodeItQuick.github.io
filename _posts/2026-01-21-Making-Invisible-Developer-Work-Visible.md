@@ -10,7 +10,7 @@ series: developer-time
 
 <div class="w-full text-center">
     <h1>Part 1 - Making Invisible Developer Work Visible</h1>
-    <h6>(Reading Time: 4 minutes 4 seconds)</h6>
+    <p class="reading-time">Reading time: 4 minutes 4 seconds</p>
 </div>
 
 # Introduction: Engineering Work Beyond Features and Bugs

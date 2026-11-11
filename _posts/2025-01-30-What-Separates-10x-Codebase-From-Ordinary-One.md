@@ -10,7 +10,7 @@ featured: true
 
 <div class="w-full text-center">
     <h1>What Separates a 10x Codebase from an Ordinary One?</h1>
-    <h6>(Reading Time: 2 minutes 18 seconds)</h6>
+    <p class="reading-time">Reading time: 2 minutes 18 seconds</p>
 </div>
 
 <p align="center" width="100%">

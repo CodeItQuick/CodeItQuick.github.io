@@ -12,7 +12,7 @@ redirect_from:
 
 <div class="w-full text-center">
     <h1>Part 5 - Delivering New Engineering Value</h1>
-    <h6>(Reading Time: Approximately 5 minutes)</h6>
+    <p class="reading-time">Reading time: Approximately 5 minutes</p>
 </div>
 
 # Introduction - Bringing Cost and Value Together

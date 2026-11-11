@@ -9,7 +9,7 @@ tags: team-practices all
 
 <div class="w-full text-center">
     <h1>From Chaos to Collaboration - Introducing Pair Programming  </h1>
-    <h6>(Reading Time: 4 minutes 27 seconds)</h6>
+    <p class="reading-time">Reading time: 4 minutes 27 seconds</p>
 </div>
 
 <p align="center" width="100%">

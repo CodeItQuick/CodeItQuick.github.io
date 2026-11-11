@@ -8,7 +8,7 @@ tags: editor all
 ---
 
 # Navigation Shortcuts in your jetbrains 
-<h6>(Reading Time: 5 minutes 25 seconds)</h6>
+<p class="reading-time">Reading time: 5 minutes 25 seconds</p>
 
 # Shortcutting your jetbrains (Windows only)
 

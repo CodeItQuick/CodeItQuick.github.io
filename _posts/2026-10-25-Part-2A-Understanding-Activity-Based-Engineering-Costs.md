@@ -12,7 +12,7 @@ redirect_from:
 
 <div class="w-full text-center">
     <h1>Part 2A - Understanding Activity-Based Engineering Consumption</h1>
-    <h6>(Reading Time: 2 minutes 54 seconds)</h6>
+    <p class="reading-time">Reading time: 2 minutes 54 seconds</p>
 </div>
 
 # From Purpose to Activity

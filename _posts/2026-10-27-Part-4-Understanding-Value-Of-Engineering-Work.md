@@ -12,7 +12,7 @@ redirect_from:
 
 <div class="w-full text-center">
     <h1>Part 4 - Understanding the Value of Engineering Work</h1>
-    <h6>(Reading Time: 4 minutes 53 seconds)</h6>
+    <p class="reading-time">Reading time: 4 minutes 53 seconds</p>
 </div>
 
 # From Cost to Value
