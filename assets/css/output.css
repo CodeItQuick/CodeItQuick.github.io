@@ -1917,6 +1917,9 @@ html {
 .hidden {
   display: none;
 }
+.h-11 {
+  height: 2.75rem;
+}
 .h-8 {
   height: 2rem;
 }
@@ -1934,6 +1937,9 @@ html {
 }
 .min-h-svh {
   min-height: 100svh;
+}
+.w-11 {
+  width: 2.75rem;
 }
 .w-2\/3 {
   width: 66.666667%;
