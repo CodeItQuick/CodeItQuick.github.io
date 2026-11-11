@@ -2,9 +2,9 @@
 layout: recipe
 ---
 
-<html lang="{{ site.lang | default: 'en-US' }}" x-init="mode = 'dark'" x-data="
+<html x-bind:data-theme="getMode()" lang="{{ site.lang | default: 'en-US' }}" x-data="
 {
-    mode: 'light',
+    mode: 'dark',
     darkModeOn() {
         this.mode = 'dark';
         localStorage.setItem('siteTheme', 'dark');
@@ -23,17 +23,21 @@ layout: recipe
 
 {% include header.html %}
 
-<body class="bg-neutral text-neutral-content antialiased font-[body] min-h-svh flex flex-col" x-bind:data-theme="getMode()">
-    {% include navbar.html %}
+<body class="bg-neutral text-neutral-content antialiased font-[body] min-h-svh flex flex-col">
+    <nav>
+        {% include navbar.html %}
+    </nav>
+    <main class="grow">
 
 <div class="w-full bg-base-200 p-8 flex-col lg:p-32 lg:flex lg:flex-wrap markdown">
     {{ content }}
 </div>
 
-</body>
+</main>
 <footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content mt-auto">
     <aside>
         <p>Copyright © 2024 - All right reserved by CodeItQuick</p>
     </aside>
 </footer>
+</body>
 </html>

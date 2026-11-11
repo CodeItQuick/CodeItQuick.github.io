@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}" x-init="mode = 'dark'" x-data="
+<html x-bind:data-theme="getMode()" lang="{{ site.lang | default: 'en-US' }}" x-data="
 {
-    mode: 'light',
+    mode: 'dark',
     darkModeOn() {
         this.mode = 'dark';
         localStorage.setItem('siteTheme', 'dark');
@@ -25,8 +25,7 @@
     image=page.image
 %}
 
-<body class="bg-backgroundPrimary antialiased font-[body] min-h-svh flex flex-col"
-      x-bind:data-theme="getMode()">
+<body class="bg-backgroundPrimary antialiased font-[body] min-h-svh flex flex-col">
 
     <nav class="max-w-3xl mx-auto w-full">
         {% include navbar.html %}
@@ -37,6 +36,7 @@
             <div class="w-full markdown text-wrap p-4">
                 {{ content }}
                 {% if page.series %}{% include series-nav.html %}{% endif %}
+                <p><a href="{{ '/' | relative_url }}" class="inline-block py-3">&larr; All posts</a></p>
             </div>
         </div>
 

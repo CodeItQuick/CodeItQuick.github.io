@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}" class="bg-neutral" x-init="mode = 'dark'" x-data="
+<html x-bind:data-theme="getMode()" lang="{{ site.lang | default: 'en-US' }}" class="bg-neutral" x-data="
 {
-    mode: 'light',
+    mode: 'dark',
     darkModeOn() {
         this.mode = 'dark';
         localStorage.setItem('siteTheme', 'dark');
@@ -19,8 +19,7 @@
 }">
 {% include header.html %}
 
-<body class="bg-backgroundPrimary font-[body] flex flex-col min-h-screen "
-      x-bind:data-theme="getMode()">
+<body class="bg-backgroundPrimary font-[body] flex flex-col min-h-screen ">
 
 <nav class="max-w-3xl mx-auto w-full">
     {% include navbar.html %}

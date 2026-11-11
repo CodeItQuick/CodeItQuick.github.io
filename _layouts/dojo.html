@@ -2,9 +2,9 @@
 layout: dojo
 ---
 
-<html lang="{{ site.lang | default: 'en-US' }}" x-init="mode = 'dark'" x-data="
+<html x-bind:data-theme="getMode()" lang="{{ site.lang | default: 'en-US' }}" x-data="
 {
-    mode: 'light',
+    mode: 'dark',
     darkModeOn() {
         this.mode = 'dark';
         localStorage.setItem('siteTheme', 'dark');
@@ -22,9 +22,11 @@ layout: dojo
 }">
 {% include header.html %}
 
-<body class="bg-neutral text-neutral-content min-w-fit md:max-w-full antialiased font-[body] min-h-svh flex flex-col"
-      x-bind:data-theme="getMode()">
-{% include navbar.html %}
+<body class="bg-neutral text-neutral-content min-w-fit md:max-w-full antialiased font-[body] min-h-svh flex flex-col">
+<nav>
+    {% include navbar.html %}
+</nav>
+<main class="grow">
 
 <div class="bg-neutral w-full">
     <div class="md:max-w-4xl py-8 mx-auto">
@@ -34,11 +36,12 @@ layout: dojo
     </div>
 </div>
 
-</body>
 
+</main>
 <footer class="footer footer-center m-0 p-4 bg-base-300 text-base-content mt-auto">
     <aside>
         <p>Copyright © 2024 - All right reserved by CodeItQuick</p>
     </aside>
 </footer>
+</body>
 </html>
