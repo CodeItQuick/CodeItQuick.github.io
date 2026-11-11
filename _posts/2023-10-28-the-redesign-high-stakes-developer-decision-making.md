@@ -2,7 +2,7 @@
 layout: post
 name: The Redesign - High-Stakes Developer Decision-Making
 description: The decision to refactor, rewrite, or redesign code. 
-image: refactoring_zombie_2.png
+image: redesign-decision-social.png
 time: "5m:02s"
 tags: code-quality all
 ---
@@ -13,7 +13,7 @@ tags: code-quality all
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/designer_zombie.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+    <img src="/assets/images/redesign-decision-options.svg"  alt="Three option cards. Refactor takes 10 minutes. Redesign takes weeks. Rewrite takes years." height="512" width="512" />
 </p>  
 
 # Should We Redesign?
@@ -47,7 +47,7 @@ involve a change in behaviour. Why should we choose redesigning over the other o
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/touchup_zombie.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+    <img src="/assets/images/redesign-decision-refactor-limits.svg"  alt="A small fix in a pull request gets a green check. Debt built up over years gets a red cross." height="512" width="512" />
 </p>  
 
 The adage "You don't ask your manager to compile" applies here. We should write clean code on the first attempt. Before 
@@ -93,7 +93,7 @@ that the new design is better by giving clear reasons why.
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/beauty_building_zombie.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+    <img src="/assets/images/redesign-decision-business-case.svg"  alt="A bar chart shows more features per sprint after the redesign." height="512" width="512" />
 </p>  
 
 Business needs should flow from the reasons for the redesign. We will now be able to push more features. Developers can 

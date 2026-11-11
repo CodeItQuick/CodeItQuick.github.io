@@ -2,7 +2,7 @@
 layout: post
 name: Gilded Rose Refactoring Kata
 description: This refactoring kata can help you to learn about refactoring messy code.
-image: roses_battle_zombies.webp
+image: gilded-rose-social.png
 time: "7m:15s"
 tags: code-quality all
 ---
@@ -13,7 +13,7 @@ tags: code-quality all
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/roses_battle_zombies.webp"  alt="Zombie Lasting Friendship" height="512" width="512" />
+    <img src="/assets/images/gilded-rose-inventory.svg"  alt="Gilded Rose inventory cards with quality bars. Aged Brie and Backstage passes go up, Sulfuras stays at 80, and Conjured drops fast. A badge shows 140 tests and 100% line coverage." height="512" width="512" />
 </p>
 
 # Background

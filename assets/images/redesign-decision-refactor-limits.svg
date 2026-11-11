@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" font-family="Inter, Roboto, Arial, sans-serif">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#CFD8DC" stroke-width="1"/>
+    </pattern>
+    <filter id="e4" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#263238" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="#ECEFF1"/>
+  <rect width="512" height="512" fill="url(#grid)"/>
+
+  <rect x="40" y="56" width="432" height="400" rx="20" fill="#FFFFFF" filter="url(#e4)"/>
+  <text x="72" y="104" font-size="24" font-weight="700" fill="#263238">Where refactoring fits</text>
+  <text x="72" y="128" font-size="14" fill="#78909C">Small fixes work. Large debt does not.</text>
+
+  <!-- Pull request: works -->
+  <rect x="72" y="152" width="368" height="120" rx="14" fill="#E8F5E9"/>
+  <text x="92" y="180" font-size="15" font-weight="700" fill="#263238">Inside a pull request</text>
+  <g font-family="Consolas, monospace" font-size="12">
+    <rect x="92" y="192" width="200" height="20" rx="4" fill="#FFEBEE"/>
+    <text x="100" y="206" fill="#C62828">- calcTotal() duplicate</text>
+    <rect x="92" y="216" width="200" height="20" rx="4" fill="#C8E6C9"/>
+    <text x="100" y="230" fill="#2E7D32">+ reuse sumItems()</text>
+  </g>
+  <text x="92" y="258" font-size="13" fill="#546E7A">Fixed in 5-10 minutes</text>
+  <circle cx="392" cy="212" r="26" fill="#43A047"/>
+  <path d="M380 212l8 8 16 -16" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Accumulated debt: does not work -->
+  <rect x="72" y="288" width="368" height="140" rx="14" fill="#FFEBEE"/>
+  <text x="92" y="316" font-size="15" font-weight="700" fill="#263238">Debt built up over years</text>
+  <g fill="#E53935">
+    <rect x="92" y="372" width="34" height="30" rx="4" opacity="0.45"/>
+    <rect x="132" y="356" width="34" height="46" rx="4" opacity="0.6"/>
+    <rect x="172" y="340" width="34" height="62" rx="4" opacity="0.75"/>
+    <rect x="212" y="328" width="34" height="74" rx="4" opacity="0.9"/>
+  </g>
+  <text x="92" y="420" font-size="13" fill="#546E7A">Months of structural change</text>
+  <circle cx="392" cy="358" r="26" fill="#E53935"/>
+  <path d="M382 348l20 20M402 348l-20 20" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+</svg>

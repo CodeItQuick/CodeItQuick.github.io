@@ -2,7 +2,7 @@
 layout: post
 name: What Separates a 10x Codebase from an Ordinary One?
 description: 10x Developers are a Myth. Unlike 10x Codebases.
-image: robot_zombie_big_idea.png
+image: 10x-codebase-social.png
 time: "2m:18s"
 tags: code-quality all
 featured: true
@@ -14,7 +14,7 @@ featured: true
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/mythic-zombie-and-graveyard.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+    <img src="/assets/images/10x-codebase-two-desks.svg"  alt="Two developers at identical desks. One codebase moves code cards smoothly to a shipped check mark. The other traps them in tangled wires." height="512" width="512" />
 </p>  
 
 Attributing the speed of a developer to that developer alone is a myth. Put a very fast developer into a slow codebase, 
@@ -33,7 +33,7 @@ to get features out. Continuous Delivery is another major factor to the speed a 
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/prestine-technically-advanced-graveyard.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+    <img src="/assets/images/10x-codebase-core-traits.svg"  alt="Four cards for the core traits of a 10x codebase: Readable, Simple, Tested, and Delivered." height="512" width="512" />
 </p>  
 
 ## Readability & Simplicity: The Foundation of a Scalable Codebase

@@ -2,7 +2,7 @@
 layout: post
 name: Code Smells Nature vs Nurture
 description:  What causes your worst code?
-image: spartan_zombie.webp
+image: code-smells-social.png
 time: "2m:24s"
 tags: code-quality all
 ---
@@ -24,7 +24,7 @@ does this code come into existence?
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/naturistic_graveyard.webp"  alt="Naturistic Zombie Graveyard" height="512" width="512" />
+    <img src="/assets/images/code-smells-habits.svg"  alt="A Good habits tracker for Monday to Friday. Compile and Lint are checked every day. Test is missed once. A badge shows a 14-day streak." height="512" width="512" />
 </p>  
 
 ## "I'm a bad developer with good habits" - Kent Beck
@@ -57,7 +57,7 @@ question is as important as the answer.
 # The Nurture Argument
 
 <p align="center" width="100%">
-    <img src="/assets/images/nurture_graveyard_zombie.webp"  alt="Nurture Zombie" height="512" width="512" />
+    <img src="/assets/images/code-smells-pressure.svg"  alt="A 2,400-line OrderManager.java file with long red lines that spill past its edges. Around it are tight deadlines, working alone, and shifting requirements." height="512" width="512" />
 </p>  
 
 ## Tight Deadlines and Time Pressures
@@ -80,7 +80,7 @@ in-person teams. It can exist in diverse or not-diverse teams.
 # Why it matters?
 
 <p align="center" width="100%">
-    <img src="/assets/images/nature_nurture_graveyard_zombie.webp"  alt="Nature And Nurture Zombie" height="512" width="512" />
+    <img src="/assets/images/code-smells-ownership.svg"  alt="A balance scale. The Nature pan with Habits sits lower than the Nurture pan with Environment. The caption says Own your habits." height="512" width="512" />
 </p>  
 
 In the past coders gave all the credit to the nurture argument. This is blame-shifting onto other people. Developers 

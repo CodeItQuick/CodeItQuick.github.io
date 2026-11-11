@@ -2,7 +2,7 @@
 layout: post
 name: Beyond Time Estimation
 description: A guide of real outputs from time estimation  
-image: story_splitting_zombies.png
+image: time-estimation-social.png
 time: "3m:37s"
 tags: agile-planning all
 ---
@@ -22,7 +22,7 @@ are we getting out of time estimation in development?
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/zombie_chasm_estimation.webp"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+    <img src="/assets/images/time-estimation-gap.svg"  alt="A timeline shows a promise bar that ends at week four and a delivery bar that ends at week seven. A red bracket marks the three-week gap after the deadline." height="512" width="512" />
 </p>  
 
 ## How long is a task?
@@ -38,7 +38,7 @@ between business and development. What are some ways we can remove this difficul
 # 3. Problems With Task Estimation
 
 <p align="center" width="100%">
-    <img src="/assets/images/zombie_engineer_solving_complex.webp"  alt="Zombie Engineer Solving Problem" height="512" width="512" />  
+    <img src="/assets/images/time-estimation-risk-factors.svg"  alt="A risk meter rates five factors. These are outside control, dependent stories, novel complexity, shifting scope, and collaboration." height="512" width="512" />  
 </p>
 
 ## Beyond Our Control
@@ -72,7 +72,7 @@ the project. It's common for projects to need high coordination. There is no rep
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/zombie_gold_riches.webp"  alt="Zombie Gold Riches" height="512" width="512" />
+    <img src="/assets/images/time-estimation-benefits.svg"  alt="Three cards list the benefits of estimation. These are shared understanding, early risk signals, and trust through scope." height="512" width="512" />
 </p>
 
 ## Encourages Team Collaboration and Shared Understanding
@@ -93,7 +93,7 @@ times as well. The cause is not believing the engineers' honest estimates.
 # 5. Conclusion
 
 <p align="center" width="100%">
-    <img src="/assets/images/zombies_lasting_friendship.webp"  alt="Zombie Lasting Friendship" height="512" width="512" />
+    <img src="/assets/images/time-estimation-partnership.svg"  alt="Two overlapping circles show business goals and developer effort. The overlap is a shared plan." height="512" width="512" />
 </p>
 As a previous business analyst, I find the most value in discussions about metrics. Time estimates result in similar 
 discussions. The answer is to learn with the business how to develop the feature. So use task tracking as an aide for 

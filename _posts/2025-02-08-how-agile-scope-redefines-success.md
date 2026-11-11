@@ -2,7 +2,7 @@
 layout: post
 name: How Agile Scope Redefines Success
 description:  Embrace scope creep in your agile projects
-image: sizing_project_zombie.webp
+image: agile-scope-social.png
 time: "2m:41s"
 tags: agile-planning all
 ---
@@ -13,7 +13,7 @@ tags: agile-planning all
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/designer_zombie_2.webp"  alt="Designer Zombie 2" height="512" width="512" />
+    <img src="/assets/images/agile-scope-bridge-ferry.svg"  alt="A dashed blueprint of a planned bridge over a river. Under it, a ferry crosses the river. Labels say Planned: bridge and Shipped: ferry." height="512" width="512" />
 </p>  
 
 # Introduction
@@ -30,7 +30,7 @@ bridge, but instead built a ferry.
 # Understanding the Agile MVP
 
 <p align="center" width="100%">
-    <img src="/assets/images/designer_zombies_many.webp"  alt="Many Designer Zombie" height="512" width="512" />
+    <img src="/assets/images/agile-scope-mvp.svg"  alt="One raised MVP card for the core behaviour, Calculate revenue. Faded, struck-through cards around it show features left out: dark mode, PDF export, social login, custom themes, and animations." height="512" width="512" />
 </p>  
 
 The minimum viable product definition used in this article is the following.  The smallest behaviour necessary to solve 
@@ -61,7 +61,7 @@ bridges for hundreds of years. There are not a lot of innovations in the discove
 ## Strategies for Agile Scope Management
 
 <p align="center" width="100%">
-    <img src="/assets/images/designer_zombies_many_2.webp"  alt="Many Designer Zombie 2" height="512" width="512" />
+    <img src="/assets/images/agile-scope-feedback-loop.svg"  alt="A loop of Plan, Build, Demo, and Learn around a backlog card sorted into Must, Should, Could, and Won't." height="512" width="512" />
 </p>  
 
 Agile scope management requires clear, actionable goals within each sprint. Create stories that fit roughly within 1-2 

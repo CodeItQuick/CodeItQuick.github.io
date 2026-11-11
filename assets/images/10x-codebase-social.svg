@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter, Roboto, Arial, sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#CFD8DC" stroke-width="1"/>
+    </pattern>
+    <filter id="e8" x="-10%" y="-10%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#263238" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <!-- Source for 10x-codebase-social.png; re-render at 1200x630 after edits -->
+  <rect width="1200" height="630" fill="#ECEFF1"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="150" y="115" width="900" height="400" rx="28" fill="#FFFFFF" filter="url(#e8)"/>
+  <clipPath id="card"><rect x="150" y="115" width="900" height="400" rx="28"/></clipPath>
+  <rect x="150" y="115" width="14" height="400" fill="#3F51B5" clip-path="url(#card)"/>
+  <text x="220" y="250" font-size="92" font-weight="800" fill="#263238">10x Codebase</text>
+  <text x="222" y="320" font-size="34" fill="#546E7A">Not 10x developers. 10x codebases.</text>
+  <g font-size="24" font-weight="700">
+    <rect x="222" y="372" width="148" height="48" rx="24" fill="#E8EAF6"/>
+    <text x="296" y="404" text-anchor="middle" fill="#3F51B5">Readable</text>
+    <rect x="386" y="372" width="124" height="48" rx="24" fill="#E0F2F1"/>
+    <text x="448" y="404" text-anchor="middle" fill="#00796B">Simple</text>
+    <rect x="526" y="372" width="124" height="48" rx="24" fill="#E8F5E9"/>
+    <text x="588" y="404" text-anchor="middle" fill="#2E7D32">Tested</text>
+    <rect x="666" y="372" width="152" height="48" rx="24" fill="#3F51B5"/>
+    <text x="742" y="404" text-anchor="middle" fill="#FFFFFF">Delivered</text>
+  </g>
+  <text x="980" y="482" text-anchor="end" font-size="22" font-weight="600" fill="#90A4AE">CodeItQuick</text>
+</svg>

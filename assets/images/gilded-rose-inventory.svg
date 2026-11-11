@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" font-family="Inter, Roboto, Arial, sans-serif">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#CFD8DC" stroke-width="1"/>
+    </pattern>
+    <filter id="e2" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#263238" flood-opacity="0.22"/>
+    </filter>
+    <!-- Item card: name, note, quality bar, trend chip -->
+    <rect id="card" width="200" height="150" rx="14" fill="#FFFFFF"/>
+    <rect id="track" x="20" y="96" width="160" height="10" rx="5" fill="#ECEFF1"/>
+  </defs>
+  <rect width="512" height="512" fill="#ECEFF1"/>
+  <rect width="512" height="512" fill="url(#grid)"/>
+
+  <text x="36" y="66" font-size="20" font-weight="700" fill="#263238">Gilded Rose inventory</text>
+  <rect x="306" y="44" width="170" height="30" rx="15" fill="#263238"/>
+  <text x="391" y="64" text-anchor="middle" font-size="13" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#80CBC4">UpdateQuality()</text>
+
+  <g filter="url(#e2)">
+    <use href="#card" x="36" y="96"/><use href="#card" x="276" y="96"/>
+    <use href="#card" x="36" y="266"/><use href="#card" x="276" y="266"/>
+  </g>
+
+  <!-- Aged Brie -->
+  <g transform="translate(36 96)">
+    <text x="20" y="36" font-size="17" font-weight="700" fill="#263238">Aged Brie</text>
+    <text x="20" y="58" font-size="12" fill="#78909C">Gets better with age</text>
+    <use href="#track"/><rect x="20" y="96" width="102" height="10" rx="5" fill="#FFB300"/>
+    <text x="20" y="130" font-size="13" fill="#546E7A">Quality 32</text>
+    <rect x="144" y="18" width="40" height="24" rx="12" fill="#E8F5E9"/>
+    <path d="M164 36V24M158 30l6 -6 6 6" fill="none" stroke="#43A047" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Sulfuras -->
+  <g transform="translate(276 96)">
+    <text x="20" y="36" font-size="17" font-weight="700" fill="#263238">Sulfuras</text>
+    <text x="20" y="58" font-size="12" fill="#78909C">Legendary. Never changes.</text>
+    <use href="#track"/><rect x="20" y="96" width="160" height="10" rx="5" fill="#7E57C2"/>
+    <text x="20" y="130" font-size="13" fill="#546E7A">Quality 80</text>
+    <rect x="144" y="18" width="40" height="24" rx="12" fill="#EDE7F6"/>
+    <path d="M157 27h14M157 33h14" stroke="#7E57C2" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Backstage passes -->
+  <g transform="translate(36 266)">
+    <text x="20" y="36" font-size="17" font-weight="700" fill="#263238">Backstage</text>
+    <text x="20" y="58" font-size="12" fill="#78909C">Passes rise until the concert</text>
+    <use href="#track"/><rect x="20" y="96" width="144" height="10" rx="5" fill="#009688"/>
+    <text x="20" y="130" font-size="13" fill="#546E7A">Quality 45</text>
+    <rect x="144" y="18" width="40" height="24" rx="12" fill="#E8F5E9"/>
+    <path d="M158 36V24M153 29l5 -5 5 5M170 36V24M165 29l5 -5 5 5" fill="none" stroke="#43A047" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Conjured -->
+  <g transform="translate(276 266)">
+    <text x="20" y="36" font-size="17" font-weight="700" fill="#263238">Conjured</text>
+    <text x="20" y="58" font-size="12" fill="#78909C">Degrades twice as fast</text>
+    <use href="#track"/><rect x="20" y="96" width="38" height="10" rx="5" fill="#E53935"/>
+    <text x="20" y="130" font-size="13" fill="#546E7A">Quality 12</text>
+    <rect x="144" y="18" width="40" height="24" rx="12" fill="#FFEBEE"/>
+    <path d="M158 24V36M153 31l5 5 5 -5M170 24V36M165 31l5 5 5 -5" fill="none" stroke="#E53935" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <rect x="36" y="440" width="440" height="44" rx="22" fill="#43A047" filter="url(#e2)"/>
+  <path d="M120 462l6 6 12 -12" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="270" y="468" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">140 tests · 100% line coverage</text>
+</svg>

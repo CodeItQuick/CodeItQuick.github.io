@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" font-family="Inter, Roboto, Arial, sans-serif">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#CFD8DC" stroke-width="1"/>
+    </pattern>
+    <filter id="e4" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#263238" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="#ECEFF1"/>
+  <rect width="512" height="512" fill="url(#grid)"/>
+
+  <rect x="56" y="76" width="400" height="360" rx="20" fill="#FFFFFF" filter="url(#e4)"/>
+  <text x="88" y="124" font-size="24" font-weight="700" fill="#263238">Faster on-boarding</text>
+  <text x="88" y="148" font-size="14" fill="#78909C">New developers ship workable code sooner</text>
+
+  <text x="88" y="194" font-size="14" font-weight="700" fill="#546E7A">Solo on-boarding</text>
+  <rect x="88" y="206" width="336" height="32" rx="8" fill="#CFD8DC"/>
+  <text x="412" y="227" text-anchor="end" font-size="14" font-weight="700" fill="#546E7A">Months</text>
+
+  <text x="88" y="276" font-size="14" font-weight="700" fill="#546E7A">Paired on-boarding</text>
+  <rect x="88" y="288" width="112" height="32" rx="8" fill="#009688"/>
+  <text x="188" y="309" text-anchor="end" font-size="14" font-weight="700" fill="#FFFFFF">Weeks</text>
+  <path d="M212 304h40" stroke="#43A047" stroke-width="3" stroke-linecap="round"/>
+  <path d="M248 298l8 6 -8 6" fill="none" stroke="#43A047" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="266" y="309" font-size="13" font-weight="700" fill="#43A047">Less risk</text>
+
+  <g font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="88" y="372" width="72" height="32" rx="16" fill="#E8F5E9"/><text x="124" y="393" fill="#43A047">Trust</text>
+    <rect x="172" y="372" width="104" height="32" rx="16" fill="#E8EAF6"/><text x="224" y="393" fill="#3F51B5">Capability</text>
+    <rect x="288" y="372" width="112" height="32" rx="16" fill="#FFC107"/><text x="344" y="393" fill="#263238">Team unity</text>
+  </g>
+</svg>

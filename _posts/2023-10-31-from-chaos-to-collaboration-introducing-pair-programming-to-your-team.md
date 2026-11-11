@@ -2,7 +2,7 @@
 layout: post
 name: From Chaos to Collaboration - Pair Programming
 description: Adopt pair programming to reduce development chaos  
-image: what_pairing_zombie.png
+image: pair-programming-social.png
 time: "4m:27s"
 tags: team-practices all
 ---
@@ -13,7 +13,7 @@ tags: team-practices all
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/zombie_shoulder_surfing.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+    <img src="/assets/images/pair-programming-feedback.svg"  alt="A solo developer gets feedback only on a late pull request, and the team scraps it. A pair gets continual feedback, and the final check finds few issues." height="512" width="512" />
 </p>  
 
 # Introducing Solo Development Chaos
@@ -33,7 +33,7 @@ is ideal for opening up new ways of working, and is the place we all want to wor
 </div>
 
 <p align="center" width="100%">
-    <img src="/assets/images/engineer_zombie.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+    <img src="/assets/images/pair-programming-roles.svg"  alt="A navigator gives directions and a driver types the code at one laptop. They swap roles every 15 minutes with git commit, push, and pull." height="512" width="512" />
 </p>  
 
 There are two roles while pairing: a navigator and a driver. The analogy follows from driving a car. The driver operates 
@@ -67,7 +67,7 @@ directions would be “Type the following: git commit -m ‘first commit’”. 
 # Stories of Big Wins
 
 <p align="center" width="100%">
-    <img src="/assets/images/reflection_zombie.png"  alt="Zombie Leaping Over Chasm" height="512" width="512" />
+    <img src="/assets/images/pair-programming-onboarding.svg"  alt="Solo on-boarding takes months. Paired on-boarding takes weeks and builds trust, capability, and team unity." height="512" width="512" />
 </p>  
 
 When starting at my current organization, developers worked in silos. The first two weeks we attempted to work in ensemble 
