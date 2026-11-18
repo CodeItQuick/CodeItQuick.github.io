@@ -1,34 +1,29 @@
 ﻿---
 layout: post
-name: Part 4 - Understanding the Value of Engineering Work
+name: Part 2 - Understanding the Value of Engineering Work
 description: Understanding engineering work
 image: iceberg_buckets.jpg
 time: "4m:53s"
 tags: developer-time all
 series: developer-time
 redirect_from:
+  - /2026/10/27/Part-4-Understanding-Value-Of-Engineering-Work.html
   - /2026/10/26/Part-3-Understanding-Value-Of-Engineering-Work.html
 ---
 
 <div class="w-full text-center">
-    <h1>Part 4 - Understanding the Value of Engineering Work</h1>
+    <h1>Part 2 - Understanding the Value of Engineering Work</h1>
     <p class="reading-time">Reading time: 4 minutes 53 seconds</p>
 </div>
 
-# From Cost to Value
+# From Purpose to Value
 
 In [Part 1, Making Invisible Developer Work Visible](https://codeitquick.github.io/2026/01/21/Making-Invisible-Developer-Work-Visible.html), 
 we introduced five different purposes of engineering work: Build, Fix, Improve, Run, and Evolve.
 
-In [Part 2A, Understanding Activity-Based Engineering Costs](https://codeitquick.github.io/2026/10/25/Part-2A-Understanding-Activity-Based-Engineering-Costs.html), 
-we examined how engineering consumption can be attributed to different activities and systems. In [Part 2B, Understanding Engineering Capacity](https://codeitquick.github.io/2026/10/26/Part-2B-Understanding-Engineering-Capacity.html), 
-we examined where engineering capacity goes. In [Part 3, The Four Ways to Reclaim Developer Time](https://codeitquick.github.io/2026/10/26/Part-3-The-Four-Ways-To-Reclaim-Developer-Time.html), 
-we looked at how to give back the hours spent on work that isn't worth them.
-
-We now have a way to describe the work, identify the activities involved, and estimate what they cost. But we haven't 
-answered an important question: what value does that work actually produce? Consider the database migration from Part 2A. 
-We know how much engineering time was spent performing the migration, and we know which systems benefit from it. That doesn't 
-tell us why the migration was worth doing in the first place.
+We now have a way to describe the work. But we haven't answered an important question: what value does that work actually 
+produce? Consider a database migration. We can say that it's Evolve work, and we can see which systems benefit from it. 
+That doesn't tell us why the migration was worth doing in the first place.
 
 Maybe the existing database was approaching the end of support. Maybe the migration would improve performance. Maybe it 
 would allow the organization to introduce new capabilities that weren't previously possible. Each of these represents a 
@@ -101,7 +96,7 @@ is important because the same purpose of work can produce different kinds of val
 
 These examples aren't fixed relationships. They demonstrate that **the purpose of the work doesn't determine the type of value it produces**.
 
-Consider the database migration from Part 2. The migration belongs primarily in Evolve because we're adapting an existing 
+Consider the database migration again. The migration belongs primarily in Evolve because we're adapting an existing 
 system to changing constraints. But the benefits depend on why we're performing it. If the migration replaces an unsupported 
 database, it may provide technical value by reducing maintenance and compatibility risks. If the old database is causing 
 immediate operational problems, the same migration may also provide tactical value. If the new database supports an expansion 
@@ -142,11 +137,8 @@ different dimensions of the value that work may produce.
 A single piece of work can produce multiple forms of value, and those benefits aren't necessarily obvious from the Jira 
 ticket or the engineering activities involved.
 
-We've now examined what engineering teams do, how much capacity their activities consume, what those activities cost, and 
-what value they are expected to produce.
+We've now examined what engineering teams do and what value that work is expected to produce. But engineering capacity 
+is limited, so every hour we spend on one activity is an hour we can't spend on another.
 
-In Part 3, we reclaimed hours from work that wasn't worth them. But engineering capacity is limited, so every hour we 
-spend on one activity is an hour we can't spend on another.
-
-In [Part 5 - Delivering New Engineering Value](/2026/10/29/Part-5-Delivering-New-Engineering-Value.html), 
-we'll bring cost and value together, and look at how to turn that capacity into delivered outcomes.
+In [Part 3A - Understanding Activity-Based Engineering Consumption](/2026/10/25/Part-3A-Understanding-Activity-Based-Engineering-Costs.html), 
+we'll look at the cost side: how engineering activities consume that capacity, and who the work is for.

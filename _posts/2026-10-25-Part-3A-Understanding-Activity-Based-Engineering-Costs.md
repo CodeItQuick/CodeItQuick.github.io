@@ -1,17 +1,18 @@
 ---
 layout: post
-name: Part 2A - Understanding Activity-Based Engineering Consumption
+name: Part 3A - Understanding Activity-Based Engineering Consumption
 description: Understanding how engineering activities consume capacity and what creates demand for them.
 image: iceberg_buckets.jpg
 time: "2m:54s"
 tags: developer-time all
 series: developer-time
 redirect_from:
+  - /2026/10/25/Part-2A-Understanding-Activity-Based-Engineering-Costs.html
   - /2026/10/26/Part-2B-Understanding-Activity-Based-Engineering-Costs.html
 ---
 
 <div class="w-full text-center">
-    <h1>Part 2A - Understanding Activity-Based Engineering Consumption</h1>
+    <h1>Part 3A - Understanding Activity-Based Engineering Consumption</h1>
     <p class="reading-time">Reading time: 2 minutes 54 seconds</p>
 </div>
 
@@ -28,7 +29,7 @@ usually aren't. Neither is the fact that a database migration for the engineerin
 of the customer portal and the invoice calculation.
 
 In this article, we'll take the second sprint and ask who the work was for. We'll come back to where the time went 
-in [Part 2B](/2026/10/26/Part-2B-Understanding-Engineering-Capacity.html). Some of it traces cleanly to a single feature 
+in [Part 3B](/2026/10/26/Part-3B-Understanding-Engineering-Capacity.html). Some of it traces cleanly to a single feature 
 or service. Some of it is shared, and some of it never made it onto the board at all.
 
 # Direct Consumption
@@ -83,5 +84,5 @@ hours become indirect consumption, split thirty-two and thirty-two. The work did
 We can only count those hours once, so the tables above use the second view. And that even split is a choice we made, 
 not something we discovered about how the work was done.
 
-We now have a way to see what consumes engineering effort, and who that effort is for. In [Part 2B - Understanding Engineering Capacity](/2026/10/26/Part-2B-Understanding-Engineering-Capacity.html), 
+We now have a way to see what consumes engineering effort, and who that effort is for. In [Part 3B - Understanding Engineering Capacity](/2026/10/26/Part-3B-Understanding-Engineering-Capacity.html), 
 we'll step back and look at where the team's capacity went across both sprints.
