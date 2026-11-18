@@ -30,115 +30,41 @@ would allow the organization to introduce new capabilities that weren't previous
 different reason for performing the same work. To understand engineering value, we need to look beyond what work is being 
 performed and examine what the organization expects to gain from it.
 
-# Three Dimensions of Engineering Value
+# The Dimensions of Engineering Value
 
-I want to introduce three dimensions for describing the value of engineering work: Technical, Tactical, and Strategic. These 
-aren't mutually exclusive categories. A single piece of engineering work can provide value in more than one dimension.
+In the first section we classified the work type - Build, Fix, Improve, Run, Evolve. You can think of this as the supply-side
+of the equation. From an engineering perspective, what types of work are we able to do? What about the demand-side of the equation?
+Value-Based Software Engineering is a research program started by Barry Boehm in 2003. It has a few things to say about the demand side.
+Well based on this research program, I broadly fit these into Value Perspective which is who is the stakeholder the work 
+is for - Customers, Finance, Sales, Product Owner, etc. Then the value mechanism - protect existing sales, increase revenue/introduce 
+new sales, reduce costs, or create more product options (think of this as product strategy). Finally, the expected benefit 
+to the organization is the underlying **demand** for the work. The whole reason we are performing the action, and the more 
+often we choose actions that benefit the organization as a whole, the more likely we are to succeed. Below are some examples 
+of this model:
 
-| Value | Primary Question | Examples |
-|---|---|---|
-| Technical | How does this improve our engineering capabilities? | Maintainability, reliability, performance, developer productivity |
-| Tactical | How does this address an immediate business or operational need? | Defect resolution, customer requests, operational problems |
-| Strategic | How does this support longer-term organizational objectives? | New markets, future capabilities, scalability, reducing long-term risk |
+**Work Type x Value Perspective x Value Mechanism = Expected Benefit**
+
+| Work                                                             | Work Type   | Value Perspective | Value Mechanism        | Expected Benefit                                                    |
+|------------------------------------------------------------------|-------------|-------------------|------------------------|---------------------------------------------------------------------|
+| Add a self-serve plan upgrade                                    | **Build**   | Customer          | Increase revenue       | Customers buy a higher plan without a sales call                    |
+| Delete personal data at the legal limit                          | **Fix**     | Regulator         | Protect existing value | We pass the privacy audit and avoid a fine                          |
+| Parallelize the test suite                                       | **Improve** | Engineering       | Reduce cost            | The suite runs in 5 minutes, not 40, so a change ships the same day |
+| Renew the shipping carrier's API certificates before they expire | **Run**     | Partner           | Protect existing value | Orders keep reaching the carrier, so the carrier keeps our volume |
+| Put the email sender behind a standard provider interface        | **Evolve**  | Business          | Create options         | The business can switch email vendors when prices change            |
 {: .table .table-zebra}
 
-## Technical Value
+# Relating Value to a Practical Example
 
-Technical value comes from improving the systems, tools, and capabilities that engineering relies on.
+I am going to introduce a practical example at this point. Three developers, one working on a new button on the customer portal,
+a second working on a fix to the invoices, and a third performing DevOps work to upgrade the database. Fitting what these three
+developers are doing into our value framework or "why are we working on this?" we get the following:
 
-Consider improving an automated test suite. The immediate result might not be a new customer-facing feature. Instead, the 
-improvement makes it easier to detect regressions, reduces manual testing, or allows developers to make changes with greater 
-confidence. Technical value is not necessarily visible to the customer, but that doesn't make it less important. However, 
-simply changing technology doesn't guarantee technical value. Rewriting a functioning service in a different language might 
-improve maintainability, or it might introduce complexity without solving a meaningful problem.
-
-The value comes from the improvement produced, not the technical activity itself.
-
-## Tactical Value
-
-Tactical value addresses an immediate business or operational need.
-
-Fixing a production defect, implementing a customer-requested enhancement, or resolving an operational problem may all 
-provide tactical value. Consider a production defect preventing customers from completing a purchase. Fixing the defect 
-restores an existing business capability and addresses an immediate problem. But tactical value isn't limited to work 
-customers can see. A developer investigating logs to answer a product manager's question may provide information required 
-to resolve an operational issue or make an immediate decision.
-
-That activity might never become an independent Jira ticket, but it can still provide tactical value.
-
-## Strategic Value
-
-Strategic value contributes to longer-term organizational objectives or future capabilities.
-
-Consider an organization planning to expand into a new market. Supporting that market might require changes to its 
-architecture, new integrations, or additional infrastructure. The strategic value comes from enabling the organization's 
-longer-term objective, rather than simply completing the technical work. Strategic value can also come from preserving 
-future options. A migration might prevent the organization from becoming dependent on unsupported technology, reducing a 
-constraint on future development.
-
-However, not every long-term technical improvement is automatically strategic. The connection to an organizational 
-objective still needs to be established.
-
-# Relating Value to the Five Types of Engineering Work
-
-In Part 1, we introduced Build, Fix, Improve, Run, and Evolve as five purposes of engineering work. These categories describe 
-what we are trying to accomplish. The three value dimensions describe why accomplishing that work matters. The distinction 
-is important because the same purpose of work can produce different kinds of value.
-
-| Engineering Work | Technical Value | Tactical Value | Strategic Value |
-|---|---|---|---|
-| Build | Introduce a reusable capability | Deliver a requested feature | Enable a new product or market |
-| Fix | Eliminate an underlying technical weakness | Restore broken functionality | Protect a critical business capability |
-| Improve | Reduce complexity or improve reliability | Remove an immediate performance bottleneck | Support expected growth |
-| Run | Maintain system health and operational reliability | Restore or sustain business operations | Preserve continuity of a strategically important service |
-| Evolve | Modernize technology and dependencies | Meet an upcoming compliance deadline | Enable future capabilities or reduce long-term constraints |
+| Developer   | Work                                    | Work Type   | Value Perspective | Value Mechanism        | Expected Benefit                                                                  |
+|-------------|-----------------------------------------|-------------|-------------------|------------------------|-----------------------------------------------------------------------------------|
+| Developer 1 | Add a button to the customer portal     | **Build**   | Customer          | Increase revenue       | Customers order through the portal without a sales call, so more orders come in   |
+| Developer 2 | Fix the invoice calculation bug         | **Fix**     | Business          | Protect existing value | Invoices bill the correct amount, so we stop losing revenue to billing errors     |
+| Developer 3 | Migrate the database to a new format    | **Evolve**  | Business          | Protect existing value | The portal and invoicing move off a database near end of support before it fails  |
 {: .table .table-zebra}
 
-These examples aren't fixed relationships. They demonstrate that **the purpose of the work doesn't determine the type of value it produces**.
-
-Consider the database migration again. The migration belongs primarily in Evolve because we're adapting an existing 
-system to changing constraints. But the benefits depend on why we're performing it. If the migration replaces an unsupported 
-database, it may provide technical value by reducing maintenance and compatibility risks. If the old database is causing 
-immediate operational problems, the same migration may also provide tactical value. If the new database supports an expansion 
-into another market, it may provide strategic value.
-
-We haven't changed the type of engineering work. We've identified several reasons why performing that work could matter. 
-This is also why technical work shouldn't automatically be classified as delivering only technical value, or product work 
-as delivering only tactical or strategic value.
-
-A technical improvement can support a business objective. A feature can improve the underlying engineering system. The 
-categories are independent, even when they influence one another.
-
-# Expected Value Versus Delivered Value
-
-There's one more distinction we need to make. **The value we expect from engineering work is not necessarily the value we 
-receive.** Suppose a team spends twenty hours improving the performance of a service because they believe it will reduce 
-customer wait times. The work might be completed successfully, the tests might pass, and the improvement might be deployed. 
-But if the service wasn't responsible for the customers' performance problems, the expected business benefit may never 
-materialize.
-
-The team completed the engineering work. That doesn't mean it delivered the expected value. The opposite can also happen. 
-An experiment might fail to produce the desired product improvement but reveal an important constraint or invalidate an 
-assumption. That information can still be useful, even though the original expected outcome wasn't achieved.
-
-This distinction applies to all three value dimensions. Technical value might be expected to reduce maintenance effort. 
-Tactical value might be expected to resolve an operational problem. Strategic value might be expected to enable a future 
-business opportunity. In each case, the classification describes the benefit we're trying to achieve. It doesn't establish 
-that the benefit occurred.
-
-Not every benefit can be measured precisely, and not every useful activity needs its own financial return. But we should 
-be able to explain why we expect the work to matter and, where practical, examine whether it achieved that purpose.
-
-# Conclusion - Understanding Engineering Value
-
-Build, Fix, Improve, Run, and Evolve describe the purposes of engineering work. Technical, Tactical, and Strategic describe 
-different dimensions of the value that work may produce.
-
-A single piece of work can produce multiple forms of value, and those benefits aren't necessarily obvious from the Jira 
-ticket or the engineering activities involved.
-
-We've now examined what engineering teams do and what value that work is expected to produce. But engineering capacity 
-is limited, so every hour we spend on one activity is an hour we can't spend on another.
-
-In [Part 3A - Understanding Activity-Based Engineering Consumption](/2026/10/25/Part-3A-Understanding-Activity-Based-Engineering-Costs.html), 
-we'll look at the cost side: how engineering activities consume that capacity, and who the work is for.
+So although it may be unclear "Why these projects" exist to the developer's working on them, we can now start to formulate
+a plan on how to position the company better in accordance with the market.
