@@ -23,7 +23,7 @@ five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. In this
 through two sprints. Their sprint tables account for 424 of their 480 hours, and show which purposes and activities 
 consumed that time, and which parts of the system it supported.
 
-But those sprint tables only show the work somebody thought to write down. Releasing a button and checking that it works 
+But those sprint tables only show the work somebody thought to write down. Releasing an invite button and checking that it works 
 are easy to record. The pull request review before the release, the daily scrum, and the steady stream of coordination activities 
 usually aren't. Neither is the fact that a database migration for the engineering platform is really being done on behalf 
 of the customer portal and the invoice calculation.
@@ -36,8 +36,8 @@ or service. Some of it is shared, and some of it never made it onto the board at
 
 | Person      | Task                         | Activity Pool | Consumption Object   | Activity Driver (Hours) | Classification       |
 |-------------|------------------------------|---------------|----------------------|-------------------------|----------------------|
-| Developer 1 | Release button to production | Build         | Customer Portal      | 6                       | Direct Consumption   |
-| Developer 1 | Ensure button works          | Build         | Customer Portal      | 47                      | Direct Consumption   | 
+| Developer 1 | Release invite button        | Build         | Customer Portal      | 6                       | Direct Consumption   |
+| Developer 1 | Ensure invite button works   | Build         | Customer Portal      | 47                      | Direct Consumption   | 
 | Developer 1 | PR Review                    | Fix           | Invoice Calculation  | 7                       | Indirect Consumption |
 | Developer 1 | Coordination                 | Build         | Engineering Platform | 20                      | Overhead Consumption |
 {: .table .table-zebra}
@@ -69,8 +69,8 @@ developer work from the first section.
 {: .table .table-zebra}
 
 This department total consumption provides a more executive-style view. What did we accomplish this sprint? Well we added
-a button to the Customer Portal, and the Invoice Calculation now works properly so we are now more accurately billing our
-customers.
+an invite button to the Customer Portal, and the Invoice Calculation now supports paid plans, so our first pilot customers
+can actually pay us.
 
 # Conclusion - Understanding Activity-Based Consumption
 

@@ -64,8 +64,8 @@ for elimination. Indirect work is shared. A pull request review or a database mi
 coordinate it. That coordination is where delegation and self-service help. The question is whether a developer needs to
 be the one answering it.
 
-Direct work is the work we wanted to do. We aren't asking whether the customer portal needs its button. We're asking whether
-47 hours of checking that the button works is the right way to get there. That's where automation pays off. These aren't 
+Direct work is the work we wanted to do. We aren't asking whether the customer portal needs its invite button. We're asking whether
+47 hours of checking that the invite button works is the right way to get there. That's where automation pays off. These aren't 
 rules. Overhead can be automated and direct work can be delegated. But the classification tells us where to start asking.
 
 # 1. Eliminate Unnecessary Work
@@ -100,7 +100,7 @@ We were spending 2-3 hours each day collecting deployment metrics. A dashboard c
 Automated testing is the same idea: we want to be fairly certain a change works on the standard use-case without someone
 clicking through it by hand every release.
 
-Look at the second sprint again. Developer 1 spent 47 hours making sure the button works. Developer 2 spent 61 hours making
+Look at the second sprint again. Developer 1 spent 47 hours making sure the invite button works. Developer 2 spent 61 hours making
 sure the hot fix works. That's 108 of the sprint's 240 hours, almost half, spent watching two changes in production.
 Automated checks won't take that to zero, but they can bring it down to something like 30.
 

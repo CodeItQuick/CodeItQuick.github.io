@@ -32,6 +32,9 @@ cost of existing operations, or protect the revenue and capabilities the organiz
 how we turn our engineering investments into something that improves the organization's position after accounting for
 their costs.
 
+For our startup from Part 2, revenue is close to zero. The remainder is negative, and the real question is how many months
+of runway the cash buys us. Every engineering hour either moves us toward paying customers or shortens that runway.
+
 # Understanding the Remainder
 
 Let's consider the two sides of the equation. In Part 2, we described value as Work Type x Value Perspective x Value
@@ -93,9 +96,9 @@ enable new revenue. Evolving a system might be necessary simply to continue oper
 can serve several stakeholders through several value mechanisms. Now we're asking another question: **How does that
 value affect the organization's economic position?**
 
-Consider a database migration. The work belongs primarily in Evolve, but the economic contribution depends on why
-we're performing it. Replacing an unsupported database might prevent future maintenance expenses. Improving database
-performance might reduce infrastructure costs. Supporting additional customers might increase revenue.
+Consider Developer 3's database migration. The work belongs primarily in Evolve, but the economic contribution depends
+on why we're performing it. We moved to a cheaper managed service, so the migration reduces hosting costs and extends
+our runway. Another team might do the same migration to replace an unsupported database, or to support more customers.
 
 The work hasn't changed. What we're examining is how its benefits contribute to the remainder.
 

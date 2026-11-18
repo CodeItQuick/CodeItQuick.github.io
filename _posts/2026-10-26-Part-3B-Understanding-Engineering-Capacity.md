@@ -56,20 +56,20 @@ If we look at the work distributed to the different activities over two sprints,
 
 | Person      | Task                                | Activity Cost Pool | Activities | Cost Object            | Activity Cost Driver (Hours) |   
 |-------------|-------------------------------------|--------------------|------------|------------------------|------------------------------|
-| Developer 1 | Add button to Customer Portal       | Build              | Coding     | Customer Portal        | 40                           |
-| Developer 1 | Test button added to Portal         | Build              | Testing    | Customer Portal        | 40                           |  
-| Developer 2 | Find invoice bug                    | Fix                | Debugging  | Invoice Calculation    | 40                           | 
-| Developer 2 | Fix invoice bug                     | Fix                | Coding     | Invoice Calculation    | 10                           | 
+| Developer 1 | Add invite button to Portal         | Build              | Coding     | Customer Portal        | 40                           |
+| Developer 1 | Test invite button                  | Build              | Testing    | Customer Portal        | 40                           |  
+| Developer 2 | Find bug blocking paid plans        | Fix                | Debugging  | Invoice Calculation    | 40                           | 
+| Developer 2 | Fix bug blocking paid plans         | Fix                | Coding     | Invoice Calculation    | 10                           | 
 | Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing    | Invoice Calculation    | 30                           | 
-| Developer 3 | Migrate database to new format      | Evolve             | Designing  | Engineering Department | 80                           | 
+| Developer 3 | Migrate database to managed service | Evolve             | Designing  | Engineering Department | 80                           | 
 {: .table .table-zebra}
 
 **Two Week Summary - Sprint Two**
 
 | Person      | Task                                   | Activity Cost Pool | Activities           | Cost Object            | Activity Cost Driver (Hours) |   
 |-------------|----------------------------------------|--------------------|----------------------|------------------------|------------------------------|
-| Developer 1 | Release button to production           | Build              | Build Pipeline       | Customer Portal        | 6                            |
-| Developer 1 | Ensure button works                    | Build              | Observability        | Customer Portal        | 47                           |  
+| Developer 1 | Release invite button                  | Build              | Build Pipeline       | Customer Portal        | 6                            |
+| Developer 1 | Ensure invite button works             | Build              | Observability        | Customer Portal        | 47                           |  
 | Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Invoice Calculation    | 6                            | 
 | Developer 2 | Ensure hot fix works                   | Fix                | Observability        | Invoice Calculation    | 61                           | 
 | Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 64                           | 

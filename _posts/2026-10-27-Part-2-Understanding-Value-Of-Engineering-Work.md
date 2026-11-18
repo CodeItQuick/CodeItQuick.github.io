@@ -30,6 +30,17 @@ would allow the organization to introduce new capabilities that weren't previous
 different reason for performing the same work. To understand engineering value, we need to look beyond what work is being 
 performed and examine what the organization expects to gain from it.
 
+# An Example Fictitious Company
+
+We are working at a brand new startup. This company has just developed their MVP for the product, and like many startups, 
+no one cared on the "release date". So we are facing several typical problems that a new company would face:
+* No product-market fit - the product does not fit a customer need (engineering problem)
+* No runway - we only have so many months to get customers (financing/engineering problem)
+* No distribution channels for large numbers of sales (supply chain problem)
+* Slow learning - the team builds the wrong thing, frequently (engineering problem)
+* Unknown Pricing - we do not know how much to charge (accounting/sales/engineering problem)
+* Premature Scaling - we build for scale prematurely (engineering problem)
+
 # The Dimensions of Engineering Value
 
 In the first section we classified the work type - Build, Fix, Improve, Run, Evolve. You can think of this as the supply-side
@@ -59,11 +70,11 @@ I am going to introduce a practical example at this point. Three developers, one
 a second working on a fix to the invoices, and a third performing DevOps work to upgrade the database. Fitting what these three
 developers are doing into our value framework or "why are we working on this?" we get the following:
 
-| Developer   | Work                                    | Work Type   | Value Perspective | Value Mechanism        | Expected Benefit                                                                  |
-|-------------|-----------------------------------------|-------------|-------------------|------------------------|-----------------------------------------------------------------------------------|
-| Developer 1 | Add a button to the customer portal     | **Build**   | Customer          | Increase revenue       | Customers order through the portal without a sales call, so more orders come in   |
-| Developer 2 | Fix the invoice calculation bug         | **Fix**     | Business          | Protect existing value | Invoices bill the correct amount, so we stop losing revenue to billing errors     |
-| Developer 3 | Migrate the database to a new format    | **Evolve**  | Business          | Protect existing value | The portal and invoicing move off a database near end of support before it fails  |
+| Developer   | Work                                                       | Work Type   | Value Perspective | Value Mechanism  | Expected Benefit                                                                          | Company Problem                 |
+|-------------|------------------------------------------------------------|-------------|-------------------|------------------|-------------------------------------------------------------------------------------------|---------------------------------|
+| Developer 1 | Add an "invite a colleague" button to the customer portal  | **Build**   | Customer          | Increase revenue | Each early user can bring in their team, and we count how many do                         | No distribution, slow learning  |
+| Developer 2 | Fix the invoice calculation bug that blocks paid plans     | **Fix**     | Business          | Increase revenue | Pilot customers can pay at two trial price points, so we learn what they will pay         | Unknown pricing, no runway      |
+| Developer 3 | Migrate the database to a cheaper managed service          | **Evolve**  | Business          | Reduce cost      | Hosting costs drop, so the same cash lasts more months                                    | No runway, premature scaling    |
 {: .table .table-zebra}
 
 So although it may be unclear "Why these projects" exist to the developer's working on them, we can now start to formulate
