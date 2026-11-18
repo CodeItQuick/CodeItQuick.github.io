@@ -17,8 +17,8 @@ redirect_from:
 
 # Introduction - Bringing Cost and Value Together
 
-In the previous articles, we've examined engineering capacity, how that capacity is consumed, and the technical, tactical,
-and strategic value that engineering work is expected to produce. We've also looked at prioritizing that work and reclaiming
+In the previous articles, we've examined engineering capacity, how that capacity is consumed, and the value that
+engineering work is expected to produce for its stakeholders. We've also looked at prioritizing that work and reclaiming
 capacity through elimination, automation, delegation, and self-service.
 
 We've established what our work costs, why we expect it to be valuable, and where we're going to invest our limited capacity.
@@ -34,8 +34,8 @@ their costs.
 
 # Understanding the Remainder
 
-Let's consider the two sides of the equation. In Part 2, we introduced Technical, Tactical, and Strategic value. These
-describe why engineering work might be worth doing. In Part 3, we examined engineering capacity and consumption, giving
+Let's consider the two sides of the equation. In Part 2, we described value as Work Type x Value Perspective x Value
+Mechanism = Expected Benefit. That describes why engineering work might be worth doing. In Part 3, we examined engineering capacity and consumption, giving
 us a way to understand the resources required to perform that work.
 
 Revenue and costs are financial quantities. Engineering value is broader than revenue, and capacity is measured in hours
@@ -49,9 +49,10 @@ benefits and costs, we can calculate a contribution. Where the benefits are not 
 the expected net value rather than pretending we've calculated profit. The objective isn't to assign an imaginary dollar
 value to every engineering task. It's to understand what we're gaining relative to what we're spending.
 
-# Three Ways to Improve the Equation
+# Value Mechanisms and the Equation
 
-There are three broad ways engineering can improve the organization's economic position.
+Part 2 introduced four value mechanisms. Three of them map directly onto the equation, and the fourth pays off through the
+other three later.
 
 **Increase revenue.** Building a feature that attracts new customers, enabling a new market, or improving a purchasing
 experience can increase the revenue the organization generates. This is perhaps the most recognizable contribution
@@ -64,6 +65,10 @@ lower cost, the remainder increases.
 **Protect existing value.** Fixing critical defects, maintaining reliability, and adapting systems to changing
 requirements can prevent lost revenue or avoid future expenses. Sometimes the most valuable engineering work is
 preventing something bad from happening.
+
+**Create options.** Putting a vendor behind a standard interface or preparing an architecture for a second market
+doesn't change the equation today. It makes a future change possible or cheaper. Its value arrives later, through one
+of the other three mechanisms, and only if we actually use the option.
 
 These mechanisms aren't mutually exclusive. Improving a service's performance might reduce infrastructure costs while
 also allowing the organization to support more customers. The important distinction is that **engineering work can increase
@@ -85,7 +90,7 @@ different reason for performing engineering work. None of them determines the ec
 
 These examples aren't exclusive relationships. Building something might reduce costs. Improving an existing system might
 enable new revenue. Evolving a system might be necessary simply to continue operating. We already know that one work item
-can produce Technical, Tactical, and Strategic value simultaneously. Now we're asking another question: **How does that
+can serve several stakeholders through several value mechanisms. Now we're asking another question: **How does that
 value affect the organization's economic position?**
 
 Consider a database migration. The work belongs primarily in Evolve, but the economic contribution depends on why
@@ -141,8 +146,9 @@ unchanged exposes the organization to significant operational risk.
 Does that make the migration worthless? Of course not. The expected value may come from avoiding a future expense, protecting
 existing revenue, or maintaining the ability to continue developing the product. We should consider the likelihood and
 consequences of those risks rather than assuming that avoiding an uncertain future cost is the same as receiving money today.
-This is why our earlier classification of Technical, Tactical, and Strategic value matters. Financial returns are
-important, but not every useful engineering contribution produces an immediate, directly measurable return.
+This is why Part 2 describes value through stakeholders and mechanisms, not only revenue. Protecting existing value and
+creating options are real contributions. Financial returns are important, but not every useful engineering contribution
+produces an immediate, directly measurable return.
 
 # Conclusion - What Did We Gain?
 

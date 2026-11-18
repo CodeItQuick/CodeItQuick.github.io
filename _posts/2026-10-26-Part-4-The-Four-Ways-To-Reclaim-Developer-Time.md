@@ -71,13 +71,14 @@ rules. Overhead can be automated and direct work can be delegated. But the class
 # 1. Eliminate Unnecessary Work
 
 The most effective way to complete a task is to avoid doing it in the first place. In [Part 2](/2026/10/27/Part-2-Understanding-Value-Of-Engineering-Work.html),
-we introduced three dimensions of value. Before accepting recurring work, ask which of them it provides:
-  * **Technical:** Does it improve our engineering capabilities?
-  * **Tactical:** Does it address an immediate business or operational need?
-  * **Strategic:** Does it support a longer-term organizational objective?
+we described value as a stakeholder gaining something through a value mechanism. Before accepting recurring work, ask:
+  * **Value Perspective:** Which stakeholder is this work for?
+  * **Value Mechanism:** Does it increase revenue, reduce cost, protect existing value, or create options?
+  * **Expected Benefit:** What should that stakeholder actually see?
 
-If we can't name one, the work is a candidate for elimination. Remember that expected value isn't delivered value, either.
-A status meeting is expected to keep stakeholders informed. It only delivers tactical value if somebody still needs the update.
+If we can't name a stakeholder and a mechanism, the work is a candidate for elimination. Remember that expected value isn't
+delivered value, either. A status meeting is expected to protect existing value by keeping stakeholders informed. It only
+delivers that value if somebody still needs the update.
 
 The classic example is "this meeting could have been an email". A recurring meeting or status report usually starts for a
 good reason, but that reason can disappear long before the meeting does. Standups are a good candidate. They are supposed
