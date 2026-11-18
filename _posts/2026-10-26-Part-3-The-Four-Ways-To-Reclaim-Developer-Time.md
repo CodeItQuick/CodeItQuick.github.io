@@ -46,13 +46,13 @@ automating, delegating, and enabling self-service.
 
 # Where to Look First
 
-Part 2A split the second sprint's 240 hours into three kinds of consumption. 120 hours were direct, 74 were indirect, and
-46 were overhead. Each kind points us toward a different approach.
+Part 2A split the second sprint's 240 hours into three kinds of consumption. 120 hours were direct, 76 were indirect, and
+44 were overhead. Each kind points us toward a different approach.
 
 | Classification       | Sprint Two (Hours) | Who It Serves                       | Start With                  |
 |----------------------|--------------------|-------------------------------------|-----------------------------|
-| Overhead Consumption | 46                 | Everything, and nothing in particular | Eliminate                   |
-| Indirect Consumption | 74                 | Several consumption objects at once | Delegate or self-service    |
+| Overhead Consumption | 44                 | Everything, and nothing in particular | Eliminate                   |
+| Indirect Consumption | 76                 | Several consumption objects at once | Delegate or self-service    |
 | Direct Consumption   | 120                | A single feature or service         | Automate                    |
 {: .table .table-zebra}
 
@@ -82,9 +82,9 @@ good reason, but that reason can disappear long before the meeting does. Standup
 to be daily, but as I covered in [Agile And Scrum Drift in Development](/2026/07/17/Agile-Drift-In-Development.html), our
 team runs fewer of them because the stakeholders only need updates a couple of days a week.
 
-Our three developers are in the same position. In the second sprint, Developers 1 and 2 each spent 8 hours in scrum
-meetings. That's 16 hours of overhead that no feature or service owns. If the stakeholders only need an update a couple of
-days a week, cutting the meetings back gives us 8 of those hours.
+Our three developers are in the same position. In the second sprint, Developer 2 spent 8 hours in scrum meetings, and 8 of
+Developer 1's 20 coordination hours went to them too. That's 16 hours of overhead that no feature or service owns. If
+the stakeholders only need an update a couple of days a week, cutting the meetings back gives us 8 of those hours.
 
 Rather than optimizing the process, consider eliminating it or reducing its scope. Start with the assumption that the work
 may not be necessary, and establish why it should continue. Start with no, then move toward maybe.
@@ -139,10 +139,10 @@ common, repeatable, and well understood, self-service may be an effective soluti
 Instead of having developers manually provide deployment information, make that information available through a dashboard.
 The deployment metrics dashboard does this for product owners who want to know how a particular initiative is going.
 
-In our second sprint, Developers 1 and 3 spent about 3 hours a day between them answering direct messages and digging
-through logs for the answers. Over a ten-day sprint, that's 30 hours spent producing, by hand, what could have been this
+In our second sprint, Developers 1 and 3 spent almost 3 hours a day between them answering direct messages and digging
+through logs for the answers. Over a ten-day sprint, that's 28 hours spent producing, by hand, what could have been this
 dashboard. If most of those messages are "is it deployed yet?" or "how is the migration going?", a dashboard can answer
-them without interrupting anyone. That won't remove every message, but it can cut the 30 hours in half.
+them without interrupting anyone. That won't remove every message, but it can cut the 28 hours in half.
 
 But self-service isn't appropriate for every problem. Some requests require discussion to understand what the person
 actually needs. A ticketing system or form can reduce interruptions, but it can also strip away important context.
@@ -169,9 +169,9 @@ The pull request reviews, the release tasks, and the database migration stay as 
 | Activity                         | Classification       | Approach     | Before (Hours) | After (Hours) | Reclaimed (Hours) |
 |----------------------------------|----------------------|--------------|----------------|---------------|-------------------|
 | Scrum Meeting                    | Overhead Consumption | Eliminate    | 16             | 8             | 8                 |
-| Direct Messages                  | Overhead Consumption | Self-Service | 30             | 15            | 15                |
-| Ensure button / hot fix works    | Direct Consumption   | Automate     | 108            | 31            | 77                |
-| PR Review                        | Indirect Consumption | Keep         | 10             | 10            | 0                 |
+| Direct Messages                  | Overhead Consumption | Self-Service | 28             | 14            | 14                |
+| Ensure button / hot fix works    | Direct Consumption   | Automate     | 108            | 30            | 78                |
+| PR Review                        | Indirect Consumption | Keep         | 12             | 12            | 0                 |
 | Migrate database                 | Indirect Consumption | Keep         | 64             | 64            | 0                 |
 | Release button / hot fix         | Direct Consumption   | Keep         | 12             | 12            | 0                 |
 | **Total**                        |                      |              | **240**        | **140**       | **100**           |
