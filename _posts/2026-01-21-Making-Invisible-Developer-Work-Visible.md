@@ -23,10 +23,11 @@ the rest of the business.
 # The Problem
 
 Before we decide how to optimize our work, how to prioritize it, or what to work on, we need a common understanding of 
-what the work is and what we are actually doing. Have you ever been given the difficult task: "What would you say... you do here" (Bob Slydell while interviewing Tom Smykowski in office space).
-Just because every activity is visible does not mean every activity should be done. Have you ever wondered as a developer
-why we are working on certain things? Well this article series will describe the different kinds of work within the development cycle. 
-Finally, developers can have a discussion with the part of the business we affectionately call "the business" on where our time should be spent.
+what the work is and what we are actually doing. Have you ever been given the difficult task: "What would you say... you do here" 
+(Bob Slydell while interviewing Tom Smykowski in office space). Just because every activity is visible does not mean every 
+activity should be done. This article series will describe the different kinds of work within the development cycle. 
+Finally, developers can have a discussion with the part of the business we affectionately call "the business" on where 
+our time should be spent.
 
 # The Five Types of Engineering Work
 ## What Each Bucket Builds
@@ -171,10 +172,9 @@ because the benefits aren't always immediately obvious.
 </p>
 
 Visibility also depends on who the work is for. Some work traces directly to a single feature or service, like shipping a 
-button for the customer portal. That's a direct cost. Some work is shared, like a database migration that supports several 
-systems at once. That's an indirect cost. And some work, like meetings and direct messages, supports everything 
-without belonging to anything in particular. That's overhead. The further work sits from a single feature, the further 
-below the waterline it tends to sink.
+button for the customer portal. Some work is shared, like a database migration that supports several systems at once. 
+And some work, like meetings and direct messages, supports everything without belonging to anything in particular. 
+The further work sits from a single feature, the further below the waterline it tends to sink.
 
 ## The Stakeholder Visibility of Work
 

@@ -18,7 +18,7 @@ featured: true
 
 The goal of this model is to properly sort my thoughts on what I'm working on at any point of time into several neat "buckets"
 of work. So whether I'm building a new feature (build/fix), evolving the platform for easier future work (evolve), or hot-fixing
-a bug I just introduced (operate) I'll have a better understanding of how it fits into the greater whole. 
+a bug I just introduced (run) I'll have a better understanding of how it fits into the greater whole. 
 
 I was talking to someone lately and they mentioned the concept of "slightly incompetent management". Well, I guess you can 
 throw my in the bucket of "slightly incompetent individual contributor" while your at it. Since the definition of this 
