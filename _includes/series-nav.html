@@ -2,7 +2,7 @@
 {% assign parts = site.posts | where: "series", page.series | sort: "name" %}
 <nav class="series-nav my-8 p-4 rounded border border-base-300" aria-label="Article series">
     <p class="font-bold">This article is part of a series:</p>
-    <ol>
+    <ul style="list-style: none; padding-left: 0;">
         {% assign planned = site.data.series[page.series] %}
         {% assign prev = "" %}
         {% for part in parts %}
@@ -17,5 +17,5 @@
         </li>
         {% endfor %}
         {% for p in planned %}{% if p > prev %}<li>{{ p }} <em>(coming soon)</em></li>{% endif %}{% endfor %}
-    </ol>
+    </ul>
 </nav>
