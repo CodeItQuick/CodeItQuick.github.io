@@ -23,10 +23,10 @@ five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. In this
 through two sprints. Their sprint tables account for 424 of their 480 hours, and show which purposes and activities 
 consumed that time, and which parts of the system it supported.
 
-But those sprint tables only show the work somebody thought to write down. Releasing an invite button and checking that it works 
+But those sprint tables only show the work somebody thought to write down. Releasing the daily challenge and checking that it works 
 are easy to record. The pull request review before the release, the daily scrum, and the steady stream of coordination activities 
 usually aren't. Neither is the fact that a database migration for the engineering platform is really being done on behalf 
-of the customer portal and the invoice calculation.
+of the daily challenge and the question bank.
 
 In this article, we'll take the second sprint and ask who the work was for. We'll come back to where the time went 
 in [Part 3B](/2026/10/26/Part-3B-Understanding-Engineering-Capacity.html). Some of it traces cleanly to a single feature 
@@ -36,14 +36,14 @@ or service. Some of it is shared, and some of it never made it onto the board at
 
 | Person      | Task                         | Activity Pool | Consumption Object   | Activity Driver (Hours) | Classification       |
 |-------------|------------------------------|---------------|----------------------|-------------------------|----------------------|
-| Developer 1 | Release invite button        | Build         | Customer Portal      | 6                       | Direct Consumption   |
-| Developer 1 | Ensure invite button works   | Build         | Customer Portal      | 47                      | Direct Consumption   | 
-| Developer 1 | PR Review                    | Fix           | Invoice Calculation  | 7                       | Indirect Consumption |
+| Developer 1 | Release daily challenge      | Build         | Daily Challenge      | 6                       | Direct Consumption   |
+| Developer 1 | Ensure daily challenge works | Build         | Daily Challenge      | 47                      | Direct Consumption   | 
+| Developer 1 | PR Review                    | Fix           | Question Bank        | 7                       | Indirect Consumption |
 | Developer 1 | Coordination                 | Build         | Engineering Platform | 20                      | Overhead Consumption |
 {: .table .table-zebra}
 
 We can see each developer is working on different elements of the system, but you can see how confusion might arrise sitting
-in the shoes of each developer. Why is one dev working on the Customer Portal, another on an Invoice Calculation, and the third
+in the shoes of each developer. Why is one dev working on the Daily Challenge, another on the Question Bank, and the third
 doing background Engineering Platform work? Are there hours being ideally spent? Well, it's really hard to tell just looking
 at the timesheets.
 
@@ -63,23 +63,23 @@ developer work from the first section.
 
 | Consumption Objects  | Direct Consumption | Indirect Consumption | Overhead Consumption | Total Consumption (Hours) |
 |----------------------|--------------------|----------------------|----------------------|---------------------------|
-| Customer Portal      | 53                 | 37                   | 0                    | 90                        | 
-| Invoice Calculation  | 67                 | 39                   | 8                    | 114                       | 
+| Daily Challenge      | 53                 | 37                   | 0                    | 90                        | 
+| Question Bank        | 67                 | 39                   | 8                    | 114                       | 
 | Engineering Platform | 0                  | 0                    | 36                   | 36                        | 
 {: .table .table-zebra}
 
-This department total consumption provides a more executive-style view. What did we accomplish this sprint? Well we added
-an invite button to the Customer Portal, and the Invoice Calculation now supports paid plans, so our first pilot customers
-can actually pay us.
+This department total consumption provides a more executive-style view. What did we accomplish this sprint? Well we released
+the Daily Challenge, and the Question Bank now marks correct answers as correct, so players stop losing points
+they earned.
 
 # Conclusion - Understanding Activity-Based Consumption
 
-Here we've asked who the team's work was for. Half of the second sprint traces directly to the customer portal or the invoice 
-calculation. The rest is the migration, plus reviews, meetings, and messages. Each one is small on its own, but they touch every developer 
+Here we've asked who the team's work was for. Half of the second sprint traces directly to the daily challenge or the question 
+bank. The rest is the migration, plus reviews, meetings, and messages. Each one is small on its own, but they touch every developer 
 and every consumption object, and they rarely show up on a Jira board.
 
 The database migration shows why the classification matters. Measured against the engineering platform, Developer 3's 
-sixty-four hours are direct consumption. Measured against the customer portal and the invoice calculation, the same 
+sixty-four hours are direct consumption. Measured against the daily challenge and the question bank, the same 
 hours become indirect consumption, split thirty-two and thirty-two. The work didn't change. The question we asked did. 
 We can only count those hours once, so the tables above use the second view. And that even split is a choice we made, 
 not something we discovered about how the work was done.

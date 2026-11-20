@@ -32,7 +32,7 @@ In [Part 1, Making Invisible Developer Work Visible](/2026/01/21/Making-Invisibl
 introduced five purposes of engineering work: Build, Fix, Improve, Run, and Evolve. These describe what we're trying to 
 accomplish, rather than the individual activities involved in accomplishing it.
 
-Consider a team of three developers responsible for a customer portal. 
+Consider a team of three developers responsible for an AI-assisted development learning site.
 
 ## Accounting for the Work
 
@@ -56,22 +56,22 @@ If we look at the work distributed to the different activities over two sprints,
 
 | Person      | Task                                | Activity Cost Pool | Activities | Cost Object            | Activity Cost Driver (Hours) |   
 |-------------|-------------------------------------|--------------------|------------|------------------------|------------------------------|
-| Developer 1 | Add invite button to Portal         | Build              | Coding     | Customer Portal        | 40                           |
-| Developer 1 | Test invite button                  | Build              | Testing    | Customer Portal        | 40                           |  
-| Developer 2 | Find bug blocking paid plans        | Fix                | Debugging  | Invoice Calculation    | 40                           | 
-| Developer 2 | Fix bug blocking paid plans         | Fix                | Coding     | Invoice Calculation    | 10                           | 
-| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing    | Invoice Calculation    | 30                           | 
-| Developer 3 | Migrate database to managed service | Evolve             | Designing  | Engineering Department | 80                           | 
+| Developer 1 | Build daily challenge page          | Build              | Coding     | Daily Challenge        | 40                           |
+| Developer 1 | Test daily challenge                | Build              | Testing    | Daily Challenge        | 40                           |  
+| Developer 2 | Find answer-checking bug            | Fix                | Debugging  | Question Bank          | 40                           | 
+| Developer 2 | Fix answer-checking bug             | Fix                | Coding     | Question Bank          | 10                           | 
+| Developer 2 | Add tests to prevent bug recurring  | Fix                | Testing    | Question Bank          | 30                           | 
+| Developer 3 | Migrate database to new schema      | Evolve             | Designing  | Engineering Department | 80                           | 
 {: .table .table-zebra}
 
 **Two Week Summary - Sprint Two**
 
 | Person      | Task                                   | Activity Cost Pool | Activities           | Cost Object            | Activity Cost Driver (Hours) |   
 |-------------|----------------------------------------|--------------------|----------------------|------------------------|------------------------------|
-| Developer 1 | Release invite button                  | Build              | Build Pipeline       | Customer Portal        | 6                            |
-| Developer 1 | Ensure invite button works             | Build              | Observability        | Customer Portal        | 47                           |  
-| Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Invoice Calculation    | 6                            | 
-| Developer 2 | Ensure hot fix works                   | Fix                | Observability        | Invoice Calculation    | 61                           | 
+| Developer 1 | Release daily challenge                | Build              | Build Pipeline       | Daily Challenge        | 6                            |
+| Developer 1 | Ensure daily challenge works           | Build              | Observability        | Daily Challenge        | 47                           |  
+| Developer 2 | Release hot fix                        | Fix                | Build Pipeline       | Question Bank          | 6                            | 
+| Developer 2 | Ensure hot fix works                   | Fix                | Observability        | Question Bank          | 61                           | 
 | Developer 3 | Migrate database by creating test data | Evolve             | Coding               | Engineering Department | 64                           | 
 {: .table .table-zebra}
 
@@ -79,13 +79,13 @@ If we look at the work distributed to the different activities over two sprints,
 
 | Cost Object            | Activity Cost Pool | Designing | Debugging | Coding  | Testing | Build Pipeline | Observability | Total   |
 |------------------------|--------------------|-----------|-----------|---------|---------|----------------|---------------|---------|
-| Customer Portal        | Build              | 0         | 0         | 40      | 40      | 6              | 47            | 133     |
-| Invoice Calculation    | Fix                | 0         | 40        | 10      | 30      | 6              | 61            | 147     |
+| Daily Challenge        | Build              | 0         | 0         | 40      | 40      | 6              | 47            | 133     |
+| Question Bank          | Fix                | 0         | 40        | 10      | 30      | 6              | 61            | 147     |
 | Engineering Department | Evolve             | 80        | 0         | 64      | 0       | 0              | 0             | 144     |
 | **Total**              |                    | **80**    | **40**    | **114** | **70**  | **12**         | **108**       | **424** |
 {: .table .table-zebra}
 
-Note: whether a cost is direct (Customer Portal/Invoice Calculation) or indirect (Engineering Department) depends on the cost object, not on the cost driver.
+Note: whether a cost is direct (Daily Challenge/Question Bank) or indirect (Engineering Department) depends on the cost object, not on the cost driver.
 
 # Conclusion - Understanding Capacity
 

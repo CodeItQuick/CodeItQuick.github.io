@@ -32,8 +32,8 @@ cost of existing operations, or protect the revenue and capabilities the organiz
 how we turn our engineering investments into something that improves the organization's position after accounting for
 their costs.
 
-For our startup from Part 2, revenue is close to zero. The remainder is negative, and the real question is how many months
-of runway the cash buys us. Every engineering hour either moves us toward paying customers or shortens that runway.
+Our learning site from Part 2 doesn't earn anything yet. The remainder is negative, so every engineering hour is a cost,
+and the real question is whether that hour brings players back to the daily challenge.
 
 # Understanding the Remainder
 
@@ -97,14 +97,15 @@ can serve several stakeholders through several value mechanisms. Now we're askin
 value affect the organization's economic position?**
 
 Consider Developer 3's database migration. The work belongs primarily in Evolve, but the economic contribution depends
-on why we're performing it. We moved to a cheaper managed service, so the migration reduces hosting costs and extends
-our runway. Another team might do the same migration to replace an unsupported database, or to support more customers.
+on why we're performing it. We changed the schema so that each question can carry a schedule date, a source, and a
+review date. That creates options for the daily challenge and protects trust in the question bank. Another team might do
+the same migration to cut hosting costs, or to replace an unsupported database.
 
 The work hasn't changed. What we're examining is how its benefits contribute to the remainder.
 
 # Reinvesting Engineering Capacity
 
-Let's return to our three-developer team and the customer portal example.
+Let's return to our three-developer team and the learning site example.
 
 In Part 4, we reclaimed 100 hours of engineering capacity by reducing unnecessary meetings, automating repetitive
 checks, and providing self-service access to information. We allocated that capacity to three activities:
@@ -112,18 +113,19 @@ checks, and providing self-service access to information. We allocated that capa
 | Work                    | Capacity  | Purpose |
 |-------------------------|-----------|---------|
 | Automated checks        | 40 hours  | Improve |
-| Customer portal feature | 40 hours  | Build   |
+| Challenge a friend      | 40 hours  | Build   |
 | Dependency upgrade      | 20 hours  | Evolve  |
 | Total                   | 100 hours |         |
 {: .table .table-zebra}
 
 What have we actually gained?
 
-The automated checks might reduce future engineering consumption. The customer portal feature might generate additional
-revenue. The dependency upgrade might prevent an expensive failure or eliminate a constraint on future development. Let's
-put some hypothetical numbers against the customer portal feature. Suppose the 40 hours of engineering effort cost $4,000
-when we account for compensation and related expenses. We expect the feature to generate $12,000 in additional revenue over
-the next year, with another $2,000 in support and operating costs over that period.
+The automated checks might reduce future engineering consumption. Challenge a friend might bring in new players. The
+dependency upgrade might prevent an expensive failure or eliminate a constraint on future development. Let's put some
+hypothetical numbers against challenge a friend. Suppose the 40 hours of engineering effort cost $4,000 when we account
+for compensation and related expenses. Suppose too that we plan a paid tier later in the year, and we expect the new
+players from friend challenges to earn that tier $12,000 over the next year, with another $2,000 in hosting and support
+costs over that period.
 
 Our estimated contribution is:
 

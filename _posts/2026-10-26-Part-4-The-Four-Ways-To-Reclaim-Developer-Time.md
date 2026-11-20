@@ -64,8 +64,8 @@ for elimination. Indirect work is shared. A pull request review or a database mi
 coordinate it. That coordination is where delegation and self-service help. The question is whether a developer needs to
 be the one answering it.
 
-Direct work is the work we wanted to do. We aren't asking whether the customer portal needs its invite button. We're asking whether
-47 hours of checking that the invite button works is the right way to get there. That's where automation pays off. These aren't 
+Direct work is the work we wanted to do. We aren't asking whether the site needs its daily challenge. We're asking whether
+47 hours of checking that the daily challenge works is the right way to get there. That's where automation pays off. These aren't 
 rules. Overhead can be automated and direct work can be delegated. But the classification tells us where to start asking.
 
 # 1. Eliminate Unnecessary Work
@@ -100,7 +100,7 @@ We were spending 2-3 hours each day collecting deployment metrics. A dashboard c
 Automated testing is the same idea: we want to be fairly certain a change works on the standard use-case without someone
 clicking through it by hand every release.
 
-Look at the second sprint again. Developer 1 spent 47 hours making sure the invite button works. Developer 2 spent 61 hours making
+Look at the second sprint again. Developer 1 spent 47 hours making sure the daily challenge works. Developer 2 spent 61 hours making
 sure the hot fix works. That's 108 of the sprint's 240 hours, almost half, spent watching two changes in production.
 Automated checks won't take that to zero, but they can bring it down to something like 30.
 
@@ -173,10 +173,10 @@ The pull request reviews, the release tasks, and the database migration stay as 
 |----------------------------------|----------------------|--------------|----------------|---------------|-------------------|
 | Scrum Meeting                    | Overhead Consumption | Eliminate    | 16             | 8             | 8                 |
 | Direct Messages                  | Overhead Consumption | Self-Service | 28             | 14            | 14                |
-| Ensure button / hot fix works    | Direct Consumption   | Automate     | 108            | 30            | 78                |
+| Ensure challenge / hot fix works | Direct Consumption   | Automate     | 108            | 30            | 78                |
 | PR Review                        | Indirect Consumption | Keep         | 12             | 12            | 0                 |
 | Migrate database                 | Indirect Consumption | Keep         | 64             | 64            | 0                 |
-| Release button / hot fix         | Direct Consumption   | Keep         | 12             | 12            | 0                 |
+| Release challenge / hot fix      | Direct Consumption   | Keep         | 12             | 12            | 0                 |
 | **Total**                        |                      |              | **240**        | **140**       | **100**           |
 {: .table .table-zebra}
 
@@ -185,13 +185,13 @@ first 40 hours go into building them. That's Improve work. The rest finally gets
 
 | Purpose  | Hours | Work                                                 |
 |----------|-------|------------------------------------------------------|
-| Improve  | 40    | Build automated checks for the portal and invoices   |
-| Build    | 40    | Next customer portal feature                         |
+| Improve  | 40    | Build automated checks for the challenge and answers |
+| Build    | 40    | Challenge a friend                                   |
 | Evolve   | 20    | Start the next dependency upgrade                    |
 | **Total**| **100** |                                                    |
 {: .table .table-zebra}
 
-Look at that second table from the other direction. The next customer portal feature and the dependency upgrade were
+Look at that second table from the other direction. Challenge a friend and the dependency upgrade were
 always the price of 108 hours of manual checking. We were paying it every sprint. Nobody wrote it down, because nobody
 compared the checking against the work it displaced.
 
